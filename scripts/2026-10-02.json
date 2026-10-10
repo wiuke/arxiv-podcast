@@ -1,0 +1,471 @@
+{
+  "date": "2026-10-02",
+  "format": "dialogue",
+  "n_papers": 54,
+  "episode_title": "Millikelvin cavity plasmons, lattice composite fermions, and why some excitons stay sharp",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Morning. It's October second, twenty twenty-six, and the archive dropped around fifty-four new papers overnight."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Busy one. Today we've got a cryogenic cavity platform that hybridizes superconductors and graphene down at ten millikelvin, a lattice theory of composite fermions for fractional Chern insulators, parafermions proposed in twisted molybdenum-ditelluride junctions, and a pair of companion papers on why some excitons have razor-thin linewidths while others are mush."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start cold. Literally. Paper one in the show notes is from the Cornell group, Zhang, Pierce, and collaborators, including Mak and Shan. The problem they're solving: van der Waals heterostructures host their own plasmon resonances from the sub-terahertz up to the terahertz range, which is exactly the frequency window you'd want for cavity-modified phases of matter. But probing that at millikelvin temperatures has been nearly impossible, because standard terahertz spectroscopy dumps way more heat and electric field onto the sample than a dilution fridge can absorb at base temperature."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what did they actually build?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two things. First, a cavity they call a kinetic inductance broadside cavity: two layers of a high kinetic-inductance superconductor, niobium nitride, sandwiching a thin h-B-N dielectric. That geometry compresses the electromagnetic mode volume by a factor of order ten million and slows the plasmon down to about a hundred times below the speed of light — roughly three and a half million meters per second, which is getting close to the Fermi velocity of graphene itself. Second, a Josephson-junction spectrometer: the junction emits sub-terahertz photons through the AC Josephson effect and detects them through inelastic Cooper-pair tunneling, so the whole thing is biased with a simple DC voltage. The power it dissipates is at the femtowatt to picowatt level, orders of magnitude below optics-based terahertz methods, which is why it doesn't cook the mixing chamber."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And what do they actually see when they put a quantum material inside?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Three devices, in increasing complexity. A bare niobium-nitride bilayer gives clean cavity harmonics at fifty, one hundred, and one hundred fifty gigahertz, matching the expected half-wave, full-wave, and one-and-a-half-wave modes. Add a graphene layer, and you get a density-tunable screened graphene plasmon with a lifetime around ten picoseconds — thirty to forty times longer than earlier graphene-plasmon experiments that used ordinary metal counter-plates, because working below the superconducting gap essentially removes that loss channel. The lifetime now looks limited only by the size of the device, from scattering off the edges, not by any intrinsic material loss."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the bilayer. What about the full sandwich?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, the third device is niobium-nitride, graphene, niobium-nitride — a trilayer that hosts both a cavity mode and a graphene matter mode at the same time. They see a clear avoided crossing between the cavity's one-and-a-half-wave mode and the graphene plasmon's two-and-a-half-wave mode, around one hundred seventy gigahertz — genuine strong coupling, resolved down to couplings of order one to two micro-electron-volts, far finer than any optics-based terahertz method could manage."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the catch?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A few unexplained extra modes they attribute to the metal contacts, which also show faint hybridization signatures they can't fully model yet — they chalk the discrepancies up to uncertainty in the contact properties. They also flag that predicted cavity-induced effects on the electronic structure itself, like an effective mass renormalization, would show up in their setup as the same kind of mode shift as ordinary disorder, so they can't yet cleanly tell the two apart. Still, because this scheme does spectroscopy and transport in the same device, it opens the door to directly correlating a collective-mode spectrum with a ground-state phase diagram — Wigner crystals, flat-band moiré states — right where those phases actually live, at millikelvin temperatures where your usual optical probes don't."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two in the show notes is a theory piece, composite fermions in ideal Chern bands, by Pu, Peng, and Adam."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Remind me what composite fermion theory actually buys you."
+    },
+    {
+      "speaker": "Leo",
+      "text": "In the fractional quantum Hall effect, you bind each electron to an even number of vortices, and the resulting composite fermions fill effective Landau levels — called Lambda levels — in a reduced magnetic field. That mapping explains the whole Jain sequence of fractions, one third, two fifths, three sevenths, and so on, with no free parameters. The question here is whether that machinery survives in a fractional Chern insulator, where there's no real magnetic field at all, just the non-uniform Berry curvature of a topological band — the kind seen in twisted bilayer molybdenum-ditelluride and rhombohedral graphene."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Why would it break?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Because in a Landau level, continuous magnetic translation symmetry forces every guiding center to have the same energy, so charged quasiparticles are perfectly flat and macroscopically degenerate. In a crystal, only discrete lattice translations survive, so an anyon can pick up a real dispersion even if the underlying electron band is exactly flat."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do they actually test that?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They use Aharonov-Casher bands — an analytically solvable model of an ideal Chern band, built from a periodically modulated magnetic field with exactly one flux quantum per unit cell and a tunable modulation strength. At zero modulation it's just the lowest Landau level; cranking up the modulation keeps the band exactly flat but breaks the continuous symmetry down to the lattice. They generalize the standard composite-fermion construction to build Jain ground states and their quasiparticle and quasihole excitations directly inside this band."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And does it actually match exact diagonalization?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Very well, for one third, two fifths, three sevenths, and a bosonic one half state. Overlaps with exact eigenstates sit close to one over a decent range of modulation, then drop off sharply past a threshold that shrinks as you move up the Jain sequence — so higher states are more fragile, consistent with their smaller gaps."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's the actual surprise?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two things. First, even with a perfectly flat electron band, the composite-fermion quasiparticle and quasihole bands acquire real dispersion, and they show this comes entirely from the single-particle composite-fermion band structure, not from interactions between multiple composite fermions. So the textbook picture of flat Lambda levels needs an asterisk once you're off a uniform field. Second — and this is the one I'd flag — the isolated quasiparticle band carries its own quantized Berry flux, a Chern number equal to two p n plus one, the denominator of the parent Jain filling. An ordinary Landau level has Chern number one, so this is a genuinely different topological object. They confirm the number three, five, and seven for one third, two fifths, and three sevenths, and even reproduce it, the number three, in a realistic continuum model of twisted molybdenum-ditelluride."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So that's a usable diagnostic."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, it survives even when the finite-size ground-state degeneracy is imperfect, which happens a lot in narrow moiré bands. The caveat is that their bandwidth-to-gap ratio approaching one is only a heuristic warning sign for when the fractional Chern insulator phase is breaking down, not a rigorous criterion — you'd still want the full topological response. And nobody's actually measured a composite-fermion dispersion in a fractional Chern insulator yet; they suggest local tunneling spectroscopy or impurity-induced quasiparticle interference as ways to get at it, the way it's been done for ordinary Lambda levels in gallium arsenide."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper three in the show notes, solo-authored by Amire, is about parafermions in junctions between fractional Chern insulators and superconductors — essentially hardware for topological qubits, but built out of twisted molybdenum-ditelluride instead of gallium arsenide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Remind me how that scheme is supposed to work."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Take the edge of a two-thirds fractional quantum Hall state, which carries a downstream charge mode and an upstream neutral mode, and put a narrow superconducting finger across a trench between two such edges. Wherever the trench is proximitized, Cooper pairing gaps the edge; wherever it's just a plain tunneling link, backscattering gaps it instead. The domain walls between those two kinds of regions trap Z-three parafermion zero modes, three protected states per wall, and in principle chains of them host Fibonacci anyons, which are universal for topological quantum computation by braiding alone."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what's new — what breaks when you go to the real materials?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "All of that original theory assumed the spin-unpolarized version of the two-thirds state, where the edge carries both spin species and an ordinary singlet superconductor can pair electrons across the trench directly. But the actual fractional quantum anomalous Hall states seen in twisted molybdenum-ditelluride and rhombohedral graphene are spontaneously spin- and valley-polarized Jain states — same topological order, different spin structure. The paper asks whether the construction survives that change."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "It does, but through a different mechanism. On the polarized edge, pairing and tunneling end up compatible with two different, mutually incompatible neutral channels, whereas in the old unpolarized case singlet pairing and tunneling happen to pick the same channel. Even so, he shows the two channels condense the same neutral anyon up to a local operator, so you still get Z-three parafermions, three protected states per wall, whether the neutral channel is set uniformly along the trench or independently in each region — and fixing the fermion parity doesn't add any extra states."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What does the superconductor actually need to supply?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the sharpest constraint. Because the polarized edge has only one spin species, an ordinary s-wave singlet superconductor with just Ising-type spin-orbit coupling literally can't do the job — you need even-frequency, equal-spin, intravalley pairing, which that kind of superconductor doesn't generate at leading order. The chiral p-plus-i-p or f-plus-i-f states that have actually been proposed for the superconductivity observed next to the fractional quantum anomalous Hall phase in twisted molybdenum-ditelluride would work, provided they're polarized in the same valley — which isn't automatic."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any other fine print?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Once the neutral sector is gapped, both charge terms stay relevant only if the Coulomb coupling between the two edges is screened below about seven twenty-fifths of the coupling within each edge, so the device needs a nearby gate. And before that neutral gap even forms, pairing is only marginal against a repulsive inter-edge interaction unless something else favors it — so getting the whole thing to turn on is still an open problem. He's upfront that an induced pairing gap on any fractional edge hasn't been demonstrated in any material yet, which he calls the bigger materials problem."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any clean experimental signature?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A six-pi-periodic fractional Josephson effect, three times the period of an ordinary junction, and it's protected: because the whole topological label is carried by a quasiparticle of the fractional Chern insulator itself, nothing confined to the junction can erase it — only bulk quasiparticles or processes reaching the far ends of the superconducting fingers can. He also predicts a quantized zero-bias conductance and a splitting of that peak into three resonances at a second domain wall, which is a reasonably clean way to count the protected states."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Papers four and five in the show notes are a pair from the same author, Michael Atambo — the analytic half and the numerical half of the same question. Why do excitons in some polar materials have razor-sharp lines, while in others they're broad and messy?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's the standard story, and why doesn't it work?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "In a polar crystal, electrons and holes couple to longitudinal optical phonons through the Fröhlich interaction, and the usual approach treats electron and hole as two separate, independently dressed polarons. Plug in the Fröhlich coupling constant for a lead-halide perovskite, where it's order two to three, and that picture predicts strong dressing and broad lines. But perovskite excitons are experimentally sharp. So something's missing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's missing?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "A phonon doesn't see the electron and the hole separately — it sees the combined charge density of the bound pair, and for a neutral exciton that density interferes destructively. Paper four works this out analytically for a hydrogenic exciton coupled to one dispersionless phonon branch. If you restore the exciton's exact center-of-mass recoil rather than freezing it, there's a one-s to one-s absorption channel open at a specific recoil momentum. For an exciton with exactly equal electron and hole masses, that channel vanishes identically, for any momentum — not just approximately small — because the coupling operator is odd under swapping electron and hole, while the ground state's charge distribution is even."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And away from equal masses?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "It's controlled by one mass-asymmetry parameter, eta. The residual dressing follows an exact closed-form suppression law relative to the naive independent-polaron result. In gallium arsenide, where the electron and hole masses are quite different, that channel survives and gives a real two-point-two milli-electron-volt linewidth. In a mass-symmetric perovskite it's exactly zero; in a slightly asymmetric one it's about a tenth of a milli-electron-volt."
+    },
+    {
+      "speaker": "Ava",
+      "text": "But measured perovskite linewidths are tens of milli-electron-volts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly the punchline — if the elastic recoil channel is forbidden by parity, it can't be the source of those linewidths. The broadening has to come from somewhere else, and the paper points to inelastic channels, transitions that change the exciton's internal quantum number, like one-s to two-p, which aren't protected by the same parity argument. The design lesson is that the Fröhlich constant alone is the wrong figure of merit once you project onto the correlated exciton — what matters is the mass asymmetry, the recoil momentum measured against the exciton's Bohr radius, and how close the phonon energy sits to one of these internal transitions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper five checks this non-perturbatively?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Yes, with a one-dimensional lattice model — one electron, one hole, local phonons, exact diagonalization on a small chain, with a parameter that tunes the mass ratio while holding the overall bandwidth fixed, so you're isolating mass asymmetry from the trivial effect of just freezing one carrier. At equal masses, the ground state is forced to be symmetric under swapping electron and hole, the phonon source is odd under that swap, so the coupling vanishes exactly — confirmed numerically, with ninety-four percent of the weight staying in the zero-phonon state and almost no phonon cloud."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Did they stress-test that with a control?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Yes — they flipped the sign of the hole's coupling so the phonon source becomes even instead of odd, and even at perfect mass symmetry the exciton instantly collapses into a heavily dressed state. That confirms it's the parity of the coupling doing the protecting, not mass symmetry by itself."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Anything beyond just confirming the analytic result?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "A nice paradox. The same symmetry that protects the exciton from phonon dressing also denies it any polaronic stabilization energy, because that stabilization comes from exactly the dressing that's forbidden. Two separate, unbound polarons are free to dress up and lower their energy as much as they like. So as the coupling strength grows, the protected exciton eventually loses to two free, heavily dressed polarons and dissociates — and that dissociation threshold depends mostly on the Coulomb binding and raw coupling strength, barely on the mass asymmetry."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Any honest caveat for our listener, thinking about transition-metal dichalcogenide excitons?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Both models are simplified — hydrogenic envelopes, a single phonon branch, one dimension in the lattice case — so treat this as a clean selection rule, not a quantitative prediction for any specific material. But a lot of monolayer excitons have electron and hole masses that are reasonably close, and this pair of papers gives a concrete mechanism for why that near-symmetry alone could buy a good chunk of linewidth protection, independent of the raw Fröhlich coupling strength, while also making the exciton a bit more fragile against thermal dissociation at high coupling or temperature."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Quick one — paper six, Siddiki, redoes a two-dimensional self-consistent screening calculation for a quantum Hall bar with extra contacts planted inside the channel, reproducing an older experiment."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Across the nu equals two plateau, as the field sweeps, those interior contacts pass through three regimes: connected to the current in a compressible bulk, floating once the bulk turns fully incompressible, and then fully isolated by closed incompressible rings that wall them off from both bulk and edge. The isolation window sits inside the plateau and shrinks with temperature. Solid confirmation of screening theory for the integer effect, nothing revolutionary."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven, Zaitsev and collaborators, puts single erbium atoms into solid neon and argon at six kelvin and studies their near-infrared photoluminescence — some of these inner-shell transitions fall right in the telecom bands."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The standout number is a line near fourteen thirty-seven nanometers in neon, with an inhomogeneous linewidth below twenty-two gigahertz, limited only by their spectrometer, and a photoluminescence lifetime up to seventy-nine milliseconds, close to the radiative limit. Annealing stretches that lifetime further. It's a candidate host for telecom-band spin-photon interfaces — a bit outside the two-dimensional-materials world, but relevant if you ever want a quantum memory that talks directly to fiber."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight, Guo and colleagues, grows epitaxial indium-arsenide quantum dots with a much thinner capping layer, ten and twenty nanometers instead of the usual fifty-plus."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Normally thinning the cap lets surface states wreck the linewidth, but they see emission lines up to five times narrower than previously reported at these distances, with unaffected lifetimes. That matters because strong near-field or plasmonic coupling needs the emitter within tens of nanometers of a metal structure, and now that's possible without trashing the dot's optical quality."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine, Jiang and collaborators, is a complexity-theory result on quantum impurity models — the small interacting cluster coupled to a noninteracting bath that shows up everywhere in dynamical mean-field theory."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They prove static properties, ground-state energy and the partition function, can be computed in polynomial time on a classical computer, improving the previous quasi-polynomial bound. But dynamical properties, specifically the nonequilibrium Green's function, are classically hard and easy on a quantum computer, even at finite temperature. So no quantum speedup for the static quantities people usually want, but a genuine one for out-of-equilibrium impurity physics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last brief, paper ten, is delightfully off-topic: superradiance from dye molecules stuck to the outside of an icosahedral virus shell, at room temperature."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They find the capsid itself has underdamped, low-frequency vibrational modes, and modeling suggests this motion is what keeps the dyes' excited states synchronized long enough to burst out light cooperatively, despite the collisional dephasing that should normally kill superradiance at room temperature. Not condensed matter in the usual sense, but a nice reminder that electron-vibrational coupling protecting coherence shows up in some very unexpected places."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the rundown for October second — a millikelvin cavity platform, lattice composite fermions, moiré parafermions, and a tidy account of sharp versus broad excitons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Back tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.00473",
+      "title": "Strongly coupled ultracompressed self-cavity plasmon polaritons at millikelvin temperatures",
+      "authors": [
+        "Luojia Zhang",
+        "Andrew T. Pierce",
+        "Xuepeng Wang",
+        "Simon Reinhardt",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Kin Fai Mak",
+        "Jie Shan",
+        "Debanjan Chowdhury",
+        "Valla Fatemi"
+      ],
+      "abstract": "Van der Waals heterostructures exhibit self-cavity resonances from sub-terahertz to terahertz frequencies and thus offer an attractive route toward realizing cavity-modified phases of matter. Spectroscopy of such systems calls for high frequency resolution at millikelvin temperatures, which is extremely challenging with existing methods. Here we demonstrate a new platform for realizing and probing such systems. Superconducting layers define self-cavity structures with electromagnetic volume compression of order 107. With an integrated graphene layer, we observe underdamped cavity plasmon polaritons at frequencies as low as 0.04 THz and which exhibit avoided crossings with cavity modes. To measure such spectra, we deploy a millikelvin-compatible sub-THz spectrometer based on a superconducting circuit. This work paves the way for simultaneous spectroscopy and transport measurements of cavity-matter hybrid systems at millikelvin temperatures.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.00473",
+      "tier": "deep",
+      "why": "Demonstrates strongly coupled cavity plasmon polaritons in a graphene/vdW self-cavity at millikelvin temperatures, directly relevant to cavity-coupled 2D material spectroscopy."
+    },
+    {
+      "id": "2610.01217",
+      "title": "Composite fermions in ideal Chern bands",
+      "authors": [
+        "Songyang Pu",
+        "Liangtao Peng",
+        "Shaffique Adam"
+      ],
+      "abstract": "The composite-fermion framework maps the strongly correlated fractional quantum Hall state onto a weakly interacting integer quantum Hall state in a reduced effective magnetic field. We ask how this framework is modified for fractional Chern insulators, where the role of a uniform magnetic field is replaced by the nonuniform Berry curvature of a Chern band. Specifically, we construct composite-fermion wave functions for Jain states and their quasiparticles and quasiholes in Aharonov-Casher bands, a widely used model for ideal Chern bands. We find that these states overlap closely with exact eigenstates over a broad range of field modulation. Using these wave functions, we demonstrate that the emergent composite-fermion band structure goes beyond the conventional picture of effective Landau levels, correctly capturing the quasiparticle dispersion. Remarkably, we find that an isolated quasiparticle band carries a total Berry flux that is different from a Landau level. These results establish a composite-fermion description for mobile fractional Chern insulator anyons and provide a framework to understand their stability.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.01217",
+      "tier": "deep",
+      "why": "Extends the composite-fermion framework to ideal Chern bands, giving a microscopic theory for fractional Chern insulator anyons relevant to moire flat-band physics."
+    },
+    {
+      "id": "2610.01486",
+      "title": "Parafermions in fractional Chern insulator-superconductor heterostructures: the role of spin polarization",
+      "authors": [
+        "Aaron Amire"
+      ],
+      "abstract": "Most proposals for Z3 parafermions in fractional quantum Hall-superconductor structures used the spin-unpolarized \\nu = 2/3 Halperin (1,1,2) state. The fractional quantum anomalous Hall (FQAH) states of twisted MoTe2 and rhombohedral graphene are believed to be spin- and valley-polarized Jain states, with the same topological order but a different spin structure. We analyze a trench between two polarized \\nu = 2/3 edges. Among the pairing and tunneling bilinears of the edge-mode electrons, exactly two of each have zero conformal spin. Pairing is compatible only with the neutral-mode superconductivity channel and tunneling only with neutral-mode backscattering, whereas in the unpolarized state singlet pairing and tunneling select the same channel. Since the two channels condense the same neutral anyon up to a local operator, the domain walls carry Z3 parafermions, with 3 protected states per pair, whether or not the neutral channel changes between regions; fixing the fermion parity does not enlarge this count. Before the neutral gap forms, pairing is at best marginal for repulsive inter-edge coupling unless an attractive neutral coupling favors its channel; once the gap has formed, both charge terms are relevant for an inter-edge Coulomb coupling below 7/25 of the intra-edge one. The superconductor must supply even-frequency, equal-spin, intravalley pairing, which an s-wave singlet superconductor with only Ising spin-orbit coupling does not provide at leading order, whereas chiral p+ip and f+if states do. The Z3 label is carried by a quasiparticle of the FQAH state, so no process confined to a junction whose tunneling segments are not FQAH can change it, and we expect a 6\\pi-periodic Josephson current with or without fixed fermion parity.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.01486",
+      "tier": "deep",
+      "why": "Analyzes how spin polarization in twisted MoTe2/rhombohedral graphene FQAH states modifies parafermion formation at superconductor junctions, a timely moire-FCI proposal."
+    },
+    {
+      "id": "2610.01600",
+      "title": "Why polar excitons stay sharp: parity protection of the center-of-mass recoil channel in exciton-phonon scattering",
+      "authors": [
+        "Michael O. Atambo"
+      ],
+      "abstract": "In polar semiconductors the Fröhlich interaction is the dominant electron–phonon coupling, yet excitonic resonances in materials such as halide perovskites remain anomalously sharp. We show that standard frozen-center-of-mass treatments of the exciton–phonon problem miss the decisive kinematic degree of freedom: restoring the exact center-of-mass (COM) recoil reveals a universally open, parameter-free 1s\\to1s absorption channel at recoil momentum q_*=\\sqrt2M\\rm ex\\hbar\\omega\\rm LO/\\hbar, whose rate scales as N\\rm LO(T). We prove that this recoil channel is controlled by destructive electron–hole interference: the recoil linewidth vanishes with the mass asymmetry as \\gamma\\rm LO\\rm recoil\\propto\\mathcalF1s,1s(q_*)2, and the elastic dressing obeys the exact suppression law SX/S\\rm ind=\\eta2(6-\\eta2)/5 within the hydrogenic Fröhlich model. The theory establishes a hierarchy of scattering regimes. In mass-asymmetric materials (GaAs, \\eta=-0.74) the recoil channel is active (\\gamma\\rm LO\\rm recoil=2.2~meV); in mass-symmetric materials (FAPbI3, \\eta=0; MAPbI3, \\eta=-0.11) it is killed by interference (0.00 and 0.12 meV), showing that the observed 27–40 meV perovskite linewidths cannot be accounted for by COM recoil and therefore require internal-state-changing and other inelastic channels, of which the constructive, \\eta-robust 1s\\to np resonance is the leading candidate within the present model. The Fröhlich constant \\alpha alone is therefore insufficient as a figure of merit: after projection onto the correlated exciton, the controlling parameters are \\eta, q_*aX, and the Rydberg detuning.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.01600",
+      "tier": "deep",
+      "why": "Identifies a parity-protected recoil channel explaining why excitons in polar/perovskite materials remain spectrally sharp despite strong Fröhlich coupling, core exciton-phonon physics."
+    },
+    {
+      "id": "2610.01594",
+      "title": "Mass-asymmetry-controlled exciton dressing and dissociation in a quantum lattice model",
+      "authors": [
+        "Michael O. Atambo"
+      ],
+      "abstract": "In a polar material, a neutral exciton couples to phonons through the sum of the electron and hole deformation potentials. Because the total source vanishes by charge neutrality, the elastic exciton-phonon vertex is regularized by electron-hole interference. Here we determine the non-perturbative fate of this interference by exact diagonalization of a Holstein-exciton model. By parameterizing the mass asymmetry to decouple it from the small-polaron atomic limit, we map a regime map comprising an internal dressing crossover and a dissociation boundary. We prove analytically and verify numerically that for equal masses, the symmetric exciton ground state is protected from phonon dressing by an exact exchange selection rule, provided the phonon source is odd under electron-hole exchange (the neutral case). As mass asymmetry increases, this selection rule is broken and the exciton acquires a strong local polaronic cloud. We show that the dissociation boundary, conversely, is set by a global energy balance between Coulomb binding and polaronic stabilization, and is nearly independent of the internal dressing. Paradoxically, the very symmetry that protects the exciton from dressing denies it polaronic stabilization, driving it toward dissociation at strong coupling. We discuss these results in the context of lattice exciton-polaron models and their implications for sharp versus broad excitonic lines in mass-symmetric versus mass-asymmetric polar semiconductors.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.01594",
+      "tier": "deep",
+      "why": "Companion theory paper showing how electron-hole mass asymmetry controls exciton-phonon dressing and dissociation, directly bearing on exciton linewidths in 2D/polar semiconductors."
+    },
+    {
+      "id": "2610.00326",
+      "title": "Interior contacts in a narrow quantum Hall bar: a two-dimensional self-consistent screening calculation of the current distribution",
+      "authors": [
+        "A. Siddiki"
+      ],
+      "abstract": "We present fully two-dimensional self-consistent calculations of the electron density, local filling factor and current distribution in a six-terminal GaAs/AlGaAs Hall bar of width W = 3 micrometers with two additional square contacts, A and B, placed on the channel axis and connected to the outside by air bridges, following the interior-contact experiment of Kendirlik et al. [Nat. Commun. 8, 14082 (2017)]. Within the screening theory of the integer quantized Hall effect, the Thomas-Fermi-Poisson equations are solved on the full device plane, including the probe arms and the depletion regions around the interior contacts, and the current is obtained from a local Ohm's law with a filling-factor dependent conductivity tensor, for source-drain and interior-contact excitation separately. Across the nu = 2 plateau the interior contacts pass through three regimes as the field is lowered: galvanically connected to the current path in a compressible bulk, floating in the Hall potential of a fully incompressible bulk, and isolated from both the bulk and the edge strips by closed incompressible rings encircling each contact. In the floating and isolated regimes the two-terminal resistance between the interior contacts rises by orders of magnitude. The isolation interval lies within the Hall plateau and ends before its low-field edge; its high-field end is sharply set by the disappearance of the incompressible bulk, while its low-field end shrinks with temperature and Landau-level broadening. The resistance between an interior contact and a perimeter probe approaches one half of the quantized Hall resistance across the plateau. The topology of the incompressible regions and the boundaries of the isolation interval are insensitive to the regularization of the local conductivity, to the grid and to moderate disorder, whereas the magnitude of the isolation resistance is not.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.00326",
+      "tier": "brief",
+      "why": "Self-consistent screening calculations reveal how interior contacts in a quantum Hall bar transition between galvanic, floating, and isolated regimes across a plateau."
+    },
+    {
+      "id": "2610.00918",
+      "title": "Telecom-Band Optical Transitions of Erbium Atoms in Rare-Gas Solids",
+      "authors": [
+        "Evgenii Zaitsev",
+        "Alec Dinerstein",
+        "Shan Zou",
+        "Charles Peretti",
+        "Yutian Wen",
+        "Wei Guo",
+        "Gregory V. Hartland",
+        "Yizhong Huang",
+        "Dafei Jin"
+      ],
+      "abstract": "Rare-earth (RE) atoms, such as erbium (Er), have inner-shell optical transitions in the near-infrared, some of which are in the telecom bands. These transitions are largely insensitive to the host environment due to effective shielding by the filled outer shells. Cryogenic rare-gas (RG) solids, such as solid neon (Ne) and argon (Ar), combine high chemical purity with a nearly nuclear-spin-free environment, making them attractive solid hosts for preserving optical and spin coherence. In this work, we isolate neutral Er atoms in solid Ne and Ar at 6 K and characterize their emission by steady-state and time-resolved photoluminescence (PL) spectroscopy. In both hosts, we observe several near-infrared transitions between 1000–1500 nm, including inner-shell emission in the telecom O and E bands. The 4f \\rightarrow 5d transition near 1299 nm forms a multiplet of narrow components, consistent with crystal-field splitting, and decays on a microsecond timescale. The 4f \\rightarrow 4f transition near 1437 nm shows a matrix shift below 1 cm-1 in both hosts. In solid Ne, its inhomogeneous linewidth is bounded by the spectrometer resolution to < 22 GHz, and its PL lifetime reaches up to 78.9 ms, close to the estimated radiative limit. Thermal annealing extends the 1437 nm lifetime in Ne and suppresses the phonon sidebands relative to the zero-phonon lines in Ar. These results identify RG solids as promising hosts for long-lived telecom-band Er emission and provide a foundation for future spin-photon interfaces and hybrid quantum architectures.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "physics.atom-ph",
+        "physics.optics"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.00918",
+      "tier": "brief",
+      "why": "Erbium atoms in solid neon show record-long telecom-band optical lifetimes, a promising spin-photon interface platform relevant to quantum photonics."
+    },
+    {
+      "id": "2610.02080",
+      "title": "Thin-capping layer epitaxial quantum dots for near-field quantum photonics",
+      "authors": [
+        "Yuting Guo",
+        "Jonathan Bar-David",
+        "Pasquale Cilibrizzi",
+        "Sung-Yul L. Park",
+        "Jin Dong Song",
+        "Luca Sapienza"
+      ],
+      "abstract": "Epitaxial quantum dots (QDs) are widely recognised as one of the best quantum light sources, given their good stability, brightness, quantum efficiency and coherence. To reach such properties, QDs are protected from potentially detrimental surface states by a relatively thick capping layer, typically exceeding 50nm. This prevents the implementation of near-field effects, like plasmonic-based ones, that can dramatically increase the light-matter interaction, since the control of the spontaneous emission dynamics and directionality of the emission can only occur if the emitter is in close proximity (typically tens of nanometers or less) from the metallic structures. In this work, we report the growth and optical characterisation of InAs/GaAs QDs with GaAs capping layer thickness of 10nm, 20nm, and a more standard 95nm. Remarkably, we observe emission linewidths up to 5 times smaller than previously reported, with unperturbed excitonic lifetimes. These results demonstrate that the epitaxial QD's high optical quality can be maintained even when the emitters are at reduced distances from the surface, opening the path for the exploration of near-field light-matter interactions with coherent and stable emitters, suitable for quantum technology applications.",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.02080",
+      "tier": "brief",
+      "why": "Ultra-thin capping layers on epitaxial quantum dots preserve narrow linewidths while enabling near-field plasmonic coupling, opening new light-matter interaction regimes."
+    },
+    {
+      "id": "2610.02167",
+      "title": "Polynomial-time classical and quantum simulation of quantum impurity models",
+      "authors": [
+        "Jiaqing Jiang",
+        "Nathan Ju",
+        "Ojas Parekh",
+        "Chaithanya Rayudu",
+        "Andrew Zhao"
+      ],
+      "abstract": "Quantum impurity models are paradigmatic models of interacting quantum matter, as well as key computational primitives for modern electronic-structure methods. They describe a small subsystem of interacting fermions coupled to a large, noninteracting bath. We perform a comprehensive study of the computational complexity of simulating impurity models, delineating the boundary between classical and quantum tractability for this class of problems. Our main finding is that static properties of quantum impurity models can be calculated efficiently on a classical computer. Specifically, we give classical algorithms that (1) estimate the ground-state energy to additive precision \\delta in time poly(n,\\delta-1), and (2) estimate the partition function at inverse temperature \\beta to relative precision \\delta in time poly(n,\\beta,\\delta-1), where n is the system size. These results improve the previous best-known complexity for ground-state energy estimation from quasipolynomial to polynomial time, while establishing for the first time rigorous polynomial-time guarantees for simulating impurity models in thermal equilibrium. On the other hand, we find that simulating dynamical properties of impurity models is hard for classical computers but easy on a quantum computer. As a canonical example, we show that computing their nonequilibrium Green's functions captures the full power of quantum computation, even at finite temperature. Taken together, our results rule out superpolynomial quantum speedups for computing static properties, but provide an avenue for quantum advantage in simulating impurity physics out of equilibrium.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.str-el",
+        "cs.CC",
+        "cs.DS",
+        "physics.chem-ph"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.02167",
+      "tier": "brief",
+      "why": "Surprising complexity result: static properties of quantum impurity models are classically tractable in polynomial time, while dynamics require quantum computation."
+    },
+    {
+      "id": "2610.00739",
+      "title": "How Superradiance Survives Molecular Noise inside Virus Capsids",
+      "authors": [
+        "Tianran Li",
+        "Irina Tsvetkova",
+        "Matthew Brauser",
+        "Amala Raj",
+        "Philip Shushkov",
+        "Bogdan Dragnea"
+      ],
+      "abstract": "Excited organic dyes chemically bound to an icosahedral virus shell can spontaneously synchronize and emit a superradiant burst of light. The mechanism that allows it to occur at room temperature, despite collisional dephasing and inhomogeneous broadening, is not understood. Few other known low-dimensional condensed matter systems exhibit room-temperature superradiance (SR). In the fluctuation-prone environment of molecular-based systems, electron–vibrational coupling has been proposed to play a central role. Here, we addressed experimentally the existence of underdamped virus capsid phonon-like modes and theoretically their involvement in the transition from uncorrelated to cooperative emission. We find that SR-active dye-labeled capsids exhibit underdamped low-frequency oscillations that modulate the dye excited-state response, and modeling shows how such capsid motion can promote the collective polarization required for superradiant emission.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.00739",
+      "tier": "brief",
+      "why": "A striking biophysics finding that virus-capsid phonon-like modes enable room-temperature superradiance, a rare condensed-matter-like effect in a biological system."
+    }
+  ]
+}

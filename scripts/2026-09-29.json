@@ -1,0 +1,825 @@
+{
+  "date": "2026-09-29",
+  "format": "dialogue",
+  "n_papers": 67,
+  "episode_title": "arXiv Morning: Nano & Correlated — September 29, 2026",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Morning. It's September twenty-ninth, and the archive dropped about sixty-seven new papers overnight."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Busy one. We've got real-space imaging of moiré excitons, a theory proposal for electrically switchable one-dimensional excitons, two different routes to non-Abelian anyons — one via edge interferometry, one via a lattice model in graphene — and a quantized layer Hall effect built from moiré engineering. Plus a pile of quantum Hall and correlated-electron briefs."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the one that's going to matter for anyone doing moiré exciton spectroscopy. Paper one, Dandu and coauthors, on reconstruction-driven localization of moiré excitons in tungsten diselenide on tungsten disulfide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The question they're going after is basically foundational. We've all gotten used to reading a new resonance in PL or absorption as proof that an exciton is localized at a particular stacking site in the moiré cell. But nobody had actually watched that localization happen in real space and tied it back to the atomic structure."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So what did they do? They used cryogenic monochromated electron energy loss spectroscopy — basically STEM-EELS at low temperature with high enough energy resolution to catch excitonic transitions directly in real space, with sub-nanometer resolution. They combined that with GW-Bethe-Salpeter-equation calculations from first principles and standard optical spectroscopy, across a range of twist angles in WSe2 on WS2."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the twist angle matters because it sets how much atomic reconstruction happens — at small twist angles the moiré superlattice relaxes into large commensurate stacking domains separated by solitonic walls, rather than staying a smooth continuous modulation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and the surprising result is that the two things people assumed were coupled — new spectral resonances appearing, and real-space exciton confinement — actually decouple. You can see a new moiré exciton peak in the spectrum without the exciton being spatially localized in the way people assumed. What actually drives the confinement is the degree of structural reconstruction and external strain, not the optical signature by itself."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the catch is that half the community's default interpretation — new peak equals localized site-selective exciton — isn't reliable on its own. You need the structural information too."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's the useful part for device work. If localization tracks reconstruction and strain rather than twist angle alone, that gives you a design handle — you can engineer how confined a moiré exciton is by controlling strain, independent of just picking a twist angle. For anyone building strain-tunable quantum emitters or trying to pin down single moiré trap sites for polariton or single-photon work, that's a real design principle, not just a characterization result."
+    },
+    {
+      "speaker": "Leo",
+      "text": "It also means claims of moiré-trapped excitons in past optical-only studies probably need a second look, at least for the small-angle, heavily reconstructed regime."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's paper one in the show notes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Next is a theory paper, single author, Kitaura, on electrically switchable one-dimensional quadrupolar excitons in a lateral double heterojunction. Paper two."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is a lateral in-plane structure, not a vertical stack — a single monolayer patterned as tungsten disulfide, then a strip of molybdenum disulfide, then tungsten disulfide again. Type-two band alignment at both interfaces, so you get charge-transfer excitons confined near each junction, and with two junctions close together they can couple."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what's actually new here relative to the usual interlayer exciton story in vertical heterobilayers?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The geometry. With two equivalent interfaces and zero field, the electron-hole pair can tunnel between the left and right junction, and that coupling splits the exciton into even and odd parity states — a doublet — each of which has zero net dipole moment because the charge is symmetric across the two interfaces. That's the quadrupolar character in the title."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then the electric field does what, converts it into something more familiar?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right — turn on a perpendicular field and the lower doublet state smoothly morphs from a quadrupolar superposition with a quadratic Stark shift into a conventional single-interface dipolar exciton with a roughly linear Stark shift. Kitaura solves this with an effective-mass two-particle Hamiltonian and screened Coulomb interaction, and for a representative one-and-a-half nanometer molybdenum disulfide strip gets binding energies around 104 and 100 milli-electron-volts for the two states, a doublet splitting of 4.6 milli-electron-volts, and a crossover field near 0.87 volts per micrometer where the character switches over."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The catch, obviously, is this is pure theory — an effective-mass continuum model, no attempt at growth or measurement. Whether you can actually pattern a clean enough lateral WS2-MoS2-WS2 junction with atomically sharp interfaces is a separate materials-science problem."
+    },
+    {
+      "speaker": "Ava",
+      "text": "True, but conceptually it's appealing for anyone thinking about voltage-controlled dipole switching for exciton-based quantum optics — a single in-plane knob that toggles between a dark, quadrupolar-like configuration and a bright, field-aligned dipolar one, all within a single monolayer rather than needing a full vertical stack. Paper two in the show notes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Switching to quantum Hall physics — paper three, Puster, Thamm, and Rosenow, on extracting the anyonic exchange phase from co-tunneling through an open quantum dot."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is about actually measuring the fractional statistics of Laughlin quasiparticles, which is notoriously hard because interferometry experiments are so sensitive to Coulomb charging and unwanted area changes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's their trick? They set up three chiral edge segments connected pairwise by three quantum point contacts, so that depending on the applied voltages, one segment behaves as an open quantum dot with a continuous spectrum — resonant tunneling without needing to fine-tune a gate. It's a simplified version of a previously proposed antidot interferometer."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they compute this how — is it a full simulation or analytic?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Analytic, mostly. Non-equilibrium Keldysh calculation to third order in the tunneling amplitudes. The key physics is that the interference current has a co-tunneling contribution where two quasiparticles get exchanged, and for Laughlin states that exchange phase — theta equals pi times nu, so for filling one-third that's pi over three — shows up directly as a phase shift between Aharonov-Bohm oscillations measured under two different voltage configurations."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the payoff is a closed-form expression at finite temperature and finite separation between the point contacts, and a robust phase-plateau difference you can read the exchange phase off of, provided voltage-induced changes to the enclosed area are well screened."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And if you're worried about that screening assumption, they also propose measuring interference currents at two drains simultaneously, which avoids needing that assumption altogether — time-of-flight phases can be extracted analytically, with a systematic error of just a few percent."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The catch is this is still a proposal — a concrete, quantitative one, with error budgets, but it needs an experimental group to actually build the triple-point-contact geometry and get the co-tunneling regime clean. Still, a few-percent systematic error on an anyonic phase measurement would be a real result if it holds up. Paper three."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four is in a similar spirit but chasing non-Abelian anyons without any magnetic field at all — Mora-Soto and coauthors, Read-Rezayi fractional Chern insulators in modulated Bernal graphene."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Fibonacci anyons, for anyone who hasn't touched topological quantum computing lately, are the excitations of the Z-three Read-Rezayi state, and they're universal for topological quantum computation — unlike the more commonly discussed Ising anyons from the Moore-Read state, which aren't quite universal on their own."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, and the problem has always been that the clean microscopic realizations of Read-Rezayi physics live in the fractional quantum Hall effect, which needs a large magnetic field. Zero-field fractional Chern insulators are the zero-field analog, but finding a realistic lattice model that actually hosts this delicate non-Abelian phase has been elusive."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Their platform is periodically modulated Bernal bilayer graphene with gate-screened Coulomb interactions — so an electrostatic superlattice potential imposed on ordinary bilayer graphene, no twist needed. They use a method called target-phase optimization together with band-projected exact diagonalization to search parameter space efficiently rather than blindly."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And what do they find?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "At filling three-fifths, a region of parameter space where the ground state is consistent with a Read-Rezayi fractional Chern insulator. The partially filled band involved is part of a two-band complex that mimics the geometry of the lowest and first Landau levels, and at filling one-half the same setup gives a state consistent with Moore-Read."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The catch is the usual one for these exact-diagonalization studies — small system sizes, and 'consistent with' rather than a definitive proof, since these are delicate, closely competing phases. But it's a concrete, realistic microscopic proposal in a material people can actually make, and it doubles as a demonstration that this target-phase optimization method is a practical tool for hunting these phases in messy, realistic models rather than idealized flat-band toy Hamiltonians."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Worth noting the same group has a companion paper on chiral superconductivity in Chern bands using the same method — that's in our brief round-up. Paper four in the show notes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five — Hu, Dai, and Xie, moiré quantum layer Hall effect."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is about MnBi2Te4, the topological antiferromagnet that's given us quantized anomalous Hall and axion insulator physics in odd and even numbers of layers respectively. In even-layer films it already shows a layer Hall effect — an anomalous Hall response that's opposite in sign on the top versus bottom layer, coming from layer-locked Berry curvature, tunable by a vertical displacement field."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But that layer Hall effect isn't quantized in the existing experiments, right?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and that's the gap this paper is trying to close, theoretically. They propose placing moiré control layers — essentially an electrostatic superlattice, not necessarily a magnetic or topological material itself — close to the top and bottom surfaces of the MnBi2Te4 film, without breaking the combined parity-time symmetry of the system."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the moiré potential does what exactly?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "It acts like an emergent layer-dependent U-one gauge field, generating opposite periodic pseudomagnetic fields on the top and bottom layers. The result is a state with zero net Hall conductance overall, but a quantized layer Hall conductance of e-squared over h — the layer index effectively plays the role a real Hall conductance would in a normal Chern insulator."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's a genuinely new quantized transport observable, distinct from charge Hall conductance."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Then they show a weak gate electric field breaks that parity-time symmetry and drives the system into an ordinary layer-polarized quantum anomalous Hall phase. And if you only put the moiré control layer on one surface instead of both, you get that layer-polarized quantum anomalous Hall state even with no external field at all."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The catch is this is a theory proposal — it needs someone to actually fabricate a close-proximity moiré control layer against a MnBi2Te4 surface and measure a layer-resolved Hall signal, which is not a trivial transport measurement. But conceptually it's a nice example of moiré engineering being used as a tool to sculpt Berry curvature in a completely different material system, not just twisted graphene or TMDs."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good bridge for anyone tracking how moiré tricks are migrating out of the usual van der Waals playbook into magnetic topological insulators. Paper five in the show notes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Onto the briefs. Paper six, Grossi Fonseca and coauthors, zoology of chiral superconductors in Chern bands. Same target-phase optimization method as paper four, this time hunting for superconducting instabilities in a Chern band with strong repulsive interactions, motivated by the chiral superconductivity hints seen in rhombohedral graphene and twisted bilayer molybdenum ditelluride."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They find a whole family of chiral pairing states — p plus or minus i p and f plus or minus i f superconductors of both electrons and holes at fillings two-thirds and one-half — and for the first time a direct transition between a chiral superconductor and a composite Fermi liquid. Useful context if you're trying to make sense of the superconductivity showing up next to fractional Chern insulators in twisted TMD experiments."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven, Jiang, Hu, and Yang, on emergent low-energy many-body Hilbert spaces in Chern bands. It's a more formal piece — they show that in the flat-band, vanishing-bandwidth limit, realistic interactions pick out a specific nested subspace of many-body states, built from what they call conformal Hilbert spaces, and that this explains why band mixing stays suppressed even at strong interaction in nearly ideal Chern bands."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good structural backdrop for why fractional Chern insulator calculations in twisted TMDs and graphene keep landing on the Landau-level-like anyonic states people expect, even away from the idealized flat-band limit."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight, Kalmár and coauthors from the Makk group, capacitance sensing in bilayer graphene with gate reflectometry. They read out the displacement-field-induced band gap in hBN and tungsten diselenide-encapsulated bilayer graphene through a microwave resonator coupled to the top gate, rather than the usual source-drain or bridge capacitance bridge setup."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The selling point is that this RF signal is less sensitive to disorder-driven percolating transport channels than DC transport, and they show it can even pick out small-angle alignment between the hBN and the bilayer graphene flake. A nice scalable tool for anyone chasing topological states in bilayer graphene without depending on clean DC transport."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine, Bilamour and coauthors, quantum-geometric amplification of nonperturbative interaction scales. This is a theory result about quadratic band touchings — the kind you get in kagome lattices — where weak interactions generate an exponentially small gap that no finite order of perturbation theory can capture."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They show the singular quantum geometry right at the gapped band touching converts that exponentially small, essentially invisible energy scale into an algebraically growing, much more visible signal in the optical sum rule — specifically the inverse-frequency moment of the optical conductivity — even though the conductivity itself and its absorption threshold stay exponentially suppressed. So quantum geometry becomes a magnifying glass for a scale that's otherwise buried beyond perturbation theory. They check it numerically in an interacting kagome model with a loop-current quantum anomalous Hall instability."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper ten, Zhang and coauthors, dynamical transition in non-Hermitian Chern insulators. They find that a wave packet launched at the edge of a non-Hermitian Chern insulator doesn't always stay pinned to the boundary the way it would in the Hermitian case — depending on the competition between ordinary topological edge localization and the non-Hermitian skin effect, it can instead leak into the bulk."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The catch they flag themselves: the generalized Brillouin zone framework still correctly predicts the topological phase transitions, it just doesn't tell you about this separate dynamical transition in wave-packet propagation. More of a formal transport curiosity than something with an immediate 2D-optics connection."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eleven, Barari and coauthors, the Kitaev-Heisenberg model on the square-hexagon-dodecagon lattice. A spin-one-half model combining Kitaev and Heisenberg exchange on this less common lattice geometry, mapped onto Majorana fermions in a Z-two gauge field in the pure Kitaev limit."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They find a toric code phase at one special point in the phase diagram, plus, once Heisenberg terms are switched on, four different magnetically ordered phases mapped out with tensor-network and exact-diagonalization methods. Solid quantum-spin-liquid bookkeeping, more relevant if you're tracking Kitaev material candidates than 2D optics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper twelve, Rui-Xing Zhang, quantum geometric origin of Yu-Shiba-Rusinov states. Yu-Shiba-Rusinov states are the bound states a magnetic impurity creates inside an s-wave superconducting gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The claim is that the number, energy, and symmetry of these bound states are controlled by the quantum geometry of the normal-state Bloch bands — specifically a momentum-space-averaged band projector — so a superconductor with richer quantum geometry can host more Yu-Shiba-Rusinov channels than one with the same band dispersion but trivial geometry. They apply it to monolayer niobium diselenide and predict three symmetry-distinct channels depending on whether the impurity sits at a niobium or selenium site — a concrete proposal for probing quantum geometry with local spectroscopy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper thirteen, Yuan and coauthors, superfluid spin transport in the van der Waals antiferromagnet chromium trichloride. They report spin superfluidity in this easy-plane antiferromagnetic insulator using a nonlocal magnon transport device, seeing ultra-long-range spin transport out to around ninety micrometers under canted antiferromagnetic configurations."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Strong magnetic fields and higher temperature kill the superfluid state and bring back ordinary exponentially decaying magnon transport. Interesting for the spintronics-in-2D-magnets crowd, less central for optics, but chromium trichloride keeps showing up as a genuinely useful platform."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper fourteen, Zhou and coauthors, high-fidelity geometric quantum gates in germanium quantum dots, past ninety-nine-point-nine percent. They find ordinary gate-set-tomography sequences are limited by off-resonance noise during idle gates, and geometric quantum computation — using the gate's built-in noise resilience — pushes fidelities above ninety-nine percent across a wide Rabi frequency range and even under several megahertz of microwave detuning."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Solid engineering result for semiconductor spin qubits, not a 2D-optics paper, but worth knowing the germanium hole-spin platform keeps climbing toward fault-tolerance thresholds."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last brief, paper fifteen, Mirone, on cerium L-three X-ray absorption near-edge spectroscopy. It's a dense ab initio study reconciling local multiplet physics with collective core-hole screening in cerium oxide and cerium phosphate, computing screening-state energy splittings and pre-edge gaps that land close to experimental values."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Pretty far from our usual beat, but it's a nice methodological result if you ever need to interpret rare-earth X-ray spectra — the takeaway is that distinct spectral features can come from collective screening effects rather than a genuine change in the local electron configuration."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Quick round-up of the rest. Cottet and Kontos propose a wide-mass-scanning setup for axion dark matter detection using a phase-resolved protocol. Schuster and Elben look at the classical simulability of quantum dynamics experiments."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Zhou and coauthors have a companion paper on in-plane qubit operation past ninety-nine percent fidelity, same germanium platform as paper fourteen. Huang and coauthors characterize the electronic and topological structure of the cerium-based honeycomb ferromagnet Ce2Zn6Ge3."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two papers on chiral Weyl-Kondo semimetals and circular photogalvanic effects, one from Fang and coauthors on a prototype Kondo lattice system, one from Arushi and coauthors specifically on cerium gallium germanide. Morineau and coauthors report unconventional superconductivity in the locally non-centrosymmetric heavy-fermion compound CeNi2As2."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Agarwalla and Kulkarni study full counting statistics in fermionic lattices with localized particle gain. Araki and coauthors demonstrate colossal, tunable near-field thermal radiation using a sensitive annular micro-thermocouple junction."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And Abdullah and coauthors close it out with plasmon-enhanced second-harmonic generation in atomically thin crystalline silver nanostructures — nonlinear plasmonics in ultrathin metal, adjacent to a lot of the nonlinear TMD optics work."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the lineup for the twenty-ninth. The real-space moiré exciton imaging and the two anyon papers are probably the ones worth reading in full over coffee."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Agreed. See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2609.34104",
+      "title": "(Sub)nanoscale Visualization of Reconstruction-Driven Moir\\'e Exciton Localization and Delocalization",
+      "authors": [
+        "Medha Dandu",
+        "Sriram Sankar",
+        "Giovanny Espitia",
+        "Rwik Dutta",
+        "Patrick J. Hays",
+        "Daria Blach",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "James R. Chelikowsky",
+        "Seth Ariel Tongay",
+        "Peter Ercius",
+        "Jordan A. Hachtel",
+        "Mit H. Naik",
+        "Archana Raja",
+        "Sandhya Susarla"
+      ],
+      "abstract": "Spectral fingerprints in optical absorption and emission have typically been used as a signature of exciton localization in twisted moir\\'e bilayers. However, the mechanism by which excitons become confined to specific stacking sites and their associated optical signature is experimentally unresolved. Here, we directly visualize in real space how tuning the change in extent of structural reconstruction leads to localization and delocalization of moir\\'e excitons in the WSe2/WS2 moir\\'e superlattice. Using cryogenic monochromated electron energy loss spectroscopy, together with first-principles GW-Bethe Salpeter equation calculations and optical spectroscopy, we uncover the physical mechanism that drives the correlation between twist-angle-dependent structural transformations, the real-space localization of moir\\'e excitons, and their optical signatures. Surprisingly, and in contrast to the prevailing understanding, we show that the emergence of new moir\\'e exciton resonances in the optical spectra alone is insufficient to establish exciton localization. Instead, the extent of structural reconstruction and external strain drives exciton localization, leading to new design principles for engineering moir\\'e excitons and strain-aware quantum optoelectronic devices.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.34104",
+      "tier": "deep",
+      "why": "Direct real-space visualization via cryo-EELS resolves the long-standing question of how structural reconstruction drives moiré exciton localization versus mere spectral signatures, a core issue for TMD heterobilayer optics."
+    },
+    {
+      "id": "2609.32392",
+      "title": "Electrically switchable one-dimensional quadrupolar excitons in lateral double heterojunctions",
+      "authors": [
+        "Ryo Kitaura"
+      ],
+      "abstract": "Two neighboring lateral interfaces provide a spatial degree of freedom for controlling one-dimensional charge-transfer excitons within a single semiconductor monolayer. We investigate a type-II WS2-MoS2-WS2 double heterojunction using an effective-mass two-particle Hamiltonian with a screened Coulomb interaction. For equivalent left and right interfaces at zero electric field,inter-interface coupling produces energetically split even- and odd-parity exciton states, each with zero permanent dipole. An electric field perpendicular to the interfaces continuously converts the lower state from a quadrupolar superposition with a quadratic Stark shift into a predominantly single-interface dipolar exciton with an approximately linear shift. The spatially resolved calculation gives binding energies of approximately 104 and 100 meV, a doublet splitting of 4.6 meV, and a crossover field of 0.87 V/um for a representative 1.5-nm MoS2 strip. Projection tests show that the lowest doublet controls the response near this crossover. Strip width tunes the coupling much more strongly than the binding energy, providing geometric control of the low-field Stark sensitivity. These results establish a continuum-model route to electrically reconfigurable one-dimensional quadrupolar excitons.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.32392",
+      "tier": "deep",
+      "why": "Theoretical proposal for electrically switchable 1D quadrupolar excitons in a WS2-MoS2-WS2 lateral double heterojunction offers a new dipole-engineering knob directly relevant to exciton Stark-tuning in monolayer TMDs."
+    },
+    {
+      "id": "2609.35480",
+      "title": "Extracting the anyonic exchange phase from co-tunneling through an open quantum dot",
+      "authors": [
+        "Felix Puster",
+        "Matthias Thamm",
+        "Bernd Rosenow"
+      ],
+      "abstract": "The elementary excitations of fractional quantum Hall states obey anyonic statistics, described by an exchange phase $\\theta$ intermediate between the bosonic and fermionic values. We study an interferometer in which three chiral edge segments are pairwise connected by three quantum point contacts, so that, depending on the applied voltages, one of the segments acts as an open quantum dot: its spectrum is continuous, and tunneling through it is resonant without any gate tuning. This setup realizes the co-tunneling mechanism of a recently proposed antidot interferometer in a particularly simple setting. Using a non-equilibrium Keldysh calculation to third order in the tunneling amplitudes, we show that the interference current contains a co-tunneling contribution in which two quasiparticles are exchanged, so that for Laughlin states the exchange phase $\\theta=\\pi\\nu$ appears as the phase shift between the Aharonov-Bohm oscillations measured in two voltage configurations. We obtain a closed analytic expression for the interference current at finite temperature and finite separation between the quantum point contacts and show that, provided voltage-induced changes of the enclosed area are sufficiently screened, the exchange phase can be extracted from a robust phase-plateau difference. Alternatively, simultaneous measurements of the interference currents at two drains avoid this screening assumption and time-of-flight phases can be quantified analytically, allowing the exchange phase to be extracted by a controlled extrapolation with a few-percent systematic error.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.35480",
+      "tier": "deep",
+      "why": "A concrete Keldysh calculation shows how the anyonic exchange phase can be extracted from co-tunneling through an open quantum dot in a simple three-QPC interferometer, a clean new route to a long-sought FQH observable."
+    },
+    {
+      "id": "2609.31846",
+      "title": "Read-Rezayi fractional Chern insulators in modulated Bernal graphene",
+      "authors": [
+        "Ruth Mora-Soto",
+        "Andr\\'e Grossi Fonseca",
+        "Raul Perea-Causin",
+        "Hui Liu",
+        "Emil J. Bergholtz",
+        "Marin Solja\\v{c}i\\'c"
+      ],
+      "abstract": "Fibonacci anyons provide a universal platform for topological quantum computation, and emerge as low-energy excitations in the $\\mathbb{Z}_3$ Read-Rezayi phase in the fractional quantum Hall effect. However, realistic microscopic realizations of this phase in the absence of a magnetic field have remained elusive. We study a model of periodically modulated Bernal bilayer graphene with gate-screened Coulomb interactions. Using the recently developed target-phase optimization method in conjunction with band-projected exact diagonalization, we identify at filling $\\nu=3/5$ a region of parameter space whose ground state is consistent with a Read-Rezayi fractional Chern insulator. The partially filled band from which it arises is a part of a two-band complex which mimics geometric aspects of the lowest and first Landau levels, with the ground state at $\\nu=1/2$ consistent with the Moore-Read state. Our results suggest that modulated Bernal graphene can realize delicate non-Abelian fractional quantum Hall states at zero magnetic field, while demonstrating target-phase optimization as a practical route to discovering such phases in realistic, high-dimensional microscopic models.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.31846",
+      "tier": "deep",
+      "why": "Identifies a realistic zero-field route to a non-Abelian Z3 Read-Rezayi (Fibonacci anyon) fractional Chern insulator in modulated Bernal bilayer graphene, extending your moiré/FQH interests toward topological quantum computation platforms."
+    },
+    {
+      "id": "2609.34941",
+      "title": "Moir\\'{e} Quantum Layer Hall Effect",
+      "authors": [
+        "Jin-Xin Hu",
+        "Wen-Bo Dai",
+        "X. C. Xie"
+      ],
+      "abstract": "Even-layer topological antiferromagnetic thin films such as MnBi$_2$Te$_4$ exhibit an unconventional layer Hall effect (LHE) arising from a layer-locked Berry curvature. This effect manifests as a layer-polarized anomalous Hall effect that can be controlled by a vertical displacement field. However, achieving a quantized version of the LHE remains experimentally challenging. In this work, we propose that moir\\'{e} engineering, using an electrostatic superlattice potential from control layers, can realize the quantum layer Hall effect (QLHE). Specifically, by placing moir\\'{e} control layers in close proximity to the surfaces of a MnBi$_2$Te$_4$ thin film without breaking $PT$ symmetry, the resulting system exhibits a vanishing net Hall conductance but a quantized layer Hall conductance of $e^2/h$. A weak gate electric field then breaks $PT$ symmetry and drives the system into a layer-polarized quantum anomalous Hall (QAH) phase. Furthermore, when a single control layer is introduced on only one surface, the layer-polarized QAH emerges even in the absence of an external electric field. We identify the microscopic origin of the QLHE as an emergent layer-$U(1)$ gauge field generated by the scalar moir\\'{e} potential, which in turn produces opposite periodic pseudomagnetic fields on the top and bottom layers. Our work provides a feasible pathway toward realizing the QLHE in antiferromagnetic thin films.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.34941",
+      "tier": "deep",
+      "why": "Proposes moiré-engineered quantization of the layer Hall effect in MnBi2Te4 thin films, linking moiré superlattice physics with topological quantum transport in a way that connects directly to your secondary QH/moiré interests."
+    },
+    {
+      "id": "2609.31839",
+      "title": "Zoology of chiral superconductors in Chern bands",
+      "authors": [
+        "Andr\\'e Grossi Fonseca",
+        "Aidan Reddy",
+        "Ahmed Abouelkomsan",
+        "Liang Fu",
+        "Marin Solja\\v{c}i\\'c"
+      ],
+      "abstract": "Evidence for chiral superconductivity has recently been observed in several van der Waals systems including rhombohedral multilayer graphene and twisted bilayer MoTe$_2$. In the latter, superconductivity emerges at carrier densities near a fractional Chern insulator. This raises the question of what kinds of superconductors may emerge in a system of electrons in a topological band with strong repulsive interactions. Here, we adapt the target-phase optimization method to search for chiral superconductors in a minimal model of interacting electrons in a Chern band. We construct a differentiable loss function for superconductors from the sign oscillation of the pair-binding energy and combine gradient-based optimization with a rigorous screening procedure to identify and characterize superconductors. Applying this framework within exact diagonalization to spinless electrons in periodically modulated Landau levels with screened Coulomb interactions, we uncover a broad family of chiral superconducting phases. At filling $\\nu=2/3$, we recover the previously identified $f-\\mathrm{i} f$ hole superconductors and find additional $p\\pm \\mathrm{i} p$ and $f+\\mathrm{i} f$ superconductors of both electrons and holes, occurring near and far from the limit of ideal quantum geometry. At $\\nu=1/2$, we identify $p- \\mathrm{i} p$ electron and $f-\\mathrm{i} f$ hole superconductors and find, for the first time, a direct transition between chiral superconductors and composite Fermi liquids. Our results reveal that chiral superconductivity in Chern bands comprises a diverse landscape of competing pairing instabilities and establish target-phase optimization as a general strategy for searching for quantum phases in complex interacting systems.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.31839",
+      "tier": "brief",
+      "why": "A systematic target-phase-optimization search uncovers a rich zoo of chiral superconductors competing with composite Fermi liquids in Chern bands, relevant background for twisted-MoTe2 superconductivity."
+    },
+    {
+      "id": "2609.31831",
+      "title": "Emergent low-energy many-body Hilbert spaces in Chern bands",
+      "authors": [
+        "Chen-Xin Jiang",
+        "Zi-Xiang Hu",
+        "Bo Yang"
+      ],
+      "abstract": "We show that in Landau levels and more generic Chern bands, the most relevant many-body subspace selected by realistic two-body interactions alone (e.g., in the limit of vanishing bandwidth and band gap) depends strongly on the particle density and can be constructed systematically. Using the well-defined hierarchical structure of conformal Hilbert spaces (CHS), each with a highest-density vacuum state, we compute, for both fermionic and bosonic systems, the many-body quantum metric that quantifies the interaction energy scales of these subspaces. For a large family of short-range, Coulomb-based interactions, particles preferentially occupy the many-body states in the smallest accommodating CHS. This allows us to describe the low-energy physics of the interacting system in terms of the appropriate anyonic degrees of freedom. Our results also explain why, in any Chern band (in lattice or continuum systems), band mixing tends to be suppressed even in the limit of strong interaction; this suppression is stronger when the band deviates less from the ideal trace condition and when the two-body interaction is shorter-ranged.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.31831",
+      "tier": "brief",
+      "why": "Derives a hierarchical 'conformal Hilbert space' structure explaining why band mixing is suppressed in strongly interacting Chern bands, giving conceptual grounding for FCI/moiré phenomenology."
+    },
+    {
+      "id": "2609.35125",
+      "title": "Capacitance sensing in bilayer graphene with gate reflectometry",
+      "authors": [
+        "Tam\\'as Kalm\\'ar",
+        "Gerg\\H{o} F\\\"ul\\\"op",
+        "B\\'alint Szentp\\'eteri",
+        "Oliv\\'er K\\\"urt\\\"ossy",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Szabolcs Csonka",
+        "P\\'eter Makk"
+      ],
+      "abstract": "In the search for topological states in bilayer graphene, capacitance measurement methods are widely utilized in bridge type readouts or source-drain reflectometry setups. In this paper we demonstrate an alternative readout method based on gate reflectometry. We probe the capacitance of a BLG flake encapsulated between hBN and WSe$_2$ through a lumped-element LC resonator coupled to the top gate electrode of the heterostructure. The microwave readout reliably tracks the opening of a displacement field-induced band gap in the device. Compared to simultaneous DC transport measurements, the RF signal proves to be less affected by the percolating transport channels caused by sample disorder. Furthermore, we use the gate based readout to identify a small-angle alignment between the hBN and BLG flake. From the fixed frequency microwave readout, we extract the device capacitance change between the insulating and metallic state of the bilayer and utilize a comprehensive capacitance network model to explain its origin. Finally, we propose an advanced, multiplexed double-resonator readout scheme capable of simultaneously measuring top and bottom gate capacitances to extract the layer polarizability of the system. This work establishes gate reflectometry as a highly scalable and powerful methodology for exploring topological phases and internal charge dynamics in van der Waals heterostructures.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.35125",
+      "tier": "brief",
+      "why": "Demonstrates gate reflectometry as a scalable capacitance-sensing readout for band-gap opening and twist-angle alignment in bilayer graphene/WSe2 heterostructures, a useful technique complement to optical probes."
+    },
+    {
+      "id": "2609.34607",
+      "title": "Quantum-Geometric Amplification of Nonperturbative Interaction Scales",
+      "authors": [
+        "Stefano Bilamour",
+        "Ren\\'e Meyer",
+        "Johanna Erdmenger",
+        "Domenico Di Sante"
+      ],
+      "abstract": "Weak interactions at a two-dimensional quadratic band touching (QBT) can generate an exponentially small symmetry-breaking gap, $m\\sim e^{-A/V_1}$, that cannot be captured by every finite order of perturbation theory. We show that the singular quantum geometry of the gapped QBT converts this beyond-all-orders scale into an algebraically enhanced response. The quantum metric develops a momentum-space hot spot whose Brillouin-zone integral diverges logarithmically, and therefore grows algebraically when the gap is dynamically generated by interactions. Through the inverse-frequency Souza--Wilkens--Martin optical sum rule, the same amplification appears in the negative-first longitudinal optical moment, even though the ordinary optical conductivity remains $O(e^2/\\hbar)$ and its absorption threshold is exponentially small. We establish these results analytically for a massive QBT and verify them microscopically in an interacting kagome lattice model known to develop a spontaneous quantum anomalous Hall mass at its QBT from loop currents order. Our results identify quantum geometry as an asymptotic amplifier of nonperturbative interaction scales.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.34607",
+      "tier": "brief",
+      "why": "Shows how singular quantum geometry near a quadratic band touching amplifies exponentially small interaction-induced gaps into measurable optical sum-rule signatures, relevant to flat-band/QAH physics in moiré-like lattices."
+    },
+    {
+      "id": "2609.35492",
+      "title": "Dynamical transition in non-Hermitian Chern insulator",
+      "authors": [
+        "Zhi-Qiang Zhang",
+        "Yuan-Hang Ren",
+        "Ming Lu",
+        "Hua Jiang"
+      ],
+      "abstract": "We unveil a peculiar dynamical transition for the propagation of wave packets in non-Hermitian Chern insulators, where the evolution of the topological wave packets at the edge is not solely determined by the topological Chern number. Unlike the Hermitian Chern insulator, where a wave packet initiated at the edge propagates along the system boundary, here it may instead penetrate into the bulk. This behavior is attributed to the competition between the localization induced by conventional topology and the non-Hermitian skin effect. Specifically, when the former dominant, the wave packet will evolve along the boundary; otherwise, it will spread into the bulk. These features demonstrate that while the generalized-Brillouin zone framework reliably predicts topological phase transitions, it does not on its own specify the dynamical transitions.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.35492",
+      "tier": "brief",
+      "why": "Finds that non-Hermitian skin effects can override Chern-number-predicted edge propagation, a surprising twist on topological wave-packet dynamics relevant to quantum Hall/Chern band intuition."
+    },
+    {
+      "id": "2609.33454",
+      "title": "Kitaev-Heisenberg model on the square-hexagon-dodecagon lattice",
+      "authors": [
+        "Saeed Barari",
+        "Yasir Iqbal",
+        "Ganapathy Baskaran",
+        "Saeed S. Jahromi",
+        "Chunxiao Liu",
+        "Julien Vidal"
+      ],
+      "abstract": "We study the spin-$1/2$ Kitaev-Heisenberg model on the square-hexagon-dodecagon lattice with a symmetry-preserving tri-coloring of the Kitaev exchanges. We focus on two cases: (i) the pure Kitaev model with anisotropic exchanges and (ii) the Kitaev-Heisenberg model with isotropic Kitaev exchange. In the absence of Heisenberg interactions, we use the standard mapping of the Kitaev model onto a quadratic Majorana-fermion problem in a $\\mathbb{Z}_2$ gauge field. We find a gapped energy spectrum throughout the positive-coupling phase diagram, except at a single point where the twofold-degenerate energy bands form a Dirac cone. This unique gapped region corresponds to a toric code phase. However, depending on the couplings, vortex excitations on square, hexagonal, and dodecagonal plaquettes realize three distinct relative assignments to the $e$ and $m$ anyons. We determine these relative assignments from the physical fermion parity of the vortex sectors and locate their boundaries by tracking zero crossings of vortex-bound Majorana levels. For the isotropic Kitaev-Heisenberg model, we combine graph-based projected entangled-pair-state calculations, exact diagonalizations, and linear spin-wave theory to study the entire phase diagram. Apart from the toric code topological phases that are robust around the Kitaev limits, we obtain four collinear magnetically ordered phases that can be characterized by their local and relative orderings of hexagonal plaquettes. We also identify a special point at which the ground state is a product state.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.33454",
+      "tier": "brief",
+      "why": "Maps out toric-code and non-Abelian anyon sectors in a Kitaev-Heisenberg model on a square-hexagon-dodecagon lattice, broadening the anyonic-physics toolkit beyond FQH systems."
+    },
+    {
+      "id": "2609.31920",
+      "title": "Quantum Geometric Origin of Yu-Shiba-Rusinov States",
+      "authors": [
+        "Rui-Xing Zhang"
+      ],
+      "abstract": "In this work, we revisit the classic Yu-Shiba-Rusinov (YSR) problem of magnetic impurities in $s$-wave superconductors and uncover a quantum geometric origin of the YSR bound-state structure. The key geometric quantity is the momentum-space average of Bloch band projector over low-energy electrons, whose matrix rank, positive eigenvalues, and corresponding eigenvectors directly control the number, energies, and symmetry representations of the YSR states, respectively. As a result, a superconductor with nontrivial normal-state quantum geometry can host more bound states than its trivial counterpart, even if they share the same electronic dispersion. We apply our theory to monolayer $1H$-NbSe$_2$ and find that the geometric texture of its single superconducting band enforces three symmetry-distinct YSR channels for a magnetic point impurity at Nb or Se sites. Our work opens a route to probing normal-state wavefunction geometry through local YSR spectroscopy.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.31920",
+      "tier": "brief",
+      "why": "Reveals that Yu-Shiba-Rusinov bound-state structure in s-wave superconductors is controlled by normal-state quantum geometry, opening a spectroscopic window onto Bloch-band wavefunction geometry applicable to 2D superconductors like NbSe2."
+    },
+    {
+      "id": "2609.35513",
+      "title": "Superfluid Spin Transport in the Van der Waals Antiferromagnet CrCl$_3$",
+      "authors": [
+        "Peisen Yuan",
+        "Xiaomin Guo",
+        "Vincent Flynn",
+        "Benedetta Flebus",
+        "F\\`elix Casanova",
+        "Luis E. Hueso"
+      ],
+      "abstract": "Over the past decade, the quest for spin superfluidity has moved to the forefront of spintronics, driven by the promise of phase-gradient-driven, ultra-low-loss spin transport. However, experimental investigations remain limited, primarily due to the lack of suitable material systems. Here, we report on the discovery and control of a superfluid spin transport in the easy-plane van der Waals antiferromagnetic (AFM) insulator CrCl$_3$ by a nonlocal device structure. Combining nonlocal magnon transport measurements with theoretical modelling, we demonstrate that spin superfluidity emerges in CrCl$_3$ under canted AFM spin configurations, where it gives rise to ultra-long range (around 90 $\\mu$m), weakly decaying spin transport. We also provide direct evidence that strong magnetic fields and elevated temperatures suppress the superfluid state, restoring the rapid exponential decay with distance of incoherent magnons. These findings underscore the potential of spin superfluidity in two-dimensional magnetic insulators and establish CrCl$_3$ as a promising platform for energy-efficient, long-distance spin transport in next-generation spintronic applications.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.35513",
+      "tier": "brief",
+      "why": "Reports ultra-long-range (90 μm) superfluid spin transport in the van der Waals antiferromagnet CrCl3, a notable magnon-transport result in a 2D material system adjacent to your optics focus."
+    },
+    {
+      "id": "2609.33251",
+      "title": "High-fidelity geometric quantum gates exceeding 99.9% in germanium quantum dots",
+      "authors": [
+        "Yu-Chen Zhou",
+        "Rong-Long Ma",
+        "Zhenzhen Kong",
+        "Ao-Ran Li",
+        "Chengxian Zhang",
+        "Xin Zhang",
+        "Yang Liu",
+        "Hao-Tian Jiang",
+        "Zhi-Tao Wu",
+        "Gui-Lei Wang",
+        "Gang Cao",
+        "Guang-Can Guo",
+        "Hai-Ou Li",
+        "Guo-Ping Guo"
+      ],
+      "abstract": "Achieving high-fidelity and robust qubit manipulations is a crucial requirement for realizing faulttolerant quantum computation. Here, we demonstrate a single-hole spin qubit in a germanium quantum dot and characterize its control fidelity using gate set tomography. The maximum control fidelities reach 97.48%, 99.81%, 99.88% for the I, X/2 and Y /2 gate, respectively. These results reveal that off-resonance noise during consecutive I gates in gate set tomography sequences severely limits qubit performance. Therefore, we introduce geometric quantum computation to realize noiseresilient qubit manipulation. The geometric gate control fidelities remain above 99% across a wide range of Rabi frequencies. The maximum fidelity surpasses 99.9%. Furthermore, the fidelities of geometric X/2 and Y /2 (I) gates exceed 99% even when detuning the microwave frequency by +-2.5 MHz (+-1.2 MHz), highlighting the noise-resilient feature. These results demonstrate that geometric quantum computation is a potential method for achieving high-fidelity qubit manipulation reproducibly in semiconductor quantum computation.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.33251",
+      "tier": "brief",
+      "why": "Achieves >99.9% fidelity geometric quantum gates in Ge hole spin qubits, a significant semiconductor-qubit benchmark outside your core area but broadly important for quantum information hardware."
+    },
+    {
+      "id": "2609.32968",
+      "title": "How Much Do We Understand Ce L3 XANES? Ab Initio Insights into Configuration-Specific Screening at the Multiplet--Continuum Frontier",
+      "authors": [
+        "Alessandro Mirone"
+      ],
+      "abstract": "How can local multiplet signatures, collective core-hole screening, and an extended photoelectron be reconciled in Ce $L_3$ x-ray absorption near-edge spectra? Motivated by the question raised by Kvashnina [Chem. Eur. J. 30, e202400755 (2024)], we address this challenge using XSpectruplet, which couples local multiplet dynamics to continuum photoelectron propagation in self-consistent Kohn--Sham screening potentials. For Ce$^{4+}$ in CeO$_2$, our heuristic search identifies primary and secondary stationary screening states whose calculated white-line maxima lie about 7.3~eV apart after including their independently calculated total-energy difference, yet both retain the same effective local spectroscopic $4f^0$ sector. Their squared overlaps with the unrelaxed sudden reference give approximate statistical weights of 63\\% and 30\\%, respectively, within an independent-channel description. Their contrasting screening responses arise from collective rehybridization of occupied orbitals, rather than occupation of an additional localized $4f$ spectator, and produce contributions in both the main white-line and satellite regions. Ce$^{3+}$ in monazite CePO$_4$ provides the contrasting case of a localized $4f^1$ spectator participating explicitly in the multiplet dynamics. Independent relaxation of neutral $4f$ and white-line states gives a CeO$_2$ pre-edge--white-line gap of 10.51~eV, close to the experimental separation of approximately 10.7~eV. Its excess over the fixed-background spectral gap defines a net correction, which we transfer heuristically to CePO$_4$ without changing its local multiplet structure. This gives an estimated CePO$_4$ gap of 6.38~eV, compared with approximately 8.1~eV experimentally. Distinct spectral contributions can thus arise from collective screening without a change in the effective local configuration.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.32968",
+      "tier": "brief",
+      "why": "A detailed ab initio study reconciles multiplet, screening, and continuum-photoelectron pictures in Ce L3 XANES, an important methodological advance for core-level spectroscopy of correlated f-electron materials."
+    },
+    {
+      "id": "2609.32554",
+      "title": "Wide-Mass-Scanning-Range Setup and Phase-Resolved Protocol for Axion Dark Matter Detection",
+      "authors": [
+        "A. Cottet",
+        "T. Kontos"
+      ],
+      "abstract": "We propose a paradigm for quantum enhanced axion dark matter search, which does not rely on power measurements. We propose to measure directly the axion amplitude and phase in an interferometric protocol at the quantum limit, using a non-linear cavity. In addition, we introduce gyromagnetic modes as wide mass range transducers for axion signals compatible with standard haloscope designs. We expect this scheme to offer an improvement of at least 4 orders of magnitude in figure of merit and at least 2 orders of magnitude in mass window with respect to standard haloscopes. Owing to its generality, our proposed protocol has the potential to speed up axion search but also the search for dark photons or other cosmological objects, such as galactic masers.",
+      "categories": [
+        "hep-ph",
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.32554",
+      "tier": "mention",
+      "why": "Proposes a quantum-limited interferometric axion dark matter search offering orders-of-magnitude improved sensitivity and mass-range coverage."
+    },
+    {
+      "id": "2609.31830",
+      "title": "Probing the classical complexity of quantum dynamics experiments",
+      "authors": [
+        "Thomas Schuster",
+        "Andreas Elben"
+      ],
+      "abstract": "A confluence of recent works has shown that many quantum circuits and dynamics are efficiently simulable by classical algorithms that track local information, even when conventional complexity measures such as the entanglement and magic are high. Here, we introduce a novel measure of complexity, the reactivity, to capture this new method of classical attack. Unlike conventional complexity measures, the reactivity does not capture a property of a quantum state or operator in isolation, but rather a quantum experiment as a whole. We provide numerical and rigorous evidence that quantum experiments with low reactivity are simple by a host of measures: they are efficient to classically simulate, learn, and fast-forward. This motivates the search for quantum experiments with high reactivity, which may evade these simplistic features. To this end, we introduce easily implementable experimental protocols---dubbed Pauli path spectroscopy---that allow one to efficiently measure the reactivity of any quantum experiment of interest. Our protocols are applicable even when the experiment itself is beyond the reach of classical simulation.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.str-el",
+        "cs.CC",
+        "hep-th"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.31830",
+      "tier": "mention",
+      "why": "Introduces 'reactivity' as a new complexity measure to identify which quantum dynamics experiments truly resist classical simulation."
+    },
+    {
+      "id": "2609.33229",
+      "title": "In-plane optimal qubit operation with control fidelities exceeding 99 %",
+      "authors": [
+        "Yu-Chen Zhou",
+        "Zhenzhen Kong",
+        "Rong-Long Ma",
+        "Hao-Tian Jiang",
+        "Ao-Ran Li",
+        "Yang Zhong",
+        "Zhi-Tao Wu",
+        "Rui Zheng",
+        "Gui-Lei Wang",
+        "Gang Cao",
+        "Hai-Ou Li",
+        "Guo-Ping Guo"
+      ],
+      "abstract": "Hole spin qubits based on semiconductor quantum dots are promising for building future large-scale quantum computers owing to their all-electrical manipulation. However, abundant physical mechanisms of valence band holes lead to anisotropic qubit properties. There is an opportunity to prolong the coherence time and achieve high-fidelity qubit manipulations. Here, we report a single-hole spin qubit in a planar germanium quantum dot and investigate its anisotropic susceptibility to charge noise under an in-plane magnetic field. By correlating the longitudinal spin-electric susceptibility with qubit coherence and control performance, we identify an optimal operating point where the sensitivity to charge noise is minimized. We find that optimizing the magnetic-field orientation reduces the spin-electric susceptibility, resulting in a five-fold enhancement of the Hahn-echo coherence time and a nearly tenfold suppression of control infidelity. At the optimal operating point, gate set tomography demonstrates the maximum gate fidelity of 99.82 %. Our finding enhances the prospects of hole spin qubits for scalable quantum information processing.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.33229",
+      "tier": "mention",
+      "why": "Companion germanium hole-spin-qubit study identifies an optimal magnetic-field orientation giving a fivefold coherence-time boost and 99.82% gate fidelity."
+    },
+    {
+      "id": "2609.34477",
+      "title": "Electronic and topological properties of Ce-based honeycomb ferromagnet Ce$_2$Zn$_6$Ge$_3$",
+      "authors": [
+        "Yanen Huang",
+        "Zihan Yang",
+        "Jiawen Zhang",
+        "Yuwei Zhou",
+        "Lubin Wang",
+        "Gang Li",
+        "Michael Smidman",
+        "Chao Cao",
+        "Yu Liu",
+        "Huiqiu Yuan"
+      ],
+      "abstract": "Ce$_2$Zn$_6$Ge$_3$ is a rare example of the Ce-based honeycomb ferromagnet. Here, we report its Fermi surface and topological properties by quantum oscillations via the magnetoresistance and tunnel diode oscillator (TDO) based measurements, in combination with the density functional theory (DFT) calculations. Four fundamental frequencies are observed in the quantum oscillations, and their angle dependence is more compatible with the DFT calculations assuming that the 4$f$-electrons are localized, suggesting a localized nature of ferromagnetism in Ce$_2$Zn$_6$Ge$_3$. Furthermore, the observations of negative longitudinal magnetoresistance and non-zero Berry phase, as well as the existence of two pairs of Weyl points near the Fermi level as revealed from the calculated electronic structures, provide strong evidence for nontrivial topology in Ce$_2$Zn$_6$Ge$_3$. These findings suggest that Ce$_2$Zn$_6$Ge$_3$ could provide a unique platform to study magnetism, topology, quantum criticality and their interplay.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.34477",
+      "tier": "mention",
+      "why": "Quantum oscillation measurements reveal Weyl points and localized 4f magnetism in the rare Ce-based honeycomb ferromagnet Ce2Zn6Ge3."
+    },
+    {
+      "id": "2609.35602",
+      "title": "Chiral Weyl--Kondo semimetal and circular photogalvanic effect in a prototype Kondo lattice system",
+      "authors": [
+        "Yuan Fang",
+        "Kuan-Sen Lin",
+        "Mounica Mahankali",
+        "Arushi",
+        "Kevin Allen",
+        "Sanu Mishra",
+        "Emilia Morosan",
+        "Qimiao Si"
+      ],
+      "abstract": "Chiral Weyl--Kondo semimetals (cWKSM) provide a setting in which chiral Weyl quasiparticles emerge in the immediate vicinity of the Fermi energy from a Kondo-driven reconstruction of the strongly correlated electronic states in chiral heavy fermion systems (K.-S. Lin et al., arXiv:2602.22185). A defining characteristic of this strongly correlated topological state is the Kramers chiral Weyl fermions in the low-energy quasiparticle states. Recently, experiments in CeGaGe have emerged as a concrete realization of the proposed effect (Arushi et al., preprint). Motivated by these findings, here we go beyond the materials-specific effects by constructing a prototype Kondo lattice model; it incorporates only the essential couplings that respect the associated tetragonal crystalline symmetries. This simplification allows us to robustly demonstrate the symmetry-enforced Kramers Weyl fermions and related topological nodal states in the spectrum of heavy quasiparticles. Furthermore, the simplification provides a tractable setting to determine the salient features in the system's nonlinear optical response, the circular photogalvanic effect, in chiral Weyl--Kondo semimetals. Both analytical and numerical calculations identify sharp peaks in the frequency domain as signatures of the Kondo-driven chiral Weyl nodes; the sharpness of the spectrum reflects the resonant nature of the underlying strongly correlated electronic excitations. Thus, cWKSM provides a unique setting to spectroscopically identify topological fermions that are induced by strong electron correlations. As such, our results are expected to bring about much needed new insights into the understanding of strongly correlated gapless topological matter.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.35602",
+      "tier": "mention",
+      "why": "Constructs a minimal Kondo-lattice model predicting sharp circular photogalvanic signatures of chiral Weyl-Kondo semimetal states."
+    },
+    {
+      "id": "2609.32012",
+      "title": "Chiral Weyl-Kondo semimetallic state through enhanced correlation in CeGaGe",
+      "authors": [
+        "Arushi",
+        "Kevin Allen",
+        "Yuan Fang",
+        "Kuan-Sen Lin",
+        "Mounica Mahankali",
+        "Hari Bhandari",
+        "Karthik Rao",
+        "Alberto Ruiz Biestro",
+        "Christopher Lane",
+        "Jian-Xin Zhu",
+        "Sanu Mishra",
+        "Geoffroy Hautier",
+        "Qimiao Si",
+        "Emilia Morosan"
+      ],
+      "abstract": "Strongly correlated chiral materials have been proposed to host a chiral Weyl-Kondo semimetal (cWKSM) state, in which Kondo hybridization pins chirality-induced Kramers-Weyl point crossings, together with additional symmetry-enforced band crossings, near the Fermi level. Realizing this state requires a material that combines crystal chirality, non-symmorphic symmetry, and Kondo correlations, and currently there are no known materials that combine all these requirements. Here we report evidence for a cWKSM state in CeGaGe, a member of the RXY (R = rare earth; X = Al, Si; Y = Ga, Ge) family. Magnetization measurements confirm long-range antiferromagnetic order below T$_N$ = 4.7 K with a complex, canted magnetic structure. Unique to CeGaGe among the known RXY systems is a structural transition from an achiral tetragonal I4$_{1}$md structure (at high temperatures) to the chiral tetragonal P4$_{3}$ structure (at low temperatures). The structural transition in CeGaGe allows us to highlight the role of chirality in stabilizing the Kramers cWKSM state. Hall resistivity measurements with $H || c$ reveal an anomalous Hall conductivity (AHC) that is constant below the Kondo temperature $T_K \\approx 7$ K and drops sharply above it. This crossover tracks the onset of Kondo coherence rather than the magnetic ordering, which occurs at T$_N$ = 4.7 K. Together with first-principles calculations for the $P4_3$ structure, this identifies the AHC as an intrinsic, Berry-curvature-driven contribution generated by Kondo hybridization, rather than a consequence of extrinsic scattering or dynamic scalar spin chirality. These results establish CeGaGe as a rare experimental platform in which crystal chirality, strong electronic correlations, and non-trivial band topology coexist, providing the first material realization of a Kondo-driven cWKSM state.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.32012",
+      "tier": "mention",
+      "why": "Reports experimental evidence for a chiral Weyl-Kondo semimetal state in CeGaGe, linking crystal chirality with Kondo-driven topology."
+    },
+    {
+      "id": "2609.35004",
+      "title": "Unconventional superconductivity in locally non-centrosymmetric CeNi$_2$As$_2$",
+      "authors": [
+        "F\\'elix Morineau",
+        "Jan Knapp",
+        "Javier Landaeta",
+        "Thomas L\\\"uhmann",
+        "Lea Richter",
+        "Petra Knappova",
+        "Soumen Ash",
+        "Sushma Lakshmi Ravi Sankar",
+        "Konstantin Semeniuk",
+        "Elena Hassinger",
+        "Christoph Geibel",
+        "Manuel Brando",
+        "Daniel F. Agterberg",
+        "Andrew P. Mackenzie",
+        "Seunghyun Khim"
+      ],
+      "abstract": "Recent years have seen intense research on heavy fermion superconductivity, inspired by the discovery of multiple superconducting phases in UTe$_\\text{2}$ and CeRh$_\\text{2}$As$_\\text{2}$. In the latter material, two superconducting phases observed under applied magnetic field oriented along the crystallographic $\\textit{c}$ direction are associated with local inversion symmetry breaking. To advance understanding of these phenomena, it is highly desirable to find further examples of heavy fermion superconductivity in materials with locally non-centrosymmetric structure. We have succeeded in this quest, by growing single crystals of the CaBe$_\\text{2}$Ge$_\\text{2}$ isomorph of CeNi$_\\text{2}$As$_\\text{2}$. The resulting superconductivity brings more than we had foreseen. In addition to providing the opportunity to compare and contrast with that of CeRh$_\\text{2}$As$_\\text{2}$, the condensation occurs from an incoherent normal state quantitatively similar to that of UBe$_\\text{13}$. Our findings therefore raise profound questions not just about superconductivity in the locally non-centrosymmetric structures, but about unconventional superconductivity itself.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.35004",
+      "tier": "mention",
+      "why": "Discovers unconventional heavy-fermion superconductivity in the locally non-centrosymmetric compound CeNi2As2, comparable to CeRh2As2 and UBe13 physics."
+    },
+    {
+      "id": "2609.33724",
+      "title": "Quantum Dynamics of Full Counting Statistics in Fermionic Lattices with Localized Gain",
+      "authors": [
+        "Bijay Kumar Agarwalla",
+        "Manas Kulkarni"
+      ],
+      "abstract": "We investigate the dynamics of full counting statistics (FCS) of the growth of the total number of fermions in a one-dimensional non-interacting lattice subjected to a localized particle gain (source) at one edge. The dynamics of the setup is modeled by the Gorini--Kossakowski--Sudarshan--Lindblad (GKSL) quantum master equation. We recast the counting problem that involves counting particle number at every lattice site to a problem where only the local injected site is involved. We employ the Schwinger-Keldysh path integral formalism within the GKSL framework and derive an analytical expression for the cumulant generating function at arbitrary times and obtain a Levitov-Lesovik type formula in the long-time limit, earlier derived for boundary driven setups in the steady-state. For clean lattices with either short- or long-range hopping, supporting single-particle delocalized eigenstates, we show that all cumulants grow linearly with time in the asymptotic regime. Our analytical results are in excellent agreement with direct numerical simulations. These findings establish a general framework for characterizing FCS and quantum fluctuations in driven open fermionic systems with localized particle injection.",
+      "categories": [
+        "cond-mat.stat-mech",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.33724",
+      "tier": "mention",
+      "why": "Derives an exact Levitov-Lesovik-type full counting statistics formula for fermion growth under localized particle gain in open lattice systems."
+    },
+    {
+      "id": "2609.34355",
+      "title": "Observing Colossal and Tunable Near-field Thermal Radiation with A Highly Sensitive Annular Micro-thermocouple Junction",
+      "authors": [
+        "Ken Araki",
+        "Wei Han Won",
+        "Liping Wang"
+      ],
+      "abstract": "Near-field radiative heat transfer between two objects has been theoretically predicted and experimentally demonstrated to exceed far-field blackbody limit across nanoscale vacuum gap distance enabled by evanescent surface waves coupling, while significant enhancement by more than 100 times usually requires sub-50-nm vacuum gaps around room temperature. This is challenging for parallel-plate configuration with millimeter sample sizes due to intrinsic wafer bow and contaminant particles. Sphere-plate configuration with a microsphere attached to bimaterial cantilevers or micro-thermocouple tips has been used to experimentally demonstrate near-field radiative heat transfer down to 30-nm gaps, but it is much less developed because of the challenges in the sophisticated sensor fabrication, low sensitivity and weak signals. In this work, we overcome these challenges by an annular micro-thermocouple junction fabricated at the end of a glass fiber with straightforward thin-film deposition to achieve high measurement accuracy with large Seebeck coefficient 25 uV/K and thermal resistance 8.7e6 K/W. With a silica microsphere attached underneath the micro-thermocouple junction, we report experimental observation of colossal near-field radiation heat transfer over blackbody limit down to 10-nm gap up to 2600 times with quartz and 900 times with doped silicon. Upon phase transition of VO2 thin film emitter, tunable near-field heat transfer up to 430-fold enhancement is experimentally demonstrated at 15-nm gap with 64% reduction. Experimental data agrees well with rigorous modeling based on fluctuational electrodynamics and Derjaguin approximation, and underlying mechanism is understood by energy transmission calculations. The results will advance the experimental study and fundamental understanding of energy transport at nanoscale gaps.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.34355",
+      "tier": "mention",
+      "why": "Experimentally observes up to 2600x blackbody-exceeding near-field thermal radiation using a novel annular micro-thermocouple sensor."
+    },
+    {
+      "id": "2609.35477",
+      "title": "Plasmon-Enhanced Second-Harmonic Generation in Atomically Thin Crystalline Silver Nanostructures",
+      "authors": [
+        "Saad Abdullah",
+        "Philipp K. Jenke",
+        "Andrew P. Weber",
+        "\\'Alvaro Rodr\\'{\\i}guez Echarri",
+        "Vahagn Mkhitaryan",
+        "Fadil Iyikanat",
+        "Frederik Schiller",
+        "Philip Walther",
+        "J. Enrique Ortega",
+        "Lee A. Rozema",
+        "F. Javier Garc\\'{\\i}a de Abajo"
+      ],
+      "abstract": "The intrinsically weak nonlinear optical response of existing materials, further constrained by symmetry-forbidden second-order processes in centrosymmetric media, severely limits efficient frequency conversion in deeply subwavelength, ultrathin volumes. Addressing this challenge is crucial for the development of nonlinear nanophotonics. Here, we show that atomically thin, epitaxially grown crystalline silver films circumvent these restrictions through the interplay of vertical electronic quantum confinement and lateral plasmonic enhancement. We fabricate atomically thin films that exhibit an enhanced nonlinear response associated with electronic quantum wells, and subsequently pattern them into periodic nanoribbon and nanotriangle arrays sustaining infrared localized surface plasmon resonances. Strong near-field confinement in these structures further boosts second-harmonic generation compared to unpatterned films. Precise control over nanostructure geometry enables spectral tuning of the plasmonic resonance, and consequently, the enhanced harmonic frequency. Our findings establish an approach for activating robust second-order nonlinearities in quantum-confined metals, where intrinsic size effects and plasmonic resonances act synergistically. The compatibility of high-quality epitaxial growth with microchip fabrication technology offers a scalable route toward ultracompact nonlinear optical components for on-chip frequency conversion, sensing, and quantum photonic applications.",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.35477",
+      "tier": "mention",
+      "why": "Demonstrates plasmon-enhanced second-harmonic generation in atomically thin crystalline silver via combined quantum confinement and lateral plasmonic resonances."
+    }
+  ]
+}

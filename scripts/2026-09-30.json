@@ -1,0 +1,829 @@
+{
+  "date": "2026-09-30",
+  "format": "dialogue",
+  "n_papers": 57,
+  "episode_title": "Dark interlayer excitons, layer-coherent polarons, and topology-forced exciton nodes",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's September thirtieth, and the archive dumped about fifty-seven new papers on us overnight."
+    },
+    {
+      "speaker": "Leo",
+      "text": "A good chunk of them are basically written for this show. We've got three papers out of the same broader collaboration on interlayer excitons and polarons in tungsten diselenide and molybdenum ditelluride bilayers, a genuinely strange topology result about excitons that refuse to be nodeless, and a phonon-DMRG study of fractional Chern insulators."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Plus a twisted bilayer graphene device where they slip atomically thin h-B-N spacers between the layers just to see how far you can push interlayer coupling before it dies. Let's start with the dark excitons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper one in the show notes, Ma and coauthors. The pitch is straightforward: interlayer excitons in T-M-D heterostructures live a long time and can travel far, which is why people want to condense them into an exciton Bose-Einstein condensate. But to know which state actually condenses, you need to know whether the lowest-energy exciton is the bright, spin-allowed one, or a dark, spin-forbidden one sitting just underneath it."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And that's been genuinely hard to pin down, because moiré excitons in these heterostructures can fake the same optical signatures as the real spin-forbidden states."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, so here they use a homobilayer, tungsten diselenide on tungsten diselenide with an h-B-N spacer in between, dual-gated so they can sweep an out-of-plane electric field. They track photoluminescence and reflectance as a function of that field and find two momentum-direct interlayer transitions with clearly distinct spin configurations, one bright, one dark."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So this is a direct spectroscopic separation of singlet and triplet interlayer excitons, not an inference from lifetime alone."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly, and the dark exciton follows different selection rules than the bright one, as expected. What's striking is that even with a lifetime past a microsecond, it keeps strong valley polarization. Normally you'd expect that long a lifetime to give spin and valley relaxation plenty of time to scramble things."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the part that matters for a condensate — you want a long-lived reservoir that hasn't lost its valley or spin identity along the way. Anything else new?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They also show twist-angle control: tuning the twist changes the electron-hole momentum mismatch between layers, which directly modulates how the interlayer exciton emits. So twist angle becomes another knob for engineering which exciton species dominates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So overall, a clean identification of the actual ground state exciton in a homobilayer platform, with twist and field both usable as levers. That's exactly the kind of bookkeeping you need before anyone claims they've seen exciton condensation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Related system, different physics — paper two, Ni and coauthors, interlayer Fermi polarons in bilayer molybdenum ditelluride."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Bilayers with a layer pseudospin are supposed to host things like bilayer Wigner crystals and fractional Chern insulators, and you'd probe all of that with exciton spectroscopy. But nobody really understood how excitons dress with carriers, meaning how Fermi polarons form, when both the exciton and the surrounding Fermi sea carry that extra layer label."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The obstacle was that most T-M-D bilayers have an indirect gap, so the intrinsic spectra get washed out by non-radiative decay and broadening. Molybdenum ditelluride bilayers are the exception — they keep a direct gap, so you get clean optical access."
+    },
+    {
+      "speaker": "Ava",
+      "text": "In a dual-gated device, they use the out-of-plane field to continuously hybridize intralayer and interlayer excitons into layer-coherent excitons, then dope the sample electrostatically."
+    },
+    {
+      "speaker": "Leo",
+      "text": "As they dope, the exciton line splits into multiple polaron branches, and which branches appear depends on both doping and the field. The one that stands out has no monolayer analog at all: a layer-coherent exciton dressed by carriers sitting in the opposite layer."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do they know it's really that state and not just another intralayer polaron in disguise?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They back it up with a field-theoretic model that quantitatively reproduces the branch, so it's not just a labeling exercise. The broader point is that pseudospin structure on both sides, impurity and bath, reshapes how polarons form — this is a genuinely new degree of freedom beyond the usual monolayer trion and polaron picture."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And it's a stepping stone toward interlayer-coherent condensates, since you now have a handle on exactly what dresses the exciton before you even get to the many-body limit."
+    },
+    {
+      "speaker": "Leo",
+      "text": "From experiment to a pure theory curveball — paper three, Eek, titled bluntly Topology Obstructs Nodeless Excitons."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The standard assumption in exciton physics, the one baked into basically every Rydberg-series picture we use for T-M-D excitons, is that the lowest-energy exciton has a smooth, nodeless, one-s-like envelope wavefunction."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This paper argues band topology can forbid that. The exciton envelope is a section of what they call the valence-conduction transition bundle, and if that bundle has nontrivial topology, it can force the envelope to have zeros in momentum space, with the number and sign of those zeros fixed by a topological invariant."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So it's the exciton version of why you can't comb a hairy ball flat — topology mandates a zero somewhere."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the right intuition. They build a minimal model with P-T symmetry and a rank-two transition bundle carrying Euler number two, then solve the Bethe-Salpeter equation numerically, with both a simple contact interaction and the Rytova-Keldysh interaction that's standard for 2D materials."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the result matches the prediction?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "The lowest exciton comes out with exactly two zeros, each carrying index plus one, consistent with the Euler number. It's also less tightly bound than the topologically trivial version would be. They go on to classify which nodal structures are forced by topology in real and complex bands up to three dimensions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is worth filing away for anyone working on excitons in topological flat bands or moiré systems with nontrivial Berry curvature — if the relevant bands carry topology, the assumption that the exciton ground state looks like a simple hydrogenic 1s state might just be wrong, and that changes how you interpret oscillator strength and binding energy trends."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four moves to twisted bilayer graphene, but with a twist on the twist — Wang and coauthors insert atomically precise h-B-N spacers between the two graphene layers."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The usual knob in these systems is the twist angle itself, which sets both the moiré period and, indirectly, the interlayer coupling strength. Here they want to decouple those two things by controlling the physical layer separation independently."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They build dual-gated devices where the two graphene layers sit on either side of a thickness-tunable h-B-N spacer, essentially counting atomic layers of h-B-N as spacers. Then they look at transport, specifically the critical displacement field needed to push the system into electron-hole bilayer behavior."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And that critical field drops as you add more h-B-N layers at fixed twist angle, which makes sense — more separation, weaker coupling, so less field needed to decouple the layers electronically."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The surprising part is how far the coupling survives. At small twist angles, moiré-related side peaks in the transport data persist even with four layers of h-B-N in between, around one-point-three nanometers of separation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a lot of physical distance for band hybridization to still show up clearly."
+    },
+    {
+      "speaker": "Leo",
+      "text": "It tells you interlayer hybridization in these small-angle moiré systems is more robust than the naive tunneling picture would suggest. Practically, this gives people an independent handle: twist angle sets the moiré pattern, spacer thickness tunes the coupling strength, and now you can dial them separately when engineering flat bands or correlated states."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Useful if you're trying to find a sweet spot for a particular correlated phase without being locked into whatever coupling a given twist angle happens to give you."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five, Long, Wang, and Meng, on phonon-coupled Chern insulators and fractional Chern insulators."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The starting puzzle is that strong electron-phonon coupling is known to destabilize both ordinary Chern insulators and their fractional cousins in favor of charge order, but nobody knew if the same microscopic mechanism was doing the destabilizing in both cases."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They study a flat-band Haldane model — the standard lattice model for a Chern insulator — coupled to dynamical Holstein phonons, at both integer and fractional filling, using density-matrix renormalization group with local basis optimization, which is the numerical trick needed to handle phonon degrees of freedom without truncating them too aggressively."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the phonons don't destabilize the state directly, they do it by dressing the charge-neutral collective modes?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly. In the integer Chern insulator, phonons dress the exciton into what they call an exciton polaron. In the fractional case, they dress the magnetoroton — the neutral collective mode you'd normally associate with the fractional quantum Hall effect — into a magnetoroton polaron. Both modes soften as you approach the charge-ordered transition, and the momentum where they soften matches the wavevector of the eventual charge order."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the phonon spectrum itself should carry a fingerprint of these normally hard-to-see neutral modes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's their point — the phonon dispersion inherits features from the exciton and magnetoroton modes, so lattice dynamics becomes an indirect probe of excitations you'd otherwise need specialized techniques to see. There's also a subtler effect in the fractional phase: electron-phonon coupling boosts the opposite-chirality spectral weight of the graviton mode, the chiral collective mode tied to the FCI's intrinsic geometry, producing what they call a chirality deficit."
+    },
+    {
+      "speaker": "Ava",
+      "text": "For anyone thinking about phonon or lattice signatures as an alternative route to detect magnetorotons and graviton modes in real fractional Chern insulator candidates, this gives a concrete unified picture of what phonons should be doing to those modes near instability."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's do the quick round-up. Paper six, Gunyaga and coauthors show that twisted and vector optical beams can spatially separate two-dimensional electrons by spin, purely through structured light combined with spin relaxation and diffusion, with numbers worked out for T-M-D monolayer parameters."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven, Larionov and Gorbunov report a four-particle excitation in a 2D electron gas under magnetic field, a magnetoplasmon molecule made of two electrons and two opposite-spin Fermi holes, and they look at how it interacts with a magnetoexciton condensate."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight, Soares and coauthors study excitonic stripe order in a two-orbital Hubbard-Kanamori model on the square lattice, using Hartree-Fock and R-P-A, and find that the sign of Hund's coupling decides whether you get triplet or singlet excitonic order, with stripes and spirals appearing on doping."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine, Chen and coauthors use spatially dispersive photogalvanic effects, meaning second-order photocurrents that become allowed once you account for how light varies in space, to cleanly separate Berry curvature and quantum metric contributions in 1T-prime molybdenum ditelluride across its transition to the Td-Weyl phase."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper ten, Chakrabhavi and coauthors extend topological band theory of quantum Hall systems to high-dimensional parameter spaces, relevant for matter on higher-genus surfaces, with an explicit example on the genus-two Bolza surface that's already been simulated on a synthetic-dimension platform."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eleven is a review by Yannouleas on Wigner molecules — finite-size analogs of the Wigner crystal — across artificial atoms from semiconductor and moiré T-M-D quantum dots to trapped ultracold atoms, covering twenty-five years of theory and experiment."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper twelve, Ruan and coauthors find that an approximate particle-hole symmetry tied to the bipartite lattice of graphene nanoribbons suppresses even-order nonlinear optical response, and in a ferromagnetic Janus nanoribbon this lets you generate nearly pure spin shift currents tunable by an external magnetic field."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper thirteen, Lange and coauthors apply neural quantum states, specifically hidden-fermion determinant states, to the three-band Emery model for cuprates and nickelates, and when they downfold to an effective single-band model, they find density-assisted hopping terms matter more than the usual next-nearest-neighbor hopping for particle-hole asymmetry."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper fourteen, Gong and coauthors from the Louie group build DeepH-GW, a neural network that predicts full G-W quasiparticle Hamiltonians directly from atomic structure, reproducing quasiparticle bands to a few milli-electron-volts and transferring from small training cells to much larger supercells."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper fifteen, Jankowski works out nonlinear Zitterbewegung, the textbook trembling motion of relativistic electrons, augmented by band torsion, predicting transient nonlinear photocurrents distinct from known circularly-polarized-light photovoltaic effects, and proposes a tomography scheme to actually measure the underlying multistate quantum geometric torsion tensor."
+    },
+    {
+      "speaker": "Leo",
+      "text": "For the mentions: paper sixteen, Buiarelli and coauthors identify a three-eighths charge density wave instability in the kagome metal cesium-vanadium-antimonide."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seventeen, Krizek and coauthors demonstrate a reversible, field-free superconducting diode effect controlled by an adjacent antiferromagnet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eighteen, Henderson and coauthors image three-dimensional skyrmion transitions through vortices and monopoles."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nineteen, Zhou and He push fuzzy-sphere conformal field theory methods further, with rotation-resolving exact diagonalization and new results on three-D Ising heavy primary operators."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper twenty, Yu and Zhu find uniform-charge-density d-wave superconductivity in the pure t-J model at one-eighth doping on an infinite cylinder."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper twenty-one, Treu and coauthors propose frustrated gadolinium-based double perovskites as magnetocaloric materials for adiabatic demagnetization refrigeration below one hundred milli-kelvin."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper twenty-two, Miki and coauthors build a skyrmion-based Maxwell's demon and use it to demonstrate an Ohm's law for information."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper twenty-three, Poliakov and Panigrahi propose imaging phase winding in topological superconductors using a fork-tip Josephson scanning tunneling microscope."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper twenty-four, Dey and coauthors study correlation-assisted topological and metamagnetic transitions in Rashba-coupled superconductors within a t-J-U model."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper twenty-five, Fujimori reviews A-R-P-E-S and high-energy spectroscopy measurements of the electronic structure of uranium ditelluride."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the roundup. The through-line today is really about identifying exactly which state you're looking at before claiming a many-body phase — dark versus bright excitons, layer-coherent polarons, topology-forced nodes, all bookkeeping that has to come before condensates and fractional phases mean anything."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's it for arXiv Morning. See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2609.38033",
+      "title": "Interlayer dark excitons in a van der Waals heterostructure",
+      "authors": [
+        "Rundong Ma",
+        "Konstantin Davydov",
+        "Liuxin Gu",
+        "Lifu Zhang",
+        "Hassan Alnatah",
+        "Beini Gao",
+        "Ruihao Ni",
+        "Suji Park",
+        "Houk Jang",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "You Zhou"
+      ],
+      "abstract": "Interlayer excitons in transition metal dichalcogenide (TMD) heterostructures exhibit long lifetimes and long-range transport, making them promising for excitonic devices and quantum many-body phases, such as Bose-Einstein condensates. Achieving these goals requires a precise understanding of spin-allowed bright and nominally spin-forbidden dark excitons, because the lowest-energy exciton species governs population, transport, and condensation. Despite substantial progress, unambiguously distinguishing singlet and triplet interlayer excitons has been challenging, as moiré excitons in these heterostructures can mimic their optical signatures. Here, we report the direct spectroscopic identification of bright (singlet) and dark (triplet) interlayer excitons in high-quality, dual-gated WSe2/hBN/WSe2 homobilayers. Electric-field-dependent photoluminescence and reflectance reveal two momentum-direct interlayer transitions with distinct spin configurations. The interlayer dark excitons obey selection rules that differ from those of bright excitons. Strikingly, interlayer dark excitons retain strong valley polarization, even with their ultralong lifetime exceeding microseconds. Finally, we demonstrate twist-angle control, wherein twist-induced electron-hole momentum mismatch modulates interlayer exciton emission. These results provide critical insights into the electronic and excitonic structure of TMD heterostructures, opening new avenues for excitonic many-body physics and optoelectronic devices.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "physics.optics"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.38033",
+      "tier": "deep",
+      "why": "Direct spectroscopic identification of bright vs dark interlayer excitons in dual-gated WSe2/hBN/WSe2 homobilayers, resolving a long-standing ambiguity central to interlayer exciton condensate physics."
+    },
+    {
+      "id": "2609.38045",
+      "title": "Interlayer Fermi Polarons in Bilayer MoTe2",
+      "authors": [
+        "Ruihao Ni",
+        "Eugen Dizer",
+        "Maximilian Wolf",
+        "Son T. Le",
+        "Sharadh Jois",
+        "Jeffrey J. Schwartz",
+        "Liuxin Gu",
+        "Rundong Ma",
+        "Suji Park",
+        "Beini Gao",
+        "Lifu Zhang",
+        "Houk Jang",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Aubrey T. Hanbicki",
+        "Adam L. Friedman",
+        "Richard Schmidt",
+        "You Zhou"
+      ],
+      "abstract": "Atomic bilayers of transition metal dichalcogenides (TMDs) host quantum phases governed by the layer degree of freedom, including bilayer Wigner crystals, fractional Chern insulators, and exciton condensates. These phases are probed primarily through exciton spectroscopy, yet it remains poorly understood how excitons and carriers interact to form Fermi polarons in bilayers, where both the impurity and the Fermi sea carry a layer pseudospin. Progress has been limited because most TMD bilayers have momentum-indirect optical bandgaps, in which non-radiative decay and inhomogeneous broadening obscure the intrinsic spectra. Here, we show that bilayer MoTe2, unlike most TMD bilayers, retains a direct optical bandgap, providing a clean platform for studying bilayer Fermi-polaron physics. In a dual-gated device, an out-of-plane electric field continuously tunes the hybridization between intralayer and interlayer excitons, forming layer-coherent excitons. Upon electrostatic doping, the excitonic spectrum evolves into multiple polaron branches, controlled by both carrier doping and the out-of-plane electric field. Among these, we identify a polaron with no analog in monolayers, in which a layer-coherent exciton is dressed by carriers in the opposite layer, and is quantitatively captured by our field-theoretic model. Our results establish that pseudospin structure in both the impurity and the bath reshapes polaron formation, opening new avenues to many-body states such as Bose-Einstein condensates with interlayer coherence.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.38045",
+      "tier": "deep",
+      "why": "Reveals a new layer-pseudospin Fermi polaron species in direct-gap bilayer MoTe2, extending polaron physics beyond monolayer TMDs with a clean optical platform relevant to your Fermi polaron interests."
+    },
+    {
+      "id": "2609.36248",
+      "title": "Topology Obstructs Nodeless Excitons",
+      "authors": [
+        "Lumen Eek"
+      ],
+      "abstract": "Lowest-energy excitons are usually expected to have nodeless 1s-like envelope wavefunctions. We show that band topology can obstruct this expectation. The exciton envelope wavefunction is a section of the valence-conduction transition bundle, whose topology can enforce momentum-space zeros, with their parity or signed total index fixed by the corresponding characteristic class. We exemplify this behavior in a minimal PT-symmetric three-band model with a rank-two transition bundle characterized by Euler number \\nue=2. By directly solving the Bethe-Salpeter equation with both contact and Rytova-Keldysh interactions, we find that the lowest exciton contains two zeros, each with index +1, and is less strongly bound than its topologically trivial counterpart. We further classify topology-enforced exciton nodal structures for real and complex transition bundles in dimensions d \\leq 3. Our results establish the topology of the transition bundle as a direct constraint on exciton wavefunctions and spectra.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36248",
+      "tier": "deep",
+      "why": "Shows band topology can force nodal zeros in exciton envelope wavefunctions via the topology of the valence-conduction transition bundle, a conceptually new constraint on exciton physics verified with Bethe-Salpeter calculations."
+    },
+    {
+      "id": "2609.36703",
+      "title": "Interlayer coupling between twisted graphenes through atomically-precise barriers",
+      "authors": [
+        "Yueyang Wang",
+        "Ben Fuller",
+        "Hongxia Xue",
+        "Tianyu Zhang",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Vladimir Falko",
+        "Dong-Keun Ki"
+      ],
+      "abstract": "Understanding and controlling interlayer coupling in van der Waals (vdW) materials is crucial for engineering novel electronic phenomena, including correlated states, topological phases, and superconductivity. Twisted bilayer graphene (TBG) offers a highly tunable platform to explore how interlayer orientation and separation influence quantum transport and moiré physics. Here, we introduce a method for achieving precise, atomic-scale control of interlayer coupling in TBG using dual-gated devices separated by ultrathin, thickness-tunable hBN spacers. This approach enables systematic control of interlayer interactions, demonstrating that the critical displacement field required for electron-hole bilayer behavior decreases as the layer separation increases at a fixed twist angle. Remarkably, at small twist angles, moiré-related side peaks persist even when layers are separated by tetralayers of hBN (approximately 1.3 nm), indicating robust interlayer band hybridization. By combining atomic-layer-precise control of interlayer coupling with independent twist angle tunability, our platform opens new avenues for discovering novel moiré physics governed by engineered interlayer coupling and moiré patterns.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36703",
+      "tier": "deep",
+      "why": "Demonstrates atomic-scale control of interlayer coupling in twisted bilayer graphene using hBN spacers, showing moiré hybridization survives surprisingly thick barriers—directly relevant to engineering moiré/vdW heterostructures."
+    },
+    {
+      "id": "2609.36027",
+      "title": "Spectroscopy of phonon-coupled integer and fractional Chern insulators: emergence of polarons and chirality deficit of graviton mode",
+      "authors": [
+        "Min Long",
+        "Yuzhu Wang",
+        "Zi Yang Meng"
+      ],
+      "abstract": "Strong electron-phonon coupling can destabilize both Chern insulators (CIs) and fractional Chern insulators (FCIs) in favor of charge order, but whether the instabilities in CI and FCI share a common microscopic mechanism remains unclear. In this paper, we address this question by studying a flat-band Haldane model coupled to dynamical Holstein phonons at integer and fractional fillings using density-matrix renormalization group with local basis optimization. We find that the low-energy effects of phonons are dominated by their dressing of charge-neutral collective modes. In the CI and FCI, phonons dress excitons and magnetorotons into composite modes that we identify as exciton polarons and magnetoroton polarons, respectively. These modes soften strongly upon approaching the transition, while the momenta of their energy minima anticipate the ordering wave vectors of the charge-ordered phases. The phonon spectrum, in turn, acquires dispersive features inherited from the exciton and magnetoroton modes, providing direct lattice signatures of these neutral excitations. Within the FCI phase, electron-phonon coupling also enhances the opposite-chirality spectral weight of the graviton response, thereby resulting in a chirality deficit. Our results provide a unified excitation-based picture of phonon-driven instabilities in CIs and FCIs and establish lattice dynamics as a probe of their neutral collective modes.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36027",
+      "tier": "deep",
+      "why": "DMRG study reveals phonons dress excitons and magnetorotons into polaron-like composite modes in Chern/fractional Chern insulators, offering a unified excitation-based probe of FCI instabilities relevant to your moiré/QH interests."
+    },
+    {
+      "id": "2609.37010",
+      "title": "Spin separation of Dirac electrons by twisted and vector optical beams",
+      "authors": [
+        "A. A. Gunyaga",
+        "M. V. Durnev",
+        "S. A. Tarasenko"
+      ],
+      "abstract": "We demonstrate that twisted and vector optical beams can spatially separate two-dimensional electrons with opposite spin projections. Spin accumulation arises from diverging spin currents induced by structured light together with spin relaxation and diffusion. We derive analytical expressions for the resulting spin density in the quasi-local and diffusion-controlled regimes and numerically calculate the spin textures for the parameters relevant to transition metal dichalcogenide monolayers. Our results suggest a mechanism by which the twist and vector pattern of optical beams can be imprinted onto the electron spin degree of freedom.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.37010",
+      "tier": "brief",
+      "why": "Predicts that twisted and vector optical beams can spatially separate spin populations in TMD monolayers via structured-light-induced spin currents."
+    },
+    {
+      "id": "2609.36036",
+      "title": "Magnetoplasmon molecule",
+      "authors": [
+        "A. V. Larionov (Institute of Solid State Physics named after Yu. A. Osipyan",
+        "Russian Academy of Sciences",
+        "Chernogolovka",
+        "Russia)",
+        "A. V. Gorbunov (Institute of Solid State Physics named after Yu. A. Osipyan",
+        "Russian Academy of Sciences",
+        "Chernogolovka",
+        "Russia)",
+        "A. B. Van'kov (Institute of Solid State Physics named after Yu. A. Osipyan",
+        "Russian Academy of Sciences",
+        "Chernogolovka",
+        "Russia)",
+        "D. A. Shchigarev (Institute of Solid State Physics named after Yu. A. Osipyan",
+        "Russian Academy of Sciences",
+        "Chernogolovka",
+        "Russia)",
+        "L. V. Kulik (Institute of Solid State Physics named after Yu. A. Osipyan",
+        "Russian Academy of Sciences",
+        "Chernogolovka",
+        "Russia)",
+        "V. Umansky (Braun Center for Submicron Research",
+        "Weizmann Institute of Science",
+        "Rehovot",
+        "Israel)"
+      ],
+      "abstract": "We investigate a two-dimensional electron system in an external magnetic field. An intrinsic four-particle excitation of the electron system, which we term a magnetoplasmon molecule, is observed. The molecule comprises two identical electrons and two Fermi holes with opposite spins. Both electrons and one Fermi hole participate in the collective plasma oscillations of the electron system, whereas the second Fermi hole neutralizes the excess electronic charge. We examine the interaction between the magnetoplasmon molecule and a magnetoexciton condensate.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36036",
+      "tier": "brief",
+      "why": "Reports a novel four-particle 'magnetoplasmon molecule' collective excitation in a 2D electron gas in high magnetic field, interacting with magnetoexciton condensates."
+    },
+    {
+      "id": "2609.36051",
+      "title": "Excitonic Stripe Order in the Two-Orbital Hubbard-Kanamori Model",
+      "authors": [
+        "Rafael D. Soares",
+        "Luke Staszewski",
+        "Chunhan Feng",
+        "Alexander Wietek"
+      ],
+      "abstract": "Excitonic condensation and stripe formation are two distinct manifestations of electronic correlations. While excitonic order naturally arises in multi-orbital systems, stripe order is a prominent feature of doped correlated-electron models. Here, we investigate an excitonic analogue of stripe order in the two–orbital Hubbard-Kanamori model on the square lattice, characterized by a spatial modulation of inter-orbital particle-hole coherence and, in the orbital-parity-symmetric limit, spontaneous breaking of a relative orbital \\mathbbZ2 symmetry. Using unrestricted real-space Hartree-Fock calculations complemented by random-phase-approximation instability analysis, we determine how the Kanamori interactions select different excitonic channels. The sign of Hund's exchange controls the spin character of the condensate: ferromagnetic Hund coupling favors triplet excitonic order, whereas antiferromagnetic Hund coupling stabilizes singlet excitonic order. Upon doping, commensurate excitonic density waves develop incommensurate textures, including excitonic stripes and, in the triplet sector, spiral excitonic density waves. We further show that crystal-field splitting strongly reorganizes the excitonic instability by modifying inter-orbital nesting and can stabilize triplet excitonic order even in the absence of pair hopping. Our results establish excitonic stripes as a distinct symmetry-broken state of multi-orbital correlated systems and identify microscopic routes for their stabilization.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36051",
+      "tier": "brief",
+      "why": "Hartree-Fock study finds excitonic analogues of stripe order and spiral density waves in a two-orbital Hubbard-Kanamori model, connecting excitonic condensation to correlated stripe physics."
+    },
+    {
+      "id": "2609.38102",
+      "title": "Spatially dispersive photogalvanic effects as a probe of quantum geometric tensor",
+      "authors": [
+        "Yicong Chen",
+        "Bumseop Kim",
+        "Senin Ahammed Akkara Paramban",
+        "Zhurun Ji",
+        "Utkarsh Khandelwal",
+        "Shupeng Xu",
+        "Jiachen Shi",
+        "Sergiy Krylyuk",
+        "Albert V. Davydov",
+        "Andrew M. Rappe",
+        "Ritesh Agarwal"
+      ],
+      "abstract": "Berry curvature and quantum metric of Bloch states govern a wide range of phenomena, yet unified experimental access to both remains limited. Here we show that light spatial-dispersion alters the selection rules of second-order photocurrents and responses forbidden by parity become allowed in centrosymmetric crystals without any external fields, magnetic order, interfaces, strain, or engineered symmetry breaking. The resulting response is intrinsic and its weight is set by the quantum geometry of the Bloch states. Conventional photogalvanic effects are constrained by crystal symmetry and entangle the quantum metric with shift vector contributions. The spatially-dispersive response instead isolates the quantum metric and Berry curvature in distinct polarization channels. Implementing this approach in 1T'-MoTe2 across its temperature-driven transition to Td-Weyl phase, we resolve helicity-even and helicity-odd photocurrents corresponding to quantum metric and Berry curvature contributions, respectively, from the same device. The metric-dominated response persists across both phases and exhibits a robust spectral structure reproduced by first-principles calculations and linked to momentum-resolved quantum metric hotspots. In contrast, the curvature-driven channel emerges only when inversion symmetry is broken and shows strong sensitivity to carrier doping through competing momentum-space contributions. Our results establish photogalvanic effects with spatially varying optical fields as a general route to accessing quantum geometry in materials where photon energy and electronic filling probe different parts of the excitation manifold.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.38102",
+      "tier": "brief",
+      "why": "Uses spatially-dispersive photogalvanic effects in MoTe2 to cleanly separate quantum metric and Berry curvature contributions to photocurrents across a topological phase transition."
+    },
+    {
+      "id": "2609.35977",
+      "title": "Topological Band Theory for High-Dimensional Parameter Spaces",
+      "authors": [
+        "Vivek Chakrabhavi",
+        "Walt Chavarria",
+        "Jonathan J. Heckman",
+        "Steven Rayan"
+      ],
+      "abstract": "We study the topological band theory of quantum Hall systems in which the adiabatic flux parameters of an external gauge potential form a high-dimensional manifold. This situation arises both for strongly correlated matter on spatial Riemann surfaces of genus g > 1, as well as in the formal study of matter on compact oriented manifolds of dimension 4\\ell+2 = 2p coupled to p-form gauge potentials. In these cases, the underlying topological invariants defined over the parameter space are significantly richer than the low-dimensional (i.e., two-dimensional) case and involve both the curvature (i.e., first Chern class) as well as higher order curvature invariants. These higher curvature invariants correspond to topologically protected contributions to Kubo-like formulae, constructed from correlation functions of the physical current operators. We illustrate these general considerations with an explicit example from hyperbolic band theory based on the genus-two Bolza Riemann surface, a case which has recently been simulated on a synthetic-dimension platform.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "hep-th",
+        "math-ph",
+        "math.AG",
+        "math.MP",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.35977",
+      "tier": "brief",
+      "why": "Extends topological band theory of quantum Hall systems to high-dimensional parameter spaces, with an explicit hyperbolic band theory example relevant to synthetic-dimension QH platforms."
+    },
+    {
+      "id": "2609.36356",
+      "title": "Artificial versus Natural Atoms: The uncanny capability of the many-body Schrödinger equation to produce emergent behavior",
+      "authors": [
+        "Constantine Yannouleas"
+      ],
+      "abstract": "The paper reviews the theoretical and experimental progress achieved in the last 25 years in understanding the novel physics of artificial atoms and molecules as arising from the formation of Wigner molecules (WMs) of localized (to a stronger or lesser extent) fermionic or bosonic particles, which are finite quantum analogs of the more familiar bulk Wigner crystal. The term artificial atoms, as used here, encompasses a broad range of recently fabricated quantum nanodevices and experimental apparatuses consisting of a finite number of mutually repelling confined particles, including two-dimensional semiconductor and moiré transition metal dichalcogenide quantum dots, as well as trapped ultracold neutral atoms or ions. These nano-sized or micro-sized artificial devices and apparatuses (in single well or multi-well of variable-shape arrangements) hold a great promise for technological applications in the field of quantum information and quantum computers, as well as for advances in fundamental many-body physics. Prominent quantum effects of Wigner molecularization are the strong quenching of the spectral energy gaps, the appearance of rovibational spectra (in analogy with natural molecules), entanglement, and pinning due to an external perturbation. In high magnetic fields or at rapid rotation, WMs provide an alternative theory to the fractional quantum Hall effect. The physics of Wigner molecules is shown to derive from the solutions of the many-body Schrödinger equation (MBSE) in the regime of strong interparticle correlations arising from the dominance of the potential over the kinetic energy, or from a high magnetic field, as well as from a rapid rotation... (continues in the paper).",
+      "categories": [
+        "cond-mat.str-el",
+        "nucl-th",
+        "physics.atom-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36356",
+      "tier": "brief",
+      "why": "Review of Wigner molecule physics in artificial atoms including moiré TMD quantum dots, offering an alternative theoretical lens on fractional quantum Hall-adjacent correlated states."
+    },
+    {
+      "id": "2609.37418",
+      "title": "Nonlinear optical responses of semiconducting graphene nanoribbons: Strong constraint from a hidden symmetry",
+      "authors": [
+        "Jiawei Ruan",
+        "Weichen Tang",
+        "Yang-Hao Chan",
+        "Chen Hu",
+        "Xiaoxun Gong",
+        "Steven G. Louie"
+      ],
+      "abstract": "Nonlinear optical (NLO) responses are powerful tools for probing material structures, as they are highly sensitive to spatial symmetries. For instance, it is well known that having inversion symmetry forbids even-order NLO effects. Here, we show that nonspatial symmetries can also significantly constrain NLO responses. In graphene nanoribbons (GNRs) with bipartite-lattice structures, we identify the approximate bipartite-lattice particle-hole (BLPH) symmetry strongly suppresses even-order NLO effects, even for systems with no inversion symmetry. Importantly, we demonstrate that this approximate symmetry enables the optical generation of nearly pure spin shift currents in ferromagnetic GNRs, with the charge shift currents strongly suppressed. The spin orientation of these photo-induced DC spin currents can be easily tuned by an external magnetic field, providing distinct advantages over previous schemes for generating pure spin shift currents in antiferromagnetic systems. We illustrate our findings using a recently synthesized ferromagnetic Janus GNR. Our results underscore the significance of an overlooked symmetry aspect of NLO responses and highlight magnetic GNRs as promising candidates for spintronic devices.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.37418",
+      "tier": "brief",
+      "why": "Identifies a hidden bipartite particle-hole symmetry that suppresses even-order nonlinear optical responses in graphene nanoribbons, enabling pure spin photocurrents tunable by magnetic field."
+    },
+    {
+      "id": "2609.38150",
+      "title": "Neural-quantum-state based downfolding of the three-band Emery model for cuprates and nickelates",
+      "authors": [
+        "Hannah Lange",
+        "Julius F. A. Tirpitz",
+        "Annabelle Bohrdt"
+      ],
+      "abstract": "Understanding the physics underlying high-temperature superconductivity in cuprates and, more recently, infinite-layer nickelates has remained a central challenge in condensed-matter physics. We establish neural quantum states (NQS), specifically Hidden Fermion Determinant States (HFDS), as a scalable variational approach to the three-band Emery model of the copper- and nickel-oxide layers in these materials. After benchmarking HFDS against matrix product states on width-two geometries, we study ground states of fully two-dimensional (2D) systems of up to 10\\times10 unit cells (300 sites). We characterize the momentum-space distribution of dopants and find a pronounced electron-hole dichotomy similar to cuprate experiments. We further downfold the three-band model to effective single-band descriptions by constructing interacting Wannier functions. We consider a wide range of parameters – from the charge-transfer regime relevant to cuprates to the Hubbard-Mott regime of nickelates, as well as systematic scans of the charge-transfer gap that has been demonstrated to impact the critical superconducting temperatures. Across all regimes, the effective model significantly deviates from the usual Fermi-Hubbard model: The typical ratio U/t is enhanced, some parameters experience a significant doping dependence, and sizable terms beyond the conventional Hubbard model are present, most notably a density-assisted hopping tn. Notably, in all effective models, tn has the largest contribution to particle-hole asymmetry, rather than next-nearest-neighbor hopping contributions. The effective parameters sensitively depend on the charge-transfer energy, doping, and interaction ratios. Our results establish HFDS as an efficient tool for studying the 2D Emery model and demonstrate that single-band descriptions can require interaction terms generated by the underlying multi-band models.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.dis-nn",
+        "cond-mat.quant-gas",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.38150",
+      "tier": "brief",
+      "why": "Neural quantum states scale downfolding of the three-band Emery model to 300 sites, revealing that effective single-band cuprate/nickelate models require significant beyond-Hubbard terms."
+    },
+    {
+      "id": "2609.36962",
+      "title": "Deep Learning GW Quasiparticle Hamiltonians for Many-Body Excited-State Electronic Structure at Scale",
+      "authors": [
+        "Xiaoxun Gong",
+        "Zechen Tang",
+        "Woochang Kim",
+        "Yang Li",
+        "Wenhui Duan",
+        "Yong Xu",
+        "Steven G. Louie"
+      ],
+      "abstract": "Accurate quasiparticle electronic structures are the foundation for understanding excited-state properties of materials and explaining optoelectronic, quantum, and transport phenomena. First-principles GW calculations nevertheless remain computationally intensive for large or configurationally complex systems. Here we introduce DeepH-GW, a deep-learning framework that predicts an effective GW quasiparticle Hamiltonian directly from atomic structure. Building on the local, equivariant message-passing architecture of DeepH, DeepH-GW is trained on high-fidelity plane-wave GW calculations through a real-space Hamiltonian-reconstruction interface. This approach combines the systematic accuracy and broad chemical applicability of plane-wave methods with linear-scaling neural-network inference. Across the systems examined, DeepH-GW reproduces quasiparticle band structures with errors on the order of a few meV. Moreover, we show that, despite the intrinsic nonlocality of many-body interactions, DeepH-GW exhibits strong cross-scale transferability from relatively small training structures to substantially larger supercells. We demonstrate that the framework can accurately capture GW-level electron-phonon band-gap renormalization through predictions in supercells with thermal displacements, illustrating the power of the approach. DeepH-GW therefore provides a practical route toward large-scale many-body simulations and foundation models for excited-state electronic structure.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "physics.comp-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36962",
+      "tier": "brief",
+      "why": "A deep-learning framework predicts GW quasiparticle Hamiltonians directly from atomic structure with meV accuracy and strong transferability to larger supercells, a potential game-changer for excited-state calculations relevant to 2D materials."
+    },
+    {
+      "id": "2609.37767",
+      "title": "Multistate Torsion in Zitterbewegung",
+      "authors": [
+        "Wojciech J. Jankowski"
+      ],
+      "abstract": "We derive nonlinear Zitterbewegung velocity of electrons augmented by band torsion in crystals. The equation of motion with multistate quantum geometric tensors and torsion culminates in transient nonlinear photocurrent responses distinct from the recently measured resonant steady-state photovoltaic effects induced by circularly polarized light. Tomography protocols for measuring the multistate quantum geometric torsion tensors are proposed.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.37767",
+      "tier": "brief",
+      "why": "Derives nonlinear Zitterbewegung velocity augmented by quantum geometric torsion, predicting transient photocurrent signatures distinct from known circularly-polarized-light photovoltaic effects."
+    },
+    {
+      "id": "2609.38071",
+      "title": "3/8 charge-density wave instability in the kagome metal CsV3Sb5",
+      "authors": [
+        "Luca Buiarelli",
+        "Hyeonseo H. Park",
+        "Ethan T. Ritz",
+        "Rafael M. Fernandes",
+        "Turan Birol"
+      ],
+      "abstract": "The kagome metal CsV3Sb5 exhibits charge density wave (CDW) and superconducting transitions, both of which are substantially affected by pressure. Recent x-ray diffraction experiments identify a new charge-ordered phase at a pressure coinciding with the dip of the superconducting dome. This CDW phase displays a distinctive wavevector \\mathbfQ = (3/8, 0, 1/2) and monoclinic symmetry, in contrast to the 2\\times2\\times 2 and 2\\times2\\times 4 orders reported at ambient pressure. In this letter, we show that density functional perturbation theory (DFPT) calculations on a fine reciprocal-space grid predict the leading lattice instability of CsV3Sb5 to be at this wavevector. Finite-displacement calculations reveal that while anharmonic effects stabilize the conventional L2^- CDW at ambient pressure, the competing 3/8 instability becomes energetically favorable above \\sim1 GPa, consistent with experimental observations. Interestingly, the nesting function displays a peak at the same wavevector. A Landau free energy analysis explains the emergence of the monoclinic distortion observed in x-ray diffraction, in addition to several bond-ordering patterns that may be relevant to the observed trends in the superconducting Tc.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.38071",
+      "tier": "mention",
+      "why": "DFPT calculations explain a pressure-induced 3/8 charge-density-wave instability in kagome metal CsV3Sb5 coinciding with its superconducting dome dip."
+    },
+    {
+      "id": "2609.38003",
+      "title": "Reversible field-free superconducting diode effect controlled by an antiferromagnet",
+      "authors": [
+        "Filip Krizek",
+        "Kamil Olejn\\'ik",
+        "Tobias Edwinson",
+        "August Jacobi",
+        "Athira Suresh",
+        "Andrej Farka\\v{s}",
+        "Jan Kraus",
+        "V\\'it Nov\\'ak",
+        "Christoph M\\\"uller",
+        "Vojt\\v{e}ch Pa\\v{r}\\'izek",
+        "Niclas Heinsdorf",
+        "Peter Wadley",
+        "Oliver Amin",
+        "Kevin Edmonds",
+        "Tomas Jungwirth",
+        "Libor \\v{S}mejkal",
+        "Anna Birk Hellenes",
+        "Sumit Ghosh",
+        "Michal Mazur",
+        "Dominik Kriegner",
+        "Lucas Casparis",
+        "Saulius Vaitiek\\.{e}nas"
+      ],
+      "abstract": "The semiconductor diode, which allows current to flow preferentially in one direction, is a fundamental building block of numerous modern electronic circuits. Its superconducting analogue–-the superconducting diode effect–-enables directional dissipationless current flow and may provide similar functionality in future superconducting quantum circuits. Realization of such a nonreciprocal supercurrent requires broken time-reversal symmetry. At zero applied field, this has been typically associated either with intrinsic unconventional superconductivity or extrinsic spin-split electronic states induced by magnetic proximity. Here we demonstrate a field-free superconducting diode effect in conventional superconducting Al proximitized by collinear antiferromagnetic CuMnAs, whose electronic structure breaks time-reversal symmetry without generating spin splitting. By tuning the proximity effect through an insulating AlAs interlayer and correlating the reversal of the diode polarity with the reversal of the remanent Néel state, we establish that the antiferromagnet controls the superconducting diode effect. Our results show that neither spin-split bands nor net magnetization is required for a magnetically controlled field-free superconducting diode effect, extending superconducting nonreciprocity to a broader class of collinear compensated magnets.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.38003",
+      "tier": "mention",
+      "why": "Demonstrates a field-free superconducting diode effect controlled by a collinear antiferromagnet without spin splitting or net magnetization."
+    },
+    {
+      "id": "2609.36261",
+      "title": "Unveiling Three-Dimensional Skyrmion Transitions Through Vortices and Monopoles",
+      "authors": [
+        "Melissa E. Henderson",
+        "Daichi Kurebayashi",
+        "Benjamin Heacock",
+        "Wangchun Chen",
+        "Charles W. Clark",
+        "David G. Cory",
+        "Dusan Sarenac",
+        "Shannon Watson",
+        "Jonathan S. White",
+        "Lisa DeBeer-Schmitt",
+        "Oleg A. Tretiakov",
+        "Dmitry A. Pushin"
+      ],
+      "abstract": "Magnetic skyrmions represent vortex-like spin configurations that provide a robust platform for next-generation spintronic technologies. Although they are often treated as two-dimensional objects with integer topological charge, their extension into three-dimensional strings realizes other composite structures with unique device functionalities that transcend planar frameworks. Unfortunately, a lack of bulk probes has failed to realize such higher-dimensional topological structures and their implementations. Here, we report the first experimental visualization of three-dimensional topological Q = 0 skyrmion structures using neutron scattering tomography techniques across the equilibrium phase of a Co8Zn8Mn4 sample. Disordered skyrmion states reveal metastable skyrmioniums and composite topological objects novel to bulk systems. Vortex-antivortex lattices mediate changes in topology, with unprecedented transition pathways via a coupling of merons and monopoles. The present realization of bulk Q = 0 quasiparticles and meron-mediated dynamics paves the way for higher-dimensional spintronic frameworks through multi-bit encoding architectures, unidirectional transport schemes, and monopole-mediated controls.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36261",
+      "tier": "mention",
+      "why": "First experimental neutron-tomography visualization of 3D topological Q=0 skyrmion structures and meron-monopole mediated transitions in a bulk chiral magnet."
+    },
+    {
+      "id": "2609.35960",
+      "title": "Advancing Fuzzy-Sphere CFTs: SO(3)-Rotation-Resolving Exact Diagonalization, 3D Ising Heavy Primaries, and Quasi-Hole-Space Projection",
+      "authors": [
+        "Zheng Zhou",
+        "Yin-Chen He"
+      ],
+      "abstract": "Fuzzy-sphere regularization has recently emerged as a powerful framework for studying three-dimensional conformal field theories (CFTs). In this work, we exploit symmetry and Hilbert-space structures to substantially advance this framework. We develop an exact-diagonalization algorithm that resolves the full SO(3) rotational symmetry, reducing computational costs by factors of several hundred. For the three-dimensional Ising CFT, we identify around 100 primary operators, including a large number of previously unknown heavy scalar primaries up to scaling dimension \\Delta\\approx16.5. We also resolve the tension between previous fuzzy-sphere and bootstrap results regarding the parity-odd scalar primary. Furthermore, we identify a branch of scalar primaries associated with \\phin operators in the \\phi4 Lagrangian description, beginning with the identity, \\sigma, \\epsilon, \\epsilon', and \\sigma'. Their wave functions exhibit a semi-classical structure closely related to states invariant under area-preserving diffeomorphisms of the sphere. Finally, we show that critical points involving fractional quantum Hall states can be studied within a substantially reduced Hilbert space spanned by quasi-hole states of the corresponding model quantum Hall wave functions like the Laughlin state. This suggests a general strategy for exploring CFTs intertwined with topologically ordered phases.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.stat-mech",
+        "hep-th"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.35960",
+      "tier": "mention",
+      "why": "Major advance in fuzzy-sphere regularization of 3D CFTs identifies ~100 primary operators in the 3D Ising CFT and links critical points to fractional quantum Hall wavefunctions."
+    },
+    {
+      "id": "2609.37191",
+      "title": "Uniform-Charge-Density d-Wave Superconductivity in the Pure t-J Model at 1/8 Doping on an Infinite Cylinder",
+      "authors": [
+        "Guangyu Yu",
+        "Zheng Zhu"
+      ],
+      "abstract": "The ground state of the square-lattice t-J model at 1/8 hole doping has been the subject of a long-standing controversy, with conflicting numerical reports of stripe order versus superconductivity. Here, we address this debate using the variational uniform matrix product state (VUMPS) method, which optimizes the wave function directly in the thermodynamic limit along the cylinder axis and eliminates the boundary pinning effects that can arise in finite-cylinder calculations. On an infinite cylinder of circumference Ly = 8, we find a uniform-charge-density d-wave superconducting ground state with quasi-long-range pairing correlations. The dominant pairing occurs at zero center-of-mass momentum, while no sizable finite-momentum pairing component is detected. Twisted-boundary-condition calculations reveal a finite superconducting phase stiffness, with the order-parameter phase winding smoothly to follow the applied flux, providing an independent probe of the robustness of the superconductivity. Moreover, both charge and spin correlations decay rapidly, with no signatures of long-range stripe or magnetic order, in contrast to an Ly=6 cylinder at 1/6 doping where the same method readily identifies stripe order. Our results provide methodologically distinct evidence in the long-standing stripe–superconductivity debate in the pure t-J model and reveal uniform d-wave superconductivity in a minimal model of doped Mott insulators.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.37191",
+      "tier": "mention",
+      "why": "VUMPS calculations on infinite cylinders find uniform-charge-density d-wave superconductivity rather than stripe order in the pure t-J model at 1/8 doping, addressing a long-standing numerical controversy."
+    },
+    {
+      "id": "2609.36538",
+      "title": "Frustrated Gd3+ Double Perovskites as High-Performance Magnetocaloric Materials for Sub-100 mK Adiabatic Demagnetization Refrigeration",
+      "authors": [
+        "Tim Treu",
+        "Marvin Klinger",
+        "Christian Heil",
+        "Hans-Albrecht Krug von Nidda",
+        "Vinicius E. S. Frehse",
+        "Mamoun Hemmida",
+        "Anton Jesche",
+        "Alexander A. Tsirlin",
+        "Philipp Gegenwart"
+      ],
+      "abstract": "Achieving temperatures below 100 mK is essential for advancing quantum technologies and exploring fundamental quantum phenomena. While paramagnetic salts have traditionally enabled adiabatic demagnetization refrigeration (ADR), their limitations have driven the search for more effective alternatives. In this work, we present Gd3+-based double perovskites, Ba2GdSbO6 and Sr2GdSbO6, as high-performance magnetocaloric materials. Starting ADR from 2 K and 5 T, these compounds reach 67 mK and 68 mK in small finite magnetic fields, and 83 mK and 78 mK in zero field, respectively, which are the lowest reported ADR temperatures for Gd3+ magnets (S = 7/2) under these conditions. The frustrated geometry and the complex interplay of exchange and dipolar interactions suppress their antiferromagnetic ordering temperatures to 100 and 166 mK for Ba2GdSbO6 and 190 mK for Sr2GdSbO6, while maintaining an outstanding entropy density of 189 mJ K-1 cm-3 and 201 mJ K-1 cm-3, respectively. Notably, Ba2GdSbO6 sustains sub-100 mK cooling even at finite fields of 0.5 T, making it particularly promising for practical ADR applications.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.36538",
+      "tier": "mention",
+      "why": "Gd3+ double perovskites achieve record sub-100 mK adiabatic demagnetization refrigeration temperatures, promising for cooling quantum technology platforms."
+    },
+    {
+      "id": "2609.36955",
+      "title": "Ohm's law for information revealed by a skyrmion Maxwell's demon",
+      "authors": [
+        "Soma Miki",
+        "Yoshishige Suzuki",
+        "Ryo Ishikawa",
+        "Yuki Hibino",
+        "Shunya Morishita",
+        "Hiroto Imanishi",
+        "Keigo Adachi",
+        "Yoichi Shiota",
+        "Takayuki Nozaki",
+        "Minori Goto",
+        "Hikaru Nomura",
+        "Shigemi Mizukami",
+        "Eiiti Tamura"
+      ],
+      "abstract": "Reducing the energy cost of computation-a pressing issue in the age of AI-requires a framework for circuit design based on information thermodynamics. By extending non-equilibrium statistical mechanics to information thermodynamics, it has been shown that a probability flow carrying information-hereinafter referred to as an 'information current'-is driven by its conjugate thermodynamic force, namely 'information affinity'. Since information affinity plays a role analogous to that of voltage in an electrical circuit, it is suggested that information transport also follows a linear response relationship analogous to Ohm's law. However, despite this theoretical prediction, experimentally establishing an Ohm-like constitutive relation for information transport remains an important unsolved problem. Here, we realise an information engine consisting of two magnetic skyrmions undergoing Brownian motion at room temperature. We demonstrate that the resulting information current is proportional to the information affinity generated by Maxwell's demon over a relatively wide range, establishing Ohm's law for information. Furthermore, we clarify that, in real information circuits, both Ohm's law for information and Kirchhoff's voltage law must be slightly modified to account for interactions between information carriers and the scattering of the information current.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36955",
+      "tier": "mention",
+      "why": "Realizes an 'Ohm's law for information' using a room-temperature skyrmion-based Maxwell's demon information engine."
+    },
+    {
+      "id": "2609.38174",
+      "title": "Imaging phase winding in topological superconductors with a fork-tip Josephson STM",
+      "authors": [
+        "Vladislav Poliakov",
+        "Archisman Panigrahi"
+      ],
+      "abstract": "The complex phase winding in a topological superconductor remains challenging to access by conventional real-space probes. We propose a scheme to probe this winding with a fork-tip Josephson STM near an impurity, where two superconducting tips form an interferometer sensitive to phase differences between two positions. The signal remains accessible even if the relative phase between the fork-tip and sample fluctuates, establishing a route towards a local phase-sensitive STM probe of topological superconductivity. We numerically compute the interference pattern to demonstrate that the magnitude and phase of the order parameter can be reconstructed as a function of angle, providing a route towards resolving the longstanding open experimental problem of directly detecting phase winding in topological superconductors.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.38174",
+      "tier": "mention",
+      "why": "Proposes a fork-tip Josephson STM interferometer scheme to directly image phase winding in topological superconductors."
+    },
+    {
+      "id": "2609.37812",
+      "title": "Correlation-assisted topological and metamagnetic transitions in Rashba-coupled superconductors: t-J-U model study",
+      "authors": [
+        "Tushar Dey",
+        "Maciej Fidrysiak",
+        "J\\'ozef Spa{\\l}ek"
+      ],
+      "abstract": "Unconventional superconductivity commonly emerges in systems characterized by strong electronic correlations, with layered copper-oxides serving as a canonical example. Observation of spin-momentum locking within Bi-family of the cuprates, compatible with the presence of non-negligible Rashba-type spin-orbit coupling (RSOC), calls for an investigation of the joint effects of electronic correlations and RSOC on pairing in copper-oxide and related superconductors. Employing statistically-consistent variational approximation (SGA), we carry out such an analysis by constructing the phase diagram for the case of square-lattice \\textitt-J-U model incorporating RSOC. We also investigate the effects of time-reversal-symmetry breaking by Zeeman field, as well as characterize emergent topological superconducting (TSC) states. Chern number C = \\pm 4 TSC is found in a broad regime of on-site Coulomb repulsion close to half-filling. The latter is not governed by correlations and emerges also within the weak-coupling Bogoliubov-de Gennes (BdG) scheme. Yet, we identify a distinct C = \\pm 2 TSC state that is driven specifically by electronic correlations via a topological transition occurring with no bulk quasiparticle gap closure, and is accompanied by discontinuous metamagnetic and Lifshitz transitions. Moreover, a qualitatively distinct doping evolution of the d- and p-wave components of the underlying mixed-parity SC order parameter above the metal-to-insulator transition is demonstrated. Our work points toward the relevance of joint correlation and RSOC effects beyond BdG scheme to phase diagrams of RSOC-coupled superconductors.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.37812",
+      "tier": "mention",
+      "why": "Finds a correlation-driven Chern number C=±2 topological superconducting state in a Rashba-coupled t-J-U model, distinct from weak-coupling BdG results."
+    },
+    {
+      "id": "2609.36706",
+      "title": "Probing the electronic structure of UTe2 with ARPES and high-energy spectroscopy",
+      "authors": [
+        "Shin-ichi Fujimori"
+      ],
+      "abstract": "UTe2 has emerged as one of the most intensively studied strongly correlated materials in recent years owing to its unconventional superconductivity and the possible realization of a spin-triplet, topologically nontrivial pairing state. A central open issue concerns the nature of the U\\,5f electrons and their participation in low-energy quasiparticle states. In this review, we summarize recent spectroscopic studies of UTe2 using momentum-resolved angle-resolved photoemission spectroscopy (ARPES) and element- and configuration-sensitive X-ray probes, including X-ray absorption spectroscopy (XAS), X-ray absorption near-edge structure (XANES), X-ray magnetic circular dichroism (XMCD), resonant X-ray emission spectroscopy (RXES), and resonant inelastic X-ray scattering (RIXS). A key finding is the pronounced technique dependence of the inferred electronic structure. We synthesize the present spectroscopic picture by integrating these results with modern electronic-structure calculations such as density functional theory plus dynamical mean-field theory (DFT+DMFT). These findings support an intermediate-valence ground state with significant admixture of 5f2 and 5f3 configurations in UTe2, and they delineate key experimental and theoretical benchmarks needed to connect the normal-state electronic structure to the superconducting mechanism.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.36706",
+      "tier": "mention",
+      "why": "Review synthesizing ARPES and X-ray spectroscopy evidence for an intermediate-valence 5f2/5f3 ground state in the unconventional superconductor UTe2."
+    }
+  ]
+}

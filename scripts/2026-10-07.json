@@ -1,0 +1,423 @@
+{
+  "date": "2026-10-07",
+  "format": "dialogue",
+  "n_papers": 43,
+  "episode_title": "Quantum geometry by QTM, composite fermions in rhombohedral graphene, and Raman interference in WSe2",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October 7th. About forty-three new papers hit the archive overnight. We've picked five for a deep dive and five quick hits, and the thread running through today is quantum geometry and moiré physics, from a new way to measure it with the quantum twisting microscope to composite fermions explaining the fractional anomalous Hall effect in rhombohedral graphene."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And a theory paper that finally explains why one of the resonance Raman peaks in tungsten diselenide just goes missing. Let's start with the QTM paper, since that's squarely in our backyard."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper one, Pupim and Scheurer. The quantum twisting microscope tunnels electrons between two graphene layers at a tunable twist angle, and the twist angle picks out which momentum you're probing in the sample. So far it's given band energies. This paper asks: can you also get the quantum geometric tensor — the metric and Berry curvature of the Bloch wavefunctions — out of it?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why would you want that beyond just the band structure?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Because in flat-band moiré systems like twisted bilayer graphene, which instability wins — superconductivity, some magnetic order, a fractional Chern insulator — depends not just on the energy but on how the wavefunction winds in momentum space. That's quantum geometry, and right now nobody has a momentum-resolved probe of it in two dimensions. Photoemission gets you something like it in principle but it's hard in these systems."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what's the trick?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They propose making the QTM tip sublattice-polarized, by nearly aligning the tip's graphene with its h-B-N substrate, which opens a four to fifty milli-electron-volt gap at the tip's Dirac point. Once the tip has a definite sublattice character, the tunneling current at the band-edge voltages picks up matrix elements that are sensitive to the sample's own sublattice pseudospin — essentially the expectation values of the Pauli operators in sublattice space, as a function of the scanned momentum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And that pseudospin vector is directly related to the quantum metric."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly — its derivative along the scan direction gives you one component of the metric directly, no extra assumptions needed. If you use two different tip gaps, you get the momentum shift of the tunneling hot-spot in two different ways, and from that you can reconstruct the full quantum geometric tensor, metric and Berry curvature included, not just the one component along the path."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the catch — this sounds like it solves everything in one shot."
+    },
+    {
+      "speaker": "Ava",
+      "text": "A few. First, there's a sign or root ambiguity when you solve for the perpendicular component of the pseudospin, since you only measure its square — resolvable in most of their worked examples but not guaranteed everywhere. Second, you're not measuring the pristine sample wavefunction, you're measuring it projected onto the top layer and traced over spin, so what you extract is technically a reduced quantum metric. They show for twisted bilayer graphene, thanks to a layer-exchange symmetry, you can still reconstruct the full metric by symmetry. And this is all theory — no QTM group has built a sublattice-polarized tip yet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's a blueprint, not a result."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, but a concrete one, with worked numerical examples showing the reconstruction actually tracks the exact metric closely, except right at points where the pseudospin's in-plane component vanishes — that's where noise would also blow up, so they flag it as a diagnosable failure mode rather than a fatal flaw. For anyone doing flat-band moiré work, this is a genuinely new measurement capability on paper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two is much more our usual territory — resonance Raman in tungsten diselenide, Groll, Wigger and Kuhn."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The puzzle: when you scan the exciting laser across the exciton resonance and watch the A-one phonon Raman peak, you expect two symmetric resonances — the incoming resonance when the laser matches the exciton energy, and the outgoing resonance one phonon energy above that. In tungsten diselenide, experiments see the incoming resonance suppressed, sometimes even split into two sub-peaks."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And tungsten-based TMDs are exactly where intervalley K to Q electron scattering matters, because the dark Q-valley exciton sits close in energy to the bright K exciton."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, that's the whole point. They build a microscopic model: excitons coupled to phonons via deformation potentials, with a self-consistent Born approximation for the exciton self-energies and a diagrammatic calculation of the Raman amplitude up to third order in the exciton-phonon coupling. The first-order process is just: absorb the K exciton, emit the A-one phonon from the K valley. The competing third-order process routes through the Q-valley exciton — absorb into K, scatter to Q via a phonon, emit the A-one phonon from Q, scatter back to K."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And those two processes interfere."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Destructively, right near the point where the K exciton energy roughly equals the Q exciton energy plus the A-one phonon energy plus the Q-point acoustic phonon energy — in unstrained encapsulated tungsten diselenide, those numbers happen to line up to within about ten milli-electron-volts. That near-coincidence is specific to tungsten diselenide; the K-K-prime versus K-Q energy gap there is around forty-three milli-electron-volts, and the A-one phonon is thirty-point-eight."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's basically an accident of the band structure in this one material."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's their explanation for why it's so sensitive to strain — strain shifts the Q-valley energy and detunes this interference, and they show the asymmetry can be tuned continuously, even producing a double-peak incoming resonance for strong Q-valley phonon coupling. They check it against three published experimental datasets: it reproduces the suppressed, asymmetric line in two tungsten diselenide samples, the clean symmetric profile in tungsten disulfide, and the symmetric profile in molybdenum diselenide, where both dark excitons sit above the bright one so the whole interference channel is switched off."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Open parameter, though."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes — the relative strength of A-one phonon emission from the Q valley isn't available from existing ab initio deformation potentials, since those are momentum-averaged, not mode-resolved. So it's a free fit parameter here. The authors are explicit that a systematic strain-dependent resonance Raman experiment could pin it down directly — which is a pretty clean proposal for your kind of lab."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three moves us to rhombohedral graphene and the fractional quantum anomalous Hall effect — Ding, Millis and Zeng."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Context: pentalayer and hexalayer rhombohedral graphene on aligned h-B-N show fractional Chern insulator states without any external magnetic field — the fractional quantum anomalous Hall effect. The puzzle is that the moiré potential from the h-B-N barely touches the electronic bands when it's applied to the layer farthest from the doped electrons, yet that's exactly the configuration where the FCI is most robust experimentally. Applying it to the layer closest to the charge instead tends to give other, more conventional insulating states."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Backwards from naive expectation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Completely. This paper tackles it with composite fermion theory — the same trick used for ordinary fractional quantum Hall physics, attaching flux to each electron via a singular gauge transformation so the problem becomes an integer-filling problem for composite fermions in an effective magnetic field. They apply this directly to the continuum band structure of rhombohedral graphene, no projection to an isolated narrow band required, which is important because rhombohedral graphene's bands aren't isolated and flat the way twisted molybdenum ditelluride's are."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the composite fermion Landau levels explain the remote-layer puzzle how?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The key result: when the attached flux is chosen opposite to the sign of the parent band's Berry curvature, the composite fermion Landau levels spread out widely in energy, and crucially the lowest Landau level wavefunction, originally concentrated on the layer closest to the charge, spreads out across all five layers — it becomes a superposition of different Landau orbital indices on each layer. So a moiré potential sitting on the remote layer, which looks negligible to the bare electronic band, acts on a sizable chunk of the composite fermion wavefunction and opens a real gap — about two milli-electron-volts in their calculation, which grows to around fifteen once they add Hartree-Fock interactions between composite fermions."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Does it reproduce the actual observed Hall conductance?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "At filling one-third, yes — interactions select the composite fermion band with Chern number plus-one, giving Hall conductance minus e-squared over three h, matching experiment. But they're upfront that this isn't automatic: at other Jain-sequence fractions the non-interacting ordering sometimes picks the wrong Chern number and interactions don't reliably fix it. They attribute the remaining gap to proper treatment needing dynamical gauge fluctuations beyond mean field, which they leave for future work. So it's a compelling mechanism, not yet a complete theory."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four is experimental — a MEMS device that twists graphene in situ, from the Yacoby and Cao groups."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is a hardware paper, not spectroscopy of correlated states, but it's relevant because twist-angle control has been the bottleneck for moiré physics. They build a reconfigurable platform: two independently fabricated graphene-on-h-B-N stacks, one mounted on a micro-electromechanical rotor with a tiny pyramid tip, the other on a fixed substrate. A voltage rotates the tip by up to plus or minus ten degrees continuously, in situ, in the same device, repeatedly."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they know the twist is real and clean, without transport?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Raman spectroscopy. Three signatures. First, an R peak appears only when the two layers are in contact, whose frequency disperses with twist angle exactly as predicted for the moiré-activated longitudinal optical phonon — giving a high-precision measurement of the graphene LO phonon dispersion itself, something hard to get any other way. Second, the double-resonant two-D mode's lineshape evolves continuously with angle, tracking the band hybridization near the Dirac point as the two layers' Dirac cones get close — blueshifting and splitting into extra sub-peaks as you approach zero degrees, the Bernal-stacked limit. Third, near zero degrees the G-mode phonon itself shows extra sidebands from moiré-induced phonon band folding."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So no electronic transport demonstrated yet in this device?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Correct, this paper is purely a Raman characterization, and they're explicit the next step is combining this with electrical contacts and going cryogenic to actually probe correlated phases like superconductivity. But the fact that the same device reproducibly cycles through many twist angles, confirmed optically every time, removes the device-to-device variability that's plagued the field — each sample used to be a one-shot twist angle you're stuck with."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five, is further from our core but has an optical hook — magnetism in vanadium oxide on molybdenum diselenide."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, this is mostly a materials and magnetometry story: thermally evaporated ultrathin vanadium oxide on CVD-grown monolayer molybdenum diselenide develops a much stronger ferromagnetic hysteresis than either material alone. DFT plus U calculations on finite vanadium oxide clusters show these clusters already carry a net magnetic moment — around one point two Bohr magnetons for a four-vanadium, ten-oxygen cluster — purely from relaxation-induced spin imbalance, even though bulk vanadium pentoxide is nonmagnetic. Contact with molybdenum diselenide boosts that moment to about two point nine Bohr magnetons, via charge transfer at the interface."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Where's the optics connection?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The photoluminescence is the independent check on that charge transfer. Before vanadium oxide deposition, the trion-to-exciton intensity ratio in molybdenum diselenide is about zero point one four; after deposition it jumps to zero point three seven. Since the DFT calculation says electrons flow from molybdenum diselenide into the oxide, that's hole doping of the semiconductor, consistent with enhanced positive trion weight. X-ray photoelectron spectroscopy rules out vanadium actually substituting into the lattice — no core-level shifts — so it's a clean interfacial charge-transfer story, not chemical doping."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any surprises in the temperature dependence?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, actually the most striking result: thick, continuous vanadium oxide films show the usual behavior — magnetization drops and coercivity softens with heating. But the thinnest, island-like films show magnetization increasing with temperature and non-monotonic coercivity, which is backwards for a normal ferromagnet. They model it with a distributed energy-barrier picture — more cluster moments becoming thermally accessible as you heat up, before thermal softening eventually wins. It's a nice phenomenological fit, but it's a fit, not a first-principles prediction of that anomaly, so treat the microscopic story there as plausible rather than proven."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Now the quick ones. Paper six, Navarro-Labastida and Naumis, works out the magic-angle sequence in twisted bilayer graphene analytically, treating the squared chiral Hamiltonian as an electron in a non-Abelian pseudo-magnetic field. They find the spacing between successive magic angles asymptotes to three-halves, trace it to a Landau-level-like structure near the AA stacking point, and flag a quantum metric maximum near zero point four three degrees as a promising spot for correlated physics beyond the first magic angle."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven looks at ultra-small-angle graphene twistronics with a monolayer h-B-N spacer between the layers. Fuller and collaborators compute minibands and van Hove singularities for twisted bilayers and double bilayers separated by that spacer, and predict that semiclassical magneto-oscillations tied to interlayer hybridization should produce one-over-B-periodic resistivity oscillations that survive to unusually high temperatures — a transport signature to look for in spacer-separated moiré stacks."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight is pure quantum-dot engineering, outside our core: Ivlev and colleagues demonstrate a six-by-six germanium quantum dot array with ten simultaneously operated spin qubits using coherent shuttling, cutting crosstalk forty-two fold by spacing dots apart. Nice scaling result, no two-D materials or optics angle."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine is a Floquet topological order paper: Will and coauthors drive a generalized Kitaev honeycomb model with clock degrees of freedom to realize Z-N topological order with chiral parafermion edge modes, and track anyon transmutation through a non-equilibrium loop order parameter, with matrix-product-state simulations supporting the chiral edge response away from the exactly solvable Clifford point."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper ten is an ARPES and DMFT study of the kagome metal lutetium-iron-six-germanium-six. They find a waterfall-like vertical spectral feature at the L point tied to a van Hove singularity in the iron d-y-z orbital, but dynamical mean-field theory says the correlations are actually weak — they argue the waterfall is more likely an extrinsic photoelectron energy-loss effect than a correlation signature, a useful cautionary note for anyone reading waterfalls as proof of strong correlation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the rundown — a new quantum-geometry probe for the twisting microscope, a clean explanation for a weird Raman asymmetry in tungsten diselenide, and composite fermions finally giving a mechanism for the remote-moiré puzzle in rhombohedral graphene."
+    },
+    {
+      "speaker": "Ava",
+      "text": "See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.08783",
+      "title": "Quantum twisting microscopy as a momentum-resolved probe of quantum geometry and sublattice symmetries",
+      "authors": [
+        "Lucas V. Pupim",
+        "Mathias S. Scheurer"
+      ],
+      "abstract": "In two-dimensional (2D) flat-band systems, as engineered, for instance, by stacking and twisting van der Waals materials, the momentum dependence of the Bloch states is a key factor in determining the interaction-induced emergence of different phases. Hence, methods of probing this form of ''quantum geometry'' are crucial to understanding these systems. Yet, extracting the momentum dependence of the underlying quantum geometric tensor from measurements is challenging in 2D. Here, we propose employing a quantum twisting microscope (QTM) with a sublattice-polarized tip to fill this gap. We show how expectation values of sublattice Pauli matrices can be probed across the scanned momentum path. This allows for the direct measurement of crucial symmetries characterizing the different candidate instabilities in graphene-based moiré systems. We furthermore show that the quantum metric component along the scan direction can also be extracted; the full quantum geometric tensor is also accessible, given that more than one sublattice polarization can be used. Our work illustrates the potential and extends the versatility of the QTM approach. If implemented in future experiments, this would provide unprecedented access to the symmetry signatures of the correlated phases and to the underlying quantum geometry in twisted bilayer graphene and related systems.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.08783",
+      "tier": "deep",
+      "why": "Proposes using the quantum twisting microscope with sublattice-polarized tips to directly measure quantum geometry and symmetry signatures in moiré graphene, a direct extension of the QTM technique central to this research area."
+    },
+    {
+      "id": "2610.07316",
+      "title": "Theory of resonance Raman profiles in transition metal dichalcogenide monolayers: Interference effects due to inter-valley phonon scattering",
+      "authors": [
+        "Daniel Groll",
+        "Daniel Wigger",
+        "Tilmann Kuhn"
+      ],
+      "abstract": "The optical properties of monolayer transition metal dichalcogenides (TMDCs) are strongly impacted by exciton-phonon coupling, especially inter-valley scattering in the case of tungsten-based materials. Together with strain-tunability of the energetic K-Q valley separation this material class therefore provides a platform for semiconductor optomechanics. Here we investigate the influence of inter-valley scattering and strain on resonance Raman scattering in monolayer TMDCs using a microscopic model based on an effective deformation potential coupling for the exciton-phonon interaction. Considering exemplarily the resonance Raman profile of the A1-mode in hBN-encapsulated monolayer WSe2, we find that inter-valley scattering between the electronic K- and Q-valley leads to destructive interference between a first order and a third order Raman process. As a result we obtain a suppression of the incoming resonance in WSe2, consistent with recently published experimental data.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.07316",
+      "tier": "deep",
+      "why": "A microscopic theory of resonance Raman profiles in WSe2 explains destructive interference from inter-valley K-Q phonon scattering, directly relevant to exciton-phonon spectroscopy in TMD monolayers."
+    },
+    {
+      "id": "2610.07174",
+      "title": "Composite Fermion Theory of Fractional Chern Insulators in Rhombohedral Graphene",
+      "authors": [
+        "Peize Ding",
+        "Andrew J. Millis",
+        "Yongxin Zeng"
+      ],
+      "abstract": "The experimental observation of the fractional quantum anomalous Hall effect in rhombohedral graphene multilayers has raised questions about the nature of the fractional Chern insulator (FCI) states and the role of the moiré potential. In this Letter we develop a composite fermion (CF) description and discuss how moiré modulation and Coulomb interactions stabilize the FCI ground states. Under a flux-attachment transformation and mean-field approximation, the CF spectrum forms Landau levels that are further split by the moiré potential. At moiré filling fractions in the Jain sequence, an integer number of CF bands are occupied, resulting in an incompressible ground state with fractionally quantized Hall response. Remarkably, when the attached flux opposes the Berry curvature of the conduction band of rhombohedral graphene, the CF Landau levels are widely spaced in energy and delocalized across layers, leading to a reduced density of states that helps protect the CF mean-field state and amplifying effects of the moiré potential acting on the layer away from the doped electrons. Interactions between CFs further enlarge the moiré-induced band gap and stabilize the FCI ground state. Our work sheds light on the nature of the FCI states in rhombohedral graphene and provides a new theoretical framework for further studies.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.07174",
+      "tier": "deep",
+      "why": "Develops a composite fermion theory explaining how moiré potential and Coulomb interactions stabilize the fractional Chern insulator states recently observed in rhombohedral graphene, bridging FCI and quantum Hall physics."
+    },
+    {
+      "id": "2610.07429",
+      "title": "Direct synthesis of moiré graphene with twist-tuned hybridization",
+      "authors": [
+        "Seunghyun Park",
+        "Daniel T. Larson",
+        "Zeyu Hao",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Efthimios Kaxiras",
+        "Yuan Cao",
+        "Amir Yacoby"
+      ],
+      "abstract": "Twisted van der Waals (vdW) systems provide a powerful platform for exploring emergent correlated phenomena, including superconductivity, magnetism, and topological phases. The twist angle offers a continuous tuning parameter for modifying the underlying Hamiltonian, however, precise and reproducible control remains challenging. Existing approaches are limited by single-use device architectures, restricted angular precision, or vertical probing geometries. Here we introduce a reconfigurable graphene-based moiré platform in which two independently fabricated layers are mechanically assembled and rotated in situ using a micro-electromechanical system (MEMS). Raman spectroscopy confirms the formation and robustness of the twist-induced moiré potential and enables continuous, deterministic control of the twist angle. The moiré potential folds the electronic band structure and activates the longitudinal optical (LO) phonon mode, allowing us to map its dispersion and directly visualize the moiré momentum. Angle-dependent electronic band hybridization is resolved through the evolution of the double-resonant 2D mode. Near \\(0^\\circ\\), an emergent asymmetry of the \\(\\Gamma\\)-point G-mode phonon reveals phonon band folding and hybridization driven by the moiré superlattice potential and interlayer relaxation. Our platform provides a reproducible Raman reference for twisted bilayer graphene while eliminating device-to-device variability. More broadly, it establishes the twist angle as a deterministically controllable parameter for systematic studies of correlated and topological phenomena in moiré quantum materials.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.07429",
+      "tier": "deep",
+      "why": "Demonstrates a reconfigurable MEMS-based platform for in-situ, continuously tunable twisted graphene with Raman-resolved phonon folding, offering a new tool for moiré material fabrication and characterization."
+    },
+    {
+      "id": "2610.08494",
+      "title": "Interfacial Charge Transfer and Morphology Govern Magnetism in Ultrathin VOx/MoSe2 Heterostructures",
+      "authors": [
+        "Yasinthara Wadumesthri",
+        "Nalaka Kapuruge",
+        "Raphael B. de Oliveira",
+        "Bruno Ipaves",
+        "Guilherme S. L. Fabris",
+        "Kinga Lasek",
+        "Florence A. Nugera",
+        "Jianjun Pan",
+        "Xiaomei Jiang",
+        "Douglas S. Galv\\~ao",
+        "Humberto Rodr\\'iguez Guti\\'errez"
+      ],
+      "abstract": "Engineering magnetism in two-dimensional semiconductors through interfacial interactions offers an attractive alternative to substitutional doping and provides opportunities for integrating magnetic and optoelectronic functionality within the same heterostructure. Here, we investigate ultrathin VOx films deposited on monolayer MoSe2 and demonstrate a pronounced enhancement of the magnetic response upon formation of the VOx/MoSe2 interface. Combined structural, spectroscopic, magnetic, and first-principles analyses support a consistent picture in which finite VOx clusters possess intrinsic magnetic moments that are further enhanced by electron transfer from MoSe2 to the oxide. The predicted charge transfer is also consistent with the increased trion contribution observed in the photoluminescence response of the heterostructure. Beyond this interfacial enhancement, the magnetic behavior is strongly governed by the morphology of the ultrathin oxide. A crossover from discontinuous clusters to more continuous films produces qualitatively different temperature dependences: the continuous-film regime exhibits conventional thermal demagnetization and coercive softening, whereas the clustered regime displays an unusual increase in magnetization and nonmonotonic coercivity with increasing temperature. These contrasting responses are captured by a phenomenological model in which morphology determines the collective magnetic dynamics through a distribution of effective reversal barriers and their thermally activated accessibility. Together, the results establish a unified picture in which interfacial charge transfer enhances the local magnetic moments of VOx, while nanoscale morphology governs their collective magnetic dynamics, providing complementary routes for controlling magnetism in oxide/transition-metal dichalcogenide heterostructures.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.08494",
+      "tier": "deep",
+      "why": "Shows interfacial charge transfer from VOx to monolayer MoSe2 enhances magnetism while simultaneously boosting trion weight in photoluminescence, directly linking optical spectroscopy to induced magnetism in a vdW heterostructure."
+    },
+    {
+      "id": "2610.07734",
+      "title": "Theory of Magic Angles in Twisted Bilayer Graphene: from Non-Abelian Gauge Fields to Flat Bands",
+      "authors": [
+        "Leonardo A. Navarro-Labastida",
+        "Gerardo G. Naumis"
+      ],
+      "abstract": "At a discrete set of ``magic'' twist angles, twisted bilayer graphene develops two bands at charge neutrality that are almost perfectly flat. We present a unified theory of this phenomenon within the chiral continuum model. The central object is the square of the chiral Hamiltonian, a 2\\times2 Schrödinger operator for an electron moving in a non-Abelian SU(2) pseudo-magnetic field generated by the interlayer tunneling. From it we derive an energy sum rule in which the interlayer coupling splits into a bounded overlap channel and an unbounded current channel; their different scaling with the coupling \\alpha explains why the first magic angle is qualitatively different from the rest. The asymptotic rule \\alpham+1-\\alpham\\to3/2 follows from a rescaling of the moiré potential together with its three-cell magnetic periodicity, with the two parity families of zero modes each repeating with period 3 and interleaved with each other. Near the AA point the zero-mode problem becomes a lowest-Landau-level problem in an effective field B\\rm eff=3\\alpha, so that the high-order zero modes are coherent Landau states of width 1/\\sqrt3\\alpha whose guiding centres converge to \\pm(\\pi/3) q_\\mu, with kinetic and confinement energies in equipartition. Deforming the coupling into an Abelian one removes the magic-angle sequence, which shows that the non-Abelian structure is essential. Between consecutive magic angles, band inversions at \\Gamma and M produce phases with Chern numbers C=\\pm2, and the quantum metric reaches a sharp maximum at \\theta\\approx0.43^\\circ, identifying a promising regime for correlated and topological phases beyond the first magic angle.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.07734",
+      "tier": "brief",
+      "why": "Presents a unified non-Abelian gauge-field theory explaining the magic-angle sequence and Chern-number phases in twisted bilayer graphene flat bands."
+    },
+    {
+      "id": "2610.08505",
+      "title": "Ultra-small-angle graphene twistronics with monolayer spacers: From interlayer hybridisation and moiré effects to high-temperature magnetotransport oscillations",
+      "authors": [
+        "Benjamin Fuller",
+        "Haowei Fan",
+        "Agustin Montemurro",
+        "Yuyuan Pan",
+        "Alexey I. Berdyugin",
+        "Vladimir I. Falko",
+        "Xiao Li"
+      ],
+      "abstract": "Based on the analysis of moiré superlattice characteristics and interlayer hybridisation in small-angle twisted graphene multilayers with a monolayer hexagonal boron nitride (hBN) spacer, we predict spectral features and quantum transport effects in these systems. Here, we consider both a twisted bilayer and double bilayers with a spacer, discuss double bilayers in two stacking orders - with and without inversion symmetry - and also compare the results obtained with self-consistent Hartree calculations with and without in-plane periodic charge distribution, offering computationally efficient models for these graphene/hBN/graphene moiré systems. We note parametric intervals where the appearance of minibands can be enhanced by tuning with an out-of-plane displacement field, and identify the miniband edges and van Hove singularities across a broad range of densities and displacement fields. These system host Lifshitz transitions at which the Fermi lines form a network across moiré Brillouin zones, and to which Brown-Zak oscillations converge at low magnetic field and elevated temperatures. We analyse interlayer hybridisation across the same parameter space, discuss how hybridisation affects in-plane magneto-transport in ultra-high-mobility structures, and predict that semiclassical magneto-oscillations of interlayer hybridisation can lead to 1/B-periodic quantum oscillations of resistivity persistent to high temperature.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.08505",
+      "tier": "brief",
+      "why": "Predicts miniband structure, Lifshitz transitions, and high-temperature Brown-Zak-like magnetoresistance oscillations in ultra-small-angle twisted graphene with a monolayer hBN spacer."
+    },
+    {
+      "id": "2610.07683",
+      "title": "Sparse qubit operation in a 6\\times6 quantum dot array",
+      "authors": [
+        "Alexader S. Ivlev",
+        "Harold L. Co",
+        "Damien R. Crielaard",
+        "Alice Petrillo",
+        "Setareh Kazemzadeh",
+        "Giordano Scappucci",
+        "Menno Veldhorst"
+      ],
+      "abstract": "Fault-tolerant quantum computation requires increasing the qubit count while maintaining high performance and connectivity. Semiconductor qubits have demonstrated high-fidelity operation, but growing the system size at sufficient connectivity remains challenging, such that scaling mainly occurred in one spatial direction to preserve access for control lines in the other. Here, we realise an approach that relaxes the requirements on fabrication and demonstrate a 6\\times6 quantum dot array, defined by a shared barrier gate and individual plunger gates. The quantum dots are tuned through coherent spin shuttling over distances up to 5.2um into a sparse configuration of 10 simultaneously operated qubits, leaving space for shuttling connections. We reduce crosstalk by 42\\times in this separated regime, enabling high-fidelity simultaneous single-qubit control, while control-Z operations can be implemented through shuttling and plunger-only control. These results promise high-connectivity quantum circuits, enabled by scaling to two-dimensional geometries and exploiting shuttling.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.07683",
+      "tier": "brief",
+      "why": "Demonstrates a scalable 6x6 semiconductor quantum dot array with sparse shuttling-based qubit operation, a notable step for 2D-scalable quantum computing architectures."
+    },
+    {
+      "id": "2610.07156",
+      "title": "Chiral Parafermions in Floquet \\mathbbZN Topological Order",
+      "authors": [
+        "Melissa Will",
+        "Harald Schmid",
+        "Jan Egger",
+        "Adam Gammon-Smith",
+        "Michael Knap",
+        "Frank Pollmann"
+      ],
+      "abstract": "Floquet topological order (FTO) extends topology beyond equilibrium, giving rise to phenomena, such as the dynamical transmutation of anyons. Here, we realize \\mathbbZN FTO in a generalized Kitaev honeycomb model with clock degrees of freedom using a three-step periodic drive. The driven system admits an emergent description in terms of constrained parafermions coupled to conserved \\mathbbZN gauge fields. At the boundary, the drive generates chiral parafermionic Floquet edge modes. We resolve their propagation through correlation functions, characterize their fractional quantum-information transport through the radical chiral unitary index, and use their dynamics to probe exchange statistics. In the bulk, we explore the dynamical anyon transmutation with a non-equilibrium loop order parameter. At a Floquet sweet spot, where the drive becomes Clifford, these phenomena can be accessed using stabilizer simulations. Short-time matrix-product-state simulations away from this point show that the chiral edge response persists at accessible times. Our results establish \\mathbbZN Kitaev models as a setting for exploring intrinsically non-equilibrium topological phenomena on qudit-based quantum processors.",
+      "categories": [
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.07156",
+      "tier": "brief",
+      "why": "Realizes chiral parafermionic Floquet edge modes and dynamical anyon transmutation in a driven ZN Kitaev model, extending topological order and anyon physics into the non-equilibrium regime."
+    },
+    {
+      "id": "2610.08356",
+      "title": "Incoherent Spectral Weight Emerging from a Van Hove Singularity in a Kagome Metal",
+      "authors": [
+        "C. -y. Lim",
+        "J. Deng",
+        "A. Korshunov",
+        "A. Kar",
+        "D. Subires",
+        "H. Li",
+        "Y. Jiang",
+        "H. Hu",
+        "E. Modin",
+        "P. T\\\"orm\\\"a",
+        "A. Kumar-Sharma",
+        "C. Shekhar",
+        "A. Louat",
+        "T. K. Kim",
+        "C. Felser",
+        "B. Andrei Bernevig",
+        "S. Blanco-Canosa"
+      ],
+      "abstract": "Waterfall-like spectral features observed by angle-resolved photoemission spectroscopy (ARPES) are commonly associated with strong electronic correlations or electron-boson coupling. Here, we investigate this connection in the kagome metal LuFe6Ge6, a structurally simple member of the FeGe-derived family, using polarization-dependent ARPES, density functional theory and dynamical mean-field theory. We observe a pronounced vertical spectral feature at the L point extending over several hundred meV in binding energy. Its orbital character is identified as predominantly Fe dyz, and its energy onset coincides with a van Hove singularity located approximately 0.3 eV below EF . Despite the waterfall-like spectral response, dynamical mean-field theory (DMFT) reveals only weak electronic correlations, while the calculated electronic structure closely reproduces the experimental bulk bands. We propose that the anomalous spectral weight may arise from inelastic scattering of the outgoing photoelectrons, potentially associated with the large density of states near the van Hove singularity. Our results suggest that waterfall-like features can emerge without strong electronic correlations and highlight the possible role of the underlying band structure and photoelectron energy-loss processes in their interpretation.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.08356",
+      "tier": "brief",
+      "why": "ARPES and DMFT on a kagome metal show that dramatic 'waterfall' spectral features near a van Hove singularity can arise without strong correlations, challenging standard interpretations of such ARPES signatures."
+    }
+  ]
+}

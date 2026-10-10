@@ -1,0 +1,300 @@
+{
+  "date": "2026-10-04",
+  "id": "sn-04",
+  "format": "dialogue",
+  "episode_title": "From Bloch Functions to Band-Edge Masses: k·p Theory Across the Brillouin Zone and at the Interface",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Good morning, and welcome back to arXiv Morning, Nano and Correlated. This weekend we're getting ready for Lecture four in Professor Ihn's Semiconductor Nanostructures course, the one on k dot p theory, effective mass and g factor, density of states, thermal occupation, envelope functions, and the effective mass Schrödinger equation. That's a lot of keywords for one Thursday, but they're really all one story, and today's three readings tell it from three different angles: a heterostructure theory paper, a full Brillouin zone band structure method, and a classic cyclotron resonance experiment."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Before we get to the papers, can we just build the picture from scratch? I know k dot p theory exists, I've used effective masses a hundred times, but I've never really sat down and asked myself why an electron in a crystal behaves like a free particle with some weird renormalized mass in the first place."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Perfect place to start. Here's the toy picture. Deep in a crystal, an electron doesn't move through empty space, it moves through a periodic potential from all the ions and other electrons. Bloch's theorem tells you the eigenstates are a plane wave times a function with the periodicity of the lattice, the Bloch function. If you only cared about one single crystal momentum, say the center of the Brillouin zone, you'd solve the band edge problem once and be done. But we almost never care about exactly one k point, we care about a small neighborhood of k around a band extremum, because that's where the physics of transport, optics, and confinement happens. K dot p theory is the controlled way of asking, how do the energy and the wave function change as you move k slightly away from that special point."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's just perturbation theory, with the small quantity being k itself?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. You write the full Hamiltonian at a nearby momentum k as the band edge Hamiltonian, plus a term linear in k that looks like k dot p, the electron's momentum operator, divided by the electron mass. That extra term is off diagonal between different bands, because p connects states of different orbital symmetry, an s like state and a p like state for example. So even though you only wanted the s like conduction band, the k dot p term quietly mixes in the p like valence band and higher conduction bands. Treat that mixing with ordinary non degenerate perturbation theory and something beautiful happens: the energy of the conduction band, as a function of k, picks up a correction term that goes like k squared, divided by the energy gap to the band you're mixing with, times the square of the coupling matrix element."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And a k squared term with some coefficient in front is exactly dispersion with an effective mass."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, you just read off one over the effective mass as one over the free electron mass, plus a correction built from that matrix element squared divided by the gap. Physically, the electron isn't actually any heavier or lighter, it's that its wave function is a little bit valence-band-like and a little bit higher-conduction-band-like, and that admixture lets it respond to an applied field differently than a bare particle would. A small gap means strong admixture and a very light, or even negative, effective mass. A large gap means the valence band stays almost pure p like and barely talks to the conduction band, so the effective mass stays close to the free electron value."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Can we get a number out of this before we go further? I always like to know if the back of the envelope actually works."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's do gallium arsenide, since all three of today's readings live in that material family. The fundamental gap at the Gamma point is about one and a half electron volts. The relevant coupling matrix element, often quoted as an energy called E sub P, the Kane parameter, is of order twenty to twenty five electron volts for GaAs, it comes from how strongly the s-like conduction band state and the p-like valence band state are connected by the momentum operator. If you take the simplest two-band estimate, the effective mass over the free mass is roughly one divided by one plus E sub P over the gap. Twenty-two over one and a half is about fifteen, so one over sixteen, around zero point zero six something. That's right in the ballpark of the real GaAs conduction band mass, zero point zero six seven free electron masses. The crude two band toy model already gets you within ten percent of the truth, which tells you the valence band admixture really is the dominant physics, before you add any of the bookkeeping with higher bands or spin orbit coupling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's satisfying. And the same mechanism should also explain the weird g factors you see in these narrow gap-ish materials, the famous negative g factor in GaAs?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Same ingredients, different operator. The electron's spin, left completely alone, would just give you g equals two, like a free electron. But spin orbit coupling, which is itself a relativistic correction built from the gradient of the crystal potential crossed with momentum, dotted into spin, connects the spin up and spin down conduction states to the valence band in a way that depends on the spin orbit splitting of that valence band, usually called Delta. Push that through the same kind of perturbation theory, and you get a correction to the g factor that again scales with that same E sub P matrix element, now divided by a product involving the gap and the gap plus the spin orbit splitting. In GaAs this correction completely overwhelms the free electron value and flips the sign, giving the experimentally observed g factor around minus zero point four four. So a small gap doesn't just make electrons light, it makes their spin respond anomalously to magnetic fields too, through essentially the same virtual transitions into the valence band."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay so that's the bulk story: small gap, big spin orbit coupling, light mass, weird g factor, all from mixing with nearby bands. What changes once you put this electron into a quantum well or a heterostructure, which is really what this lecture is about?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's where envelope functions and the effective mass Schrödinger equation come in. In a heterostructure, nothing is translationally invariant anymore in the growth direction, so strictly speaking Bloch's theorem fails there. But here's the trick that makes the whole field of semiconductor nanostructures possible: if the materials on either side of the interface are chemically similar, like GaAs and the aluminum gallium arsenide alloy, their Bloch functions near the band edge look almost the same. So you can still write the full wave function as a Bloch-like function times a slowly varying envelope, but now let that envelope do all the work of describing the confinement. The envelope obeys a Schrödinger-like equation with an effective mass, and the whole heterostructure potential, band offsets, doping, electric fields, enters as a smooth potential energy term acting only on the envelope. That's the effective mass Schrödinger equation: it replaces an impossibly complicated atomistic problem with a simple one-dimensional quantum well problem for a particle with some renormalized mass."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And because the well confines the electron in one direction but leaves it free in the other two, you get subbands, two dimensional dispersion within each subband, and a two dimensional density of states?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and this is a genuinely different animal from three dimensions. In three dimensions the density of states grows like the square root of energy. In two dimensions, because the dispersion is just a simple parabola in the two free in-plane directions, the density of states per unit area, including the spin and valley degeneracy factors, comes out completely flat, a constant proportional to the effective mass, with a sharp step up each time you cross into a new subband. It looks like a staircase. That flat density of states is one of the cleanest fingerprints of true two-dimensionality, and it's why so many two dimensional electron gas experiments, including the one we'll discuss today, are designed to directly probe that staircase."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And thermal occupation is just laid on top of that staircase through the Fermi-Dirac distribution, so whether you actually resolve the steps depends on how the thermal smearing, of order k T, compares to the subband spacing, or in a magnetic field, to the Landau level spacing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely, and that interplay between a discrete or stepped density of states and thermal smearing is going to show up explicitly in the last paper we discuss, where it literally determines whether you see quantum oscillations in a cyclotron resonance experiment or not. Okay, I think we have the full toolkit now: k dot p perturbation theory giving effective mass and g factor from band mixing, envelope functions and the effective mass Schrödinger equation handling the heterostructure confinement, and two dimensional density of states plus thermal occupation controlling what you actually see in an experiment. Let's see how the three readings for this week each push on a different corner of that picture, starting with Lassnig."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is the one about effective mass and g factor specifically at the GaAs, gallium aluminum arsenide interface, right? Nineteen eighty five, Physical Review B."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. Let's set the stage. By the early nineteen eighties people had beautiful GaAs, gallium aluminum arsenide heterostructures, grown by molecular beam epitaxy, hosting extremely clean two dimensional electron gases. Everybody was using the effective mass approximation to describe these electrons, basically exactly the envelope function machinery we just built. But there was a nagging worry in the back of people's minds, inherited from the older silicon MOSFET world. In a silicon inversion layer, the electron sits against a silicon dioxide barrier that is enormous, many electron volts high, and the electron barely leaks into the oxide at all. So it's almost obvious there that the electron spends essentially all its time in bulk silicon and should just carry the bulk silicon effective mass. GaAs heterostructures are different: the barrier, the conduction band step between GaAs and the aluminum gallium arsenide alloy, is only a few hundred milli electron volts, nothing like an oxide barrier. So the electron's wave function genuinely leaks a non negligible amount into the barrier material, which itself has a different effective mass, different gap, different g factor."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the open question was basically, is the effective mass approximation even still valid there, and if the electron is partly sitting in a different material, what mass and g factor does it effectively have?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the question Lassnig tackles, and he does it by going back to first principles k dot p theory rather than just assuming a simple local mass that interpolates smoothly between the two bulk values. He builds a five level k dot p model: the s like conduction band, the p like valence band, the spin split off valence band, and the two next higher conduction bands, all coupled together, including spin orbit interaction. Because the two materials share essentially the same crystal symmetry and very similar Bloch functions, he argues you can describe the whole structure with one consistent k dot p matrix, where the band edge energies and gaps simply become step functions of position, jumping at the interface. This is really a formal, careful derivation of the envelope function approach for a heterostructure, including the subtlety of what happens to the effective mass equation when the mass itself depends on position."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That position dependence is the tricky bit, isn't it, because the kinetic energy operator and the mass don't commute once the mass depends on z. How do you even write a sensible effective mass Schrödinger equation then?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and Lassnig's derivation naturally produces the symmetrized form, where the momentum operator acts, then one over two times the local mass, then the momentum operator acts again, each step in the right order. This is the same form that Ben Daniel and Duke had derived earlier from current conservation arguments, and it's the version of the effective mass equation used throughout the lecture whenever the mass varies with position. It guarantees that probability current is conserved across the interface even though the mass jumps. And crucially, Lassnig shows the local effective mass isn't simply the bulk GaAs value on one side and the bulk barrier value on the other, glued together. Instead it depends self consistently on how far the electron's actual energy sits below the local valence band edge and the local higher conduction band edges, which themselves are shifted by the band offsets. So even deep inside the GaAs, away from the interface, the mass the electron carries is subtly renormalized by the presence of the nearby barrier, through exactly the kind of k dot p band mixing we discussed earlier."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, and then there's the spin splitting part of the title. What's new there, since we already said the g factor comes from the same kind of band mixing argument?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is maybe the most striking physics in the paper. In a perfectly symmetric bulk crystal with inversion symmetry, you need a magnetic field to split spin up and spin down, that's the ordinary Zeeman, or here Pauli, term involving the local g factor times field. But a heterostructure interface is not inversion symmetric, there's a built in asymmetry, the potential looks different approaching from the GaAs side than leaving into the barrier side. Lassnig shows that this broken symmetry introduces an extra, non diagonal term in the Hamiltonian, proportional to the derivative of the g factor with position, multiplied by a ladder-type momentum operator. That term survives even at zero magnetic field, as long as the electron has a nonzero momentum parallel to the interface. In other words, purely from the structural asymmetry of the heterojunction, the spin degeneracy is lifted at zero field for any electron with in-plane momentum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Wait, that's basically what we'd now call a Rashba type spin splitting, isn't it, zero field spin splitting from structural asymmetry?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the same physics, derived here directly from microscopic k dot p theory rather than from a phenomenological Rashba Hamiltonian. That's actually one reason this paper is worth reading carefully for this lecture: it shows you concretely, with real band parameters, how a spin orbit term that looks exotic and phenomenological in a simplified model actually falls directly out of the same k dot p machinery that gives you the effective mass, once you let the confining potential break inversion symmetry."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what did he actually compare this to experimentally, since this seems to be mostly a theory paper?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two experimental anchors. First, cyclotron resonance measurements by Seidenbusch and collaborators, which measure effective mass directly through the spacing of Landau levels in a magnetic field, the same kind of measurement we'll meet again in the Abstreiter, Kotthaus, Koch paper, just for GaAs rather than silicon. Lassnig computes the effective mass for the lowest cyclotron transition as a function of electron density and depletion charge, and finds good quantitative agreement with the measured value, confirming that his local effective mass concept, including the self consistent dependence on nearby band edges, correctly reproduces real heterostructure data. Second, and this is where the zero field spin splitting becomes testable, electron spin resonance measurements by Stein and Klitzing in GaAs, gallium aluminum arsenide structures. They had measured the spin resonance frequency as a function of magnetic field down to quite low fields and found a sizable deviation from the bulk GaAs value that didn't simply extrapolate to zero as the field went to zero."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And Lassnig's theory explains that residual splitting?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Partially, and he's honest about it. He plots the predicted spin splitting versus magnetic field for reasonable choices of the conduction band offset, and finds the theory accounts for roughly sixty percent of the observed deviation from the bulk GaAs spin splitting, leaving an unexplained remainder that he attributes to missing exchange and correlation effects, or to oversimplified matching of the Bloch functions right at the interface. He's also careful to note that extrapolating the Stein and Klitzing data all the way to zero field isn't fully unique, so the comparison has to be treated with some caution. But there's a really elegant extra piece of physics in the paper: an illumination experiment. When you shine light on these samples at low temperature, it liberates extra charge that increases the electron density in the channel, and Lassnig shows that whether this extra charge comes from the depletion layer or is transferred across the barrier from the aluminum gallium arsenide side leaves completely different fingerprints on how the spin splitting evolves. Comparing his calculation to the measured frequency shift under illumination, he concludes the new charge must be coming from the depletion layer, not from the barrier material, which is a nice example of using fine structure spectroscopy to settle a question about charge transfer that you couldn't easily answer by other means."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So to tie this back to the lecture: this paper is basically a worked example of everything the lecture promises, the k dot p derivation of effective mass and g factor, explicitly built into an envelope function and effective mass Schrödinger equation framework, applied to a real heterostructure, with the added bonus of showing where that formalism naturally produces zero field spin splitting."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the one sentence summary, yes. And I'd add one methodological point for the lecture: Lassnig's Hamiltonian treats the electron gas in the Hartree approximation, which is a small but important detail, because he's explicit that it's the single particle Hamiltonian, not the total energy functional, that gets diagonalized by k dot p theory. That distinction between the quantity you diagonalize and the quantity you minimize is a subtlety that's easy to blur, and it's worth having clear in your head before the lecture, since the course will build real heterostructure subband calculations on exactly that same Hartree plus effective mass Schrödinger equation logic."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good, let's move to the second paper, Richard, Aniel, and Fishman, the thirty band k dot p method for germanium, silicon, and GaAs. This already sounds like a very different kind of paper, more of a methods paper than an experiment or a heterostructure calculation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It is, and it's useful precisely because it shows you the other end of the k dot p story: what happens if you push the same basic idea, expand in a small basis of bands near a point, far beyond its comfort zone. Everything we did at the start of the episode, and everything Lassnig does, is a low order expansion valid near the Gamma point, near the band edge. That's perfectly fine for transport and optics near the conduction band minimum in a direct gap material like GaAs. But real devices, and certainly things like impact ionization or high field transport, care about what the bands do much further out in the Brillouin zone, at the L point or the X point, in valleys that are completely invisible to a small Gamma point k dot p expansion."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, and silicon and germanium are indirect gap materials, their conduction band minima aren't even at Gamma, so a naive small k dot p basis built only around the zone center can't describe them properly at all."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the problem the paper sets out to solve. The authors trace the history briefly: early approaches, like the Pidgeon-Brown model with an eight function basis including spin, work well very close to the zone center, maybe up to fifteen percent of the way across the Brillouin zone. People tried bigger bases, fourteen functions, then a twenty band model that introduced extra fictitious bands and what they call pseudo Luttinger parameters just to mimic the effect of the real d like atomic orbitals on the bands, without including those d states explicitly. That twenty band approach got you useful access to the Gamma, L, and X valleys relevant for transport, but only up to about three and a half electron volts above the valence band top, and it still couldn't properly capture the L valley of the second conduction band."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the fix in this paper is to go back and include the real higher bands explicitly instead of faking them with extra parameters?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, that's the central design choice. They start from an earlier method by Cardona and Pollak, who had built a fifteen state basis, without spin, out of plane waves of the empty lattice, basically free electron states labeled by their crystal momentum at special points of the Brillouin zone, zero, the eight equivalent points along the one one one directions, and the six equivalent points along one zero zero. Those fifteen states, it turns out, are enough to reproduce a correct band diagram for silicon and germanium without needing any extra fudge parameters, because the next shell of plane wave states sits more than fifteen electron volts higher in energy and barely couples in. Richard, Aniel, and Fishman then add spin, which doubles the basis to thirty states, and crucially add the spin orbit interaction explicitly, since that's essential for germanium and GaAs, where the spin orbit splitting is more than twenty percent of the band gap, far too large to treat as a minor correction."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And all the usual k dot p quantities, effective masses, g factor type information, Luttinger parameters for the valence band, come out as explicit combinations of the matrix elements and gaps in this larger basis?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's really the main selling point of the method. They derive explicit closed form expressions for the standard Luttinger parameters that describe the warped valence band, and for the Gamma point effective mass of the conduction band, directly in terms of the momentum matrix elements and energy level splittings of the thirty band model. No ad hoc pseudo Luttinger parameters needed, unlike the earlier twenty band scheme. For silicon, you have ten adjustable matrix elements for this kind of cubic crystal symmetry, and for GaAs and other zinc blende materials, which lack inversion symmetry, you need a modest number of extra elements, eighteen possible ones, though they find only eleven of those are actually needed to get a quantitative GaAs band structure. That's remarkably economical for a method that reproduces the band structure across the whole Brillouin zone, several electron volts above and below the band edges."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they know the method is actually working, since there's no new experiment here? What are the figures showing?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The paper shows full band diagrams for silicon, germanium, and GaAs, essentially energy versus crystal momentum along the standard high symmetry directions, Gamma to X, Gamma to L, Gamma to K, and X to the point they call U. Visually these look like the band structures you'll have seen in any solid state course, but the point is how far out they remain accurate: the authors state the description is good over about eleven electron volts total range, roughly six electron volts into the valence band and five above it, which is a big step up from the three or so electron volts validity of the earlier twenty band model. They also have a table directly comparing their computed effective masses, for the lowest conduction valley in each material, the Delta valley minimum in silicon, the L valley minimum in germanium, the Gamma valley in GaAs, plus the Luttinger parameters gamma one, two, three for the valence band, against experimental values. The agreement is at the level of a few percent for the masses and about ten percent in the worst case for the Luttinger parameters, which for a model with order ten free parameters fit to the whole Brillouin zone is genuinely impressive."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is there a specific piece of physics that this larger basis resolves which the smaller ones couldn't? You mentioned the L valley of the second conduction band."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, that's actually highlighted as one of the clearest wins. The earlier twenty band model, built by mimicking d orbital effects through perturbative pseudo-Luttinger corrections, could reproduce the near zone center physics nicely but simply failed to give you a sensible second conduction band at the L point, because that band's character really does depend on real d-like orbitals contributing at finite k, not just perturbatively near the zone center. Once Richard, Aniel, and Fishman put the actual higher lying atomic-like levels into the basis explicitly, rather than approximating their effect, the L valley of the second conduction band comes out correctly, with essentially no extra fitting cost. That band is important for real device physics, it matters for full band Monte Carlo transport simulations and for modeling impact ionization at high electric fields, processes where carriers gain enough energy to sample these higher valleys."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So tying this back to the lecture: this paper is kind of the opposite pedagogical lesson from Lassnig. Lassnig shows you k dot p theory doing exactly what the lecture's effective mass Schrödinger equation needs, a tight, physically transparent expansion near the band edge, including a heterostructure. Richard, Aniel, and Fishman show you the boundary of validity of that whole approach, and how you'd systematically extend it if you needed the full zone."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a really good way to frame it. It's worth remembering, when you write down the simple two or three band k dot p Hamiltonian in lecture, that it is the controlled, low order limit of something like this thirty band monster, and that the reason effective mass theory works so well for near band edge transport and optics in quantum wells is precisely because, for the states that matter in a quantum well or a two dimensional electron gas, you almost never populate anything beyond a tiny neighborhood of the relevant valley. The moment you start caring about hot carriers, satellite valleys, or impact ionization, you need something closer to this full Brillouin zone treatment."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's go to the experimental paper then, Abstreiter, Kotthaus, and Koch, cyclotron resonance in silicon surface space charge layers. This feels like it closes the loop, since it's an experiment that directly measures the effective mass concept we've been building up all episode."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and chronologically it's actually the oldest of our three readings, from the mid nineteen seventies, but conceptually it belongs right at the end of our arc because it's the direct experimental test of the effective mass approximation at a semiconductor surface, the very assumption that Lassnig's later heterostructure theory has to grapple with for the GaAs case. Let's set up the system. You take a metal oxide semiconductor capacitor on silicon, basically the gate stack of a transistor, apply a strong electric field perpendicular to the silicon surface, and that field bends the conduction band so sharply near the surface that electrons get trapped in a narrow, roughly fifty angstrom wide channel right at the silicon, silicon dioxide interface. This is the inversion layer, and it's a two dimensional electron gas in exactly the sense we discussed earlier: confined and quantized in the direction perpendicular to the surface, forming electric subbands, but free to move in the two in plane directions."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And silicon's conduction band structure adds a twist here, because the valleys aren't simple and isotropic like GaAs's Gamma valley."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, silicon's conduction band minimum sits away from Gamma, along the Delta direction, and on the particular, one zero zero surface used in this experiment, the six equivalent bulk valleys split into two inequivalent sets once you impose the surface confinement. One set, two of the six valleys, has its heavy bulk mass oriented along the confinement direction, so those valleys see a light mass in the surface plane. The other four valleys have a light bulk mass along confinement, which pushes their subband energy higher, so at low temperature and the densities used here, only the lower lying, two valley set is actually occupied, what the paper calls the electric quantum limit. In that limit the in-plane cyclotron mass is set by the light bulk masses, about zero point one nine free electron masses, and the paper's whole goal is to measure that mass directly, very precisely, using cyclotron resonance, and to see whether it really does match the known bulk value, as the effective mass approximation would predict."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do you actually do cyclotron resonance on a buried two dimensional layer? That seems like a much harder measurement than bulk cyclotron resonance."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's a lovely piece of nineteen seventies far infrared spectroscopy. You shine radiation from a far infrared gas laser, mostly a line around eight hundred ninety gigahertz from hydrogen cyanide, straight through the whole sample, oxide, electron layer, silicon substrate, and out the other side, and you measure the transmitted power as you sweep a magnetic field applied perpendicular to the surface. When the field hits the value where the cyclotron frequency matches the laser frequency, the two dimensional electrons resonantly absorb energy, and you see a dip in transmission. Because silicon is transparent at these frequencies but has a very low intrinsic carrier density at helium temperatures, they actually have to illuminate the sample briefly with visible light to photo generate carriers in the inversion layer before cooling down and removing the light, and they control the areal electron density independently through the gate voltage, checking it against Shubnikov-de Haas oscillations measured separately. It's worth noting, by the way, that since there's no separate source and drain contact, the electron density itself is read out through the magnetic field period of those static magnetoresistance oscillations, which is itself a nice illustration of thermal occupation and density of states ideas, since Shubnikov-de Haas relies on the Fermi level sweeping through a sequence of Landau levels as the field changes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the headline result for the effective mass itself?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "At electron densities above about one times ten to the eleven per square centimeter, and at temperatures below about ten kelvin, they find a cyclotron mass of zero point one nine seven, plus or minus zero point zero zero five, free electron masses, completely independent of density in that regime. That's in excellent agreement with the known bulk silicon light valley mass of zero point one nine zero five, measured independently by microwave cyclotron resonance in bulk crystals. They even do a very careful direct check: they measure a bulk cyclotron resonance in an ordinary, thermally activated n type silicon sample at the same far infrared frequency and temperature, right next to their surface measurement, and the two values agree within error. That's the clean confirmation of exactly the worry we raised at the start when discussing Lassnig: in this hard wall, large barrier interface, the silicon dioxide barrier being many electron volts high, the electron's wave function barely leaks into the oxide, so it really does carry the pure bulk effective mass, no interface correction needed, unlike the soft GaAs heterobarrier case."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But I remember the abstract mentioning the mass isn't constant at low density, it increases as you reduce the electron density. Isn't that in tension with the simple effective mass picture?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good catch, and this is one of the more interesting pieces of physics in the paper. Below roughly one times ten to the eleven per square centimeter, the measured cyclotron mass rises, by as much as fifteen percent at the lowest densities they study. The authors are careful and a bit cautious about interpretation, but they point out this upward mass shift tracks a very similar density dependence seen independently in Shubnikov-de Haas measurements of the same material system, and they tentatively connect it to electron electron interaction effects that become more important as the electron gas gets more dilute and more strongly correlated, even though the strict theorems about cyclotron resonance say such many body mass renormalization shouldn't show up in the fundamental resonance of a translationally invariant system. They flag this as an open question at the end of the paper, which is a nice reminder that even a textbook quantity like the effective mass has a regime, low density, where it's not quite the simple single-particle number we like to pretend it is."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What about the quantum oscillations you mentioned earlier, the ones that connect directly to density of states and thermal occupation? That felt like the part of this paper most tied to today's lecture."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is really the heart of the paper for our purposes. Remember the two dimensional density of states is flat between subbands, but turn on the perpendicular magnetic field and that flat density of states collapses entirely into a comb of Landau levels, each one holding a fixed, large number of states per unit area, separated by the cyclotron energy. If those levels were infinitely sharp delta functions, cyclotron resonance would simply be one clean line at the cyclotron frequency, full stop, regardless of density. But the levels aren't infinitely sharp, they're broadened by scattering, and theory, due to Ando and Uemura, predicts the amplitude of the cyclotron resonance signal should depend on exactly where the Fermi level sits relative to the nearest Landau level: if the Fermi level falls right between two completely filled and empty levels, you get a clean, symmetric resonance centered exactly at the cyclotron frequency; if instead the Fermi level sits right in the middle of a partially filled Landau level, the resonance maximum actually shifts to a slightly higher frequency than the bare cyclotron frequency."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So as you sweep the magnetic field at fixed laser frequency, you're sweeping the Landau level spacing, and each time a Landau level crosses through the Fermi level, which is pinned by the fixed electron density, you should see the resonance amplitude wobble."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, that's the quantum oscillation phenomenon the paper reports and compares directly to Ando's theory, and it's genuinely a different effect from the ordinary Shubnikov-de Haas oscillations in static transport, even though both ultimately come from the same underlying physics of the density of states oscillating as Landau levels sweep through the Fermi energy. The paper's figures show the derivative of transmitted power versus magnetic field, with clear extra wiggles superimposed on the main cyclotron resonance line, and they mark with arrows exactly the fields where the Fermi energy is predicted to sit at the center of a given Landau level. When they overlay Ando's calculated real part of the dynamical conductivity on top of the data, the oscillation pattern matches well, even though the theory doesn't perfectly capture the absolute line width or amplitude. As expected from the role of thermal occupation, these oscillations wash out as temperature increases, essentially gone by about twenty one kelvin, because thermal smearing of the Fermi distribution erases the sharp distinction between Landau levels being full, empty, or half filled."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a beautiful, very direct demonstration of exactly the lecture point about thermal occupation competing with a discretized density of states. Was there anything about the line shape itself, the actual width of the resonance, that connects to scattering physics?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, there's a careful analysis distinguishing homogeneous broadening, from short range scatterers like point defects, where the Landau level width scales as the square root of magnetic field and is the same for every level, from inhomogeneous broadening, from long range potential fluctuations, where different Landau levels pick up different widths depending on their index. They find that at moderate to high densities, short range scattering dominates and the predicted square root of field scaling of the line width holds up well when compared against independently measured zero field scattering times from microwave conductivity. At very low densities, below about half of ten to the twelve per square centimeter, they instead see signs of inhomogeneous broadening and even a localization induced downward shift of the resonance field, attributed to electrons getting trapped in the fluctuating potential landscape of the silicon, silicon dioxide interface, an effect that disappears again as you raise the temperature enough to thermally free the localized electrons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And there was something about subharmonics too, which sounded strange at first."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a nice curiosity, worth a brief mention. At high electron densities they observe extra absorption features at roughly half, a third, and smaller fractions of the main resonance field, on the low field side of the main line. These aren't related to the Landau level quantum oscillations, they're a genuinely separate phenomenon, and the mass you'd extract from these subharmonic features turns out to track very closely the density dependence of an enhanced mass seen independently in Shubnikov-de Haas measurements, which the authors interpret as evidence that the subharmonics are probing an electron electron interaction enhanced effective mass, distinct from the single particle cyclotron mass seen in the main line. They're appropriately cautious, calling this a speculation justified by a later calculation, but it's a nice extra hint that these inversion layer electron gases, when dense and cold, are not entirely free of interaction physics, something you'll see come back with a vengeance later in the course when you get to the quantum Hall regime."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And finally they checked the two dimensionality of the whole system directly, with the tilted field experiment?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and this is a satisfying, very direct check of what it even means for this to be a two dimensional electron gas. If you tilt the magnetic field away from the surface normal by an angle theta, only the perpendicular component of the field drives the cyclotron motion within the two dimensional plane, as long as the subband energy spacing is large compared to the magnetic energy scale, so the resonance field should shift upward by one over the cosine of theta. They confirm this scaling cleanly across a wide range of densities and tilt angles, which is exactly the signature you'd expect if the electrons really are confined to a thin sheet with the in plane motion decoupled from the confinement direction, rather than behaving like some three dimensional bulk electron gas."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, let's try to pull all three readings together, because on the surface they look quite different, a GaAs heterostructure theory paper, a pure band structure method paper, and an old silicon cyclotron resonance experiment."
+    },
+    {
+      "speaker": "Ava",
+      "text": "I think the throughline is this. The lecture gives you the formal tools: k dot p perturbation theory tells you where effective mass and g factor actually come from, microscopically, as band mixing effects controlled by gaps and momentum matrix elements. Envelope functions and the effective mass Schrödinger equation tell you how to repackage that microscopic physics into a tractable equation once you confine the electron in a heterostructure or an inversion layer. And density of states plus thermal occupation tell you what you actually measure once you add a magnetic field and look at real spectroscopic data. Richard, Aniel, and Fishman show you the full machine that the near band edge effective mass approximation is secretly a small, controlled piece of, and they show explicitly, with real numbers, how the matrix elements and gaps you'd use in a simple two or three band k dot p model are the same ingredients that build the full band structure. Lassnig takes exactly that near band edge k dot p machinery and applies it carefully to a real heterointerface, deriving both the local effective mass, in the Ben Daniel-Duke symmetrized form that the lecture's effective mass Schrödinger equation needs, and a local g factor, and showing that the loss of inversion symmetry at an interface naturally produces a zero field spin splitting, essentially a microscopic derivation of what we'd now call Rashba physics. And Abstreiter, Kotthaus, and Koch close the loop experimentally, in the silicon inversion layer system, showing that the effective mass concept really does survive the trip from bulk crystal to confined two dimensional layer, at least at a hard interface, while also giving you a beautifully direct experimental picture of Landau quantization, density of states, and thermal occupation all showing up together in a single cyclotron resonance line shape."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So if I had to boil each paper down to one sentence for the exercise class: Lassnig derives local effective mass and g factor, plus zero field spin splitting, from five band k dot p theory at a real heterointerface, and tests it against GaAs cyclotron and spin resonance data. Richard, Aniel, and Fishman build a thirty band k dot p Hamiltonian that reproduces the full band structure of silicon, germanium, and GaAs across the whole Brillouin zone, with Luttinger parameters and effective masses falling out as explicit formulas. And Abstreiter, Kotthaus, and Koch use far infrared cyclotron resonance on silicon inversion layers to measure the two dimensional effective mass directly, confirming it matches the bulk value, and to directly observe quantum oscillations from the interplay of Landau level quantization and the Fermi level."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the set of takeaways I'd want you to walk into Thursday's lecture with. When Professor Ihn writes down the effective mass Schrödinger equation with a position dependent mass, you'll know it's not an ad hoc trick, it's the Ben Daniel-Duke form that falls straight out of k dot p theory at an interface, exactly as in Lassnig. When he quotes a Luttinger parameter or an effective mass value for some material, you'll know those numbers have a real microscopic origin in momentum matrix elements and gaps, the kind made fully explicit in the thirty band method. And when the course gets to cyclotron resonance and quantum oscillations, you'll already have in your head a real experimental line shape, and the physical picture of a density of states collapsing into Landau levels, pinned against a thermally smeared Fermi distribution, from the Abstreiter, Kotthaus, Koch paper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That feels like a solid base to walk into the exercise class with. Thanks Ava, this was a dense one but it held together."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's one of those lectures where the formalism really is the physics, not just bookkeeping. See you all at the lecture, and we'll be back next weekend with the next set of readings. Good luck with the k dot p matrices."
+    }
+  ]
+}
