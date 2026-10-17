@@ -1,0 +1,425 @@
+{
+  "date": "2026-10-05",
+  "format": "dialogue",
+  "n_papers": 30,
+  "episode_title": "Moiré metamagnetism, field-tuned Wigner crystals, and cleaning up anyon noise",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Good morning. It's October fifth, and the archive served up about thirty new papers overnight in nano and correlated matter. Today's a bit of a moiré fest: a neural-network calculation of metamagnetism in a moiré flat band, a magnetotransport study of Wigner crystals in twisted molybdenum ditelluride, a theory paper on doping-tunable Rydberg excitons in a tungsten diselenide and twisted bilayer graphene stack, a van der Waals cavity platform pushing toward ultrastrong coupling, and a cleaner way to pull the anyon charge out of shot noise on a complicated quantum Hall edge."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's start with the one that's basically written by your own advisor's group. Paper one, Zhang, Imamoglu, Shi, Demler and Morera, uses neural quantum states to tackle a continuum model of electrons in a triangular moiré potential at filling two per site, with full long-range Coulomb interactions. No Wannier functions, no single-band Hubbard shortcuts."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the whole motivation. Everybody models these transition-metal-dichalcogenide moiré systems as an extended Hubbard model on a lattice, but scanning-tunneling-microscopy experiments have shown the localized orbitals actually carry a lot of weight in higher moiré bands. So they went back to the continuum and used a message-passing neural network as the variational wavefunction, optimized with variational Monte Carlo."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the punchline is that the non-interacting band insulator you'd naively expect at filling two isn't the true ground state over part of the phase diagram. Correlations can close that single-particle gap and give a genuinely metallic phase instead, with a first-order transition into the insulator as you crank up the moiré potential strength."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's new is how that transition depends on spin. Without polarizing the electrons, the eventual insulator is an s-wave molecular crystal — two opposite-spin electrons pair up right at each potential minimum, like a tiny two-electron molecule in every well. That happens around a moiré potential of five milli-electron-volts for their hBN-encapsulated parameters."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But fully spin-polarize the system, and Pauli exclusion means the two electrons at each site can't share the same symmetric orbital anymore. They're forced into a p-wave, dumbbell-shaped pair, which needs a much deeper potential, around nine milli-electron-volts, to localize. That polarized crystal also spontaneously picks an orientation, breaking the six-fold symmetry of the lattice down to two-fold — they call it an orbital nematic molecular crystal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which leaves a wide window of potential strength where the unpolarized system is already insulating but the polarized one is still metallic. Push a magnetic field there and you get metamagnetism — the polarization jumps discontinuously to fully polarized at a critical field instead of rising smoothly. The energy curve versus polarization actually goes concave, so intermediate polarizations are thermodynamically unstable and phase-separate instead."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How would you ever see any of this optically? That's usually the sticking point with these heavy variational-Monte-Carlo papers."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They actually computed it. Treat an exciton sitting on this frozen electron density as a mean-field problem, with the exciton's electron and hole each feeling the periodic potential set by the correlated density. Because the nematic crystal doubles the unit cell, the folded density components let the exciton absorption pick up extra Umklapp side peaks beyond the usual moiré replicas. They estimate those satellite peaks carry roughly half a percent to four percent of the main exciton oscillator strength — weak, but their spectral weight redistributes as you rotate the nematic director, which would be a clean optical fingerprint of the order."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The caveats: they keep only the Zeeman coupling, justified because the magnetic flux through a moiré cell stays small at realistic fields. And some of the finer multicritical points carry real numerical uncertainty from finite sampling — they admit two of the three special points might actually merge in the thermodynamic limit. Still, it's a genuinely new continuum-level attack on a problem usually handled with lattice models."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two is the experimental companion in spirit — magnetotransport on twisted molybdenum ditelluride, looking at how a perpendicular field affects generalized Wigner crystal states. That's the family of charge orders at fractional filling of a moiré lattice, stabilized by long-range Coulomb repulsion rather than a periodic potential doing all the work."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They've got a twisted bilayer at about three point nine degrees, hBN encapsulated, dual-gated to tune density and displacement field independently. At large displacement field they push into the layer-polarized limit, where carriers sit predominantly on one sublattice of the moiré honeycomb, effectively giving a triangular lattice."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the headline is that a field of order one tesla does opposite things to the two-thirds and one-third hole-filling states. The two-thirds resistance peak gets crushed, dropping below h over e squared, metal-like. The one-third peak, barely visible at low field, grows by orders of magnitude into a sharp insulating peak."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Why would two states that are both just Wigner crystals on the same triangular lattice respond so oppositely? Because the charge pattern differs. At two-thirds filling you occupy two of the three sublattices, forming a connected honeycomb network with nearest-neighbor superexchange pathways favoring antiferromagnetic order. At one-third you occupy just one sublattice — a sparser arrangement without that exchange channel. So spin-polarizing with the field destabilizes the antiferromagnetic two-thirds crystal, and resistance drops, while at one-third, polarization instead favors a more localized, higher-resistance state."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They back this with calculations. Hartree-Fock at two-thirds finds the unpolarized antiferromagnetic solution gapped and the polarized one metallic, consistent with the field-driven suppression. At one-third, Hartree-Fock over-commits to symmetry breaking, so they switch to exact diagonalization on an eighteen-site cluster: the unpolarized ground state shows no clear root-three charge order, but the polarized sector gives a threefold degenerate ground state that does — matching the emergence of the high-resistance crystal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "There's also a third filling, near one-half, that behaves completely differently. The resistance peak doesn't stay pinned to a commensurate density — it shifts with field, roughly quadratically rather than linearly like an ordinary gapped Chern state, and the longitudinal resistance is anisotropic depending on measurement direction, pointing to a stripe phase breaking the lattice's three-fold symmetry."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What don't they know? The microscopic origin of that quadratic shift and exactly how it connects to the stripe anisotropy — they say explicitly that's open. But the main contrast between two-thirds and one-third holds across four different probe configurations in the same device, and it's insensitive to in-plane field, consistent with strong out-of-plane spin locking from spin-orbit coupling."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper three is a theory piece right in my own backyard — doping-controlled Rydberg exciton spectra in a tungsten diselenide monolayer sitting on twisted bilayer graphene, below the magic angle where the graphene has flat bands and strong correlations."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the question is how charging that graphene changes the optics of the semiconductor on top."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The mechanism is simple conceptually. Dope the twisted bilayer graphene, the extra charge piles up around the AA-stacked regions of its moiré pattern, creating a spatially periodic electrostatic potential. Because the exciton's electron and hole carry opposite charge, they feel this potential with opposite sign — so even though the exciton overall is neutral, its internal structure gets scrambled."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How does that show up in a spectrum?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They solve the exciton problem including both the internal relative motion — the usual one-s, two-s, two-p Rydberg series — and the center-of-mass motion, which now lives on the moiré lattice. The periodic potential couples the two, so a Rydberg state mixes with center-of-mass Bloch states at different moiré reciprocal vectors. The key result: the dark two-p states, invisible in ordinary one-photon absorption because of selection rules, borrow oscillator strength from the two-s state once there's carrier doping, producing filling-dependent satellite resonances."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any real numbers, or just qualitative?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Quantitative. At a twist angle of zero point six degrees, moiré period near twenty-three and a half nanometers, they get a maximum shift of about eighty-two milli-electron-volts for the lowest two-p branch, at a characteristic filling of about twenty carriers per moiré cell. The experimental value for the same system is seventy-three milli-electron-volts, and earlier theory gave seventy — so they land in the right ballpark across several twist angles."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's new relative to that earlier theory?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They derive the selection rules properly from the three-fold rotational symmetry of the moiré lattice — only Rydberg states whose combined orbital and center-of-mass angular momentum sums to zero modulo three can hybridize. And they map how the shift and characteristic filling scale with twist angle and with the vertical separation between the layers, finding the shift falls off roughly linearly as you pull the layers apart. They're upfront about the gaps: no Berry-curvature splitting between the two p states, no electron-hole exchange, no proper dynamical screening from the doped graphene, and they don't reproduce a sawtooth pattern seen experimentally right at integer graphene fillings near the true magic angle."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four moves away from excitons into cavity electrodynamics with stacked graphene and hBN — what the authors call quantum materials Q-E-D. Instead of putting a two-dimensional material inside an external mirror cavity, the material's own internal modes act as the cavity."
+    },
+    {
+      "speaker": "Ava",
+      "text": "hBN is hyperbolic, so a slab of it supports deeply sub-wavelength phonon-polariton resonances that behave like Fabry-Perot modes but confined far below the diffraction limit."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Stack several unit cells of graphene and hBN, apply a perpendicular magnetic field to open Landau levels in the otherwise charge-neutral graphene, and you can tune the inter-Landau-level transition frequency into resonance with one of those hyperbolic phonon modes. When they do, they see a clean avoided crossing — upper and lower hybrid branches, with a splitting already measured by magneto near-field microscopy in a single graphene layer, about fifty wavenumbers, sitting inside the hBN Reststrahlen band."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's new in stacking more repeats?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Because each graphene layer couples to the same shared phonon mode, the splitting should grow with the square root of the layer count — the same collective enhancement you get from putting many atoms in an ordinary cavity. Scaling to ten unit cells in a seventy-nanometer hBN stack, their calculation gives a splitting over one hundred fifty wavenumbers, wider than the entire Reststrahlen band — their criterion for landing in the ultrastrong coupling regime, where splitting exceeds about ten percent of the bare frequency."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Where does that break down?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two places, by their own account. A single-oscillator model of the Landau level transition formally lets the splitting diverge as layers pack closer, but real graphene has many transitions, not one, so the achievable splitting saturates below that naive prediction once densely stacked. And for higher-order phonon modes, which have field nodes inside the hBN, the coupling depends sensitively on exactly where each graphene sheet sits — put a layer at a node and that mode's splitting vanishes entirely. Which is actually a nice knob: you can selectively switch cavity modes on or off just by choosing layer position."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Any connection to correlated electron physics, or is it purely polariton engineering?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They flag it as open — whether such strongly confined fields could reshape quantum Hall physics the way vacuum fields have already been shown to modify exchange gaps in gallium-arsenide cavity experiments. For graphene Landau levels specifically that's unresolved, and so is whether a Dicke-type superradiant instability is even reachable for cyclotron transitions of Dirac electrons once you're deep in the ultrastrong coupling regime."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive is pure quantum Hall edge theory — how to trust a shot-noise measurement of anyon charge when the edge isn't a simple Laughlin state. This is the filling two-thirds edge, with a downstream integer channel and an upstream one-third fractional channel propagating the other way, exchanging charge and heat as they travel — equilibration."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the problem is, when you put a quantum point contact on an edge like that, the noise you measure isn't purely the contact's intrinsic tunneling noise telling you the anyon charge. There's also noise from the equilibration process itself heating the channels up, and that heating noise can masquerade as part of the signal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do they tell them apart? They build a line-junction model — chop the edge into cells where the counter-propagating channels weakly exchange charge and energy — and solve for voltage and temperature profiles along four such arms meeting at the point contact, a four-terminal geometry with two drains. The key finding: Joule heating from charge equilibration mostly deposits near one end of each arm, but heat still diffuses all the way to the point contact through energy exchange between channels, generating noise at specific spots even where the local voltage difference has already relaxed to zero."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the standard trick of just measuring one drain's auto-correlation doesn't cleanly give you the anyon charge?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "No. The conventional auto-correlation Fano factor picks up a heating correction that grows as the inverse square root of the point-contact transmission, so it can dominate the signal exactly in the weak-tunneling regime you'd naively trust most. The cross-correlation between the two drains behaves better, because an outer-arm heating fluctuation only reaches the opposite drain after partial transmission through the point contact, picking up an extra factor of the transmission probability — its heating correction only grows as the square root of transmission."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But not perfectly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Not perfectly. So they build a specific combination of the auto- and cross-correlations, weighted by the measured effective transmission, that cancels the leading heating term exactly. They call it the clean Fano factor, and its residual heating error scales as transmission to the three-halves power — parametrically smaller than either raw correlation. In their numerical check at one-third filling, this clean estimator tracks the expected one-third quasiparticle charge much more tightly as bias increases, while the plain auto-correlation badly overshoots it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Caveat?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Their point-contact noise formula is a phenomenological interpolation between the equilibrium and shot-noise limits — it skips the Luttinger-liquid scaling-dimension corrections a full microscopic treatment would have. But the same formula has worked for ordinary Laughlin states before, and the framework is explicitly built to extend to messier non-Abelian candidates like the five-halves state, where this kind of heating confusion has been a long-standing headache."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Quick ones to round out the quantum Hall theme. Paper six looks at chiral cavities coupled to two-dimensional electron gases in a magnetic field. The point is that the cavity's chirality, not just its coupling strength, decides whether you get ordinary vacuum Rabi splitting with an unchanged ground state, or counter-rotating coupling that squeezes the vacuum and shifts energies. They predict a handedness-dependent correction to the Hall resistivity, measurable with terahertz chiral cavities already demonstrated experimentally."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven is an experiment on plain Wigner-crystal melting, no moiré involved — ultra-clean silicon-germanium quantum wells, tracking the density at which a magnetic-field-driven electron solid melts versus temperature. The surprise is a plateau in melting temperature versus density at fixed field, which they attribute to resonance modes of the crystallites themselves rather than a single smooth melting curve."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight is a bilayer nickelate theory paper, outside our usual beat but worth a mention: a layer-asymmetric potential plus staggered Rashba coupling in these high-T-c bilayer nickelate films can drive a time-reversal-invariant topological superconducting phase, with Majorana Kramers pairs predicted at the diagonal edge."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine is nuclear astrophysics — an ab initio Green's-function calculation of superfluid neutron matter relevant to neutron-star crusts, using a method called the Gorkov algebraic diagrammatic construction to extract pairing gaps with a controlled many-body truncation instead of the usual uncontrolled approximations."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And paper ten closes things out with hydrodynamic graphene transport at charge neutrality: a theory of how thermal fluctuations coupling the electric current to the hydrodynamic flow produce a strong positive magnetoresistance, with the functional form depending on the exact Hall-bar geometry and its orientation relative to the current."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the rundown for October fifth. Back tomorrow with whatever the archive throws at us next."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.03145",
+      "title": "Correlated Metals, Metamagnetism, and Orbital Nematic Order in moiré Materials with Neural Quantum States",
+      "authors": [
+        "Wei Zhang",
+        "Ata\\c{c} \\.Imamo\\u{g}lu",
+        "Tao Shi",
+        "Eugene A. Demler",
+        "Ivan Morera"
+      ],
+      "abstract": "In this work, we investigate a continuum model of two-dimensional electrons interacting via long-range Coulomb forces and subject to a triangular periodic potential at filling factor \\nu=2. Using neural quantum states based on message-passing neural networks optimized with variational Monte Carlo, we determine the ground-state phase diagram as a function of periodic potential strength and Zeeman field. Although the noninteracting system is expected to form a conventional band insulator, we show that strong correlations can qualitatively reshape the insulating state and, in part of the phase diagram, suppress the band insulator in favor of a correlated metallic phase, with a first-order transition separating the two regimes. Moreover, the metal–insulator transition exhibits a strong dependence on spin polarization: the unpolarized system becomes insulating at substantially weaker periodic potentials through the formation of an s-wave molecular insulator, where opposite-spin electrons bind near each potential minimum, whereas the fully polarized system requires a significantly deeper potential and instead forms a symmetry-broken orbital nematic molecular crystal. This spin-dependent molecular transition gives rise to discontinuous magnetization curves, metamagnetic transitions, and several multicritical points in the phase diagram, together with clear signatures in the density profiles, real-space correlation functions, and structure factors. To further elucidate the role of the long-range character of the Coulomb interaction, we also study short-range repulsive interactions, which can be realized with ultracold-atom platforms. We find that the qualitative structure of the many-body phase diagram remains unchanged, demonstrating the robustness of our results across different interaction models.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.03145",
+      "tier": "deep",
+      "why": "Imamoglu-group neural-quantum-state study reveals correlated metal, metamagnetic, and orbital nematic phases in moiré triangular lattices, directly extending the group's own theoretical interests in correlated 2D electronic states."
+    },
+    {
+      "id": "2610.02493",
+      "title": "Magnetic-field response of generalized Wigner crystals in twisted MoTe2",
+      "authors": [
+        "F. K. Wolff",
+        "S. Jiao",
+        "H. Park",
+        "J. Cai",
+        "E. Anderson",
+        "X. Liu",
+        "C. Wang",
+        "T. Taniguchi",
+        "K. Watanabe",
+        "X. Xu",
+        "D. Xiao",
+        "S. Vaitiek\\.{e}nas"
+      ],
+      "abstract": "We report a magnetotransport study of fractional hole-filling states in the layer-polarized regime of a twisted MoTe2 homobilayer. A perpendicular magnetic field suppresses the resistance peak at the two-thirds filling while enhancing the one-third peak by several orders of magnitude. Both remain near their commensurate densities. We argue that these commensurate states are generalized Wigner crystals whose distinct charge configurations define different magnetic lattices, leading to contrasting responses to spin polarization. Near half filling, we observe a qualitatively different state whose resistance maximum shifts approximately quadratically with field and exhibits pronounced transport anisotropy consistent with a stripe phase. These results reveal a strong dependence of magnetotransport on fractional filling and open a route to magnetic control of transport in moiré charge-ordered states.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.02493",
+      "tier": "deep",
+      "why": "Magnetotransport reveals how a perpendicular field selectively stabilizes or suppresses generalized Wigner crystal states in twisted MoTe2, a direct probe of correlated moiré charge order central to the profile."
+    },
+    {
+      "id": "2610.03532",
+      "title": "Electrostatic Doping of Moiré Superlattices Controls the Optical Fingerprint of a WSe2 /Twisted Bilayer Graphene heterostructure",
+      "authors": [
+        "Houssem Eddine Hannachi",
+        "Sihem Jaziri"
+      ],
+      "abstract": "We theoretically investigate the optical response of the WSe2 monolayer vertically stacked on twisted bilayer graphene (tBG) under electrostatic doping. In this heterostructure, the doped moiré superlattice of tBG generates a spatially modulated electrostatic potential that couples to the electron and hole constituents of the WSe2 exciton through the screened Coulomb interaction, thereby providing a microscopic mechanism for exciton coupling to the charge-density landscape of the moiré Fermi sea. Focusing on twist angles below the magic angle (1.1\\deg), where electronic correlations are strongly enhanced, we demonstrate that electrostatic doping induces pronounced modifications of the excitonic absorption spectrum, including the emergence of multiple satellite resonances. We show that these spectral features originate from the interplay between the exciton center-of-mass and internal degrees of freedom, together with doping-induced hybridization between Rydberg exciton states of different orbital symmetry. The calculated spectra are in good agreement with previously reported experimental observations and theoretical predictions. Our results establish electrostatic doping in tBG as an effective means of engineering excitonic states in adjacent semiconducting monolayers and provide a pathway toward novel optical sensor devices.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.03532",
+      "tier": "deep",
+      "why": "Theory shows that electrostatic doping of a WSe2/twisted bilayer graphene heterostructure produces satellite exciton resonances via Rydberg-state hybridization, a concrete optical-probe proposal for moiré-coupled TMD excitons."
+    },
+    {
+      "id": "2610.02514",
+      "title": "Quantum materials QED with van der Waals crystals",
+      "authors": [
+        "Suheng Xu",
+        "Brian Vermilyea",
+        "Ran Jing",
+        "Lukas Wehmeier",
+        "Jihoon Park",
+        "Rafael A. Mayer",
+        "Xinzhong Chen",
+        "Samuel L. Moore",
+        "Fuyang Tay",
+        "Boyi Zhou",
+        "Wenjun Zheng",
+        "Dihao Sun",
+        "Birui Yang",
+        "Cory R. Dean",
+        "Daniel Cazorla",
+        "Xu Du",
+        "Milan Delor",
+        "Andrew J. Millis",
+        "Angel Rubio",
+        "Michael M. Fogler",
+        "Mengkun Liu",
+        "D. N. Basov"
+      ],
+      "abstract": "A central goal of the emerging field of materials QED is to harness subwavelength electromagnetic confinement in engineered cavities to tailor light-matter interactions. Here, we demonstrate that van der Waals multilayer cavities composed of stacked graphene and hexagonal boron nitride (hBN) provide unprecedented control over hybridization between their electromagnetic resonances. By magnetically tuning graphene inter-Landau-level transitions (ILTs) into resonance with hBN phonons, we witness broadband, mode-selective strong coupling in the mid-infrared. Our quantum-material QED framework shows that cavity geometry and layer placement jointly control both coupling strength and modal selectivity. For experimentally realistic cavity parameters, the predicted mode splitting exceeds the width of the hBN Reststrahlen band, providing a direct route to the ultrastrong coupling regime. Together, these results establish van der Waals multilayer cavities as a scalable platform for tunable multimode QED and broaden the design space for reconfigurable quantum materials.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.02514",
+      "tier": "deep",
+      "why": "Demonstrates ultrastrong mid-IR coupling between graphene Landau-level transitions and hBN phonons in van der Waals multilayer cavities, establishing a new materials-QED platform relevant to cavity-coupled 2D systems."
+    },
+    {
+      "id": "2610.02818",
+      "title": "Extracting the anyon charge from shot noise in complex fractional quantum Hall edges",
+      "authors": [
+        "Jinhong Park",
+        "Christian Sp{\\ra}nsl{\\\"a}tt"
+      ],
+      "abstract": "Shot-noise measurements with a quantum point contact provide a direct probe of the quasiparticle charge in Laughlin fractional quantum Hall (FQH) states. However, the interpretation of such measurements becomes more subtle for multichannel edges, where the point-contact tunneling noise coexists with noise generated by intermode equilibration and heating. We develop a general framework that incorporates both these contributions and apply it to the paradigmatic \\nu=2/3 FQH edge. We derive expressions for the drain auto- and cross-correlations in a four-terminal QPC geometry and show that equilibration-induced heating affects the auto- and cross-correlations in parametrically different way than the intrinsic partition noise. This distinction permits us to propose a specific combination of the two correlations which strongly suppresses the heating contribution and fully recovers the tunneling quasiparticle charge. Our results thereby provide a systematic framework for interpreting shot-noise measurements in complex FQH edges and can be further extended to more general counterpropagating edge structures.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.02818",
+      "tier": "deep",
+      "why": "Develops a framework to cleanly extract anyon charge from shot noise in multichannel fractional quantum Hall edges despite equilibration heating, advancing a key experimental tool for anyonic/edge-state physics."
+    },
+    {
+      "id": "2610.02400",
+      "title": "Chiral Vacuum Engineering of Quantum Hall Matter",
+      "authors": [
+        "Kiran M. Kulkarni",
+        "Andrey Baydin",
+        "Motoaki Bamba",
+        "Junichiro Kono",
+        "Ceren B. Dag",
+        "Vasil Rokaj"
+      ],
+      "abstract": "We reveal that a chiral cavity distinguishes the resonant and antiresonant interactions between a two-dimensional electron gas and the cavity vacuum. For co-rotating helicities, the modes anticross, exhibiting vacuum Rabi splitting, and retain a bare vacuum ground state. For counter-rotating helicities, the modes cross, acquiring vacuum-mediated energy shifts and a two-mode squeezed ground state. We trace the origin of these observations to the SU(2) and SU(1,1) symmetries of the respective Hamiltonians and present their spectroscopic signatures in chiral photonic crystal cavities. We further predict that cavity chirality produces a handedness-dependent correction to Hall resistivity at finite polariton broadening, while such a correction is not present in an achiral cavity. For the longitudinal resistivity, we find an asymmetric response of the Shubnikov–de Haas oscillations for the different helicities. Finally, we present an experimentally accessible route for detecting the squeezed ground state through current fluctuations. Parameters based on a recently demonstrated terahertz chiral cavity place these effects within experimental reach.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.02400",
+      "tier": "brief",
+      "why": "Predicts that cavity chirality produces handedness-dependent corrections to Hall resistivity and a squeezed vacuum ground state in cavity-coupled 2D electron gases, linking quantum Hall physics to cavity QED."
+    },
+    {
+      "id": "2610.03513",
+      "title": "Melting phase diagram of the two-dimensional electron solid in a perpendicular magnetic field",
+      "authors": [
+        "M. Yu. Melnikov",
+        "D. G. Smirnov",
+        "A. A. Shashkin",
+        "S. -H. Huang",
+        "C. ~W. Liu",
+        "S. V. Kravchenko"
+      ],
+      "abstract": "We determine the thermal melting phase diagram of the electron solid by measuring the onset density of the double-threshold voltage-current curves in the insulating state in the ultra-high mobility two-dimensional electron system in SiGe/Si/SiGe quantum wells at different temperatures in perpendicular magnetic fields. The introduction of a magnetic field leads to a considerable increase in the onset density, which is strongest at the lowest temperatures and decreases with increasing temperature, and the melting temperature increases with magnetic field. These data are in agreement with theoretical predictions. Unexpectedly, the melting temperature as a function of electron density in a fixed magnetic field reveals a plateau, which can be interpreted in terms of resonance modes in the crystallites.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.03513",
+      "tier": "brief",
+      "why": "Measures the thermal melting phase diagram of the 2D Wigner electron crystal in a magnetic field, finding an unexpected plateau attributed to crystallite resonance modes."
+    },
+    {
+      "id": "2610.03601",
+      "title": "Layer-Asymmetry-Induced Topological Superconductivity in High-Tc Bilayer Nickelates",
+      "authors": [
+        "Zhongyi Zhang",
+        "Congcong Le",
+        "Hoi Chun Po",
+        "Jiangping Hu",
+        "Xianxin Wu",
+        "Shengshan Qin"
+      ],
+      "abstract": "The recent discovery of high-Tc superconductivity in bilayer nickelates has highlighted the crucial role of interlayer coupling and motivated proposals for dominant interlayer pairing. Whether such pairing can support topological superconductivity, however, remains unexplored. Here, we demonstrate that substrate-supported bilayer nickelate thin films can host an intrinsic time-reversal-invariant topological superconducting phase protected by diagonal mirror symmetry. Using a two-orbital model derived from first-principles calculations, we show that a modest layer-asymmetric potential and layer-staggered Rashba spin-orbit coupling drive the system into this topological phase over a broad parameter range with a dominant interlayer pairing. The nontrivial topology arises from a reversal of the pairing sign on one of the spin-split bonding Fermi surfaces and is characterized by a nonzero mirror winding number along the diagonal direction, as well as a Majorana Kramers pair at the [11] edge. The phase also features bulk gap nodes located slightly away from the diagonal directions, featuring chiral charge and zero-energy flat bands. We discuss experimental routes for realizing and tuning this phase. Our results establish high-Tc bilayer nickelates as a promising platform for topological superconductivity, where tunable topological transitions and Majorana boundary modes can provide probes of unconventional pairing.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.03601",
+      "tier": "brief",
+      "why": "Proposes that layer-asymmetric bilayer nickelate thin films can realize time-reversal-invariant topological superconductivity with Majorana edge modes, a notable extension of the high-Tc nickelate story."
+    },
+    {
+      "id": "2610.03507",
+      "title": "Ab initio Green's function theory of superfluid neutron matter",
+      "authors": [
+        "F. Marino",
+        "W. G. Jiang",
+        "C. Barbieri",
+        "G. Col\\`{o}"
+      ],
+      "abstract": "At the low densities encountered in the inner crust of neutron stars, neutron matter becomes superfluid, directly influencing macroscopic phenomena such as star cooling. However, a precise quantitative understanding of this system has been hindered by uncontrolled many-body approximations. In this letter, we exploit the nonperturbative Gorkov algebraic diagrammatic construction method to provide a unified ab initio description of the equation of state and the single-particle spectral functions of homogeneous neutron matter, spanning from the dilute regime to saturation density. We identify clear microscopic signatures of superfluidity in the excitation spectrum and quantify the pairing gaps associated with realistic chiral Hamiltonians, estimating for the first time their sensitivity to the many-body truncation. Our robust handling of both dynamical and pairing correlations paves the way for exploring electroweak processes across the regimes relevant to neutron stars.",
+      "categories": [
+        "nucl-th",
+        "cond-mat.quant-gas",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.03507",
+      "tier": "brief",
+      "why": "First ab initio Gorkov Green's-function calculation of pairing gaps and spectral signatures of superfluidity across the full density range of neutron star matter, a significant nuclear-astrophysics result."
+    },
+    {
+      "id": "2610.02326",
+      "title": "Fluctuation-induced magnetoresistance in graphene Hall bars at charge neutrality",
+      "authors": [
+        "Anna Grigoreva",
+        "Alex Levchenko",
+        "Eleftherios Kirkinis",
+        "Anton Andreev"
+      ],
+      "abstract": "In the temperature interval T\\sim 50 - 100 K, the rate of electron-electron collisions in graphene devices may exceed the momentum relaxation rate due to disorder and electron-phonon scattering. In this regime, the motion of the electron liquid may be described by the hydrodynamic equations. In the hydrodynamic approximation, at the charge neutrality point the electric current is decoupled from the hydrodynamic flow, and the conductivity of the system is equal to the intrinsic conductivity of the electron liquid, \\sigma0. It was recently shown that the coupling of charge transport and hydrodynamic flow induced by the thermal fluctuations enhances the macroscopic conductivity of the system and results in very strong positive magnetoresistance (MR) at relatively weak fields. Here we develop a quantitative theory of the fluctuation mechanism of MR at charge neutrality and obtain analytic expressions for MR in graphene Hall bars. The functional dependence of MR on the magnetic field H is sensitive to the Hall bar geometry and orientation relative to the current. We also account for the effect of momentum relaxation on MR.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.02326",
+      "tier": "brief",
+      "why": "Derives analytic magnetoresistance formulas for hydrodynamic electron flow in graphene at charge neutrality, showing strong positive MR sensitive to Hall-bar geometry."
+    }
+  ]
+}

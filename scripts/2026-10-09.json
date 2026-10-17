@@ -1,0 +1,502 @@
+{
+  "date": "2026-10-09",
+  "format": "dialogue",
+  "n_papers": 48,
+  "episode_title": "Chern magnon theory, Wigner-crystal pairing, and hBN's hidden defects",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October ninth. Forty-eight new papers on arXiv overnight, and we picked five to go deep on, plus a handful of quick hits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's got a real correlated-electron theme: a theory for why magnons are gapped in twisted moly-telluride Chern magnets, a speculative mechanism for chiral superconductivity out of a Wigner crystal in rhombohedral graphene, and then a very practical warning about hBN defects messing with displacement-field experiments. Plus flat-band magnetism and a Janus valleytronics DFT study."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the magnon paper, since it's squarely in moiré-Chern-insulator territory. Paper two, Goncalves and collaborators, including Bernevig and Regnault."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, the setup: twisted moly-telluride at integer filling hosts Chern insulators and fractional Chern insulators, and the ferromagnetism that produces them breaks time reversal spontaneously. In ordinary quantum Hall ferromagnets, opposite spins sit in bands with the same Chern number, so you get an SU-two symmetric magnet with gapless Goldstone magnons, the Kallin-Halperin spin wave."
+    },
+    {
+      "speaker": "Ava",
+      "text": "But in twisted moly-telluride, spin and valley are locked, and the two valleys carry opposite Chern number. So flipping a spin also flips the Chern number of the band it sits in."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly, so you only have a U-one Ising symmetry left, and the magnons are generically gapped. The open question has been: what sets that gap, and does it track the quantum geometry of the band?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Their tool is what they call the symmetric mode ansatz, SyMA, basically a souped-up version of Feynman's single-mode approximation — the same trick Girvin, Platzman and MacDonald used for the gapped magnetoplasmon in the quantum Hall regime. Here they build magnon trial wavefunctions out of local spin-flip operators, projected into the active Chern band, and sort them by symmetry eigenvalues at zero momentum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And how good is the ansatz compared to exact diagonalization?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "At integer filling it's essentially exact — overlaps above ninety-seven percent with the true eigenstates at zero momentum for their twisted moly-telluride model. Even at the fractional filling nu equals minus two-thirds, inside the fractional Chern insulator regime, it gets the trends right, though it overshoots the absolute gap size."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the actual physical picture for why some modes sit lower than others?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the nice part — they find a node principle. Because the up and down bands carry opposite Chern number, the magnon wavefunction in momentum space is forced to have topologically protected zeros, nodes, with total winding fixed by twice the Chern number. Modes with fewer, lower-degree nodes sit energetically closer to the ground state; modes forced to have more nodes, especially at points of large quantum metric, get pushed up toward the particle-hole continuum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the hierarchy of magnon branches is basically a topological accounting exercise plus where the quantum metric happens to be peaked."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. And they turn this into a hard result: for a class of solvable flat-band Hubbard models, including the Haldane model, they prove two-sided bounds on the zero-momentum magnon gap purely in terms of Chern number, maximum Berry curvature, and the integrated quantum metric. Uniform Berry curvature is enough to guarantee a gap of order the interaction scale U."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which matters for stability — a smoothly distributed Berry curvature, as opposed to hot-spotty, protects the magnetism against thermal or disorder-induced collapse."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The catch is the model dependence — their continuum model is fit to density functional theory at one twist angle, three-point-nine degrees, and they use it outside that fitted range down to two degrees mostly as a toy. The quantitatively reliable twisted moly-telluride modeling across angles is relegated to a more careful treatment later in the paper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Still, if you ever want to think about what a resonant inelastic light scattering or microwave absorption experiment would see in a twisted moly-telluride Chern ferromagnet, this gives you the mode spectrum and tells you which branch should dominate."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Next, paper one — Miao and Huang, asking whether a Wigner crystal can pair its own electrons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is motivated directly by the scanning tunneling microscopy images of electron crystals in rhombohedral hexalayer graphene, sitting right next to chiral superconductivity and charge density wave order in the phase diagram."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the question: can the lattice vibrations of that crystal — its own phonons — mediate Cooper pairing the way ordinary lattice phonons do in a metal?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Except here it's weird on two counts. First, there's no electron-ion mass hierarchy — the crystal is made of the same electrons that are trying to pair, so the phonon energies and the electronic bandwidth are the same scale, no adiabatic separation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And second, this magnetic Wigner crystal is spin-valley polarized, so it breaks time-reversal symmetry. That kills the usual logarithmic divergence that guarantees Cooper pairing at arbitrarily weak attraction — you need the attraction to clear a finite threshold."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What did they actually compute?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They build a continuum model of rhombohedral pentalayer graphene, do Hartree-Fock to get a fully spin-valley polarized triangular Wigner crystal with a gap around thirty-eight milli-electron-volts — comparable to the Coulomb scale. Then time-dependent Hartree-Fock gives the collective mode spectrum: the expected transverse phonon and longitudinal plasmon, but also a bunch of internal vibrational modes, reminiscent of modes seen in solid helium-four."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then they turn those collective modes into effective bosons and solve the two-electron Cooper problem with phonon exchange as the glue."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. With pure phonon-mediated attraction they get a binding energy of about twenty-five milli-electron-volts at zero total momentum. Adding back the residual Coulomb repulsion between the two electrons knocks that down to four point four six milli-electron-volts — but the bound state survives, still below the continuum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the symmetry of the pair?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The momentum-space phase of the pair wavefunction winds once around — chiral p-wave. The translational modes, the phonon and plasmon, do almost all the pairing work; the internal modes only add a small extra kick."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The obvious caveat is that this is a two-electron Cooper problem, not a full many-body calculation — it's a feasibility check, not a phase diagram. And everything rests on Hartree-Fock plus the quasiboson approximation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They're upfront about that — they call it 'an encouraging starting point,' not a theory of the observed superconductivity. But it's a concrete demonstration that a time-reversal-broken quantum solid can still generate its own chiral pairing glue, which is exactly the kind of mechanism people have been hand-waving about for rhombohedral graphene."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three is much more down to earth — it's about something every one of us encapsulating samples in hBN should worry about."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Begichev and collaborators ask: under a displacement field, is hBN really the inert dielectric we all assume?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Their trick is clever — use monolayer graphene as the active sensor. Graphene's own band structure doesn't respond to an out-of-plane displacement field, so any field-dependent change in its transport near the charge-neutrality point has to come from the environment, meaning the hBN."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they see a real effect. Ramping the field up to about half a volt per nanometer shifts the graphene charge-neutrality point, consistent with ten to twenty times ten-to-the-ninth per square centimeter of extra electron doping, and simultaneously broadens the resistance peak — more disorder."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Their explanation: the field tilts the hBN bands, bringing deep mid-gap defect states into resonance with graphene's Fermi level. Donor states above graphene's charge-neutrality point ionize and dump electrons in; acceptor states below it get neutralized. Both are happening, but donor ionization wins on balance."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They fit the data two independent ways — from the charge-neutrality-point shift, and from the growth of disorder — and get bulk defect densities in the range of roughly one to seven times ten-to-the-minus-five per cubic nanometer, varying crystal to crystal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is this reversible, or does it leave a permanent mess?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "No hysteresis for slow sweeps — the defects equilibrate fast. That's actually an important negative result: some of the gate hysteresis people have reported in hBN-aligned bilayer graphene and attributed to exotic ferroelectricity might instead be ordinary defect charging dynamics, just at a faster timescale than those particular measurements could resolve."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The catch is they can't pin down exactly which defect — carbon substitutions, boron vacancies, something else — the energy-level assignments in the literature are all over the map, from one-point-four up to three-point-seven electron-volts above the valence band edge. Their model just assumes a flat distribution in energy and fits an overall density."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Still, if you're running a dual-gated moiré device at a volt per nanometer and over-interpreting a doping shift as coming from your active layer, this is the paper that tells you to double check your hBN."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four moves to a cleaner theory question: what does orbital magnetism even mean for an exactly flat band."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Huecker, Ye and Wang. A flat band has zero velocity and infinite effective mass by construction, so Landau-Peierls theory and the usual de Haas-van Alphen machinery, which are both built from the Fermi surface, simply don't apply."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Their fix: the magnetic field itself generates a dispersion. They expand the magnetic Bloch problem in the Moyal star product — the standard way to handle noncommuting kinetic momenta in a field — and get the band energy as a power series in B."
+    },
+    {
+      "speaker": "Ava",
+      "text": "First order in B, each momentum state picks up an energy set by its own orbital magnetic moment, called M of k. Second order brings in a new coefficient, X of k, which they derive in closed form. Together with the Berry curvature, these three functions of momentum fix the entire orbital response — magnetization, susceptibility, and the oscillatory part."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And when you pin the chemical potential inside the flat band, the contour where M equals zero becomes a genuine, field-generated Fermi surface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and they bosonize the low-energy excitations around that contour to get a modified Lifshitz-Kosevich formula — the usual quantum-oscillation expansion — but with level spacing that goes as B squared instead of linear in B, because there's no built-in dispersion to set the cyclotron scale."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the surprising number?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The phase offset of the oscillations isn't just the usual Berry phase — it has an order-one contribution from that new X coefficient. In their numerical check, a flattened Chern lattice model solved by exact diagonalization, the X contribution to the phase is actually about six times larger than the Berry-phase piece. If you only tracked Berry phase, as people usually do, you'd get the phase wrong by nearly half a cycle."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They also handle the realistic case where the band isn't perfectly flat, just narrow."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes — the oscillation frequency crosses over from the ordinary zero-field Fermi-surface area at weak field to the area of the M-equals-zero contour at strong field, following a parameter-free formula they verify numerically. So in a moiré flat band, if you sweep field hard enough, you should see the quantum oscillation frequency actually chirp."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Caveat is it's noninteracting — flat bands are basically defined by being where interactions dominate, so this is a scaffold for interpreting quantum oscillation experiments on moiré flat bands, not the final word once correlations kick in."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive, paper five, is further from our usual beat — pure density functional theory on a new Janus material family, Chromium-Silicon-Carbon-Nitrogen-four and the germanium analog."
+    },
+    {
+      "speaker": "Leo",
+      "text": "These are septuple-layer monolayers built on the moly-silicon-nitride architecture, but with one side substituted to break inversion symmetry."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Both are nonmagnetic direct-gap semiconductors — PBE-plus-spin-orbit gaps of one-point-two-three and one-point-zero-nine electron-volts, rising to one-point-four-six and one-point-one-nine with the H-S-E-six hybrid functional. The valence band edge splits by about fifty-three milli-electron-volts between the K and K-prime valleys from spin-orbit coupling, but the conduction band only splits by one-point-six milli-electron-volts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why such an asymmetry?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Orbital character — the valence band edge is chromium d-x-y and d-x-squared-minus-y-squared, strongly spin-orbit active, while the conduction band is chromium d-z-squared, which barely couples to spin. Opposite out-of-plane spin and opposite Berry curvature sit at K and K-prime, so despite the overall time-reversal symmetry you get a clean valley Hall effect with zero net charge current."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Anything surprising?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The germanium version has Berry curvature hot spots nearly a thousand times larger than the silicon version, even though the spin splittings are almost identical. They attribute that to multiband effects — small energy denominators near the Gamma point from Ge substitution — rather than stronger spin-orbit coupling per se."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And strain?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Four percent biaxial strain swings the gaps from about one-point-six down to point-eight-six electron-volts in the silicon compound, driving a direct-to-indirect transition past two percent tensile strain, while the valley spin contrast survives. Piezoelectrically, the germanium version has the bigger in-plane response, the silicon version the bigger out-of-plane one. For water splitting, the band alignment covers oxidation but falls short for hydrogen evolution without further tuning."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Worth flagging this is all computational — no synthesis reported yet, and the optical spectra skip exciton binding since there's no Bethe-Salpeter correction. Take the absolute absorption numbers as indicative, not final."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Quick hits before we close. Paper six looks at band tail states in two-dimensional transistors — unlike silicon's sharp band edges, monolayer TMD channels have Urbach energies around a hundred milli-electron-volts instead of ten, and the authors show this directly causes the sluggish, high-gate-voltage turn-on seen in real devices, with bilayer channels or stronger gate coupling as partial fixes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven is from the electron quantum optics crowd — a new tomography protocol that reconstructs two-electron coherence from simple photo-assisted current and noise measurements, no resource-heavy full state tomography needed. Applied to Coulomb-coupled quantum Hall edge channels, it reveals genuine interaction-induced entanglement, verified through a Cauchy-Schwarz witness and Wigner-function negativity that survive thermal background."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight reports ultrastrong magnon-magnon coupling in the van der Waals antiferromagnet chromium-phosphorus-sulfur-four — coupling ratio around zero-point-four-one, firmly in the ultrastrong regime — and a protocol for extracting a squeezed magnon vacuum state with nearly ten decibels of squeezing from ordinary thermal noise dynamics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine is an engineering feat — lithium niobate phononic crystal resonators with inferred phonon lifetimes up to twenty-one milliseconds at three-point-six gigahertz, quality factors above four times ten-to-the-eight. They show the limit was always extrinsic coupling to the measurement circuit, not intrinsic piezoelectric loss as everyone assumed."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper ten proposes using alkaline-earth atoms in optical lattices, with clock-state orbitals and tunable laser-driven hybridization, to simulate material-specific multi-orbital Hubbard models — they benchmark it against the bilayer nickelate lanthanum-three-nickel-two-oxygen-seven and show the microscopic parameters from first-principles calculations can be reproduced in a single lattice configuration."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the briefing for October ninth."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Back tomorrow with the next batch."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.10710",
+      "title": "Cooper Instability of a Magnetic Wigner Crystal",
+      "authors": [
+        "Wangqian Miao",
+        "Chunli Huang"
+      ],
+      "abstract": "Recent scanning tunneling microscopy has directly imaged electronic crystals in rhombohedral hexalayer graphene, and magnetotransport measurements suggest that superconductivity and charge-density-wave order emerge from a common spin-valley-polarized ferromagnetic metal at nearby carrier densities. Motivated by these observations, we ask whether collective modes in a magnetic Wigner crystal can mediate pairing in this setting. We address this question by studying the Cooper problem for two electrons in the first conduction band of the Wigner crystal. Unlike conventional phonon-mediated pairing, the collective mode (boson) energies and single-particle (fermion) dispersion are comparable scales controlled by the electron density, leaving no small parameter for an adiabatic expansion. Moreover, because the magnetic Wigner crystal is not time-reversal invariant, the usual Cooper logarithmic divergence in the pairing susceptibility is absent, so the attraction must exceed a finite threshold for pairing to occur. These unusual features motivate a numerical experiment to see whether the crystal's own vibrations can bind electrons. We obtain the crystalline ground state and its collective mode spectrum within Hartree–Fock and time-dependent Hartree–Fock approximation, and derive the electron–phonon Hamiltonian using the quasiboson approximation. Solving the resulting two-electron problem, we find that phonon-mediated attraction exceeds the pairing threshold, with chiral p-wave pairing as the leading instability. Within these approximations, we show that collective modes of a Wigner crystal can indeed favor chiral pairing despite broken time-reversal symmetry. Our results provide an encouraging starting point for developing a full many-body theory to study electronic crystallization and superconductivity.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.10710",
+      "tier": "deep",
+      "why": "Proposes that collective modes of a magnetic Wigner crystal in rhombohedral graphene can mediate chiral p-wave Cooper pairing, directly engaging correlated-state physics central to your interests."
+    },
+    {
+      "id": "2610.10706",
+      "title": "Symmetric Mode Ansatz: Theory of Magnon Collective Modes in Chern Insulators",
+      "authors": [
+        "Miguel Gon\\c{c}alves",
+        "Jonah Herzog-Arbeitman",
+        "Juan Felipe Mendez-Valderrama",
+        "Andreas Feuerpfeil",
+        "B. Andrei Bernevig",
+        "Nicolas Regnault"
+      ],
+      "abstract": "Moiré materials host integer and fractional Chern insulators (FCIs) where time-reversal is broken spontaneously by flat band ferromagnetism. In twisted MoTe2, unlike in quantum Hall, opposite spins carry opposite Chern numbers and realize Ising ferromagnetism with gapped magnon excitations. Clarifying the nature of these collective modes and the origin of the magnon gap is key to understanding the stability of the Chern magnets in these materials. To do so, we develop a generalized single-mode approximation, which we call the symmetric mode ansatz (SyMA), to describe the low-energy magnon spectrum. We find it to be in exceptional agreement with numerical calculations at integer filling, and qualitatively accurate across fractional fillings including FCIs. To explain the accuracy of the SyMA, we present two families of Hubbard models (including the Haldane model and continuum ideal bands) whose collective modes are analytically solvable and for which the SyMA is either exact or an accurate approximation. For a class of these models where SyMA is exact, we prove two-sided bounds on the zero-momentum magnon gap in terms of the Chern number, Berry curvature, and quantum metric, revealing that uniform quantum geometry is sufficient for stabilizing magnetism in Chern bands.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.10706",
+      "tier": "deep",
+      "why": "Develops a generalized single-mode approximation for magnon collective modes in twisted MoTe2 Chern magnets, with analytic bounds linking quantum geometry to magnon gaps in moire FCIs."
+    },
+    {
+      "id": "2610.11297",
+      "title": "Displacement-Field-Induced Ionization of Defect States in High-Quality hBN",
+      "authors": [
+        "Ilia Begichev",
+        "Daria Belotcerkovtceva",
+        "Iakov Reznikov",
+        "Sergey Slizovsky",
+        "Weijie Lu",
+        "Nansi Zhou",
+        "Ian Babich",
+        "Makars Siskins",
+        "Kostya S. Novoselov",
+        "Vladimir I. Falko",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Alexey I. Berdyugin"
+      ],
+      "abstract": "Encapsulation of two-dimensional (2D) materials with hexagonal boron nitride (hBN) is widely used to fabricate ultraclean van der Waals (vdW) heterostructures for optoelectronic and quantum transport studies. These devices are often operated under strong out-of-plane displacement fields that tune the electronic properties of the active 2D material, while the surrounding hBN is typically assumed to remain electronically inert. This assumption, however, neglects defect states that are present even in high-quality hBN crystals. Here, we probe their response to the applied displacement field using monolayer graphene encapsulated between hBN crystals as a sensitive charge sensor. Increasing the displacement field induces notable charge transfer between graphene and hBN, producing additional electron doping of 10-20x109 cm^(-2) even at the moderate displacement field (~0.5 V nm^(-1)), while simultaneously increasing carrier-density inhomogeneity of the graphene layer. Both effects are consistent with ionization of defect states within the hBN bandgap, with the bulk density ~1-7x10^(-5) nm^(-3) varying across different hBN crystals. Our results show that displacement-field-induced defect ionization in hBN can modify the electronic response of vdW heterostructures, with direct implications for device design and interpretation of experiments.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.dis-nn",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.11297",
+      "tier": "deep",
+      "why": "Shows that displacement fields ionize hidden defect states in hBN encapsulation layers, causing unwanted doping and inhomogeneity that directly affects interpretation of vdW heterostructure optical/transport experiments."
+    },
+    {
+      "id": "2610.12193",
+      "title": "Orbital magnetic susceptibility and de Haas-van Alphen effect of a flat band from quantum geometry",
+      "authors": [
+        "Ethan Huecker",
+        "Mengxing Ye",
+        "Yuxuan Wang"
+      ],
+      "abstract": "A band that is exactly flat at zero magnetic field has zero velocity, a divergent effective mass, and no Fermi surface, so the standard theory of orbital magnetism does not apply. We show that the magnetic field generates an effective dispersion. In the expansion organized by the Moyal algebra of the noncommutative kinetic momenta, the band energy acquires a first-order shift B\\,\\mathcalM(\\mathbf k), set by the orbital moment of the Bloch state, and a second-order shift \\tfrac12\\mathcalX(\\mathbf k)B2, whose gauge-invariant coefficient we obtain in closed form. These two functions, together with the Berry curvature \\Omega, fix the entire orbital response. The susceptibility is purely geometric, and for a generic isolated flat band it reproduces the established gauge-invariant response formula. With the chemical potential pinned to the flat band, the \\mathcalM=0 contour becomes an emergent Fermi surface, and bosonizing excitations in its vicinity yields a modified Lifshitz–Kosevich formula with level spacing quadratic in B. The phase shift of the oscillations is given jointly by the Berry phase around the emergent Fermi surface and \\mathcalX. When the band is narrow rather than exactly flat, the oscillation frequency crosses over, with a parameter-free profile, from the zero-field Fermi-surface area to the area of the \\mathcalM=0 contour. We verify our analytical findings numerically by exactly diagonalizing a flattened Chern lattice model.",
+      "categories": [
+        "cond-mat.str-el",
+        "hep-th"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.12193",
+      "tier": "deep",
+      "why": "Derives the orbital magnetic susceptibility and a modified Lifshitz-Kosevich formula for flat Chern bands from quantum geometry, relevant to moire flat-band physics you follow closely."
+    },
+    {
+      "id": "2610.11293",
+      "title": "Multifunctionality in Janus CrMCN4 (M = Si/Ge) Monolayers: Valleytronic Physics, Piezoelectric Response, and Photocatalytic Potential",
+      "authors": [
+        "Jubair Hossan Abir",
+        "M. R. U. S. Shapon",
+        "S. S. B. Pallab",
+        "Tanvir Khan",
+        "Raihana Shams Islam",
+        "Saleh Hasan Naqib"
+      ],
+      "abstract": "Two dimensional Janus semiconductors integrating spin-valley coupling, piezoelectricity, and tunable optical responses offer a platform for multifunctional nanodevices. Here, first-principles calculations reveal complementary composition and strain effects in CrSiCN4 and CrGeCN4 monolayers. Both are found to be nonmagnetic direct-gap semiconductors, with gaps of 1.23 and 1.09 eV using the Perdew-Burke-Ernzerhof functional including spin-orbit coupling, respectively. HSE06 hybrid-functional calculations retain the direct-gap character, yielding gaps of 1.46 eV for CrSiCN4 and 1.19 eV for CrGeCN4. Opposite out-of-plane spin character and Berry curvature emerge at K and K'. Biaxial strain reduces the respective gaps from 1.59 to 0.86 eV and 1.44 to 0.63 eV, drives direct-to-indirect transitions, and redshifts absorption while preserving valley spin contrast. CrGeCN4 exhibits larger in-plane piezoelectric response, whereas CrSiCN4 exhibits larger out-of-plane magnitude. Band-edge alignment satisfies the oxygen evolution reaction requirement but provides insufficient driving force for the hydrogen evolution reaction, motivating further strain-induced band-edge modulation toward overall water splitting. These results establish composition and strain as complementary controls for tailoring Cr-based Janus monolayers for valleytronic, optoelectronic, electromechanical, and photocatalytic applications.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.11293",
+      "tier": "deep",
+      "why": "First-principles study of a Janus Cr-based monolayer combining spin-valley coupling, Berry curvature at K/K', and strain-tunable valley contrast — squarely in the valleytronics/2D materials space."
+    },
+    {
+      "id": "2610.10953",
+      "title": "Band Tail States: Speed Bump or End of the Road for Two-Dimensional Semiconductors?",
+      "authors": [
+        "Zherui Han",
+        "Robert K. A. Bennett",
+        "Davide Donadio",
+        "Maritha A. Wang",
+        "Tara Pe\\~{n}a",
+        "Mika\\\"el Cass\\'e",
+        "Martin Vanbrabant",
+        "Valeriya Kilchytska",
+        "Jean-Pierre Raskin",
+        "Eric Pop"
+      ],
+      "abstract": "We propose that the path to realizing the full potential of two-dimensional (2D) electronics lies in understanding and mastering their energy band tail states (BTS). Unlike silicon, which benefits from sharp band edges (Urbach energy E_\\rm U ~ 10 meV), today's monolayer 2D semiconductors have rough band edges (E_\\rm U ~ 100 meV) caused by spatial potential inhomogeneity. Comparing a physics-based electrical model to experiments, we demonstrate that BTS cause reduced effective mobility and \"slow\" transistor turn-on with excessive gate voltage in monolayer 2D transistors, which sets a fundamental limit for their energy-efficient operation. We also show that BTS effects in 2D transistors could be mitigated with higher gate capacitance, with strain engineering, and by using bilayer instead of monolayer 2D channels, as long as E_\\rm U is reduced below ~ 50 meV. This work provides a theoretical framework and design guidelines to navigate these fundamental limits, and to enable successful integration of 2D semiconductors into low-power nanoelectronics.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.10953",
+      "tier": "brief",
+      "why": "Argues that band-tail (Urbach) disorder fundamentally limits mobility and turn-on behavior in monolayer 2D transistors, a practical caveat for optical and transport studies of TMDs."
+    },
+    {
+      "id": "2610.12286",
+      "title": "Accessing electronic entanglement via photo-assisted two-electron tomography",
+      "authors": [
+        "M. Paulet",
+        "G. Rebora",
+        "M. Bienioszek",
+        "G. M\\'enard",
+        "G. F\\`eve",
+        "A. Feller",
+        "P. Degiovanni"
+      ],
+      "abstract": "Witnessing entanglement between electrons propagating in quantum circuits requires accessing their two-electron coherences, which encode the two-particle quantum correlations generated by Coulomb interactions. Yet, experimental reconstruction of two-electron coherence remains a major challenge. We introduce photo-assisted two-electron tomography, a quantum coherence reconstruction protocol from dc-currents and time-averaged current correlations, routinely measured in electron quantum optics experiments. Driving an energy filter with a small rf tone encodes off-diagonal coherences in the frequency domain into the dc-current response, enabling single-electron tomography without resorting to current-noise measurements. Extending it to two channels, current correlations after two photo-assisted filters reconstruct the two-electron Wigner distribution and isolate its irreducible two-body part. When applied to Coulomb-coupled quantum Hall edge channels, the protocol reveals interaction-induced energy entanglement. Signatures of this entanglement are visible through the violation of an entanglement witness based on Cauchy-Schwarz inequalities, as well as Wigner function negativities, which remain resolved above the thermal background for realistic device parameters. A generalized Franson geometry further extends the approach to intra-channel two-electron coherences. This opens a direct pathway to detect and characterize electronic entanglement in ballistic quantum circuits.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.12286",
+      "tier": "brief",
+      "why": "Introduces a photo-assisted two-electron tomography protocol that reconstructs two-electron coherences and reveals interaction-induced entanglement in quantum Hall edge channels."
+    },
+    {
+      "id": "2610.11859",
+      "title": "Tunable Ultrastrong Magnon-Magnon Coupling and Squeezed States in a Triaxial Van der Waals Antiferromagnet",
+      "authors": [
+        "Xiao Xiao",
+        "Zishuang Li",
+        "Zui Tao",
+        "Lina Chen",
+        "Ping Liu",
+        "Shuai Zhang",
+        "Haozhe Wang",
+        "Yong Pu",
+        "Ronghua Liu"
+      ],
+      "abstract": "Achieving and quantifying ultrastrong magnon-magnon coupling (USC) remains a key challenge for quantum magnonics. Here, we demonstrate widely tunable USC between chiral (right- and left-handed) and acoustic or optical magnon modes in the van der Waals antiferromagnet CrPS4. Using a full quantum model, we decompose the interaction into three microscopic interaction channels: the co-rotating term g1 (mode hybridization), the counter-rotating term g2 (two-mode squeezing), and, uniquely in the chiral regime, the self-squared term g3 that mediates single-mode squeezing. The normalized coupling ratio reaches g/fg \\sim 0.41, entering the USC regime. Most significantly, we establish a complete protocol linking these USC parameters to a measurable quantum phenomenon: a squeezed magnon vacuum state. Our simulations not only visualize the chirality and polarization evolution of the hybrid modes but also demonstrate how to directly extract quadrature fluctuations and a substantial squeezing factor (up to \\sim 9.7 dB) from thermal noise-driven magnetization dynamics. This work provides a material-specific quantum framework for USC and a practical pathway to detect and exploit non-classical magnon states in low-damping two-dimensional magnets, opening a route toward quantum-enhanced spintronics and hybrid quantum information platforms.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.11859",
+      "tier": "brief",
+      "why": "Demonstrates ultrastrong, tunable magnon-magnon coupling and squeezed magnon states in the van der Waals antiferromagnet CrPS4, relevant to vdW magnetism and hybrid quantum magnonics."
+    },
+    {
+      "id": "2610.10700",
+      "title": "Millisecond phonon lifetimes in piezoelectric nanomechanical resonators",
+      "authors": [
+        "Oliver A. Hitchcock",
+        "Matthew P. Maksymowych",
+        "Kaveh Pezeshki",
+        "Takuma Makihara",
+        "Erik Szakiel",
+        "Chou-Wei Kiang",
+        "Daniel Rugar",
+        "Amir H. Safavi-Naeini"
+      ],
+      "abstract": "Piezoelectric nanomechanical resonators operating at gigahertz frequencies are a promising platform for quantum information processing and precision sensing, but phonon lifetimes have been limited to the microsecond range, widely attributed to the higher intrinsic loss of piezoelectric materials. Here we show that this limitation is not fundamental. Using a fabrication process informed by recent studies of defect-mediated loss in lithium niobate, we combine chemical restoration of ion-milled surfaces with a shadow-mask metallization process to produce lithium niobate phononic crystal resonators with inferred internal phonon lifetimes of up to 21 milliseconds at 3.6 gigahertz, corresponding to quality factors exceeding 4\\times108 (f\\cdot Qi > 1018) at millikelvin temperatures. By systematically varying the electrode-to-resonator spacing, we demonstrate that the measured lifetime is set by external coupling between the device and the measurement circuit rather than material loss. This establishes that lithium niobate, once fabrication-induced surface damage is removed, achieves an intrinsic quality comparable to the best mechanical materials while remaining an intrinsically piezoelectric platform with strong electromechanical coupling.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.10700",
+      "tier": "brief",
+      "why": "Reports record millisecond phonon lifetimes (Q>4x10^8) in lithium niobate nanomechanical resonators, a surprising materials result relevant to quantum acoustics platforms outside your core focus."
+    },
+    {
+      "id": "2610.10713",
+      "title": "Quantum simulation of material-specific Hubbard models with alkaline-earth atoms",
+      "authors": [
+        "Henning Schl\\\"omer",
+        "Reuben R. W. Wang",
+        "Bo Xing",
+        "Susanne F. Yelin",
+        "H. R. Sadeghpour"
+      ],
+      "abstract": "A long-term goal of quantum simulation is to faithfully reproduce the low-energy Hamiltonians of correlated quantum materials, establishing a direct connection between solid-state experiment, electronic-structure theory, and programmable many-body systems. Here, we introduce an integrated quantum-simulation architecture based on fermionic alkaline-earth atoms that enables programmable control over the key ingredients of multi-orbital material Hamiltonians. Long-lived clock states encode synthetic orbitals, their differential polarizabilities generate orbital-selective tunneling, and contact interactions provide multi-orbital Hubbard and Hund couplings. Spatially structured coherent driving on the ultra-narrow clock transition further realizes symmetry-selective inter-orbital hybridization, while the clock detuning independently controls orbital energy offsets. In this way, the spatial symmetries of solid-state orbitals can be encoded directly into the effective Hamiltonian, even though the atoms themselves remain in conventional s-wave Wannier orbitals of the lowest optical-lattice bands. We demonstrate the resulting integrated control using the four-band low-energy Hamiltonian of the bilayer nickelate La3Ni2O7 as a demanding benchmark. Self-consistent calculations show that the microscopic parameters obtained from first-principles modeling can be reproduced within a single experimentally accessible lattice configuration and independently programmed over substantial parameter ranges. Our results establish a general route for translating material-derived multi-orbital Hamiltonians into programmable ultracold-atom quantum simulators.",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.str-el",
+        "physics.atom-ph",
+        "quant-ph"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.10713",
+      "tier": "brief",
+      "why": "Proposes an alkaline-earth-atom quantum simulator architecture that reproduces material-specific multi-orbital Hubbard Hamiltonians (demonstrated on bilayer nickelate La3Ni2O7), a notable quantum-simulation advance worth knowing about."
+    }
+  ]
+}

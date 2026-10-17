@@ -1,0 +1,400 @@
+{
+  "date": "2026-10-04",
+  "id": "sn-9.3-talk",
+  "format": "dialogue",
+  "episode_title": "Ultra-Flat Graphene: How STM on Boron Nitride Killed a Predicted Band Gap",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Welcome back to arXiv Morning, Nano and Correlated. We're prepping for lecture nine of Ihn's Semiconductor Nanostructures course, the one on scattering mechanisms and tunneling transport. And the paper on this week's list, paper nine point three, is a classic from twenty eleven: Xue, Sanchez-Yamagishi, and coworkers, scanning tunneling microscopy and spectroscopy of ultra-flat graphene on hexagonal boron nitride, out of the LeRoy and Jarillo-Herrero groups, published in Nature Materials."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is one I've seen cited everywhere, basically every graphene-on-h-B-N paper since twenty eleven name-checks it. But I've never actually read it closely. Before we get into it, can we set up why 'scattering mechanism' and 'tunneling transport' end up in the same lecture? They sound like two different topics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They're two different techniques pointed at the same underlying problem: disorder. In any real device, the thing that actually limits your mobility, your quantum Hall plateau widths, your mean free path, is some random potential landscape sitting on top of the clean band structure you calculate in a textbook. The lecture's first half is about where that landscape comes from — charged impurities, surface roughness, remote phonons, short-range defects — and how each mechanism scales with density, temperature, and screening. The second half is about how you actually see that landscape, and tunneling is the most direct way: you bring a sharp metal tip within an atom's width of the surface and measure a current that depends exponentially on the local electronic structure right underneath the tip."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So scattering theory gives you the 'why', and scanning tunneling microscopy gives you the 'look, here it is'."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. And this paper is a beautiful case where the two meet. It's not a transport paper. There's no four-probe resistance, no mobility number. It's purely a local microscope. But what it images is precisely the charged-impurity disorder landscape that the scattering-mechanism half of the lecture talks about — in real space, atom by atom, before you even run a current through two contacts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's get the one-sentence picture of tunneling spectroscopy straight first, since the whole paper rests on it. The tip is basically a local voltmeter for the density of states?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Close enough for our purposes. In the simplest Bardeen picture, the tunneling current between tip and sample is a sum over states weighted by the density of states of the tip, the density of states of the sample, and a matrix element that falls off exponentially with the vacuum gap — the classic tunneling decay, current proportional to the exponential of minus twice the decay constant times distance. If you keep the tip-sample separation fixed and just sweep the bias voltage, the derivative of current with respect to voltage, d I by d V, becomes directly proportional to the local density of states of the sample at an energy equal to the bias. That's the whole trick: differentiate the current, and you've turned a microscope into a local spectrometer."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And that exponential decay with distance — that's literally the same mathematical object that shows up later in this paper, isn't it? I remember the interlayer hopping between graphene and boron nitride is modeled as a hopping strength times an exponential in the distance between atoms."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good catch, and it's worth flagging for the talk: tunneling through vacuum to the STM tip, and orbital overlap tunneling between two stacked atomic layers, are described by the same physical idea — a matrix element that decays exponentially because the electron wavefunction decays exponentially in the forbidden region. The lecture's tunneling-transport formalism isn't just about the STM itself; the authors reuse exactly that formalism to build the interlayer coupling Hamiltonian between graphene and boron nitride later in the paper. It's a nice unifying thread if you want to make that connection explicit when you present."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, now let's get into the actual story. What was broken, and what question is this paper trying to answer?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Set the scene: twenty-ten, twenty-eleven. Graphene is five years past its isolation, everyone's excited about its linear dispersion, the Dirac point, all the exotic physics that's supposed to happen exactly at zero density, where the density of states vanishes and the system is maximally sensitive to any perturbation. The problem is that nobody can actually get there experimentally, because graphene sitting on silicon dioxide is electronically filthy. The oxide surface is rough on the nanometer scale and it's riddled with trapped charges left over from growth and processing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And trapped charges mean a random Coulomb potential landscape underneath the graphene."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. Picture the charge-neutrality point not as a single sharp energy where the density of electrons hits zero, but as a landscape of hills and valleys in the local electrostatic potential. Where the potential dips, you pool electrons; where it rises, you pool holes. Even when the average density over the whole flake is zero, locally you have a patchwork of electron puddles and hole puddles sitting right next to each other. This had already been seen directly, by scanning single-electron transistor measurements from the Yacoby group and by earlier STM work from the LeRoy group itself on graphene on silicon dioxide. So going into this paper, the existence of puddles on oxide was well established. The open question was: can you get rid of them without giving up a solid substrate?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "The obvious fix is to remove the substrate entirely — suspend the graphene over a trench."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And that had already been done, by the Andrei and Kim groups, with genuinely spectacular results — fractional quantum Hall effect in graphene, ballistic transport. But suspended graphene is mechanically fragile. It sags, it strains, and you absolutely cannot put an STM tip near it, because the tip-sample attractive force will just snap or deform a free-standing sheet. So there was no local spectroscopic picture of how clean a 'well-behaved' graphene sample actually looks underneath. The field needed a substrate that was mechanically supportive like silicon dioxide, but electronically quiet like vacuum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And that's boron nitride."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's boron nitride. Chemically it's the insulating, wide-gap cousin of graphene: same honeycomb lattice, same hexagonal symmetry, but alternating boron and nitrogen atoms instead of all carbon, and a lattice constant about one point eight percent larger. Structurally it's a layered van der Waals crystal just like graphite, so it cleaves into atomically flat terraces, and being ionically bonded, it has no dangling bonds and far fewer surface charge traps than an amorphous oxide. Dean and coworkers, just the year before, in twenty-ten, had shown that graphene devices built on exfoliated boron nitride have much higher mobility and much narrower resistance peaks at the Dirac point than on oxide — a strong transport-level hint that the disorder was reduced. But that was all inferred from global transport. Nobody had actually looked underneath, locally, with atomic resolution, to see what was really going on. That's the gap — pun very much intended — that this paper fills."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So two separate questions bundled into one paper: how flat and how clean is graphene on boron nitride, really, at the atomic scale? And second — I remember there was a theoretical prediction hanging over this."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, and this is the hook that makes the paper more than just 'nicer substrate, smaller puddles.' A couple of density-functional-theory papers, from Giovannetti and coworkers and from Slawinska and coworkers, had calculated that if you stack graphene directly on boron nitride in the perfect AB-registered configuration, graphene's two sublattices — the A atoms and B atoms of the honeycomb — sit in inequivalent environments. One sublattice sits on top of boron, the other on top of nitrogen. That breaks the sublattice symmetry that protects graphene's Dirac point, and it was predicted to open a band gap of order fifty milli-electron-volts. That would be enormous news: a simple, non-destructive way to gap out graphene and make it into a real semiconductor, just by choice of substrate."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So going in, people genuinely didn't know whether graphene on boron nitride would be gapless Dirac-point physics with less disorder, or a new gapped semiconductor."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the fork in the road. And only a local spectroscopic probe can settle it, because if the gap exists, you need to see it directly in the density of states at the Dirac point — a dip, or a region of suppressed d I by d V around zero bias. Transport alone, with its puddle-averaged, length-averaged picture, would struggle to cleanly distinguish a small intrinsic gap from residual disorder broadening. This is a perfect STM question."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Alright, let's walk through what they actually did. Devices first."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Standard exfoliation-and-stack recipe, which by now is completely routine but was still fairly new in twenty-eleven: exfoliate a thin boron nitride flake onto an oxidized silicon wafer, then mechanically transfer an exfoliated graphene flake on top using a sacrificial polymer film, then write gold electrodes by electron-beam lithography, then anneal to clean off polymer residue. Crucially, the silicon underneath still acts as a global back gate, so you can tune the graphene's carrier density electrostatically, exactly the knob you need to sweep the Dirac point in energy. The whole stack then goes into a low-temperature ultra-high-vacuum STM, cooled to about four point five kelvin, with tungsten tips checked beforehand on a clean gold reference to make sure the tip's own density of states is featureless."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they build a comparison sample on plain oxide, imaged the same way, so it's an apples-to-apples comparison."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, that control sample is what makes the whole argument quantitative rather than just 'look how pretty this image is.' Figure one is the opening shot: a topographic STM image of graphene on boron nitride next to one of graphene on oxide, same scan size, one hundred nanometers across. Even by eye, the oxide image is visibly bumpier. They quantify it with a height histogram for each image, fit to a gaussian, and extract a standard deviation of the height fluctuations: about two hundred twenty five picometers on oxide, versus about thirty picometers on boron nitride. That's better than a sevenfold reduction in roughness."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Thirty picometers is really small — that's a fraction of a carbon-carbon bond length."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It is, and that's the point they make explicitly: thirty picometers is essentially the same roughness you'd measure on freshly cleaved highly oriented pyrolytic graphite, or on mica — in other words, graphene on boron nitride has reached the intrinsic corrugation limit of a free, unsupported two-dimensional membrane. It's not being roughened up by the substrate at all anymore. This matters physically beyond just looking nice, because local curvature in a graphene sheet acts like a local doping potential and even like a random effective magnetic field through the way curvature modifies the hopping amplitudes. So flattening the mechanical corrugation is not cosmetic — it removes one whole channel of electronic disorder before you even get to charge traps."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good, that's a clean first slide. What's the next layer of detail once you zoom in further?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is where the moiré patterns show up, figure two. Zoom into a smaller area, and on top of the atomic lattice resolution — you can literally see individual carbon atoms — there's a slower, longer-wavelength modulation in the images, with periods of a couple of nanometers. That's a moiré pattern: the beat frequency you get when you overlay two hexagonal lattices that are slightly mismatched in either lattice constant or orientation angle, the same effect you'd get overlaying two combs with slightly different tooth spacing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the moiré wavelength tells you the relative twist angle between graphene and the boron nitride underneath."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and that's exactly the measurement they make. In one region they see a long wavelength modulation of about two point six nanometers; in another region of the same flake, one point three nanometers — a shorter moiré period. By taking the Fourier transform of each image, they get two distinct sets of six-fold spots: one near the edge of the Fourier image corresponding to the atomic graphene lattice, one bunched near the center corresponding to the much longer moiré periodicity. The angles of these spots let you back out both the graphene lattice orientation and, combined with the known one point eight percent lattice mismatch, the actual twist angle between graphene and the boron nitride crystal axes underneath — they find roughly minus five point four degrees in one region and minus ten point nine degrees in another."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two different twist angles on the same flake? Doesn't that mean the graphene itself must be rotated differently in different places, since presumably the boron nitride crystal underneath is a single, continuous flake?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly their argument, and it's a nice piece of structural detective work. The difference between the two extracted boron nitride rotation angles matches the difference in the graphene lattice orientation measured directly in the two images. So the boron nitride is one continuous, single-orientation crystal, but the graphene on top has locally relaxed into two different angular domains, separated by a ridge — consistent with atomic force microscopy images elsewhere in the paper showing the graphene forms flat terraces separated by wrinkles and pyramidal folds. Practically, it tells you graphene doesn't rigidly lock to a single orientation over an entire flake; it can fold and re-orient domain by domain."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, now the big question — the band gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is figure three, and it's the heart of the physics story. They take dI by dV curves as a function of tip bias at fixed gate voltage, and the key observation is simple to state: the curve is close to linear in energy, with a minimum at some bias — that minimum is where the tip's Fermi level lines up with the Dirac point of graphene — and critically, there's no gap. No flat region of zero density of states around that minimum, just the V-shaped linear dependence you expect from the two linearly dispersing Dirac cones meeting at a point."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So straight away: no fifty milli-electron-volt gap, anywhere they looked."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Not even locally, and they stress that — not just gapless on average, but gapless at every spot they probed, across different moiré domains with different twist angles. That directly falsifies the specific DFT predictions of Giovannetti and Slawinska for this kind of sample."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So why were those DFT calculations wrong — or rather, what assumption were they making that doesn't hold in a real device?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the single most important conceptual point to get right if you're presenting this paper, so let's build the intuition slowly. Those earlier calculations modeled graphene and boron nitride as perfectly commensurate and perfectly aligned — same lattice constant, zero twist angle, every carbon atom locked in registry with the layer below, one sublattice always sitting over boron, the other always over nitrogen. In that idealized, perfectly periodic world, yes: one graphene sublattice has a systematically different local environment from the other, sublattice symmetry is broken, and you get a gap, physically the same mechanism as in bilayer graphene with a perpendicular field, or in gapped sublattice-symmetry-broken Dirac materials generally."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But real graphene on boron nitride isn't perfectly aligned — we just established there's a one point eight percent lattice mismatch and generically some twist angle."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's the key physical insight the authors add with their own calculation. Because of the mismatch and the rotation, the registry between a given carbon atom and the boron or nitrogen atom below it slowly drifts as you move across the sample — like walking along one of two slightly mismatched combs, the tooth-to-tooth alignment slips gradually. Within a few lattice constants you lose the local registry; over a region of a few hundred unit cells, a carbon atom on sublattice A has, averaged over the moiré supercell, exactly the same statistical chance of having a boron neighbor as having a nitrogen neighbor as does a carbon atom on sublattice B."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the asymmetry that breaks sublattice symmetry in the aligned, commensurate case gets averaged away once you let the two lattices slide past each other at a generic angle."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the physical statement in one sentence. They verify it with a real calculation, not just a hand-wave: they build an interlayer hopping model, a hopping strength between a carbon atom and a boron or nitrogen atom that decays exponentially with distance — there's that tunneling-type exponential again — calibrated to known bilayer-graphene interlayer parameters, and Fourier transform it to get an effective low-energy Hamiltonian for graphene plus the Moiré-periodic coupling to boron nitride. The result: the coupling strength to the A sublattice and to the B sublattice becomes essentially identical once you're dealing with domains of a few tens to a few hundred unit cells, which is far smaller than any real sample. Sublattice symmetry is numerically restored, and the gap closes — in their estimate, down to something like a microvolt or smaller for realistic domain sizes, utterly unobservable."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's not that boron nitride can never gap graphene — it's that at the generic, several-degree twist angles seen in this particular sample, the gap is averaged to nothing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, and that's a subtlety worth having ready for the discussion, because people sometimes over-read this paper as 'boron nitride never gaps graphene, full stop.' That's not quite the claim. The claim is specific to misaligned, incommensurate stacking. Years later, other groups did find measurable gaps in graphene on boron nitride, but only when the two lattices are deliberately aligned to within a small fraction of a degree, recovering long-range commensuration. This paper's twist angles were five and eleven degrees — nowhere near that near-zero-degree alignment regime — so there's no contradiction, just two different corners of parameter space."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good, that's an important nuance to flag. Figure three also has a gate-voltage map, right — the two-dimensional d I by d V plot?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, figure three-b: dI by dV plotted against both tip bias and back-gate voltage. There's a bright minimum line that traces out the Dirac point energy as you sweep the gate — as you add electrons or holes electrostatically, the Dirac point shifts in energy relative to the tip's Fermi level, exactly as you'd expect. And the line isn't straight; it moves faster near zero bias than far from it, which is itself a nice confirmation of the linear dispersion, because the density of states near the Dirac point is small, so a small added charge shifts the chemical potential a lot, whereas far from the Dirac point the density of states is larger and the same charge shifts the chemical potential less."
+    },
+    {
+      "speaker": "Leo",
+      "text": "There's also something about a secondary dark ridge in that plot — I want to make sure I understand what that is, because I could imagine someone presenting this and mistaking it for a second gap feature."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good instinct, and yes, this is exactly the kind of thing that trips people up. That second, fainter ridge is not an intrinsic graphene feature at all — it comes from the STM tip itself acting as a local top gate. Applying a bias to the tip doesn't only probe the density of states, it also electrostatically perturbs the local carrier density right underneath the tip, shifting the local Dirac point as a function of tip voltage independent of the back gate. It's a known artifact in this kind of local gating measurement, previously discussed by Choudhury and Gupta, and the authors correctly identify and set it aside rather than over-interpreting it as physics. For your talk, it's worth a sentence, mainly to signal you understand that not every feature in a 2-D spectroscopy map is sample physics — some of it is measurement back-action."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Noted. Now, Figure three-c and the Fermi velocity — this seems like a nice, clean quantitative extraction."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It is, and it's a good, simple formula to have ready. In two dimensions, with a linear dispersion, energy equals h-bar times Fermi velocity times the wave vector, and the carrier density scales as the wave vector squared times the spin and valley degeneracies, both equal to two for graphene, divided by the usual two-dimensional phase space factor. Combine those, plug in the density induced by the gate through a simple parallel-plate capacitor model — accounting for both the two hundred eighty five nanometers of oxide and about fourteen nanometers of boron nitride dielectric in series — and you get the Dirac point energy varying as h-bar v_F times the square root of pi times the gate coupling constant times gate voltage. Fit that square-root form to the measured Dirac point energy versus gate voltage curve, and the only free parameter left is the Fermi velocity."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And what did they get?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "About one point one six times ten to the six meters per second for the electron side, and zero point nine four times ten to the six meters per second for the hole side — both reasonably close to, but systematically different from, the textbook graphene value near one times ten to the six meters per second. The roughly twenty-five percent electron-hole asymmetry is a nice side result, and they're upfront that they don't have a clean explanation — they speculate it could come from next-nearest-neighbor hopping terms, which break electron-hole symmetry around the Dirac point and weren't in their simple linear model, and interestingly the size and direction of the asymmetry seemed to depend on which moiré domain, that is which local twist angle, they measured. That's a nice thing to keep in your back pocket for the discussion without building a whole slide around it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Alright, let's get to what I think is actually the headline physics result for this course: the charge puddle maps."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Figure four, and this is where the scattering-mechanism story and the tunneling-transport technique really fuse into one measurement. Instead of taking one dI by dV curve, they take one at every point on a dense grid, roughly one nanometer spacing, over a hundred-nanometer-square region, for graphene on boron nitride and, separately, for the control sample on oxide. For every single spectrum, they extract the local Dirac point energy — the bias at the dI by dV minimum — so you end up with a full two-dimensional map of the Dirac point energy as a function of position."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which is exactly the puddle landscape we talked about at the start — directly imaged, not inferred."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely. Red and blue regions in that map correspond to local electron doping and hole doping respectively, because a shift in the local Dirac point energy, at fixed global gate voltage, means the local carrier density deviates from the nominal value — exactly an electron or hole puddle. And the qualitative comparison between the two samples is striking even before you look at numbers: on oxide, the map is a mess of small, sharply-varying patches; on boron nitride, the map is almost uniformly flat, with only gentle, slow variation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then they turn that into a hard number."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, histogram of the Dirac point energy over the whole map, figure four-d. On boron nitride, it's a tight gaussian with a standard deviation of about five point four milli-electron-volts. On oxide, the equivalent distribution is roughly ten times broader, standard deviation about fifty five point six milli-electron-volts. Convert that energy fluctuation into a charge density fluctuation using the same linear-dispersion relation between density and energy we used for the Fermi velocity fit, and you get a density fluctuation of about two point five times ten to the nine per square centimeter on boron nitride, versus two point six times ten to the eleven per square centimeter on oxide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a hundred-fold reduction in the charge disorder amplitude. That's the number to remember."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the number to remember, and it's also the number that connects straight back to the scattering-mechanism half of the lecture, because a residual charge density fluctuation of order ten to the nine per square centimeter is in the same ballpark as what had only previously been inferred, indirectly, from transport measurements on suspended graphene. So the headline claim of the paper, stated carefully, is: graphene supported on boron nitride achieves charge disorder as low as free-standing suspended graphene, as measured directly and locally for the first time, without needing to suspend anything."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why does that matter beyond just a nicer number? What did it actually open up?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A few things. First, practically: it told the whole field that boron nitride wasn't just a modest mobility improvement, it was close to as good as it gets, and it's mechanically robust and compatible with gating and with local probes — which suspended graphene is not. That's a big part of why boron nitride became the near-universal substrate and encapsulation layer for essentially every high-quality two-dimensional device built afterward, including the ones your own group works with for optics of two-dimensional materials. Second, scientifically: by ruling out a sizable intrinsic gap at these generic twist angles, it cleared the way for people to correctly interpret transport features in graphene on boron nitride as coming from residual disorder or from genuine moiré-superlattice band reconstruction — the secondary Dirac points and Hofstadter butterfly physics that came a couple of years later — rather than mistakenly attributing them to a trivial substrate-induced gap. And third, methodologically: it's one of the first clean demonstrations that STM could be used to benchmark disorder quantitatively in a van der Waals heterostructure, a technique that's now completely standard for every new moiré system, including the twisted bilayers and transition-metal dichalcogenide moirés you're interested in."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's recap the physics before we move to how to actually present this. Main takeaways so far?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Four things. One: graphene mechanically conforms to boron nitride and reaches an intrinsic flatness limit, roughness around thirty picometers, comparable to bulk graphite, a sevenfold improvement over oxide. Two: this conformation produces moiré patterns with periods of order a few nanometers whose angle and wavelength directly encode the graphene-to-substrate twist angle, and different regions of one flake can sit at different twist angles separated by structural ridges. Three: contrary to earlier DFT predictions of a fifty milli-electron-volt gap, no gap is seen, because lattice mismatch and generic misalignment wash out the sublattice-symmetry breaking that a perfectly commensurate stack would have — this is an averaging argument, not a statement that boron nitride can never gap graphene. Four: the local charge disorder, measured directly as fluctuations in the Dirac point energy, drops by roughly a hundredfold compared to oxide, down to a level matching suspended graphene, which is the practical result that made boron nitride the default substrate for the field."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good. Now, I actually have to present this paper in exercise class in thirteen minutes, five to eight slides, then five minutes of discussion. Help me build the talk."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's build a concrete arc. Slide one: the motivating question. One sentence of physics — Dirac point physics is interesting precisely because the density of states vanishes there, but disorder on oxide buries it under electron-hole puddles — and one sentence of engineering: can we find a substrate that's clean enough without the fragility of suspension? End the slide with the explicit fork: does boron nitride just reduce disorder, or does conforming to its lattice also open a predicted gap? That fork is your whole talk's suspense, so state it clearly up front."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Slide two?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Minimal background, don't over-build this. A quick comparison: oxide is rough and full of charge traps, suspended graphene is clean but fragile and incompatible with local probes, boron nitride is the proposed middle ground — flat, ionic, insulating, same honeycomb structure as graphene but with boron and nitrogen on the two sublattices, one point eight percent larger lattice constant. Mention Dean's twenty-ten transport result in one sentence as the prior evidence that motivated this STM study, and flag the DFT gap prediction as the specific theoretical claim this paper is designed to test."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Slide three, method and flatness?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes — this is where you explain, briefly, what dI by dV actually measures, local density of states at an energy set by the bias, because your classmates need that to trust everything downstream. Then show figure one: topography images of graphene on boron nitride versus oxide side by side, plus the height histograms. State the roughness numbers, thirty versus two hundred twenty five picometers, and the physical point that this is now at the intrinsic corrugation limit of graphene itself, like graphite."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Slide four, the moiré patterns?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Show one real-space moiré image and its Fourier transform side by side, from figure two — don't show all four panels, pick the clearest pair. Explain moiré as a beat pattern between two near-matching lattices, mention that the measured wavelength and angle let you extract the graphene-to-boron-nitride twist angle, and use the two different domains on the same flake to make the nice structural point that the boron nitride is one continuous crystal while graphene locally re-orients across ridges. Keep this slide fairly fast; it's a beautiful picture but not where the deepest physics argument is."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Slide five — this has to be the band gap question, which I think is the slide everyone will be listening hardest for."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, give this one real time, maybe the biggest chunk of your thirteen minutes. Structure it as: here's what was predicted and why — commensurate AB stacking breaks sublattice symmetry, gap of order fifty milli-electron-volts. Here's what was measured — a single clean dI by dV curve showing linear, gapless density of states, figure three-a, and the fact that this holds at every point and every domain they checked. Then the physical explanation, which is the part to really nail: lattice mismatch plus a generic twist angle means registry between a given carbon atom and boron versus nitrogen drifts across the sample, so, averaged over a moiré supercell, both graphene sublattices see statistically the same local environment, restoring sublattice symmetry and closing the gap. You can mention, briefly, that they back this up with a microscopic hopping calculation, but you don't need to reproduce the Hamiltonian — one sentence that the calculation confirms the averaging argument numerically is enough for a thirteen-minute talk."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Should I show the dispersion comparison figure, three-d, with the aligned versus misaligned curves?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "If you have room, yes, it's a nice visual payoff — same data, before-and-after the misalignment is included — but if you're tight on time it can become a backup slide you pull up only if someone in the discussion asks exactly how the gap closes. I'd rather you spend the live minutes on the physical argument in words, since that's what people actually need to walk away with."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Slide six?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The charge puddle maps, figure four — this is your other headline result alongside the no-gap finding, so give it a full slide. Show the two Dirac-point-energy maps side by side, boron nitride versus oxide, same color scale, and the histogram comparison. State the two sigma numbers, about five versus about fifty six milli-electron-volts, convert to the density fluctuation numbers, roughly ten to the nine versus roughly ten to the eleven per square centimeter, and land the punchline: a hundredfold reduction, matching suspended graphene. This is the number that made the paper influential beyond the gap question, so don't rush it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Slide seven, wrap-up?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Impact and connection back to the lecture. One line: this paper directly images the charged-impurity disorder landscape responsible for the scattering mechanisms discussed earlier in the course, using tunneling spectroscopy as the probe. One line: it established boron nitride as the field's default substrate, enabling essentially everything that followed in high-mobility graphene and later moiré physics. One line on the nuance: no gap here doesn't mean no gap ever — it's specific to generic, non-small twist angles, and near-zero-degree alignment is a different, later story. That's a strong closing slide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's seven slides, comfortably inside the five-to-eight range. What goes in a backup slide, for the discussion, that I shouldn't put in the main talk?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Keep in backup: the details of the sixteen-by-sixteen effective Hamiltonian and the specific hopping parameters, the electron-hole Fermi velocity asymmetry and the speculation about next-nearest-neighbor hopping, the tip-induced local gating artifact in the two-dimensional dI by dV map, and the geometric derivation of the moiré wavelength and angle formulas in the supplementary information. All of those are things a sharp question might probe, but none of them earn a main slide in thirteen minutes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Where do presenters typically trip up on this paper, in your experience?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A few places. First, people often say 'boron nitride doesn't gap graphene' as a flat, general statement, when the correct and more interesting claim is narrower: at the generic misalignment angles studied here, the gap predicted for perfect commensurate stacking is averaged away. Get the conditional right. Second, people sometimes conflate the mechanical flatness result, figure one, with the electronic charge-puddle result, figure four — they're correlated, both show boron nitride is better, but they are genuinely different measured quantities, one is a height standard deviation in picometers, the other is an energy or density standard deviation, and you should be ready to explain why reduced corrugation helps reduce charge disorder rather than treating them as the same number. Third, people misread the tip-induced gating ridge in figure three-b as a second physical gap feature rather than a measurement artifact — know the difference. Fourth, be careful with the capacitor model used to convert gate voltage into density — it depends on an assumed, somewhat uncertain dielectric constant for boron nitride, so the absolute density scale carries some systematic uncertainty, which matters if someone asks how precisely you trust the extracted Fermi velocity."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's finish with discussion questions. Give me four or five, with short answers I can actually use on the spot."
+    },
+    {
+      "speaker": "Ava",
+      "text": "One: why doesn't the predicted fifty milli-electron-volt gap show up? Answer: that prediction assumed perfect, commensurate, zero-twist-angle AB stacking; real samples have about one point eight percent lattice mismatch and a generic rotation angle of several degrees, so the registry between carbon and boron or nitrogen drifts across the sample, both graphene sublattices end up with statistically identical average environments, sublattice symmetry is effectively restored, and the gap closes to an unobservably small value."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two: how exactly is the Fermi velocity extracted, and why is there an electron-hole asymmetry? Answer: from fitting the measured Dirac point energy versus gate voltage to the square-root dependence predicted by a linear dispersion and a parallel-plate capacitor model of the induced density; the roughly twenty-five percent electron-hole difference in the fitted velocity isn't explained by that simple model and is attributed speculatively to next-nearest-neighbor hopping corrections not included in the fit."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Three?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Three: how does this STM measurement connect to transport-level scattering mechanisms? Answer: the Dirac-point-energy maps are a direct, real-space image of the same long-range charged-impurity potential landscape that, in a transport experiment, would show up indirectly as a density-dependent, screening-sensitive scattering rate limiting mobility; this paper quantifies the amplitude of that disorder potential directly, rather than inferring it from a resistivity curve."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Four?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Four: if suspended graphene is this clean already, why bother with boron nitride at all? Answer: because suspension removes the substrate but at the cost of mechanical fragility, strain, and total incompatibility with local probes or further stacking; boron nitride gives essentially the same low charge disorder while remaining mechanically robust, gateable, and stackable, which is exactly what you need to build real devices and to put a scanning probe on top."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And a fifth, in case someone wants to dig into the theory?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Five: what sets the ultimate limit on how flat graphene can get, if even boron nitride can't flatten it further? Answer: the thirty-picometer roughness measured here matches the known corrugation of bulk graphite and other free-standing-like references, suggesting it reflects graphene's own intrinsic out-of-plane rippling, driven by thermal and quantum fluctuations of a two-dimensional membrane, rather than being limited by substrate roughness at all — so by this measure, graphene on boron nitride is about as flat as a graphene sheet is ever going to get."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a solid toolkit for thirteen minutes plus five of questions. Let's close out the episode."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Quick final recap. This was lecture nine, scattering mechanisms and tunneling transport, and the one paper on the list, Xue and coworkers from twenty eleven, used scanning tunneling microscopy and spectroscopy to settle two questions about graphene on boron nitride at once: no, conforming to the moiré superlattice does not open the band gap that idealized, perfectly aligned theory predicted, because real, generically misaligned samples average that asymmetry away; and yes, the local charge disorder is reduced by roughly a hundredfold compared to graphene on oxide, down to a level matching suspended graphene, without any of the fragility of suspension. Mechanically flat, electronically gapless, and disorder-free enough to finally put the Dirac point itself within reach of a local probe — that's the whole story, and it's exactly why this unassuming microscopy paper became a foundation stone for a decade of van der Waals heterostructure physics that followed."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Perfect. That's the talk. See you next week."
+    }
+  ]
+}
