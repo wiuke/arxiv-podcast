@@ -1,0 +1,320 @@
+{
+  "date": "2026-10-25",
+  "id": "sn-07",
+  "format": "dialogue",
+  "episode_title": "Clean Rooms for Electrons: Heterostructures, 2DEGs, and the Tyranny of Fermi-Level Pinning",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Welcome back. This is the prep episode for lecture seven of Semiconductor Nanostructures, Professor Ihn's course at ETH, the one on heterostructures, two-dimensional electron gases, and Fermi-level pinning. Three papers on the list this week, and they look at first glance like they're from completely different worlds — a gallium arsenide growth paper from Wegscheider's group right here at ETH, a molybdenum disulfide van der Waals device from the Ensslin and Ihn groups, and a nineteen-ninety-seven paper on indium arsenide and gallium antimonide quantum wells. But they're all answering variations of the same question: how do you build an interface between two solids so that the electrons living at that interface behave the way you want, and not the way the interface wants."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the unifying thread is interfaces behaving badly unless you engineer them very carefully."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. And before we open any of the three papers, I want to build the toy picture for why interfaces are such a big deal, because everything in these papers is a variation on it. Let's start with the basic object: a heterostructure. You take two semiconductors with different band gaps — classically gallium arsenide and aluminum gallium arsenide — and you grow one directly on top of the other, atom layer by atom layer, using molecular beam epitaxy. Because the two materials have different conduction and valence band energies, when you put them in contact the bands have to bend to keep the chemical potential, the Fermi level, flat across the junction in equilibrium. That bending creates a sharp step, or well, in the conduction band right at the interface."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And electrons that fall into that well are then confined in the growth direction but free to move in the plane. That's the two-dimensional electron gas."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. Now here's the clever trick that made this whole field explode in the nineteen-eighties: modulation doping. If you just dope the GaAs channel directly with donor atoms to supply the electrons, those same donor atoms sit right where the electrons live and scatter them constantly — ionized impurity scattering, and your mobility is mediocre, maybe a few thousand centimeters squared per volt second. Instead, you put the dopants in the aluminum gallium arsenide, physically separated from the channel by an undoped spacer layer, a few tens of nanometers of clean material. The electrons still fall into the GaAs well because that's energetically favorable, but the ionized donors they came from are now far away. Think of it like a clean room: you keep the dust, the dopant ions, in one compartment, and let the clean air, the electrons, drift into the adjacent compartment through a door. The electrons retain almost no memory of where they came from."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And that spacer distance is basically a knob — more separation, less scattering, but also less electron supply, right? There must be a trade-off."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely, and that trade-off, plus a whole zoo of residual scattering mechanisms, is what paper one is entirely about. But first I want to introduce the second big character of this lecture: Fermi-level pinning. Here's the picture. At a real surface or a real interface — not the pristine bulk crystal, but where the crystal ends, or meets a metal, or meets a different material with a lattice mismatch or chemical incompatibility — you get a dense set of localized electronic states sitting inside what would otherwise be the band gap. These come from dangling bonds, defects, reconstructions, whatever breaks the perfect periodicity. And crucially, the density of these states in energy can be enormous compared to the density of states you'd get from doping."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So if I try to shift the Fermi level by adding more doping, what actually happens?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Almost nothing happens to the Fermi level, because those surface states just absorb or release charge to compensate you, like a huge reservoir with an almost flat energy landscape. Think of it as a sponge with enormous capacity sitting right at the gap — you can pour in a little charge or a lot, and the water level, meaning the Fermi energy, barely moves, because it's pinned by that sponge near whatever energy it's energetically happiest to be at, often close to mid-gap for GaAs. That's Fermi-level pinning. The practical consequence is the Schottky barrier: at a metal-semiconductor junction or a free semiconductor surface, the bands bend over some depletion width to bring the bulk Fermi level into registry with this pinned surface value, and that bending acts as an energy barrier against getting charge in or out efficiently."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So pinning is this annoying, hard-to-engineer-around property of real surfaces, and it's going to show up as a recurring villain in all three readings."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes — sometimes as the reason a device design fails, sometimes as the reason you need an extra trick to get around it, and in the last paper, as a cousin phenomenon: a gap that opens not from defects, but from genuine quantum mechanical hybridization between bands. Let's go through the papers in order and see pinning and interface engineering play out concretely, starting with the growth paper."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven point one is by Külah, Reichl, Scharnetzky, Alt, Dietsche, and Wegscheider, out of the ETH Wegscheider group, on what they call the improved inverted aluminum-gallium-arsenide over GaAs interface. To understand why this paper exists, you need to know there are two ways to build a single heterointerface two-D electron gas. The standard way, which the paper calls a MODFET — modulation doped single interface — grows the GaAs first, then the aluminum gallium arsenide with the doping layer on top of it, closer to the surface. This is the configuration everybody optimized for forty years and it routinely gives mobilities around ten to fifteen million centimeters squared per volt second at low temperature."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the inverted structure is just that stack built upside down — aluminum gallium arsenide and the doping layer grown first, with the GaAs channel capping it, closer to the surface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the same chemical interface, just traversed in the opposite growth order. And here's the historically puzzling fact that motivates the whole paper: even though it's nominally the identical interface, the inverted version has always come out worse — literature best around five million centimeters squared per volt second against ten million for the equivalent MODFET. Same chemistry, same crystal structure, dramatically different mobility. That asymmetry is the whole scientific question of this paper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why would growth order matter for an interface that should look identical in cross section once it's done?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Because MBE growth is not instantaneous deposition of a perfect final structure — it's a kinetic process happening at around six hundred thirty degrees Celsius, atom by atom, and whatever happens during growth gets frozen into the final crystal. The authors identify three culprits. First, remote ionized impurity scattering from the silicon dopant layer, worsened because silicon atoms tend to segregate — to float or diffuse toward the surface during growth — so in the inverted structure they drift toward the very interface you're trying to keep clean, rather than away from it as intended. Second, background impurity scattering from whatever residual contaminants are floating in the growth chamber and get incorporated as the crystal grows. Third, interface roughness scattering, partly from that same segregation and partly from aluminum atoms intermixing across the boundary."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the inverted geometry is specifically more vulnerable to segregation, because the thing you doped early ends up smeared toward the surface by the time growth finishes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. And the authors' central experimental trick is beautifully simple: they lower the substrate temperature specifically during the few seconds of silicon doping, from the usual six hundred thirty degrees down to four hundred eighty degrees, then ramp back up. The idea is to freeze the dopant atoms in place before they have a chance to migrate. And it works dramatically — mobility jumps from one point three million up to five million centimeters squared per volt second in the dark state just from this one change, and further optimization, adjusting the aluminum mole fraction and using two different aluminum concentrations in different parts of the buffer to trap background impurities away from the interface, eventually gets them to a benchmark of thirteen million centimeters squared per volt second — matching, for the first time, the quality of a standard MODFET."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they know which scattering mechanism dominates once they've optimized? Is that visible in a single mobility number?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Not from one number, but from how the mobility scales with density. They use illumination with a red LED, which releases extra carriers from deep donor states called D-X centers, as a clean way to tune the electron density without changing the sample, and then fit mobility versus density to a power law, mu proportional to density to the power alpha. Different scattering mechanisms have characteristic alpha values — because each one responds differently to screening by the electron gas as you add more carriers. For their optimized inverted samples alpha comes out around zero point six to zero point six four, which they interpret as background impurity scattering being the dominant remaining limit, not remote ionized impurities or interface roughness anymore."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a nice diagnostic — the exponent itself is basically a fingerprint of the scattering mechanism, the same logic we'd use in interpreting mobility data in the course."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and they push the same idea further in the back-gating section. When they vary only the silicon doping density and use a back gate to control electron density independently, they find something counterintuitive: both very low doping and very high doping give good mobility, with a dip in between. Low doping means few remote ionized impurities to begin with. High doping, they argue, builds up enough charge that the electron gas and the doping layer start to screen each other's disorder efficiently, smoothing out the scattering potential. It's the same physical logic you'll see in other screening arguments in the course — disorder potentials from a dense charged layer can become smoother, and therefore less effective at scattering, once there's enough charge around to screen short-range fluctuations."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Now, where does Fermi-level pinning actually show up explicitly in this paper, rather than just scattering physics?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right where the growth paper gets genuinely clever — the shallow inverted structures. The physics motivation is hybrid systems: if you want to proximity-couple a two-D electron gas to a superconductor deposited on the surface, for Majorana physics, you need the electron wave function physically close to that surface, because the coupling strength falls off fast with distance. In a standard MODFET, there's always a thick aluminum gallium arsenide barrier between the channel and the surface, which is bad for coupling. The inverted structure's selling point is that nothing but plain GaAs separates the channel from the surface — no extra band-gap barrier in the way."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But that's exactly where pinning should bite you — bare GaAs surface, mid-gap pinned Fermi level, depletion."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. Once you shrink the depth of the channel down to fifty or one hundred nanometers from the surface, the band bending caused by surface-state pinning reaches all the way down and depletes your two-D electron gas before it can even form. Their fix is to insert a second, deliberately placed doping layer of silicon directly in the GaAa cap, between the channel and the surface, purely to supply enough band bending to compensate the pinning-induced depletion and let the channel survive. They do one-dimensional Schrödinger-Poisson simulations with a solver called AQUILA to show exactly how sensitive this is: the doping concentration in that extra layer has to be tuned within roughly a thirty to forty percent window — too little and you get no channel at all, too much and you create an unwanted parallel conducting layer on top. And that tolerance window gets narrower the closer the channel sits to the surface, forty-six percent at fifty nanometers depth, widening to sixty-one and seventy-two percent at seventy and one hundred nanometers."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So pinning isn't some abstract textbook statement here — it's literally dictating a tight engineering constraint on how precisely you can dope a sample before the device just doesn't work."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the whole point of including this paper in the lecture. And they do succeed: a fifty nanometer deep inverted two-D electron gas shows clean Shubnikov-de Haas oscillations and quantum Hall plateaus, albeit with a modest mobility of only about nine thousand centimeters squared per volt second, because that extra near-surface doping layer and surface-state effects inevitably add scattering. Still, it's a working, very shallow two-D electron gas, and their simulations show that the inverted geometry gets the electron wave function closer to the surface than an equivalent MODFET would — they compute the probability of finding the electron within the outer thirty nanometers and get numbers more than an order of magnitude larger for the inverted design, which is directly relevant for how strongly Cooper pairs from a surface superconductor could tunnel in."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the headline result, the double-sided doped quantum well — that's combining both interfaces at once?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, the double-sided doped quantum well sandwiches a thin GaAs channel, around thirty nanometers, between two doping layers, one above in a normal MODFET-like arrangement and one below in the now-optimized inverted arrangement. With both a top gate and a specially patterned back gate, they can literally push the electron wave function around inside the well — toward the inverted interface, toward the upper interface, or centered — while independently tuning the density. Centering the wave function away from both interfaces and tuning the density to about four point seven times ten to the eleven per square centimeter gives their headline number: forty million centimeters squared per volt second at one Kelvin, which as far as this family of materials goes is about as high quality as two-D electron gases get. And the motivation they state explicitly is the fragile five-halves fractional quantum Hall state, the one suspected to be a non-Abelian state relevant to topological quantum computing — it only survives in the very cleanest samples."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So to summarize this one: modulation doping separates dopants from carriers to kill ionized impurity scattering, but growth-order matters because of dopant and aluminum segregation during MBE, and Fermi-level pinning at the bare GaAs surface becomes the dominant design constraint the moment you try to bring a two-D electron gas close to that surface for any kind of surface-coupled device."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Perfectly put. Let's move to a completely different material platform, where the pinning problem shows up again but in disguise, at a contact rather than at a free surface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven point two is Pisoni, Lee, Overweg, Eich, Simonet, Watanabe, Taniguchi, Gorbachev, Ihn and Ensslin — so this one comes straight from Professor Ihn and Ensslin's own group, using molybdenum disulfide, a transition metal dichalcogenide, instead of a III-V semiconductor. If GaAs heterostructures are grown atom by atom in a vacuum chamber, van der Waals heterostructures are built completely differently: you exfoliate thin flakes of different layered crystals — here trilayer molybdenum disulfide, hexagonal boron nitride, and few-layer graphene — and you stack them mechanically, picking each flake up with a polymer film and placing it on the next one, like assembling a sandwich by hand rather than growing it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the appeal of molybdenum disulfide specifically, compared to graphene, is that it's a genuine semiconductor with a sizeable band gap, so you get a true field-effect transistor channel, not something you always need a magnetic field or a gap-opening trick to turn off."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and it has strong spin-orbit coupling and valley physics built in, which is why your own corner of condensed matter cares about these materials. But here's the catch that directly connects to our pinning story: how do you even make electrical contact to an atomically thin semiconductor? If you just lay a metal electrode on top, you form a metal-semiconductor junction with exactly the Schottky barrier physics we discussed — band bending, pinning, a barrier against carrier injection — and in these thin TMDs that barrier is often brutal, giving highly resistive, non-ohmic contacts that completely dominate and obscure the intrinsic transport of the channel."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So instead of using a metal directly on the molybdenum disulfide, they use graphene as the contact material?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, few-layer graphene sheets contacted at their edges with chromium and gold, forming one-dimensional edge contacts to the graphene, and then the graphene itself touches the molybdenum disulfide over an extended area. And crucially, they put a separate local top gate just over each graphene-to-molybdenum-disulfide contact region. By biasing that local gate, they can locally raise the electron density right where graphene meets the channel, which thins and lowers the effective barrier there, without disturbing the much lower carrier density they want to keep in the rest of the channel for studying intrinsic physics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's a very similar philosophy to the inverted-interface paper — can't remove pinning, so you fight it locally with an engineered doping or gating profile exactly where it hurts."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely the same logic, different material, different tool — gate voltage here instead of an epitaxial doping layer. And it works: the contact resistance, extracted by comparing the two-probe and four-probe resistances, drops by up to three orders of magnitude as they bias that local top gate, and the current-voltage curves across the contacts switch from nonlinear, Schottky-like behavior at zero top-gate voltage, to clean ohmic linear behavior once the top gate is on. Only once the contacts are ohmic can you trust the rest of the measurement as intrinsic channel physics rather than contact artifacts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And once they have good contacts, what does the bulk channel actually look like?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They report an electron mobility of about seven thousand centimeters squared per volt second at a density of three times ten to the twelve per square centimeter, measured at one point nine Kelvin — far below the millions we just discussed for GaAs, but a genuinely high number for a van der Waals semiconductor at that time. Good enough that Shubnikov-de Haas oscillations, the resistance oscillations that mark successive Landau levels filling up as you sweep magnetic field, start appearing at magnetic fields as low as point nine Tesla. The lower the onset field, the higher the quantum mobility, because you need the cyclotron orbit to complete many times without scattering before the oscillation becomes visible — and point nine Tesla for a TMD was a notable number."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the valley degeneracy story? I remember the abstract mentions a three-fold Landau level degeneracy from a valley Zeeman effect."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is where the band structure of trilayer molybdenum disulfide gets genuinely interesting, and it connects to valley physics you already know from monolayer TMD excitons and from moiré systems. The conduction band minimum in trilayer molybdenum disulfide isn't at the K and K-prime corners like in the monolayer optical story — it's at six equivalent points, called Q and Q-prime, located along high symmetry lines in the Brillouin zone, three Q points and three Q-prime points related by time reversal symmetry. At zero magnetic field this gives a six-fold degenerate Landau level. From the period of the Shubnikov-de Haas oscillations they can extract an effective degeneracy factor, and matching it to the independently measured Hall density gives exactly six, confirming this picture."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then the magnetic field lifts part of that degeneracy?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes — because of broken inversion symmetry and strong spin-orbit coupling, the spin degeneracy within each individual Q or Q-prime valley is already lifted even at zero field, locking spin to a particular out-of-plane orientation depending on which valley you're in. Turning on a magnetic field adds a valley-dependent Zeeman shift — because Q and Q-prime valleys have opposite effective spin character, they shift oppositely in energy with field, like a built-in antiferromagnetic-style splitting that only acts in momentum space. Above about four Tesla, this valley Zeeman splitting becomes comparable to the Landau level spacing itself, and the six-fold degenerate level visibly splits into two three-fold degenerate sets, seen as new minima emerging between the original Shubnikov-de Haas minima at filling factors like twenty-seven, thirty-three, thirty-nine, forty-five."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a lovely direct transport signature of valley Zeeman splitting — no optical selection rules needed, just watch new quantum Hall minima appear as you ramp field."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they also do a nice control experiment, tilting the sample in field and tracking only the perpendicular component — the oscillations are essentially unchanged up to seventy degrees tilt, meaning the relevant spin splitting really is locked to the out-of-plane axis and insensitive to an in-plane field component, consistent with that strong spin-orbit, broken-inversion-symmetry picture, and they note the same behavior was seen in monolayer and bilayer tungsten diselenide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Now the second half of the paper is the actual device physics — the gate-defined one-dimensional channel from the title."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, this is the quantum point contact. They deposit a split gate with a hundred-nanometer gap directly over a bubble-free region of the stack, found by atomic force microscopy beforehand because any trapped bubble of contamination between layers would locally mess up the electrostatics. By applying negative voltage to that split gate, they electrostatically deplete the molybdenum disulfide underneath it, squeezing the conducting channel down to a narrow one-dimensional constriction, a hundred nanometers wide and two hundred nanometers long. As they make the gate more negative, the channel conductance drops continuously and eventually the constriction can be pinched off completely, with on-off ratios exceeding ten to the fifth — meaning the device genuinely switches off, which is the basic prerequisite for any single-electron transistor or quantum dot built from this platform."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And do they see the clean quantized conductance steps you'd expect from a one-dimensional channel — plateaus at multiples of the conductance quantum, like the textbook GaAs quantum point contact result?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They see plateau-like features, and that's an important nuance worth dwelling on. Given the six-fold valley-spin degeneracy they just established from the bulk measurement, you might expect conductance steps spaced by six times the conductance quantum e squared over h. Instead, the measured features are spaced more like single multiples of e squared over h, and even those spacings don't land exactly on the expected quantized values. They interpret this as the extra lateral confinement of the constriction lifting some of the valley and spin degeneracy that existed in the bulk, but they're honest that they don't have a complete, settled explanation for why the plateaus are only qualitatively quantized rather than exact — and they explicitly say better two-D electron gas quality is needed before clean quantization can be demonstrated."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That honesty is itself a useful teaching point — in a brand new material platform, getting the qualitative phenomenon, confinement and a tunable tunneling barrier, is already a milestone, even before the quantitative precision of decades-old GaAs point contacts is matched."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's explicitly how the authors frame it: a first step toward gate-controlled quantum devices in transition metal dichalcogenides, with the eventual goal being quantum dots where you could manipulate single electrons' spin and valley degrees of freedom for quantum information. So to tie this back to our lecture theme: the whole experiment only works because they solved a Fermi-level pinning-adjacent problem — contact resistance at a metal-to-two-dimensional-semiconductor junction — using local electrostatic gating as the fix, the exact same conceptual tool kit as the shallow inverted GaAs structures in paper one, just transplanted into a van der Waals stack."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Great parallel. So the recap for this section: separating dopant engineering from gate engineering, van der Waals assembly lets you build genuinely new heterostructures by hand, pinning-like contact barriers are fought locally with gates rather than globally with doping, and the rich multivalley band structure of a TMD gives you qualitatively new physics — valley Zeeman splitting — that has no analog in a simple GaAs two-D electron gas."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Perfect summary. Now let's finish with the oldest paper on the list, which looks at first glance unrelated to pinning, but is really about a different, more exotic flavor of the same broad topic: what happens to the Fermi level and the gap structure when you deliberately engineer a heterostructure with a very unusual band alignment."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven point three is Yang, Yang, Bennett, and Shanabrook, from nineteen ninety-seven, on indium arsenide and gallium antimonide composite quantum wells. To set this up, recall that heterostructures come in different flavors of band alignment. GaAs and aluminum gallium arsenide, our workhorse so far, are what's called type one: the conduction band of one material sits above the conduction band of the other, and the valence band does the opposite, so both electrons and holes, if you had any, would want to sit in the same material, the GaAs. Indium arsenide and gallium antimonide are dramatically different — they form what's called a type two, staggered, or in the extreme case broken-gap alignment, where the conduction band minimum of indium arsenide actually sits below the valence band maximum of gallium antimonide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So there's no shared gap at all — the conduction band of one material overlaps in energy with the valence band of the other."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's why for almost two decades the community called superlattices and quantum wells built from this combination semimetallic — once the indium arsenide layer gets thick enough, around eight and a half nanometers or so, naive band counting says electrons should spill from the gallium antimonide valence band into the indium arsenide conduction band automatically, giving you a system with coexisting two-D electrons in the indium arsenide and two-D holes in the gallium antimonide, and no energy gap at all, hence semimetal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But the title says hybridization gap — so that naive picture turns out to be wrong?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the whole point of the paper, and it's a gorgeous example of band hybridization, something you've actually already met conceptually in moiré physics, just in a different guise. Picture the in-plane dispersion of the indium arsenide electron subband, a parabola opening upward in energy versus in-plane momentum, and the in-plane dispersion of the gallium antimonide heavy-hole subband, a parabola opening downward. If you naively just overlay these two parabolas without letting them talk to each other, they cross at some momentum, and near that crossing you'd indeed have zero gap, consistent with a semimetal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But if the two layers are close enough that their wave functions actually overlap in real space, there should be a tunneling matrix element connecting electron states in one layer to hole states in the other, right? That's exactly the avoided-crossing logic from degenerate perturbation theory — two states with a coupling between them don't cross, they repel and open a gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely, and that's exactly the physics here. Self-consistent calculations using a four-band k-dot-p model predicted that once you include this electron-hole coupling — governed by how much the indium arsenide electron wave function physically overlaps with the gallium antimonide hole wave function in the growth direction — the crossing lifts and you get a small positive energy gap, just a few millielectron volts, with the resulting conduction and valence dispersions distorted into a W shape and an M shape respectively, rather than simple parabolas. So this so-called semimetal is theoretically predicted to actually be a narrow-gap semiconductor. The paper's job is to go find experimental proof of that gap, which nobody had conclusively shown before despite several suggestive magneto-optical and magnetotransport hints."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do you even measure a few-millielectron-volt gap directly in transport?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Their main tool is capacitance-voltage spectroscopy, which is a lovely technique worth understanding carefully because it comes up again and again in heterostructure physics, including implicitly in paper one's top-gate discussion. You put a front gate on the sample and measure the capacitance between gate and two-D electron system as you sweep the gate voltage. The total measured capacitance is a series combination of several contributions — the oxide capacitance, the capacitance of whatever barrier material separates gate from channel, and crucially a term proportional to one over the density of states at the Fermi level. That last term is often called the quantum capacitance."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Because if the density of states is huge, it costs almost no energy to add a small amount of charge, so that series element behaves like a large capacitor and barely limits the total capacitance — but if the density of states is small or zero, that series element becomes a tiny capacitor and dominates, pulling the whole measured capacitance down."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly right, you've got the circuit intuition exactly backwards from what people's gut says at first, but once you draw the series capacitor picture it's obvious. So as you sweep the gate voltage and move the Fermi level through the sample's spectrum, the capacitance should dip whenever the Fermi level passes through a region of low density of states — like a genuine gap — and recover once it reaches a band edge again. For their reference semiconducting sample, where the heavy-hole subband sits safely below the electron subband with an honest positive gap, they see exactly that signature: capacitance is featureless while the Fermi level sits in the electron band, dips as it crosses the gap, and partially recovers once the hole band turns on."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And for the hybridized, nominally semimetallic sample?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They see the analogous dip, at a gate voltage where independent Hall measurements confirm the two-D electron and two-D hole densities are equal — exactly the condition where naive band counting would put you right at the crossing point of the two parabolas. If this were truly a gapless semimetal, you'd expect no special feature there, since states would be available at any energy. Instead there's a small but clear dip in capacitance, consistent with a genuine energy gap of a few millielectron volts opening right where the parabolas would otherwise cross, in quantitative agreement with the calculated hybridization gap. They also run three-terminal transfer characteristics — basically using the sample as a field-effect transistor and watching drain current versus gate voltage — and get a V-shaped curve, current dropping to a minimum and then rising again, which is the classic signature of the Fermi level sweeping through a genuine forbidden gap between an electron-type and a hole-type channel. A true semimetal, with no gap, would instead give a step-like curve, since there'd always be a conducting channel available."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a nice complementary pair of signatures — a capacitance dip from the density of states argument, and a current minimum from simple carrier-type switching. But the paper's final trick is even cooler, using an in-plane magnetic field to literally turn the semiconductor back into a semimetal on demand."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and the physics here is a small but elegant piece of vector potential bookkeeping. The two layers, indium arsenide and gallium antimonide, are physically separated along the growth direction by some distance. When you apply a magnetic field purely in-plane, the vector potential introduces a momentum shift that depends on that growth-direction separation between where the electron wave function and the hole wave function are centered. Practically, it shifts the hole parabola sideways in momentum space relative to the electron parabola, along the direction perpendicular to the applied in-plane field, while leaving the dispersion along the other in-plane direction untouched."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the field is dragging the two parabolas apart in momentum space, and if you drag them far enough apart, even with the same hybridization coupling at play locally, the gap that opened from the crossing just... goes away because there's no crossing left to hybridize."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly — once the parabolas are displaced enough, their minima in energy drop below zero relative to each other without any protected crossing region, and the system reverts to genuinely overlapping, ungapped electron and hole bands, a real semimetal. And they see exactly this in the transfer characteristics: the V-shaped curve, the fingerprint of a true gap, gradually weakens as they ramp the in-plane field, and by twelve Tesla it has turned into the step-like curve expected for an honest semimetal. The reference semiconducting sample, where the gap comes from ordinary size quantization rather than this crossing-and-hybridization mechanism, shows essentially no change at all under the same in-plane field, which is a clean confirmation that the two samples' gaps have genuinely different physical origins."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So this paper is really a case study in controllable, engineered band hybridization, completely distinct mechanism from the surface-state pinning we discussed in the other two papers, but landing on the same vocabulary — where exactly does the Fermi level sit relative to a gap, and how do you probe that experimentally."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the connection I want you to carry into the lecture. In papers one and two, pinning is an unwanted, defect-driven nuisance that engineers have to design around with doping profiles or local gates. In paper three, the gap and the position of the Fermi level relative to it are instead a designed feature of the heterostructure — tunable by quantum well thickness, by an applied gate, and even by an in-plane magnetic field via this momentum-shift trick. Both are, at heart, heterostructure band engineering problems, just with opposite degrees of experimental control. And the capacitance-voltage spectroscopy they use to find the hybridization gap is conceptually the same density-of-states probe that shows up as that aside about quantum capacitance effects at negative gate voltage in the inverted two-D electron gas top-gating section of paper one."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Nice, so that's actually a concrete experimental thread linking all three papers: capacitance and conductance as density-of-states probes, interface and contact engineering as the universal fix for pinning-like barriers, and modulation doping or hybridization as the two different routes to engineering a usable band structure at an interface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's pull the whole episode together, then. Heterostructures let you engineer band profiles layer by layer, and modulation doping is the trick that gives you ultra-high mobility two-D electron gases by physically separating dopants from carriers. Fermi-level pinning at real surfaces and metal contacts is the recurring obstacle — a dense reservoir of interface states clamps the Fermi level regardless of your doping, creating Schottky barriers that block gating, contacting, or bringing a two-D electron gas close to a surface. Paper one showed this at its most literal: growing the cleanest possible inverted GaAs interface, understanding segregation during MBE growth, and fighting pinning directly with a compensating doping layer when pushing the two-D electron gas close to the surface for future hybrid superconductor devices, culminating in a forty million mobility double-sided doped quantum well aimed at the fragile five-halves state. Paper two showed the same fight transplanted to van der Waals materials, where graphene contacts plus local gating tame Schottky-like contact barriers to a molybdenum disulfide channel, revealing rich multivalley Landau level physics and a first gate-defined one-dimensional constriction in a transition metal dichalcogenide. And paper three showed the flip side: a heterostructure where the Fermi level and the gap aren't pinned by defects at all, but genuinely engineered by hybridization between an indium arsenide electron band and a gallium antimonide hole band, tunable by a gate and even by an in-plane magnetic field."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So going into Thursday's lecture, the throughline is: whenever two different materials meet, the interface has its own electronic agenda, and good device physics is basically the art of either taming that agenda with doping and local gates, or turning it into a feature through deliberate hybridization engineering."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly it. See you at the lecture."
+    }
+  ]
+}

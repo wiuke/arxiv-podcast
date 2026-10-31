@@ -1,0 +1,470 @@
+{
+  "date": "2026-10-08",
+  "format": "dialogue",
+  "n_papers": 46,
+  "episode_title": "Ambipolar Wigner crystals, fluctuating moiré molecules, and nonlocal exciton polaritons",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October eighth, and the archive dropped about forty-six new papers overnight. We're picking out five for a deep look and five quick hits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's got a nice throughline for us: two takes on Wigner crystals in two-dimensional semiconductors, a theory paper on exciton polaritons that gets the nonlocal physics right, and some nice topology showing up in both molecular excitons and polariton condensates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the Wigner crystal transport paper, number one in the show notes, Kim and collaborators out of Berkeley, bilayer molybdenum diselenide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Classic two-dimensional metal-insulator transition problem. Dilute carriers, when Coulomb repulsion dominates kinetic energy, want to crystallize into a Wigner solid instead of staying a liquid. The decades-old question is whether the transport transition you see is really that crystallization melting, or just disorder-driven localization dressed up to look similar."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the problem with testing this in real two-dimensional semiconductors is that right where correlations are strongest, at very low carrier density, your electrical contacts go bad. Contact resistance swamps the channel resistance you're trying to measure."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So their trick is contact-free. They put a top gate over half the channel, drive radio-frequency current capacitively through the gate dielectric, and read out the channel's sheet resistance from how that RF signal reflects back. No ohmic contact to the channel at all, just capacitive coupling, with the matching network tuned so sensitivity peaks around the few-kilohm scale where the transition happens."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So what do they actually see?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Because it's contact-free, they can dope the same channel with electrons or with holes and track both transitions in one device. Electrons transition at a critical density of about zero point five times ten to the twelve per square centimeter; holes at about two times ten to the twelve, a factor of four higher. But holes are more than twice as heavy as electrons in this material, twelve-fold valley degeneracy for electrons at the Q points versus two-fold for holes at Gamma. When you convert both to the Wigner-Seitz radius, the ratio of Coulomb energy to kinetic energy, they land at nearly the same place, r sub s around eighteen for electrons and twenty-two for holes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the key test, right? If this were simple disorder-driven localization, the Ioffe-Regel-Mott criterion, where the mean free path gets comparable to the inverse Fermi wavevector, predicts holes should localize at lower density than electrons, because of their different mobilities and degeneracies. The data show the opposite ordering."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly, and that mismatch is the whole argument. Disorder physics gets the ordering backwards; interaction strength, quantified by r sub s, gets it right. That rs around twenty is also where separate scanning tunneling microscopy work on this same material found real-space coexistence of solid and liquid patches, so the transport and the imaging are now talking to each other."
+    },
+    {
+      "speaker": "Ava",
+      "text": "There's also a sharp magnetoresistance peak sitting right at each critical density."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, and it shows up whether the field is in-plane or out-of-plane, which tells you it's mostly a spin effect, not an orbital one. Their picture is a magnetic-field version of the Pomeranchuk effect: the localized spins in the Wigner-solid patches have a Curie-like susceptibility, stronger than the Pauli susceptibility of the itinerant liquid. A field pushes weight into the solid phase, and because the liquid network is barely percolating right at the transition, even a small shift in that solid fraction can choke off the conducting path and spike the resistance."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The caveat is that the dielectric environment in their encapsulated device isn't quite the same as the bare surface used in the STM experiments, so the rs values aren't perfectly apples to apples. But the broader point, that a contact-free RF readout opens up quantitative transport in any gate-tunable two-dimensional system that contacts have been too resistive to probe, that's the lasting contribution here."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two in the show notes stays in the same Wigner crystal territory but jumps to theory and to a different filling regime: Khalifa and Chatterjee, on moiré transition-metal-dichalcogenide lattices at filling nu equals three electrons per moiré site."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the Wigner molecule regime, where three electrons localize in each moiré well instead of one. Mean-field Hartree-Fock theory says this should be a fully spin-polarized ferromagnet, spin three-halves per molecule, just from exchange. The question this paper asks is whether that mean-field picture survives once you let the many-body wavefunction fluctuate properly."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Their tool is a continuum neural quantum state, a self-attention network, Psiformer-style, that represents the full many-electron wavefunction directly in real space, no projection onto bands or orbitals ahead of time. They optimize it against the actual continuum Hamiltonian, a triangular moiré potential plus unscreened Coulomb repulsion, for thirty-six electrons on twelve moiré sites."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the ground state they find is not the polarized ferromagnet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Not even close. The zero total spin sector sits about zero point six five milli-electron-volts per electron below the fully polarized state, and the whole low-spin manifold spans less than a milli-electron-volt. To actually understand what that ground state looks like, they build a readout: assign every sampled electron to the nearest moiré site, and from thousands of these samples extract site-resolved charge and spin statistics, basically asking the wavefunction direct questions about local charge and local moment."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What does it answer?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Each site still looks, on average, like three electrons forming a triangular molecule, same shape as the mean-field picture. But the variance of the site charge more than doubles relative to the polarized state. Sites fluctuate between two, three, and four electrons, and ninety-six percent of that charge motion is a tightly bound doublon sitting right next to a hole on a neighboring site, not charge spread randomly around the lattice."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So it's not a rigid crystal of identical three-electron molecules, it's a fluid of bound particle-hole pairs riding on top of that lattice."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And there's a clean organizing rule underneath it: every molecule, whatever its charge, has an inert two-electron spin-singlet core, and whatever electrons are left over sit on the rim and carry the spin. Two electrons, no spin. Three, spin one-half. Four, usually a spin-one triplet on the rim. Lose charge, you lose a moment; gain charge, you gain a bigger one. And the rim spins show real antiferromagnetic correlations between neighboring molecules, concentrated especially on the four-electron doublon sites."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which points them toward an effective lattice model."
+    },
+    {
+      "speaker": "Leo",
+      "text": "A two-orbital extended Hubbard model for just the rim electrons sitting above a frozen core, with Hund's coupling favoring that rim triplet and a nearest-neighbor repulsion that favors adjacent doublon-hole pairs. They're upfront that they haven't derived the hopping and interaction parameters from the microscopic theory yet, that's future work, but the local statistics already tightly constrain what that model has to look like. For listeners tracking moiré TMD experiments, this is squarely about the regime that scanning tunneling microscopy has already imaged in twisted tungsten disulfide and twisted molybdenum ditelluride, so there's a direct experimental target for the spin fluctuations this predicts."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Switching gears to something closer to home for us: paper three, Miwa, a theory paper on in-plane exciton polaritons in hBN-encapsulated tungsten disulfide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "In-plane exciton polaritons are the hybrid photon-exciton modes that propagate within the monolayer plane, and they can carry in-plane wavevectors tens to hundreds of times larger than a free-space photon at the same energy. That's great for squeezing light into deeply subwavelength volumes, but it also means the field varies on length scales comparable to the exciton's own size, maybe a nanometer. At that point you can't just treat the exciton susceptibility as a local, point-like oscillator anymore."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Previous treatments patched this in phenomenologically, adding a kinetic-energy term to a Lorentz oscillator to mimic the center-of-mass dispersion. What's new here?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Miwa builds the nonlocal susceptibility from the ground up. Two-band massive Dirac fermion model for the band-edge electronic states near the K valleys, combined with a generalized Mott-Wannier equation for the exciton's internal relative motion, using a material-realistic screened Coulomb interaction from the quantum electrostatic heterostructure method. That gives you both pieces of nonlocality at once: the center-of-mass dispersion, and the internal structure, meaning the exciton's envelope function and its spatial gradients."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Why does the internal piece matter?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Because it opens up optical access to dark states. In the usual dipole approximation only s-type excitons, with a finite wavefunction amplitude at zero electron-hole separation, couple to light. P-type excitons are dark, their envelope vanishes at the origin. But at large in-plane wavevector, the light couples instead to the spatial gradient of the envelope function, and that's nonzero for p states. So in a strongly confined near field, you start exciting the two-p Rydberg state that a normal measurement would never see."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And this changes the actual polariton dispersion, not just some forbidden sideline process."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, that's the main result. Because the exciton energy picks up a wavevector-dependent kinetic term, the resonance condition shifts, and the full polariton dispersion moves toward lower in-plane wavevector compared to the local-response approximation. Concretely, when they put a point dipole emitter near the structure and compute the near field, the local approximation gives a sharply confined spot, tens of nanometers wide; the nonlocal calculation gives a smoother field that extends over a longer lateral range while still staying well below the diffraction limit."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So you get to keep nanoscale confinement without paying for it in propagation range."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And at higher photon energy the one-s, two-s, and two-p modes all contribute simultaneously at different wavevectors, meaning different spatial scales, and you can shift which one dominates just by changing the thickness of the capping hBN layer. That's a tunable multimode waveguide knob, basically for free. It's a theory paper, so the open question is experimental confirmation of these smoother near-field profiles, but the framework is the kind of thing you'd want if you're designing near-field energy transfer experiments with emitters sitting on TMD monolayers."
+    },
+    {
+      "speaker": "Ava",
+      "text": "From continuum TMD photophysics to literally the other end of the excitation spectrum: paper four, Stein and collaborators, topological Frenkel excitons in a two-dimensional molecular crystal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Frenkel excitons are molecular excitations, here in zinc phthalocyanine, that hybridize across a lattice through dipole-dipole coupling, as opposed to the delocalized Wannier excitons we usually talk about in TMDs. Theory has predicted that if the excitonic bands formed by this hybridization carry nontrivial topology, you should get edge-localized excitons, analogous to topological edge states in electronic systems. Nobody had seen this directly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do you even image an exciton's wavefunction in real space?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Scanning tunneling microscopy induced luminescence. They assemble square clusters of zinc phthalocyanine molecules, from three by three up to eight by eight, on a thin sodium chloride spacer over silver, and use the STM tip to both inject current and collect the resulting photon emission, mapping it pixel by pixel across the cluster. Small clusters, three by three, behave like molecular quantum dots with discrete, confinement-split lines. From four by four upward, a proper band structure emerges, consistent with a Frenkel-exciton tight-binding model they fit using transition densities computed at the TDDFT level."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And somewhere in that band structure sits an edge mode."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Mode five, in their numbering, stays confined almost entirely to the cluster's outer ring regardless of cluster size, from four by four up to eight by eight. Its momentum-space origin is mathematically the same story as the Su-Schrieffer-Heeger model: cut the two-dimensional band structure along a fixed momentum parallel to the edge, and you get a one-dimensional two-band problem with a Zak phase that's nontrivial, pi, for the edge termination they used. That's what pins the edge state into the gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They also did some mechanical stress-testing, with the STM tip as scalpel."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Removed the central molecule entirely, no effect on the edge state, consistent with it being a boundary phenomenon rather than a bulk one. Removed two adjacent edge molecules, and the measured intensity pattern actually routes around the gap, while their simulations show the state splitting into several closely-spaced eigenstates that the experiment's spectral resolution can't fully separate. They also folded the cluster down into a single-molecule-wide twenty-four-molecule ring and still found coherent in-phase dipole oscillation around the loop."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's a nice complement to the companion theory paper, number seven in the show notes, which works out when this Zak-phase argument predicts edge states depending on which crystal edge you cut, and finds those edge excitons carry a momentum-locked elliptical polarization, basically chirality baked into how the molecules absorb and emit."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Together they make a reasonably convincing case that molecular self-assembly, not just crystalline electronic or photonic lattices, can host topologically protected excitonic channels, which if it generalizes gives you a chemistry-based knob for directing energy flow."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive, paper five, Qin and collaborators, vortex generation from a trapped exciton-polariton condensate triad."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Polariton condensates are the usual strongly-coupled light-matter quasiparticles in a semiconductor microcavity, here gallium arsenide quantum wells, non-resonantly pumped. Arrange three of them in a triangle and you get the simplest possible frustrated geometry: with antiferromagnetic-like coupling, you can't phase-lock all three pairs out of phase simultaneously on an odd-sided polygon, so the system is forced into a compromise, a global phase winding of plus or minus two pi around the triangle, which is literally a vortex."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That geometric frustration idea isn't new, but previous experiments on these triads reportedly got a random fifty-fifty mix of the two winding directions, not a controlled choice."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, that's the gap this paper closes. They trap three condensates optically, using a spatial light modulator to imprint a hexagonal potential landscape, and they use a second, independently steerable control beam, cross-polarized so it doesn't interfere with the main pump, to locally reshape the exciton reservoir without disturbing the trap itself. Pump power alone controls the sign of the dissipative coupling between condensates: high power gives positive coupling and an all-in-phase, zero-winding ferromagnetic state; lower power flips the sign and gives the frustrated plus or minus two-pi states. The position of the control beam then breaks the symmetry between the two frustrated states and deterministically picks one."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do you tell these states apart without doing interferometry every time?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the elegant bit. All three states look essentially identical in real-space intensity. But their momentum-space emission is completely distinct. The zero-winding state puts its light mainly in the central lobe, with faint vortex-antivortex pairs appearing at the Dirac points of the induced Brillouin zone, a direct consequence of the triangle's three-fold symmetry acting like a tiny honeycomb unit cell. The two frustrated states instead produce mirror-image triangular emission patterns peaked at the K or K-prime points. So you read off the topological state from a single far-field camera shot, no reference beam needed."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they back this up with a simple coupled Stuart-Landau oscillator model, three nonlinear oscillators with complex coupling, which reproduces the bistability, the all-in-phase locking at high power, and the chirality selection once you add a small site-energy gradient to break the clockwise-anticlockwise degeneracy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The honest caveat is that without that engineered chirality source, the frustrated state really is a statistical coin flip between windings, both in experiment and in their simulations, so the determinism relies entirely on the control beam doing its job. But as a compact, reconfigurable, three-state device for carrying orbital angular momentum in light, switchable purely by pump power, it's a nice piece of engineering built on genuinely interesting non-Hermitian physics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Now the quick hits. Paper six, Choi and collaborators, quantum-vortex excitons beyond band topology."
+    },
+    {
+      "speaker": "Leo",
+      "text": "In a flat Chern band, the usual rule is that the lowest exciton is a nodeless, s-type state. This theory paper shows that in a kagome lattice model with the right spin-orbit coupling, Coulomb interactions can instead stabilize a vortex exciton, carrying its own phase winding in momentum space, as the true ground state, dark to light. Tune the spin-orbit coupling and the ordering flips to the familiar bright zero-winding exciton, even though the underlying band Chern numbers never change. It's a reminder that exciton topology isn't simply inherited from single-particle band topology."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight, Sun and collaborators, using magnons in chromium sulfur bromide as a remote probe of superconducting phase stiffness in underdoped Bismuth Strontium Calcium Copper Oxide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Clever sensing scheme: strong exciton-magnon coupling in chromium sulfur bromide lets them optically launch and track magnon wavepackets, and the magnon's group velocity gets boosted below the cuprate's superconducting transition because of Meissner screening currents. That velocity shift tracks phase stiffness directly, and under an in-plane field they catch the universal jump expected at a Berezinskii-Kosterlitz-Thouless transition, all contactless and all-optical, which is attractive if you care about probing two-dimensional superconductivity without wiring up electrodes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine, Cao and Fradkin, zero modes at charge-conjugation defects in non-Abelian fractional quantum Hall-superconductor heterostructures."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Dense category-theory paper. They build a local operator description of the zero modes bound to these defects, extending beyond Abelian cases to non-Abelian parent states like Moore-Read and Read-Rezayi, and show that whether you probe by direct zero-mode tunneling or by transferring the anyon itself, you get different universal signatures tied to the Fibonacci fusion structure. Mostly of interest if you're thinking hard about non-Abelian anyons as a computational resource."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper ten, Jacobs and Zemba, on fractional thermal conductance at topological-insulator-superconductor interfaces."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Motivated by a recent bilayer graphene experiment that saw a half-integer thermal plateau from ordinary edge equilibration rather than exotic non-Abelian physics. This paper proves a general theorem: once edges fully thermally equilibrate, the two-terminal thermal conductance of any network of chiral edges depends only on the net chiral central charge, which is fixed by the gravitational anomaly, so no thermal measurement alone can ever distinguish two scenarios with the same anomaly data. They argue you need the charge sector, shot noise and the Lorenz ratio, to actually tell a vortex-bound chiral Majorana mode apart from a look-alike."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the show for today. Two different experimental windows onto Wigner crystals, a nonlocal theory for squeezing light into TMD monolayers, and topology turning up in molecular excitons and in polariton vortices."
+    },
+    {
+      "speaker": "Leo",
+      "text": "See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.09036",
+      "title": "Ambipolar metal-insulator transition in bilayer MoSe2",
+      "authors": [
+        "Ha-Leem Kim",
+        "Hyungbin Lim",
+        "Terry Wu",
+        "Amogh Y. Waghmare",
+        "Garima Gupta",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Archana Raja",
+        "Eric Y. Ma",
+        "Feng Wang"
+      ],
+      "abstract": "When Coulomb interactions dominate kinetic energy, dilute two-dimensional carriers form a Wigner solid. Both its melting and disorder-driven localization can drive density-tuned metal-insulator transitions, but their relative roles and interplay have been debated for decades. Atomically thin semiconductors offer a new test because transport and scanning tunneling microscopy can probe the same material, yet poor contacts impede transport where correlations are strongest. Here we introduce contact-free radio-frequency reflectometry that senses sheet resistance through capacitive gate coupling. It resolves the electron and previously inaccessible hole transitions in the same bilayer MoSe2 device, whose carriers share disorder but not mass. Their critical densities differ fourfold yet correspond to comparable Coulomb-to-kinetic-energy ratios, where tunneling microscopy finds solid-liquid coexistence. Magnetoresistance peaks sharply at each transition, reflecting a Pomeranchuk-like, field-driven expansion of the Wigner solid against the correlated liquid. Our results demonstrate interaction-driven transitions in high-quality two-dimensional semiconductors, opening quantitative transport in contact-limited systems.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.09036",
+      "tier": "deep",
+      "why": "Contact-free RF reflectometry resolves both electron and hole Wigner-solid metal-insulator transitions in the same bilayer MoSe2 device, directly probing correlated states in a 2D semiconductor central to the listener's focus."
+    },
+    {
+      "id": "2610.08955",
+      "title": "From continuum neural quantum states to effective lattice models: Fluctuating Wigner molecules in moiré superlattices",
+      "authors": [
+        "Ahmed Khalifa",
+        "Shubhayu Chatterjee"
+      ],
+      "abstract": "Effective descriptions of quantum materials rely on a separation of energy scales that identifies their low-energy degrees of freedom. When kinetic energy, lattice potential, and interactions compete, this hierarchy breaks down, and both the microscopic state and its effective description are unknown. Continuum neural quantum states (NQS) can find the ground state directly without projecting onto prescribed bands, orbitals, or spins, but their microscopic wavefunctions are difficult to interpret in terms of effective variables. Here, we introduce a wavefunction readout that maps the continuum NQS onto site-resolved charge and spin statistics, allowing effective degrees of freedom to emerge from the microscopic solution. Focusing on moiré transition metal dichalcogenides at filling \\nu = 3, the NQS reveals a low-spin ground state below the ferromagnetic crystal of spin-polarized Wigner molecules. Although the charge density retains triangular molecular motifs, our readout reveals significant charge fluctuations through bound nearest-neighbor doublon–hole pairs. Each molecular charge state has an inert spin-singlet core and rim electrons that carry the spin. Charge and spin fluctuations are therefore intertwined, with antiferromagnetic spin-correlations between sites, motivating an effective description by a spinful two-orbital Hubbard model. More generally, our results demonstrate a route from continuum wavefunctions to effective lattice models when competing scales preclude a controlled reduction.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.08955",
+      "tier": "deep",
+      "why": "Continuum neural quantum states reveal fluctuating Wigner molecules with intertwined charge/spin order at filling 3 in moiré TMDs, suggesting an effective two-orbital Hubbard description relevant to correlated moiré physics."
+    },
+    {
+      "id": "2610.09232",
+      "title": "Influence of nonlocal excitonic optical response on in-plane exciton polaritons supported by monolayer transition-metal dichalcogenides",
+      "authors": [
+        "Kuniyuki Miwa"
+      ],
+      "abstract": "Achieving nanoscale light confinement and long-range propagation is a central challenge in nanophotonics, with important implications for controlling molecular photophysical processes and energy transfer. Monolayer transition-metal dichalcogenides (TMDs) support in-plane exciton-polaritons (IPEPs), deeply subwavelength optical modes in the visible range. In this regime, electromagnetic fields vary on length scales comparable to the exciton size, making spatial nonlocality in the excitonic optical response essential. Here, we develop a microscopic theory of the nonlocal excitonic optical response and investigate the near-field properties of IPEPs in hexagonal boron nitride (hBN)-encapsulated monolayer WS2. Combining a two-band massive Dirac fermion description with a generalized Mott-Wannier treatment, we derive a nonlocal electric susceptibility that accounts for both the center-of-mass and internal relative motion of excitons. Spatial nonlocality in the excitonic optical response shifts the polariton dispersion toward lower in-plane wavevectors compared with the results based on the local-response approximation. This reduces high-wavevector contributions and produces smoother near-field distributions that extend over larger lateral distances while retaining nanoscale confinement. Furthermore, at higher excitation energies, multiple exciton-polariton modes contribute at distinct wavevectors, and their relative contributions can be tuned by varying the thickness of the capping hBN layer. These insights elucidate the fundamental role of spatial nonlocality in the polaritonic properties of van der Waals heterostructures.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.09232",
+      "tier": "deep",
+      "why": "A microscopic nonlocal theory of in-plane exciton-polaritons in hBN-encapsulated monolayer WS2 directly addresses nanophotonic confinement and dispersion central to the listener's work on polaritons in TMDs."
+    },
+    {
+      "id": "2610.09149",
+      "title": "Topological Frenkel excitons in 2D molecular crystals",
+      "authors": [
+        "Quentin Stein",
+        "Sidhartha Nayak",
+        "Song Jiang",
+        "Jakob Kuhlke",
+        "Michelangelo Romeo",
+        "Thomas Frederiksen",
+        "Fabrice Scheurer",
+        "Katharina Kaiser",
+        "Tomas Neuman",
+        "Guillaume Schull"
+      ],
+      "abstract": "Collective molecular excitations govern energy transport in light-harvesting and optoelectronic materials. Theory predicts that excitonic band topology can generate edge-confined states, offering a route to direct energy flow in molecular systems, yet experimental evidence is lacking. Here we use scanning tunnelling microscopy-induced luminescence to image Frenkel excitons in two-dimensional zinc phthalocyanine molecular crystals with nanometer resolution. By varying cluster size, we observe the transition from discrete quantum-confined excitations to collective excitonic bands and directly resolve their real-space wavefunctions. We identify an excitonic state localized at the crystal perimeter and show, through comparison with microscopic theory, that it originates from the momentum-resolved non-trivial topology of the bulk excitonic bands. Our results establish molecular crystals as a platform for engineering topological excitonic states and provide a strategy for controlling energy transport through excitonic band engineering.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.09149",
+      "tier": "deep",
+      "why": "First experimental STM-induced luminescence imaging of topological, edge-localized Frenkel excitons in 2D molecular crystals offers a striking optical/topology crossover analogous to excitonic physics in vdW systems."
+    },
+    {
+      "id": "2610.10251",
+      "title": "Deterministic Vortex Generation from Coupled Trapped Polariton Condensate Triad",
+      "authors": [
+        "X. Qin",
+        "N. Pitanios",
+        "S. Dam",
+        "S. Betzold",
+        "S. H\\\"ofling",
+        "S. V. Koniakhin",
+        "P. G. Savvidis"
+      ],
+      "abstract": "We present the deterministic generation and all-optical switching of ternary topologically distinct vortex states in a triad of trapped exciton-polariton condensates with direct state readout from momentum-space emission distribution. Tuning the non-resonant pump power controls the sign of the dissipative coupling, selecting between a ferromagnetic in-phase state and two frustrated states with global phase winding. The zero-winding ferromagnetic state has unstructured far-field emission at low momenta and forms vortex-antivortex arrays at the Dirac points, reflecting the C3v global symmetry. The two frustrated states of +-2pi winding can be activated on-demand by a control beam and produce different triangular emission patterns selectively localized at the K or K' points. Although all three states share identical real-space emission distributions, their momentum-space photoluminescence profiles distinguish them unambiguously, revealing the chirality without the need for interferometry. This enables on-demand orbital angular momentum control using a pump independent of resonant phase or OAM imprinting, establishing condensate triads as a compact platform for reconfigurable chiral light generation operating on a ternary logic basis.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.10251",
+      "tier": "deep",
+      "why": "Deterministic, all-optical switching between chiral vortex states in a triad of trapped exciton-polariton condensates demonstrates a compact platform for reconfigurable topological light generation, squarely in the exciton-polariton wheelhouse."
+    },
+    {
+      "id": "2610.10175",
+      "title": "Quantum-vortex excitons beyond band topology",
+      "authors": [
+        "Jin-Hyung Choi",
+        "Sang-Hoon Han",
+        "Young-Kwon Han",
+        "Jun-Won Rhim",
+        "Sun-Woo Kim",
+        "Joshua J. P. Thompson"
+      ],
+      "abstract": "Optically exciting a typical low-dimensional semiconductor produces a nodeless \\(s\\)-type exciton as its lowest-energy bound state. Here, we explain how Coulomb phase matching stabilises a quantum-vortex exciton as the lowest bound state in flat Chern bands. Using a prototypical Yin–Yang kagome lattice, we demonstrate that increasing the spin–orbit coupling drives a transition of the lowest exciton from a quantum-vortex state to a zero-winding state, while leaving the band Chern numbers unchanged. We trace this behaviour to a gauge-invariant combination of exciton phase differences and Bloch-overlap phases that can reduce the Coulomb energy. By comparing states with identical wavefunction amplitudes, we isolate this phase contribution and show that it is sufficient to drive the reversal in exciton ordering. We classify exciton topology by the momentum-space wavefunction winding relative to the conduction–valence Chern-number difference,connecting the competing states to circular-polarisation selection rules. We then show that the resulting reordering can be tracked directly in the optical absorption spectrum, through the transition from a dark vortex exciton to a bright zero-winding exciton. These findings establish a microscopic link between exciton topology, Coulomb binding, and optical response that extends beyond the information contained in the underlying electronic band Chern numbers.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.10175",
+      "tier": "brief",
+      "why": "Shows that Coulomb phase matching can stabilize vortex excitons over conventional s-type states in flat Chern bands, linking exciton topology to optical selection rules beyond band Chern numbers."
+    },
+    {
+      "id": "2610.09148",
+      "title": "Momentum-Locked Edge Excitons in 2D Molecular Crystals",
+      "authors": [
+        "Sidhartha Nayak",
+        "Alex Boeglin",
+        "Quentin Stein",
+        "Katharina Kaiser",
+        "Guillaume Schull",
+        "Thomas Frederiksen",
+        "Tom\\'a\\v{s} Neuman"
+      ],
+      "abstract": "In molecular crystals, molecular excitations can hybridize into collective Frenkel excitons. Here we show that doubly degenerate excitations in planar two-dimensional molecular crystals generate excitonic bands with nontrivial momentum-resolved topological characteristics and edge states appearing only for selected crystallographic terminations. Using a model inspired by aggregates of zinc phthalocyanine molecules deposited on insulating surfaces, we demonstrate that the existence of edge excitons depends sensitively on the crystallographic orientation of the boundary and is governed by the Zak phase of the underlying bulk bands. The resulting edge states exhibit momentum-locked elliptical polarization textures originating from the internal structure of the molecular excitations, potentially enabling directional optical coupling and excitation transport. Our results establish a route toward topological and polarization-textured excitonic states in two-dimensional molecular materials.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.09148",
+      "tier": "brief",
+      "why": "Companion theory paper predicting momentum-locked, polarization-textured topological edge excitons in 2D molecular crystals, explaining the mechanism behind the paired experimental STM result."
+    },
+    {
+      "id": "2610.08934",
+      "title": "Remote magnon sensing detects the universal phase stiffness jump in Bi2Sr2CaCu2O8+\\delta",
+      "authors": [
+        "Yue Sun",
+        "Mai Nguyen",
+        "Naiyuan James Zhang",
+        "Dingbin Huang",
+        "Shuai Yuan",
+        "Aljoscha S\\\"oll",
+        "Arun Ramanathan",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Xavier Roy",
+        "Zden\\v{e}k Sofer",
+        "Shigeyuki Ishida",
+        "Hiroshi Eisaki",
+        "Makoto Hashimoto",
+        "Zhi-Xun Shen",
+        "Joseph Orenstein",
+        "Xiaodong Xu"
+      ],
+      "abstract": "Phase stiffness governs macroscopic quantum coherence in superfluids and superconductors, providing a sensitive probe of condensate depletion, fluctuations, and phase transitions. However quantitative and spatially resolved measurements remain challenging. Here we report a contactless, local, all-optical measurement of superconducting phase stiffness using propagating antiferromagnetic magnons as remote sensors. In CrSBr, strong exciton-magnon coupling enables optical excitation and detection of magnon wavepackets and precise determination of their group velocity. When CrSBr is interfaced with underdoped Bi2Sr2CaCu2O8+\\delta, we find that the magnon group velocity is substantially enhanced below the superconducting transition and quantitatively encodes the phase stiffness through Meissner screening currents. Using this capability, we identify a parallel-field-induced Berezinskii-Kosterlitz-Thouless transition through direct observation of the universal phase-stiffness jump, revealing a field-controlled route to expose intrinsic two-dimensional phase-ordering physics in a bulk cuprate. Our work establishes propagating magnons as local probes of superconducting electrodynamics and phase-coherent phenomena in low-dimensional quantum materials.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.08934",
+      "tier": "brief",
+      "why": "A clever all-optical magnon-based probe detects the universal BKT phase-stiffness jump in a cuprate superconductor, a creative non-2D-optics technique that could inspire new spectroscopic approaches."
+    },
+    {
+      "id": "2610.08907",
+      "title": "Zero Mode Operators and Charge-Conjugation Defects in Non-Abelian Fractional Quantum Hall-Superconductor Heterostructures",
+      "authors": [
+        "Junyi Cao",
+        "Eduardo Fradkin"
+      ],
+      "abstract": "We study zero modes bound to charge-conjugation defects in fractional quantum Hall-superconductor (FQH-SC) heterostructures built from Abelian and non-Abelian FQH states. Although the associated defects are well described by G-crossed braided tensor categories, a local operator description of their zero modes is not generally known. We generalize the bulk-to-boundary construction of localized zero mode operators to FQH-SCs with non-Abelian parent topological orders, mapping bulk Wilson operators in the folded theory to localized zero mode operators in the one-dimensional FQH-SC theory. This construction distinguishes zero mode anyons from the local zero mode operators that act on the defect Hilbert space and yields a generalized zero mode algebra. It also determines the fusion-channel dependence of tunneling: tunneling of zero mode operators probes bulk monodromy, while direct zero mode anyon transfer probes G-crossed associativity data. Applying this framework, we recover the \\mathbbZ2m parafermion zero mode structure of fermionic Laughlin FQH-SCs at filling \\nu=1/m, obtain a \\mathbbZ2(n)\\times\\mathbbZN structure for generalized Moore-Read states at filling \\nu=1/m, with N=2m for fermionic states and N=m for bosonic states, and find a Fib\\times\\mathbbZN structure for the k=3 Read-Rezayi state at filling \\nu=3/(3M+2), with N=2(3M+2) for fermionic states and N=(3M+2)/2 for bosonic states. In the Read-Rezayi case, zero mode operator tunneling and direct zero mode anyon transfer yield distinct universal amplitude ratios between the neutral fusion channels, providing a characteristic signature of the underlying Fibonacci defect structure.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.08907",
+      "tier": "brief",
+      "why": "Extends zero-mode operator constructions to non-Abelian fractional quantum Hall-superconductor heterostructures, refining the theoretical toolkit for anyon braiding relevant to QH physics."
+    },
+    {
+      "id": "2610.10011",
+      "title": "Topological and kinetic origins of fractional thermal conductance at the topological insulator–superconductor interface",
+      "authors": [
+        "Laurence A. Jacobs",
+        "Guillermo R. Zemba"
+      ],
+      "abstract": "A recent experiment by Roy et al. (Nat. Commun. 17, 2853 (2026)) demonstrated a robust half-integer thermal conductance plateau, \\kappa0 T/2, at a bipolar (\\nu,\\nu')=(2,-1) junction in bilayer graphene, produced not by non-Abelian topology but by full equilibration of co-propagating electron and hole edge modes. We prove a theorem that fixes when the two origins can be told apart: under full thermal equilibration, the two-terminal thermal conductance of a network of chiral edge segments joined at ideal floating contacts is a rational function of the net chiral central charges of the segments alone, quantities pinned by the gravitational anomaly and invariant under arbitrary local boundary kinetics. The corollary is an impossibility statement: whenever two realizations present the same anomaly data to the same network, no thermal-conductance measurement can distinguish them. That the equilibrated (2,-1) value equals the central charge of a chiral Majorana mode is an arithmetic fact about one filling combination, but wherever such a coincidence occurs it is beyond the reach of thermometry, and the separation must come from the charge sector, which is not anomaly-pinned at a superconducting boundary. We develop the topological insulator-superconductor interface as the application: a vortex carries fractional charge e/4 from the \\theta = \\pi magnetoelectric coupling, the boundary hosts a chiral Majorana mode of central charge 1/2, and a laterally adjacent integer quantum Hall (IQH) region supplies the kinetic realization. The Lorenz ratio (anomalous for the isolated Majorana boundary, L0 / (1 + 4|\\nuIQH|) in the composite device) and the excess shot noise (growing with B from e/4 vortex tunneling versus locked to IQH plateaus) together resolve the mechanism, provided the quantum Hall edge does not abut the superconductor.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "hep-th"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.10011",
+      "tier": "brief",
+      "why": "A theorem clarifying when fractional thermal conductance plateaus at topological insulator-superconductor interfaces can (or cannot) distinguish topological origin from trivial equilibration, relevant to quantum Hall/topological matter broadly."
+    }
+  ]
+}

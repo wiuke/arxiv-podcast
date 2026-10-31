@@ -1,0 +1,500 @@
+{
+  "date": "2026-10-24",
+  "id": "assp-05",
+  "format": "dialogue",
+  "episode_title": "Watching Electrons Leave: The Physics of ARPES",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Welcome back to arXiv Morning, Nano and Correlated. Today's episode follows the Advanced Solid State Physics course at ETH, Professor Zheludev's class, and we're doing the topic that a student in that course would give a talk on: angle resolved photoemission spectroscopy, or ARPES."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The technique that turned Landau quasiparticles from a theorist's cartoon into an actual picture on a screen. I've seen ARPES plots in every other cuprate and TMD paper I read, but I've never actually sat down and derived why the thing works."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the right way to come at this. So let's start from the single most basic fact: the photoelectric effect. Einstein, nineteen-oh-five. Shine light of frequency nu on a material, and if the photon energy h-nu is bigger than the binding energy of an electron plus the work function, that electron pops out into vacuum with some kinetic energy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Energy conservation. Kinetic energy out equals photon energy in, minus the binding energy, minus the work function phi. That part I remember from every intro quantum course."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and the beautiful thing is that this simple bookkeeping statement, kinetic energy equals h-nu minus phi minus the binding energy, is already the whole first half of ARPES. If you only measure kinetic energy, you get the occupied density of states of the material, broadened by whatever light you used. That's plain photoemission, no angle resolution needed."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the 'angle resolved' part is the upgrade. You don't just count electrons by energy, you also catch them at a specific emission angle."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's where it gets powerful, because the angle encodes momentum. Outside the crystal, the photoelectron is a free particle with a well defined momentum, magnitude given by the free electron relation, square root of two m times the kinetic energy. If you know the emission angle theta relative to the surface normal, you know how that momentum splits into a piece parallel to the surface and a piece perpendicular to it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And because the surface has in plane translational symmetry, the parallel component should survive the trip from inside the crystal to the detector, the way crystal momentum is conserved modulo a reciprocal lattice vector."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the crucial physical fact. The component of momentum parallel to the surface is a genuinely conserved quantity across the photoemission process, up to a surface reciprocal lattice vector. So the parallel momentum of the electron sitting inside the solid, before you ever touched it with light, is equal to the parallel momentum you measure in vacuum. That's the entire reason ARPES can map a band structure: measure kinetic energy and angle, and you've measured binding energy and in-plane crystal momentum, both at once."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Before we get into the machinery, give me the order of magnitude picture. What photon energies, what kinetic energies are we talking about, and how fine an angular resolution do you actually need to resolve something like a Fermi surface in a cuprate or a transition metal dichalcogenide?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good, let's build the toy numbers. The classic laboratory source is a helium discharge lamp: the He-one line sits at twenty-one point two electron-volts, and there's a weaker He-two line at forty point eight electron-volts. Work functions of real materials are typically four to five electron-volts. So with the He-one line you're kicking out photoelectrons with kinetic energies of order fifteen to seventeen electron-volts, depending on binding energy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the momentum that corresponds to, via that square-root-of-two-m-E relation?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "If you plug in kinetic energies around twenty electron-volts, the photoelectron wavevector comes out of order one inverse angstrom, which is comparable to a typical Brillouin zone dimension, two pi over the lattice constant, in a solid with a lattice constant of a few angstroms. That's not a coincidence, it's exactly why low photon energies are so useful: your momentum resolution, which scales with that same wavevector times the angular acceptance in radians, can be a healthy fraction of a percent of the zone size if your angular resolution is a fraction of a degree."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So state of the art instruments, what's achievable?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The modern benchmark, which the Damascelli review emphasizes, is energy resolution of order two milli-electron-volts and angular resolution of order zero point two degrees. At the twenty-one electron-volt He-one line, zero point two degrees translates to roughly half a percent of the Brillouin zone edge for a cuprate. That is an extraordinary momentum resolution, fine enough to resolve a superconducting gap that's only ten or twenty milli-electron-volts wide, sitting on a Fermi surface that's curving through momentum space."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, that's the headline number, now let's actually build the machine that produces it. What's the conceptual framework physicists use, given that treating the full many-body photoemission process exactly is hopeless?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the three-step model, and it's a wonderfully pragmatic piece of physics: it's not exactly right, but it's transparent, and it reproduces essentially everything you see. Step one: a photon is absorbed, and an electron makes a transition from an occupied Bloch state deep inside the crystal to an excited state, still inside the crystal. Step two: that excited, 'hot' electron travels to the surface. Step three: it escapes through the surface potential barrier into vacuum, where it becomes the photoelectron you actually detect."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's take those one at a time. Step one, the optical transition. Energy conservation is obvious, but what about momentum? A photon at twenty electron-volts carries almost no momentum on the scale of a Brillouin zone, so how do you get vertical transitions at all, given that you also need some change in electron momentum to go from an occupied low band to an empty higher one?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is a lovely subtlety. If you tried this in a truly free electron gas, with no periodic potential, you literally cannot conserve both energy and momentum on the same parabola with a vanishingly small photon momentum, there's no final state available. What saves the day is the lattice. The crystal potential can absorb or supply momentum in discrete units of reciprocal lattice vectors, so the quantity that's actually conserved is crystal momentum, not literal momentum: k-final equals k-initial plus G for some reciprocal lattice vector G."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So in the reduced zone scheme the transition looks vertical, straight up in energy at fixed k, but if you unfold into the extended zone scheme, it's really a transition between an occupied Bloch state and a higher, nearly free electron-like band, shifted by a reciprocal lattice vector."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely, and this is the standard picture physicists call direct, or vertical, transitions. In practice, for the final state, people often just use a free electron, or nearly free electron, parabola, shifted up in energy by some constant that represents the bottom of the valence band. That's crude, but it works well enough at the kinetic energies typically used, and it's the basis of what's called the nearly free electron final state approximation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Now step two, the hot electron traveling to the surface. This is where the famous surface sensitivity of photoemission comes from, right?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. While that excited electron is propagating toward the surface, it can scatter inelastically off other electrons, phonons, defects, and lose its memory of where it started, both in energy and momentum. Those scattered electrons just contribute a featureless background rising up at low kinetic energy. What matters for the band structure is the surviving fraction that makes it to the surface without scattering, and that fraction decays exponentially with an inelastic mean free path."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And that mean free path is the famous universal curve."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes. If you plot the electron mean free path against kinetic energy across many materials, you get a U-shaped curve with a minimum somewhere in the tens to low hundreds of electron-volts, where the mean free path can be as short as about five angstroms, essentially one or two atomic layers. That's the kinetic energy range most ARPES experiments live in, which is exactly why ARPES is such a surface sensitive probe, and exactly why you need atomically clean, well ordered surfaces prepared in ultra-high vacuum, typically below ten to the minus ten or ten to the minus eleven torr."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which also explains why cleavable, layered materials are the darlings of ARPES. Van der Waals gap, cleave in vacuum, get a pristine surface for free, no dangling bonds to reconstruct."
+    },
+    {
+      "speaker": "Ava",
+      "text": "You've basically explained why the Bismuth based cuprates, Bi2212 and Bi2201, became the workhorses of high-Tc ARPES: they cleave between weakly bonded Bismuth-Oxide layers, giving a chemically inert, charge neutral surface that doesn't perturb the copper oxide planes underneath. And it's exactly why TMDs and other van der Waals materials, which your own group works with optically, are such natural ARPES subjects too."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Now step three, escape through the surface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is where the earlier point about momentum comes back with more nuance. Think of the hot electron hitting the surface from inside, described, say, with a free electron dispersion, and the photoelectron on the other side, also free, but with a different effective potential, since there's a potential step of height V-zero at the surface. Energy is conserved, and because the surface is periodic in the directions parallel to it, the parallel momentum is conserved too, up to a surface reciprocal lattice vector. But the perpendicular momentum is not conserved, exactly because translational symmetry is broken along the surface normal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the electron gets refracted at the surface, like light crossing an interface, bending because the two sides have a different effective index, so to speak."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Nice analogy, and it's used in the literature. The practical formula you end up with is: the parallel component of the crystal momentum inside the solid equals the square root of two m times the kinetic energy, divided by h-bar, times sine of the emission angle theta. That's the one equation you actually use every day in an ARPES lab. Measure kinetic energy and theta, and you immediately get k-parallel."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But k-perpendicular you can't get this way, because it's simply not conserved across the surface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and this is the single biggest headache in three dimensional band mapping. People either assume a free electron-like final state dispersion for the escaping electron to back out k-perpendicular, use results from a band structure calculation, or do a full triangulation using many different photon energies and crystal faces. All of that is finicky and uncertain."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which is presumably why two dimensional, or quasi two dimensional, systems are the favorite playground for this whole technique: if there's no dispersion along the surface normal, then k-perpendicular simply doesn't matter for the physics, and you've sidestepped the entire problem."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly right, and this point gets emphasized again and again across the reviews, Hüfner, Grioni, Damascelli, all of them: in a genuinely two dimensional electronic structure, like a surface state, like a cuprate copper-oxide plane, or like a transition metal dichalcogenide monolayer, the parallel momentum tells you everything, and the band dispersion E of k is completely and unambiguously determined just by scanning the emission angle."
+    },
+    {
+      "speaker": "Leo",
+      "text": "There's also a second, less obvious bonus of being two dimensional that I recall from somewhere: something about linewidths and the photohole versus the photoelectron."
+    },
+    {
+      "speaker": "Ava",
+      "text": "You're thinking of exactly the right subtlety. In three dimensional systems, the width of an ARPES peak contains contributions from the lifetime of the photo-hole left behind in the solid, which is the physics you actually want, but also from the lifetime of the outgoing hot photoelectron, which is just a final-state artifact of how it scatters on its way out. Those two get mixed together through the group velocities perpendicular to the surface. But if the initial band has zero perpendicular dispersion, that perpendicular hole velocity vanishes, and the final-state, photoelectron contribution to the linewidth drops out entirely. The measured width becomes a clean, direct measurement of the hole lifetime alone."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So two dimensionality is a gift twice over: cleaner momentum assignment, and a cleaner, more directly interpretable linewidth."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which is the single biggest reason ARPES became the signature tool for cuprates, and later for a whole zoo of quasi two dimensional correlated materials, charge density wave compounds, topological surface states, and now moiré and TMD heterostructures."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's talk hardware. What does the actual beamline or lab setup look like?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "At the simplest level you need three things: a monochromatic photon source, a single crystal sample held in ultra-high vacuum, and an electron energy analyzer. For lab-based work, that's usually a helium discharge lamp, giving you the He-one line at twenty-one point two electron-volts, roughly ten to twenty times stronger than the He-two satellite at forty point eight electron-volts. Good lamps can deliver linewidths around one milli-electron-volt, genuinely competitive with synchrotron beamlines."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But obviously you'd rather have a synchrotron if you can get one."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Obviously, and that's exactly where Switzerland comes in. The Swiss Light Source at the Paul Scherrer Institute has dedicated ARPES beamlines, equipped with undulators or wigglers producing a continuously tunable, highly polarized photon beam, which you then pass through a grating monochromator before focusing it on the sample. That tunability is huge: you can dial the photon energy to control the photoelectron mean free path, tune matrix elements, or even try to extract k-perpendicular information."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the detection side?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A modern hemispherical electron analyzer. Photoelectrons pass through an electrostatic lens that decelerates and focuses them onto an entrance slit, then through two concentric hemispheres held at a potential difference, which disperses electrons by kinetic energy, and finally onto a two dimensional position sensitive detector, typically micro-channel plates plus a phosphor screen and a camera. The clever bit is that one axis of that detector encodes kinetic energy, and the other axis, because of the finite acceptance angle of the lens, simultaneously encodes emission angle."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So in a single exposure you get a whole slice of energy versus momentum, not just one point."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, an angular window of order ten to fifteen degrees, recorded in parallel. That one innovation is what took ARPES from a slow, point by point angle scanning technique to something that can densely sample the whole Brillouin zone and deliver genuine intensity maps, I of k and omega, in reasonable integration times. This is also why you so often see ARPES data displayed as a two dimensional false color plot, energy on one axis, momentum on the other, intensity as color."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And from such a map you can take two different kinds of cuts, I think: one at fixed momentum, one at fixed energy."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, this is standard vocabulary now. A cut at fixed momentum, scanning energy, is an energy distribution curve, an EDC — basically a single old-fashioned photoemission spectrum. A cut at fixed energy, scanning momentum, is a momentum distribution curve, an MDC. If you set that fixed energy to the Fermi level and scan over the full two dimensional angular range, you get a Fermi surface map, essentially a stereographic projection of the material's Fermi surface."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Can you give me a concrete sense of what one of those Fermi surface maps actually looks like?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The Grioni review shows a classic example on L-a-R-u-two-S-i-two: an ARPES intensity map taken right at the Fermi energy, plotted versus the two components of momentum parallel to the surface, which traces out the actual shape of the Fermi surface, and it's compared directly against a calculated Fermi surface from band theory, with quite good agreement. The appeal here, compared to something like the de Haas-van Alphen effect, is that ARPES gives you the detailed shape of the whole surface, not just the areas of a few special orbits, and it doesn't demand extremely low temperatures or extremely clean samples the way quantum oscillation measurements do."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which matters a lot for materials where you simply can't get samples clean enough, or where disorder kills the quantum oscillations outright, like, famously, the cuprates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the point both Campuzano and Damascelli make: traditional Fermi surface probes essentially fail in the cuprates, both because the required purity and field strength aren't achievable, and because the quasiparticles in the normal state are so short lived that they never even complete a cyclotron orbit. ARPES doesn't care about that, because it's probing instantaneous removal of an electron, not a coherent orbit over many cyclotron periods."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good, let's pause and recap this first part before we go into the many-body physics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Sure. Takeaway one: photoemission is simply energy conservation, h-nu equals kinetic energy plus work function plus binding energy, applied to a solid, measured over narrow angular windows. Takeaway two: because the component of crystal momentum parallel to the surface survives the trip into vacuum, measuring angle and kinetic energy together gives you both energy and momentum of the electron that was inside the solid, that's the whole trick behind band mapping. Takeaway three: the three-step model, absorption, transport, escape, explains why ARPES is a few-angstrom surface probe, why layered cleavable materials are ideal, and why two dimensional systems are especially clean to interpret, both for momentum assignment and for linewidths."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And takeaway four: the actual hardware, synchrotrons like the Swiss Light Source feeding hemispherical analyzers with 2D detectors, has pushed energy and angular resolution to the few milli-electron-volt, fraction of a degree level, which is what makes gap spectroscopy and fine Fermi surface mapping possible at all."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Perfect summary. Now, everything we just described assumed independent, non-interacting electrons. Time to break that assumption, because that's where ARPES gets genuinely interesting for a correlated-electron audience like you."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, so far it sounds like ARPES just measures a band structure. But you keep hearing about ARPES measuring the 'spectral function', and about self-energies, and quasiparticle weights. Where does that come from?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "It comes from taking seriously what photoemission actually does at the level of the many-body wavefunction. Removing a photoelectron doesn't just probe some fixed single-particle energy level, it takes your N-electron ground state and suddenly yanks one electron out, leaving behind an N-minus-one electron system. The crucial approximation that makes the whole analysis tractable is called the sudden approximation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Meaning the photoelectron leaves so fast that the remaining electrons don't have time to relax before it's gone."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, no post-collisional interaction between the escaping photoelectron and the system left behind. People have actually checked the timescales for this in the cuprates: a twenty electron-volt photoelectron has a velocity of a few times ten to the eight centimeters per second, and given a relevant length scale of around ten angstroms, set by the screening radius or the escape depth, it spends only a few times ten to the minus sixteen seconds near the hole. Compare that to the plasma oscillation period, a few times ten to the minus fifteen seconds, and you see the escape is reasonably, though not perfectly, fast compared to the response time of the medium."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So if the approximation holds, what happens to the N-minus-one electron system once the electron is gone?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's suddenly thrown into a 'frozen' configuration that is generally not its own ground state. The photoemission spectrum is then the overlap, or projection, of this frozen, just-poked configuration onto all the actual eigenstates of the N-minus-one electron Hamiltonian. If there's weight on the true ground state of that N-minus-one system, you get the main, 'coherent' quasiparticle peak. But there can also be weight on excited states of the N-minus-one system, and those show up as extra structures, extra peaks or a broad background, at higher binding energy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's basically a generalized Franck-Condon picture, like vibrational shake-up lines in a molecule."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's precisely the analogy both Grioni and Damascelli use: photoemission from molecular hydrogen shows exactly this kind of structure, a series of vibrational shake-up lines because removing the electron changes the effective potential the nuclei sit in, so the final vibrational state isn't simply the initial one. In solids, the equivalent 'shake-up' can be excitation of plasmons, phonons, or electron-hole pairs across the Fermi surface, and the result is the same: a main line plus an incoherent background or satellite structure."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, so now give me the formal object that encodes all of this."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the spectral function, A of k and omega. It's defined from the one-particle Green's function, essentially minus one over pi times the imaginary part of G of k, omega. Physically, A of k, omega is the probability density for removing, or adding, an electron with momentum k at energy omega, relative to the chemical potential. And the central formula of ARPES theory says: the measured intensity, as a function of k and omega, is proportional to a matrix element, times the Fermi function, times exactly this spectral function."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So ARPES is, up to matrix elements and the Fermi cutoff, a direct photograph of A of k, omega."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the single most important sentence in this whole topic. And it's a profound statement, because A of k, omega is precisely the quantity you'd compute from many-body perturbation theory, or from a numerical method like DMRG or exact diagonalization, if you wanted to compare theory and experiment on correlated systems. ARPES gives experimentalists direct access to the same object theorists write down on paper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "For a non-interacting system, what does A of k, omega look like?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A delta function at the band energy epsilon-k, for every k. That's it, a sharp, infinitely narrow line tracking the band dispersion exactly, consistent with the naive single particle picture we spent the first half of this episode building."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And once you turn on interactions?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "You introduce a self-energy, sigma of k, omega, which is complex: a real part and an imaginary part. The real part shifts the energy of the excitation relative to the bare band, it's a renormalization. The imaginary part gives the excitation a finite lifetime, it broadens the delta function into a Lorentzian-like peak. Near the Fermi surface, in a normal metal, you can write the spectral function as a sharp coherent piece, weighted by a factor Z, which is less than one, plus a broad incoherent background carrying the remaining spectral weight, one minus Z."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Z being the quasiparticle weight, the overlap between the true many-body excitation and the bare electron or hole you naively imagine adding or removing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, that's Landau's Fermi liquid picture made completely explicit and experimentally measurable. A real quasiparticle is a bare electron dressed in a cloud of virtual excitations: part bare particle, weight Z, part everything else, weight one minus Z, smeared out over a wide energy range as satellite structure. Strong correlations mean small Z, a strongly suppressed coherent peak, and most of the spectral weight pushed into that broad incoherent background."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is where Mott physics and heavy fermions would show up, right? Vanishing or tiny Z."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, in a heavy fermion material the quasiparticle band gets compressed into an extremely narrow energy window with barely any spectral weight, consistent with effective masses a thousand times the bare electron mass. ARPES, in principle, can see that directly, though it's experimentally very demanding because the signal is so weak."
+    },
+    {
+      "speaker": "Leo",
+      "text": "You mentioned a Fermi liquid self-energy has a specific, predicted shape near the Fermi surface. Can you say what that is, in words?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "In a normal Fermi liquid, the imaginary part of the self-energy goes like the square of the energy away from the Fermi level, plus a thermal piece proportional to temperature squared, and the real part goes roughly linearly in energy. That translates into a quasiparticle lifetime that diverges as you approach the Fermi surface, and a peak width that grows smoothly and predictably away from it, in an asymmetric but very characteristic lineshape."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Has anyone actually verified that lineshape cleanly in a real material?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, and this is a nice, almost textbook example from the Grioni review: titanium diselenide, 1T-T-i-T-e-two, a quasi two dimensional metal with moderate correlations. Along the high symmetry direction toward the M point, the titanium 3d conduction band disperses down through the Fermi level, and right near the Fermi crossing the spectra are beautifully fit by that Fermi liquid self-energy form, imaginary part proportional to energy squared, plus a constant offset. You can even see, very faintly, a predicted many-body signature: a weak tail of the quasiparticle peak sitting just above the Fermi energy, on the unoccupied side, confirming that even the interacting ground state has some probability of occupying states nominally outside the Fermi surface."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And presumably you can separate out electron-phonon scattering from pure electron-electron scattering by just warming the sample up."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, that's shown in the same titanium diselenide data: as temperature rises from about thirteen kelvin up past two hundred kelvin, the quasiparticle peak at the Fermi surface broadens and also shifts a little, due to the Fermi function itself sharpening at low T, and you can fit the temperature-dependent width to extract an electron-phonon coupling constant. For titanium diselenide, that comes out around point two two, a fairly weak coupling, consistent with the absence of superconducting or charge ordering instabilities in that compound."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is there a clean, textbook case of strong electron-phonon coupling too, something with a more dramatic kink?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Beryllium's zero-zero-zero-one surface state is the canonical example, discussed in both Grioni and Damascelli. It's a genuinely two dimensional surface state, and as it approaches the Fermi level, at a binding energy comparable to the maximum phonon energy in the system, around seventy milli-electron-volts, the dispersion visibly kinks: a flatter, heavier effective mass piece close to the Fermi level, and a steeper, bare-band-like piece further down. From the ratio of renormalized to bare Fermi velocity, you extract an electron-phonon coupling constant lambda around one point two, quite strong coupling, and the detailed lineshape even develops a double peak structure right where the phonon energy scale sits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do you actually separate the self-energy's real and imaginary parts from raw data, practically? You mentioned EDCs and MDCs earlier."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is where the two cuts through the intensity map earn their keep. If you assume the self-energy barely depends on momentum perpendicular to the Fermi surface, then at fixed energy the momentum distribution curve becomes a clean Lorentzian, centered at a momentum shifted from k-Fermi by an amount involving the real part of the self-energy divided by the bare Fermi velocity, with a width directly proportional to the imaginary part of the self-energy. So MDC peak positions give you the renormalized dispersion, and MDC widths give you the scattering rate, both in a mathematically clean way, much cleaner than trying to fit the more complicated, Fermi-function-distorted EDC lineshape."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And that's also how people find 'kinks' in cuprate dispersions, I assume, the famous electron-boson coupling features around seventy milli-electron-volts in the nodal direction."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the same machinery. Let's pause for a recap before we dive into the superconductor case study."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Go for it."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Takeaway one: in the sudden approximation, ARPES intensity is proportional to the Fermi function times the one-particle spectral function, A of k, omega, which is exactly the object computed from the many-body Green's function. Takeaway two: in a non-interacting system A of k, omega is a sharp delta function tracking the bare band; interactions dress it into a quasiparticle peak of reduced weight Z, plus an incoherent background, governed by a complex self-energy whose real part renormalizes the energy and whose imaginary part sets the lifetime. Takeaway three: Fermi liquid behavior, titanium diselenide, and electron-phonon kinks, beryllium's surface state, are textbook, directly measured examples of exactly this self-energy physics, extracted cleanly using momentum distribution curves."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Now let's get to the big one: what happens when correlations are strong enough to actually destroy the metallic state, and how ARPES watches a gap open."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is gap spectroscopy, and the superconducting cuprates are the case study that essentially built modern ARPES, because before high-Tc, conventional superconducting gaps, a few milli-electron-volts, were simply too small for the instrumental resolution of the day. Once you have cuprates with gaps of tens of milli-electron-volts and transition temperatures near a hundred kelvin, the gap becomes comfortably resolvable."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What actually changes in the spectrum when a gap opens at some point on the Fermi surface?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Above the transition, at a point right on the normal-state Fermi surface, the quasiparticle peak sits essentially at the Fermi level, with a long, Fermi-liquid-like tail on the low binding energy side from the leading edge being cut by the Fermi function. Below the transition, that peak visibly pulls back away from the Fermi level, sharpens up, and a clear gap opens: at the Fermi momentum, the lowest-energy feature now sits at a finite binding energy, equal to the size of the gap, instead of right at zero."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's exactly the Bi2212 data mentioned in the Grioni review, isn't it, comparing spectra above and below Tc at a point near the antinode?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, in optimally doped Bi2212 with Tc near ninety kelvin, the high-temperature spectrum at that k-Fermi point shows the high-energy edge of a broad peak cut off by the Fermi function, while the low-temperature, superconducting-state spectrum shows a sharpened peak clearly receding from the Fermi level. If you assume a BCS-like form for a first pass, you can read the binding energy of that peak directly as the superconducting gap, Delta of temperature."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the famous discovery, that this isn't a conventional, isotropic s-wave gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, this is the signature contribution of ARPES to the whole field: because you can measure the gap at essentially every point around the Fermi surface, not just at one momentum the way tunneling or optics would average over, you can map out the full angular dependence of Delta. In the cuprates, the result is four nodes, points where the gap vanishes completely, spaced ninety degrees apart, lying along the diagonals of the Brillouin zone, forty five degrees from the copper-oxygen bond directions. Near optimal doping, the magnitude follows a simple form, proportional to the absolute value of cosine of k-x times the lattice constant minus cosine of k-y times the lattice constant, the textbook d-wave angular dependence."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Though ARPES alone can't distinguish d-wave from some exotic 'anisotropic s-wave' pattern with the same amplitude, since it only measures the magnitude of the gap, not its phase."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly right, that's a real limitation worth remembering: ARPES is sensitive to the amplitude of the order parameter, not its sign, so phase-sensitive probes like tunneling-based corner junction experiments were needed to nail down the true d-wave symmetry. But the angular amplitude map from ARPES was still the crucial piece of evidence pointing that way."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is the gap size simply proportional to Tc the way you'd expect from weak coupling BCS?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "No, and this is one of the famous, strange findings. If you track the maximum gap, at the antinode near the Brillouin zone boundary, as a function of doping, it does not track Tc the simple way: in the underdoped region, as you reduce doping, Tc goes down, but the gap actually grows larger. That's the opposite of naive expectations, and it only converges back to something like the standard BCS ratio of about three point five once you go well into the overdoped regime."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That mismatch between gap and Tc is basically the origin story of the whole 'pseudogap' puzzle, isn't it, where a gap-like depletion of spectral weight near the Fermi level survives even above the superconducting transition?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and ARPES was central to discovering that too: in underdoped cuprates, a depletion of spectral weight at the antinode persists well above Tc, with a very similar d-wave-like angular pattern to the superconducting gap, which is part of why people still argue about whether the pseudogap is a precursor to superconducting pairing, a genuinely distinct competing order, or some combination."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Are there analysis tricks for pulling the gap out cleanly, given that right near the Fermi level the Fermi function itself distorts the lineshape?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, two standard tricks. One is dividing the raw spectrum by the Fermi function convolved with the known energy resolution, which effectively undoes the thermal cutoff and lets you see the bare spectral function, as long as your energy resolution and knowledge of the chemical potential are both excellent. The other, more robust trick is symmetrization: you add the spectrum to its own mirror image reflected about zero binding energy. If the spectral function is roughly particle-hole symmetric near the Fermi level, which turns out to be a reasonable approximation at the Fermi momentum, this automatically cancels the Fermi function and leaves you with something proportional to the symmetric spectral function itself, showing a clean dip if there's a gap, and a clean peak at zero if there isn't."
+    },
+    {
+      "speaker": "Leo",
+      "text": "I want to flag the particle-hole mixing signature too, since I remember that's supposed to be smoking-gun evidence that what you're seeing really is a pairing gap, and not some other kind of density-wave gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good catch, and it's an elegant piece of physics. In the BCS picture, as you move in momentum past k-Fermi, into states that were unoccupied in the normal state, the spectral peak in the superconducting state doesn't just vanish, it bends back away from the Fermi level again, with decreasing intensity, governed by the BCS coherence factors u and v. That back-bending of the dispersion beyond k-Fermi, observed directly in Bi2212 ARPES data, is the direct signature of particle-hole mixing, and it's what lets you say with confidence that you're looking at a genuine pairing gap rather than, say, a charge density wave gap, which would produce a superficially similar-looking dip but through a completely different mechanism, namely folding the band back by a new periodicity instead of mixing particle and hole character."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's actually contrast that with a density wave example, since the course outline explicitly invites density-wave materials as an option too."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good instinct. The layered dichalcogenide two-H niobium diselenide is a lovely case, because it hosts both a charge density wave, below about thirty three kelvin, and superconductivity, below about seven point two kelvin, in the same material, and ARPES can disentangle which parts of the Fermi surface participate in which instability. The charge density wave opens because part of the hexagonal Fermi surface is reasonably well nested, meaning you can translate a chunk of the Fermi surface onto another chunk by the charge density wave's own wavevector, and that drives a divergence in the charge susceptibility."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the superconductivity on top of that?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Here's the fun part: very high resolution, low temperature ARPES on niobium diselenide shows the superconducting gap opens on the main, niobium-derived hexagonal Fermi surface sheet, with a gap around one milli-electron-volt, but a separate, smaller selenium-derived Fermi surface pocket shows essentially no gap at all, within experimental resolution. That's direct, momentum-resolved proof that superconductivity in this material is sheet selective: different parts of the Fermi surface, built from different orbitals, participate very differently in the pairing, something you simply could not learn from a bulk, momentum-averaged probe like specific heat or tunneling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a genuinely beautiful use of the momentum resolution, going beyond what the cuprate story alone would teach you."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And there's an even more dramatic density-wave example worth a quick mention: 1T-tantalum disulfide, where a charge density wave transition from a quasi-commensurate to a fully commensurate phase is accompanied by electrical resistivity jumping by more than an order of magnitude. ARPES shows why: in the commensurate phase, the valence band splits into three sub-bands by the new superlattice potential, and the topmost sub-band, which simple counting says should be half filled and cross the Fermi level, is instead gapped, with correlations splitting it into a filled lower Hubbard band and an empty upper Hubbard band. So the resistivity jump reflects a genuine charge density wave triggered Mott transition, visible directly as a correlation gap in the ARPES spectra, something band theory alone would never predict."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a nice full circle back to the self-energy and quasiparticle weight discussion from earlier: a real material where correlations completely destroy the coherent quasiparticle peak and open a many-body gap, visible directly in momentum space."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. And I think that's a good place to bring it all together."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's do the final recap, then."
+    },
+    {
+      "speaker": "Ava",
+      "text": "ARPES, at its core, is energy and momentum conservation applied to the photoelectric effect: measure kinetic energy and emission angle, and because the parallel momentum is conserved across the surface, you directly read off the binding energy and in-plane crystal momentum of the electron that used to be inside the solid. The three-step model, absorption with crystal momentum conservation via reciprocal lattice vectors, transport limited by a few-angstrom inelastic mean free path, and escape through the surface barrier, explains why ARPES is exquisitely surface sensitive, why cleavable layered materials are its favorite subjects, and why two dimensional systems are both easiest to interpret and give the cleanest lifetime information."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And once you go beyond independent electrons, the measured intensity becomes, up to matrix elements and the Fermi function, a direct picture of the one-particle spectral function, the same object theorists compute from the many-body Green's function. Quasiparticle weight Z, self-energy real and imaginary parts, Fermi liquid lifetimes, electron-phonon kinks, and genuine many-body gaps, superconducting, pseudogap, or density-wave-driven Mott gaps, are all directly visible as features in that spectral function, mapped out point by point across the Brillouin zone."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And experimentally, that's only become possible because of the relentless improvement in resolution, meV-scale energy resolution, fraction-of-a-degree angular resolution, delivered by tunable, polarized synchrotron beamlines like the ones at the Swiss Light Source, feeding modern hemispherical analyzers with parallel, two dimensional detection. That's the whole story: a hundred-and-twenty-year-old effect, turned by better and better instrumentation into the most direct window we have onto the electronic structure, and the many-body physics, of real correlated solids."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Great place to stop. Thanks, Ava, this one's going to change how I look at every ARPES figure in a paper from now on."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the whole point of the lecture. See you next week on arXiv Morning, Nano and Correlated."
+    }
+  ]
+}

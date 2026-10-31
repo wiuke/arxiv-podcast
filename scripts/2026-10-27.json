@@ -1,0 +1,515 @@
+{
+  "date": "2026-10-27",
+  "format": "dialogue",
+  "n_papers": 52,
+  "episode_title": "Moiré excitons read by graphene, chiral pairing next to a Wigner crystal, and compressing quantum Hall images",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October twenty seventh, and the archive dropped about fifty-two new papers overnight."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good crop for us today. We've got graphene acting as a near-field spectrometer for moiré excitons, a case for chiral superconductivity being born right next to a Wigner crystal in rhombohedral graphene, and a very different idea — using data compression to quantify how complicated a quantum Hall image actually looks. Plus a nonlinear quantum Hall theory and a defect study in molybdenum ditelluride."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the one that's most squarely in our backyard — paper one, momentum-selective graphene spectroscopy of moiré excitons, Wakabayashi."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, so the premise: in a twisted tungsten diselenide on molybdenum diselenide heterobilayer, moiré excitons are these individually localized states, and basically everything we know about them comes from far-field photoluminescence."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which only ever samples momentum near zero — the light cone. A photon at one-point-three-five electron-volts carries an in-plane momentum two orders of magnitude smaller than the moiré reciprocal vector. So far-field optics is blind to almost the entire momentum texture the moiré potential imprints on the exciton."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The trick here is graphene. Energy transfer to a nearby graphene sheet weights momentum as q-cubed times an exponential that depends on the spacer thickness z. For a few nanometers of h-B-N, that kernel peaks right at the moiré momentum scale — tenths of an inverse nanometer. So graphene is reading a totally different window of the same exciton wavefunction."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they don't just slap a generic form factor on it — they build the actual vector transition polarization for each moiré state from the registry-dependent dipole texture, first-principles-informed, and plug that same object into both the photon and the graphene decay rates."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The payoff is almost unsettling. Within their C-three symmetric model, two of the six lowest moiré states — called p-plus and d-minus — are exactly dark at normal incidence. Zero oscillator strength at q equals zero, by symmetry. You'd never see them in a PL spectrum."
+    },
+    {
+      "speaker": "Ava",
+      "text": "But to graphene, at five nanometers spacing, the p-plus state transfers energy at eighty-eight percent of the bright ground state's rate. So a state that's essentially invisible optically is almost as loud as the brightest line once you ask graphene instead of a photon."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And here's the part I like: that dark-state graphene rate depends on the sign of a relative phase between the two circular polarization components of the dipole texture — a quantity that's completely invisible to far-field emission, because emission only cares about magnitudes near q equals zero."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They pin that sign down with a first-principles calculation of the aligned bilayer — consistent across three different functionals and multiple interlayer distances — and get beta equals zero. Flip the sign and that eighty-eight percent contrast drops to twenty-one percent. So graphene genuinely tests something optics structurally cannot."
+    },
+    {
+      "speaker": "Leo",
+      "text": "There's also a distance story. The ranking of which moiré state quenches graphene fastest actually flips as you change the spacer thickness, because the near-field window slides from large momentum toward small momentum as z grows. Local distance exponents at ten nanometers range from three to five-point-five across the six states — way more spread than the universal exponent of four you'd get from any point-dipole model."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's the catch? Mostly experimental difficulty, not a flaw in the physics. The dark p-plus and d-minus states are degenerate doublets, and any C-three-breaking disorder mixes them at order one unless you apply a protecting splitting — something like a magnetic field — that's bigger than the disorder-induced mixing but still resolvable above the linewidth."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And isolating the graphene channel from the measured lifetime needs a calibrated spacer series or a gated lifetime difference, since the reachable gate modulation of the graphene Fermi level is only a few percent here. So it's a real but fiddly protocol — stepped h-B-N spacers, a compensated graphene gate, and polarization-resolved detection to catch the doublet splitting."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Still, as a concept it's elegant: graphene proximity as a coarse-grained, momentum-resolved spectrometer for exactly the dark states that optics can never touch."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Next up, something with a more transport flavor but still squarely about correlated 2D electron physics — paper two, chiral superconductivity adjacent to a Wigner crystal in rhombohedral graphene, Wang."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is motivated directly by recent transport experiments in rhombohedral multilayer graphene showing a Wigner crystal at zero magnetic field sitting right next to a superconducting region — and that superconductor shows signatures consistent with chiral pairing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the question is whether that's a coincidence of two competing strong-correlation phases, or whether the same correlations that want to crystallize the electrons also generate the pairing glue in the neighboring metal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They work with ABCA-stacked rhombohedral tetralayer graphene, eight-band continuum model, gate-screened Coulomb interaction. Self-consistent Hartree-Fock finds a commensurate triangular Wigner crystal with exactly one doped electron per emergent unit cell."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And interestingly, the Hartree term alone penalizes any charge modulation — it's exchange that does the heavy lifting in stabilizing the crystal. That's worth remembering before we even get to pairing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "For the metallic side, they don't just do RPA. Plain polarization-bubble screening — the usual Kohn-Luttinger-style treatment — gives no pairing instability at all for their dielectric constant of fifteen."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So they build something more elaborate: a crossing-symmetric particle-hole vertex using coupled parquet and Bethe-Salpeter equations, which adds exchange ladder corrections on top of the direct screening and enforces the correct fermionic antisymmetry relations that plain RPA violates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Near the crystallization boundary, those enhanced particle-hole correlations generate an effective attraction in the Cooper channel, and the leading instability is chiral f-wave — a gap with winding number three around the Fermi contour, about zero-point-three-one-four milli-electron-volts at their representative point."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And crucially, this superconductivity only survives in a narrow metallic sliver right next to the crystal in the density-versus-displacement-field phase diagram — which is qualitatively the sleeve geometry seen experimentally."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's not nailed down? They're explicit that this is a pairing-instability calculation, not a transition-temperature calculation. Getting an actual T-c needs self-energy feedback and, in two dimensions, a proper treatment of phase fluctuations — the Berezinskii-Kosterlitz-Thouless scale, separate from the pairing scale itself."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Also worth flagging: their closure for the fully irreducible vertex is the simplest one — bare antisymmetrized Coulomb — borrowed from old liquid helium-three theory. Higher-order irreducible diagrams are explicitly left for future work."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Still, it's a nice mechanistic story: crystallization and chiral pairing aren't just sitting next to each other by accident, they're two faces of the same enhanced exchange correlations."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Staying in quantum Hall territory — paper five, second-harmonic bulk response of fractional quantum Hall fluids, Pimlott, Reiser, Hansson and Rostami."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is theory, responding to recent experiments that found a third-harmonic nonlinear Hall effect in graphene's quantum Hall regime, explained there by an edge-mode mechanism — counterpropagating chiral edge modes with nonlinear dispersion."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This paper asks: can you get a nonlinear Hall signal from the bulk instead, without invoking edge physics at all? They look at second order, not third, and they need broken inversion and rotational symmetry to allow it — think a tilted Dirac dispersion, like the type you'd use to model tungsten ditelluride."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Method: take a two-band massive, tilted Dirac model in a magnetic field, project it onto the single low-energy band while carefully keeping the projection-induced nonlinear light-matter couplings that usually get thrown away, then build those into a composite-boson Chern-Simons theory — essentially a field theory for the lowest Landau level and its Laughlin descendants."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The headline result: the nonlinear Hall resistivity vanishes exactly in the strict DC limit, but at finite frequency it keeps a clean filling-factor scaling, proportional to one over nu squared. Its real part grows as frequency over cyclotron frequency squared, the imaginary part linearly in that ratio."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And there's a neat cancellation: the Kohn-mode resonances — the cyclotron-like collective mode of the composite bosons — show up as poles in the second-order conductivity, but they cancel out once you invert everything into the resistivity. So the final nonlinear Hall resistivity is smooth across the frequency range they plot, no resonant blow-up."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The response is also strongly anisotropic, tied to the direction of the crystalline tilt axis relative to the current — which is itself a testable, non-generic signature of this specific symmetry-breaking mechanism."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Caveats: this is a clean, disorder-free, perturbative calculation valid deep in a quantum Hall plateau, assuming the gap is much larger than both the cyclotron and drive frequencies. They explicitly say that getting the width of the predicted nonlinear plateau in density would require bringing in disorder and localization, which they haven't done."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's a complementary bulk channel to the edge story, not a replacement — and a genuinely new finite-frequency handle on probing fractional quantum Hall fluids beyond DC transport."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Now for something conceptually different — paper three, information-theoretic entropy imaging of quantum matter, Wu, Cao, Lyu and collaborators."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This one isn't proposing a new material state, it's proposing a new way to look at an image. The question: given a single microscopy snapshot, how do you quantify how spatially complicated it is, without picking an order parameter first?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Their tool is lossless compression. Serialize the image along a Hilbert curve to preserve locality, run it through the L-Z-77 compression algorithm, and define the computable information density, or C-I-D, as the compressed bit length divided by the original length."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Mathematically, for a stationary ergodic source in the large-system limit, that compression ratio converges to the Shannon entropy rate. For finite real images they're honest that it's an operational estimator, not a literal thermodynamic entropy."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They test it on millikelvin microwave impedance microscopy of gated monolayer graphene, tracking real-space images across the nu equals one to two quantum Hall transition. As gate voltage sweeps through the transition, the C-I-D develops a pronounced peak right at the critical point, coincident with the emergence of a filamentary conducting network."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they reproduce that peak in a disordered Hofstadter model — same qualitative behavior in the local density of states maps, with the compression-based peak lining up with the correlation length and inverse participation ratio diagnostics computed independently."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Here's the part that's more than just a pretty correlation: they show the C-I-D peak is not simply a repackaging of the correlation length. In a classical site-percolation benchmark, the correlation length diverges at the known percolation threshold, but the C-I-D maximum sits measurably earlier — set by the pixel occupation statistics, not by connectivity."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They also construct what they call a multifractal decoy — a recursive quadrant shuffle that rearranges blocks of the image while leaving every multifractal exponent exactly unchanged. The shuffled image looks completely different, and the C-I-D changes accordingly. That's a clean, constructive proof that compression captures geometric arrangement information that standard multifractal analysis, the usual tool for localization physics, structurally cannot see."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The control experiment is the one that really anchors the claim for our purposes: they repeat the whole analysis across the trivial band gap at charge neutrality in an angle-aligned molybdenum diselenide on tungsten disulfide moiré heterobilayer. That's a sharp conducting-to-insulating crossover with no quantum Hall localization physics behind it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the pronounced C-I-D enhancement just doesn't show up there, even though the real-space images pass through a comparably disordered, puddle-filled intermediate regime. So the quantum Hall signal isn't a generic consequence of opening a gap — it's tied to the specific scale-spanning critical network."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Caveat worth keeping in mind: absolute C-I-D values depend on image size, pixel discretization, and compressor choice, so the authors stress you should only compare relative changes within one consistently processed series, not raw numbers across different datasets or instruments."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They also show it transfers to fractional quantum Hall transitions, resolving isolated fractional puddles with a sliding-window version of the analysis, and even port the method to electron microscopy of charge-density waves and X-ray imaging of skyrmions. So as a diagnostic it's genuinely modality-agnostic — useful anywhere you have a sequence of real-space maps and a tuning knob."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive — paper four, nanoscale mapping of native defects in T-d phase molybdenum ditelluride and their impact on graphene heterostructures, Ryś and colleagues."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Pure scanning tunneling microscopy and spectroscopy here. They look at bare T-d molybdenum ditelluride, the orthorhombic phase that hosts type-two Weyl fermions, and then a graphene layer transferred on top."
+    },
+    {
+      "speaker": "Ava",
+      "text": "On the bare surface they find a high density of circular, hollow defects — on the order of four times ten to the minus two per square nanometer — which they attribute to tellurium vacancies, the most common low-energy point defect in this family of materials."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Spectroscopically, pristine molybdenum ditelluride shows a semimetallic, V-shaped differential conductance curve with faint states around minus zero-point-zero-nine and plus zero-point-one-three volts. Right over a vacancy, the conductance below the Fermi level gets suppressed, but no new sharp resonance appears."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Their interpretation is that the vacancy redistributes the existing molybdenum-tellurium hybridized spectral weight rather than creating a brand new localized state — different from the gap-opening, strongly disruptive vacancies reported in some other tellurides like tungsten ditelluride."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Now add graphene on top, with a measured twist angle around nine degrees to the underlying lattice. The molybdenum ditelluride spectral fingerprints survive right through the graphene layer — same characteristic features, just better resolved, with less measurement noise, probably because the graphene shields the tip from unstable tunneling into the softer telluride surface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the defect signature is weaker under graphene: the conductance suppression only kicks in below about minus zero-point-three volts, instead of minus zero-point-one volts in the bare material. So graphene is partially screening the defect potential."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Importantly, they see no sign of graphene doping or charge transfer from these defects — this is a purely local, weak perturbation, not something that's going to dominate carrier scattering in a real device channel at the densities they studied."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's a solid, if narrow, materials-characterization result: graphene on T-d molybdenum ditelluride looks like a fairly defect-tolerant platform, at least for this specific native vacancy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Quick round of briefs now. Paper six, helicity-selective electron-phonon coupling between parity-time partner states in two-H bilayer molybdenum disulfide, Sun and Yan."
+    },
+    {
+      "speaker": "Ava",
+      "text": "A computational study showing that chiral phonon doublets can couple helically to parity-time-degenerate electronic states in bilayer molybdenum disulfide, even though the time-reversal-like symmetry forbids any single chiral phonon from doing so alone. The proposed use is as a selection-rule tool to resolve otherwise degenerate intravalley electronic states."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven, emergent parafermions with tunable localization in a quantum circuit network, Karki and Mitchell."
+    },
+    {
+      "speaker": "Ava",
+      "text": "A triangular triple quantum-dot device where geometric frustration of Kondo screening produces an emergent Z-three parafermion shared among the three dots. The authors show gate voltages can relocate this non-Abelian object to any pair of dots, and that it survives both weak-tunneling and strongly-coupled regimes — a scalable building block for anyon networks, at least in theory."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight, direct observation of a spin-polarized surface Dirac gap in the antiferromagnetic topological insulator neodymium bismuthide."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Using high-resolution spin- and angle-resolved photoemission, they resolve a seventeen milli-electron-volt gap at the surface Dirac point, in good agreement with the twelve milli-electron-volt theoretical prediction — and they show the gap only opens once surface magnetic order sets in. That's a cleaner result than the long-standing, much-debated discrepancy in manganese bismuth telluride, where the observed gap is far smaller than theory predicts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine, nodeless d-wave pairing in monolayer iron selenide revealed by intra-unit-cell Josephson interferometry."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They use a superconducting niobium STM tip to map the Josephson response at atomic resolution across monolayer iron selenide on strontium titanate. Despite a fully gapped quasiparticle spectrum, they find nodal lines in the Josephson signal along the iron-selenium bonds, caused by destructive interference between opposite-sign pairing components — a nice local, phase-sensitive fingerprint of nodeless d-wave order."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And last, paper ten, zeptojoule microwave calorimetry with nanosecond recovery in graphene."
+    },
+    {
+      "speaker": "Ava",
+      "text": "A graphene Josephson-junction calorimeter calibrated directly with nanosecond pulses, measuring a switching energy of about eighteen milli-electron-volts, or two-point-nine zeptojoules, with a nineteen-and-a-half nanosecond recovery time. The authors trace the gap between this and the ideal theoretical sensitivity to an electronic heat capacity about twelve times larger than expected, and electron-phonon coupling roughly fifty times stronger — useful groundwork for anyone trying to push graphene bolometers toward their theoretical limits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the roundup for today."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Moiré excitons hiding from light but not from graphene, superconductivity born at the edge of crystallization, and compression turning a single microscope image into a quantitative probe of criticality. See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.33989",
+      "title": "Momentum-selective graphene spectroscopy of moiré excitons",
+      "authors": [
+        "Katsunori Wakabayashi"
+      ],
+      "abstract": "Far-field photoluminescence probes only the light-cone corner of an exciton's momentum content, whereas energy transfer to nearby graphene integrates in-plane momenta up to the inverse spacer thickness 1/z. For a WSe2/MoSe2 heterobilayer we build the transition polarization \\bmPn(\\qv) of each localized moiré exciton from the registry-dependent vector dipole texture and use each \\bmPn for both baths. The two baths rank the states differently: the graphene-rate ratios differ from the optical ones, their ordering inverts with spacer thickness, and the distance exponents at z=10\\,nm spread by more than two units. These ratios are independent of the transition-dipole prefactor. Within the C3-symmetric leading-harmonic model the chiral p_+ and d_- states are also dark at normal incidence yet transfer to graphene at rates comparable to the bright ground state. Their graphene rate depends on the sign of the texture phase, a quantity invisible in far-field emission, which we determine from first principles. In a device this prediction requires a splitting, larger than the symmetry-breaking mixing, that protects the chiral partners. Graphene proximity thus acts as a momentum-selective near-field probe of moiré excitons, and we propose its use as a practical spectroscopy.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.33989",
+      "tier": "deep",
+      "why": "Proposes graphene near-field energy transfer as a momentum-resolved spectroscopy for dark/chiral moiré excitons in WSe2/MoSe2, directly extending the toolkit for probing optically dark states central to your research."
+    },
+    {
+      "id": "2610.33808",
+      "title": "Chiral Superconductivity Adjacent to a Wigner Crystal in Rhombohedral Graphene",
+      "authors": [
+        "Ke Wang"
+      ],
+      "abstract": "Can the correlations favoring electron crystallization also generate superconductivity in the neighboring metal? We investigate this possibility in rhombohedral tetralayer graphene with repulsive Coulomb interactions. Self-consistent Hartree–Fock calculations identify a commensurate triangular Wigner-crystal state. To investigate pairing on the metallic side, we construct a crossing-symmetric particle–hole vertex using coupled parquet and Bethe–Salpeter equations, incorporating exchange vertex corrections beyond polarization-bubble screening. Near crystallization, the enhanced electronic correlations generate an effective attraction favoring chiral f-wave pairing. Superconductivity is confined to a narrow metallic region adjacent to the crystal, qualitatively consistent with the superconducting sleeve observed near an insulating regime in rhombohedral graphene. These results connect the emergence of chiral pairing and its location in the phase diagram to the electronic correlations favoring crystallization.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.33808",
+      "tier": "deep",
+      "why": "Shows how electronic correlations driving Wigner crystallization in rhombohedral tetralayer graphene can also seed chiral f-wave superconductivity nearby, linking two of your core interests (Wigner crystals and correlated 2D electronic phases)."
+    },
+    {
+      "id": "2610.35790",
+      "title": "Information-theoretic entropy imaging of quantum matter",
+      "authors": [
+        "Chen Wu",
+        "Leonard W. Cao",
+        "Lingyuan Lyu",
+        "Liam Cohen",
+        "Jiahui Nie",
+        "Can Uzundal",
+        "Yujia Hu",
+        "Quanjin Wang",
+        "Ziying Yan",
+        "Sneh Pancholi",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Feng Wang",
+        "Andrea F. Young",
+        "Tarun Grover",
+        "Monica T. Allen"
+      ],
+      "abstract": "Phase transitions can generate intricate spatial organization invisible to spatially averaged probes, yet quantitative measures of this organization remain limited. Here we develop \"entropy imaging,\" an information-theoretic technique that harnesses lossless compression to quantify spatial complexity, predictability, and order in quantum materials. Using this approach, emergent spatial textures can be imaged and converted into an experimentally-accessible observable: the computable information density (CID), a compression-based measure of information complexity that approaches the Shannon entropy rate in the large-system limit. Applied to millikelvin microwave impedance microscopy of graphene, the method reveals a pronounced maximum in the CID near quantum Hall transitions, a quantitative measure of the information-rich spatial organization of the critical landscape. A disordered Hofstadter model reproduces this behavior and shows that the CID can identify the quantum critical point from a sequence of images, without ensemble averaging over disorder realizations. The same framework tracks fractional quantum Hall transitions and resolves isolated fractional puddles that coexist with a disordered background. By contrast, the trivial band-edge crossover in a MoSe2/WS2 moiré heterobilayer exhibits qualitatively different behavior, suggesting that the pronounced CID enhancement observed at the quantum Hall critical point is not simply a generic feature of a conductive-insulating crossover. We further show that the geometric information encoded in CID is not reducible to a correlation length, and it can even distinguish spatial textures with identical multifractal statistics. Together, these results establish lossless compression as a framework for quantifying emergent spatial organization in quantum materials, with portability across imaging modalities and physical systems.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.35790",
+      "tier": "deep",
+      "why": "Introduces an information-theoretic 'entropy imaging' technique applied to microwave impedance microscopy of graphene that quantitatively tracks spatial complexity across integer and fractional quantum Hall transitions, including isolated fractional puddles and a moiré heterobilayer comparison."
+    },
+    {
+      "id": "2610.34924",
+      "title": "Nanoscale mapping of native defects in Td-MoTe2 and their impact on graphene-based van der Waals heterostructures",
+      "authors": [
+        "Wojciech Ry\\'s",
+        "Iaroslav Lutsyk",
+        "Mindaugas Lukosius",
+        "Przemys{\\l}aw Przybysz",
+        "Pawe{\\l} D\\k{a}browski",
+        "Maciej Rogala",
+        "Pawe{\\l} Krukowski",
+        "Pawe{\\l} J. Kowalczyk"
+      ],
+      "abstract": "We investigate native defects and their impact on the electronic structure of Td-MoTe2 and graphene/Td-MoTe2 van der Waals heterostructures using scanning tunnelling microscopy and spectroscopy. STM reveals a high density of circular, hollow surface defects that we attribute to Te vacancies. STS on pristine MoTe2 shows semimetallic, V-shaped dI/dV spectra with subtle low-energy states. The vacancies suppress the tunnelling conductance below the Fermi level without introducing new sharp defect-related resonances, consistent with a vacancy-induced redistribution of Mo-Te spectral weight rather than the appearance of new electronic states. In the heterostructure, graphene preserves these MoTe2 fingerprints with no noticeable graphene doping or charge transfer. Our results demonstrate that isolated native Te vacancies act as spectroscopically weak perturbations to the low-energy electronic structure of graphene. The graphene overlayer further screens their impact on the electronic structure, making graphene/Td-MoTe2 heterostructures intrinsically tolerant to such interface defects.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.34924",
+      "tier": "deep",
+      "why": "STM/STS mapping of native Te-vacancy defects in Td-MoTe2 and their (weak) impact on graphene/MoTe2 van der Waals heterostructures speaks directly to interface characterization relevant to your heterostructure optics work."
+    },
+    {
+      "id": "2610.33606",
+      "title": "Second-Harmonic Bulk Response of Fractional Quantum Hall Fluids",
+      "authors": [
+        "J. Luke Pimlott",
+        "Pablo Reiser",
+        "T. Hans Hansson",
+        "Habib Rostami"
+      ],
+      "abstract": "We develop a bulk description for the second-harmonic Hall response of fractional quantum Hall fluids with broken inversion and rotational symmetries, distinct from edge theories based on nonlinear edge-mode dispersion. By projecting a tilted massive Dirac model onto a single low-energy band, we construct a composite-boson Chern–Simons theory for the lowest Landau level that retains projection-induced nonlinear electromagnetic couplings. The nonlinear Hall resistivity vanishes in the dc limit, while its finite-frequency response retains the characteristic filling-factor dependence \\rho(2)TLL\\propto\\nu-2, where \\nu is the Landau-level filling factor. At low frequency, its real and imaginary parts scale as (\\omega/\\omegac)2 and \\omega/\\omegac, respectively, where \\omegac is the cyclotron frequency, and the response is strongly anisotropic with respect to the crystalline tilt axis. Notably, the Kohn-mode resonances present in the second-order conductivity cancel in the nonlinear Hall resistivity. These results establish finite-frequency nonlinear transport as a bulk probe of fractional quantum Hall fluids without requiring nonlinear edge-mode dispersion.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.33606",
+      "tier": "deep",
+      "why": "Develops a bulk composite-boson theory for second-harmonic Hall response of fractional quantum Hall fluids, giving a new finite-frequency nonlinear probe of FQH physics beyond edge-mode theories."
+    },
+    {
+      "id": "2610.34830",
+      "title": "Helicity-Selective Electron-Phonon Coupling Between PT-Partner States in 2H-bilayer MoS2",
+      "authors": [
+        "Fred Sun",
+        "Jia-An Yan"
+      ],
+      "abstract": "Rotational symmetry (Cn) constrains chiral phonons, but how other symmetries affect their interactions remains largely unexplored. We perform a theoretical and computational study of chiral phonon coupling to parity-time (PT)-degenerate electron doublets in 2H-bilayer MoS2. Although PT suppresses phonon singlet chirality, chiral phonon doublets can helically interact with PT-partner electronic states via a mechanism similar to pseudospin. Selection rules are then analyzed with the interplay of PT and C3. Our computational results of 2H-bilayer MoS2 suggest chiral phonons may be used to resolve intravalley electronic states in PT systems.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.34830",
+      "tier": "brief",
+      "why": "Analyzes helicity-selective chiral-phonon coupling to PT-degenerate electronic doublets in bilayer MoS2, offering a new symmetry-based readout scheme for TMD valley/pseudospin states."
+    },
+    {
+      "id": "2610.33815",
+      "title": "Emergent parafermions with tunable localization in a quantum circuit network",
+      "authors": [
+        "D. B. Karki",
+        "Andrew K. Mitchell"
+      ],
+      "abstract": "\\noindent Quantum circuit simulators with hybrid metal-semiconductor dots provide a versatile platform to realize Kondo anyons. These arise at critical points driven by frustrated Kondo screening of dot charge degrees of freedom and have been demonstrated experimentally in linear circuits of one or two dots. Here we study a triangular triple dot device, where geometric frustration gives rise to an emergent \\mathbbZ3 parafermion shared among the three dots. We show that the parafermion can be tunably relocated to any pair of dots by applying gate voltages, and is supported in both the weak-tunneling `Kondo limit' and the strong transmission `quasiballistic' regime. The critical states survive strong coupling to external leads and other dots, establishing the basis for a scalable and reconfigurable network architecture in which non-Abelian excitations can be realized and manipulated.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.33815",
+      "tier": "brief",
+      "why": "Demonstrates a tunable, relocatable emergent Z3 parafermion in a triangular triple-quantum-dot circuit, a concrete non-Abelian-anyon platform complementary to quantum Hall anyon physics."
+    },
+    {
+      "id": "2610.35353",
+      "title": "Direct observation of a spin-polarized surface Dirac gap in the antiferromagnetic topological insulator NdBi",
+      "authors": [
+        "Yuto Fukushima",
+        "Hiroyuki S. Suzuki",
+        "Masayuki Ochi",
+        "Takuma Nishida",
+        "Toshiya Ikenobe",
+        "Hiraku Saito",
+        "Yuto Kinoshita",
+        "Kaishu Kawaguchi",
+        "Hiroaki Tanaka",
+        "Ayumi Harasawa",
+        "Takushi Iimori",
+        "Koichiro Yaji",
+        "Masashi Tokunaga",
+        "Taro Nakajima",
+        "Kiyohisa Tanaka",
+        "Takahiro Morimoto",
+        "Ryo Mori",
+        "Takeshi Kondo"
+      ],
+      "abstract": "A gapped Dirac cone in antiferromagnetic topological insulators (AFM-TIs) is essential for realizing the quantized anomalous Hall effect, yet its intrinsic magnitude remains controversial. In the prototypical AFM-TI MnBi2Te4, however, the observed Dirac gap is significantly smaller than theoretical predictions or nearly absent, highlighting a long-standing discrepancy. Here we demonstrate that NdBi hosts a spin-polarized topological surface Dirac cone with a sizable gap of 17 meV at the Dirac point, in excellent agreement with density functional theory predictions (12 meV). This direct observation is enabled by high-resolution 7 eV laser-based spin- and angle-resolved photoemission spectroscopy, which unambiguously disentangles the spin-polarized surface Dirac cone from bulk-derived states. Furthermore, through temperature dependence and controlled surface contamination, we establish a direct linkage between surface magnetism and the Dirac gap, demonstrating that the gap opens only in the presence of surface magnetic order. These results provide definitive spectroscopic evidence for an intrinsic Dirac gap in AFM-TIs and establish NdBi as a model platform to resolve the long-standing discrepancy between experiment and theory in AFM-TIs.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.35353",
+      "tier": "brief",
+      "why": "Spin-ARPES directly resolves a sizable, magnetism-linked Dirac gap in the antiferromagnetic topological insulator NdBi, resolving a long-standing discrepancy relevant to quantized anomalous Hall physics in AFM-TIs."
+    },
+    {
+      "id": "2610.34382",
+      "title": "Nodeless d-wave pairing in monolayer FeSe revealed by intra-unit-cell Josephson interferometry",
+      "authors": [
+        "Runxin Li",
+        "Yuchen Huo",
+        "Jiong Mei",
+        "Ming-Qiang Ren",
+        "Miaomiao Wang",
+        "Quanxing Wei",
+        "Fengyu Yao",
+        "Maowen Zheng",
+        "Qing Qu",
+        "Cui Ding",
+        "Hongtao Yuan",
+        "Zhuoyu Chen",
+        "Wei-Qiang Chen",
+        "Kun Jiang",
+        "Qi-Kun Xue",
+        "Yu-Jie Sun"
+      ],
+      "abstract": "The Josephson effect provides a direct phase-sensitive probe of superconducting order and has played a central role in identifying unconventional pairing symmetries1-6. Conventional Josephson interferometry, however, extracts phase information through engineered junction geometries and crystallographic orientations, rather than by resolving the internal phase structure of the pair state within a single unit cell. Here, we use a superconducting Nb tip to realize atomic-scale Josephson interferometry in monolayer FeSe/SrTiO3. Despite a fully gapped quasiparticle spectrum, the local Josephson response exhibits a striking intra-unit-cell pattern, with maxima centred on Fe-Fe bonds and robust nodal lines along the Fe-Se directions. We show that these nodal lines arise from destructive interference between Josephson tunnelling amplitudes associated with opposite-sign pairing components. Microscopic calculations reproduce the observed spatial pattern and identify it as a fingerprint of nodeless d-wave pairing. Our results establish intra-unit-cell Josephson interferometry as a local phase-sensitive probe of pairing symmetry in unconventional superconductors.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.34382",
+      "tier": "brief",
+      "why": "Atomic-scale Josephson interferometry on monolayer FeSe/SrTiO3 reveals an intra-unit-cell nodal pattern that fingerprints nodeless d-wave pairing, a striking new phase-sensitive probe technique for unconventional superconductors."
+    },
+    {
+      "id": "2610.33414",
+      "title": "Zeptojoule Microwave Calorimetry with Nanosecond Recovery in Graphene",
+      "authors": [
+        "Seunghan Lee",
+        "Woochan Jung",
+        "Jayeon Kim",
+        "Dongsung T. Park",
+        "Seong Jang",
+        "Seongeun Jeon",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Jong-Chul Park",
+        "Philip Kim",
+        "Kin Chung Fong",
+        "Gil-Ho Lee"
+      ],
+      "abstract": "Graphene calorimeters are predicted to combine extreme energy sensitivity with rapid thermal recovery, yet experiments remain far from ideal estimates. Here, we directly calibrate a graphene Josephson-junction microwave calorimeter using nanosecond pulses and independently determine the thermal parameters of the same operating device. At 110 mK, calibrated pulse measurements yield a characteristic switching-energy scale of 18.1 meV (2.90 zJ), while time-resolved two-pulse thermometry gives an intrinsic relaxation time of 19.5 ns. Pulse-width-dependent calorimetry and bolometric thermometry show that the electronic heat capacity is 12.4 times and the electron-phonon coupling is approximately 50 times larger than ideal estimates. A thermal model using these measured parameters predicts 21.2 meV, quantitatively reproducing the observed switching response. These results identify the microscopic origin of the sensitivity gap in graphene calorimeters and establish a self-consistent calibration framework for ultrafast nanoscale thermal detectors.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.33414",
+      "tier": "brief",
+      "why": "Careful calibration of a graphene Josephson-junction microwave calorimeter pinpoints the microscopic origin (enhanced heat capacity and electron-phonon coupling) of the gap between ideal and achieved zeptojoule-scale sensitivity in graphene-based quantum sensors."
+    }
+  ]
+}

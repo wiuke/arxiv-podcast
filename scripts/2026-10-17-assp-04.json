@@ -1,0 +1,376 @@
+{
+  "date": "2026-10-17",
+  "id": "assp-04",
+  "format": "dialogue",
+  "episode_title": "Listening to Nuclei: NMR as a Local Probe of Magnetism, Ferroelectricity, and Unconventional Superconductivity",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Welcome back. This is Advanced Solid State Physics at ETH Zurich, Professor Zheludev's autumn course, and today's student topic is nuclear magnetic resonance. Not NMR as the thing that gives you a spectrum in organic chemistry lab, but NMR as a condensed matter tool: a way to sit a tiny magnetic compass needle inside a crystal and ask it what the electrons and the lattice around it are doing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "I've used optical probes a lot more than NMR in our group, so I'm coming at this mostly from the outside. Where do we start?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "We start with the simplest possible picture: a nuclear spin as a little magnetic moment sitting in a local magnetic field. Forget solids for a second. Take a free nucleus with spin I, magnetic moment proportional to I through a gyromagnetic ratio gamma. Put it in a static field B zero. The energy levels split into two-I-plus-one equally spaced levels, Zeeman levels, separated by h-bar gamma B zero. That's it, that's the whole starting Hamiltonian."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's just a magnetic version of the two-level atom, except with more than two levels if the spin is bigger than one half."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. And classically, a magnetic moment in a field doesn't just align, it precesses, like a gyroscope, at the Larmor frequency, gamma times B zero. For a proton that's about forty-three megahertz per tesla. So in a typical solid-state NMR magnet, somewhere between five and fifteen tesla, you're probing at frequencies of order one hundred to a few hundred megahertz. That's deep in the radio-frequency range, which is why NMR hardware looks like ham-radio electronics, not microwave or optical equipment."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why so much lower than, say, electron spin resonance? I'd guess because the nuclear magneton is so much smaller than the Bohr magneton."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, by the ratio of electron to proton mass, about a factor of two thousand. That has a very important practical consequence: the thermal polarization of nuclear spins is tiny. At room temperature, with a Larmor frequency of order one hundred megahertz, the Zeeman splitting divided by k-B T is of order ten to the minus five. So out of your huge number of nuclei, only about one in one hundred thousand actually contributes a net moment to the signal. NMR is a beautifully clean, quantitative probe, but it is fundamentally a low-sensitivity technique, and a lot of the art of the experiment is just getting a usable signal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That already explains why people use big single crystals or several grams of aligned powder for these measurements, like in the review by Barrett and Slichter we're going to come back to."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the kind of detail we'll meet again. So, step one: nuclear spin in a field precesses at the Larmor frequency, set by gamma, and the signal is weak because the equilibrium polarization is weak. Step two, and this is where solid-state physics actually enters: that field at the nucleus is not just the external field you dialed in. It has several pieces."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let me guess. There's the applied static field, there's whatever radio-frequency field you're pulsing with to manipulate the spins, there's the field from other nearby nuclear moments, and then there's whatever field the electrons around that nucleus produce."
+    },
+    {
+      "speaker": "Ava",
+      "text": "All four, yes. In solid state physics we care most about the last one: the hyperfine coupling between the nuclear spin and unpaired electron spins, whether those are conduction electrons in a metal or localized moments on a magnetic ion. That hyperfine field is the whole reason NMR became a condensed-matter workhorse rather than just a chemistry tool. It turns every magnetic nucleus into a tiny, local magnetometer sitting right next to the electrons you actually want to understand."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And I'd guess there are two qualitatively different things you can learn from that field: what it is, on average, and how it fluctuates in time."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That is precisely the organizing principle of the whole subject. The static, time-averaged part of the hyperfine field shifts and splits the resonance line: that gives you the lineshape, the Knight shift, the quadrupole splitting. The fluctuating part of the field drives transitions between nuclear spin states, and that is what determines the relaxation times, T one and T two. Same microscopic coupling, two completely different pieces of physics, and together they are remarkably information-rich."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's do the static part first then, since that's the more familiar lineshape story."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good. In a metal, the conduction electrons have a Pauli spin susceptibility, chi-S. Even without any magnetic order, that spin susceptibility is nonzero because the applied field polarizes the electron spins slightly. Those polarized electron spins create an extra magnetic field right at the nucleus, through the hyperfine coupling, usually dominated by the Fermi contact term, which is proportional to the electron spin density right at the nuclear position. The nucleus therefore sees a total field that's the applied field, plus a small correction proportional to chi-S. That correction shifts the resonance frequency. This is the Knight shift."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the Knight shift is basically a local, element-specific measurement of the static spin susceptibility, weighted by how much electron density actually touches that particular atom."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's the key advantage over a bulk susceptibility measurement. If your material has several inequivalent atomic sites, like copper, oxygen, and yttrium in the high-temperature superconductors, you can measure the Knight shift separately at each site and ask whether they're all tracking the same electronic degree of freedom, or different ones. Typical Knight shifts are small, fractions of a percent up to a couple of percent of the resonance frequency, because the Pauli susceptibility itself is a small, temperature-independent number in an ordinary metal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, and now the fluctuating part, which gives you T one, the spin-lattice relaxation time."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Think of it this way. The nuclear spin sits in its Zeeman levels. For it to flip and relax back toward thermal equilibrium, something has to supply or absorb exactly the Larmor energy, and that something has to couple through the hyperfine interaction and act transverse to the static field. In a metal, that something is the sea of conduction electrons, whose spins are constantly fluctuating because of their own dynamics. The formal statement, due to Moriya, is that one over T one is proportional to the imaginary part of the dynamical electron spin susceptibility, evaluated essentially at zero frequency, since the Larmor frequency is minuscule on electronic energy scales, summed over all the electron momenta, weighted by the hyperfine coupling at that momentum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So T one is listening to the electrons' own noise spectrum, right at zero frequency, essentially the DC limit of their fluctuations."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely, and this is a really deep point, worth sitting with: T one is a near-zero-energy, but momentum-integrated probe of exactly the same susceptibility that inelastic neutron scattering measures at finite energy and resolved momentum. NMR and neutrons are complementary windows onto the same correlation function."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And for an ordinary metal, free electrons, this gives the Korringa law, I remember that name from the outline."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. For a simple, nearly free-electron metal, both the Knight shift and the relaxation rate trace back to the same density of states at the Fermi level. Working through the Fermi golden rule for electron-nucleus scattering, you find that one over T one T is a constant, and that constant turns out to be proportional to the Knight shift squared. That combination, one over T one T equals a constant times Knight shift squared, is the Korringa law, and the Barrett and Slichter review notes it's been experimentally verified in aluminum from one kelvin all the way up to nine hundred thirty kelvin. It's one of the real triumphs of simple metal NMR."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So Korringa behavior is the fingerprint of a boring, Fermi-liquid metal. Which means violations of Korringa behavior are a built-in diagnostic for something more interesting going on electronically."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the mindset you want walking into any NMR paper. Keep that in your back pocket, because it's going to be the single most useful idea when we get to the cuprates later. Now, before we go there, let's finish the toolkit: the electric quadrupole interaction."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is for nuclei with spin greater than one half, because only those can have a non-spherical charge distribution."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. A spin one-half nucleus is, as far as its charge distribution goes, perfectly spherical, by symmetry; it simply can't support a quadrupole moment. But spin one, three-halves, and higher nuclei have an egg-shaped charge distribution, described by an electric quadrupole moment. That quadrupole moment couples not to the electric field, but to the gradient of the electric field, the curvature of the electrostatic potential at the nuclear site, produced by all the surrounding ions and the local electron cloud."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So instead of a compass needle in a magnetic field, picture a slightly elongated nucleus sitting in an electric field that pulls harder on one end than the other, depending on orientation relative to the local crystal axes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Nice image. That coupling splits and shifts the nuclear energy levels depending on the symmetry of the local charge environment, independent of any magnetism. It's an exquisitely local structural and electronic probe: it reports on local symmetry breaking, lattice distortions, charge order, even electric polarization in a ferroelectric, as we'll see. When the quadrupole coupling is large enough, you don't even need an external magnetic field at all. You can observe transitions among the quadrupole-split levels directly. That's called nuclear quadrupole resonance, NQR, and it was essential for the copper sites in the cuprate superconductors, since the quadrupole splitting there is tens of megahertz, enormous by NMR standards."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good, so now we have the physics: Zeeman splitting sets the basic frequency scale, the static hyperfine field produces the Knight shift and quadrupole shifts that make up the lineshape, and the fluctuating hyperfine field drives T one relaxation through the Korringa-type physics. How do you actually measure any of this in the lab, with pulses?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is where modern pulsed NMR comes in, and it's worth building the picture carefully because the whole rest of the episode depends on it. Work in the frame rotating at the Larmor frequency. In that frame, the nuclear magnetization, which classically is just the sum of all those little precessing moments, looks like it's sitting still, pointing along the static field. Now you apply a short burst of radio-frequency magnetic field, tuned to resonance, perpendicular to the static field. In the rotating frame, that burst looks like a static field too, and the magnetization precesses around it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So a pulse of the right length and amplitude just rotates the magnetization vector by a controlled angle."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. A ninety-degree pulse tips the magnetization from along the static field into the plane perpendicular to it, where it then precesses and induces a detectable radio-frequency signal in your coil, the free induction decay. A one-hundred-eighty-degree pulse flips the magnetization completely, which is the key ingredient for both of the two experiments the outline specifically asks about: the spin echo, and inversion recovery."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's do the spin echo first, because I remember it's supposed to beat inhomogeneous broadening, somehow un-doing dephasing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. After your ninety-degree pulse, all the individual nuclear moments start out pointing the same way in the rotating frame, but they don't all precess at exactly the same frequency, because of small variations in the local field from one nucleus to the next, or across the sample. So they fan out, dephase, and your signal decays, often much faster than the intrinsic T two. The trick, due to Hahn, is to wait a time tau, then apply a one-hundred-eighty-degree pulse. That flips every spin's position in the fan, so the faster-precessing ones are now behind, and the slower ones are ahead. If you wait another time tau, they all catch back up and refocus into an echo."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's like a bunch of runners on a track running at slightly different speeds, you stop the race, turn everyone around to run back toward the start, and if they still have the same individual speeds, they all arrive back at the start line at the same moment."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a perfect way to say it. The echo amplitude, as a function of two tau, decays only because of truly irreversible processes, which is what defines the spin-spin relaxation time T two. Everything reversible, any static or slowly varying inhomogeneity, gets cancelled out by the echo. In practice, people average many thousands of echoes to build up signal, and they use clever phase cycling schemes, alternating the phase of the pulses and subtracting backgrounds, to clean up instrumental artifacts. The Barrett and Slichter review actually shows exactly this: averaging half a million copper echoes in a cuprate sample, and you can see how dramatically the signal quality improves once you add proper phase cycling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And inversion recovery is the T one measurement."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes. You start with a one-hundred-eighty-degree pulse, which inverts the magnetization, pointing it exactly opposite to equilibrium. Then you wait a variable time, call it tau again, during which the spin-lattice relaxation processes we talked about start restoring the magnetization back toward its equilibrium value, governed by T one. Then you apply a ninety-degree pulse to read out however much magnetization has recovered by that point, usually via a following echo sequence. Repeat for many values of tau, and you trace out the full recovery curve, ideally a simple exponential approaching equilibrium with rate one over T one, though for nuclei with quadrupole structure, like spin three-halves copper, the recovery is a sum of exponentials, and people quote an effective relaxation rate from fitting the correct multi-exponential form."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let me try to summarize everything so far before we move to applications. NMR: a nuclear spin precesses in a local field at the Larmor frequency. The static part of the local hyperfine field, from electron spins or orbital currents, gives the Knight shift; from electric field gradients, gives the quadrupole splitting; together these determine the lineshape. The fluctuating part of the hyperfine field drives relaxation, parametrized by T one, and for simple metals this obeys the Korringa law tying T one to the Knight shift. Pulses let you manipulate the spins directly: spin echoes refocus inhomogeneous dephasing to isolate intrinsic T two, and inversion recovery maps out T one."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the whole toolkit, cleanly stated. Everything from here on is just pointing that toolkit at different, more exotic pieces of condensed matter physics. Let's start with low-dimensional quantum magnetism, since that's close to home for you given your interest in correlated phases."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Great, I've been wanting to see how this connects to quantum criticality specifically."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the system here, from the paper by Mukhopadhyay and collaborators, is a family of gapped, quasi-one-dimensional antiferromagnets. One compound, often abbreviated BPCB, realizes weakly coupled spin one-half ladders; the other, DTN, realizes spin-one chains with strong single-ion anisotropy. In both, at zero magnetic field, there's a spin gap, an energy cost to create the lowest excitation above the ground state. Apply a magnetic field, and because the field couples to the spin, it lowers the energy of one branch of excitations relative to the others, effectively tilting the whole excitation spectrum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the field is acting like a knob that closes the gap, the way pressure or doping might close a gap elsewhere."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and at a critical field, B-c-one, the gap closes completely. That's a genuine quantum phase transition, driven by a field at fixed, essentially zero, temperature, rather than by heating. Below B-c-one you have a gapped phase where the low-energy excitations are magnons, essentially flipped-spin quasiparticles that behave like a dilute gas of bosons. Above B-c-one, the system enters a gapless Tomonaga-Luttinger liquid, and in one dimension, a single magnon is actually unstable to fractionalizing into a pair of spinons, deconfined half-spin excitations, the signature one-dimensional phenomenon you'll have encountered in the context of spin chains."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So right at the critical field, you have neither simple magnons nor clean spinons. That's the quantum critical point itself, where you'd expect universal, scale-invariant behavior, just like at a classical critical point, but with temperature replacing the correlation length as the only relevant scale."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the physics they're after, and here's why NMR is the perfect tool: remember, one over T one measures the local, nearly zero-frequency spin fluctuations, momentum-integrated. Right at a quantum critical point, those fluctuations are expected to show power-law temperature dependence, with a universal exponent set only by the universality class, not the microscopic details of the material. So they measure one over T one versus temperature, at many fixed magnetic fields straddling B-c-one in BPCB, and the analogous B-c-two in DTN."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And because T one covers so many orders of magnitude while keeping good precision, you can really nail down a power law over almost a full decade in temperature."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and that's what they find. Deep in the gapped phase, one over T one is activated, it falls off exponentially as you cool, because you need thermal energy to excite anything across the gap. Deep in the Luttinger liquid phase, on the gapless side, one over T one follows a different power law set by the Luttinger parameter K, approaching T to the minus one-half right near the transition. But in between, in the quantum critical fan, neither description works, and they find instead that one over T one scales as T to the one-half, right at the critical field, in both compounds."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Both compounds, even though the actual exchange couplings are completely different numbers?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the beautiful part, and really the main point of the paper. BPCB and DTN have one-dimensional exchange couplings that are similar, around ten kelvin, but their three-dimensional, inter-chain or inter-ladder couplings differ by roughly an order of magnitude. Despite that, once you plot the data in the right scaling variables, field minus critical field divided by a power of temperature, versus relaxation rate divided by a power of temperature, both compounds collapse onto essentially the same universal curve. That's a direct experimental demonstration of universality, exactly the concept this whole course keeps emphasizing: near a continuous phase transition, the detailed microscopic Hamiltonian drops out, and only symmetry and dimensionality matter."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the fact that they needed T one specifically, rather than, say, the static susceptibility, is because the critical behavior shows up most cleanly in the dynamics, not the thermodynamics?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and also practically: T one is one of the few quantities you can measure with high precision over many decades in both temperature and in relaxation rate itself, while scanning smoothly through the critical field with a single sample. It's a lovely illustration of how a seemingly old-fashioned technique becomes the sharpest available probe of a genuinely modern problem, quantum criticality in a magnetic insulator."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's switch fields completely now, to ferroelectricity, with the Kanert, Schulz, and Albers study of barium titanate."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Barium titanate, the classic displacive ferroelectric from every solid state textbook. What's the NMR angle there?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Barium titanate undergoes a cubic-to-tetragonal transition around four hundred kelvin, where the titanium ion shifts slightly off the center of its oxygen cage, and the crystal develops a spontaneous electric polarization. Now remember our quadrupole discussion: titanium forty-seven, titanium forty-nine, and barium one-thirty-seven are all spin greater than one half, so they all carry an electric quadrupole moment, which couples to the local electric field gradient. When the titanium ion displaces off-center below the transition, it distorts the local charge environment, creating an electric field gradient along the polar axis that didn't exist, by symmetry, in the cubic phase."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the quadrupole shift becomes a direct, local readout of the order parameter itself, the polarization, rather than something you infer indirectly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely, and that is the elegant part. Since the quadrupole frequency goes as the square of the field gradient, and the field gradient itself turns out to scale as the square of the polarization, the quadrupole shift ends up scaling as the polarization to the fourth power. The authors confirm this scaling directly across all three nuclear probes, and then use it to extract the order parameter's temperature dependence and fit it to Landau's theory for a first-order transition, finding good agreement with the standard thermodynamic potential expanded in powers of the order parameter."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the static, lineshape side. What about the dynamics, the famous displacive-versus-order-disorder debate for barium titanate?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly where T one comes back in. They measure the spin-lattice relaxation rate across a huge temperature range, from room temperature up past the transition, and they find it's a sum of three distinct physical contributions: an ordinary two-phonon Raman process that dominates far from the transition, a diffusion-induced piece above the transition temperature from oxygen vacancies hopping through the lattice, with its own characteristic activation energy, and then, crucially, a third contribution that peaks sharply right at the transition temperature itself."
+    },
+    {
+      "speaker": "Leo",
+      "text": "A relaxation-rate peak at the transition sounds like critical slowing down, some correlation time diverging or at least becoming extremal near T-c."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly their interpretation. They model this third term using a standard relaxation theory where a correlation time, tau, associated with some local dynamic mode, enters a Lorentzian-type spectral density. Fitting the data lets them extract that correlation time as a function of temperature, and they find it tracks independent dielectric relaxation measurements beautifully, with a correlation time around one nanosecond near the transition. This supports a picture where the titanium ions are hopping among off-center positions, consistent with more of an order-disorder character to the transition, rather than a purely displacive, soft-phonon-mode picture, adding a quantitative, local microscopic voice to a decades-old debate."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So in this one paper you get both halves of the NMR toolkit working together on the same problem: the static quadrupole shift tracking the order parameter through Landau theory, and the relaxation rate tracking the critical dynamics and the underlying atomic motion."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a great summary, and it's a nice segue, because our last stop uses exactly that same two-pronged logic, static shift plus relaxation, but now applied to superconductivity, where the question isn't about charge order but about the symmetry of the Cooper pairs themselves."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is where I think the outline's mention of triplet superconductivity comes in, but let's first set the baseline with conventional, spin-singlet pairing, since the cuprate story in Barrett and Slichter gives us that contrast for free."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good instinct. Start with the logic of the Knight shift test for pairing symmetry. In an ordinary spin-singlet superconductor, as you cool below T-c, the electrons pair up with opposite spins, and the net electron spin susceptibility is suppressed, because flipping a spin now costs the pairing energy, the superconducting gap, rather than nothing. The Knight shift, which is proportional to that spin susceptibility, should drop toward zero as temperature goes to zero, following what's called the Yosida function, essentially an integral over the BCS density of states weighted by the derivative of the Fermi function."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So if you watch the Knight shift vanish smoothly below T-c, following the Yosida-function shape, that's your signature of singlet pairing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and this is historically exactly how NMR helped confirm BCS theory in conventional superconductors like aluminum. For the cuprates, though, the measurement is trickier because you're in the mixed state, with vortices threading the sample, so the internal field isn't simply the applied field. Barrett and collaborators solved this cleverly using yttrium as an internal field marker in yttrium barium copper oxide, since the yttrium Knight shift itself is small, so the yttrium line position tracks the local internal field quite faithfully, letting them extract the copper Knight shift accurately even in the mixed state."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And what did they find?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The copper Knight shift drops rapidly below T-c and flattens at low temperature at a value consistent with zero spin contribution, which told them the pairing is spin-singlet, the same conclusion later reinforced by other experiments. But here's where it gets interesting: in the normal state, above T-c, the planar copper relaxation rate badly violates the Korringa law we built earlier. Instead of one over T one T being constant, it follows a Curie-Weiss-like form, growing as you cool, which signals the build-up of antiferromagnetic spin correlations among the copper moments, very different from a simple Fermi-liquid metal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, that's the Korringa violation you flagged earlier as a red flag for interesting physics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and then below T-c, the relaxation behaves in yet another unconventional way. In an ordinary BCS superconductor, you actually expect a coherence peak in one over T one just below T-c, the Hebel-Slichter peak, from the singularity in the quasiparticle density of states at the gap edge. In the cuprates, that peak is completely absent in every nucleus ever measured. Instead, one over T one falls off as roughly T cubed over a couple of decades in temperature, which is exactly what you'd expect for a d-wave gap that has nodes, points on the Fermi surface where the gap vanishes, giving you low-energy quasiparticles even at T equals zero, rather than a fully gapped s-wave state."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And I recall the figure comparing the anisotropy of the relaxation rate, measuring with the field along different crystal axes, as another handle on the gap symmetry."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, the ratio of the in-plane to the out-of-plane copper relaxation rate drops sharply below T-c, and comparing that drop to theoretical calculations for both d-wave and s-wave pairing, the d-wave calculation matches the data much better. So, putting the pieces together: Knight shift vanishing tells you singlet pairing; the T cubed relaxation and missing coherence peak and anisotropy tell you an anisotropic, nodal, d-wave-like gap. That's the kind of layered conclusion NMR alone can build, just from shift plus relaxation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, that's the singlet, unconventional story. Now, the actual triplet superconductor from the outline."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the Matano, Kriener, and collaborators study of copper-doped bismuth selenide, a superconductor built by intercalating copper into the topological insulator bismuth selenide, with a transition temperature around three to four kelvin. Theoretically, this material had been proposed as a candidate for an odd-parity, pseudo-spin triplet pairing state, potentially even topological superconductivity, which would be a big deal, but surface probes like tunneling spectroscopy had given conflicting results."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So they go back to bulk, local NMR to settle it, using the same Knight shift logic as before, but now looking for the triplet signature instead of the singlet one."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. If pairing is spin-triplet, the spin susceptibility doesn't have to vanish at T equals zero; the electrons can pair with parallel spins, so there's no automatic energy cost to maintaining some finite spin polarization in particular directions. In fact, for a triplet state, there's a vector quantity, called the d-vector, that describes the internal spin structure of the pair, and the Knight shift behaves completely differently depending on whether the applied field is parallel or perpendicular to that d-vector. Parallel to d, the spin susceptibility drops like an ordinary singlet; perpendicular to d, it stays essentially unchanged across T-c."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the real smoking gun would be an anisotropic suppression of the Knight shift that depends on the direction you apply the field, within the plane of the crystal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the measurement. They used selenium seventy-seven NMR, a spin one-half nucleus with no quadrupole moment at all, which is convenient because it removes any complication from electric field gradients, leaving a clean measurement of just the magnetic shift. They rotated the in-plane field direction and tracked the Knight shift drop below T-c as a function of that angle, theta, measured from one of the crystal's hexagonal axes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the crystal itself has three-fold rotation symmetry in that plane, so naively you'd expect the Knight shift suppression to just repeat every one hundred twenty degrees, following the lattice."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly what they found above T-c, a completely angle-independent shift, as expected in the normal state. But below T-c, they found something remarkable: the Knight shift reduction shows two sharp dips, separated by one hundred eighty degrees, centered at a specific angle, sixty degrees from the a-axis, and nowhere else. That pattern has only a two-fold symmetry, not the three-fold symmetry of the underlying crystal lattice."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the superconducting state itself is spontaneously picking out a particular direction in the plane, breaking the crystal's own three-fold rotational symmetry. That's a genuinely new kind of symmetry breaking, on top of the usual gauge symmetry breaking every superconductor has."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's the headline result: this is presented as the first clear experimental evidence of spontaneous spin-rotation symmetry breaking in a superconductor. It means the pairs are triplet, with the d-vector pinned to one particular crystallographic direction, perpendicular to a mirror plane, for reasons that aren't yet theoretically understood, but the data leave little room for any other interpretation, especially since they also checked that the copper dopants are randomly distributed, so it isn't some mundane structural artifact mimicking the effect."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And presumably the suppression along that special direction doesn't go all the way to zero, the way a clean singlet suppression would?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good catch, it only drops by about eighty percent, not completely, which they attribute to the strong spin-orbit coupling in this material mixing the pseudo-spin character of the pairs, so spin isn't quite a perfectly good quantum number anymore. That's actually expected and even supports the broader picture, since the whole reason people care about this family of materials is the interplay between strong spin-orbit coupling and superconductivity, which is also the key ingredient for topological superconductivity."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a striking place to end, four completely different subfields, and in every single case it came back to the same two knobs: where the line sits, and how fast the spins relax."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's really the entire discipline in one sentence. Let's recap the whole episode with that in mind. Any nuclear spin with a magnetic moment precesses in whatever local field it experiences, at the Larmor frequency set by its gyromagnetic ratio; in solids, the interesting local field comes from the hyperfine coupling to electron spins, or from the quadrupole coupling to electric field gradients for nuclei with spin above one half. The static, time-averaged piece of that coupling gives you the lineshape: Knight shifts that report on electron spin susceptibility, quadrupole shifts that report on local charge symmetry and structural order parameters. The fluctuating piece drives nuclear spin relaxation, T one, which in simple metals obeys the Korringa law tying relaxation to the Knight shift, and whose violation is one of the best available flags for unconventional or correlated electronic behavior."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And experimentally, pulsed methods let you isolate all of this cleanly: spin echoes refocus inhomogeneous dephasing so you measure the intrinsic T two, and inversion recovery lets you time the return to equilibrium to extract T one."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. And then we walked that single toolkit across four very different corners of solid state physics: quantum criticality in gapped one-dimensional antiferromagnets, where T one revealed a universal power law shared by two chemically unrelated compounds; the ferroelectric transition in barium titanate, where the quadrupole shift tracked the polarization through Landau theory while the relaxation rate exposed critical slowing down of local titanium dynamics; the pairing symmetry of the cuprate superconductors, where the Knight shift confirmed spin-singlet pairing while the relaxation rate revealed an unconventional, nodal, d-wave gap; and finally copper-doped bismuth selenide, where an anisotropic Knight shift directly caught a superconductor spontaneously breaking spin-rotation symmetry, the signature of spin-triplet, possibly topological, pairing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "One technique, same handful of equations each time, four completely different physical stories. That's a nice note to end a solid-state lecture on."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Couldn't agree more. That's our episode on nuclear magnetic resonance in solid state physics. Thanks for listening, and see you in the next one."
+    }
+  ]
+}

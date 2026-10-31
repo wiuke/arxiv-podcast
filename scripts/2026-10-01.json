@@ -1,0 +1,763 @@
+{
+  "date": "2026-10-01",
+  "format": "dialogue",
+  "n_papers": 50,
+  "episode_title": "Electrically Switchable Topological Polaritons, a New Probe for Twisted Molybdenum Disulfide, and Quantum Hall Quantization Hiding in Dissipation",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October first, and the archive dropped about fifty new papers overnight. We're not getting through all of them, but there's a strong cluster today in optics of two-D materials and moiré physics, plus one that rethinks something as basic as quantum Hall quantization."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today we've got electrically switchable topological polaritons in a gated T-M-D, a new tunneling-diode probe of correlated states in twisted bilayer molybdenum disulfide, the first direct optical measurement of interlayer spin correlations in a van der Waals magnet, atomic-scale imaging of flat bands in helical trilayer graphene, and a terahertz experiment arguing that integer quantum Hall quantization secretly depends on dissipation. Let's get into it."
+    },
+    {
+      "speaker": "Ava",
+      "text": "First up, paper one, Xie and collaborators, on topological Fermi-polaron polaritons with electrically invertible topology. The background: people have wanted Chern bands made of light, topological polaritons, but in semiconductor systems the time-reversal symmetry breaking you need usually comes from a weak Zeeman splitting, so the gaps end up tiny and hard to control."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what did they actually change? Swapping Zeeman splitting for something bigger, presumably."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. They use a gate-controlled monolayer T-M-D coupled to a symmetry-engineered photonic crystal, so the cavity photons themselves carry a designed symmetry. The polaritons here aren't simple exciton-polaritons, they're Fermi-polaron polaritons, meaning the optical excitation is dressed by the Fermi sea of gate-induced carriers, similar in spirit to the attractive and repulsive polaron branches you see in gated T-M-D reflectance."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the topology comes from the interaction with that Fermi sea, not just from the photonic lattice."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the claim. The abstract says the coupling between band topology and the gate-tunable many-body interactions amplifies the time-reversal symmetry breaking well beyond the bare Zeeman effect. Practically, that means you can flip the sign of the topological gap, the Berry curvature, and the Chern number just by changing the gate voltage, electrically, not by cranking a magnetic field."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the part worth sitting with. If you can invert a Chern number with a gate instead of a magnet, you have a route to reconfigurable topological photonic circuits at the flip of a voltage, which is a very different knob than anything magneto-optic polariton work has offered before."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The obvious open question, which the abstract doesn't resolve, is how robust these inverted phases are to disorder and to the specific doping level, since Fermi-polaron physics is notoriously sensitive to carrier density. But as a platform for interaction-driven, electrically reconfigurable topological states, this is a nice marriage of our two-D optics toolbox with topological photonics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two is closer to home for anyone doing gated transport on moiré T-M-Ds. Zhou and coauthors build what they call a quantum well resonant tunneling diode, or Q-W-R-T-D, to probe twisted bilayer molybdenum disulfide at a twist angle near fifty-seven degrees, which is close to the AB-stacked limit rather than the small-angle regime most of us think of as moiré."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So instead of optical or scanning probes, they're using tunneling current through a quantum well as the readout. What's the advantage over standard transport?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "The differential conductance, d-I over d-V-probe, acts as a kind of spectroscopic fingerprint of the density of states at the twisted bilayer, as a function of filling factor nu and displacement field D. That gives you access to the electronic landscape without needing a scanning tip or an optical transition, and it's compatible with the gate geometry people already use for correlated T-M-D devices."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And what do they find?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "A robust correlated insulating state at nu equals one that survives across the whole displacement field range they measure, plus, at negative displacement fields beyond about minus seventy-five millivolts per nanometer, a new fractional insulating state at nu equals three quarters. Temperature and magnetic field dependence point to this three-quarter state being a generalized Wigner crystal, and they see the same features in a second device at a similar twist angle, so it's not a one-off."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Generalized Wigner crystals at fractional filling in near-AB-stacked twisted molybdenum disulfide is interesting precisely because most of the optical generalized-Wigner-crystal work so far has been in small-angle twisted T-M-Ds or heterobilayers. Seeing it near sixty degrees, probed by tunneling rather than light, broadens the phase diagram and gives a complementary, non-optical cross-check for states we usually chase with photoluminescence."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three is the one I'd flag hardest for this show. Park and collaborators report what they call the first direct optical probe of interlayer spin correlations, in the van der Waals antiferromagnet chromium sulfide bromide, written C-r-S-B-r."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Interlayer spin correlation is a strange thing to measure optically. What's the actual observable?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two-magnon Raman scattering. A single photon in, single photon out, but it creates a pair of magnons, one on each sublattice essentially, and the cross section for that process depends on how correlated the spins are across the layer interface. They compare the measured two-magnon spectrum to a microscopic spin-wave model with no fitting parameters, and the agreement is described as remarkable."
+    },
+    {
+      "speaker": "Ava",
+      "text": "No fitting parameters is a strong claim. How do they know the channel is really tracking the interlayer correlation, rather than some generic two-magnon background?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two pieces of evidence. The two-magnon channel switches on only in the antiferromagnetic state and disappears once a magnetic field drives the crystal into a ferromagnetic state, which is exactly the symmetry behavior you'd expect if it's sensing the interlayer antiferromagnetic correlation specifically, not just magnon population in general. And second, they show an exciton-mediated version of the same measurement, where tuning the laser near the exciton resonance in C-r-S-B-r boosts the signal by roughly a factor of ten, because the exciton's oscillator strength amplifies the Raman cross section."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That exciton enhancement is the part that connects directly to our kind of spectroscopy. It means you could, in principle, push this technique into twisted bilayers or proximity-coupled heterostructures and use excitons as built-in amplifiers for a correlation that's otherwise invisible. It's a genuinely new optical window on two-D magnetism, not just a refinement of existing magneto-optical methods."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper four moves away from light and into real-space imaging. Jiang and coauthors do scanning near-field optical microscopy and low-temperature S-T-M on helical trilayer graphene, which is three graphene layers with alternating twist, a system known for strong correlations and nontrivial topology."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's new here, given that helical trilayer graphene has already been studied by transport and some imaging?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The atomic-scale lattice structure hadn't actually been mapped before. They directly image the supermoiré lattice relaxation and find large triangular domains separated by sharp walls, plus stripe domains connected by smoothly varying boundaries, so the relaxation pattern is more structured than a simple periodic moiré would suggest."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And on the electronic side?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Atomic-scale spectroscopy reveals flat bands with a honeycomb-shaped electronic texture in real space, plus one-dimensional boundary states that live specifically on the domain walls between the triangular regions. By scanning twist angle, they pin down the magic angle experimentally at about one point nine degrees, which is noticeably larger than the one point six degrees that theory had predicted."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That discrepancy is the headline for me. A thirty percent shift in the magic angle from an unaccounted-for lattice relaxation effect tells you the existing continuum models for helical trilayer graphene are missing real structural physics, not just fine-tuning a parameter. If domain walls host their own one-D states, that's also a second kind of correlated or topological feature layered on top of the flat bands, which theorists modeling this system will need to fold in."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five, and it's conceptually the most provocative. Tagay, Armitage and collaborators revisit the integer quantum Hall effect itself, asking where the exact quantization of sigma-x-y actually comes from at the level of finite-frequency electrodynamics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "We already have Laughlin's gauge argument, the edge-channel picture, and the bulk topological-invariant argument. What's missing that needs a fourth explanation?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "All three of those are essentially DC or topological arguments. This group instead looks at the full dissipative, finite-frequency optical response, using high-precision terahertz Faraday rotation, and asks whether the DC quantized value is consistent with what Kramers-Kronig transformation predicts from the finite-frequency data."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And is it?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Not if you only include the cyclotron resonance. The cyclotron resonance alone, run through Kramers-Kronig, does not reproduce quantized plateaus. You only recover exact quantization once you add in a faint, low-frequency dissipative contribution that comes from impurity states, and that contribution is itself topologically enforced."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the quantization isn't just about an energy gap protecting things from disorder, dissipation from disorder states is doing real, necessary work in pinning the DC value."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the reframing. It ties the DC Hall conductance to the dissipative part of the optical response in a very concrete, measurable way, and the authors frame it as a new route to understanding quantization through the optical Hall effect, sitting alongside Laughlin's argument rather than replacing it. For anyone doing optical Hall or Faraday rotation measurements on two-D systems, it's a reminder that the faint, usually ignored dissipative background can carry topological information."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Now a run of shorter ones. Paper six, Cataldo and colleagues build a programmable photonic integrated circuit that reads out momentum-space topology under non-Hermitian, dissipative dynamics using phase-shifted interferometry. They recover Zak phases and Chern numbers for Su-Schrieffer-Heeger-type and Rice-Mele models even when strong dissipation would normally wash out the relevant phase information. It's a photonics methods paper, useful background if you ever touch non-Hermitian topology, but not two-D materials physics per se."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven is more directly relevant to our moiré interests. Canteli and coauthors pattern monolayer graphene with ultra-high-quality antidot lattices and do magnetotransport. They see both classical commensurability features from cyclotron orbits and quantum Brown-Zak oscillations tied to the magnetic flux quantum matching the lithographic unit cell. The point is that you can generate moiré-like electronic spectra in single-layer graphene purely by real-space patterning, no twisting, no lattice mismatch, no second layer required, which is a nice clean knob for superlattice physics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight is a device engineering result. Powell and colleagues characterize a back-gated multilayer tungsten disulfide transistor down to twenty milli-kelvin and find reproducible shoulder-like features in the turn-on curve, which they model as several parallel conduction branches. Useful if you care about cryogenic T-M-D electronics, less central to spectroscopy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine is cold-atom theory. Kim and coauthors extend the Feshbach-resonance picture of pairing to the three-dimensional repulsive Fermi-Hubbard model, motivated by the recent experimental realization of the three-D antiferromagnetic transition. They predict a time-reversal-symmetry-breaking d-x-squared-minus-y-squared plus i-d-z-squared pairing state with gapless Weyl points, and lay out it as a challenge for quantum simulators and numerics to test."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper ten stays in flat-band territory. Oh, Ozawa and Rhim work out finite-temperature Hall transport in critical topological flat bands, bands that are exactly flat but touch a dispersive continuum while still carrying an integer Chern number. Without a spectral gap, the usual exponential protection against thermal smearing is gone. Instead they find power-law-times-logarithm corrections in temperature for the electrical, thermoelectric, and thermal Hall conductivities, a genuinely different finite-temperature fingerprint from an ordinary Chern insulator."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eleven is a nice example of machine learning doing physics rather than just fitting it. Sinibaldi and colleagues use a foundation neural-network quantum state, a single variational wavefunction covering a whole family of Hamiltonians, to search for new quantum spin liquid candidates in frustrated square-lattice Heisenberg models. Letting eight couplings vary freely, the optimization converges on a J-one, J-two, delta model linked to altermagnetism, and finite-size scaling up to sixteen-by-sixteen clusters shows no magnetic, dimer, or plaquette order, a new quantum spin liquid candidate distinct from earlier square-lattice proposals."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper twelve is a field-theory paper on one-plus-one-D systems. Andriyakhina and coauthors give an analytic theory for how a U-one symmetry can spontaneously break right at a Lifshitz quantum critical point, backed up by D-M-R-G on an itinerant-fermion chain, finding long-range order in a spin-nematic bond operator alongside stretched-exponential decay of the electron Green's function. Niche, but a clean piece of one-dimensional critical-point physics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper thirteen brings us back to a familiar two-D magnet. Wilson and colleagues use muon spin rotation and magnetometry on bulk iron germanium telluride, often written F-G-T, and conclude it's a three-dimensional Ising ferromagnet across the whole range from T-c at two hundred twenty kelvin down to two kelvin. The long-debated low-temperature anomaly at around one hundred seventy kelvin, previously floated as a ferromagnet-to-antiferromagnet transition, looks instead like ordinary domain freezing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper fourteen is a magnonics result. Azevedo and coauthors use parametric-instability spectroscopy on thickness-quantized spin waves in micrometer-thick yttrium iron garnet films, down to roughly hundred-nanometer wavelengths, and find that magnon damping depends on both mode number and the direction of the wavevector relative to the film, not just a single averaged damping parameter as usually assumed."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And paper fifteen is a formal tensor-network result. Usoltcev and colleagues study a minimal parity-preserving tensor network that can simultaneously be read as an interacting fermion partition function, a loop gas, a deformed toric-code norm, and a quartic Ising model, and they map out a topological phase and a self-dual critical line with a four-state-Potts multicritical point. Heavy on formalism, light on direct experimental connection, but a nice unifying structure if you work in that corner of numerics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Quick round-up of the rest. Paper sixteen, Bundgaard and colleagues look at hidden nonlocal quantum response in plasmonic heterodimers. Paper seventeen, Patterson and coauthors use widefield nitrogen-vacancy magnetic imaging to catch the single-particle-level Néel transition in lanthanum chromium oxide microcrystals."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eighteen, Korenev and Tarasenko predict a giant photo-magneto-diode effect. Paper nineteen, Cronin and colleagues do optical spectroscopy of negative g-factor dopants, neodymium ions, in the antiferromagnet gadolinium vanadate. Paper twenty, Camenzind and coauthors demonstrate microwave initialization of semiconductor spin qubits without a reservoir or a measurement step."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper twenty-one, Coane, Gu and Kubica lay out a framework for fault-tolerant quantum phases of matter. Paper twenty-two, Mondaini and Scalettar study how the sign problem interacts with criticality in world-line quantum Monte Carlo. Paper twenty-three, Kundu and Nowak model thermal magnon transport across ferromagnet-antiferromagnet bilayers."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper twenty-four introduces adapol, an adaptive pole-fitting tool for many-body Green's functions, from Huang and collaborators. And paper twenty-five, Shimokawa finds multipartite entanglement hidden inside vector-chiral spin correlations in spin-one-half chains."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's today's fifty, or at least the parts of it worth your coffee time. The thread connecting the big ones is that gates and photonic design are increasingly standing in for magnetic fields as the knob for breaking symmetry and switching topology, whether that's Chern numbers in a polariton band or Wigner crystals in a tunneling diode."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the optical probe of interlayer spin correlation in C-r-S-B-r is worth rereading the abstract on later, it's the kind of technique that could end up on our own benches. See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2609.39791",
+      "title": "Topological Fermi-polaron Polaritons with Electrically Invertible Topology",
+      "authors": [
+        "Xin Xie",
+        "Chenxi Liu",
+        "Yuze Liu",
+        "Lingxiao Zhou",
+        "Chulwon Lee",
+        "Yuhan Zhang",
+        "Nathanial Lydick",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Kai Sun",
+        "Hui Deng"
+      ],
+      "abstract": "Topological polaritons provide a route to engineer optical Chern bands, but realizing large gaps or efficient electrical tunability remains challenging because time-reversal-symmetry breaking in semiconductor polariton systems is typically limited by weak Zeeman splittings. Here, we demonstrate a topological Bose-Fermi mixture –- Fermi-polaron polaritons –-where large gaps and electrically invertible topology emerge from the interplay of Fermi-polaron many-body interactions, photonic symmetry, and strong light–matter coupling. Using a gate-controlled monolayer transition-metal dichalcogenide integrated with a symmetry-engineered photonic crystal, we create Fermi-polaron polaritons with topological band structures. The direct coupling between band topology and gate-tunable many-body interactions provides a mechanism for amplified time-reversal-symmetry breaking beyond bare Zeeman splitting and enables electrical inversion of topological gaps, Berry curvature, and Chern numbers. These results establish an electrically reconfigurable platform for interaction-driven topological states and programmable topological photonics.",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mes-hall",
+        "cond-mat.other"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.39791",
+      "tier": "deep",
+      "why": "Demonstrates electrically invertible topological Fermi-polaron polaritons in a gate-tunable monolayer TMD photonic crystal, directly combining exciton-polariton physics, many-body interactions, and band topology central to the listener's work."
+    },
+    {
+      "id": "2609.39417",
+      "title": "Qantum Well Resonant Tunneling Diode Probe of Correlated States in Twisted Bilayer MoS2",
+      "authors": [
+        "Chengjie Zhou",
+        "Jin-Xin Hu",
+        "Sihong Xu",
+        "Zijing Jin",
+        "Hui Li",
+        "Kam Tuen Law",
+        "Jiannong Wang"
+      ],
+      "abstract": "Moiré superlattices formed in transition metal dichalcogenides (TMDs) offer a versatile platform for exploring emergent quantum phases arising from strong electronic correlations. In this work, we develop a new experimental platform, the quantum well resonant tunneling diode (QWRTD), to probe the electronic landscape of \\approx 57^\\circ twisted bilayer MoS2 (tMoS2). By measuring the differential conductance (dI/dVProbe) as a function of filling factor \\nu and displacement field D, we observe a robust integer correlated insulating state at \\nu = 1 that persists across the measured displacement field range. Furthermore, we identify a displacement-field-induced fractional insulating state at \\nu = 3/4 for D < -75~mV/nm. Temperature- and magnetic-field-dependent measurements characterize this \\nu = 3/4 state as a potential generalized Wigner crystal. These correlated states are also observed in another device with a similar twist angle (\\approx 56.5^\\circ). Our results provide direct evidence of correlated states in near-AB-stacked tMoS2 and establish QWRTD as a powerful experimental tool for investigating strong correlations and topology in van der Waals heterostructures.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39417",
+      "tier": "deep",
+      "why": "A new quantum-well resonant tunneling diode probe reveals integer and generalized-Wigner-crystal correlated insulating states in twisted bilayer MoS2, a prime example of electronic detection of correlated moire states."
+    },
+    {
+      "id": "2609.38825",
+      "title": "Optical observation of interlayer spin correlation",
+      "authors": [
+        "Akiyoshi Park",
+        "Pranshoo Upadhyay",
+        "Andrey Grankin",
+        "Emil Vi\\~nas Bostr\\\"om",
+        "Mahdi Ghafariasl",
+        "Hassan Alnatah",
+        "Masoud Mohammadi-Arzanagh",
+        "Gautam Nambiar",
+        "Beini Gao",
+        "Alireza Alvandi",
+        "Sakthi Rajmano Madhan Kumar",
+        "Ghadah Alshalan",
+        "Isaac Sherwood",
+        "Mahmoud Jalali Mehrabad",
+        "You Zhou",
+        "Arun Ramanathan",
+        "Xavier Roy",
+        "Angel Rubio",
+        "Mohammad Hafezi"
+      ],
+      "abstract": "Spin correlations govern numerous collective behaviors of quantum materials, underpinning exotic phenomena such as unconventional superconductivity and topological magnetism. In layered materials, the interlayer spin correlation is important because it characterizes the magnetic ground state and determines spin transport across the interface. Yet interlayer spin correlations have remained hard to measure directly, leaving one of the most basic quantities of two-dimensional magnetism out of experimental reach. Here we provide the first direct optical probe of interlayer spin correlations, using two-magnon Raman scattering in the van der Waals antiferromagnet (AFM) CrSBr, in remarkable agreement with a microscopic spin-wave model without any fitting parameter. Moreover, the two-magnon channel switches on only in the AFM state and vanishes when a magnetic field takes the crystal to a ferromagnetic state. We furthermore establish an exciton-mediated variant of the technique, where tuning the laser near the exciton resonance enhances the signal roughly tenfold due to the exciton's large oscillator strength. Magnon-pair Raman spectroscopy thus opens a direct optical window into interlayer spin correlations in van der Waals magnets, extendable to twisted bilayers and proximity-coupled heterostructures.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el",
+        "physics.optics"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.38825",
+      "tier": "deep",
+      "why": "First direct optical probe of interlayer spin correlations in a vdW antiferromagnet via two-magnon Raman scattering, with an exciton-resonance-enhanced variant extendable to twisted bilayers—squarely in the optical-detection-of-correlated-states niche."
+    },
+    {
+      "id": "2609.39986",
+      "title": "Atomic-Scale Imaging of Lattice Relaxation and Topological Flat Bands in Helical Trilayer Graphene",
+      "authors": [
+        "Shudan Jiang",
+        "Zonglin Li",
+        "Yu Gu",
+        "Liang Liu",
+        "Dandan Guan",
+        "Yaoyi Li",
+        "Hao Zheng",
+        "Canhua Liu",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Shengwei Jiang",
+        "Xiaoxue Liu",
+        "Zhiwen Shi",
+        "Guorui Chen",
+        "Jinfeng Jia",
+        "Tingxin Li",
+        "Can Li",
+        "Shiyong Wang"
+      ],
+      "abstract": "Helical trilayer graphene (HTG) has emerged as a highly tunable moire quantum material that hosts strong electronic correlations and nontrivial band topology. However, the atomic-scale lattice structure and local electronic properties have remained largely unexplored. Here we present a comprehensive real-space study of HTG using a combination of scanning near-field optical microscopy and low-temperature scanning tunneling microscopy. We directly image supermoire lattice relaxation, revealing large triangular domains separated by sharp domain walls, as well as stripe domains connected by smoothly varying boundaries. Atomic-scale spectroscopy uncovers flat bands with a honeycomb electronic texture and one-dimensional boundary states confined to domain walls. By systematically varying the twist angle, we identify a magic angle of approximately 1.9\\deg, substantially larger than the 1.6 degree predicted by theory. Our results establish a direct microscopic link between lattice relaxation and flat bands in HTG.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39986",
+      "tier": "deep",
+      "why": "Combined SNOM and STM imaging of helical trilayer graphene uncovers lattice relaxation, topological flat bands, and a larger-than-predicted magic angle, directly relevant to moire materials and flat-band physics."
+    },
+    {
+      "id": "2609.40337",
+      "title": "Quantization through Dissipation and the Optical Quantum Hall Effect",
+      "authors": [
+        "Zhenisbek Tagay",
+        "Ahmed Abouelkomsan",
+        "Yugo Onishi",
+        "Adbhut Gupta",
+        "Loren Pfeiffer",
+        "Liang Fu",
+        "N. P. Armitage"
+      ],
+      "abstract": "The integer quantum Hall effect remains the most paradigmatic and remarkable example of exact quantization in condensed matter physics. Its Hall conductivity \\sigmaxy is fixed to e2/h times an integer to a precision limited only by measurement and independent of disorder or interactions. This robustness has several explanations, each capturing a strikingly different piece of the physics. In Laughlin's gauge argument, flux insertion pumps an integer charge between edges, so quantization follows from gauge invariance alone. The edge-channel picture instead attributes transport to chiral, ballistic 1D channels at the sample boundary, one per filled Landau level. Bulk arguments tie \\sigmaxy to a topological invariant of the disordered system, with extended states compensating exactly for the current not carried by localized ones. Here we demonstrate an additional route to understanding quantization, rooted in the finite-frequency dissipative electrodynamics of the bulk. Using high-precision terahertz Faraday rotation and numerics, we show that the cyclotron resonance alone does not give quantized plateaus under Kramers-Kronig transformation. Quantization is recovered only once a faint, low-frequency, topologically enforced dissipative contribution from impurity states is included. This dynamical mechanism, hiding in plain sight within the dissipative response, ties the DC value to the finite-frequency optical response and offers a new route to quantization through the optical Hall effect.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.40337",
+      "tier": "deep",
+      "why": "Reveals a new optical/dissipative route to understanding integer quantum Hall quantization via terahertz Faraday rotation, connecting finite-frequency optics to topological transport—bridging the listener's optics and quantum Hall interests."
+    },
+    {
+      "id": "2609.38352",
+      "title": "Interferometric Readout of Momentum-Space Topology in a Programmable Dissipative Photonic Circuit",
+      "authors": [
+        "Andrea Cataldo",
+        "Emil J. Bergholtz",
+        "Daniel Leykam",
+        "Jun Gao",
+        "Ali W. Elshaari"
+      ],
+      "abstract": "Topology under non-Hermitian dynamics is encoded in the phase of the bulk evolution, yet strong dissipation suppresses the amplitudes carrying it. We resolve this using a programmable photonic integrated circuit that implements such dynamics in synthetic momentum space through unitary dilation, with the phase recovered by phase-shifted interferometry. For the non-Hermitian Su-Schrieffer-Heeger model, the method distinguishes trivial and non-trivial Zak phases and yields a coherence winding q=\\pm 1 induced by an exceptional point. Extending to a synthetic torus via a Rice-Mele pump gives the first Chern number Ch1=0,1 for trivial and non-trivial cycles, showing a programmable route to momentum-space topology under strongly dissipative non-Hermitian dynamics.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.38352",
+      "tier": "brief",
+      "why": "A programmable photonic circuit interferometrically reads out momentum-space topology (Zak phase, Chern number) under non-Hermitian dissipative dynamics."
+    },
+    {
+      "id": "2609.39500",
+      "title": "Emergent Quantum Geometric Phases in Holey Graphene",
+      "authors": [
+        "Pablo Canteli",
+        "Yuriko Baba",
+        "Juan Salvador-S\\'anchez",
+        "Jorge Estrada-\\'Alvarez",
+        "Ana P\\'erez-Rodr\\'iguez",
+        "Carlos S\\'anchez-S\\'anchez",
+        "Vito Cleric\\`o",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Francisco Dom\\'inguez-Adame",
+        "Rafael A Molina",
+        "Enrique Diez",
+        "Elena D\\'iaz",
+        "Mario Amado"
+      ],
+      "abstract": "In graphene and other two-dimensional materials, periodic modulations of the electron density can significantly alter the energy spectrum and transport properties. Here, we report magnetotransport measurements in encapsulated monolayer graphene with ultra-high-quality patterned periodic antidot lattices that preserve the intrinsic electronic properties of the material. This lithographically defined platform enables controlled access to commensurability and superlattice phenomena at length scales otherwise difficult to achieve. By systematically tuning the lattice dimensions, we reveal a hierarchy of classical commensurability features arising from cyclotron orbits with comparable radii that follow multiple classical trajectories, resulting in broadened resistance peaks beyond the conventional single-orbit picture. Superimposed on these features, we observe pronounced Brown-Zak oscillations arising from the quantum commensurability between the magnetic flux quantum and the unit cell of the engineered Bravais lattices. We demonstrate that the intrinsic geometric phase of our system is directly measurable and show a precise matching of the magnetic field periodicity to the lithographic periodic patterning, where moiré-like electronic spectra can be geometrically generated in single-layer graphene without the need for twist, lattice mismatch, or multilayer stacking. Our results establish nanopatterned graphene as a clean, tunable, and scalable platform for realizing and exploring moiré physics through on-demand real-space design",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39500",
+      "tier": "brief",
+      "why": "Patterned antidot lattices in monolayer graphene generate moiré-like commensurability and Brown-Zak oscillations without any twist or stacking, offering a clean synthetic platform for moire physics."
+    },
+    {
+      "id": "2609.39878",
+      "title": "Multi-Branch Transport in a Back-gated WS2 Transistor at Deep-Cryogenic Temperature",
+      "authors": [
+        "Megan Powell",
+        "Vilas Patil",
+        "Hazel Neill",
+        "Stephen O'Sullivan",
+        "Paul K. Hurley",
+        "Lida Ansari",
+        "Farzan Gity",
+        "Alessandro Rossi"
+      ],
+      "abstract": "Two-dimensional materials are promising candidates for electronic applications beyond the operating limits of conventional semiconductor technologies. Within this class, transition-metal dichalcogenides offer attractive properties for field-effect transistor operation, with tungsten disulphide (WS2) emerging as a particularly promising material for operation at cryogenic temperatures. Here, we investigate the electrical performance of a back-gated multilayer WS2 transistor at deep cryogenic temperature, down to 20 mK. The device remains strongly gate-tunable throughout the cryogenic regime, with an effective on/off current ratio exceeding 105. Most notably, the low-temperature turn-on characteristics exhibit reproducible shoulder-like features, which we describe using a phenomenological model comprising multiple effective conduction branches operating in parallel.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39878",
+      "tier": "brief",
+      "why": "Deep-cryogenic transport in a back-gated WS2 transistor shows unexplained multi-branch conduction features relevant to 2D TMD device physics."
+    },
+    {
+      "id": "2609.39418",
+      "title": "Weyl superconductivity from Feshbach resonance in the three-dimensional repulsive Hubbard model",
+      "authors": [
+        "Taekyoung Kim",
+        "Pit Bermes",
+        "Giorgia A. Busin",
+        "Fabian Grusdt"
+      ],
+      "abstract": "Motivated by the first experimental realization of the antiferromagnetic phase transition in the three-dimensional Fermi-Hubbard model, we present a theoretical study of the model's 3D superconducting phase. By formulating a 3D extension of the Feshbach mechanism, we provide a unified microscopic picture at strong coupling in which pairing is driven by near-resonant bound states of dopants. These long-lived bound states acquire a qualitatively different internal structure in three dimensions compared to their two-dimensional counterparts, giving rise to a distinct superconducting state, namely a time-reversal symmetry breaking dx^2-y^2+idz^2 pairing state. We also provide an estimate of the corresponding critical temperature, and provide evidence that the resulting superconducting phase hosts gapless Weyl points. Our results represent a new milestone for the field of quantum simulation, challenging experiments and large-scale numerics alike to test our predictions.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.quant-gas"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39418",
+      "tier": "brief",
+      "why": "Theoretical prediction of Weyl time-reversal-breaking superconductivity from a 3D Feshbach mechanism in the repulsive Hubbard model, a notable extension beyond the well-studied 2D case."
+    },
+    {
+      "id": "2609.40065",
+      "title": "Topological Transverse Transport without a Gap in Critical Topological Flat Bands",
+      "authors": [
+        "Chang-geun Oh",
+        "Tomoki Ozawa",
+        "Jun-Won Rhim"
+      ],
+      "abstract": "Quantized Hall transport is traditionally anchored to a bulk spectral gap, which isolates the occupied subspace and exponentially suppresses thermal deviations. Recently discovered critical topological flat bands (CTFBs) challenge this paradigm: an exactly flat band touches a dispersive continuum while retaining a well-defined integer Chern number. However, their finite-temperature transverse transport properties remain entirely unexplored. Here, we develop a low-temperature theory of the intrinsic electrical, thermoelectric, and thermal Hall responses in CTFBs. At fixed particle number, the macroscopic flat-band degeneracy forces a singular Lambert-W drift of the chemical potential, generating an algebraic-logarithmic hierarchy of low-temperature corrections: T\\ln(1/T) for electrical Hall, T[\\ln(1/T)]2 for thermoelectric Hall, and T[\\ln(1/T)]3 for thermal Hall conductivity, replacing the activated thermal protection of a gapped Chern insulator. By contrast, externally pinning the chemical potential to the flat-band energy locks the flat band to half occupation at any nonzero temperature, obstructing the recovery of the fully filled topological ground state as T\\to0^+. Our results establish that a bulk spectral gap is unnecessary for zero-temperature Hall quantization, but indispensable for its exponential thermal protection.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.40065",
+      "tier": "brief",
+      "why": "Develops finite-temperature Hall transport theory for critical topological flat bands that touch a continuum, showing quantization survives without a spectral gap—relevant to moire flat-band physics."
+    },
+    {
+      "id": "2609.40209",
+      "title": "Designing Strongly Correlated Quantum Phases of Matter with Foundation Neural-Network Quantum States",
+      "authors": [
+        "Alessandro Sinibaldi",
+        "Luciano Loris Viteritti",
+        "Riccardo Rende",
+        "Federico Becca",
+        "Giuseppe Carleo"
+      ],
+      "abstract": "Designing a material with a desired property amounts to solving an inverse problem: finding the couplings of a microscopic Hamiltonian whose ground state exhibits that property. For strongly correlated quantum systems, solving this problem efficiently remains largely out of reach. To address this challenge, we present a general framework for ab initio inverse design based on Foundation Neural-Network Quantum States, a recent approach in which the ground states of a family of Hamiltonians are encoded in a single variational wave function. Because the ansatz depends explicitly on the couplings, any target property is a differentiable function of them, and the search for the right Hamiltonian reduces to gradient-based optimization in coupling space. We apply this approach to search for nonmagnetic phases of frustrated Heisenberg models on the square lattice with an increasing number of free next-nearest-neighbor couplings, aiming to identify new quantum spin liquid candidates. With a single coupling, the method recovers the known nonmagnetic window of the square J1-J2 Heisenberg model, whereas letting the two diagonal couplings vary independently reveals an extended nonmagnetic region connecting the square-lattice and anisotropic-triangular-lattice regimes. In a search space of eight independent couplings within a 2\\times2 unit cell, which contains several paradigmatic frustrated spin models, the optimization spontaneously converges to the J1-J2-\\delta Heisenberg model, in which the diagonal couplings alternate between two values on neighboring plaquettes, a model recently proposed in the context of altermagnetism. Finite-size scaling up to 16\\times16 clusters in this optimal model shows that the ground state has no magnetic, dimer, or plaquette order, establishing it as a new quantum spin liquid candidate, distinct from those previously proposed on the square lattice.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.dis-nn"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.40209",
+      "tier": "brief",
+      "why": "Uses foundation neural-network quantum states for inverse design of Hamiltonians, identifying a new quantum spin liquid candidate via differentiable optimization over couplings."
+    },
+    {
+      "id": "2609.38581",
+      "title": "Theory of criticality-enabled U(1) symmetry breaking in a class of 1+1D systems",
+      "authors": [
+        "E. S. Andriyakhina",
+        "A. S. Shankar",
+        "T. Senthil",
+        "Z. D. Shi"
+      ],
+      "abstract": "We present an analytic theory of the recently proposed phenomenon of spontaneous U(1) symmetry breaking at 1+1D Lifshitz quantum critical points. The low-energy field theory contains two periodic scalars \\theta and \\phi, with a Berry phase coupling that makes \\theta canonically conjugate to the U(1) charge density \\partialx \\phi. Within a controlled large-N limit, we demonstrate that the U(1)-charged phase vertex ei\\beta\\theta develops long-range order, while the conjugate vertex ei\\beta\\phi decays as a stretched exponential, \\log\\langle ei\\beta\\phi(x) e-i\\beta\\phi(0)\\rangle\\propto-|\\beta|4/3|x|2/3. Going beyond the large-N limit, we give an analytic argument that the Lifshitz field theory supports U(1) long-range order provided its dynamical exponent satisfies z\\neq1, a condition strongly supported by existing calculations. We test these predictions using finite-size and infinite-system DMRG in an itinerant-fermion chain with U(1) \\rtimes \\mathbbZ2 symmetry. At the \\mathbbZ2 ferromagnetic transition, the spin sector of the chain maps to the Lifshitz field theory. Consistent with analytic predictions, the U(1)-charged spin-nematic bond operator Si^+Si+1^+ exhibits long-range order, while the electron Green's function shows stretched-exponential decay. Together, these results elucidate the mechanism and consequences of criticality-enabled U(1) symmetry breaking in 1+1D.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.38581",
+      "tier": "brief",
+      "why": "Analytic and DMRG theory of criticality-enabled spontaneous U(1) symmetry breaking at 1+1D Lifshitz points offers a surprising mechanism outside the usual Mermin-Wagner intuition."
+    },
+    {
+      "id": "2609.39806",
+      "title": "\\muSR measurements of 3D Ising ferromagnetism in bulk Fe3GeTe2 crystals",
+      "authors": [
+        "M. N. Wilson",
+        "J. Huang",
+        "T. J. Hicken",
+        "D. A. Mayoh",
+        "B. M. Huddart",
+        "G. Balakrishnan",
+        "T. Lancaster"
+      ],
+      "abstract": "Fe3GeTe2 is a quasi-two-dimensional itinerant ferromagnet with a van-der-Waals layered structure that exhibits substantial magnetic anisotropy. In bulk samples, this material becomes magnetically ordered below 220~K, while in thin samples, the gate-tunability of the ferromagnetic moment has attracted significant interest. Alongside high-temperature ferromagnetism, a low-temperature magnetic state occurs whose nature has not been conclusively identified, with some studies suggesting a transition between ferromagnetism and antiferromagnetism with temperature. Here we present magnetometry and \\muSR data that demonstrate that Fe3GeTe2 exhibits three-dimenional Ising-like ferromagnetism over the entire temperature range between TC=220~K and 2~K. The feature at 170~K that has previously been proposed to be a transition to antiferromagnetism is instead likely to represent a domain-freezing transition.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39806",
+      "tier": "brief",
+      "why": "muSR measurements settle a long debate on Fe3GeTe2's low-temperature magnetic state, showing it's domain freezing rather than an AFM transition in this widely studied vdW ferromagnet."
+    },
+    {
+      "id": "2609.39612",
+      "title": "Anisotropic wavevector-dependent damping of thickness-quantized magnons",
+      "authors": [
+        "Tamara Azevedo",
+        "Rostyslav O. Serha",
+        "Yannik Kunz",
+        "Matthias R. Schweizer",
+        "Vitaliy I. Vasyuchka",
+        "Mathias Weiler",
+        "Andrii V. Chumak",
+        "Burkard Hillebrands",
+        "Mikhail Kostylev",
+        "Alexander A. Serga"
+      ],
+      "abstract": "Magnon damping is a key factor governing spin-wave transport and nonlinear dynamics of multimode magnon systems. However, many descriptions rely on the assumption of an effective mode-independent parameter, which can mask wavelength-dependent relaxation processes that depend on propagation geometry and mode profile. Here, we employ high-resolution parametric-instability spectroscopy to probe thickness-quantized spin waves with wavelengths down to about a hundred nanometers in micrometer-thick yttrium iron garnet films. The instability threshold exhibits a regular sawtooth dependence on the magnetic field, arising from switching between discrete thickness modes. Comparison with dipole–exchange theory reveals anisotropic wavevector-dependent damping that increases with mode number and depends differently on the in-plane and out-of-plane wavevector components.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.other"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39612",
+      "tier": "brief",
+      "why": "High-resolution spectroscopy reveals anisotropic, mode-dependent magnon damping in YIG films, refining standard magnonics assumptions."
+    },
+    {
+      "id": "2609.40004",
+      "title": "Many-body topology in parity-preserving tensor networks",
+      "authors": [
+        "Maksimilian Usoltcev",
+        "Nguyen Hanh Dung",
+        "Carolin Wille",
+        "Matteo Rizzi",
+        "Alexander Altland"
+      ],
+      "abstract": "Planar parity-preserving tensor networks (ppTNs) admit a fermionic formulation in which the Gaussian, efficiently contractible limit is deformed by local interactions. We investigate how many-body methods can be used to analyze such contractions in a minimal two-parameter ppTN. Its contraction is simultaneously an interacting fermionic partition function, a loop gas, a deformed toric-code norm, and a quartic Ising model, allowing the same phase diagram to be approached with complementary tools. At its center lies a `topological island', characterized beyond the Gaussian limit by a boundary-twist \\mathbb Z2 indicator that reduces to Chern-number parity and admits a loop-winding interpretation under duality. Fermionic perturbation theory predicts the interacting phase boundaries, tensor-network numerics establish their critical behavior, and the loop and spin descriptions reveal a self-dual line with a c=1 four-state-Potts multicritical fixed point.",
+      "categories": [
+        "cond-mat.stat-mech",
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.40004",
+      "tier": "brief",
+      "why": "A minimal parity-preserving tensor network connects fermionic partition functions, loop gases, and toric-code physics, revealing a topological island with an exotic multicritical fixed point."
+    },
+    {
+      "id": "2609.38870",
+      "title": "Surface quantum response of plasmonic heterodimers: revealing the hidden nonlocality",
+      "authors": [
+        "Ida Juliane Bundgaard",
+        "Christos Mystilidis",
+        "Frederik Wulff Christensen",
+        "Lorenz Huber",
+        "P. Elli Stamatopoulou",
+        "Carsten Rockstuhl",
+        "P. A. D. Gon\\c{c}alves",
+        "Ulrich Hohenester",
+        "N. Asger Mortensen",
+        "Christos Tserkezis"
+      ],
+      "abstract": "We probe the quantum response of plasmonic heterodimers with extended (plane waves) and localized (point dipoles and electron beams) sources. Implementing the surface-response formalism based on Feibelman parameters, we explore nanosphere heterodimers where one particle is characterized by electron spill-in, while the other by spill-out. We identify situations where the two quantum surface corrections that act in opposite spectral-shift directions can cancel out, producing mesoscopic spectra that do not differ from the predictions of the local-response approximation. This picture changes dramatically once localized sources are implemented, allowing one to selectively probe the quantum response of the particles independently. Such probing occurs in terms of higher-order modes in the case of electron beams, or for the complete modal landscape in the case of point dipole sources. This description offers a new insight into the mechanisms governing light–matter interactions in extreme plasmonic architectures, and opens new perspectives for the understanding and tailoring of plasmonic–quantum emitter architectures.",
+      "categories": [
+        "physics.optics",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.38870",
+      "tier": "mention",
+      "why": "Quantum surface-response (Feibelman parameter) effects in plasmonic heterodimers can hide or reveal nonlocal corrections depending on probe type."
+    },
+    {
+      "id": "2609.38529",
+      "title": "Single-particle detection of the Néel transition in LaCrO3 microcrystals via widefield nitrogen-vacancy center magnetic imaging",
+      "authors": [
+        "Carson O. Patterson",
+        "Ethan Q. Williams",
+        "Eden Tzanetopoulos",
+        "Benjamin C. Li",
+        "Rachel T. Smith",
+        "Matthew Chang",
+        "Hideyuki Watanabe",
+        "Daniel R. Gamelin",
+        "Kai-Mei C. Fu"
+      ],
+      "abstract": "Rare-earth orthochromites exhibit rich, chemically tunable magnetic behavior, making them attractive for temperature sensing and temperature-dependent switching applications. Realizing this potential requires understanding how synthesis conditions and particle morphology influence the underlying Cr3+ magnetic ordering. Orthochromite magnetism has traditionally been characterized by ensemble techniques such as neutron diffraction and SQUID magnetometry, which report only averaged magnetic properties and cannot access particle-level information. Here we use widefield nitrogen-vacancy (NV) magnetometry to image the stray magnetic fields of individual LaCrO3 microcrystals produced via molten salt synthesis, resolving the antiferromagnetic Néel transition in single particles. Of the 18 particles measured between 278 and 298 K, five show a clear onset of magnetization near the ensemble Néel temperature, four show no measurable magnetic signal, and nine display temperature-independent signatures consistent with localized magnetic impurities undetected by ensemble measurements. Below the Néel temperature, particle magnetization remains fixed under a rotating in-plane field, consistent with canted antiferromagnetic ordering rather than paramagnetism, while repeated thermal cycling shows that the magnetic field pattern varies between cooldowns with certain features recurring at the same locations, consistent with micron-scale structurally pinned antiferromagnetic domains in which the sign of the weak ferromagnetic moment is set independently each time they pass through the Néel transition. These results establish single-particle NV magnetometry as a sensitive probe of magnetic ordering and domain structure in individual microcrystals, a key step toward correlating individual particle morphology and defect structure with magnetic ordering in orthochromites.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.38529",
+      "tier": "mention",
+      "why": "Widefield NV magnetometry resolves single-particle Néel transitions and domain pinning in LaCrO3 microcrystals."
+    },
+    {
+      "id": "2609.39435",
+      "title": "Giant PhotoMagnetoDiode Effect",
+      "authors": [
+        "V. L. Korenev",
+        "S. A. Tarasenko"
+      ],
+      "abstract": "We report the observation of a photomagnetodiode effect with a giant rectification ratio of 10 at a magnetic field of 0.1 T. The effect consists of a diode-like dependence of the photocurrent on the applied voltage that emerges in an external magnetic field. Such a pronounced nonreciprocity is observed in high-quality VPE-grown GaAs samples at low temperatures at interband photoexcitation. The photoconductivity is invariant upon reversing the polarity of both electric and magnetic fields. Similar behavior with even higher asymmetry ratio is observed in photoluminescence. The findings are well described by the theory of ambipolar drift of carriers in electric and magnetic fields together with fast surface recombination.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39435",
+      "tier": "mention",
+      "why": "Observation of a giant photomagnetodiode rectification effect in GaAs under modest magnetic fields."
+    },
+    {
+      "id": "2609.38892",
+      "title": "Optical studies of negative g-factor dopants in an antiferromagnet: Nd:GdVO4",
+      "authors": [
+        "Lachlan W. Cronin",
+        "Masaya Hiraishi",
+        "Luke S. Trainor",
+        "Jevon J. Longdell"
+      ],
+      "abstract": "Neodymium-doped gadolinium vanadate (Nd:GdVO4) is a popular laser material at room temperature. It has received limited attention for quantum technologies because of the linebroadening effects of disordered gadolinium spins in the host. Here we investigate the optical properties at temperatures below the 2.5 K Néel temperature, revealing narrow optical transitions. We demonstrate that rare earth ions in magnetic hosts give us a new way of observing the signs of magnetic g-factors. The interplay between the exchange and Zeeman interactions means that we see clear evidence of negative g-factors. These results provide a detailed spectroscopic foundation for Nd:GdVO4 and expand the understanding of its candidacy as a material for hybrid quantum systems.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.38892",
+      "tier": "mention",
+      "why": "Optical spectroscopy of Nd:GdVO4 below its Néel temperature reveals negative g-factor signatures useful for hybrid quantum systems."
+    },
+    {
+      "id": "2609.39415",
+      "title": "Reservoir- and Measurement-free Microwave Initialization of Semiconductor Spin Qubits",
+      "authors": [
+        "Leon C. Camenzind",
+        "Ik Kyeong Jin",
+        "Akito Noiri",
+        "Kenta Takeda",
+        "Takashi Nakajima",
+        "Takashi Kobayashi",
+        "Seigo Tarucha"
+      ],
+      "abstract": "Scalable quantum processors require repeated qubit initialization throughout large arrays. In semiconductor spin qubits, fast initialization commonly relies on local reservoir access or measurement-based feedback, requiring dedicated infrastructure that becomes increasingly difficult to distribute as processors scale. Here, we demonstrate reservoir- and measurement-free initialization of a silicon spin-qubit pair in an industrially fabricated Si/SiGe quantum-dot device using a fixed sequence of microwave and baseband pulses. Odd spin-parity states relax to the singlet charge state, whereas blocked even spin-parity states are microwave-driven through the triplet manifold and subsequently converted to the singlet by singlet-triplet mixing and charge hybridization. Repeated cycles produce the singlet-associated charge outcome with a median probability of 99.4% across the sampled preparation states, while exchange spectroscopy independently verifies mapping to the target |\\uparrow\\downarrow\\rangle operational state. Microwave spectroscopy and time-domain measurements identify the dark-state-limited single-cycle transfer and the subsequent blockade-lifting dynamics that set the initialization time scale. The demonstrated pumping sequence uses approximately 12\\,\\mus of microwave bursts and mixing dwells, while we project sub-microsecond initialization under improved device conditions. These results establish fixed-sequence microwave initialization as a scalable control primitive for semiconductor spin-qubit processors, based on singlet-triplet physics that can be adapted to platforms with suitable Pauli-blockade transitions.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.39415",
+      "tier": "mention",
+      "why": "Demonstrates fast reservoir- and measurement-free microwave initialization of silicon spin qubits with 99.4% fidelity."
+    },
+    {
+      "id": "2609.39879",
+      "title": "Fault Tolerant Quantum Phases of Matter",
+      "authors": [
+        "Colin V. Coane",
+        "Shouzhen Gu",
+        "Aleksander Kubica"
+      ],
+      "abstract": "We introduce a classification of quantum phases of mixed states based on the ability to preserve and fault tolerantly transfer information. We formulate phase equivalence between sets of states that encode logical quantum information and are connected by shallow local channel circuits assisted by local measurements and global classical communication of measurement outcomes, where all quantum operations, including measurements, must be robust to noise. We show that the existence of a recovery threshold for local noise is a property of an entire phase. We prove that any two sets of states with nonzero thresholds that are related by finite-depth local channel circuits belong to the same fault tolerant phase. Our approach leads to a classification of subsystem codes without favoring any state of the gauge subsystem, and we demonstrate phase equivalence between 2D and 3D color codes using dimensional jumps within the 3D gauge color code. Lastly, we study how syndrome structure affects fault tolerance in circuits with measurements. We show that qudit stabilizer codes with extended syndromes permit single-shot state preparation, whereas a broad class of shallow circuits measuring point-like syndromes, including state preparation for 2D topological codes and non-Abelian topological orders with solvable anyon theories, is not fault tolerant.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.stat-mech",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2609.39879",
+      "tier": "mention",
+      "why": "Introduces a classification of fault-tolerant mixed-state quantum phases based on noise-robust local circuit equivalence."
+    },
+    {
+      "id": "2609.38740",
+      "title": "Sign problem and criticality in world-line quantum Monte Carlo methods",
+      "authors": [
+        "Rubem Mondaini",
+        "Richard T. Scalettar"
+      ],
+      "abstract": "Discussions of the sign problem usually focus on its role as the primary limitation of the applicability of quantum Monte Carlo methods for reliably solving quantum many-body models. Its behavior as a function of spatial lattice size, doping, temperature, and interaction strengths has been carefully characterized within the determinant quantum Monte Carlo algorithm. Here, we consider the much less well-explored question of the temperature- and size-dependence of the sign problem in the world-line quantum Monte Carlo method. We review how, in this algorithm, even sampling the partition function of free fermions yields a sign problem, which we connect to non-analytic behavior in the corresponding reference model, hard-core bosons on a lattice. The latter exhibits a finite-temperature Kosterlitz-Thouless phase transition in 2D, and we show how this non-analytic behavior is imprinted on the average sign of the weights for the corresponding free fermion 2D tight-binding model. Our results thus show how phase-transition information can remain encoded in the sign problem even after direct sign sampling becomes impractical.",
+      "categories": [
+        "cond-mat.str-el",
+        "physics.comp-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.38740",
+      "tier": "mention",
+      "why": "Shows that Kosterlitz-Thouless critical behavior of a reference boson model is imprinted on the average sign in world-line QMC simulations."
+    },
+    {
+      "id": "2609.39947",
+      "title": "Thermal magnon transport in FM/AFM bilayers",
+      "authors": [
+        "Moumita Kundu",
+        "Ulrich Nowak"
+      ],
+      "abstract": "Progress in information processing relies on spintronics, where magnetic states serve as efficient carriers for data storage and transfer. In this work, we theoretically study magnon propagation in a bilayer composed of a ferro-magnet and an antiferromagnet. For this purpose, we probe the spin Seebeck effect by introducing a spatially varying temperature profile. This generates a local magnon excitation and a continuous magnon flux from hot to cold regions which we quantify through the resulting non-equilibrium magnon accumulation. Based on the chirality of these modes, we identify specific constraints for magnon modes traveling either from the ferromagnet into the antiferromagnet or vice versa. A key finding is the observation of a thermally triggered spin current in the antiferromagnet, a phenomenon typically absent in bulk antiferromagnets that obey time-reversal symmetry. These results provide important insights into the design of heterostructures for magnonic chirality-selective spin transport.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39947",
+      "tier": "mention",
+      "why": "Theoretical study finds thermally triggered chirality-selective spin currents in FM/AFM bilayers, relevant to magnonic device design."
+    },
+    {
+      "id": "2609.40150",
+      "title": "adapol: Adaptive pole-fitting for quantum many-body physics",
+      "authors": [
+        "Zhen Huang",
+        "Chia-Nan Yeh",
+        "Lin Lin",
+        "Nils Wentzell",
+        "Jason Kaye",
+        "Hugo U. R. Strand"
+      ],
+      "abstract": "We describe adapol, a Python package for fitting Matsubara Green's functions, self-energies, and hybridization functions by a compact sum of simple poles with real pole locations and matrix-valued residues. This pole-fitting step arises in many contexts, including hybridization fitting for quantum impurity solvers based on exact diagonalization, perturbation theory, and tensor networks, the compression of existing pole expansions such as the discrete Lehmann representation, diagrammatic methods based on discrete pole representations, and the analytic continuation of Matsubara Green's functions. adapol uses a modified version of the AAA rational approximation algorithm to estimate pole locations, and non-convex optimization to refine them. This procedure yields accurate and compact fits in a black-box and noise-robust manner. adapol provides a simple, self-contained interface with extensive documentation and examples, as well as an interface to the TRIQS package.",
+      "categories": [
+        "cond-mat.str-el",
+        "cs.NA",
+        "math.NA"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.40150",
+      "tier": "mention",
+      "why": "Introduces adapol, a practical pole-fitting software package for Matsubara Green's functions used widely in quantum impurity solvers."
+    },
+    {
+      "id": "2609.39258",
+      "title": "Multipartite entanglement hidden in vector-chiral correlations of spin-1/2 chains",
+      "authors": [
+        "Tokuro Shimokawa"
+      ],
+      "abstract": "Characterizing entanglement in quantum materials through experimentally accessible observables remains a central challenge. Quantum Fisher information associated with sums of one-site spin operators provides one route by linking entanglement to measurable magnetic response functions. Extending this approach to local composite observables requires new entanglement bounds. Here we establish a rigorous bound for the total nearest-neighbour vector chirality of periodic spin-1/2 chains with an even number of sites. The quantum Fisher information per spin cannot exceed k+1 for any k-producible state, so exceeding this bound certifies entanglement depth of at least k+1. Combining infinite density-matrix renormalization group and thermal pure quantum-state calculations, we demonstrate multipartite entanglement encoded in vector-chiral correlations at zero and finite temperatures in an extended J1-J2 XXZ chain. The spin-current coupling between vector chirality and electric polarization offers, in principle, access to this witness through dielectric loss spectroscopy in multiferroic magnets, extending entanglement diagnostics beyond dipolar spin correlations.",
+      "categories": [
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2609.39258",
+      "tier": "mention",
+      "why": "Establishes a quantum Fisher information bound certifying multipartite entanglement from vector-chirality correlations in spin-1/2 chains, potentially measurable via dielectric spectroscopy."
+    }
+  ]
+}

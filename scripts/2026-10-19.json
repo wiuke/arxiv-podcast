@@ -1,0 +1,391 @@
+{
+  "date": "2026-10-19",
+  "format": "dialogue",
+  "n_papers": 38,
+  "episode_title": "Anyons bound to excitons, attraction from repulsion in Chern bands, and a neural net for the free anyon gas",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October nineteenth. About thirty-eight new papers on archive today, and condensed matter theory had a very good day for moiré Mo-Te-two — three separate papers on fractional Chern insulators, charge order, and superconductivity in the same material. We'll also get a neural network that finally simulates a gas of free anyons past four particles, and a perspective piece on quantum dot photon sources."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's start with the one that's most directly about optics — anyons bound to excitons, paper one in the show notes, Lu and Santos."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, this is a theory paper, but it's aimed squarely at an optical measurement. The setup: twisted bilayer Mo-Te-two hosting a fractional Chern insulator at filling one third, placed near a second TMD heterobilayer — something like Mo-Se-two on W-S-e-two — that hosts dipolar interlayer excitons. The exciton's electron and hole sit at different heights, so it looks like a vertical dipole sitting a few nanometers above the Mo-Te-two layer."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the claim is that exciton binds to a quasihole?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes. The e-over-three quasihole is a charge deficit, and even though the exciton-electron interaction is repulsive, that deficit is effectively attractive to the exciton — you get a redshift in the exciton energy when it sits near a quasihole. They do exact diagonalization on a continuum model, five fermions on a lattice hosting one quasihole, and track the binding energy as a function of the layer separation h and the exciton's effective mass."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what's the actual number, and does it survive thermal broadening?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Binding reaches about one point two three milli-electron-volts at h equals one nanometer, when the exciton is heavy — bandwidth narrower than the FCI gap. For light, mobile excitons the kinetic energy just blows the bound state apart, so you need excitons confined or heavy to see this. That's basically the same mechanism authors invoke to explain recent anyon-trion photoluminescence features seen directly in Mo-Te-two, where confinement in a trap plays the same role as heavy mass here."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's actually new compared to just detecting a redshift?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The real-space picture. They compute the electron depletion around the exciton and get a localized core carrying very close to e-over-three — zero point three five six e at a radius of four point six nanometers — confirming the exciton really does pin the anyon. But it's not a clean circular blob like you'd get in a Landau level. There's a threefold, octupolar modulation imprinted by the moiré lattice on top of the monopole charge."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Does that angular structure actually carry information, or is it just decoration?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the nice part — they show it's sensitive to interlayer tunneling anisotropy specifically. Distorting the tunneling term makes the three lobes visibly imbalanced and tracks a measurable deviation from the ideal quantum-geometric trace condition, while the enclosed charge barely moves, staying between zero point three five four and zero point three five six e. So the core shape is a probe of band quantum geometry, decoupled from the topological charge itself."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Caveat?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Small systems — four-by-four and five-by-five lattices, so finite-size effects are a real concern, though they check consistency between sizes. And this requires the two layers stacked within a couple of nanometers, which is an engineering ask. But they point to scanning tunneling microscopy as a complementary real-space probe, on top of the optical redshift signature."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Next up, paper two, Aguilar-Méndez and Wagner, which is basically the fuller phase diagram behind that story — when do you get an FCI at all in twisted Mo-Te-two, versus a Wigner crystal?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is a comprehensive exact diagonalization sweep over displacement field and twist angle, at fillings minus one quarter, minus one third, minus one half, and minus two thirds. The headline finding is that band mixing — letting holes occupy the second valence band, not just the top one — kills the fractional Chern insulator at minus one third entirely, replaced everywhere by a square-root-three-by-square-root-three generalized Wigner crystal with a six point seven milli-electron-volt gap."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That actually matches experiment, right? People don't see FCIs at minus one third in Mo-Te-two."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly — that's the point they make. Without band mixing you'd get a spurious FCI there that experiments don't show. At minus two thirds the FCI survives and is robust, gapped by eight point three milli-electron-volts at small twist angle, but it collapses fast as you ramp the displacement field — not because the band's Chern number changes right away, but because Hartree-Fock-renormalized bandwidth broadens well before the actual topological transition at around ten milli-electron-volts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And at half filling?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a genuine competition — composite Fermi liquid at zero field, crystallizing into a stripe-ordered charge density wave that breaks three-fold symmetry at large displacement field, since the triangular lattice can't host a symmetric Wigner crystal at half filling. They stress all these generalized Wigner crystals need long-range Coulomb — shrinking the gate screening length kills them outright, which is a useful experimental knob for anyone trying to isolate the FCI."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three pushes the same material family toward superconductivity — Pichler, Kuhlenkamp, Vishwanath, and Knap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They step back from Mo-Te-two specifically and use a minimal checkerboard lattice Chern band model, solved with large-scale tensor network — infinite DMRG — simulations, to ask: can purely repulsive interactions in a partially filled Chern band generate chiral superconductivity, and how does it compete with FCIs and charge order? The mechanism is a Kohn-Luttinger-type effect: random-phase-approximation screening of the bare repulsion generates an effective attraction at next-nearest-neighbor range, even though nearest-neighbor repulsion stays repulsive."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And that attraction is enough to actually pair electrons, not just a perturbative curiosity?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the surprising result — in their tensor network phase diagram, FCIs at the Jain fractions transition into a chiral p-wave superconductor as they tune a staggered potential that's basically a stand-in for displacement field, broadening the band. The gap function has clean p-wave structure with a Bogoliubov-de-Gennes Chern number of minus one across the transition, and at half filling, instead of superconductivity, the same attractive channel stabilizes what they call a generalized Hall crystal — a charge density wave with a quantized Hall conductance, essentially a re-entrant integer quantum Hall state built from interactions alone."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is this actually capturing something seen in twisted Mo-Te-two experiments?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They explicitly connect it to recent devices that reported FCIs, superconductivity, and re-entrant integer quantum Hall states all in a single sample — this model reproduces that same multi-phase structure from one Hamiltonian. The caveat is it's a toy checkerboard model, not the real Mo-Te-two continuum bands, and the strong-coupling field theory connecting the superconductor smoothly to the Jain-sequence FCIs is still an open problem they flag explicitly."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Shifting gears — paper four is a perspective piece, not a research result. Jöns, Gangloff, and Reiter on semiconductor quantum dots as photon sources."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Worth a few minutes since it's a different quantum light platform than TMDs. It's a retrospective and forecast: quantum dots went from first single-photon demonstrations in the early two-thousands, through entangled-photon generation via the biexciton cascade, to today's droplet-etched GaAs dots hitting near-unity indistinguishability and microsecond-to-millisecond spin coherence via dynamical decoupling and nuclear-spin cooling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any numbers worth remembering?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A couple — electron spin coherence time T-two-star pushed over two orders of magnitude to point six microseconds via quantum-algorithmic nuclear-spin cooling, and direct NMR control of the nuclear bath extending dynamical decoupling out to a hundred milliseconds. They also flag industry traction — companies like Quandela and Sparrow Quantum — as a sign the field's shifting from discovery-driven to engineering-driven."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Relevant to us mostly as a comparison point — quantum dots solve the deterministic single-photon problem that TMD excitons still struggle with because of multi-valley and phonon dephasing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and they say the open problems now are less about new physics, more about reproducibility and scale — which is basically the opposite bottleneck from where 2D exciton spectroscopy sits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five — back to anyons, but now a pure numerics story. Perez Fadon, Tam, and Shackleton, 'AnyNet'."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This tackles a genuinely old open question: what does a gas of free, non-interacting Abelian anyons actually do at finite density? Nobody's solved this beyond four particles with exact diagonalization, because the statistical interaction — once you gauge-transform anyons into fermions coupled to a Chern-Simons field — is singular and three-body. They build a neural network variational ansatz, AnyNet, based on FermiNet, but with the key trick that it analytically enforces the exact non-analytic short-distance power-law behavior anyons must have when they coalesce, rather than hoping the network learns it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why does that matter so much?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They show a naive Jastrow-factor approach either has divergent variance during training or simply can't represent three-body coalescence correctly — it decays too fast compared to the true fermionic limit. So this is a genuine architecture contribution, not just throwing more compute at the problem."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Does it actually check out against exact diagonalization?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "For four anyons in a harmonic trap, they match extrapolated exact diagonalization energies to a few parts in a million across the whole statistics range. Then they push to ten and even twenty anyons — previously totally inaccessible — and find multiple level crossings as a function of the statistics parameter, with the radial density developing a hole in the trap center near alpha around zero point four. Near the fermionic limit they benchmark against new perturbation theory they derive themselves, agreeing to within zero point four percent at N equals twenty."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the anyonic atom calculation — that's the connection back to paper one's anyon-impurity binding."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, they also simulate anyons bound to a charged impurity, as a toy model for exactly that kind of anyon-binding physics. They find an extra anyon only stays bound to a neutral atom for small statistics parameter, below about zero point two to zero point three — beyond that the anyon cloud just delocalizes. It's a nice independent confirmation that anyon-impurity binding is statistics-dependent and fragile, which is the same qualitative lesson as the exciton-quasihole story from paper one, just in a completely different, idealized setting."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Open question they flag?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Whether the free anyon gas is a superfluid, as long predicted but never confirmed numerically at scale — they say the harmonic trap geometry makes that hard to pin down cleanly, and point to torus or sphere geometries as the next target."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Quick briefs for the rest. Paper six, Phong and collaborators, looks at domain walls in rhombohedral graphene quarter metals — they show structural domain walls, formed by strain rather than spontaneous valley symmetry breaking, become electronically opaque under magnetic field, while intrinsic valley domain walls get wiped out. That gives a clean magnetotransport test to tell the two apart."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven, Wong, Mitra, and Kim, is a transport theory piece on weak localization in rhombohedral multilayer graphene. They find that non-uniform quantum geometry alone can flip the sign of the quantum interference correction to conductivity, producing crossovers between weak localization and weak antilocalization even without time-reversal symmetry — an emergent antiunitary symmetry at special points protects a gapless Cooperon mode."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight, Xiao and Wan, computes the dynamical mobility of a Nagaoka polaron — a single hole dressed by a ferromagnetic cloud in the square-lattice t-model — using quantum Monte Carlo. As the system cools, the Drude peak gives way to a finite-frequency mode as the polaron kinetically self-traps, giving transport a new handle on this old kinetic-magnetism problem."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine is an experimental one — Zhang and collaborators use a single nitrogen-vacancy center in diamond as a chirality analyzer for spin waves in yttrium iron garnet. The two excited-state transitions act as separate left- and right-handed channels, letting them image Damon-Eshbach surface spin waves traveling in opposite directions without needing a phase reference."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper ten, Shen, Zhong, and Lee, realizes a Landau-forbidden ferromagnet-to-valence-bond-solid transition on a superconducting quantum processor, using matrix-product-state-assisted state preparation in a frustrated spin chain — a hardware demonstration of deconfined quantum criticality ideas, plus some nonequilibrium dynamics tracking the competing orders after a quench."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the roundup — a strong day for twisted Mo-Te-two theory, and anyons showing up in three very different guises."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Back tomorrow with the next batch."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.22473",
+      "title": "Anyon bound states in MoTe2 Fractional Chern Insulators",
+      "authors": [
+        "Tianhong Lu",
+        "Luiz H. Santos"
+      ],
+      "abstract": "Binding anyons to optically active excitons offers a route to manipulate fractional excitations and reveal the internal spatial structure of anyons. We establish the formation of anyon bound states between a mobile dipolar exciton and an e/3 quasihole in a twisted bilayer MoTe2 fractional Chern insulator. Using exact diagonalization of a continuum-based interacting model, we identify a regime of meV-scale binding and strong exciton-quasihole entanglement controlled by exciton mobility and the distance between the exciton and the FCI. Spatial correlations resolve a localized depletion core carrying approximately e/3 charge around the exciton, providing a real-space characterization of the bound state. Beyond its fractional charge, the quasihole exhibits a moiré-induced octupolar structure. Interlayer tunneling anisotropy strongly deforms this structure while leaving the enclosed charge nearly unchanged, linking the internal profile of the anyon to the underlying electronic quantum geometry. These findings establish conditions for robust exciton-anyon binding in moiré heterostructures and show how these composites provide access to properties of fractional excitations beyond their total charge.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22473",
+      "tier": "deep",
+      "why": "Direct real-space characterization of anyon-exciton bound states in a twisted MoTe2 FCI connects exciton optics to fractional quantum Hall physics, squarely at the intersection of this listener's moire and optics interests."
+    },
+    {
+      "id": "2610.22479",
+      "title": "Fractional Chern insulators and composite Fermi liquids vs. charge order in twisted MoTe2",
+      "authors": [
+        "Enrique Aguilar-M\\'endez",
+        "Glenn Wagner"
+      ],
+      "abstract": "The bandstructure of twisted MoTe2 around 3.7^\\circ consists of spin-valley locked Chern bands with a bandwidth that is smaller than the interaction scale. As such, the strongly correlated phases familiar from Landau levels can be realized: Quantum Hall states, composite Fermi liquids and charge order. These states have in common that they are all favoured by strong interactions, however changing the quantum geometry and topology of the bands as well as their bandwidth via the displacement field and twist angle tilts the balance between them. We provide a comprehensive exact diagonalization analysis of the competition between these states and in particular elucidate the nature of the charge order at fillings \\nu=-\\frac14,-\\frac13,-\\frac12,-\\frac23. Furthermore, we analyze the effect of band mixing by going beyond a single band per valley. This effect of band mixing is crucial for reconciling the numerical phase diagrams with experimental observations.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22479",
+      "tier": "deep",
+      "why": "A comprehensive exact-diagonalization phase diagram of FCIs, composite Fermi liquids, and charge order in twisted MoTe2 directly addresses the moire/fractional Chern insulator physics central to the listener's secondary focus."
+    },
+    {
+      "id": "2610.22498",
+      "title": "Attraction from repulsion in an interacting Chern band: chiral superconductivity, generalized Hall crystals, and competing fractional Chern insulators",
+      "authors": [
+        "Fabian Pichler",
+        "Clemens Kuhlenkamp",
+        "Ashvin Vishwanath",
+        "Michael Knap"
+      ],
+      "abstract": "Experiments realizing strong interactions in partially filled Chern bands have observed fractional Chern insulators (FCIs), superconductors, and topological crystals in close proximity. Yet the microscopic relation between them remains poorly understood. Here, we use tensor network simulations to study repulsively interacting spinless fermions in a tunable topological band of the checkerboard lattice. We characterize the competing phases and identify key features of the experimental phenomenology. FCIs from the Jain sequence transition into chiral p-wave superconductivity both below and above half filling as the band dispersion is enhanced. By contrast, at half filling, a generalized Hall crystal with quantized Hall conductance and a doubled unit cell forms for sufficiently strong coupling. Surprisingly, a weak-coupling approach starting from a metallic parent state captures the nature of both ordered phases at intermediate coupling. We find that fluctuations in the metal generate longer-range attraction, which we analyze within the random-phase approximation. This approach captures the pairing symmetry as well as the radial form factors of the Cooper pairs, and incorporating this attraction into Hartree-Fock selects the observed Hall crystal. Together, these results identify fluctuation-induced attraction from repulsion as a common microscopic ingredient of ordering, while our tensor network computations establish the direct competition of both phases with FCIs.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22498",
+      "tier": "deep",
+      "why": "Tensor-network study revealing how fluctuation-induced attraction connects FCIs to chiral superconductivity and Hall crystals in Chern bands offers deep insight into the competing orders seen in recent moire experiments."
+    },
+    {
+      "id": "2610.23106",
+      "title": "From quantum emitters to technological platforms: a perspective on semiconductor quantum dots",
+      "authors": [
+        "Klaus D. J\\\"ons",
+        "Dorian A. Gangloff",
+        "Doris E. Reiter"
+      ],
+      "abstract": "Photonic quantum technologies are based on controlled photon states. To generate these, quantum dots have emerged as excellent sources of single and entangled photons. In this Perspective, we briefly review the chronological development of quantum dots as photon sources, from their beginnings as quantum emitters in the early 2000s to the advanced photonic devices being developed today. We highlight the interplay between fundamental research and industrial aspects before discussing the photonic quantum technologies we expect to emerge in the near future.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.23106",
+      "tier": "deep",
+      "why": "A perspective on the evolution of semiconductor quantum dots as single/entangled photon sources is highly relevant to the listener's quantum photonics group context and future device directions."
+    },
+    {
+      "id": "2610.23815",
+      "title": "Anyonic Neural Network Wavefunctions",
+      "authors": [
+        "Andres Perez Fadon",
+        "Pok Man Tam",
+        "Leyna Shackleton"
+      ],
+      "abstract": "The macroscopic behavior of a non-interacting gas of Abelian anyons has remained unsettled for many decades. Prior numerical methods employing exact diagonalization in the continuum and on the plane have been limited to small system sizes, at most N = 4 anyons. Using the rapidly developing technology of neural network wavefunctions, we develop variational ansatze appropriate for studying continuum models of the Abelian anyon gas. The neural network architecture, which we call \"AnyNet\", is capable of exactly enforcing the non-analytic short-distance behavior induced by the anyonic statistics. We demonstrate excellent agreement with exact diagonalization for N=4 anyons, obtain accurate results up to N = 16 for intermediate statistics, and study up to N=20 for almost-fermionic anyons, matching perturbative results within a 0.4% discrepancy. We use this methodology to study anyons in a harmonic trap, and anyonic atoms as a model for anyon binding to impurities. We study the structure of anyonic wavefunctions as the statistics parameter is varied. We focus on the single-particle density, the pair density, the angular momentum, and the scaling of the wavefunction as multiple anyons coalesce. This work opens doors to understanding the macroscopic behavior of anyons, for which rich phases have been predicted theoretically.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas",
+        "hep-th",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.23815",
+      "tier": "deep",
+      "why": "Novel neural-network wavefunction technique pushes anyon gas simulations to unprecedented particle numbers, giving fresh numerical access to fractional statistics physics underlying FCI states."
+    },
+    {
+      "id": "2610.22521",
+      "title": "Valley-Selective Transport through Structural Domain Walls in Rhombohedral Graphene Quarter Metals",
+      "authors": [
+        "Vo Tien Phong",
+        "Pablo San-Jose",
+        "Bing Cheng",
+        "Zhengguang Lu",
+        "Elsa Prada",
+        "Long Ju",
+        "Eugene Mele",
+        "Cyprian Lewandowski",
+        "Francisco Guinea"
+      ],
+      "abstract": "Domain walls separating quarter metals with opposite valley polarizations have recently been imaged in rhombohedral graphene multilayers. Depending on their formation mechanism, these walls respond in distinct ways to external magnetic probes. Therefore, understanding their behaviors is critical to the interpretation of experimental results. In this work, we examine domain walls formed from strain-induced one-dimensional structural defects that separate domains with complementary rhombohedral stacking orders. We show that while transport across such domain walls is controlled by the valley degree of freedom, the coupling to a magnetic field is dictated by the momentum-space chirality encoded in the Hamiltonian. As a consequence, structural domain walls are rendered electronically opaque by an applied magnetic field, while intrinsic domain walls formed by spontaneous valley symmetry breaking are unstable in the presence of such an ordering field and can be eliminated. This dichotomy allows the two types of domain walls to be distinguished in a magnetotransport experiment.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22521",
+      "tier": "brief",
+      "why": "Distinguishes structural vs. intrinsic valley domain walls in rhombohedral graphene quarter metals via magnetotransport, relevant to moire/valley physics."
+    },
+    {
+      "id": "2610.22500",
+      "title": "Quantum-interference correction to conductivity in disordered electronic bands with non-uniform quantum geometry",
+      "authors": [
+        "Yip Chun Wong",
+        "Asimpunya Mitra",
+        "Yong Baek Kim"
+      ],
+      "abstract": "Weak localization in two-dimensional disordered electron systems originates from constructive interference between time-reversed scattering paths, giving rise to a logarithmically divergent quantum-interference correction to the dc conductivity. This behavior is generally suppressed when time-reversal symmetry (TRS) is broken. In this study, using a band-projected framework motivated by spin- and valley-polarized rhombohedral N-layer graphene (RNG), we show that nonuniform quantum geometry can qualitatively modify quantum-interference corrections to dc transport. In particular, continuously tuning the quantum geometry can change the sign of the conductivity correction, corresponding to a crossover between localization and antilocalization tendencies. Remarkably, at special values of the parameter controlling the quantum geometry, weak-localization (WL) or weak-antilocalization (WAL) can re-emerge despite broken microscopic TRS. At these special points, the orbital structure of the Bloch states gives rise to an emergent antiunitary symmetry that protects a gapless Cooperon mode and restores the logarithmically divergent quantum-interference correction characteristic of WL or WAL. Our results establish nonuniform quantum geometry as a mechanism for controlling quantum interference and electron localization in multiorbital electronic systems.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22500",
+      "tier": "brief",
+      "why": "Shows how nonuniform quantum geometry in rhombohedral graphene can flip weak localization to antilocalization, linking quantum geometry (a core moire concept) to transport."
+    },
+    {
+      "id": "2610.23013",
+      "title": "Transport Signatures of a Kinetically Self-Trapped Nagaoka Polaron",
+      "authors": [
+        "Yusong Xiao",
+        "Yuan Wan"
+      ],
+      "abstract": "Nagaoka polarons are canonical examples of kinetic magnetism. Although their spin structure is well understood, their transport remains unexplored. We compute the dynamical mobility of a single hole in the square-lattice t-model using resummation-based quantum Monte Carlo and analytic continuation. Upon cooling, an incoherent Drude-like response gives way to a finite-frequency peak as the dc mobility vanishes. The peak signals an internal mode of a hole confined by its ferromagnetic cloud. Our results establish transport as an incisive probe of polaron formation and kinetic self-trapping.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.23013",
+      "tier": "brief",
+      "why": "Computes transport signatures of a self-trapped Nagaoka polaron, offering a transport analog to the polaron physics the listener studies optically."
+    },
+    {
+      "id": "2610.22867",
+      "title": "Chirality-resolved imaging of spin waves with a quantum spin",
+      "authors": [
+        "Enbo Zhang",
+        "Tiancheng Zheng",
+        "Bo-Yuan Yang",
+        "Shreyes Nallan",
+        "Chengchao Xu",
+        "Mark Ku",
+        "Jian-Gang Zhu"
+      ],
+      "abstract": "Spin waves carry their propagation direction in the handedness of their circularly polarized stray field, a property inaccessible to scalar magnetometers. In the Damon-Eshbach surface wave of an in-plane magnetized film, the dipolar field above the film rotates with a handedness fixed by the direction of travel. The nitrogen-vacancy (NV) centre in diamond is an intrinsic polarization analyser: a right-handed field about the NV axis drives one spin transition, and a left-handed field drives the other, in both the ground and the excited state. Here, we exploit the two excited-state transitions, which lie inside the spin-wave band of yttrium iron garnet (YIG), as a pair of chirality channels and image Damon-Eshbach waves in both directions. Because reflection from an etched boundary reverses the handedness, the incident and reflected waves appear as two lines in one spectrum and are imaged separately. In the ground state, the same rule applies, and the selected field drives Rabi oscillations, a route to chirality-selective control of the NV spin by magnons. Reading the two channels gives the direction of a spin wave at one point, without a phase reference. This advances chirality-resolved quantum sensing and provides insight into chiral spin-wave dynamics.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.app-ph",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22867",
+      "tier": "brief",
+      "why": "Demonstrates chirality-resolved magnon imaging using NV centers, a surprising and broadly important quantum sensing technique outside the core focus."
+    },
+    {
+      "id": "2610.22482",
+      "title": "Exploring Quantum Phase Transitions Beyond Landau Theory on a Quantum Processor",
+      "authors": [
+        "Ruizhe Shen",
+        "Yin Zhong",
+        "Ching Hua Lee"
+      ],
+      "abstract": "Direct continuous quantum phase transitions between phases that break distinct symmetries challenge the conventional Landau-Ginzburg-Wilson paradigm and provide a framework for deconfined quantum criticality. Here, we investigate a Landau-forbidden ferromagnetic-to-valence-bond-solid (FM-VBS) transition in a frustrated one-dimensional spin chain using superconducting quantum processors. Combining matrix-product-state-assisted circuit preparation with quantum-hardware measurements, we resolve the suppression of long-range ferromagnetic correlations and the redistribution of competing-order fluctuations across the transition. Distance-resolved correlations and finite-size analyses reveal signatures consistent with critical behavior. We further extend our investigation to nonequilibrium dynamics, directly preparing dimerized states and tracking the evolution of VBS order and joint FM-VBS fluctuations under local unitary interactions. Our results establish a versatile quantum-hardware framework for probing competing orders, critical correlations, and many-body dynamics beyond conventional Landau theory.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.22482",
+      "tier": "brief",
+      "why": "First quantum-processor realization of a Landau-forbidden deconfined quantum critical transition, a genuinely notable result worth a quick mention for broader context."
+    }
+  ]
+}
