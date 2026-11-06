@@ -1,0 +1,476 @@
+{
+  "date": "2026-10-23",
+  "format": "dialogue",
+  "n_papers": 38,
+  "episode_title": "Bosonic edges in twisted TMDs, reversed-drift anyons, and stripes versus superconductivity",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October twenty-third. About thirty-eight papers landed on the archive overnight, and we picked five for the deep dive plus a handful of quick ones."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's got a nice throughline for us. A numerical check of a bosonic edge phase in the double quantum spin Hall insulator, which is basically the theory behind twisted tungsten diselenide and molybdenum ditelluride devices. Then anyons that drift backwards in a uniform magnetic field, a moiré charge density wave paper, and then we drift further out to the Hubbard model and something called a discrete time liquid."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start close to home. Paper two, Feuerpfeil, Thomale, Devakul, Regnault, and May-Mann, on the edge of a double quantum spin Hall insulator."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Quick refresher for anyone who hasn't touched topological insulators since a bachelor's course. A quantum spin Hall insulator has a bulk gap but helical edge modes — spin up goes one way, spin down the other, protected by time reversal. Stack two copies and you get a double quantum spin Hall insulator, spin Chern number C sub s equals two, with twice as many edge modes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The naive expectation is four fermionic edge modes, two helical pairs. But field theory people have shown that interactions can drive the edge into a totally different phase with the same symmetries, where every single-fermion excitation is gapped, and only fermion pairs — think Cooper pairs — stay gapless. That's the bosonic edge phase."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And this isn't just an academic curiosity — the actual lattice realizations people care about are twisted homobilayers of tungsten diselenide and molybdenum ditelluride, where this double quantum spin Hall insulator has recently been seen experimentally."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, so the question this paper asks is whether you can actually see this bosonic phase in a concrete microscopic model, not just in the continuum bosonization language. That turns out to be surprisingly hard, because the edge has what's called a mixed anomaly between charge and spin conservation — you can't write it down as an honest, symmetric, local one-dimensional lattice model. The anomaly only cancels if you keep the topological bulk attached."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So how do you simulate that with D-M-R-G, which is a one-dimensional method?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They use something called segment D-M-R-G. They build an actual two-dimensional cylinder: four copies of the lowest Landau level, two spin-up with one chirality, two spin-down time-reversed, with a confining potential creating a vacuum interface. Then they only run D-M-R-G on the finite edge segment in the middle, while the filled bulk and the empty vacuum on either side are held fixed as boundary conditions."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the interaction they turn on is specifically the one bosonization says should drive the transition — a double spin-flip process that scatters a pair of electrons between the two Chern bands."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, a single dimensionless coupling, interaction strength over the bare edge velocity. They track four gaps: the single-fermion gap, which should open in the bosonic phase, and three fermion-pair gaps — a spin-singlet Cooper pair, a spin-flip, and a spin-triplet Cooper pair — which should all stay gapless."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the result?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the predicted split. As they turn up the interaction, the single-fermion gap grows and extrapolates to a finite value in the thermodynamic limit, while all three pair gaps stay pinned near zero. The single-fermion gap even follows the predicted exponential form, fit to about eleven point seven times the bare velocity scale times an exponential in minus three point two over the coupling — right in line with the renormalization-group prediction from bosonization."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the catch? Scaling up to one-hundred-forty-four electrons on an eighteen-magnetic-length circumference with bond dimension four thousand doesn't sound cheap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It isn't — they note their interaction term gives a matrix product operator with a compressed bond dimension near six hundred, versus maybe ten for a typical Heisenberg or Hubbard chain, so each run costs over a thousand core-hours. And the model assumes the two Chern bands are degenerate, which isn't quite true in the real twisted bilayers, though they argue non-degeneracy shouldn't change much as long as the Fermi points don't separate too far."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The experimental payoff is a doubled Fano factor in shot noise, right — backscattering in units of two e instead of e."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and since the gap is interaction-driven, it should be tunable — screen the Coulomb interaction with a gate, or raise the temperature, and the Fano factor should cross back from two to one. That's a very concrete, falsifiable prediction for the twisted tungsten diselenide and molybdenum ditelluride point-contact devices people are already building."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper one, then — Xiao, Wang, and Ryu, on anyon Chern bands with opposite sign and a reversed drift."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is about the Laughlin quasihole, the elementary fractionally charged excitation of the one-third fractional quantum Hall state, charge e over three. Normally in a uniform magnetic field, continuous magnetic translation symmetry keeps its band perfectly flat. The question here is what happens once you break that continuous symmetry with a periodically modulated magnetic field — the standard toy model for a fractional Chern insulator on a lattice, like twisted bilayer molybdenum ditelluride or rhombohedral graphene."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the quasihole gets a real dispersion and a band structure of its own."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, and the key new object is a many-body Berry curvature for this anyon band, derived directly from the microscopic wavefunctions via the commutator of the quasihole's guiding-center coordinates. Without modulation, that curvature integrates to a Chern number of three for the quasihole band — compare to minus one for the ordinary electron Landau level, the sign flip reflecting the opposite charge."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then they add a second length scale to the modulation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right — instead of one flux quantum per unit cell, they use a modulation with two flux quanta per cell. That doubles the unit cell and splits the single C equals three band into two bands with Chern numbers six and minus three. The authors show this splitting into opposite-sign Chern numbers is generic — practically any weak modulation that opens a gap does this, and it's forced by a Diophantine constraint tied to the quasihole's fractional charge: each band's Chern number has to equal six modulo nine."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's actually new, physically — why does the sign matter?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Because the Chern number controls the anomalous velocity term in the quasihole's semiclassical equations of motion. A wavepacket in the minus-three band drifts against the usual E cross B direction, even though the physical magnetic field never changes sign anywhere in space — it just varies between point two and one point seven times the base field strength."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they know this isn't just a sign error or an artifact of the toy model?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They check it three ways: perturbation theory in the modulation strength, large-scale Monte Carlo sampling of the microscopic wavefunction with up to eighty-five electrons, and exact diagonalization of the actual Coulomb-interacting problem on a thirty-four-flux-quantum torus. All three agree on Chern numbers six and minus three. Then they directly simulate wavepacket dynamics under an electric field and watch the charge center move — at a rescaled time of two, the two bands move about three and six magnetic lengths in opposite directions, roughly matching the predicted one-to-two ratio from the Chern numbers."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any open questions?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They flag that doped quasiholes filling the minus-three band would enhance rather than reduce the Hall response of the parent state, and they explicitly leave open whether this exotic band geometry seeds new correlated phases of itinerant anyons, including anyon pairing. It's a clean piece of formalism looking for its experimental home — they point to STM-type bulk quasihole tunneling probes as the natural next step."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Moving to paper three — Akram and Erten, on charge density waves and in-gap states in coupled chains and moiré superlattices."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the one-dimensional cousin of moiré physics. Start with the Su-Schrieffer-Heeger model — the classic model where electron-phonon coupling dimerizes a chain and opens a gap, famous for hosting zero-energy bound states at domain walls. Here they couple two such chains side by side, with a tunneling term between them that depends on how closely the two chains' atoms line up."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they let the lattice relax classically via Monte Carlo rather than assuming a fixed dimerization pattern."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, simulated annealing on the ionic displacements, diagonalizing the electronic problem at each step. For lattice-matched chains, as you increase the interchain tunneling relative to the intrachain electron-phonon coupling, you get a sequence: a staggered-dimer phase, then a cascade of incommensurate charge density waves with growing unit cells, then a three-site trimer phase. They trace this to the Fermi points of the bonding and antibonding bands sliding continuously until they lock into the commensurate trimer wavevector of two-pi-over-three."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The SSH model's claim to fame is chiral-symmetry-protected zero modes. Do these new phases still have them?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the interesting catch — no. The long-range interchain tunneling breaks the bipartite structure, so chiral symmetry is gone and the bound states are no longer pinned exactly to zero energy. Instead, they're protected by crystalline symmetries: inversion for the staggered-dimer phase, which has a nontrivial inversion invariant, and a combined time-reversal-inversion symmetry for the trimer phase, which carries an integer winding number even though its naive inversion invariant is trivial."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then the moiré part — what happens with a lattice mismatch between the two chains?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Now the local stacking between the chains drifts continuously from AB to AA to BA registry along the chain, and the staggered-dimer order has to accommodate that mismatch. It does so by forming what they call supermoiré charge density waves — periods that are integer multiples, two or four, of the moiré period itself — with an ordered array of defects pinned to the moiré scale. These defects are discommensurations of the dimer order, and they bind localized in-gap electronic states right where the local stacking passes through the AA-like, nearly gapless configuration."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any real material this maps onto, or is it purely a model exercise?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They point to indium atomic wires on silicon one-one-one, which really do form two mutually coupled, dimerized Peierls chains with bound states, as a direct solid-state analog. And they explicitly flag one-dimensional moiré chains recently realized in twisted bilayer tungsten diselenide as the place where the supermoiré story could show up experimentally — exactly the kind of one-dimensional moiré system your group's heterostructure toolkit could eventually probe optically."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four is a step outside the 2D-optics core but it's a big result — Chen, Gray, Du, and Chan on the hole-doped Hubbard model."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The two-dimensional Hubbard model has been the leading candidate minimal model for cuprate superconductivity since the eighties, with d-wave pairing as the expected ground state. But a string of numerical studies over the last several years have instead found stripe order — alternating charge-rich and charge-poor rows — winning at the relevant doping and interaction strength, and different numerical methods disagree on which order dominates."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So this paper is trying to settle the method-dependence problem?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly — they bring two of the most accurate variational approaches available, neural tensor networks and neural backflow states, both scaled up with large GPU calculations to lattices as big as one thousand twenty-four sites, which is far beyond what exact or quasi-exact methods can reach at this interaction strength."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the result?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "At one-eighth doping, both in the pure Hubbard model and with a realistic next-nearest-neighbor hopping term, they find the uniform d-wave superconducting state, superconducting stripes, and non-superconducting stripes are all nearly degenerate — separated by only a milli-t energy scale, where t is the hopping parameter."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a genuinely different message than 'the Hubbard model picks one winner.'"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, their framing is explicitly that this is extreme competition rather than a single dominant order. The honest caveat is that 'near degeneracy on a milli-t scale' is right at the edge of what even their improved variational methods can resolve confidently, so the ordering of these states could still flip with slightly different parameters or further methodological improvement — but the qualitative message, that stripes and superconductivity are neck-and-neck rather than one clearly beating the other, looks fairly robust across their two independent methods."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive — paper five, Wang, Schindler, Bukov, and Michael, on discrete time liquids."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Discrete time crystals are driven systems that spontaneously lock onto a period that's a multiple of the drive period — say, flipping every two drive cycles instead of every one — and stay phase-coherent over many cycles. This paper asks what happens if the drive itself isn't perfectly periodic, just approximately so."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So where does the imperfect drive come from here?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A two-dimensional spin system coupled to a cavity at finite temperature. The cavity's thermal fluctuations act as a noisy, only approximately periodic drive with finite temporal coherence — it's not a clean clock."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the spins still manage to period-double?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Over an extended parameter range, yes — but only in a weaker sense. Individual trajectories still show robust period-doubled dynamics locally, but they randomly switch between the two symmetry-related temporal configurations. The authors identify these switches as topological defects in time, which they call time-solitons — they preserve the local period-doubling pattern on either side but destroy the long-range phase coherence that would make it a true time crystal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's a time crystal with a finite density of defects, the temporal analog of a liquid versus a solid."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's their picture exactly, and they back it with a minimal model that reproduces the statistics of these temporal correlations from the full many-body simulation. Since the solitons can occur at any time, averaging over many trajectories washes out the discrete symmetry breaking and restores ordinary continuous time-translation symmetry on average."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which leads to the strange claim in the abstract — that these could exist in thermal equilibrium."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, that's the provocative tail of the paper. Discrete time crystals are normally understood as inherently out-of-equilibrium phenomena. If a finite density of time-solitons is what lets this period-doubled order survive coupling to a thermal bath while still averaging back to time-translation symmetry, it opens the door to asking whether some version of temporal order can be stabilized at finite temperature, rather than only in isolated, periodically driven systems. They're careful to frame it as a possibility raised by the mechanism, not something they've proven in full generality."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good place to switch to quicker ones. Liu, Feuerpfeil, and Thomale, paper six, compare two versions of the triangular-lattice Hubbard model at half filling — one with zero flux through the triangles, one with a staggered pattern of zero and pi flux."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Both reduce to the same Heisenberg antiferromagnet at leading order in the strong-coupling limit, but their ring-exchange terms differ in sign. Using a strong-coupling expansion plus infinite D-M-R-G, they find the zero-flux model's positive ring exchange favors spontaneous chirality — consistent with a chiral spin liquid — while the staggered pi-flux model, whose non-interacting limit is a Dirac semimetal, flips the sign of the ring exchange and shows no resolvable chirality at all."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven, Dutta Chowdhury and Elias Miro, is a field-theory result: a two-plus-one dimensional model with a global U-one symmetry that stays in a Berezinskii-Kosterlitz-Thouless ordered phase at arbitrarily high temperature."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They build a controlled two-dimensional effective theory for the soft modes, match it against existing lattice Monte Carlo data to pin down the phase boundary, and find gapless static modes and algebraic correlations persisting even as temperature goes to infinity — a genuinely reentrant ordered phase in a regime where you'd normally expect everything to be thermally scrambled."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight is an experimental photonics piece, closer to home for quantum-dot-based single-photon sources. Mrowiński and collaborators grow indium arsenide on indium phosphide quantum dots directly on a distributed Bragg reflector, aiming for telecom C-band emission."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Simulated light extraction above ten percent over a forty-nanometer band, three-nanometer localization precision for individual emitters, and a charged exciton line at one thousand five hundred forty nine point five nanometers showing ninety-four point seven percent single-photon purity. Two-photon interference visibility came in at fifty-one percent in a two-nanosecond window, dropping to forty-one percent over four nanoseconds — respectable for an unprocessed wafer with no cavity-based Purcell enhancement yet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine, from Yu Zhang, is a more speculative theory piece: using a gyrotropic, meaning circularly-asymmetric, cavity vacuum to generate and probe non-Abelian topology in the Kitaev honeycomb model."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The claim is that virtual-photon exchange with the cavity produces a helicity-odd commutator term that, for the right bond geometry, is exactly the three-spin mass term that opens Kitaev's non-Abelian gap. They argue a localized cavity mode can write a finite topological island into the material, while a fully delocalized mode gives a mass that vanishes with system size — and that circular dichroism directly measures the induced mass. It's an interesting cavity-engineering proposal, though entirely theoretical at this stage."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last one — Yu, Wei, and Li, paper ten, on a sign-problem-free bosonic auxiliary-field quantum Monte Carlo method."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The sign problem usually kills quantum Monte Carlo for frustrated bosons on triangular or other geometrically frustrated lattices. They prove that either time-reversal symmetry or reflection positivity is sufficient to keep their new auxiliary-field approach sign-problem-free even on those frustrated lattices, and they benchmark it against finite-temperature exact diagonalization on a two-flavor Bose-Hubbard model on the triangular lattice, finding excellent agreement."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the stack for today."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The common thread, if there is one, is that symmetry keeps doing more work than you'd naively expect — crystalline symmetry pinning bound states away from zero energy, a mixed anomaly forcing a two-dimensional bulk embedding just to simulate a one-dimensional edge, a Diophantine constraint fixing which Chern numbers an anyon band is allowed to have. See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.30743",
+      "title": "Anyon Chern bands of opposite sign and reversed drift",
+      "authors": [
+        "Zhenyu Xiao",
+        "Minxuan Wang",
+        "Shinsei Ryu"
+      ],
+      "abstract": "The elementary charged excitations of fractional quantum Hall states are anyons. Without continuous translation symmetry, they acquire a dispersion and richer dynamics. We study the Laughlin quasihole at filling 1/3 in a periodically modulated magnetic field, a common model of fractional Chern insulators in two-dimensional materials. From the microscopic wave functions, we derive the commutator of its guiding-center coordinates, set by a many-body Berry curvature that governs its wave packets. A modulation with two flux quanta per unit cell splits the quasihole band into bands with Chern numbers 6 and -3; such opposite signs are generic as long as a weak modulation opens a gap between the anyon bands. In the C=-3 band, the quasihole drifts against \\mathbfE\\times\\mathbfB, although the magnetic field has the same sign everywhere. Perturbation theory in the modulation explains these results, and large-scale Monte Carlo calculations confirm them. Anyon bands thus acquire their own topology, which controls anyon motion and may shape the phases of itinerant anyons.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.30743",
+      "tier": "deep",
+      "why": "Shows that Laughlin quasiholes in a modulated magnetic field acquire their own Chern bands with opposite-sign topology and anomalous (reversed) drift, directly relevant to anyon/fractional quantum Hall physics in Chern-insulator-like 2D systems."
+    },
+    {
+      "id": "2610.30251",
+      "title": "Nature of the bosonic edge phase in a double quantum spin Hall insulator",
+      "authors": [
+        "Andreas Feuerpfeil",
+        "Ronny Thomale",
+        "Trithep Devakul",
+        "Nicolas Regnault",
+        "Julian May-Mann"
+      ],
+      "abstract": "Field-theoretic analysis has predicted that the edge of a double quantum spin Hall insulator (DQSHI) can undergo an interaction-driven transition from a phase with fermionic edge modes into one with only bosonic modes. All single-fermion edge excitations are gapped in this bosonic edge phase, but fermion pairs remain gapless, leading to distinct experimental signatures. We numerically simulate the interacting DQSHI edge and verify the existence of the bosonic edge phase. This calculation requires an explicit bulk embedding of the DQSHI edge, due to its mixed anomaly between charge and Sz conservation. We hence employ segment DMRG on an infinite two-dimensional cylinder, where the DQSHI bulk is modeled in terms of two copies of the spin-up lowest Landau level, combined with their time-reversed counterparts. We find that interactions can open a single-fermion gap at the DQSHI edge while fermion pairs remain gapless, matching the predictions for the bosonic edge phase. We find the scaling of the single-fermion gap with interaction strength to be consistent with field-theoretic calculations, and discuss the relevance of the bosonic edge phase to twisted homobilayers of WSe2 and MoTe2. We elaborate on the methodological extension of the segment geometry used here to other topological phases with edge anomalies.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.30251",
+      "tier": "deep",
+      "why": "Numerically confirms a predicted bosonic edge phase in double quantum spin Hall insulators and explicitly connects it to twisted WSe2/MoTe2 homobilayers, directly bearing on moire TMD physics."
+    },
+    {
+      "id": "2610.30281",
+      "title": "Charge Density Waves and In-Gap States in Coupled Chains and Moiré Superlattices",
+      "authors": [
+        "Muhammad Akram",
+        "Onur Erten"
+      ],
+      "abstract": "Charge density waves (CDWs) arise from the interplay between electrons and lattice distortions and are a hallmark of low-dimensional systems. Here we study coupled Su-Schrieffer-Heeger chains, both lattice-matched ladders and lattice-mismatched moiré superlattices, and find a rich set of CDW phases together with symmetry-protected bound states. In lattice-matched chains, the competition between electron-phonon coupling and interchain tunneling drives a sequence of CDW phases, including staggered dimers, trimers, and incommensurate states. These phases are generally gapped and host bound states protected by crystalline symmetries rather than chiral symmetry, and are therefore not pinned to zero energy. Lattice mismatch further reconstructs these phases into long-period supermoiré CDWs, with an ordered array of defects, pinned to the moiré length scale, that host localized electronic states. Interchain tunneling and lattice mismatch thus emerge as natural control parameters for CDW order and bound states in one-dimensional chains.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.30281",
+      "tier": "deep",
+      "why": "Maps out charge-density-wave phases and symmetry-protected bound states in lattice-mismatched moire superlattices built from coupled SSH chains, offering a tractable model for moire electronic reconstruction."
+    },
+    {
+      "id": "2610.30321",
+      "title": "Extreme competition between stripes and superconductivity in the hole-doped Hubbard model",
+      "authors": [
+        "Ao Chen",
+        "Johnnie Gray",
+        "Si-Jing Du",
+        "Garnet Kin-Lic Chan"
+      ],
+      "abstract": "The two-dimensional Hubbard model was originally proposed as the minimal model of uniform d-wave superconductivity in the cuprate high-temperature superconductors, but recent calculations with relevant parameters in a realistic doping regime have often found other ground states. Further, uncertainty remains over such results due to the intrinsic bias of different computational methods. Here we address this uncertainty through state-of-the-art neural tensor network and neural backflow state simulations, enabled by large-scale GPU computation, that together reach an unprecedented variational accuracy on lattices with up to 1024 sites. At 1/8 doping in the pure Hubbard model, as well as with next-nearest-neighbor hopping relevant to the hole-doped cuprates, we reveal a near degeneracy among a low-energy uniform d-wave state, superconducting stripes, and non-superconducting stripe states on the milli-t energy scale. Our work rebalances the narrative that the Hubbard model supports a single dominant order in relevant parameter regimes towards a picture of extreme competition between stripes and superconductivity.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.dis-nn",
+        "cond-mat.supr-con",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.30321",
+      "tier": "deep",
+      "why": "State-of-the-art neural-network variational simulations reveal extreme near-degeneracy between stripe and d-wave superconducting states in the doped Hubbard model, reshaping the leading theoretical narrative for cuprates."
+    },
+    {
+      "id": "2610.30266",
+      "title": "Discrete time liquids",
+      "authors": [
+        "Zuo Wang",
+        "Paul M. Schindler",
+        "Marin Bukov",
+        "Marios H. Michael"
+      ],
+      "abstract": "Discrete time crystals exhibit robust subharmonic oscillations, spontaneously breaking the discrete time-translation symmetry of a periodic drive. Since their emergence, the question of whether other types of temporal many-body order can exist has attracted considerable attention. Here we identify discrete time liquids – a new form of spatiotemporal order characterized by short-range temporal coherence as a result of time-solitons. We study a two-dimensional spin system coupled to a finite-temperature cavity, whose fluctuations provide a noisy, approximately periodic drive with only finite temporal coherence. Remarkably, the spins nevertheless form a metastable state with robust period-doubled dynamics over an extended parameter regime. Unlike a time crystal, this state has only finite temporal coherence: individual trajectories stochastically switch between the two symmetry-related temporal configurations of the period-doubled response. We identify these switches as time-solitons: topological defects in temporal order that preserve local period doubling while destroying long-range temporal coherence, thereby producing the time liquid state. We propose a minimal model which reproduces the distribution of temporal correlations of the many-body system, suggesting a general description of the time liquid as a time crystal with a finite density of time-solitons. Because these solitons can occur at arbitrary times, ensemble averaging restores continuous time-translation symmetry, raising the intriguing possibility that discrete time liquids can exist in thermal equilibrium.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.quant-gas",
+        "cond-mat.stat-mech",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.30266",
+      "tier": "deep",
+      "why": "Identifies a genuinely new non-equilibrium phase, 'discrete time liquids' with finite temporal coherence from time-solitons, extending the time-crystal paradigm to noisy cavity-coupled spin systems."
+    },
+    {
+      "id": "2610.30290",
+      "title": "\\pi-Flux Tuning of Quantum Paramagnetism in the Triangular-Lattice Hubbard Model",
+      "authors": [
+        "Zhaochen Liu",
+        "Andreas Feuerpfeil",
+        "Ronny Thomale"
+      ],
+      "abstract": "We compare two time-reversal-symmetric triangular-lattice Hubbard models at half filling: the zero-flux model and a staggered \\pi-flux model with zero and \\pi flux through oppositely oriented triangles. Although both reduce to the same Heisenberg model at leading order in the strong-coupling limit, their distinct charge fluctuation profiles yield different quantum paramagnetic regimes. Combining a strong-coupling expansion with infinite density matrix renormalization group (iDMRG) calculations, we find that the positive ring-exchange of the zero-flux model promotes spontaneous chirality, consistent with its notion of a chiral spin liquid at intermediate coupling. In the staggered-\\pi-flux model, whose noninteracting limit is a Dirac semimetal, the ring exchange changes sign and disfavors chiral order and we find no resolvable scalar chirality. This renders flux-tuned ring-exchange an efficient discriminator between chiral and non-chiral quantum paramagnets at finite coupling.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.30290",
+      "tier": "brief",
+      "why": "Compares flux-tuned triangular-lattice Hubbard models to show how ring-exchange sign controls chiral spin liquid formation, relevant background theory for moire triangular-lattice TMD systems."
+    },
+    {
+      "id": "2610.30236",
+      "title": "Reentrant d=2+1 Superfluidity at High Temperature",
+      "authors": [
+        "Subham Dutta Chowdhury",
+        "Joan Elias Miro"
+      ],
+      "abstract": "We present a UV-complete model with a global U(1) symmetry in d=2+1 dimensions that exhibits a Berezinskii-Kosterlitz-Thouless (BKT) ordered phase at arbitrarily high temperatures. A careful separation of scales yields a two-dimensional Euclidean effective field theory whose construction remains perturbatively controlled even when its soft modes become strongly coupled. We determine the BKT phase boundary by carefully matching this theory to existing lattice Monte Carlo results. The high-temperature phase supports gapless static modes and algebraically decaying correlations even as T\\to\\infty.",
+      "categories": [
+        "hep-th",
+        "cond-mat.stat-mech",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.30236",
+      "tier": "brief",
+      "why": "Constructs a UV-complete 2+1D model with a BKT-ordered phase persisting to arbitrarily high temperature, a surprising result in quantum statistical mechanics."
+    },
+    {
+      "id": "2610.30905",
+      "title": "Broadband emitter localization and prefabrication two-photon interference from InAs/InP quantum dots monolithically grown on an InGaAsP/InP distributed Bragg reflector",
+      "authors": [
+        "Pawe{\\l} Mrowi\\'nski",
+        "Jan \\'Smigiel",
+        "Miko{\\l}aj Badura",
+        "Beata \\'Sciana",
+        "Wojciech Kijaszek",
+        "Emilia Zi\\k{e}ba-Ost\\'oj",
+        "Pawe{\\l} Holewa",
+        "Marcin Syperek"
+      ],
+      "abstract": "We demonstrate a monolithic telecom C-band single-photon platform based on low-density InAs/InP quantum dots grown on an InGaAsP/InP distributed Bragg reflector, with simulated upward light-extraction efficiency exceeding 10% within the 40 nm spectral band. Enhanced light extraction is crucial for wide-field photoluminescence imaging, enabling approximately 3 nm statistical centroid-localization precision of QD emitters due to improved signal-to-noise ratio. The identified charged exciton emitting at 1549.5 nm exhibits single-photon emission purity up to 94.7%, validated by a raw peak-area integration under pulsed quasi-resonant excitation. Under these conditions, photons emitted sequentially from the unprocessed planar structure reveal a raw two-photon interference visibility of 51% of the photon wave packet within the 2 ns time window and 41% over a 4 ns integration window, all without Purcell enhancement typical for cavity-embedded emitters. Combining broadband extraction, high photon coherence, and emitter preselection on a native III-V wafer, this architecture paves the way for marker-based deterministic fabrication of high-quality monolithic nanophotonic devices.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.30905",
+      "tier": "brief",
+      "why": "Demonstrates a monolithic telecom-band InAs/InP quantum dot single-photon source with decent two-photon interference visibility without cavity Purcell enhancement, relevant to quantum photonics hardware."
+    },
+    {
+      "id": "2610.30502",
+      "title": "Chiral Cavity Vacua as Local Generators and Probes of Non-Abelian Kitaev Topology",
+      "authors": [
+        "Yu Zhang"
+      ],
+      "abstract": "We show how a gyrotropic cavity vacuum generates, probes, and spatially programs non-Abelian topology in the Kitaev honeycomb model. Gauge-consistent virtual-photon elimination produces a universal helicity-odd interaction i[Px,Py] alongside same-order even dressing. For the leading bond polarization, this commutator is exactly the Kitaev three-spin mass. Mode normalization imposes a thermodynamic constraint: one extended normalized mode gives a local mass that vanishes with sample area, whereas a localized mode writes a finite topological island and a finite mode density enables a bulk mass. The exact Majorana solution yields helicity-reversed Chern gaps and edge propagation, while integrated circular dichroism exactly measures the mass generator, \\langlei[Px,Py]\\rangle=-\\sqrt3p2\\langle O3\\rangle. Real-space calculations reveal a non-Abelian island and a helicity wall with two co-propagating Majorana modes. Uniform helicity reversal is a Dirac-mass quench with n\\rm ex\\propto\\tauQ-1, whereas moving a wall localizes the gap closing. The equilibrium vacuum kernel contains sum-frequency rather than resonant denominators. These results establish distinct criteria for local and bulk cavity-induced topology.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.30502",
+      "tier": "brief",
+      "why": "Proposes that a chiral cavity vacuum can locally generate and probe non-Abelian topological masses in the Kitaev model, linking cavity QED to topological matter engineering."
+    },
+    {
+      "id": "2610.31541",
+      "title": "Sign-problem-free Bosonic Auxiliary Field Quantum Monte Carlo",
+      "authors": [
+        "Yin-Kai Yu",
+        "Zhong-Chao Wei",
+        "Zi-Xiang Li"
+      ],
+      "abstract": "The sign problem poses a fundamental barrier to numerically exact quantum Monte Carlo simulations, severely hindering our understanding of quantum many-body physics across disciplines ranging from condensed matter to particle and nuclear physics. Geometrical frustration makes this barrier especially acute for interacting bosons. Here, we develop a bosonic auxiliary-field quantum Monte Carlo (BAFQMC) method and rigorously prove that time-reversal symmetry and reflection positivity each provide a general sufficient condition for sign-problem-free simulations. Crucially, under either criterion, BAFQMC evades the sign problem even on frustrated lattices where conventional world-line and stochastic-series-expansion methods fail. Benchmarking our approach on a two-flavor Bose-Hubbard model on the triangular lattice yields excellent quantitative agreement with finite-temperature exact diagonalization. By establishing unifying principles to solve the sign problem in BAFQMC, our work substantially expands the reach of unbiased, numerically exact simulations for frustrated bosonic matter.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.quant-gas",
+        "cond-mat.stat-mech",
+        "math-ph",
+        "math.MP"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.31541",
+      "tier": "brief",
+      "why": "Introduces a sign-problem-free auxiliary-field QMC scheme for frustrated bosonic lattice models, a notable numerical methods advance for strongly correlated bosons."
+    }
+  ]
+}

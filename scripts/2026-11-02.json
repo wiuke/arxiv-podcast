@@ -1,0 +1,525 @@
+{
+  "date": "2026-11-02",
+  "format": "dialogue",
+  "n_papers": 47,
+  "episode_title": "Dipolar exciton polarons, a light-induced Haldane gap, and rotating moiré atoms",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Good morning, it's November second, twenty twenty-six. Roughly forty-seven new papers hit the archive overnight in our corner of condensed matter, and we picked five for a deep dive plus five quick hits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's run: dipolar polarons in a doped bilayer, a Haldane gap caught live by photoemission, rotating moiré atoms waiting to be imaged, a quantum Monte Carlo reality check on rhombohedral graphene magnetism, and a fractional Chern insulator built on an actual superconducting chip."
+    },
+    {
+      "speaker": "Ava",
+      "text": "First up, paper one, dipolar exciton polarons in a van der Waals homobilayer — squarely in our backyard. It's two-H stacked bilayer molybdenum disulfide, dual-gated with hBN and graphene gates on a distributed Bragg reflector substrate, so they read absorption straight off reflectance."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the trick is they're not using the usual intralayer exciton as the impurity."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. In this bilayer the valence bands hybridize across layers enough that genuine interlayer excitons exist — electron in one layer, hole in the other — and because the hole is partly delocalized by that hybridization, these interlayer excitons borrow oscillator strength from the bright intralayer B exciton. So they're optically visible. They call the two configurations I-E-one and I-E-two, and each carries a fixed out-of-plane electric dipole, pointing in opposite directions for the two."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they know these are really dipolar, not just two nearly degenerate lines?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The Stark effect gives it away. At zero vertical field the two lines are degenerate; ramping the field splits them linearly in opposite directions, while the intralayer A and B excitons barely move. A multi-oscillator model fits the whole dataset cleanly."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, now dope it with electrons and look at the polaron physics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "At zero field, doping the bilayer makes the intralayer A exciton do the textbook thing — attractive and repulsive polaron branches, blueshift of the repulsive branch, weight transfer to the attractive one. That's their thermometer for the Fermi sea. But the interlayer exciton does something new: two repulsive branches appear, both blueshifting, and their splitting grows with density. That's the signature that I-E-one and I-E-two, which shouldn't couple at charge neutrality by momentum and spin conservation, get linked once there's a Fermi sea in both layers — interlayer hole tunneling plus electron exchange with the Fermi sea couples the two opposite-dipole configurations. A ladder-approximation calculation with the long-range dipole-electron interaction reproduces the density-dependent splitting quantitatively."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the number — how much stronger is this dipolar binding than an ordinary exciton polaron?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the headline. Tuning the field at a fixed density around three-point-two times ten-to-the-twelve per square centimeter polarizes the electron Fermi sea into one layer, decouples the two dipole states, and lets them resolve both the attractive and repulsive dipolar branches cleanly. Extrapolated to zero field, the dipolar polaron binding energy is about one hundred sixteen milli-electron-volts, versus about twenty-six milli-electron-volts for the ordinary intralayer exciton polaron under the same conditions — more than four times stronger."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a big enhancement for something you'd naively expect to be weaker, given the electron and hole are spatially separated."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The enhancement comes specifically because the hole sits inside the electron-rich layer, so dipole orientation relative to the Fermi sea's layer polarization becomes a real knob. A density sweep at fixed field confirms it: the branch whose hole sits in the populated layer blueshifts strongly with density, while the oppositely oriented branch barely moves. Dipole orientation plus Fermi-sea layer polarization jointly control the dressing — a genuinely new control parameter for polaron physics. The obvious next step they flag is coherent spectroscopy, to see whether a quantum superposition between the two dipole orientations can survive coupling to the electrons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three is the one I'd stop and listen to even half-asleep — a light-induced Haldane gap in graphene, caught directly in photoemission."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This finally pins the old Oka-Aoki-McIver prediction down in energy and momentum, not just inferred from a photocurrent."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, the idea is old: shine circularly polarized light on graphene, and because the light breaks time-reversal symmetry on the fly, second-order virtual photon absorption-emission processes generate an effective complex next-nearest-neighbor hopping — exactly Haldane's recipe for a topological mass, done optically instead of with a static flux pattern. People have seen anomalous Hall photocurrents and circular dichroism consistent with this, but those are transport signatures, muddied by nonequilibrium carriers and scattering. The actual Dirac gap, the real fingerprint, had never been resolved directly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So how did they finally get a clean look at it?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two ingredients. First, a big, clean exfoliated monolayer flake instead of epitaxial graphene, because epitaxial graphene already has a substrate-induced gap and mid-gap states that would contaminate the measurement — they need a genuinely gapless starting Dirac cone. Second, a deliberately low pump photon energy, three hundred ten milli-electron-volts in the mid-infrared, with a strong in-plane field around ten-to-the-eight volts per meter, because this time-reversal-breaking gap is a higher-order Floquet effect and needs that regime, unlike the simpler first-order hybridization gaps already seen with linear polarization."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And then they track spectral weight at the Dirac point over time."
+    },
+    {
+      "speaker": "Leo",
+      "text": "With time- and angle-resolved photoemission. Before the pump arrives you see the ordinary gapless cone. Right at zero delay, overlapping with the pump, spectral weight near the K point drops and Floquet sidebands appear; two hundred femtoseconds later it's gone and the bare cone is back. Crucially this suppression tracks the pump pulse itself, not the long-lived population of photo-excited carriers, which is how they separate the coherent Floquet effect from ordinary heating."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the gap size?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Fitting the energy distribution curves at K gives two hundred three plus or minus thirty milli-electron-volts at zero delay. The clincher is polarization: the gap shows up for both left and right circular polarization with the same magnitude, but vanishes completely for linear polarization, which only gives the anisotropic avoided-crossing gaps away from K seen before. That's exactly what you'd expect from a time-reversal-breaking mass rather than an ordinary hybridization gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's the theoretical backbone?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "A Floquet tight-binding calculation. In the high-frequency expansion, the commutator of the plus-one and minus-one Fourier harmonics of the driven Hamiltonian produces a term proportional to the sublattice Pauli matrix sigma-z — literally the Haldane mass, opposite sign at the two valleys, giving nonzero Berry curvature and Floquet Chern character near the Dirac point, tracked here with a partial Chern number plateauing near plus or minus one depending on helicity."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Does that mean graphene is now in a quantized Hall state?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "No, and they're careful about that. An integer Chern number doesn't give a quantized Hall conductance here because the Floquet bands are only partially, nonequilibrium populated. The topology lives in the chirality of the low-energy states and edge modes, not in a measured plateau. Still, it's a clean demonstration that light alone, no magnetism, no static field, can dynamically assign a Berry curvature and topology to a Dirac cone."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper four moves from real experiments to a numerics paper that reads like a blueprint for the next moiré imaging and magnetometry campaign — rotating moiré atoms in a magnetic field."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The Wigner molecule story with a field added."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. When there are more electrons than moiré minima, several electrons pile into each minimum and form a bound cluster — a moiré atom — and arrays of these have already been imaged as Wigner molecular crystals. The new piece is what a magnetic field does to the simplest case, two electrons per minimum. In an isolated quantum dot, a field drives a singlet-to-triplet transition — both electrons in the lowest orbital versus one pushed into a higher angular-momentum state to satisfy Pauli exclusion for parallel spins. That transition has even been seen in a twisted tungsten-diselenide molybdenum-diselenide moiré lattice through compressibility, but compressibility only tells you the spin changed, not what the orbital motion is doing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what tool lets them actually see the orbital physics?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A neural quantum state variational method, built to satisfy magnetic periodic boundary conditions on a torus, with full Landau-level mixing and both spin sectors treated honestly — no projection to the lowest Landau level, no mean-field shortcut, because the moiré depth, cyclotron energy, and Coulomb repulsion are all comparable here, so none of the usual simplifications is safe."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the headline result?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "At strong field — one flux quantum per two electrons per moiré cell, around twenty-one tesla for their chosen period — every two-electron atom sits in a spin-triplet maximum-density droplet carrying canonical angular momentum of exactly minus one, with a real circulating current peaking around fifty-six nano-amps per nanometer on the inner edge. It's the magnetic analog of the Wigner molecule — one that spins."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And deepening the moiré wells kills that?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes. Squeezing the pair into a deeper well raises the cost of putting the second electron into that higher angular-momentum orbital, while the Zeeman energy favoring the triplet just keeps growing with field and doesn't care about depth. Past a critical depth every atom reverts to a non-rotating singlet, and that critical depth grows with field strength — depth and field together carve out a window where rotors exist."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any experimental handle beyond compressibility?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the nice part — the orbital magnetic moment of every atom flips sign exactly at the transition, right along with the spin polarization, since the mechanical angular momentum switches from weak diamagnetic counter-circulation in the singlet to real paramagnetic rotation in the triplet. Scanning SQUID magnetometry, already used in moiré devices, could pick that joint signature up directly, whereas compressibility alone only gets half the story."
+    },
+    {
+      "speaker": "Leo",
+      "text": "There's also a pinwheel prediction in there."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right — if the atoms are polarized by other means, say proximity magnetism, even at weak field, then instead of rotating, each atom becomes a standing-wave dimer, two lobes instead of a ring, because the two opposite-circulation states mix once the cyclotron splitting gets small. The dimer axes don't stay random: Coulomb repulsion between neighboring atoms locks them into a spontaneous root-three-by-root-three pinwheel, tripling the moiré unit cell. Worth flagging this whole paper is theory — careful, numerically solid theory, but still waiting for someone to image the current loops or the pinwheel."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two is a reality check on how we think about magnetism in rhombohedral multilayer graphene — quantum Monte Carlo versus Hartree-Fock."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the flat-band ferromagnet family — bilayer and trilayer rhombohedral graphene, where doping drives spontaneous spin and valley polarization into quarter-metal and half-metal phases, the same physics feeding into the fractional quantum anomalous Hall results."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The puzzle they're responding to comes from capacitance measurements: above the Curie temperature these systems still carry a huge magnetic entropy, something like k-Boltzmann per carrier, well above where long-range order actually vanishes — looking like fluctuating local moments riding on a good metal. There's also an STM result in hexalayer graphene where a honeycomb charge-ordered pattern actually sharpens on warming from point-three to one-point-six kelvin, a Pomeranchuk-like entropy stabilization of a crystal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And plain Hartree-Fock can't capture any of that."
+    },
+    {
+      "speaker": "Leo",
+      "text": "No — self-consistent Hartree-Fock puts the quarter-metal Curie temperature around thirty kelvin, an order of magnitude above the few-kelvin experimental scale. The reason is structural: Hartree-Fock kills the order parameter at finite temperature mostly by shrinking its amplitude, flipping majority-flavor electrons into the minority flavor. But the real low-energy excitations are transverse rotations of the order parameter — spin and valley precession — and mean-field theory just lacks the right modes to describe that."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So what do they do instead?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Build an effective local-moment Hamiltonian — Heisenberg-like couplings between spin and valley pseudospins on a lattice, plus an Ising spin-valley locking term — with every coupling extracted from constrained Hartree-Fock stiffness calculations, no fitting to experiment at all. Then they solve that lattice spin model numerically exactly with stochastic series expansion quantum Monte Carlo."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the quarter-metal result?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "A continuous two-dimensional Ising transition around zero-point-seven to zero-point-seven-five kelvin — more than an order of magnitude below the Hartree-Fock number and now in the right ballpark as the experimental few-kelvin scale, though still a few times below the quoted experimental three kelvin. They pin it down with Binder-ratio crossings across several lattice sizes, and note the transition is continuous in quantum Monte Carlo even though Hartree-Fock predicts it first order — a real difference in universality class, not just a shifted number."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the half-metal, with spin-orbit coupling proximitized from a neighboring transition-metal dichalcogenide?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Without spin-orbit coupling, intervalley Hund's coupling enhances the field-induced magnetic response relative to two decoupled valleys, but there's no spontaneous order because the symmetry stays continuous, per Mermin-Wagner. Add strong proximity spin-orbit coupling and you get the familiar spin-canted ground state, which retains a residual continuous symmetry and can host a genuine finite-temperature Berezinskii-Kosterlitz-Thouless transition, located near two kelvin. On heating, the in-plane canting component collapses faster than the out-of-plane one, because the out-of-plane piece gets direct help from the single-particle spin-orbit term while the in-plane piece is purely interaction-driven."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Caveat?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They say it themselves — this is a local-moment model with the charge sector completely frozen out. It's genuinely surprising that freezing charge dynamics still lands you in the right temperature window without fitting, but putting real charge fluctuations back in is the obvious next step before calling this complete."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive, paper five, changes platform entirely — preparing a fractional Chern insulator state not in a crystal but on an IBM superconducting chip."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Digital quantum simulation of the fractional quantum Hall effect, basically."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The target is the Kapit-Mueller model — a lattice Hamiltonian with fine-tuned, long-range complex hopping that reproduces a perfectly flat lowest Landau level on a lattice. On a four-by-four qubit grid with periodic boundary conditions — a torus, so no physical edges — at half a flux quantum per plaquette and half filling, the ground state of four hard-core bosons is an exact, doubly degenerate, Laughlin-like zero-energy state."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do you put that onto superconducting qubits, which don't naturally do long-range hopping?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They don't implement the long-range Hamiltonian directly. Instead they classically optimize a short, particle-number-conserving variational circuit — a handful of Trotter-like steps of nearest-neighbor hopping, onsite potentials, and in some steps nearest-neighbor interactions — to maximize overlap with the exact target state from brute-force diagonalization, since the system is small enough for that. Four steps and two hundred sixty-four CZ gates gets point-nine-five fidelity with the four-boson ground state in noiseless simulation; a similar three-step circuit prepares a three-boson state with two quasiholes pinned by local potentials."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then real hardware."
+    },
+    {
+      "speaker": "Ava",
+      "text": "A four-by-four patch of IBM's hundred-twenty-qubit Nighthawk processor. Because the circuit conserves particle number exactly, they post-select on the right total count, keeping about a third of the shots. The measured densities, the quasihole-induced dips, and the full particle-configuration statistics all track the target state's structure, with the main deviation being attenuation toward a featureless mixed-state background — a noise-scaling analysis attributes roughly fifty to sixty percent of post-selected shots to being genuinely error-free."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the actual topological signature, beyond matching densities?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The chiral current around the quasiholes. A fractional Chern insulator breaks time-reversal symmetry, so a localized quasihole should carry a circulating magnetization current, like a tiny persistent current loop. They reconstruct that from two-qubit X and Y basis measurements around a loop encircling the two pinned quasiholes, and the measured circulation has the same sign and spatial pattern as theory, attenuated to about sixty percent of the ideal strength."
+    },
+    {
+      "speaker": "Leo",
+      "text": "New physics, or proof of concept?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Squarely proof of concept, and they say so — the whole scheme leans on being able to classically diagonalize the target state to do the optimization, which stops scaling once the system gets big enough to be actually interesting. What it does establish is that gate-based superconducting hardware, with modest circuit depth, already reproduces the characteristic correlations and chiral current pattern of a genuine fractional quantum Hall state. Next on their list: the many-body Chern number via randomized measurements, and actually braiding the quasiholes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Quick hits now. Paper six works out continuum models for moiré metals whose Fermi surfaces spill across the whole monolayer Brillouin zone, not confined to one valley — exactly the regime single-valley continuum models can't handle."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They let each hopping amplitude depend on where it sits in the moiré cell, learned directly from untwisted bilayers at different stackings with no fitting, and it matches ab initio bands on moiré cells with hundreds of atoms. Applied to twisted niobium diselenide, the moiré corrections pile up right at the van Hove singularities, where superconductivity and charge order are expected to compete."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven is a nice materials-chemistry result for anyone thinking about single-photon emitters on hBN: they co-deposit the dye terrylene with a long alkane, tetrapentacontane, to build a roughly one-nanometer-thick two-dimensional version of the old Shpolskii matrix trick."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The alkane layer stops the dye from diffusing or clumping, they get clean single-molecule blinking, and capping with hBN from the top further boosts photostability under high photon doses — a plausible route to stable, interface-integrated molecular qubits sitting right on your favorite 2D material."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight is a transport result — a gate-defined quantum point contact in bilayer graphene coupled to an aluminum superconductor, showing Andreev-enhanced conductance riding on top of the usual quantized plateaus."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Enhancement peaks on the plateaus and dips between them, consistent with mode-dependent Andreev reflection, with transmission up to point-nine and a proximity gap close to aluminum's own gap. In-plane field behavior tracks Abrikosov-Gorkov pair-breaking, but perpendicular field suppresses the effect in a way that looks more like flux penetration than uniform pair breaking."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine is a short theory note extending a recent result that ordinary, non-superconducting metals threaded by an Aharonov-Bohm solenoid only ever trap zero or h over two-e of flux — the same quantized value normally associated with a superconducting pair condensate."
+    },
+    {
+      "speaker": "Leo",
+      "text": "No pairing needed here; the author gives an analytic argument and shows it survives at finite temperature, with time-reversal-invariant potentials, and on a lattice. Mostly a formal curiosity, but a good reminder that some superconductor-looking quantization can show up without any condensate at all."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last one, paper ten, is a methods paper: the intensity ratios between the central and higher-order spots in convergent beam electron diffraction directly encode the scattering potential of a single atom, modeled as a Gaussian."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It works even for strongly scattering atoms like tungsten, and they validate it on graphene and twisted graphene-on-hBN, recovering atomic parameters that agree with theory — a cheap add-on for anyone already running convergent beam diffraction on their 2D samples."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the rundown for November second."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Dipolar polarons giving us a new knob on Fermi-sea dressing, a Haldane gap caught live in photoemission, and moiré atoms waiting to be imaged mid-spin — plenty to chew on before the coffee kicks in."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.41730",
+      "title": "Dipolar Exciton Polarons in a van der Waals Homobilayer",
+      "authors": [
+        "Yuxin Duan",
+        "Hongming Zhang",
+        "Yaofeng Zhu",
+        "Hang Zhou",
+        "Xinyue Zhang",
+        "Yan Liu",
+        "Song Luo",
+        "Long Zhang",
+        "Zhanghai Chen"
+      ],
+      "abstract": "Fermi polarons exemplify how many-body interactions give rise to emergent quasiparticles, providing a fundamental framework for understanding interacting quantum matter. In electron-doped two-dimensional semiconductors, exciton polarons offer optical access to Fermi-polaron physics and electrical tunability, yet achieving stronger and more controllable exciton-electron interactions remains a key challenge. Here, we realize dipolar exciton polarons in an electrically tunable van der Waals homobilayer, where interlayer excitons with spatially separated electrons and holes act as quantum impurities carrying permanent electric dipole moments. These dipolar polarons exhibit substantially enhanced exciton-electron interactions, with binding energies more than four times those of conventional intralayer exciton polarons. We further demonstrate that Fermi-sea layer polarization provides an additional degree of freedom for controlling many-body interactions. In particular, the presence of a Fermi sea induces hybridization between oppositely oriented dipolar polarons, whereas confining the Fermi sea to a single layer suppresses this hybridization and produces orientation-selective many-body dressing. Our findings establish an experimental platform for dipolar-polaron physics in which dipole orientation and Fermi-sea layer polarization jointly govern many-body interactions, opening a route towards electrically tunable interactions and dipolar-polaron-mediated attraction between itinerant electrons.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.41730",
+      "tier": "deep",
+      "why": "Direct realization of dipolar exciton polarons in a tunable vdW homobilayer, showing strongly enhanced exciton-electron interactions and layer-polarization control of Fermi-polaron physics—core to the listener's focus on excitons and Fermi polarons in TMDs."
+    },
+    {
+      "id": "2610.40864",
+      "title": "Quantum Monte-Carlo study of spin-valley ferromagnetism in rhombohedral graphene",
+      "authors": [
+        "Michael Demos",
+        "Dongqi Li",
+        "Mainak Das",
+        "Tobias M. R. Wolf",
+        "Chunli Huang"
+      ],
+      "abstract": "Recent capacitance measurements in bilayer and trilayer rhombohedral graphene reported large magnetic entropy above the Curie temperature, suggesting the formation of fluctuating local moments. Further experimental support comes from scanning tunneling microscopy experiments in rhombohedral hexalayer graphene, which directly visualized honeycomb electron-crystal order that strengthens upon heating before melting, related to the Pomeranchuk effect. Motivated by these experiments, we construct spin-valley local-moment Hamiltonians for the quarter-metal and half-metal phases. We extract their couplings from constrained Hartree-Fock calculations, and solve their finite-temperature thermodynamics with stochastic-series-expansion quantum Monte Carlo. For the quarter metal we find a continuous 2D-Ising transition at Tc \\approx 0.7 K, an order of magnitude smaller than the Hartree-Fock estimate (~30 K) and closer to the experimental scale of a few kelvin. For the half metal, we study the field-induced magnetization as a function of temperature with and without proximity-enhanced spin-orbit coupling. When spin-orbit coupling is negligible, intervalley Hund's coupling enhances the magnetic response. Strong spin-orbit coupling, as can be induced by a neighboring transition-metal dichalcogenide, gives rise to the standard spin-canted ground state at zero temperature. Upon heating, the in-plane polarization decreases more rapidly than the out-of-plane polarization. Surprisingly, despite the itinerant nature of the electrons, local-moment models with microscopically determined couplings appear to capture key finite-temperature magnetic properties of rhombohedral graphene without any fitting.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.40864",
+      "tier": "deep",
+      "why": "Quantum Monte Carlo study explains the finite-temperature magnetism (Pomeranchuk effect, Curie temperature) of correlated electronic states in rhombohedral graphene, directly relevant to detection of correlated 2D electronic phases."
+    },
+    {
+      "id": "2610.42115",
+      "title": "Observation of light-induced Haldane gap in graphene",
+      "authors": [
+        "Fei Wang",
+        "Xuanxi Cai",
+        "Wanying Chen",
+        "Xiao Tang",
+        "Jinze Li",
+        "Benshu Fan",
+        "Tianshuang Sheng",
+        "Jinxi Lu",
+        "Jiansong Li",
+        "Hongyun Zhang",
+        "Pu Yu",
+        "Peizhe Tang",
+        "Wenhui Duan",
+        "Angel Rubio",
+        "Zhiyuan Sun",
+        "Shuyun Zhou"
+      ],
+      "abstract": "Symmetry and topology, encoded in electronic wavefunctions, play a central role in the electronic properties and emergent phenomena of quantum materials. While these properties are conventionally determined by the equilibrium Hamiltonian, strong optical fields offer a fundamentally different route by reshaping the Hamiltonian on ultrafast timescales, turning symmetry and topology into dynamically controllable degrees of freedom. Graphene provides a paradigmatic platform for realizing this concept, where circularly polarized light has long been predicted to dynamically break time-reversal symmetry (TRS) and open a topologically nontrivial gap at the Dirac point. Despite extensive experimental efforts, direct observation of this Dirac gap-the defining spectroscopic signature of the dynamical TRS-breaking induced topological phase-has remained missing. Here we directly observe this light-induced Dirac gap in monolayer graphene. Time- and angle-resolved photoemission spectroscopy reveals that the gap emerges simultaneously with the optical field and exclusively under circularly polarized driving, directly linking its opening to dynamical TRS breaking. Together with Floquet theory, we identify the gap with a light-induced Haldane mass and reveal the associated nontrivial Floquet Berry curvature and Chern topology. By demonstrating dynamical TRS breaking in a prototypical non-magnetic material, our results establish optical driving as a route to ultrafast engineering of symmetry and topology, opening opportunities for dynamically tunable quantum matter beyond equilibrium.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.42115",
+      "tier": "deep",
+      "why": "First direct time-resolved ARPES observation of a light-induced Haldane gap in graphene, a landmark demonstration of Floquet engineering of topology that is broadly important beyond the listener's immediate subfield."
+    },
+    {
+      "id": "2610.40786",
+      "title": "Singlet-Triplet Transition of Rotating Moiré Atoms in a Magnetic Field",
+      "authors": [
+        "Conor Smith",
+        "Yubo Yang",
+        "Shiwei Zhang",
+        "Miguel A. Morales"
+      ],
+      "abstract": "Moiré superlattices can bind several electrons to each potential minimum, forming few-electron \"moiré atoms.\" Using neural quantum states that obey magnetic periodic boundary conditions, include full Landau-level mixing, and treat both spin sectors, we map the ground state of two-electron moiré atoms in a superlattice as a function of moiré depth and magnetic field strength. At strong field each atom is a spin-triplet maximum-density droplet with canonical angular momentum \\langle Lz\\rangle=-1 and a persistent circulating current: the rotating counterpart of the \"Wigner molecular crystal\" recently imaged in moiré superlattices. Deepening the wells drives a singlet-triplet transition to non-rotating spin-singlet atoms whose only current is a weak diamagnetic counter-circulation. The transition moves to deeper wells as the field grows, so depth and field together open a window for the formation of rotors. This is the collective analog of the singlet-triplet transition of two-electron quantum dots. At the transition, the orbital magnetic moments of the atoms reverse sign as their spin polarization switches, a joint signature accessible to magnetometry. If the atoms are instead polarized by other means, such as magnetic proximity coupling, the rotors lock at weak field into a spontaneously ordered crystal of dimers in a pinwheel pattern.",
+      "categories": [
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.40786",
+      "tier": "deep",
+      "why": "Neural-quantum-state calculation of rotating moiré atoms reveals a field- and depth-tuned singlet-triplet transition connected to Wigner molecular crystals, bridging moiré materials and quantum Hall-like physics central to the listener's interests."
+    },
+    {
+      "id": "2610.41017",
+      "title": "Preparation of a Laughlin-like fractional Chern insulator on a superconducting quantum processor",
+      "authors": [
+        "Kamil Dutkiewicz",
+        "B\\'arbara Andrade",
+        "Geza Giedke",
+        "Tobias Grass"
+      ],
+      "abstract": "Fractional Chern insulators (FCIs) are lattice analogues of fractional quantum Hall states, hosting topological order and fractionalized anyonic excitations. Their realization poses a demanding target for quantum simulation. Here, we realize a bosonic FCI on an IBM Nighthawk superconducting quantum processor using classically optimized variational circuits. We target a Laughlin-like state that is an exact zero-energy ground state of a long-range parent Hamiltonian on a torus, eliminating physical edges and providing a favorable geometry for accessing fractional quantum Hall physics in a small system. On a 4\\times4 qubit lattice, we prepare both the four-boson FCI ground state and a three-boson state hosting two quasiholes. Measurements of particle densities and correlations reproduce the characteristic structure of the target states, while reconstructed chiral magnetization currents resolve the circulating current pattern associated with the quasiholes. The preparation of these strongly correlated topological states with shallow circuits establishes a route toward the digital simulation and manipulation of fractionalized excitations, including measurements of topological invariants and anyonic braiding.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.41017",
+      "tier": "deep",
+      "why": "Experimental preparation of a Laughlin-like fractional Chern insulator with quasihole excitations on a superconducting quantum processor offers a new platform for probing fractional quantum Hall-type physics the listener follows closely."
+    },
+    {
+      "id": "2610.40761",
+      "title": "Moiré metals and continuum models beyond a single valley",
+      "authors": [
+        "Matthew Albert",
+        "Andrew Klekovkin-Hardy",
+        "Valentin Cr\\'epel"
+      ],
+      "abstract": "We derive continuum models of moiré materials valid over the full monolayer Brillouin zone, as required for metals whose large Fermi surfaces are not confined to a single valley. To this end, we introduce an environment-resolved two-center approximation, in which each hopping amplitude depends not only on the distance between the orbitals it connects but also on its position within the moiré cell. Taking the local environment to be set by the disregistry of the two layers alone, these moiré couplings and their full set of harmonics can be learnt from commensurate bilayers at uniform stackings, without fitting. The method shows excellent agreement with ab initio band structures on moiré cells containing a few hundred atoms. Applied to twisted NbSe2, it yields a continuum model in which moiré effects concentrate at the van Hove singularities, a single-particle starting point for studying moiré-tuned superconducting, charge-density-wave instabilities and their competition.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.40761",
+      "tier": "brief",
+      "why": "A parameter-free continuum model for moiré metals beyond a single valley, applied to twisted NbSe2, extends the toolkit for moiré band-structure engineering relevant to the listener's secondary interests."
+    },
+    {
+      "id": "2610.40733",
+      "title": "Co–dsorption of terrylene and tetrapentacontane on hexagonal boron nitride - towards a two-dimensional Shpolskii matrix",
+      "authors": [
+        "Rong Sun",
+        "Tolibjon Abdurakhmonov",
+        "Jan-Niklas Heidkamp",
+        "Julian Schr\\\"oer",
+        "Paul Weinbrenner",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Tobias Korn",
+        "Oliver K\\\"uhn",
+        "Friedemann Reinhard"
+      ],
+      "abstract": "Organic molecular emitters are promising building blocks for quantum technologies, but their use at two-dimensional interfaces is limited by diffusion, aggregation, and photobleaching. We present work towards constructing an ultrathin two-dimensional Shpolskii-like host-guest matrix on hexagonal boron nitride (hBN) by co-depositing terrylene fluorophores with the long-chain tetrapentacontane in a solution-phase process. We demonstrate that this approach disperses terrylene in a roughly one-nanometer-thin alkane layer without detectable phase separation and allows tuning the emitter density from ensembles to isolated emitters showing characteristic blinking behavior consistent with single-molecule fluorescence. Time-lapse confocal microscopy, autocorrelation analysis, and fluorescence recovery after photobleaching show that suppressed diffusion and stable emitter positions can be achieved in several samples with a tetrapentacontane matrix. Encapsulation with hBN from the top side further improves photostability, with emitters demonstrating long lifetimes despite high photon doses. Successful co-adsorption of isolated emitters and alkane matrix is a milestone towards extending Shpolskii-type molecular isolation to hBN and provides a route towards stable, interface-integrated molecular qubits.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.40733",
+      "tier": "brief",
+      "why": "Demonstrates a 2D Shpolskii-like host-guest matrix on hBN for stabilizing single-molecule emitters, relevant to the listener's work on optical probes and hBN-integrated quantum emitters."
+    },
+    {
+      "id": "2610.41915",
+      "title": "Andreev-Enhanced Conductance in a Bilayer Graphene Quantum Point Contact",
+      "authors": [
+        "Emma Horgan",
+        "Bernd Aichner",
+        "Nadine Omar",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Luca Banszerus"
+      ],
+      "abstract": "Quantum point contacts provide a platform for probing mode-dependent Andreev reflection. Here, we demonstrate Andreev-enhanced conductance in a gate-defined bilayer graphene quantum point contact coupled to a superconducting aluminum electrode. Electrostatic gating enables sequential mode occupation, verified by normal-state conductance quantization. In the superconducting state, the conductance is enhanced within the conductance plateaus, while the enhancement decreases between plateaus, consistent with the nonlinear transmission dependence of Andreev reflection. The enhancement yields effective transmission probabilities up to 0.9, and extends over a bias window of approximately 140 \\muV, which we associate with a proximity-induced superconducting gap, close to the gap of the aluminum film. For in-plane fields, the enhancement persists up to the critical field, and the bias window follows the spectral gap predicted by Abrikosov-Gor'kov theory. In contrast, perpendicular fields suppress the enhancement approximately linearly from zero field, deviating from homogeneous pair breaking and indicative of flux penetration.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.41915",
+      "tier": "brief",
+      "why": "Observation of mode-resolved Andreev-enhanced conductance in a gate-defined bilayer graphene quantum point contact showcases quantum transport engineering in a 2D material platform."
+    },
+    {
+      "id": "2610.41058",
+      "title": "h/2e Flux Trapping without Superconductivity",
+      "authors": [
+        "Will Lancer"
+      ],
+      "abstract": "Recently, it was shown by Komargodski and Popov [arXiv:2601.09847] that ordinary metals threaded with an Aharonov-Bohm solenoid exclusively trap either 0 or h/2e flux. The latter value is familiar in the superconducting setting, yet we find that it holds in ordinary metals as well, with no condensate or pairing necessary. We provide an analytic explanation for the flux trapping, and extend the results to the cases of finite temperature, time-reversal invariant potentials, and lattice regularization, where we find that the flux remains trapped at 0 and h/2e.",
+      "categories": [
+        "hep-th",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.41058",
+      "tier": "brief",
+      "why": "A surprising theoretical result showing h/2e flux trapping occurs in ordinary (non-superconducting) metals, challenging intuitions about flux quantization outside the listener's usual domain."
+    },
+    {
+      "id": "2610.41513",
+      "title": "Potentials of individual atoms by convergent beam electron diffraction",
+      "authors": [
+        "Tatiana Latychevskaia",
+        "Colin Robert Woods",
+        "Yi Bo Wang",
+        "Matthew Holwill",
+        "Eric Prestat",
+        "Sara Mustafi",
+        "Sarah J. Haigh",
+        "Kostya S. Novoselov"
+      ],
+      "abstract": "In convergent beam electron diffraction (CBED) on two-dimensional (2D) materials, the intensity distributions within the individual CBED spots map the local atomic arrangements within the probed region. In this study we demonstrate that the average intensities within the CBED spots essentially depend on the scattering parameters by a single atom, thus, offering the possibility of the direct measurement of such parameters. Scattering potential of an individual atom can be approximated by the Gaussian function and its parameters, the standard deviation and the maximal phase shift, can be recovered from the ratio of the intensities in the zero- and higher orders spots in CBED pattern. In order to demonstrate this, we simulated CBED patterns and extracted the atomic scattering parameters from such patterns. In the simulated examples, no weak phase object approximation is applied and the proposed method provides accurate results even for materials with large phase shifts up to 1.5 rad, as for example tungsten. The scattering parameters recovered from the experimental CBED patterns of graphene and twisted graphene-hBN structure show good agreement with the theoretically obtained values.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.41513",
+      "tier": "brief",
+      "why": "A new convergent-beam electron diffraction method extracts single-atom scattering potentials in graphene and twisted graphene/hBN, a useful characterization technique for 2D/moiré materials."
+    }
+  ]
+}

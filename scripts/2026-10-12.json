@@ -1,0 +1,545 @@
+{
+  "date": "2026-10-12",
+  "format": "dialogue",
+  "n_papers": 42,
+  "episode_title": "Dark excitons in gallium nitride, Rydberg exciton orbital transfer, and a Cooper instability in a Wigner crystal",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October twelfth, and archive gave us about forty-two new papers overnight. We've pulled five for a deep dive and five more as quick hits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's got a nice spread: dark exciton relaxation dynamics in a planar monolayer, a stress test of Rydberg exciton models in TMDs, a general theory of exciton-exciton interactions with quantum geometry, hBN spacers taming moire reconstruction, and a Cooper instability built out of Wigner crystal phonons in rhombohedral graphene."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the dark excitons. This is Saraswat and coauthors, paper one in the show notes, on monolayer gallium nitride and hBN."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Gallium nitride as a flat monolayer. Not the usual TMD suspect."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and that's the point. Free-standing gallium nitride relaxes into a planar, mirror-symmetric structure, same point group as hBN and the 1H TMDs, D-three-h. That mirror plane, sigma-h, is the whole paper. Every electron, phonon, and exciton state at every momentum carries a definite parity under that mirror, and it turns out parity doesn't just forbid certain phonon-assisted transitions, it actively organizes which channels carry the actual relaxation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So symmetry tells you what's allowed. The new part is showing it also predicts what's used."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. They do G-zero-W-zero band structure plus Bethe-Salpeter for the excitons, and gallium nitride comes out with an indirect gap: conduction minimum at Gamma, valence max at K. The lowest exciton is dark twice over — it sits at finite momentum K, and its mirror parity is odd, opposite to the bright excitons at Gamma. Mapping parity of the lowest exciton band across the whole zone, they find a closed contour around Gamma: even parity inside, odd outside, including at K and M. That's a protected crossing, mirror symmetry forbids the two bands from mixing there."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the exciton-phonon coupling has to respect that parity boundary too."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the selection rule: even phonons connect same-parity excitons, odd phonons connect opposite-parity ones. They check this numerically and the forbidden channels vanish to numerical precision across the whole zone, not just near high-symmetry points. One phonon branch, the out-of-plane optical mode, actually switches parity partway across the zone, so its coupling map looks like a ring, allowed only in an annulus where its own symmetry matches what's needed on each side."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What does this buy you experimentally? Can the dark exciton at K actually emit light?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Only through exactly one phonon branch, by their symmetry analysis — a sixteen millielectron-volt mode at K. And because of the little group at K, the emitted light has to be circularly polarized, opposite helicity in the two valleys by time reversal. Their calculated phonon-assisted luminescence spectrum shows a single satellite right at that energy below the dark exciton, with every other branch's contribution vanishing to numerical precision — strong support that the selection rule is doing real physical work, not just bookkeeping."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What about actual numbers — linewidths, lifetimes?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "At three hundred kelvin the bright exciton at Gamma has a linewidth around a hundred fifty millielectron-volts, a lifetime of about four femtoseconds, and nearly half of that width comes from the lowest acoustic phonon branch — even though the polar optical phonons have matrix elements ten times larger. Those polar modes are even-parity and simply have no odd-parity final states in reach, so they contribute nothing to that particular linewidth, despite dominating the relaxation flux once the population has moved elsewhere in the zone."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a nice decoupling — strong coupling doesn't automatically mean it matters for a given process."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. Then they run a real-time Boltzmann solver: inject excitons optically at Gamma, watch them thermalize. Within thirty femtoseconds, forty-five percent of the population has reached the K and K-prime valleys; by a hundred femtoseconds it's ninety percent, and it stays there. The dark minimum acts as a bottleneck — it can't emit a phonon downward, so it only broadens via quasi-elastic absorption of a low-energy acoustic mode, and the flux drops three orders of magnitude once the system settles, not because particles disappear but because there's nowhere left to scatter to."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And hBN is the mirror image of this story?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Literally — same workflow, but there the band edges share orbital parity, so the lowest exciton stays even and bright at Gamma. Same symmetry machinery, opposite experimental outcome. The caveat worth flagging: real GaN grown so far on silicon carbide is buckled, which breaks sigma-h entirely, so this exact picture needs the free-standing planar phase specifically."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good scaffold for anyone chasing valley-polarized dark emission anyway."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Next: Rydberg excitons, paper two, from Wang, Chen, Xue and coauthors."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is the Rytova-Keldysh potential again — predicting exciton Rydberg series from screening."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, but it's not a new measurement. It's a reanalysis of existing sum-frequency-generation spectra — from Takahashi and coworkers — on hBN-encapsulated molybdenum diselenide, or Mo-Se-two, and tungsten disulfide, W-S-two, plus older tungsten diselenide, W-Se-two, data. The question is sharper than 'does R-K fit the spectrum': they fit the one-s, two-p and two-s energies to fix the scalar screening parameter, then ask whether that calibrated model correctly predicts the three-p energy it never saw."
+    },
+    {
+      "speaker": "Leo",
+      "text": "A genuine held-out test, not just a goodness of fit."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and the result is the interesting part: the three-p residual — observed minus predicted — is minus seven point three eight millielectron-volts in Mo-Se-two, but plus five point five eight in W-S-two. Opposite signs, and they stay opposite across the full two-sigma error boxes from the original paper, so this isn't noise flipping the sign."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Could that just mean scalar R-K is a bad model to begin with, so the leftover residual is meaningless?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the check they do next. Benchmarked against a bare two-dimensional Coulomb potential, scalar R-K already removes about sixty-seven percent of the held-out orbital error. So it's a genuinely good model — which is precisely why the remaining, state-specific, opposite-sign residual is informative rather than just leftover noise."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why would a more hydrogen-like, better-screened spectrum still carry state-specific information at all?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Nice scale-separation argument in the appendix: total Rydberg binding falls off like one over n-squared, but the spacing between neighboring high-n levels falls off faster, like one over n-cubed. A compact, localized correction can keep an n-cubed-scale effect on nearby-level spacings long after it's become negligible for the overall binding energy. So convergence of the ladder's energies doesn't mean convergence of what each individual orbital is telling you."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any physical story for the opposite signs, or is this purely phenomenological?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Kept deliberately open. They fit a minimal passive single-pole 'dark-state' model to the curvature of the residuals: it works for W-S-two, fails for Mo-Se-two because it would need a negative, unphysical spectral weight, and W-Se-two doesn't fit the tested form at all. So three materials, three different verdicts, and the paper is explicit that this doesn't pin down a mechanism — could be nonlocal screening, intervalley mixing, phonon-assisted shifts, or dark np channels nobody's measured yet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what's the actual testable output, versus just 'it's complicated'?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A frozen number: using the W-S-two two-p and three-p curvature, the model has no remaining freedom and predicts the next unmeasured p-state, four-p, at plus four point zero eight millielectron-volts relative to the R-K baseline. That's a concrete, falsifiable target for whoever next runs this sum-frequency experiment on W-S-two — nice discipline, publishing a number before the data exists rather than after."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Worth remembering it's built entirely on someone else's peak positions, though, with a lot of propagated error-box machinery in the supplement."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Agreed, treat the sign pattern as the robust result and the specific millielectron-volt numbers with the caveats attached."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three is theory, from Maisel Liceran and Stoof, on exciton-exciton interactions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is a direct extension of their earlier work, which only applied to conventional semiconductors with weak band hybridization. Now they generalize to any crystalline system — meaning band topology, quantum geometry, and moire physics can all enter the exciton-exciton interaction itself, not just the single-exciton problem."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why does that matter — isn't exciton-exciton interaction just a contact-like repulsion in most pictures people use for moire Bose-Hubbard models?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the toy-model shortcut this paper is arguing against. They set up the full four-body problem — two electrons, two holes — and derive a variational biexciton equation where an effective exciton-exciton potential falls out, now dressed by the same form factors and Bloch wavefunction overlaps that give single-particle bands their quantum geometry. In other words, if your bands have a nontrivial quantum metric, the exciton-exciton interaction inherits that structure directly, it's not a free parameter you can bolt on separately."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Do they show a case where that changes something qualitative, not just quantitatively?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, and this is the nice result. In an ordinary system with hydrogenic excitons, the Heitler-London limit says the spin-singlet exciton pair potential is attractive, the spin-triplet is purely repulsive — no bound triplet biexcitons, full stop. They confirm this numerically in a flat-band square-lattice tight-binding model with trivial quantum geometry: only singlet biexcitons bind."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And with nontrivial quantum metric?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They move to two flat-band models with finite quantum metric — an imbalanced Lieb-lattice bilayer and a square-lattice model with a tunable geometric parameter zeta — and find bound triplet biexcitons appear, something forbidden at this level of approximation in the conventional case. They even show analytically why: the repulsive part of the interaction is odd under exchange for the triplet channel, and because the ground-state biexciton wavefunction is even, that repulsive piece integrates to exactly zero. So triplet biexcitons become completely insensitive to how strong the same-layer repulsion is — unusually robust."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a genuinely new qualitative feature, not just a shifted binding energy."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and it's a direct consequence of quantum geometry, demonstrated with a clean symmetry argument, not just numerics. The catch is these are deliberately simple toy models — contact interactions, flat bands, single-exciton-mode approximations — meant to isolate the effect, not quantitatively predict real moire TMD biexcitons yet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But it gives a concrete recipe for anyone trying to build a better Bose-Hubbard model for twisted TMD interlayer excitons — the paper points explicitly at that application."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, including a formula for mapping their interaction matrix elements into Wannier-function-based hopping and repulsion parameters for exactly that kind of moire lattice model."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two quick ones before we get back to deep dives. First, Zhu and Chen, paper six, couple a two-dimensional electron gas in the integer quantum Hall regime to a single structured cavity mode."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Vacuum-field-mediated Landau level reconstruction. The spatially modulated cavity mode transfers momentum in discrete kicks, displacing Landau orbit guiding centers and building a momentum ladder that reshapes the band structure and redistributes edge states — but the Chern numbers for filling factors one through three stay exactly integer throughout, the bulk gaps just shrink without closing. A clean demonstration that cavity vacuum fields can sculpt quantum Hall spectra without touching the topology."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And Gattu and Jain, paper seven, go hunting for non-Abelian anyons in paired composite-fermion states."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Using parton theory, they check whether the predicted non-Abelian quasiparticles in various even-denominator fractional quantum Hall states actually stay free, or clump into Abelian bound pairs that hide the braid statistics. Most states they check do bind into Abelian molecules — except nu equals one-half in wide quantum wells, where the quasiparticles and quasiholes stay free. That makes it their top pick for actually seeing non-Abelian braiding experimentally."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good, now paper four — back to something closer to home, hBN spacers and twisted TMD bilayers."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Figueiredo, Chen, Penn and a large team, using scanning transmission electron microscopy on near-aligned molybdenum diselenide and tungsten diselenide — Mo-Se-two and W-Se-two — heterobilayers, about two degrees of twist."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is the atomic reconstruction problem — near-zero-twist TMD bilayers don't stay rigidly moire, they relax into big domains of one stacking registry separated by narrow walls."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and that reconstruction matters a lot for anyone doing interlayer exciton optics, since the local stacking registry sets the actual potential landscape excitons see, not the nominal twist angle. Here they have one sample where some regions have the two TMD layers in direct contact, and other regions are separated by a monolayer or bilayer h-B-N spacer, so it's a controlled, same-sample comparison."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the spacer kills the reconstruction?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Dramatically. In direct contact, high-angle annular dark-field images show triangular domains, strongly anisotropic, dominated by enlarged regions of one particular stacking registry — consistent with antiparallel, H-type alignment. With even a single h-B-N layer between them, that pattern vanishes: you get a clean, nearly isotropic hexagonal moire superlattice that matches rigid-lattice simulations."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they quantify 'matches rigid' rather than just eyeballing images?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Four-dimensional STEM — mapping local rotation, dilation, and heterostrain pixel by pixel from the diffraction pattern. In direct contact, the heterostrain averages around zero point seven eight percent with a standard deviation of zero point zero nine percent — a genuinely inhomogeneous lattice. With the spacer, mean heterostrain drops to zero point one three percent, roughly a sixfold reduction, and the spread narrows two to three times, landing close to what a perfectly rigid moire simulation would give."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is there a residual the spacer doesn't fix?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A small one — the mean dilation in the spacer-separated region, around zero point three seven percent, is still a bit larger than the rigid simulation predicts, so some uniform strain or sample-specific offset survives even once the local inhomogeneity is gone. They also find the strain that used to spread smoothly through the lattice instead piles up sharply at the boundary between direct-contact and spacer regions, suggesting you could deliberately pattern spacers to sculpt one-dimensional or zero-dimensional strain landscapes for exciton confinement."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Useful for anyone trying to interpret interlayer exciton linewidths or trapping potentials and wondering how much of the disorder is reconstruction versus something else."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the motivation they give — cleaner, more uniform moire landscapes for studying collective excitonic and correlated bosonic phases."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five, Miao and Huang, on a Cooper instability inside a magnetic Wigner crystal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is motivated directly by recent scanning tunneling microscopy that imaged real-space electronic crystals in rhombohedral hexalayer graphene, plus transport data suggesting superconductivity and charge order both emerge from the same spin-valley-polarized ferromagnetic metal at nearby densities."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the question is whether the crystal's own vibrations could be gluing together the superconductivity sitting right next to it in the phase diagram."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. They build the whole chain themselves: Hartree-Fock on a continuum model of rhombohedral pentalayer graphene gives a fully spin-valley-polarized Wigner crystal, one electron per triangular unit cell, with roughly a thirty-eight millielectron-volt gap to the next band — comparable to the Coulomb energy scale at that density, around twenty-four millielectron-volts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then they look at how that crystal vibrates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Time-dependent Hartree-Fock gives the collective mode spectrum: the expected transverse phonon and longitudinal plasmon, both going to zero energy at long wavelength, plus a whole set of internal modes — basically breathing and higher-multipole distortions of the charge sitting at each lattice site, something you don't get in a point-charge crystal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why is this a genuinely hard problem rather than ordinary phonon-mediated pairing with a BCS-style log divergence?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two reasons they flag explicitly. First, there's no adiabatic separation — the phonon energies are comparable to the conduction bandwidth, so you can't integrate out fast electrons and slow phonons the usual way. Second, because this crystal breaks time-reversal symmetry, the usual Cooper logarithm that guarantees pairing at arbitrarily weak attraction is gone — you need attraction above a finite threshold just to get a bound pair at all."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's not guaranteed to work. What do they actually find?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They build a fermion-quasiboson Hamiltonian treating the collective modes as bosons coupled to conduction electrons, then solve the two-electron Cooper problem exactly with that induced interaction. With phonon-mediated attraction alone, the binding energy at zero total momentum is about twenty-five millielectron-volts. Add back the direct Coulomb repulsion between the two electrons, and binding drops to about four and a half millielectron-volts — but it survives, the bound pair branch stays below the two-electron continuum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the symmetry of that pair?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The relative wavefunction in momentum space has a phase winding of plus one around the origin — chiral p-wave. And when they break down which collective modes actually do the work, it's overwhelmingly the two translational modes, the phonon and plasmon; the dozens of internal multipole modes they also computed barely matter because most sit above the conduction bandwidth, so the energy denominators suppress them."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Caveats?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They're upfront about this being a two-electron toy problem, not a many-body theory — adding more electrons will modify the crystal and its own excitation spectrum, which they explicitly leave for future work. But as a first demonstration that broken time-reversal symmetry doesn't automatically kill phonon-mediated pairing, and that it naturally selects a chiral channel, it's a nice, concrete connection to the chiral superconductivity transport experiments keep hinting at near Wigner crystal phases."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Three more quick ones to close out. Paper eight, Bark, Kim, Koo and a large collaboration, run a Fermi-Hubbard quasiparticle collision on a forty-two-qubit digital quantum processor."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They collide a doublon and a holon in a twenty-one-site chain and measure the transmission probability, which matches the Bethe-ansatz scattering matrix with no free parameters — first time this has been done on real quantum hardware. The collision also generates entanglement between transmitted and reflected components, visible in particle-number fluctuations, while a control collision between two indistinguishable doublons shows neither effect, as expected."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine is a fun one — Gao, tightening the lower bound on the Laughlin gap using a semidefinite program."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Builds on a recent proof that the spectral gap above the Laughlin state at filling one-third is at least one over twenty-five. By enlarging the set of auxiliary operators in a semidefinite program and certifying everything with exact rational arithmetic, they push the proven bound up to roughly one-fifth — closer to the one over four point something seen in exact diagonalization, though still short of it. Notably, the author credits the improved proof and the search itself to an AI model working under their direction."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And finally, Wietzke, Coeymans, Hue and coauthors build a graphene double quantum dot that acts as a two-level system in the terahertz range."
+    },
+    {
+      "speaker": "Ava",
+      "text": "hBN-encapsulated graphene, bonding and antibonding states of the artificial molecule separated by up to point six millielectron-volts, which is about zero point one four five terahertz — accessed through dark transport spectroscopy rather than microwave photon-assisted tunneling. They frame it as a building block for future on-chip terahertz quantum technology, including ultra-strong coupling to a single cavity mode."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's today's stack — dark excitons with a protected parity boundary, a Rydberg ladder that's more hydrogen-like but still carries secrets, exciton pairs that get braver with quantum geometry, a spacer layer that calms down moire strain, and a Wigner crystal trying its hand at chiral superconductivity."
+    },
+    {
+      "speaker": "Ava",
+      "text": "See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.12996",
+      "title": "Real-Time Relaxation Dynamics of Dark Excitons in Mirror-Symmetric Monolayers",
+      "authors": [
+        "Rishabh Saraswat",
+        "Mantasha Ansari",
+        "Rekha Verma",
+        "Sitangshu Bhattacharya"
+      ],
+      "abstract": "Symmetry governs which exciton-phonon (\\textitexc-ph) scattering channels \\textitcan exist, but not which a relaxing exciton actually uses. Combining group theory with \\textitab initio many-body perturbation theory, we derive the mirror parity \\sigmah, of finite-momentum excitons in planar D3h monolayers, and form exact \\textitexc-ph selection rules that hold across the whole Brillouin zone. The parity of the lowest exciton band changes across a closed contour. The even phonons connect states of the same parity, while odd phonons connect states of opposite parity. We use these rules to compute exciton linewidths and we solve the real-time Boltzmann transport equation for monolayer GaN as the test case and benchmark it against monolayer \\textithBN.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.12996",
+      "tier": "deep",
+      "why": "Derives exact exciton-phonon selection rules from mirror parity in D3h monolayers and solves real-time Boltzmann dynamics for dark exciton relaxation, directly bearing on dark-exciton physics central to your work."
+    },
+    {
+      "id": "2610.13149",
+      "title": "Orbital transfer reveals material-selective structure in Rydberg excitons",
+      "authors": [
+        "Mengli Wang",
+        "Peng Chen",
+        "Wenqi Xue",
+        "Haonan Xia",
+        "Hong Zhang",
+        "Benniu Zhang"
+      ],
+      "abstract": "Rydberg excitons in atomically thin semiconductors offer a sensitive view of dielectric screening and electronic structure. As their spectra become increasingly well resolved, a central question is how much material information an effective Hamiltonian can predict beyond the states used to determine it. Using the 1s, 2p and 2s levels to determine a scalar Rytova-Keldysh Hamiltonian, we test its transfer to the excluded 3p state. The transfer deviations have opposite signs: the observed 3p lies 7.38 meV below the prediction in MoSe2 and 5.58 meV above it in WS2; the opposite signs persist across the complete reported +/-2-sigma peak-error boxes. In a separate high-field-calibrated benchmark, RK removes 66.8% of the orbital error of a pure two-dimensional Coulomb reference, making the remaining state-selective deviations particularly informative. After separating gap and common-scale contributions, the residuals reveal distinct material-dependent orbital patterns and constrain simple multichannel descriptions. For WS2, the measured 2p/3p curvatures yield a parameter-fixed prediction, Q4p=+4.08 meV, for a future same-platform measurement. Together these results show how a well-performing spectral model can be tested for transferable physical information, with the next unmeasured state providing an independent experimental check.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.13149",
+      "tier": "deep",
+      "why": "Tests how far a Rytova-Keldysh effective Hamiltonian for Rydberg excitons can be transferred to unmeasured states, finding material-specific deviations in MoSe2 vs WS2 that probe dielectric screening beyond the standard model."
+    },
+    {
+      "id": "2610.13246",
+      "title": "Theory of exciton-exciton interactions in crystalline systems",
+      "authors": [
+        "L. Maisel Licer\\'an",
+        "H. T. C. Stoof"
+      ],
+      "abstract": "Excitons are bound electron-hole pairs in semiconductors whose interactions influence optical properties and determine their collective behavior and emergent correlated phases. Despite the theoretical and experimental significance of these phenomena, a microscopic theory of exciton-exciton interactions that takes into account the full composite nature of these quasiparticles is lacking. Here, we present a general theory of exciton-exciton interactions that builds upon our previous publication [Physical Review B 113, 155440 (2026)], which applied only to conventional semiconductors with weak band hybridization. By contrast, the theory presented here is valid in virtually any crystalline semiconducting system and can be applied to the study of biexciton formation and correlated excitonic phases in systems where band topology, quantum geometry, and moiré effects play a significant role. In addition to the analytical theory, we also present results in simple systems with flat bands with a nontrivial quantum metric and show that the biexcitonic spectrum differs strongly from that in the case without quantum geometry. Our theory paves the way for accurate quantitative calculations of biexciton spectra and excitonic many-body phases in modern condensed-matter systems.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.quant-gas",
+        "cond-mat.str-el",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.13246",
+      "tier": "deep",
+      "why": "Develops a general microscopic theory of exciton-exciton interactions valid for topological/moiré bands, showing biexciton spectra are strongly modified by quantum geometry—directly relevant to correlated excitonic phases in moiré TMDs."
+    },
+    {
+      "id": "2610.13493",
+      "title": "Controlling the Atomic Reconstruction in Twisted MoSe2/WSe2 with a Monolayer hBN Spacer",
+      "authors": [
+        "Johannes Figueiredo",
+        "Kaiyuan Chen",
+        "Aubrey Penn",
+        "Mirco Troue",
+        "Sebastian Loy",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Frances M. Ross",
+        "Julian Klein",
+        "Alexander W. Holleitner"
+      ],
+      "abstract": "Twisted van der Waals heterobilayers are a promising material platform for studying collective exciton many-body phenomena, but near-aligned structures often exhibit a local, anisotropic atomic reconstruction that compromises lateral homogeneity. The present study describes how atomic-scale rearrangement in adjacent regions of hBN-encapsulated, near-aligned MoSe2/WSe2 heterobilayers is controlled by the presence of a mono- or bilayer hBN spacer between the two monolayers. High-angle annular dark-field STEM directly resolves the atomic alignment in both layers and shows that the spacer suppresses the reconstruction and strongly increases the structural uniformity of the heterobilayers. 4D-STEM quantitatively maps local rotation, dilation, and heterostrain, revealing that the separated regions remain consistent with rigid moiré superlattice simulations, whereas without the spacer the structural parameters have two to three times broader distributions. By suppressing reconstruction, ultrathin hBN spacers therefore provide an effective route to enhance lattice homogeneity in MoSe2/WSe2 heterobilayers targeting collective excitonic and optoelectronic phenomena.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.13493",
+      "tier": "deep",
+      "why": "Shows a monolayer hBN spacer suppresses atomic reconstruction in twisted MoSe2/WSe2, a practical knob for achieving the lateral homogeneity needed for collective moiré-exciton experiments."
+    },
+    {
+      "id": "2610.10710",
+      "title": "Cooper Instability of a Magnetic Wigner Crystal",
+      "authors": [
+        "Wangqian Miao",
+        "Chunli Huang"
+      ],
+      "abstract": "Recent scanning tunneling microscopy has directly imaged electronic crystals in rhombohedral hexalayer graphene, and magnetotransport measurements suggest that superconductivity and charge-density-wave order emerge from a common spin-valley-polarized ferromagnetic metal at nearby carrier densities. Motivated by these observations, we ask whether collective modes in a magnetic Wigner crystal can mediate pairing in this setting. We address this question by studying the Cooper problem for two electrons in the first conduction band of the Wigner crystal. Unlike conventional phonon-mediated pairing, the collective mode (boson) energies and single-particle (fermion) dispersion are comparable scales controlled by the electron density, leaving no small parameter for an adiabatic expansion. Moreover, because the magnetic Wigner crystal is not time-reversal invariant, the usual Cooper logarithmic divergence in the pairing susceptibility is absent, so the attraction must exceed a finite threshold for pairing to occur. These unusual features motivate a numerical experiment to see whether the crystal's own vibrations can bind electrons. We obtain the crystalline ground state and its collective mode spectrum within Hartree–Fock and time-dependent Hartree–Fock approximation, and derive the electron–phonon Hamiltonian using the quasiboson approximation. Solving the resulting two-electron problem, we find that phonon-mediated attraction exceeds the pairing threshold, with chiral p-wave pairing as the leading instability. Within these approximations, we show that collective modes of a Wigner crystal can indeed favor chiral pairing despite broken time-reversal symmetry. Our results provide an encouraging starting point for developing a full many-body theory to study electronic crystallization and superconductivity.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.10710",
+      "tier": "deep",
+      "why": "Finds that collective modes of a magnetic Wigner crystal in rhombohedral graphene can mediate chiral p-wave pairing despite broken time-reversal symmetry, connecting Wigner-crystal physics to emergent superconductivity—a hot topic in correlated 2D electronic states."
+    },
+    {
+      "id": "2610.12956",
+      "title": "Vacuum-field-mediated Landau-level reconstruction in a cavity-coupled two-dimensional electron gas",
+      "authors": [
+        "Zi-Heng Zhu",
+        "Yu Chen"
+      ],
+      "abstract": "We study a two-dimensional electron gas in the integer quantum Hall regime coupled to a single spatially modulated cavity mode in the static off-resonant limit. Retaining both paramagnetic and diamagnetic contributions on equal footing, we derive a gauge complete single-particle Hamiltonian in which virtual photon exchange generates a periodic kinetic renormalization and a diamagnetic scalar potential. Both terms transfer momentum by 2k0 and displace guiding centers by \\Delta X=2k0\\ellB2, forming a finite-k0 momentum ladder. Diagonalizing the strip Hamiltonian, we find that the ladder reconstructs the Landau-level band structure and redistributes, rather than multiplies, the associated chiral edge states. Occupied-subspace Chern numbers remain C_\\nu=\\nu for \\nu=1,2,3 throughout 0\\le\\lambdacav\\le 0.5, while the bulk gaps decrease without closing. Strip Kubo responses show cavity-induced displacements of the Hall-step energies; at finite width the plateau heights are noninteger and approach the integers as Lx increases. The ladder is spectrally resolved at k0\\ellB=0.5 and collapses at k0\\ellB=0.1. These results isolate a spatially local, finite-k0 momentum ladder as a clean-system mechanism by which a structured vacuum field reconstructs quantum Hall spectra and strip transport without changing the integer topology, complementary to cavity-mediated all-to-all hopping.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.12956",
+      "tier": "brief",
+      "why": "Shows a structured cavity vacuum field can reconstruct integer quantum Hall Landau levels via a finite-momentum ladder while preserving Chern numbers, a clean cavity-QED twist on 2D quantum Hall physics."
+    },
+    {
+      "id": "2610.12645",
+      "title": "Search for free non-Abelian anyons in paired composite-fermion states",
+      "authors": [
+        "Mytraya Gattu",
+        "J. K. Jain"
+      ],
+      "abstract": "The even-denominator fractional quantum Hall (FQH) states, understood as topological superconductors of composite fermions, are predicted to support elementary quasiparticles (QPs) or quasiholes (QHs) obeying non-Abelian braid statistics. Using the microscopic framework of parton theory, we investigate many experimentally observed paired composite-fermion states and find that their elementary QPs and QHs in general bind to form Abelian molecules, thus obscuring non-Abelian braid statistics. An exception is the \\nu=1/2 state in wide quantum wells, where our calculations show free QPs or QHs; we thus identify this state as an especially promising candidate for realizing and studying non-Abelian braid statistics. We also indicate how the study of such bound states can help reveal the topological structure of the state.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.12645",
+      "tier": "brief",
+      "why": "Parton-theory calculations identify the ν=1/2 state in wide quantum wells as an especially promising candidate for free (unbound) non-Abelian quasiparticles in even-denominator fractional quantum Hall states."
+    },
+    {
+      "id": "2610.13946",
+      "title": "An entangling Hubbard quasiparticle collider on a digital quantum processor",
+      "authors": [
+        "Chan Bin Bark",
+        "Hanbyul Kim",
+        "Yoonil Koo",
+        "SeungBeom Hong",
+        "Seik Pak",
+        "Kwang Jun Ahn",
+        "Sangmo Cheon",
+        "Youngseok Kim",
+        "Moon Jip Park"
+      ],
+      "abstract": "Scattering of quasiparticles provides direct access to the interactions that govern strongly correlated systems. In this work, we realize the quasiparticle scattering experiment of the Fermi-Hubbard model on a digital quantum processor by colliding a doublon and a holon in the half-filled chain of 21 sites encoded on 42 qubits of the ibmboston processor. For the first time, we measure the transmission probability of quasiparticles of the Hubbard model on quantum hardware, which agrees with the Bethe-ansatz scattering matrix without free parameters. Beyond the scattering probabilities, the collision generates entanglement by superposing the transmitted and reflected components, which we infer from the particle-number fluctuation. In sharp contrast, a control collision between two doublons shows neither the interaction dependence nor the number fluctuation, as expected for indistinguishable particles. Our work demonstrates that the ability to create quasiparticles of a chosen flavor on demand and program their motion and interactions makes a digital quantum processor a new experimental toolset for probing the entanglement structure generated by quasiparticle scattering.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.13946",
+      "tier": "brief",
+      "why": "First digital-quantum-processor realization of doublon-holon scattering in the Fermi-Hubbard model, matching Bethe-ansatz predictions and directly probing entanglement generation in quasiparticle collisions."
+    },
+    {
+      "id": "2610.12700",
+      "title": "Improving the lower bound on the Laughlin gap: An SDP search",
+      "authors": [
+        "Qiang Gao"
+      ],
+      "abstract": "A recent preprint by OpenAI resolved the spherical fermionic Laughlin spectral-gap conjecture for the full V1 interaction by a Fock-space inequality: HQ2\\ge \\gamma HQ on the lowest-Landau-level Fock space for all large flux Q and every \\gamma below 0.0461673\\ldots, so that the gap above the Laughlin state at filling 1/3 is at least 1/25. That proof, with its original constant, has also been formalized in Lean. We show that the same argument supports a much larger constant. Two sharper estimates, a product-twirl bound for the three-body tail and a staircase price for the four-body allowance, raise the constant above 0.0601 without changing the original certificate. Treating the auxiliary operators as the variables of a semidefinite program (SDP) and enlarging the finite set of orbital modes on which they act then gives HQ2\\ge\\gamma HQ for every \\gamma<\\gamma_*=0.2190037845063196\\ldots, certified by exact rational arithmetic. Consequently the gap above the Laughlin state is at least 1/5 for all sufficiently large spheres, and the untruncated planar V1 Hamiltonian has positive spectrum bounded below by \\gamma_*, uniformly in particle number and angular momentum. A heuristic extrapolation of the SDP optima suggests that auxiliary operators of the present form can give at most about 0.222, while exact diagonalization of finite systems places the true gap near 0.4. A larger family of auxiliary operators could push the bound further towards the true gap, and the SDP formulation makes such families easy to test. The proof of the improvement and the SDP search were completed by the AI model Claude Opus 5.5 (Anthropic) under the author's direction.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.12700",
+      "tier": "brief",
+      "why": "An AI-assisted (Claude-driven) semidefinite-programming search dramatically tightens the rigorous lower bound on the Laughlin spectral gap, a notable example of AI-accelerated proof techniques in quantum Hall theory."
+    },
+    {
+      "id": "2610.13196",
+      "title": "Graphene double quantum dot as a solid-state two-level system in the THz range",
+      "authors": [
+        "Alexis Wietzke",
+        "Solen Coeymans",
+        "Benjamin Hue",
+        "Simon Messelot",
+        "Aurelien Schmitt",
+        "Michael Rosticher",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Jerome Tignon",
+        "Sukhdeep Dhillon",
+        "Rebeca Ribeiro",
+        "Audrey Cottet",
+        "Matthieu Delbecq",
+        "Takis Kontos",
+        "Juliette Mangeney"
+      ],
+      "abstract": "Matter-based two-level quantum systems are fundamental building blocks of quantum technologies, underpinning applications in quantum computing, simulation, communication, and sensing. Today, most of these two-level quantum systems, including Rydberg atoms, trapped ions, superconducting circuits, molecules, and quantum dots, involve transition frequencies in microwave or optical domains. However, extending their transition frequency to the THz spectral range could provide numerous benefits, leveraging the unique properties of THz radiation. Here, we show that an hBN-encapsulated graphene double quantum dot realizes a two-level system with a transition frequency in the THz spectral range. Using low-temperature transport spectroscopy in the dark combined with modeling based on nonequilibrium Green's function formalism, we demonstrate the formation of an artificial molecule, featuring bonding and antibonding states separated by an energy of up to 0.6 meV, corresponding to a resonance frequency of 0.145 THz. This approach provides direct access to important parameters of open double quantum dot systems, including tunneling rates, offering a practical alternative to conventional techniques such as photon-assisted tunneling, which are challenging to implement at THz frequencies. The realized 2D-material-based THz two-level system, compatible with direct on-chip integration, could serve as a key building block for future THz quantum technologies. Furthermore, by involving a single-electron transition, coupling these devices to a THz resonator could enable the exploration of ultra-strong light-matter interactions at the fundamental limit of a single transition coupled to a single cavity, beyond the reach of existing THz quantum systems based on collective transitions.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.13196",
+      "tier": "brief",
+      "why": "Demonstrates an hBN-encapsulated graphene double quantum dot acting as a solid-state two-level system with a THz transition frequency, a new 2D-material platform for THz quantum technology."
+    }
+  ]
+}

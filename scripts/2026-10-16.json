@@ -1,0 +1,458 @@
+{
+  "date": "2026-10-16",
+  "format": "dialogue",
+  "n_papers": 41,
+  "episode_title": "A moiré Wigner crystal, strange-metal superconductivity in twisted tungsten diselenide, and whispering-gallery Raman in a nanotube",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October sixteenth, and the archive dropped about forty-one new condensed matter papers overnight. We've picked five for a deep dive and five quick hits. Today's spread runs from a microwave-detected Wigner crystal in moiré graphene, through strange-metal superconductivity in twisted tungsten diselenide, to a nanotube that does its own built-in Raman resonance."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's start with the graphene one, paper one in the show notes. This is a Wigner crystal hunt, but not with the usual optical or scanning probe toolkit, they're using microwaves."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. Solodovnyk and coauthors take a monolayer graphene flake aligned to its encapsulating h-B-N, so it forms a triangular moiré pattern with a period of about fifteen nanometers. They put it in the gap of a coplanar waveguide and measure microwave transmission through it at fifty millikelvin, in fields from fifteen point four to eighteen tesla. That puts them deep in the lowest Landau level, with flux per moiré cell around seventy to eighty percent of a flux quantum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So they're reading out dissipation, not charge. What's the actual signal?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They take the transmitted power at low frequency minus the transmitted power at high frequency. That cancels the Hall part of the response and isolates the longitudinal, dissipative part, which they call D of nu. Across the Landau level this traces out a broad dome, which is just disorder broadening. But riding on top of the dome are sharp little dips where dissipation drops below the smooth background."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the claim is those dips are a crystal, not some fractional quantum Hall state."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the key test. A fractional quantum Hall state sits at a fixed Landau filling as you change the field. These dips don't, they drift with field along lines of constant density per moiré cell. That's the fingerprint of commensuration with the superlattice rather than with the magnetic flux. The strongest dip tracks a filling of one electron for every three moiré cells, s equals one third, which is exactly the generalized Wigner crystal that theory predicts is the most stable fixed-density state here. It shows up on both the electron and hole side at every field they tried, from fifteen point four up to eighteen tesla."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What rules out it being some exotic Hofstadter gap instead, since those also depend on flux?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Magnitude of the drift. An integer Hofstadter gap would sweep across a big range of filling, something like a fifth of nu, as the field changes. The observed feature barely moves, consistent with the gentle, weakly fractional s equals one third track, not an integer-indexed one. They also rule out composite fermion physics: the rollover frequency of the dissipative response stays completely flat across the level, with no feature at half filling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is there a smoking gun, like the pinning-mode resonance people see for Wigner crystals in gallium arsenide two-D electron gases?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the catch, and they're upfront about it. They searched the whole zero point five to nine gigahertz band and saw nothing, any resonance is below about twenty-five milli-dB, so either it's outside their band, too weak to resolve, or damped by their drive power. Without that resonance, they can't fully distinguish a clean commensurate crystal from a disorder-pinned glass that just happens to prefer the same filling. Their argument for the crystal interpretation is that the weaker satellite dips also fall near the next fractions down the commensuration hierarchy, one quarter, two fifths, exactly as you'd expect from a lattice-registered solid, not from generic disorder."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they even quantify how close a call it is, interactions only beat disorder by a factor of two or three, so this crystal is marginal, not textbook rigid."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, which is refreshing for a claim like this, they call it a marginal, commensurate-correlated pinned solid rather than oversell it. For anyone tracking generalized Wigner crystals optically in TMD moiré stacks, this is the magnetic-field, bare-graphene cousin of that physics, detected through a completely different, dynamical channel."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two is pure theory, from Das Sarma and Chou, on exciton superfluidity in two-dimensional bilayers, both at zero field and in quantum Hall bilayers at total filling one."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the old problem of an electron in one layer, a hole in the parallel layer, pairing into a condensate that can't recombine because they're in different layers. Mean field theory, plain Hartree-Fock with the bare Coulomb interaction, says this condensate exists at any layer separation, with a transition temperature that only falls off as one over the separation. The question is whether that survives once you add real physics, screening, interactions, competing phases."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And at zero field, where's the catch?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They solve the full frequency and momentum dependent gap equation with the interaction screened at the random-phase level, no artificial cutoff. There's a two-plasmon structure, one acoustic, one optical mode of the bilayer, and at second order there's a genuine enhancement of pairing from virtual plasmon exchange. But then they compute the next diagram, the crossed-rung vertex correction, and it almost completely cancels that enhancement. The net effect is that static screening, not the fancy dynamical theory, sets the actual pairing strength in the controlled limits they can reach."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the naive, exciting answer, dynamically enhanced high-temperature exciton pairing, mostly evaporates once you do the vertex correction properly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and they're explicit that this cancellation is proven rigorously only in two limits: small interaction strength at fixed separation, and large separation in general. In between, it's not fully controlled. At large separation the pairing scale falls off as a Gaussian in the squared separation, much faster than the one-over-d of naive mean field."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What about the quantum Hall bilayer side, the famous nu-T-equals-one state?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "There, the kinetic energy is quenched by the magnetic field, so there's no small parameter and nothing beyond Hartree-Fock is under control. What they do is nail down exactly what Hartree-Fock does and doesn't say. It says the coherent state exists at every separation. But the collective mode, the pseudospin analog of a magnon, develops a soft spot at finite momentum once the separation over magnetic length passes about one point one seven five. People have long read that softening as the point where interlayer coherence itself collapses."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they say that's wrong?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They argue it's a different kind of instability, toward a density-modulated but still coherent state, an excitonic supersolid. Loss of uniformity isn't the same as loss of coherence. Where they go further out on a limb is a conjecture, clearly labeled as such, that the real system continuously crosses over from strong coherence to weak composite-fermion pairing at large separation, with the true transition temperature far below the mean-field number, which could look like an experimental critical separation at finite temperature without any real zero-temperature phase transition. For the quantum Hall crowd this is a useful, disciplined map of what's actually proven versus guessed."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three is squarely in the twisted TMD space, strange metal physics and a new superconducting dome in twisted bilayer tungsten diselenide, from the Shan and Mak groups."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is a nice complement to their earlier bandwidth-tuned Mott transition work. Here they go away from half filling, into a partially filled Hubbard band, at twist angles around three point four to three point seven degrees. Lowering the base temperature from about a hundred millikelvin down to thirty millikelvin uncovered a second superconducting dome, which they call S-C-two, centered near filling nu approximately zero point five five, well away from both the Mott insulator at nu equals one and the van Hove singularity at about zero point seven eight."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they know it's a real superconductor and not just a resistance dip?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Zero resistance, a critical current that vanishes continuously with temperature and field, interference-pattern signatures in the field-dependent critical current, and an extracted coherence length of about sixty-nine nanometers, roughly fourteen moiré periods, and only about a fifth of the normal-state mean free path. Optimal transition temperature is about one hundred twenty millikelvin."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the headline is the normal state above that, the strange metal part."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes. Between the transition temperature and about two kelvin, the resistivity is linear in temperature across a huge doping window, roughly half filling up to the Mott insulator. With a small field to quench the ordered states, that linear-in-T behavior survives down to one hundred millikelvin over most of that range, while right at the van Hove singularity it turns into ordinary Fermi-liquid, T-squared transport instead."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What makes them call it an extended strange metal rather than the usual quantum-critical strange metal everyone already knows about?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A few things. It spans multiple different symmetry-breaking ground states rather than hugging one special critical point, so it's not tied to a single quantum critical region. The residual resistivity is negligible compared to the resistance quantum and compared to the dynamic range of the resistivity, this is the clean limit, unlike the strange metal in twisted bilayer graphene, where disorder resistance is comparable to the whole signal. The magnetoresistance also obeys a clean quadrature scaling law and Kohler's rule, and the Hall resistivity is nearly temperature independent, which argues against the usual separate transport and Hall scattering times invoked for other strange metals."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what's their favored explanation?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They rule out phonons, since the linear resistivity persists far below the Bloch-Grueneisen temperature where phonon scattering should turn superlinear. They rule out a classical electron gas, because the single-particle Fermi temperature from band structure is sixty to a hundred ten kelvin, way above where the superconductivity sets in. The one theoretical picture they find even roughly compatible is Umklapp scattering between itinerant holes of a doped Mott insulator and the spinon Fermi surface of a nearby quantum spin liquid, though they're careful to say they are not claiming to have seen a spin liquid, just that this is the one model whose predictions line up."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the superconductivity itself tracks a ferromagnetic insulator at nu equals one half that shows up at smaller twist angle."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, at three point four degrees that filling freezes into a ferromagnetic insulator with a thermodynamic transition near seven hundred millikelvin, and S-C-two only appears once that order is weakened, either by widening the bandwidth with twist angle or by an electric field. So the superconductivity and the magnetism are clearly competing descendants of the same correlated electron liquid."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four moves to rhombohedral multilayer graphene, coupled to an h-B-N moiré, and asks whether an exotic metal state there can turn into a quantized topological insulator."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The starting point is something called a Fermi-lune state, a crescent-shaped Fermi surface that spontaneously breaks time reversal and threefold rotation in lightly doped, thick rhombohedral graphene, carrying both in-plane and out-of-plane orbital magnetization, which is unusual, ordinary orbital ferromagnets only do out-of-plane. Li and coauthors ask what happens when you fold that metal into a moiré superlattice by aligning it with h-B-N."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the moiré potential turns the metal into an insulator?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "In their unrestricted Hartree-Fock calculations, yes. The moiré potential folds the annular Fermi surface into the superlattice Brillouin zone, and once you add Coulomb interactions, the electrons spontaneously pick one spin-valley flavor, opening a gap and isolating a single Chern band with Chern number one. They call the result a transdimensional Chern insulator, because it inherits the mixed in-plane and out-of-plane orbital magnetization of its metallic parent, in this case about two and a half Bohr magnetons per electron in-plane, which is a sizable number."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How would you actually tell this apart from an ordinary Chern insulator in the lab?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Magnetic hysteresis under an in-plane field as well as a perpendicular one, an ordinary quantum anomalous Hall insulator only hysteresizes out of plane. They also unfold the moiré band back into the original graphene Brillouin zone and show it keeps the crescent, broken-symmetry shape of the Fermi-lune parent, whereas a control calculation for an ordinary Chern insulator unfolds into a symmetric annulus."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any catch, or competing instabilities?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes. They compute the collective charge and spin excitations with a Bethe-Salpeter calculation and find that in some parameter windows a charge mode softens to zero at finite momentum, signaling a competing charge density wave that would destroy the clean Chern insulator. Interestingly, an in-plane magnetic field can harden that soft mode back up, because it couples directly to the in-plane orbital magnetization, so an in-plane field might stabilize the topological phase against the density wave. They finish by showing, with exact diagonalization on small clusters, that fractionally filling the isolated band at one third gives a threefold-degenerate ground state consistent with a Laughlin-type fractional Chern insulator, now carrying the same exotic magnetism."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five, and this one's a direct hit for anyone doing Raman on two-D materials, a molybdenum disulfide nanotube that resonantly enhances its own Raman scattering."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Kazanov and Poshakinskiy look at a multiwall molybdenum disulfide nanotube, essentially a rolled-up stack of the same TMD everyone studies as flat monolayers. The tube wall supports whispering-gallery modes, light circulating around the tube's circumference, confined by total internal reflection in the wall, polarized along the tube axis."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the Raman connection is a cavity-enhancement idea borrowed from microresonator photonics?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. In Raman lasers, people design the cavity so the mode spacing, the free spectral range, matches the phonon energy, so pump and the scattered Stokes photon both sit on resonance at once; the enhancement scales as the product of the two quality factors, squared. Normally that requires careful geometric engineering. Here, they show the geometry does it for free, using the exciton."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How does the exciton do the tuning?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Near the A exciton resonance, around one point eight eight electron-volts, the in-plane dielectric function has strong dispersion, which raises the group index of the guided wall wave. That compresses the free spectral range from fifty-six milli-electron-volts down to under seven milli-electron-volts as you sweep toward the exciton. Sweeping through that whole range necessarily crosses all three optical phonon energies of molybdenum disulfide at some point, no need to tune the tube radius or anything else."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they find an actual match?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "For the A-one-g phonon, at fifty point six milli-electron-volts, the match lands right at a pump energy of one thousand five hundred fifty-one milli-electron-volts, between mode numbers nineteen and eighteen. Because the modes are reasonably broad, a few milli-electron-volts linewidth, the exact match doesn't need to be perfect; the mismatch just needs to be smaller than the linewidth, and they show the mode spacing and linewidth bands overlap for essentially every candidate phonon, so the resonance condition is basically guaranteed to be hit somewhere along the mode ladder."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's the actual enhancement number, and is there a selection rule catch?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Doubly resonant enhancement of the A-one-g line in the axial-to-axial polarization channel exceeds the non-resonant reference by about one and a half times ten to the four. The E-two-g-one phonon gets a smaller but still clean factor of order one hundred fifty. The E-one-g mode, though, is forbidden by symmetry in that channel entirely, zero by selection rule, so you'd only see it weakly through the much lower-quality-factor cross-polarization channels. It's a concrete design principle: if you want resonant Raman enhancement in a rolled-up TMD, the exciton dispersion does the cavity engineering for you, automatically, near its own resonance."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good run of deep dives. Let's do the quick hits."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper six, Gao and Wang, builds a quantum many-body bootstrap that solves fractional quantum Hall ground states directly in the infinite-size limit, instead of extrapolating from finite simulations. It gives rigorous lower bounds on the ground-state energy and reproduces Laughlin and Pfaffian correlation functions and entanglement spectra almost level by level, then resolves new cases at filling one quarter and twelve fifths, finding a composite Fermi liquid and an R-R-three non-Abelian state respectively."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven looks at parafermion zero modes on the edge of a spin-polarized two-thirds fractional quantum Hall or fractional Chern state proximitized by a superconductor. Bollmann and coauthors use bosonization and renormalization group analysis to show that interedge dipole interactions can gap the neutral sector and stabilize Z-three parafermions at domain walls, and they find that correlated disorder across the two edges, the kind you'd expect from smooth disorder potentials, actually helps stabilize them rather than destroying them."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight is about a van der Waals strange metal, molybdenum oxychloride, famous for having unusually sharp plasmons despite bad-metal transport. Li and coauthors find the material is electronically split by direction: one in-plane axis behaves like a coherent Fermi liquid with a sharp, long-lived plasmon, while the perpendicular axis is an incoherent strange metal whose plasmon collapses past a critical momentum into a broad, nearly featureless continuum with an energy boundary around one point seven five electron-volts that doesn't move even when they change the sample thickness and screening."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine takes a one-dimensional deconfined quantum critical point, the transition between a ferromagnet and a valence-bond solid in a frustrated spin chain, and prepares it on an actual superconducting quantum processor using imaginary-time evolution compressed into shallow circuits. The hardware reproduces order parameters and correlation functions whose finite-size extrapolation lands close to large-scale numerical results, with a calibrated noise model accounting for the gap between hardware and ideal predictions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper ten is a nice scanning tunneling microscopy result on rhombohedral graphite: single-layer stacking shifts act as one-way mirrors for electrons. Fringes from backscattered electrons only appear on one side of a stacking fault, tracking its Dirac band, while the rhombohedral side stays transparent, not from breaking time reversal, but because the tip only couples to some of the layer-polarized modes. Since these stacking solitons can glide under fields, it's a movable, crystal-defined piece of electron optics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the stack for today: a Wigner crystal caught by its microwave fingerprint, a careful accounting of what's real versus conjectured in exciton superfluidity, a clean strange metal and superconducting dome deep inside a Hubbard band, a magnetically richer kind of Chern insulator, and a nanotube that tunes its own Raman resonance. See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.21875",
+      "title": "Microwave spectroscopic evidence of a moiré-commensurate electron crystal in monolayer graphene",
+      "authors": [
+        "A. Solodovnyk",
+        "P. Colgan",
+        "K. Watanabe",
+        "T. Taniguchi",
+        "L. W. Engel",
+        "S. Dietrich"
+      ],
+      "abstract": "We probe the conductivity of the lowest Landau level of a moiré-aligned monolayer graphene device by broadband microwave transmission through a coplanar waveguide (\\sim50 mK, 15.4–18 T), isolating the longitudinal channel through a low-minus-high frequency band difference D(\\nu). We resolve a series of minima in D(\\nu) that drift with field along lines of fixed carrier density rather than fixed Landau filling, the hallmark of moiré-commensurate electron crystals. The strongest minimum is present at every field and matches no fractional quantum Hall or integer Hofstadter state. It lies at band filling s=1/3, one electron for every three moiré cells–-the generalized Wigner crystal that DaSilva, Jung, and MacDonald predict as the most favorable fixed-density (t=0) commensuration. The weaker minima fall near neighboring commensurate fillings.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.21875",
+      "tier": "deep",
+      "why": "Microwave spectroscopy resolves a moiré-commensurate generalized Wigner crystal at filling 1/3 in monolayer graphene, directly relevant to optical/transport detection of correlated electronic states in 2D systems."
+    },
+    {
+      "id": "2610.22037",
+      "title": "Exciton superfluidity in two-dimensional bilayers at zero and high magnetic fields",
+      "authors": [
+        "Sankar Das Sarma",
+        "Yang-Zhi Chou"
+      ],
+      "abstract": "We study interlayer exciton superfluidity versus layer separation in two-dimensional electron-hole bilayers at zero magnetic field and quantum Hall bilayers at total filling \\nuT=1. Unscreened Hartree-Fock theory predicts coherence at every finite separation, with an energy scale decaying inversely with separation at large distances. We examine how screening, correlations, and spatial instabilities modify this prediction. At zero field, we solve the linearized gap equation with the full momentum and frequency dependence of the interaction screened within the random-phase approximation, without an imposed cutoff. The apparent plasmon enhancement of pairing in the ladder approximation is largely cancelled by the second-order crossed-rung correction. Static screening determines the leading pairing exponent in the controlled high-density limit at fixed separation. At large separation, the pairing scale falls exponentially with squared separation while the instability persists. Extending this result to fixed density assumes Fermi-liquid layers and higher-order dynamical corrections subleading to the static pairing interaction. At high field, we obtain an analytic uniform Hartree-Fock saddle point in the lowest Landau level, coherent at every finite separation. Within Hartree-Fock theory, its finite-wave-vector collective-mode instability favors an excitonic supersolid, distinguishing loss of spatial uniformity from loss of coherence. We conjecture that the quantum Hall bilayer evolves continuously toward weak pairing of composite fermions, with a scale far below the mean-field prediction at large separation. This suppression could produce an apparent critical separation at finite temperature without a ground-state quantum phase transition. The comparison separates the existence, energy scale, and spatial stability of interlayer coherence.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22037",
+      "tier": "deep",
+      "why": "A careful theory of interlayer exciton superfluidity in 2D electron-hole bilayers at zero and high field, addressing screening and pairing scales central to exciton physics in van der Waals systems."
+    },
+    {
+      "id": "2610.22307",
+      "title": "Extended strange metal and superconductivity in partially filled moiré Hubbard bands",
+      "authors": [
+        "Yiyu Xia",
+        "Yichi Zhang",
+        "Zhongdong Han",
+        "Hongyuan Li",
+        "Brandon Bauer",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Wenjin Zhao",
+        "Jie Shan",
+        "Kin Fai Mak"
+      ],
+      "abstract": "Moiré semiconductors provide a physical realization of the Hubbard model. Bandwidth-tuned Mott transitions and complex phase diagrams mimicking those of high-temperature superconductors have been demonstrated near a weak Mott insulating state at half-band-filling. The platform also provides an opportunity to explore the physics of a partially filled Hubbard band at doping densities far away from the Mott insulator, a regime that has remained largely unexplored. Here we report the emergence of an extended strange metal (ESM), in both doping density and twist angle, in a partially filled Hubbard band of twisted bilayer WSe2. The ESM is in the clean limit, persists down to 100mK, and spans over multiple symmetry-breaking ground states; it also appears only at small twist angles, where electronic correlations are strong. These observations distinguish the state from the reported strange metals associated with quantum criticality and favor the viewpoint that it is an intrinsic state of matter. We also report the observation of a new superconducting dome being developed from the ESM but far away from both the Mott insulating state and the van Hove singularity of the material. Our work opens the door to exploring the new regime of partially filled Hubbard bands in the clean limit.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22307",
+      "tier": "deep",
+      "why": "Twisted bilayer WSe2 reveals an extended strange metal and a new superconducting dome in a partially filled moiré Hubbard band, a major result for moiré TMD correlated physics."
+    },
+    {
+      "id": "2610.21310",
+      "title": "Transdimensional Chern insulators in rhombohedral multilayer graphene superlattices",
+      "authors": [
+        "Min Li",
+        "Xin Lu",
+        "Lei Wang",
+        "Jianpeng Liu"
+      ],
+      "abstract": "Recent experiments on lightly electron-doped rhombohedral multilayer graphene (RMG) in the \"transdimensional\" regime revealed anomalous Hall hysteresis under both perpendicular and in-plane magnetic fields, pointing to the emergence of transdimensional orbital magnetism in an interaction-driven \"Fermi-lune\" metal. Here we demonstrate that, by coupling to the moiré potential, this transdimensional orbital ferromagnetic metal can evolve into quantized Chern insulator phases in twisted RMG/hBN moiré superlattices. Using unrestricted Hartree-Fock calculations, we find that interaction-driven reconstruction isolates a spin-valley-polarized |C| = 1 Chern band, leading to a \"transdimensional Chern insulator\" (TDCI) state exhibiting both in-plane and out-of-plane orbital magnetizations. A minimal two-band model is introduced to describe the unique properties of TDCI, which unveils the intimate connection between non-reciprocal velocity and in-plane orbital magnetization. We further analyze the collective excitations of TDCIs, and identify soft charge and spin modes that may lead to density wave instabilities in certain cases. An in-plane magnetic field can harden the soft density-wave mode and may drive a transition from density-wave state to TDCI. Finally, when the |C| = 1 band is fractionally filled, the many-body ground state may be a fractional Chern insulator with broken rotation and mirror symmetries.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.21310",
+      "tier": "deep",
+      "why": "Hartree-Fock calculations predict a transdimensional Chern insulator and possible fractional Chern insulator in twisted rhombohedral graphene/hBN moiré superlattices, linking orbital magnetism to topology."
+    },
+    {
+      "id": "2610.20755",
+      "title": "Resonant enhancement of Raman scattering in a MoS2 nanotube",
+      "authors": [
+        "D. R. Kazanov",
+        "A. V. Poshakinskiy"
+      ],
+      "abstract": "The whispering-gallery modes confined in the wall of a multiwall MoS2 nanotube resonantly enhance the spontaneous Raman scattering by its own optical phonons. The enhancement is doubly resonant –- pump and Stokes waves hit two adjacent modes at one pump energy, and the signal scales as (Q\\rm pumpQ\\rm sc)2 - whenever a phonon energy matches the free spectral range of the mode ladder. Near the A exciton the excitonic dispersion compresses the ladder and sweeps its spacing through all intralayer phonon energies of MoS2, so the match, reached for A1g at E\\rm pump=1551~meV, requires no geometric tuning. A missed match splits the excitation peak into a pump- and a scattered-resonant doublet whose splitting measures the residual detuning. Selection rules confine the double resonance to the TM\\toTM channel and exclude E1g.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.20755",
+      "tier": "deep",
+      "why": "Doubly-resonant Raman enhancement via whispering-gallery modes near the A exciton in MoS2 nanotubes offers a new optical spectroscopy handle on exciton-phonon coupling in TMDs."
+    },
+    {
+      "id": "2610.21317",
+      "title": "Thermodynamic-limit bootstrap: Solving fractional quantum Hall ground states",
+      "authors": [
+        "Qiang Gao",
+        "Taige Wang"
+      ],
+      "abstract": "Strongly interacting ground states are usually computed in finite systems and then extrapolated to the thermodynamic limit (TDL). Here we develop a quantum many-body bootstrap that solves fractional quantum Hall ground states directly in the TDL. The method gives rigorous and quantitatively tight lower bounds on the ground-state energy and identifies the ground-state structure and topological order. For Laughlin and Pfaffian parent Hamiltonians, it reproduces exact pair-correlation functions and low-lying orbital entanglement spectrum (OES) nearly level by level. For Coulomb interactions, the rigorous TDL energy bounds closely match thermodynamic estimates from exact diagonalization and density-matrix renormalization group (DMRG) extrapolations, and the local diagnostics recover established Laughlin and Moore–Read OES counting and Friedel oscillations of the composite Fermi liquid. Beyond these benchmarks, the bootstrap resolves the thermodynamic ground states at \\nu=1/4 and \\nu=12/5, identifying a composite Fermi liquid and \\overlineRR3 topological order, respectively. The same framework applies equally well to Abelian and non-Abelian, gapped and gapless quantum Hall states. The TDL bootstrap therefore provides a general ground-state solver that determines both the energy and the state directly in the TDL.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.21317",
+      "tier": "brief",
+      "why": "A new thermodynamic-limit bootstrap method rigorously solves fractional quantum Hall ground states including composite Fermi liquid and non-Abelian phases directly, without finite-size extrapolation."
+    },
+    {
+      "id": "2610.22348",
+      "title": "Parafermions in polarized \\nu=2/3 Fractional Quantum (Anomalous) Hall Heterostructures",
+      "authors": [
+        "Steffen Bollmann",
+        "Andreas Haller",
+        "Thomas L. Schmidt",
+        "Jukka I. V\\\"ayrynen",
+        "Elio J. K\\\"onig"
+      ],
+      "abstract": "Motivated by recent experimental signatures of fractional Chern insulators in 2D quantum materials, we investigate the realization of \\mathbb Z3 parafermion zero modes (PZMs) on edges of spin-polarized \\nu=2/3 fractional quantum Hall states which are proximitized by superconductors. Unlike the spin-unpolarized Halperin state, the polarized \\nu=2/3 edge contains counterpropagating electron and fractional quasihole modes, giving rise to a plethora of competing tunneling and pairing processes. We focus on the vicinity of the fixed point where these modes reorganize into decoupled charge and neutral sectors, with the neutral sector describing an emergent dipole degree of freedom. Using bosonization and renormalization group analysis, we lay out the parameter space in which the interedge dipole interactions gap the neutral sector to stabilize one dominant tunneling and one dominant pairing channel resulting in a double sine-Gordon model in the charge sector which supports \\mathbbZ3 PZMs at domain walls. We discuss both clean and disordered systems. In clean systems this mechanism requires a certain degree of control of the interaction strength and range. In contrast, disorder can provide a more generic route: While short-ranged, edge-uncorrelated disorder % on the two edges suppresses the simultaneous pinning required for stable parafermion modes, when the disorder on the two edges is sufficiently correlated, as expected for smooth disorder potentials, the parameter regime hosting PZMs increases.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.22348",
+      "tier": "brief",
+      "why": "Proposes a route to Z3 parafermion zero modes on spin-polarized ν=2/3 fractional quantum Hall edges via disorder-assisted pairing, relevant to anyonic quantum Hall physics."
+    },
+    {
+      "id": "2610.21209",
+      "title": "Plasmon Collapse in a Directional Strange Metal",
+      "authors": [
+        "Jiade Li",
+        "Peiyi He",
+        "Deng Hu",
+        "Jiakai Wang",
+        "Jifeng Shao",
+        "Wan-Shun Du",
+        "Xuetao Zhu",
+        "Jiandong Guo",
+        "Zhiwei Wang",
+        "Peng Gao"
+      ],
+      "abstract": "Strange metals are widespread in strongly correlated quantum matter and closely intertwined with high-temperature superconductivity and quantum criticality, yet their microscopic charge dynamics remain fundamentally unresolved. Whether well-defined collective modes survive in an incoherent electronic fluid or dissolve into overdamped continua remains intensely debated. Here, employing high-momentum-resolution inelastic electron scattering complemented by direction-resolved transport, we show that the van der Waals compound MoOCl2, a \"bad\" metal known to host unusually \"good\" plasmons, exhibits a striking dichotomy in electronic coherence and charge dynamics. Transport reveals coherent Fermi liquid behavior along one in-plane crystallographic axis and an incoherent strange metal response along the orthogonal axis. This dichotomy extends directly to the charge response. The Fermi liquid direction supports a well-defined, long-lived plasmon, whereas the strange metal direction exhibits an overdamped excitation that progressively loses its collective character with increasing momentum. Beyond a critical momentum (qc \\approx 0.008 \\mathringA-1), the mode undergoes a reversal into negative dispersion and ultimately collapses into a broad, nearly featureless continuum with a robust high-energy boundary (Ec \\approx 1.75 eV). Remarkably, thickness-dependent measurements show that both qc and Ec remain nearly unchanged despite substantial modifications of Coulomb screening, revealing them as intrinsic scales of incoherent charge density fluctuations. These results establish a unique single-material platform in which coherent and incoherent electronic states are partitioned into in-plane orthogonal channels, and demonstrate that incoherent electronic fluids retain intrinsically structured charge dynamics beyond the quasiparticle paradigm.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.21209",
+      "tier": "brief",
+      "why": "High-resolution EELS reveals a plasmon that survives in one crystallographic direction of a strange metal but collapses into an incoherent continuum in the orthogonal direction, a striking anisotropic charge-dynamics result."
+    },
+    {
+      "id": "2610.21761",
+      "title": "Probing Deconfined Quantum Criticality Point on a Digital Quantum Computer",
+      "authors": [
+        "Mrinal Kanti Giri",
+        "Pinaki Sengupta"
+      ],
+      "abstract": "A deconfined quantum critical point (DQCP) is a continuous transition between ordered phases with unrelated broken symmetries, beyond the Landau-Ginzburg-Wilson paradigm. In one dimension, such a transition between a z-polarized ferromagnet (zFM) and a valence-bond solid (VBS) is well established numerically in a frustrated spin-1/2 chain. Here we ask whether a superconducting quantum processor can resolve this transition and its signatures despite finite-size effects and device noise. The ground states are prepared by ancilla-projected quantum imaginary-time evolution (QITE), whose exact target states are compressed by tensor-network optimization into shallow depth quantum circuits. The hardware data distinguish the phases through their order parameters, spin and dimer correlations, structure factors, correlation ratios, and snapshot distributions. The crossing of the order parameters locates the transition, and its finite-size extrapolation lies close to the thermodynamic-limit value obtained from large-scale numerics. A noise model based on the device calibration accounts quantitatively for the reduced amplitudes measured on hardware. Our findings demonstrate that a Landau-forbidden transition between competing orders can be resolved on current quantum processors.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.quant-gas",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.21761",
+      "tier": "brief",
+      "why": "A superconducting quantum processor successfully resolves a Landau-forbidden deconfined quantum critical point, demonstrating hardware capability for detecting exotic many-body transitions."
+    },
+    {
+      "id": "2610.20905",
+      "title": "One-way electron mirrors from single-layer stacking shifts in rhombohedral graphite",
+      "authors": [
+        "Konr\\'{a}d Kandrai",
+        "Andr\\'{a}s Balogh",
+        "D\\'{o}ra Varga",
+        "M\\'{a}rton Szendr\\H{o}",
+        "Andr\\'{a}s P\\'{a}link\\'{a}s",
+        "J\\'{o}zsef Cserti",
+        "J\\'{a}nos Koltai",
+        "Kriszti\\'{a}n M\\'{a}rity",
+        "P\\'{e}ter Vancs\\'{o}",
+        "G\\'{e}za I. M\\'{a}rk",
+        "Alexandre Mayer",
+        "Zolt\\'{a}n Tajkov",
+        "Levente Tapaszt\\'{o}",
+        "P\\'{e}ter Nemes-Incze"
+      ],
+      "abstract": "One-way mirrors or asymmetric scatterers are key components of photonic systems, protecting sources from back-reflections and routing light along a chosen path. Acoustic systems can also be engineered to show asymmetric reflection. However, a condensed matter platform acting as a one-way mirror without breaking linearity, time-reversal symmetry or energy conservation has been lacking. One route to achieving this is mode selection, where a probe coupled to only some modes sees a boundary as a mirror from one side and as transparent from the other. Here we show that single-layer stacking shifts in six-layer rhombohedral graphite provide this platform, acting as one-way mirrors for electrons. In scanning tunneling microscopy, 10 nm scale interference fringes appear only on the stacking fault side of a wall, tracking its Dirac band, the rhombohedral side remaining transparent. Layer-resolved tight-binding and wave-packet dynamics calculations reproduce this and trace the asymmetry to the mismatched layer polarization across the wall, with the tip supplying the selective coupling. Because stacking solitons glide under external fields, this mirror forms a movable element of electron optics defined by the crystal structure alone.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.20905",
+      "tier": "brief",
+      "why": "Stacking faults in rhombohedral graphite act as genuinely one-way electron mirrors via mode-selective STM coupling, a surprising condensed-matter analog of nonreciprocal optics."
+    }
+  ]
+}

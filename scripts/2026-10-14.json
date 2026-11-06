@@ -1,0 +1,519 @@
+{
+  "date": "2026-10-14",
+  "format": "dialogue",
+  "n_papers": 117,
+  "episode_title": "An excitonic Mott insulator caught on camera, a single anyon weighed in a quantum dot, and a ghost exciton in twisted graphene",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Good morning — it's October fourteenth, and arXiv put out roughly a hundred and seventeen papers overnight across condensed matter and related areas."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today we've got an excitonic Mott insulator caught in the act of freezing up, a single anyon trapped and weighed inside a quantum Hall dot, a dark exciton spotted by photoemission in twisted bilayer graphene, and two theory papers arguing about why twisted tungsten diselenide and rhombohedral graphene host the correlated phases they do."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's get into it, starting with the exciton story, which is paper two in the show notes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is Brunner, Zhou, and the Butov group, and it's about as direct a look at an excitonic Mott insulator forming in real time as you're going to get."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, these are indirect excitons — electron and hole sitting in separate layers of a molybdenum diselenide on tungsten diselenide heterostructure, so molybdenum diselenide, later just Mo-Se-two, paired with W-Se-two. The twist angle is about one point one degrees, giving a moiré potential with a seventeen nanometer period that acts like an optical lattice for these excitons."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So this is the solid-state cousin of ultracold atoms in an optical lattice — Bose-Hubbard physics, but with excitons instead of atoms."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly. Put about half an exciton per moiré site and the Bose-Hubbard model predicts a superfluid; fill each site with one exciton and repulsion blocks hopping, giving an insulator. The catch is that disorder also localizes excitons, so you need an unusually clean sample to tell a genuine Mott insulator from ordinary disorder-induced localization."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they argue this heterostructure clears that bar, because earlier work from the same group already showed anomalously high exciton mobility near filling one half, consistent with superfluidity."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So here they push density further, toward filling one, and track the exciton cloud with time- and space-resolved photoluminescence imaging as the pump pulse builds up density. At low filling the cloud just diffuses outward normally. Near filling one half, it expands rapidly — that's the superfluid-like transport."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And then the punch line."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Near filling one, the cloud does something strange: it expands and then contracts. The transport distance rises, peaks, and falls back down even while the pump pulse is still building density. At the same time, the spatial profile develops an actual peak right at the excitation spot — excitons piling up at the origin instead of spreading away."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which is exactly what you'd expect if hopping shuts down once site occupancy crosses one — the Mott gap chokes transport right where density is highest, so population backs up locally while the lower-density surroundings still flow."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They reproduce both effects with a simple drift-diffusion simulation whose only extra ingredient is a mobility that rises with density up to filling one half and then falls toward filling one. That alone gives the non-monotonic kinetics and the spatial pile-up."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's a proof-of-principle model, not a microscopic Bose-Hubbard calculation — they say so themselves. The mobility curve is put in by hand to match the physics, not derived from first principles."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the peak in the time trace vanishes above about ten kelvin, which lines up with the superfluid temperature they estimated for this same moiré lattice in earlier work — a consistency check more than new input."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What I like is that this is a purely optical signature of a correlated bosonic phase transition — no contacts, no exotic gating, just density- and time-resolved exciton emission, and the clear message is that transport kinetics, not just a doubly-occupied photoluminescence line, is the right fingerprint for a Mott insulator."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The obvious caveat is generality: they explicitly flag that this needs to be reproduced in other samples with different moiré parameters, and apparently making multiple heterostructures this clean is still hard."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper four takes us to large-angle twisted bilayer graphene, studied with time-resolved photoemission instead of optics, and it's hunting for a genuinely exotic exciton."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is Gatti, Mortensen and collaborators, looking at nine-degree twisted bilayer graphene on hydrogen-intercalated silicon carbide. At that angle you're nowhere near the magic-angle flat bands; instead the two layers' Dirac cones hybridize away from the Fermi level, producing a van Hove singularity at a point they call m in the mini Brillouin zone."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And near that van Hove singularity, theory predicts something unusual: two nearly degenerate excitonic channels, built from the four bands making up the upper and lower van Hove singularity, that can destructively interfere."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That interference is the predicted ghost-Fano exciton — a bright resonance plus a dark, strongly bound exciton. The striking claim is that unlike an ordinary hydrogenic exciton, this dark state can stay bound at nanometer scale even sitting inside a metal, because the interference suppresses its coupling to the electron-hole continuum that would normally screen it apart within a few femtoseconds."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So how do they actually catch it?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "With position-, time- and angle-resolved photoemission, spelled A-R-P-E-S, pumped at one point six electron-volts and probed at thirty-seven electron-volts, with about eighty femtosecond time resolution. Right at the m point they see two features in the pump-probe signal: one assigned to the conduction band minimum from a tight-binding fit, and a lower one they call X-sub-A."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And X-A is the candidate ghost-Fano exciton."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Several numbers line up. It sits about zero point four electron-volts below the conduction band minimum, inside the hybridization gap, matching the predicted binding energy. It only shows up near the m point, not near either layer's Dirac point. Its momentum width implies a real-space extent of order zero point seven nanometers — tiny, consistent with a strongly bound state. And it decays with a time constant of about three hundred femtoseconds."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which doesn't sound long, but is actually the headline number."
+    },
+    {
+      "speaker": "Leo",
+      "text": "In an ordinary metal, excitonic correlations get screened away within a few femtoseconds. Three hundred femtoseconds surviving in a gapless semimetal is remarkable, and it's exactly what you'd expect if the ghost-Fano interference really is suppressing coupling to the electron-hole continuum."
+    },
+    {
+      "speaker": "Ava",
+      "text": "There's a bonus result here too — layer-resolved hot-carrier thermometry."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Because the twist separates the two layers' Dirac cones in momentum, they can fit the electronic temperature separately for each layer after the pump. The bottom layer, on the substrate, peaks near twenty-five hundred kelvin; the top, exfoliated layer only reaches about sixteen hundred forty kelvin, even though both layers cool down afterward in essentially the same way."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They trace that to a built-in interlayer electric field, since the layers are hole-doped differently — Dirac points offset by thirty millielectron-volts — which biases ultrafast energy transfer between layers during the excitation itself, not during the later cooling. A nice demonstration that twist plus doping asymmetry gives you a handle on ultrafast interlayer dynamics on top of the exciton physics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three is about as close as anyone's gotten to literally holding a single anyon — well, trapping one in a quantum dot and weighing it."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is Valentini, Wang and collaborators, mostly at U-C-S-B. The device is a monolayer graphene quantum point contact wrapped in hexagonal boron nitride, h-B-N, with a ninety-nanometer hole patterned into the top graphite gate that defines an electrostatically tunable quantum Hall dot right inside the point contact."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So you've got quantum Hall edge states running along the point contact, and a separate puddle of charge trapped in the dot, with independent control over how strongly the dot talks to the edges and how many charges sit inside it — enough control to deplete the dot down to a single quasiparticle or quasihole."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They first benchmark at filling factor one, the ordinary integer quantum Hall state, where whole-electron Coulomb blockade mediates backscattering. They see a clean spin blockade: a dot full of quasiholes tunnels freely with the same-spin edge, but adding the opposite-spin quasielectron is forbidden by spin conservation unless the bias exceeds the Zeeman energy — about zero point five eight millielectron-volts at five tesla — at which point a magnon can absorb the spin flip."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Then at filling one-third and two-thirds, they see backscattering resonances with three times the period of the integer case — direct evidence the dot is now exchanging charge e-over-three at a time. They call this a single anyon transistor."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Once that's confirmed, they push to where the dot holds just a handful of quasiparticles."
+    },
+    {
+      "speaker": "Leo",
+      "text": "For the first one through five quasiparticles, the charging energies are irregular, not the simple evenly-spaced ladder a trivial capacitor model predicts. Density matrix renormalization group calculations, D-M-R-G, done on a sphere, show the irregularity comes from a competition between orbitals that spread out to avoid occupying higher composite-fermion Landau levels, and orbitals that stay compact to save confinement energy."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Then at larger quasiparticle number, ten to twenty or so, there's a striking asymmetry: quasiholes at one-third, and quasiparticles at two-thirds, charge up regularly — but quasiparticles at one-third, and quasiholes at two-thirds, show an irregular, alternating even-odd pattern."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That even-odd pattern is the headline. By softening the confinement with the top gate, they can make the weak, odd-numbered charge sectors disappear entirely, so the dot starts charging in steps of two e-over-three instead of one."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which is the smoking gun for attraction between anyons — binding strong enough to beat the charging energy, so pairs enter the dot together as a kind of bound molecule rather than one at a time."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Separate bulk D-M-R-G calculations on an infinite cylinder find that free quasiparticles and quasiholes at one-third don't actually bind, but quasiparticles do bind at the neighboring Jain fraction two-fifths. So one reading is that the dot, at large occupation, is locally hosting a puddle of the two-fifths state, or that the pairing is really a property of the edge between two-thirds and one-third."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Either way, this is a direct, single-particle-resolved probe of anyon-anyon interactions, something previously only inferred indirectly from noise or interferometry on large ensembles. And the charge noise in this device — about ten to the minus three electron charges per root hertz — is good enough that they explicitly frame it as a step toward a graphene-based topological qubit."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper one is theory, trying to explain why twisted bilayer tungsten diselenide superconducts at all, given that the only ingredient on the table is repulsive Coulomb interaction."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The experimental puzzle: in one experiment, by the Kin Fai Mak group among this paper's authors, superconductivity at hole filling minus one survives all the way down to zero displacement field. In another experiment, at a slightly larger twist angle, it only shows up in a narrow sliver right next to the correlated insulator. So what controls the size of that dome?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Braun, Călugăru and collaborators attack this with three complementary methods — Hartree-Fock, random phase approximation, and functional renormalization group — all fed by the same first-principles continuum model at twist angle three point six five degrees, with a realistic gate-screened Coulomb interaction derived from density functional theory."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the renormalization group calculation is the important one, because it treats the pairing channel and the particle-hole channels that drive magnetism on completely equal footing, so it can tell you whether pairing is actually being generated by fluctuations in those other channels."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The main result: across the phase diagram of displacement field versus interaction strength, they find an inter-valley-coherent spin density wave — essentially a one-twenty-degree antiferromagnet locked to the valley degree of freedom — and right next to it, a superconducting dome with mixed d-wave singlet and p-wave triplet pairing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The singlet-triplet mixing is itself informative — it's only allowed because the displacement field breaks inversion symmetry, so the triplet weight grows from nearly zero at zero field to roughly equal weight near the van Hove singularity."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They trace the pairing glue directly: projecting an RPA particle-hole vertex onto the Cooper channel reproduces the same gap function as the full renormalization group calculation, confirming the mechanism is inter-valley spin fluctuations — the same fluctuations that produce the spin density wave are what glues the Cooper pairs."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Here's the part that resolves the experimental discrepancy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "With the full, long-range gate-screened Coulomb interaction, the dome survives down to zero displacement field with critical temperature falling off only slowly — matching the Mak group's data. Approximate the same physics with a short-range Hubbard interaction, or a featureless constant interaction, and the dome collapses, tracking the density of states and vanishing before zero field — matching the other, narrower experiment."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the two experiments might not need different physics at all — different theoretical approximations of the same mechanism, at slightly different twist angles, naturally produce both outcomes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The broader lesson for anyone doing many-body theory on moiré flat bands: your answer for repulsively-driven superconductivity is extremely sensitive to how far your interaction extends in real space and whether your form factors come from the real continuum wavefunctions or a truncated tight-binding projection. Predicted transition temperatures here range from about five millikelvin to two kelvin, well below the magnetic ordering scale of a few kelvin to twenty kelvin — and the method still can't touch the strange-metal behavior reported in the same experiment, which the authors say needs genuinely strong-coupling treatment."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive, paper five, also theory, tackles a genuinely odd experimental fact about fractional Chern insulators in rhombohedral multilayer graphene."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The fractional quantum anomalous Hall effect first turned up in twisted molybdenum ditelluride, then in rhombohedral four-, five- and six-layer graphene aligned with hexagonal boron nitride. The puzzle: the moiré potential should act most strongly on whichever graphene layer sits closest to the boron nitride. But experimentally, the fractional Chern insulator is more robust when the moiré potential sits on the layer farthest from where the doped electrons actually live — exactly where band theory says the modulation should be weakest."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which has pushed some groups toward proposing that the electrons spontaneously crystallize into an anomalous Hall crystal, with the moiré potential just along for the ride. Ding, Millis and Zeng offer a different resolution using composite fermion theory."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Composite fermions are the standard trick from fractional quantum Hall physics: attach an even number of flux quanta to each electron through a singular gauge transformation, so the resulting quasiparticle sees a reduced effective magnetic field. A messy fractionally-filled Landau level becomes a simple integer number of filled composite-fermion Landau levels."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Here they apply flux attachment to the actual continuum band structure of pentalayer graphene, with no real magnetic field present — the field is purely an emergent, density-generated gauge field from the transformation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two results matter. First, if the attached flux is chosen to oppose the Berry curvature of the parent conduction band — a choice rhombohedral graphene's band structure actually allows — the resulting composite-fermion Landau levels end up widely spaced in energy rather than bunched together, which protects the whole picture from falling apart into competing phases."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Second, and this is the resolution: the lowest composite-fermion Landau level isn't confined to the layer where the bare electrons actually live. Flux attachment mixes Landau orbital index with layer and sublattice, so that lowest level spreads real weight into the farthest layer too, even though the bare electron wavefunction barely touches it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So a moiré potential sitting on that remote layer, which does almost nothing to the electronic bands, can still open a sizable gap in the composite-fermion spectrum — about two millielectron-volts at the non-interacting level, growing to roughly fifteen once they add Hartree-Fock interactions between the composite fermions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "At filling one-third, the two moiré-split composite-fermion Landau levels carry Chern numbers plus one and minus two, which have to add up to the parent band's minus one. Interactions decide which one is occupied, and in their calculation that choice reproduces the measured Hall conductance of minus e-squared over three h."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The honest caveat: that agreement isn't automatic. It works at one-third but not at every fraction in the Jain sequence, and the mean-field theory has an artificial symmetry between competing Chern states that real electrons don't actually have — they say you'd need genuine Chern-Simons gauge fluctuations, beyond mean field, to settle it cleanly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Still, it's a satisfying piece of intuition — the reason moiré-on-the-far-layer works better isn't about the bare electron band structure at all. It's about how far the composite fermion, as an emergent object, actually spreads."
+    },
+    {
+      "speaker": "Leo",
+      "text": "A handful of shorter ones to close out. Paper six, from the same Yale group as our exciton piece, shows that the same molybdenum diselenide on tungsten diselenide heterostructure can carry spin as well as charge. Zhou, Brunner and collaborators exploit the same suppressed scattering that gave high exciton mobility to reach spin transport mobilities around ten to the five centimeters squared per electron-volt second — orders of magnitude above standard diffusive spin transport in transition-metal dichalcogenide materials, simply by letting excitons drift rather than hopping spin site to site."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven is the toy-model companion to our rhombohedral graphene story. Zeng and Millis strip the physics down to a 'Berry basin' model — a flat-bottomed dispersive band, a winding layer degree of freedom, Coulomb repulsion, and an optional periodic potential. They find integer Chern insulators at strong coupling with no superlattice at all, but the fractional state only appears once you add a nonzero periodic potential, at every interaction strength they tried — direct numerical backing for the idea that the superlattice is doing real work, not just decoration."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight looks at generalized Wigner crystals from a different angle. Chai and collaborators use neural-network variational Monte Carlo on a mass-asymmetric electron-hole bilayer, where heavy localized holes create a non-uniform background letting a light electron crystal form at densities two orders of magnitude higher than in a plain two-dimensional electron gas. As density rises, the triangular electron-hole crystal gives way to a honeycomb lattice, with the honeycomb hole lattice hosting antiferromagnetic or stripe-ordered Mott-insulator-like spin states — and they propose a bilayer graphene, hexagonal boron nitride, tungsten disulfide, tungsten diselenide stack as a realistic platform, around ten to the eleven carriers per square centimeter."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine is a fun one. Wu, Chen and collaborators build a resistor network inside the quantum Hall effect using an infinite geometric sequence of finite networks that converges toward an irrational normalized resistance of root three. Their finite realization measures one point seven three five h over e squared — essentially nailing root three, a neat demonstration that you can approach an irrational quantized response with a finite, buildable device, even though the underlying quantum Hall plateaus are themselves perfectly rational."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And paper ten, by Primeau, Zhang and Lin, revisits superconductivity in rhombohedral tetralayer graphene with a Kohn-Luttinger calculation that keeps the full Bloch wavefunction form factors. Quantum geometry strongly favors an intravalley, chiral p-x plus-or-minus i-p-y pairing state with a higher critical temperature than the intervalley alternative — but trigonal warping breaks the degeneracy Cooper pairs need and squeezes the superconducting region down to a narrow sliver near changes in Fermi surface topology. A reminder that quantum geometry can enhance pairing in one breath and undercut it in the next, depending on which part of the Fermi surface you're sitting on."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the show for October fourteenth."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Back tomorrow with whatever the next batch of papers brings."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.17222",
+      "title": "Pairing from repulsive interactions in twisted WSe2 from functional renormalization",
+      "authors": [
+        "Hannes Braun",
+        "Dumitru Călugăru",
+        "Pietro M. Bonetti",
+        "Haoyu Hu",
+        "Yan Zhang",
+        "Yi Jiang",
+        "Quansheng Wu",
+        "Kin Fai Mak",
+        "Jie Shan",
+        "B. Andrei Bernevig",
+        "Michael M. Scherer",
+        "Laura Classen"
+      ],
+      "abstract": "Motivated by the observation of superconductivity in twisted bilayer WSe2 over an extended range of displacement fields, reaching from the correlated insulator down to zero field, we analyze the correlated electron phases of this system at hole filling ν= -1 and twist angle 3.65^\\circ using Hartree–Fock, random phase approximation, and functional renormalization group calculations. We derive a continuum model with gate-screened Coulomb interaction from first principles and compare its instabilities to those of a realistic three-orbital Wannier model with a Hubbard interaction and an artificial single-orbital Hubbard model. In both cases, we find a superconducting instability of mixed d-wave singlet and p-wave triplet character, arising adjacent to inter-valley-coherent spin-density-wave order in the phase diagram spanned by displacement field and interaction strength. Our additional analysis of the pairing mechanism points to inter-valley coherent spin fluctuations as the pairing glue. The extent of the pairing regime and the associated critical temperatures depend on the model input, and we trace differences to the interaction range entering the projected interaction. Within the continuum model, the gate-screened Coulomb interaction yields pairing down to zero displacement field, bringing theory into agreement with experiment.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.17222",
+      "tier": "deep",
+      "why": "Functional renormalization group calculations show that gate-screened Coulomb repulsion in twisted bilayer WSe2 can itself drive a mixed d+p-wave superconducting instability via inter-valley-coherent spin fluctuations, directly addressing the puzzle of superconductivity near zero displacement field in a moiré TMD system central to the listener's interests."
+    },
+    {
+      "id": "2610.14426",
+      "title": "Transport kinetics in excitonic Mott insulator",
+      "authors": [
+        "W. J. Brunner",
+        "Zhiwen Zhou",
+        "Luc M. Nguyen",
+        "C. A. Lozano",
+        "G. Mercado",
+        "L. H. Fowler-Gerace",
+        "L. V. Butov"
+      ],
+      "abstract": "Indirect excitons (IXs) in a periodic moiré potential in a van der Waals heterostructure form an experimental platform for exploring Bose-Hubbard physics, including the superfluid state and the Mott insulator state. The realization of these collective states requires low-disorder materials. In particular, the localization due to the Mott insulator must be distinguished from disorder-induced localization. We studied the transport kinetics of IXs in a MoSe2/WSe2 van der Waals heterostructure with an anomalously high IX mobility, consistent with superfluidity. This high-mobility transport demonstrates that disorder-induced localization is negligible. We found a remarkable suppression of this efficient IX transport, directly indicating the Mott insulator. As the IX density increases during the excitation pulse, the IX cloud initially expands and then contracts upon entering the Mott insulator phase. The emergence of IX cloud contraction is accompanied by a peak in the IX spatial distribution at the origin. Our simulations reproduce the observed non-monotonic IX transport kinetics, including the temporal expansion and contraction of the IX cloud, as well as the peak in its spatial distribution.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.14426",
+      "tier": "deep",
+      "why": "Direct optical/transport study of indirect excitons in a MoSe2/WSe2 moiré heterostructure reveals cloud contraction signaling a bosonic Mott insulator transition, a rare clean realization of Bose-Hubbard physics with excitons that bears on the listener's core interest in optically detected correlated states in 2D systems."
+    },
+    {
+      "id": "2610.18817",
+      "title": "Single anyons and anyon binding in a quantum Hall dot",
+      "authors": [
+        "Marco Valentini",
+        "Will Wang",
+        "Amir Shapour Mohammadi",
+        "Noah Samuelson",
+        "Chengxuan Li",
+        "Liam Cohen",
+        "Mark Zakharyan",
+        "Jiechao Feng",
+        "Taige Wang",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Michael P. Zaletel",
+        "Andrea F. Young"
+      ],
+      "abstract": "Anyons are particles with quantized fractional statistics. In theory, a single anyon can be stabilized as a localized fractional charge within the bulk of a topologically ordered two-dimensional insulator. However, experiments to date have focused on probing anyons in structures in which many anyonic excitations coexist and interact. Here, we demonstrate the trapping of a single anyon in a device consisting of a graphene-based quantum point contact with an embedded tunable quantum Hall dot. Benchmarking our device at v = 1, we demonstrate backscattering between Fermi liquid edge states mediated by the whole-electron Coulomb blockade of the dot. The cleanliness and control available in our device allow depletion of the dot to the last quasihole, and we observe spin blockade for transitions to the opposite-spin Landau level. At v = 1/3 and 2/3, we observe backscattering resonances with three times the frequency, consistent with resonant transmission of e/3 charges via a single anyon transistor. We demonstrate controlled depletion to the last quasiparticle to form a single anyon quantum dot. Tracing the charge addition spectrum for quasiparticle number Nqp = 1-5, we observe highly irregular addition energies, consistent with DMRG modeling showing a complex orbital shell-filling behavior. At higher Nqp = 10-20, the addition energies show a striking pattern: quasiholes at 1/3 (and quasiparticles at 2/3) show a regular addition spectrum while quasiparticles at 1/3 (and quasiholes at 2/3) do not. We trace the origin of this irregularity to an attractive component of the inter-anyon interaction: by experimentally tuning the confining energy, we observe complete suppression of alternating charge sectors, after which the dot charges in increments of twice the fundamental charge. This observation indicates the emergence of an anyon binding energy as large as the charging energy.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.18817",
+      "tier": "deep",
+      "why": "A graphene quantum Hall dot is tuned to trap and manipulate a single fractional anyon, revealing an unexpected attractive inter-anyon interaction and anyon-binding energy, a landmark experiment for fractional quantum Hall physics directly relevant to the listener's secondary QH interest."
+    },
+    {
+      "id": "2610.17984",
+      "title": "Direct view of exciton and carrier dynamics in twisted bilayer graphene",
+      "authors": [
+        "Gianmarco Gatti",
+        "Anders S. Mortensen",
+        "Zhihao Jiang",
+        "Alfred J. H. Jones",
+        "Gesa-R. Siemann",
+        "Thomas S. Nielsen",
+        "Søren Ulstrup",
+        "Naina Kushwaha",
+        "Bruce Weaver",
+        "Yu Zhang",
+        "Emma Springate",
+        "Charlotte E. Sanders",
+        "Vibha Reddy",
+        "Ulrich Starke",
+        "Philip Hofmann"
+      ],
+      "abstract": "Twisted bilayer graphene (tBLG) on H-intercalated SiC (twist angle of 9 \\pm 1\\circ) is studied by position\\mbox-, time\\mbox-, and angle-resolved photoemission spectroscopy (ARPES). Both graphene layers are hole doped, with a Dirac-point offset of 30~meV. Time-resolved ARPES near the van Hove singularity reveals a spectral feature within the hybridization-induced band gap, together with excited electrons in the conduction band. The in-gap feature exhibits distinct dynamics, and its binding energy and k-space location are consistent with the proposed non-hydrogenic ``ghost-Fano'' exciton arising from destructive interference between two nearly degenerate excitonic channels. Near the Dirac points, the twist separates the largely layer-polarized Dirac cones in momentum space, providing direct layer selectivity. We find markedly different peak electronic temperatures in the two graphene layers, even though their subsequent cooling dynamics are very similar. We attribute this to an ultrafast interlayer redistribution of electronic energy, driven by an interlayer electric field that arises from the different doping in the layers.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.17984",
+      "tier": "deep",
+      "why": "Time- and angle-resolved photoemission on twisted bilayer graphene directly images a non-hydrogenic 'ghost-Fano' exciton and layer-selective ultrafast carrier/energy redistribution, a rare momentum-resolved view of exciton dynamics in a twisted van der Waals system."
+    },
+    {
+      "id": "2610.07174",
+      "title": "Composite Fermion Theory of Fractional Chern Insulators in Rhombohedral Graphene",
+      "authors": [
+        "Peize Ding",
+        "Andrew J. Millis",
+        "Yongxin Zeng"
+      ],
+      "abstract": "The experimental observation of the fractional quantum anomalous Hall effect in rhombohedral graphene multilayers has raised questions about the nature of the fractional Chern insulator (FCI) states and the role of the moiré potential. In this Letter we develop a composite fermion (CF) description and discuss how moiré modulation and Coulomb interactions stabilize the FCI ground states. Under a flux-attachment transformation and mean-field approximation, the CF spectrum forms Landau levels that are further split by the moiré potential. At moiré filling fractions in the Jain sequence, an integer number of CF bands are occupied, resulting in an incompressible ground state with fractionally quantized Hall response. Remarkably, when the attached flux opposes the Berry curvature of the conduction band of rhombohedral graphene, the CF Landau levels are widely spaced in energy and delocalized across layers, leading to a reduced density of states that helps protect the CF mean-field state and amplifying effects of the moiré potential acting on the layer away from the doped electrons. Interactions between CFs further enlarge the moiré-induced band gap and stabilize the FCI ground state. Our work sheds light on the nature of the FCI states in rhombohedral graphene and provides a new theoretical framework for further studies.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.07174",
+      "tier": "deep",
+      "why": "A composite-fermion theory explains how moiré modulation and Coulomb interactions stabilize fractional Chern insulator states in rhombohedral graphene, providing a new theoretical framework highly relevant to the listener's interest in moiré flat bands and fractional Chern insulators."
+    },
+    {
+      "id": "2610.16089",
+      "title": "High-mobility spin transport mediated by indirect excitons in a van der Waals heterostructure",
+      "authors": [
+        "Zhiwen Zhou",
+        "W. J. Brunner",
+        "Luc M. Nguyen",
+        "C. A. Lozano",
+        "G. Mercado",
+        "L. H. Fowler-Gerace",
+        "L. V. Butov"
+      ],
+      "abstract": "Efficient spin transport with high spin mobility is of both fundamental and practical significance for spintronics. Spin can be transferred by moving particles. However, particle scattering limits spin transfer and prevents high spin mobilities. In this work, we study the kinetics of spin transport mediated by a quantum system of indirect excitons (IXs) in a van der Waals heterostructure composed of atomically thin transition-metal dichalcogenides (TMDs). This spin transfer mechanism allows for the realization of efficient spin transport characterized by a high spin mobility reaching 105 cm2/(eV\\cdots), which is orders of magnitude higher than that achieved via standard diffusive spin transport in TMD materials. The suppression of IX scattering enables high-mobility spin transport.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.16089",
+      "tier": "brief",
+      "why": "The same Butov-group heterostructure shows indirect excitons can mediate spin transport with mobility orders of magnitude higher than standard TMD spin diffusion, a notable extension of exciton-mediated transport physics."
+    },
+    {
+      "id": "2610.15197",
+      "title": "Superlattice-Stabilized Fractional Chern Insulators in a \"Berry Basin\" Model",
+      "authors": [
+        "Yongxin Zeng",
+        "Andrew J. Millis"
+      ],
+      "abstract": "The discovery of integer and fractional Chern insulators in rhombohedral graphene, following their discovery in the isolated topological flat band in twisted MoTe2, motivates a search for the conditions under which an electronic band can host a topological correlated state. In this Letter we introduce a ``Berry basin\" model which captures the essential features of rhombohedral graphene: a dispersive band with a flat bottom, momentum-space winding of a ``layer\" degree of freedom, and Coulomb interactions, while also including periodic potentials, enabling controlled studies of the interplay of quantum geometry, superlattice modulation, and electron-electron interactions in producing correlated topological states beyond the isolated topological band paradigm. While integer Chern insulators emerge at strong coupling without a superlattice potential, stabilizing the fractional state requires nonzero potential for all interaction strengths we access. We provide insight into the greater robustness of integer and fractional Chern insulators in rhombohedral graphene when electrons are polarized away from the moiré interface. Our results establish a new class of systems that host robust fractional Chern insulators and provide a controlled numerical platform to test competing theories of interacting topological phases.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.15197",
+      "tier": "brief",
+      "why": "A minimal 'Berry basin' model shows that superlattice potentials are essential (not just quantum geometry) for stabilizing fractional Chern insulators analogous to those seen in rhombohedral graphene, clarifying the role of moiré modulation in correlated topological phases."
+    },
+    {
+      "id": "2610.17030",
+      "title": "Honeycomb Crystal in a Mass-Asymmetric Electron-Hole Bilayer",
+      "authors": [
+        "Shengdu Chai",
+        "Wangqian Miao",
+        "Yuqiang Li",
+        "Lei Wang",
+        "Xi Dai",
+        "X. C. Xie"
+      ],
+      "abstract": "A two-dimensional electron gas in a uniform neutralizing background forms a triangular Wigner crystal at low density. In a strongly mass-asymmetric electron-hole bilayer, localized heavy holes instead provide a nonuniform positive background that supports an electron crystal at densities two orders of magnitude higher than for a homogeneous electron gas in the same material. Here we show that correlated mobile electrons can overturn the preference for triangular order, stabilizing a honeycomb electron-hole crystal. Using the powerful real-space neural-network variational Monte Carlo in the Born-Oppenheimer limit with fixed holes, we find that increasing the density drives a transition from a triangular electron-hole crystal to a honeycomb crystal, which eventually melts into itinerant electrons coexisting with the honeycomb or the triangular hole lattice at fixed interlayer separation. Relative to triangular order, honeycomb order emerges when gains in electronic kinetic energy and electron-hole attraction outweigh its higher intralayer Coulomb repulsion, a threshold never reached in the rigid point-dipole model. Moreover, the honeycomb hole lattice supports paramagnetic, antiferromagnetic, and stripe-ordered spin states. Complex polarization indicates a metal-insulator transition, while the states on the honeycomb hole lattice are consistent with a stripe-ordered Dirac semimetal and paramagnetic or antiferromagnetic Mott insulators via mapping to the half-filled Hubbard model. We further propose a BLG/hBN/WS2-WSe2 heterostructure as a platform for the predicted honeycomb crystal, at an experimentally feasible density n\\sim1011~cm-2.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci",
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.17030",
+      "tier": "brief",
+      "why": "Variational Monte Carlo predicts a honeycomb Wigner-crystal phase in mass-asymmetric electron-hole bilayers with proposed realization in a BLG/hBN/WS2-WSe2 heterostructure, directly tying into the listener's interest in optically detectable correlated electronic crystal states in 2D systems."
+    },
+    {
+      "id": "2610.15753",
+      "title": "Approaching Irrational Quantization",
+      "authors": [
+        "Zhihong Wu",
+        "Zhimou Chen",
+        "Siyuan Zhang",
+        "Jinyang Chen",
+        "L. N. Pfeiffer",
+        "K. W. West",
+        "Yang Liu",
+        "Xi Lin"
+      ],
+      "abstract": "The integer and fractional quantum Hall effects reveal that quantized physical responses can take integer and fractional values, respectively. This naturally raises the question of whether quantization can extend beyond rational numbers to an irrational value. Here we show that such a quantized response can emerge from the limiting behavior of a finite, experimentally realizable geometric network. We develop a method based on infinite geometric structures, in which a sequence of finite networks rapidly converges toward an infinite limit. Following this approach, we identify a planar network whose normalized resistance converges to the irrational value \\sqrt3, and realize a finite approximation with high-precision geometric control. The measured normalized resistance is 1.735 \\pm 0.001\\, h/e2 for a fully occupied Landau level in the designed pattern. Our experimental results extend the concept of quantization beyond rational values and demonstrate that an irrational quantized response can be approached through a finite physical system.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.15753",
+      "tier": "brief",
+      "why": "A striking quantum Hall experiment realizes a resistance quantized to an irrational multiple of h/e^2 using a geometric network of edge channels, extending quantization concepts beyond rational values and offering a genuinely surprising result in QH physics."
+    },
+    {
+      "id": "2610.14480",
+      "title": "Quantum Geometry and Pair Breaking in Intra- and Intervalley Superconductivity of Rhombohedral Graphene",
+      "authors": [
+        "Louis Primeau",
+        "Yang Zhang",
+        "Shi-Zeng Lin"
+      ],
+      "abstract": "The observation of superconductivity emerging from a spin- and valley-polarized normal state in rhombohedral graphene raises a basic puzzle: intravalley Cooper pairs involve states that are not generically degenerate because of trigonal warping, and therefore lack the particle–particle nesting underlying the conventional Cooper instability. While recent model studies suggest that nontrivial band geometry can strongly promote chiral pairing, how this geometric enhancement competes with realistic band-structure-induced pair breaking remains unclear. Here we study Kohn–Luttinger superconductivity in electron-doped rhombohedral tetralayer graphene using a DFT-fitted multiorbital tight-binding model, retaining the full Bloch-wave-function form factors in both RPA screening and the projected Cooper interaction. We separate the superconducting instability into three contributions: the symmetry-resolved form-factor-dressed interaction, the Cooper-pair phase space determined by the symmetrized pair dispersion, and the energy mismatch generated by trigonal warping. We find that the Bloch form factors strongly favor intravalley pairing, with a leading predominantly px-ipy instability and a substantially larger maximum Tc than the intervalley reference state. At the same time, trigonal-warping-induced mismatch cuts off the Cooper logarithm and confines intravalley superconductivity to a much narrower region of the phase diagram. The dominant instability occurs near pair-Lifshitz transitions and primarily in reconstructed annular or three-lobed Fermi-surface regimes. Our results show that superconductivity in rhombohedral graphene is controlled by the combined effects of quantum-geometry-dressed interactions, pair fermiology, and trigonal-warping-induced pair breaking.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.14480",
+      "tier": "brief",
+      "why": "A DFT-based Kohn-Luttinger analysis finds that quantum-geometric form factors favor chiral intravalley pairing in rhombohedral graphene but trigonal-warping-induced pair breaking confines it to a narrow phase-diagram region, refining the theory of superconductivity in graphene multilayers relevant to moiré/flat-band physics."
+    }
+  ]
+}

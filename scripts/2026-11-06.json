@@ -1,0 +1,453 @@
+{
+  "date": "2026-11-06",
+  "format": "dialogue",
+  "n_papers": 60,
+  "episode_title": "Moiré exciton ladders resolved, anyon superconductivity from a fractional Chern insulator, and tunable one-dimensional superconductivity in MoTe2",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's November sixth, and about sixty new papers hit the archive overnight. We've picked five for a deep dive and five quick hits. On the deep end: a two-dimensional coherent spectroscopy experiment that finally resolves the full ladder of moiré-confined excitons in tungsten disulfide on tungsten diselenide, a theory paper trying to engineer dark-state coherent control of excitons in tungsten diselenide, an STM study catching a topological edge-state network forming spontaneously in helical trilayer graphene, a numerical result connecting a fractional Chern insulator directly to an exotic topological superconductor, and a transport paper showing you can electrically switch monolayer molybdenum ditelluride between one-dimensional and two-dimensional superconductivity. Let's get into it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Starting with the moiré exciton paper. The pitch is simple: moiré superlattices are supposed to confine excitons into a ladder of discrete levels, like a particle in a box, but nobody had actually resolved more than about three levels for the bright intralayer exciton. Everything blurs together because the inhomogeneous broadening — basically sample-to-sample and spot-to-spot energy scatter — is about as big as the actual linewidth."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So they throw two-dimensional coherent spectroscopy at it. Remind me why that beats a normal photoluminescence scan."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Because 2DCS separates excitation frequency from emission frequency on two different axes. A diagonal peak in that two-dimensional plot is a real, individual quantum state; the smearing from static disorder gets rephased away. That's exactly how you distinguish seven separate levels that would otherwise just look like one fat peak."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they did get seven. In an hBN-encapsulated tungsten disulfide on tungsten diselenide stack with about a one point six degree twist, they resolve seven rungs of the intralayer A-exciton ladder, sitting between roughly nineteen seventy-three and twenty twenty-nine milli-electron-volts. The spacings between rungs shrink as you go up — eighteen, then eight, then eight, then six, seven, eight meV — which screams anharmonic potential, not a clean harmonic oscillator."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, and they fit that to a proper moiré potential model — three cosine terms related by the lattice symmetry — and get a confinement depth of fifty-seven meV. That's actually comparable to interlayer exciton confinement depths reported before, which is a bit surprising since intralayer excitons are supposedly less sensitive to the moiré modulation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The fun part is the dynamics. Because they can resolve the individual levels, they can literally watch population move between them picosecond by picosecond. They define an effective temperature from a Boltzmann fit across the ladder, and it starts at about one seventy-two kelvin right after excitation, crashes down to about ninety-nine kelvin within just one point two picoseconds, and then creeps back up to about one-ten kelvin by five picoseconds."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it overshoots cold and then re-heats. What's actually happening physically?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two stages. First, fast intra-manifold redistribution — population dumps rapidly into the lower rungs, which looks like rapid cooling, while the total intensity of the whole exciton manifold also decays with a nine hundred femtosecond time constant, probably because of spin-dark states, momentum-dark states, or charge transfer pulling population out of the optically bright ladder altogether. Second, a slower stage where coupling to the lattice — phonons and the general environment — nudges the distribution back toward a proper thermal Boltzmann shape. They quantify that convergence with a Kullback-Leibler divergence between the measured population and the ideal Boltzmann distribution, and it does trend toward zero at later times."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Caveat-wise, the kinetic energy scale in their fit — this effective mass parameter — is basically a free phenomenological number, not something independently measured. And they only show this on one sample explicitly, though they mention two more gave consistent results without showing the data. Still, state-resolved access to moiré exciton thermalization is genuinely new, and it's a nice tool for anyone chasing correlated states in these confined exciton lattices."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Sticking with tungsten diselenide, paper two is pure theory, and honestly a bit of a grab-bag of atomic-physics tricks applied to excitons. The question: can you do electromagnetically induced transparency or STIRAP — stimulated Raman adiabatic passage — with excitons the way people do with atoms?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Remind listeners what those actually are."
+    },
+    {
+      "speaker": "Ava",
+      "text": "EIT is where a strong control field makes an otherwise absorbing three-level system transparent to a weak probe, because the two excitation pathways interfere destructively. STIRAP is the dynamic cousin: you sweep two pulses in a counterintuitive order and adiabatically steer population from one state to another without ever populating the lossy middle state. Both rely on a dark state that doesn't radiate."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the twist here is topology — not Chern-number topology, just the wiring diagram of which states are coupled to which. A ladder, or Xi, configuration chains three states in sequence; a V configuration has two excited states sharing one ground state. The authors build a Lindblad model where a single exciton at fixed center-of-mass momentum couples to phonons, photons, and a dilute exciton gas, then systematically screen the actual tungsten diselenide exciton spectrum for which real states can play these roles."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What do they land on?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "For the ladder, the one-s bright exciton as the middle rung, driven optically from the ground state, and a terahertz leg up to the two-p dark exciton as the top rung. They find a weak optical pulse followed by a terahertz pulse in the STIRAP order converts the excitation into the dark two-p exciton while the lossy one-s state barely gets populated. Conversion is limited by how fast that one-s state radiates away, not by how carefully you ramp the pulses — so it's an intrinsically lossy, 'leaky bucket' kind of STIRAP rather than the loss-proof version you'd get in cold atoms."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the V configuration — one-s and two-s both bright, sharing the ground state — just loses coherence on the plain radiative timescale, no protection at all. It's there as the null-result comparison."
+    },
+    {
+      "speaker": "Leo",
+      "text": "One concrete number worth flagging: a dilute exciton gas shifts the two-photon resonance through exchange interactions, and at moderate densities that shift is already bigger than what the conversion scheme can tolerate. So this is very much a clean, radiative-limit baseline — no acoustic phonon dephasing at the relevant momentum, because they argue it vanishes exactly at fixed center-of-mass momentum, and no dark exciton reservoir included, which they admit matters a lot in real tungsten diselenide. It's a nice scaffold, but the authors are upfront that the next step is adding back everything they stripped out to make the problem tractable."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Moving to moiré graphene, paper three. This is about helical trilayer graphene — three graphene sheets twisted in alternating directions — and a concept called supermoiré: when two moiré patterns in the same stack have almost, but not quite, the same period, you get a moiré of the moiré, with domains of one moiré pattern separated by walls where the mismatch gets absorbed."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the theoretical hook is that each domain is supposed to be its own topological insulator, with opposite valley Chern numbers in neighboring domains, so the domain walls should carry protected one-dimensional edge channels — essentially for free, without needing a physical sample edge."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which is the appeal: edge states at real sample boundaries are messy — chemical disorder, scattering. A smooth internal interface inside a clean crystal is a much better place to look for protected transport."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They use scanning tunneling microscopy and spectroscopy on helical trilayer graphene at about one point seven degrees twist. First, straight-up imaging: they see triangular supermoiré domains roughly one hundred twenty nanometers across, each one a locally uniform moiré lattice with flat bands separated from the remote bands by about forty milli-electron-volts — a genuinely large gap for a moiré system."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do they know the domains are the predicted topological phase and not just structural relaxation with no electronic consequence?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "A few lines of evidence. They track the registry shift between the two interfaces — upper and lower moiré lattices — and show it clusters tightly near the two theoretically preferred values, covering only about nine percent of the unit cell, versus what you'd expect from a rigid, unrelaxed stack. That's the structural signature of commensurate domain formation. Then at the domain walls, when they gate the Fermi level into the remote-band gap, they see enhanced, spectrally flat in-gap conductance running along the wall — consistent with a single, fast-moving edge mode whose low density of states comes precisely from its high velocity."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the smoking gun for topology specifically?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Sublattice polarization. The theory says the two domain types are related by a broken two-fold rotation symmetry, which should show up as the electron wavefunction preferring opposite carbon sublattices on either side of a wall. They map this directly with sublattice-resolved conductance imaging and see exactly that reversal — complementary sublattice around the same atomic registry, flipping as you cross the wall, and flipping again as you change bias from the flat band to a remote band. That's a clean, atomic-scale confirmation that the symmetry-breaking tracks the domain type, not just some incidental strain pattern."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Caveat: they also see in-gap states at an unrelated hBN substrate step, and they're upfront that those could be a trivial potential step rather than anything topological — so not every boundary signal in this system is the real thing. Still, this is about as close to a textbook demonstration of emergent topological wiring as you'll see in a moiré material."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four is a numerics-heavy one but the physics payoff is big: a direct transition from a fractional Chern insulator to a topological superconductor, no intervening metal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Set the stage — why is that surprising?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Normally you think of superconductivity as a Fermi-surface instability: electrons near the Fermi surface pair up because some interaction — phonons, spin fluctuations — makes that favorable. But a fractional Chern insulator, the zero-field cousin of a fractional quantum Hall state, doesn't have a Fermi surface at all — it's gapped, incompressible, built from fractionalized anyons. If you can tune directly from that gapped anyon liquid into a superconductor, the pairing mechanism can't be the usual weak-coupling story. Laughlin floated the idea decades ago that anyons themselves could superconduct; this is numerical evidence for it actually happening in a model you can simulate."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's the model and the method?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Spin-polarized electrons in a single Chern band with repulsive interactions, at filling one-third, using infinite-cylinder DMRG — density matrix renormalization group — with large bond dimensions up to ten thousand. They tune a parameter that controls the band's bandwidth without touching the single-particle wavefunctions. Dial it one way, you get the familiar Laughlin fractional Chern insulator; dial it the other way, in earlier work from the same group, you land on a chiral topological superconductor with a particular, somewhat exotic, central charge of three halves — meaning its edge carries an odd, non-Abelian structure, with Majorana zero modes living in its vortices."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the new result is that right at the boundary between these two phases, something continuous and critical happens, not a simple first-order jump."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly — they track correlation lengths from the transfer matrix of the MPS, and the electron correlation length diverges right at the transition with a power law, exponent around point four, while staying finite deep in either phase. The weird part: the diverging electron mode sits away from where you'd expect a Fermi surface to be. There's no actual Fermi surface in either phase, so this divergence can't come from pairing electrons near one."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So how do they explain a critical electron with no Fermi surface to speak of?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They build a vortex-proliferation theory. The superconductor's vortices are non-Abelian objects, and at filling one-third, magnetic translation symmetry forces them to organize into six distinct valleys. You can't just condense those vortices symmetrically without extra gauge fields, because the symmetry representation doesn't fit — naively you'd need rank six but the vortex fields only span rank two. Adding three extra statistical gauge fields fixes that, and the resulting theory reproduces both the critical electron's odd momentum location and extra correlation peaks on a sixth-of-a-reciprocal-lattice-vector grid that show up in the numerics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Any experimental angle, given this listener's actual lab works on exactly these materials?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Yes — they point to twisted bilayer molybdenum ditelluride, where fractional Chern insulators and nearby superconductivity have both already been seen experimentally, and they suggest scanning tunneling spectroscopy or the quantum twisting microscope could directly test the prediction: the tunneling gap should close at isolated momentum points, not along an extended Fermi arc, as you tune across the transition. That's a clean, falsifiable prediction for exactly the kind of instrument this audience uses."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive, and it's an experimental transport paper on monolayer molybdenum ditelluride — the one-T-prime phase, not the twisted-bilayer moiré system from the last paper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Different beast. The question here: can you take a two-dimensional material, impose a stripe charge order on it, and have that stripe literally chop the electronic system into quasi-one-dimensional channels — enough to see one-dimensional superconducting behavior — and then electrically dial it back to normal two-dimensional superconductivity?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do they establish the stripe order even exists?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Raman spectroscopy sees two extra phonon modes that only show up in the monolayer, one identified as the collective mode of the charge-density-wave order parameter, the other a zone-folded phonon from the new superlattice periodicity; both vanish by about eighty kelvin. STM directly images a unidirectional modulation with a period of about five lattice spacings along the b-axis, present at thirty-one kelvin and gone by seventy-eight kelvin — consistent with the Raman transition temperature and absent in bilayer regions, so it's monolayer-specific."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the transport signature of one-dimensionality?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Wildly anisotropic resistance. Along the stripe direction, resistance drops below about seven kelvin, consistent with superconducting correlations forming; perpendicular to the stripes, resistance just climbs — insulating. One device shows the perpendicular-to-parallel resistance ratio exceeding two hundred at two kelvin. Critically, along the stripe direction the current-voltage exponent — which should blow up past three at a genuine two-dimensional Berezinskii-Kosterlitz-Thouless transition — just saturates instead, and resistance never actually reaches zero. That's the signature of Cooper pairs forming along the stripes without the phase coherence needed for true superconductivity to set in across the whole sheet."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Then they gate it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right — dual-gated devices let them dope with electrons or holes. At the highest hole doping, the perpendicular insulating response collapses, the parallel resistance actually hits zero, and the voltage-current exponent now does shoot past three on cooling — textbook BKT behavior. So doping doesn't kill the stripe order's pairing, it restores the transverse phase stiffness needed to glue the one-dimensional channels into a coherent two-dimensional superconductor. Tunneling spectroscopy backs this up: the superconducting gap size, about one point six milli-electron-volts, barely changes with doping, so doping is fixing coherence, not the pairing strength itself."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Do they have a microscopic story, or is this purely empirical?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They do a mean-field calculation: density functional theory gives a hole pocket at the center of the Brillouin zone and two electron pockets, nested by almost exactly the measured charge-density-wave wavevector. Gapping out the nested regions removes most of the pairing channel except for ungapped Fermi-surface segments running along one direction, which naturally produces the stiffness anisotropy. But the mean-field model actually predicts full two-dimensional coherence even without doping — it can't explain the insulating transverse transport on its own. The authors' honest conclusion is that disorder, probably tellurium vacancies, is needed on top of the clean nesting picture to randomize the transverse coupling and actually suppress the global phase coherence they see experimentally."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good caveat to end on — theory gets you the anisotropy, but the full one-D-to-two-D story needs disorder physics they haven't pinned down yet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Now the quick ones. First, a monolayer iron selenide paper. Iron selenide grown on strontium titanate is a famous high-temperature superconductor with a weirdly electron-only Fermi surface, and there's been new Josephson scanning tunneling microscopy evidence for nodeless d-wave pairing. This theory paper fits a tight-binding model to photoemission and quasiparticle interference data, finds the iron d-x-y orbital dominates near the Fermi level with mainly nearest-neighbor hopping — different from the usual kinetic-frustration picture in iron-based superconductors — and both spin-fluctuation and strong-coupling approaches favor d-wave pairing. They also predict specific spatial patterns in Josephson tunneling, including interference zeros that survive near impurities, as a way to experimentally confirm the pairing symmetry."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Next, a first-principles study on monolayer molybdenum disulfide, looking at the shift current — the mechanism behind the bulk photovoltaic effect in non-centrosymmetric crystals. The usual picture treats shift current as a pure band-structure effect. This paper shows that just the zero-point phonon renormalization — not actual photoexcited phonons, just quantum lattice fluctuations always present even at zero temperature — reshapes the whole shift-current spectrum, adding new low-energy peaks from phonon-assisted transitions between different momentum states and red-shifting the main features. A mere one percent strain tunes this effect strongly, and raising temperature enhances it, which the authors frame as a new design knob for photodetectors."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Then a kagome metal story: cobalt tin, which hosts flat bands sitting about point two electron-volts below the Fermi level. The authors dope holes in two different ways — substituting indium for tin, or iron for cobalt — and get opposite results. Indium substitution rigidly shifts the bands up toward the Fermi level as plain hole doping should; iron substitution instead shifts bands down, because the iron impurity keeps a local magnetic moment that traps the hole and pulls on neighboring cobalt atoms electrostatically. Both routes end up parking weakly dispersing states near the Fermi level, just by different physical mechanisms."
+    },
+    {
+      "speaker": "Ava",
+      "text": "A theory brief: there was a recent widely discussed proof, from an OpenAI-affiliated effort, that the spin-one Heisenberg chain has a spectral gap, derived from a clever purity inequality using finite-system data. This paper by Grover extends that technique — to higher spatial dimensions, to cases with several nearly degenerate low-energy states rather than a single unique ground state, to fermionic systems, and to tensor-network states. Concretely, they get rigorous bounds on how close together low-energy states can be in two-plus-one dimensional toric code and transverse-field Ising models, and they use the same bootstrap to prove exponential decay of correlations in a particular tensor-network spin-one state."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last one: a chiral anomaly signature in a graphene heterostructure. Chiral anomaly — charge pumping between Weyl nodes of opposite handedness under parallel electric and magnetic fields — is supposed to vanish in strictly two-dimensional systems. The authors grow graphene with strontium intercalated underneath on silicon carbide, in both a genuinely two-dimensional and a bulk-like three-dimensional strontium layer, and only the three-dimensional version shows the quadratic negative magnetoresistance and temperature dependence characteristic of the chiral anomaly, plus suppressed conductivity and quantum oscillations in the graphene layer itself. It's a somewhat indirect signature, but a rare claimed observation of chiral-anomaly physics built around a graphene sheet."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's today's set. Lots of moiré confinement, one genuinely strange anyon-to-superconductor transition, and a stripe-ordered material you can tune in situ between one and two dimensions. See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2611.07539",
+      "title": "Ultrafast Moiré Exciton Dynamics Revealed by Two-Dimensional Coherent Spectroscopy",
+      "authors": [
+        "Deran Zhang",
+        "Zhexue Chen",
+        "Dongxue Chen",
+        "Tengfei Yan",
+        "Jianhua Jiang",
+        "Hui Dong"
+      ],
+      "abstract": "Moiré superlattices of van der Waals heterostructures confine excitons into discrete energy levels in finite-sized samples, yet their internal relaxation pathways remain obscured by inhomogeneous broadening. Here, using two-dimensional coherent spectroscopy (2DCS), we directly resolve seven discrete energy levels of the moiré-confined intralayer WS2 A exciton in an hBN-encapsulated WS2/WSe2 heterostructure, corresponding to a confinement depth of 57.02 meV. By tracking the population of these levels over picosecond delays, we uncover a two-stage thermalization process: an effective exciton temperature drops from 171.8 to 99.3 K within 1.2 ps through rapid intra-manifold population redistribution, followed by a slower recovery toward quasi-equilibrium mediated by exciton–environment interactions. Kullback–Leibler divergence analysis confirms the progressive transition from a non-equilibrium to a Boltzmann-distributed population. Our results establish state-resolved access to moiré exciton dynamics and provide a foundation for exploring nonequilibrium many-body phenomena in moiré quantum materials.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.07539",
+      "tier": "deep",
+      "why": "2D coherent spectroscopy resolves seven discrete moiré exciton levels and their two-stage thermalization in WS2/WSe2, directly relevant to moiré exciton spectroscopy techniques."
+    },
+    {
+      "id": "2611.07315",
+      "title": "Dark-State Coherent Control of Excitons in TMD Monolayers: A Reduced Intravalley Lindblad Framework for WSe2",
+      "authors": [
+        "Mauricio Martinez",
+        "Martin A. Mosquera"
+      ],
+      "abstract": "Dark-state coherence in driven three-level systems underlies electromagnetically induced transparency (EIT) and stimulated Raman adiabatic passage (STIRAP). Their performance depends on the coupling topology: in a ladder (\\Xi) scheme the coherence can bypass a lossy intermediate state, whereas in a V scheme it is carried by two excited states that both decay. We develop a topology-resolved Lindblad framework for driven three-level excitonic manifolds at fixed center-of-mass momentum, in which a single exciton couples to phonons, the radiation field and a dilute exciton gas. The \\Xi and V manifolds are selected from the exciton spectrum by systematically screening optical brightness, intra-excitonic dipole strength and state compactness, making the selection reproducible and transferable to other materials. Within this framework, in the \\Xi manifold of hBN-encapsulated WSe2, a weak optical pulse, preceded by a terahertz pulse in the counterintuitive STIRAP order, converts the excitation it creates into an optically dark exciton by dark-state following, while the lossy bright intermediate exciton stays nearly empty. The conversion is limited by emission from that intermediate state rather than by non-adiabatic coupling, and is controlled by a single adiabaticity parameter of the terahertz leg. The exchange mean field of the exciton gas shifts the two-photon resonance by more than the conversion tolerates at moderate densities; the center of the cascade transparency window provides an in situ calibration, and we identify the control strengths at which it is true EIT rather than Autler–Townes splitting. The V manifold loses its coherence on the radiative timescale and serves as the unprotected reference. These results provide a minimal, material-specific baseline for dark-state coherent control of excitons in two-dimensional semiconductors in the radiative limit.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.07315",
+      "tier": "deep",
+      "why": "Proposes a dark-state coherent control (STIRAP/EIT) scheme for converting bright to dark excitons in hBN-encapsulated WSe2 using a tailored Lindblad framework, squarely in the dark-exciton/valley-physics wheelhouse."
+    },
+    {
+      "id": "2611.07435",
+      "title": "Supermoiré Formation and Robust Topological Edge State in Helical Trilayer Graphene",
+      "authors": [
+        "Hong Li",
+        "Huandong Chen",
+        "Seongyeon Youn",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Trithep Devakul",
+        "Kazuhiro Fujita",
+        "Abhay Narayan Pasupathy"
+      ],
+      "abstract": "When two materials with nearly matched lattice constants meet, they form commensurate domains separated by incommensurate domain walls that absorb the mismatch. Recently, this picture has been extended to moiré lattices: when two moiré superlattices have nearly equal periodicities, they can form a \"supermoiré\" consisting of commensurate moiré domains separated by domain walls. Helical trilayer graphene (HTG) is a particularly interesting example: theory predicts that its commensurate domains are distinct topological insulators, separated by a network of conducting domain walls. Here, we use scanning tunneling microscopy and spectroscopy to visualize supermoiré domains and their electronic properties in HTG at a twist angle of \\sim1.7^\\circ. We find atomic-scale evidence of relaxation into supermoiré domains, each hosting flat bands separated from remote bands by large gaps of \\sim40 meV. Domain walls exhibit spectrally uniform edge states along their length, in excellent agreement with calculations for valley-protected topological edge modes. The topological character of the flat bands is intimately tied to wavefunction localization on a graphene sublattice, and we reveal the topological change across a domain boundary by imaging the reversal of sublattice polarization.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.07435",
+      "tier": "deep",
+      "why": "STM imaging reveals supermoiré domains with flat bands and valley-protected topological edge states in helical trilayer graphene, a key moiré-materials result on domain-wall topology."
+    },
+    {
+      "id": "2611.08475",
+      "title": "Direct transition from a fractional Chern insulator to a topological superconductor",
+      "authors": [
+        "Taige Wang"
+      ],
+      "abstract": "We find numerical evidence for a direct continuous transition from a Laughlin fractional Chern insulator (FCI) to a c_-=3/2 topological superconductor (TSC), driven by increasing bandwidth at filling \\nu=1/3 in a repulsively interacting Chern band. At the critical point, the electron correlation length diverges at momentum away from the reference Fermi surface. We develop a generalized theory of superconducting-vortex proliferation for this transition. Magnetic translation organizes the vortices into six valleys, so translation-preserving proliferation requires additional gauge fields. The resulting theory reproduces the momentum structure of the critical spectrum and captures the divergent electron correlation. Upon doping away from commensurate filling, the theory gives rise to a superconducting dome. These results are consistent with an anyonic origin of the topological superconductivity in the absence of a weak-coupling Fermi-surface instability.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.08475",
+      "tier": "deep",
+      "why": "Numerical evidence for a direct continuous transition from a Laughlin fractional Chern insulator to a c=3/2 topological superconductor, a striking FCI result bridging fractional quantum Hall and anyonic superconductivity."
+    },
+    {
+      "id": "2611.07302",
+      "title": "Electrically tunable superconducting dimensionality in stripe-ordered monolayer MoTe2",
+      "authors": [
+        "Tianyu Qiu",
+        "Ziyi Han",
+        "Fei Yang",
+        "Keyu Wei",
+        "Liguo Dou",
+        "Yong Zhang",
+        "Dekun Yang",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Xuefeng Wang",
+        "Fucong Fei",
+        "Fengqi Song",
+        "Yanyan Shangguan",
+        "Shaochun Li",
+        "Jinsheng Wen",
+        "Hong Yao",
+        "Chaoxing Liu",
+        "Binghai Yan",
+        "Lin He",
+        "Xiaoxiang Xi"
+      ],
+      "abstract": "Dimensionality governs the stability of collective quantum states, including whether Cooper pairs can establish the phase coherence required for superconductivity. In solids, however, electronic dimensionality is usually encoded in the crystal structure and is difficult to control reversibly. Here we show evidence that monolayer 1T\\prime-MoTe2 develops a stripe charge-density wave that reorganizes its low-energy electronic states into quasi-one-dimensional channels. Raman spectroscopy and scanning tunneling microscopy identify the stripe order, whereas directional transport and tunneling spectroscopy reveal superconducting correlations confined to the stripe direction and insulating behavior perpendicular to it. Electrostatic doping weakens the transverse insulating response and drives the system into phase-coherent two-dimensional superconductivity. These results show that stripe charge order can reconfigure superconducting dimensionality and make it electrically tunable within a single crystalline layer.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.07302",
+      "tier": "deep",
+      "why": "Demonstrates electrically tunable superconducting dimensionality via a stripe charge-density wave in monolayer MoTe2, combining optical/STM probes of correlated order in a 2D vdW material."
+    },
+    {
+      "id": "2611.08037",
+      "title": "Microscopic Origin and Josephson Signatures of d-Wave Superconductivity in Monolayer FeSe",
+      "authors": [
+        "Jiong Mei",
+        "Lili Wang",
+        "Yu-Jie Sun",
+        "Kun Jiang"
+      ],
+      "abstract": "Monolayer FeSe on SrTiO3 exhibits high-temperature superconductivity with an electron-only Fermi surface, raising fundamental questions about its unconventional pairing mechanism. Motivated by recent Josephson scanning tunneling microscopy evidence for nodeless d-wave superconductivity, we investigate the microscopic role of the Fe dxy orbital using an experimentally constrained multiorbital theory. A tight-binding model fitted to quasiparticle interference and angle-resolved photoemission spectroscopy reveals substantial dxy character near the Fermi level and dominant nearest-neighbor hopping, in contrast to the conventional kinetic-frustration picture of iron-based superconductors. Both itinerant spin-fluctuation calculations and strong-coupling exchange approaches favor a robust d-wave pairing state, whose interband pairing components allow a fully gapped quasiparticle spectrum. We further establish a symmetry-based selection rule for spatial Josephson tunneling, revealing characteristic bond-centered maxima and mirror-enforced interference zeros that distinguish d-wave pairing from competing s-wave states. These symmetry-enforced nodal lines survive near Fe-site impurities, while a pronounced contrast between the d- and s-wave Josephson patterns persists around vortices despite the loss of mirror protection. Our results connect the unconventional dxy electronic structure to nodeless d-wave superconductivity and demonstrate the power of spatial Josephson interference for resolving pairing symmetry in multiorbital superconductors.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.08037",
+      "tier": "brief",
+      "why": "Multiorbital modeling of monolayer FeSe pins down dxy-driven nodeless d-wave pairing and predicts Josephson interference signatures, relevant to unconventional superconductivity in 2D materials."
+    },
+    {
+      "id": "2611.08019",
+      "title": "Zero-Point Renormalization Reshapes the Shift Current: The Role of Electron-Phonon Coupling",
+      "authors": [
+        "Yang Li",
+        "Zuzhang Lin",
+        "Zhikuan Wang",
+        "Chengzhi Wu",
+        "Zeyu Jiang",
+        "Bing Huang"
+      ],
+      "abstract": "Shift current (SC) drives the bulk photovoltaic effect, holding promise for near-instantaneous, low-dissipation photodetection and energy conversion. The current understanding of SC relies primarily on a single-particle picture, in which the SC is determined purely by band dispersion. While many-body effects from directly excited quasiparticles, such as excitons, magnons and phonons, have been explored, the renormalization of electronic states by quantum virtual-phonon coupling –- inherent in essentially all solids and particularly decisive for transport –- remains unaddressed. Here, using first-principles calculations, we identify this missing channel –- band-renormalized shift current (BRSC) –- in monolayer MoS2. We find that the zero-point renormalization alone, without any polarization-carrying photoexcited phonons and with barely any alteration of the band dispersion, dramatically reshapes the SC spectrum: emergent low-energy peaks arise from phonon-assisted optical transitions between momentum-distinct states, with a pronounced redshift of higher-energy features. A mere 1.0% strain sharply tunes the BRSC, whereas raising the temperature enhances it. Our findings overturn the band-structure-only paradigm, establishing electron-phonon coupling as an indispensable ingredient for nonlinear photocurrent and opening a strain-thermal route for engineering next-generation optoelectronic responses.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall",
+        "physics.app-ph"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.08019",
+      "tier": "brief",
+      "why": "First-principles work shows zero-point phonon renormalization alone reshapes the shift-current spectrum in monolayer MoS2, adding an electron-phonon twist to 2D optoelectronic response."
+    },
+    {
+      "id": "2611.07848",
+      "title": "Contrasting fate of holes introduced by Fe or In in kagome metal CoSn",
+      "authors": [
+        "V\\'eronique Brouet",
+        "Laure Thomarat",
+        "Patrick Le F\\`evre",
+        "Ethan Saiman",
+        "Jean-Pascal Rueff",
+        "Oleg Rubel",
+        "Victor Bal\\'edent",
+        "Fran\\c{c}ois Bertran"
+      ],
+      "abstract": "CoSn is a kagome metal with well-defined flat bands 0.2 eV below the Fermi level EF. Moving them across EF would offer a rare opportunity to investigate their impact on electronic properties. Using angle-resolved photoemission spectroscopy (ARPES) and X-ray absorption at the Co K-edge, we examine two routes to introduce holes in this compound, through Co/Fe or Sn/In substitutions. Substituting In for Sn produces an almost rigid upward shift of the bands toward EF, as expected for hole doping, whereas substituting Fe for Co leads to an unexpected downward shift. Density functional theory calculations reproduce these opposite trends and trace the unusual behavior of Fe to its local magnetic moment. The moment keeps the hole on the Fe impurity and imposes an attractive electrostatic potential on neighboring Co atoms. Overall, both substitutions bring weakly dispersing states close to EF, the flat bands of the Co kagome lattice upon In substitution and partly localized states around magnetic Fe impurities upon Fe substitution.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.07848",
+      "tier": "brief",
+      "why": "ARPES study of hole-doping routes in the kagome flat-band metal CoSn reveals contrasting band shifts from Fe vs In substitution, relevant to correlated flat-band physics."
+    },
+    {
+      "id": "2611.07400",
+      "title": "Extensions of the Haldane gap proof: higher dimensions, near degeneracy, fermions and tensor-network states",
+      "authors": [
+        "Tarun Grover"
+      ],
+      "abstract": "A recent remarkable paper by OpenAI showed that the spin-one Heisenberg chain with periodic boundary conditions has a spectral gap in the thermodynamic limit. The proof elegantly deduces this gap from the Hamiltonian's spectrum on a finite system. This basic idea is an inequality involving the purity of the original Gibbs state and a dual Gibbs state that is defined via space-time rotation. Here we consider a few generalizations of this purity bootstrap argument. We first extend it to arbitrary spatial dimensions. Our main result uses the space-time duality between symmetry generators and symmetry twists to obtain upper bounds on the splitting of nearly degenerate low-energy states, together with a nonzero gap above them, from finite-system information. As applications, we show that finite-system calculations for the 2+1-D toric code in a field and the 2+1-D transverse-field Ising model establish parameter regimes with four and two low-lying states whose splittings are bounded from above by e-cL and e-cL^2 respectively for arbitrarily large system size L, while the gap above these states remains nonzero in the thermodynamic limit. Next, we extend it to fermionic systems and use a finite calculation to establish a symmetric mass generation phase in a 2+1-D fermionic model. Finally, we apply the bootstrap to tensor-network states and establish exponential decay of connected correlations of all local operators in the symmetric square-lattice spin-one state introduced by Jian and Zaletel.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.stat-mech",
+        "hep-th",
+        "math-ph",
+        "math.MP",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.07400",
+      "tier": "brief",
+      "why": "Extends the recent rigorous Haldane-gap proof technique to higher dimensions, near-degenerate low-energy manifolds, fermions, and tensor networks—a broadly important rigorous result in many-body physics outside the core 2D-optics focus."
+    },
+    {
+      "id": "2611.07841",
+      "title": "Signature of chiral anomaly in a graphene-based heterostructure",
+      "authors": [
+        "Ivan S. Sokolov",
+        "Dmitry V. Averyanov",
+        "Oleg E. Parfenov",
+        "Sergey P. Lebedev",
+        "Alexander A. Lebedev",
+        "Olesya O. Kapitanova",
+        "Alexey N. Mihalyuk",
+        "Oleg A. Kondratev",
+        "Andrey M. Tokmachev",
+        "Vyacheslav G. Storchak"
+      ],
+      "abstract": "Chiral anomaly is a fundamental manifestation of topological matter caused by chirality imbalance. It can be of great practical value by providing a mechanism for dissipationless transport. The phenomenon is highly sensitive to the system dimensionality, disappearing in the 2D limit. Different schemes have been proposed to observe the chiral anomaly in graphene-based systems but experimental evidence has been lacking. Here, we synthesized two types of the Gr/Sr/SiC nanostructure - with 2D and 3D, bulk-like, layers of Sr - the difference being the amount of Sr intercalated under graphene. In contrast to the 2D material, 3D Gr/Sr/SiC exhibits a signature of the chiral anomaly - quadratic negative magnetoresistance in parallel magnetic and electric fields. Also, the functional form of the temperature dependence of the magnetoresistance agrees with the chiral anomaly. In addition, the 3D heterostructure exhibits suppressed conductivity and quantum oscillations in graphene. These effects may be associated with the graphene layer incorporated into a complex 3D heterostructure. Hopefully, the discovered signature of chiral anomaly in the built-in graphene would spur research on the phenomenon in topological nanomaterials.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.07841",
+      "tier": "brief",
+      "why": "Reports experimental signatures of the chiral anomaly in a 3D-like graphene/Sr/SiC heterostructure, a surprising dimensionality-dependent topological transport effect tangential to the listener's graphene interests."
+    }
+  ]
+}

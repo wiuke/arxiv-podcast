@@ -1,0 +1,497 @@
+{
+  "date": "2026-10-30",
+  "format": "dialogue",
+  "n_papers": 98,
+  "episode_title": "A vortex lattice in an exciton superfluid, Floquet physics from dark excitons, and stripes before superconductivity in moiré tungsten diselenide",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Morning. It's October thirtieth, and arXiv put out roughly ninety-eight new papers overnight."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's picks: scanning tunneling microscopy catches an actual vortex lattice inside an exciton superfluid, dark excitons fake a Floquet drive for nearly a nanosecond, and two different flavors of twisted material show superconductivity sitting right next to stripes or high Chern number topology."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the vortex lattice, it's the most striking result in the stack, and it's paper one in the show notes, from Ali Yazdani's group at Princeton."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The question is an old one for exciton condensates. An exciton is neutral overall, so how do you actually prove it's phase coherent, like a real superfluid, rather than just a dense gas of tightly bound pairs?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "The classic smoking gun for a superfluid or a type-two superconductor is a vortex lattice. But a superconductor's vortices carry magnetic flux, and an exciton condensate is neutral, so you can't have that. What do they image instead?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Theory from Zou and MacDonald, posted earlier this year, predicted that if you weakly dope the condensate with extra charge, that charge doesn't spread out. It fractionalizes and sits at the cores of vortex-antivortex pairs in the exciton's phase, the way a superconducting vortex core is where the order parameter dies. Because the cores carry fractional charge of the same sign, Coulomb repulsion between them stabilizes a honeycomb lattice, vortices on one sublattice, antivortices on the other, in opposite layers."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's a crystal of charge, but its very existence is the signature of the underlying coherent order, not of the charge itself."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. The device is two monolayer graphene sheets separated by about three nanometers of hexagonal boron nitride, h-B-N, on a graphite backgate, sitting in the STM at nine tesla and two hundred millikelvin. Independent top and bottom gating sets the total Landau level filling and separately redistributes charge between the two layers. At total filling minus two, with each layer at a non-integer filling, you get the interlayer exciton condensate, electron density in one layer exactly matching hole density in the other."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And how do they rule out that the periodic pattern they see is just a Wigner crystal of doped electrons sitting in one layer? That would also look like a periodic charge pattern in tunneling."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two tests. First, as they dope, the lattice spacing follows a square-root scaling with the total excess filling across both layers, exactly what the vortex theory predicts, and it clearly departs from a single-layer Wigner crystal prediction at low doping. Second, and this is the killer test, they vary the interlayer voltage at fixed total doping, so charge shifts between layers by up to thirty percent while total filling stays fixed. A Wigner crystal confined to one layer would have to change its spacing by about twenty nanometers. The vortex lattice shouldn't care, because only the total charge couples to the coherent order parameter."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the measured spacing?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Barely moves. Only the image contrast changes, consistent with charge shifting between vortices in the top layer and antivortices in the bottom layer without the lattice sites actually moving. They see the mirror-image result for hole doping, and the predicted crossover back to an ordinary Wigner crystal once one layer hits integer filling and stops being compressible."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So this is read as direct evidence for genuine long-range interlayer phase coherence, not just strong pairing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the claim, and the fact that the lattice stays clean over a field of view around four hundred nanometers gives a lower bound on the coherence length. It's a narrow corner of parameter space, bilayer graphene quantum Hall excitons at high field, but the authors point to this imaging approach as a route to search for predicted fractional excitons or supersolid phases, and eventually analogous excitonic states in transition metal dichalcogenide heterostructures, which is obviously closer to home for us."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two is from Keshav Dani's group at OIST, and it's about getting Floquet physics without ever running a coherent laser drive."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Remind me what Floquet engineering normally needs."
+    },
+    {
+      "speaker": "Leo",
+      "text": "A strong, phase-coherent, periodic light field dresses the electronic bands in the rotating frame, the conduction band hybridizes with energy-shifted replicas of the valence band, and you get things like a Mexican-hat dispersion instead of a plain parabola. The catch is it only survives as long as the drive stays coherent, which for excitonic fields is sub-picosecond. That's been the practical ceiling for exciton-driven Floquet demonstrations so far, including this same group's own earlier work."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And here they get it to last how long?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Close to a nanosecond. The trick is using dark interlayer excitons instead of a coherent optical polarization. They build a twisted tungsten diselenide on molybdenum disulfide heterobilayer, at twist angles of two, eight and fifteen degrees, and pump intralayer excitons in the tungsten diselenide layer with a one point seven two electron-volt pulse. Within a picosecond those scatter into interlayer excitons, electron in the Mo-S-two layer, hole in the W-S-e-two layer, dark and long-lived because of the layer and momentum separation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the exciton population is totally incoherent, no fixed phase, but they still see band hybridization?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Yes, and that's exactly the theoretical prediction they're testing, from Stefanucci and Perfetto. In the usual mean-field picture, once the coherence decays, the valence-conduction coupling should vanish too. But going beyond mean field, there's a residual static coupling that survives even for a fully incoherent, dense exciton population. It comes from a process where a conduction electron converts into an exciton plus a valence hole, and the coupling strength scales as the square root of the exciton occupation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do they actually see the band change?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Time- and angle-resolved photoemission with a time-of-flight momentum microscope, so ARPES with a pump-probe time axis and full momentum images. They track the top valence band near the K point of W-S-e-two. Before excitation it's a plain parabola. At a hundred picoseconds delay, with interlayer exciton density around four times ten to the twelve per square centimeter, the band curves up in the middle and down at the edges, the Mexican-hat shape, and it relaxes back as the exciton population decays, tracked out to eight hundred picoseconds in the fifteen-degree sample."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the density scaling?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "The hybridization energy, about seventy milli-electron-volts at peak density, scales linearly with exciton density, exactly as the theory predicts. The new knob here is momentum. The twist angle sets a finite center-of-mass momentum for the interlayer excitons, up to point-three-three inverse angstroms in the fifteen-degree sample, about twenty percent of the Brillouin zone, so the valence-band replica is shifted not just in energy but in momentum too. That's not something a photon field can easily do, and the open question is how far this momentum-offset coupling can be pushed toward engineering genuinely new bands."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper three stays with excitons but swaps ARPES for time-resolved photoluminescence, Matsuda's group in Kyoto, asking how a Mott transition in a moiré heterobilayer reshapes valley dynamics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The system is the usual sixty-degree, H-stacked tungsten diselenide on tungsten disulfide heterobilayer, dual-gated to dial the filling factor of the moiré lattice. We already know this system hosts a Mott insulator at integer filling from earlier PL work. What's new?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Nobody had tracked what the Mott transition does to the valley relaxation dynamics, not just the static peak. They do helicity- and time-resolved PL of the interlayer exciton emission, plus a Monte Carlo model of the decay kinetics. Right at filling minus one, where every moiré site has one localized hole, the PL blueshifts by about sixteen milli-electron-volts and narrows, consistent with doped holes filling the lower Hubbard band until it's full and an exciton's hole has to pay the Mott gap to sit in the valence band maximum. And separately, the radiative decay rate goes up while the valley relaxation rate goes down, polarization survives longer right at that filling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they disentangle the decay channels?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A three-level rate model: a bright K-valley exciton, a dark Q-valley exciton about sixty-two milli-electron-volts lower, and the ground state. Excitons can leak from K to Q via phonon-assisted scattering and decay nonradiatively, which both kills the PL and scrambles the valley pseudospin. A Gillespie-algorithm Monte Carlo with these rates reproduces the measured biexponential decay at every filling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the correlated state suppresses that leak?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the claim. Right at integer filling, the fit shows the initial population landing in the dark Q valley is suppressed relative to K, and the measured valley relaxation time shows a modest but clear enhancement, reproduced in a second device. The authors argue charge localization at the Mott transition reduces the electron-hole exchange that couples the plus and minus K pseudospins, and reduces phonon-assisted scattering into the Q valley."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why this matters: it turns ordinary exciton PL, the bread-and-butter technique, into a genuinely dynamical probe of a correlated phase, on top of the static spectroscopic signatures people already use, and it hints that correlated localization could be a lever for valleytronic coherence, not just a curiosity in the charge sector."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four moves from excitons to pure electrical transport, but it's squarely in moiré Mott territory, twisted bilayer tungsten diselenide, from Kin Fai Mak and Jie Shan's group."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This builds on their earlier discovery of superconductivity flanking a bandwidth-tuned Mott insulator in this material around four degrees twist. The new question: does the doped Mott insulator also host electronic liquid-crystal stripe phases, the way cuprates do near their superconducting domes, and how do stripes and superconductivity talk to each other?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do you even see a stripe phase in transport?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They measure the field-symmetric transverse resistivity in dual-gated Hall bars, which should vanish in an isotropic metal but picks up a signal if there's a rotational-symmetry-breaking stripe domain misaligned with the current direction. They map this alongside longitudinal resistivity and Hall coefficient across filling, electric field, and temperature down to twenty millikelvin."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Headline result?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Doping away from the filling-one Mott insulator produces small electron or hole Fermi surfaces, seen as a jump in Hall density. Inside that doped-Mott region, below a transition temperature of one to six kelvin depending on filling and field, the transverse resistivity turns on, Hall density drops, and longitudinal resistivity peaks, all at the same temperature, a genuine isotropic-to-stripe transition with Fermi surface reconstruction, not just a nematic distortion."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they rule out disorder masquerading as stripes?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Rotating the voltage probes ninety degrees flips the sign of the transverse signal but keeps the magnitude, exactly as expected for a real anisotropic resistivity tensor. And at fillings with no doped-Mott physics but equally strong gate dependence, the anisotropy vanishes. It's reproduced across three devices with different twist angles."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And there's a second transition buried in there?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "In part of the phase diagram, cooling further drives a metallic stripe into a pinned insulating stripe, with strongly nonlinear, hysteretic current-voltage curves and a depinning threshold around ten microvolts, textbook sliding charge-density-wave transport."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the connection to superconductivity?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the centerpiece. Right at the boundary of the insulating stripe region, tuning the electric field drives a continuous quantum phase transition into the superconductor, with resistivity curves collapsing onto a universal scaling function and critical exponent z-nu close to one on both sides. The superconducting and stripe-insulator transition temperatures both vanish continuously at essentially the same critical field, which the authors read as evidence the two orders are intertwined rather than simply competing. They're careful to call this a correlation, not a mechanism."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper five, our last deep dive, stays in twisted graphene but swaps semiconductor Mott physics for rhombohedral multilayer graphene, from a Chinese Academy of Sciences and Peking University collaboration."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Remind me what rhombohedral stacking buys you."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Each extra rhombohedral layer flattens the low-energy band further, boosting density of states and making correlation effects easier to reach. Stacking a Bernal bilayer on a rhombohedral trilayer, twisted by about one point two degrees, adds a moiré modulation known to produce an isolated flat band with Chern number greater than one."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And this group finds superconductivity and those high Chern states in the same device?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, which is new, earlier work saw one or the other but not a clear coexistence with a characterized competition. Near filling minus two and zero displacement field, they see a sharp resistive transition near one hundred eighty millikelvin, a nonlinear current-voltage curve consistent with a Berezinskii-Kosterlitz-Thouless transition near one hundred thirty-five millikelvin, and a Fraunhofer-like interference pattern in perpendicular field, the full fingerprint of two-dimensional superconductivity."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What's unusual about it?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "It survives in-plane fields up to two tesla, well beyond where simple spin-singlet pairing should be killed by the Pauli limit. As the in-plane field ramps up, the Ginzburg-Landau coherence length shrinks from about four hundred sixty-seven nanometers down to one hundred forty-five, but the critical current barely moves. They read that as evidence for tightly bound, spin-polarized pairs, pointing toward triplet-like rather than conventional singlet pairing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And right next to it?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A correlated insulator at more negative displacement field, with a sharp, hysteretic jump between the two states, and a sandwiched metallic region with one-fold Fermi surface degeneracy that they interpret as a partially polarized quarter-metal. Separately, at large positive displacement field and opposite doping, the same device shows quantized Hall insulators at fillings one-half, one, and three with Chern numbers plus one, plus three, and minus three, confirmed through Landau fan analysis and magnetic hysteresis."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So one device, two very different flavors of exotic order, controlled by two gates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and the authors frame the competition between the superconductor and the nearby insulator in Hubbard-model language, weaker correlation favors superconductivity, stronger correlation favors the insulator, language that will sound familiar from the moiré tungsten diselenide story we just covered."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Four quick briefs before we close. Paper six is theory from Ouyang and Wu on a spin-polarized moiré Chern band for twisted molybdenum ditelluride with short-range repulsion. Exact diagonalization finds pair binding in a filling window bracketing the two-thirds fractional Chern insulator, with chiral p-wave pairing correlations and a Bogoliubov-de Gennes Chern number opposite in sign to the normal state, a theoretical companion to recent experiments hinting at superconductivity next to the fractional quantum anomalous Hall state in twisted Mo-Te-two."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven is STM on small-angle twisted bilayer graphene below one degree, from Princeton. Lattice relaxation at these angles creates a sharp density-of-states peak at the AA stacking sites alongside a particle-hole asymmetric background. The authors argue this is best described as localized, heavy f-like states at the AA sites coexisting with itinerant electrons elsewhere, a Kondo-lattice heavy-fermion picture, with the particle-hole asymmetry traced to a flexoelectric response from lattice dilation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight is a tight-binding calculation of plasmons in twisted bilayer graphene nanoislands. Below a critical twist angle the moiré wavelength exceeds the island size and the spectrum is simple; above it, discrete resonances appear whenever an integer number of moiré periods fit across the flake, and doped islands host a chiral plasmon mode, opposite transverse dipoles in the two layers hybridizing into a quadrupole with a handedness set by the twist direction."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine is theory motivated by a recent few-electron partitioning experiment at a fractional quantum Hall point contact. At an exactly solvable interaction strength the authors get closed-form noise and current formulas, and for Lorentzian voltage pulses the full counting statistics reduces to a determinant. Charge is transferred strictly in units of one electron charge, with clear antibunching in the higher-order correlators for two- to four-particle pulses."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And paper ten is a tool paper rather than a physics result: an autonomous language-model agent called HERA for running cryogenic transport measurements, tested blind against a human expert on determining stacking order in multilayer graphene devices and on finding superconductivity in a new material. With a curated knowledge base of protocols, it matched the expert's sealed conclusions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the digest for October thirtieth, vortices, stripes, and Chern numbers all in one morning."
+    },
+    {
+      "speaker": "Leo",
+      "text": "See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.37781",
+      "title": "Evidence for a charged vortex lattice in an exciton superfluid",
+      "authors": [
+        "Ryan L. Lee",
+        "Jungwoo Lee",
+        "Viliam Va\\v{n}o",
+        "Bo Zou",
+        "Cheng-Li Chiu",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Allan MacDonald",
+        "Ali Yazdani"
+      ],
+      "abstract": "Lattices of quantized vortices are a defining property of rotating superfluids and of type-II superconductors in magnetic fields. Realizing an analogous vortex lattice in an exciton superfluid-formed from bound electron-hole pairs-has remained challenging because excitons are electrically neutral. Building on previous theoretical studies of the low-energy excitations in an exciton superfluid, recent theory has predicted that in a strong magnetic field, a weakly charged exciton superfluid can stabilize a vortex-antivortex lattice arising from the mutual repulsion of fractionally charged vortex cores. Here we report evidence for this predicted vortex lattice in a bilayer exciton condensate by imaging its charged vortices with the scanning tunnelling microscope. The condensate forms between Landau levels of two graphene layers separated by a thin hexagonal boron nitride barrier in a perpendicular magnetic field. We find that the vortex lattice periodicity scales with the total excess charge and is insensitive to its distribution between the two layers, in quantitative agreement with theoretical predictions. Our observations provide evidence for phase coherence in an exciton superfluid system.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.37781",
+      "tier": "deep",
+      "why": "STM imaging of a charged vortex-antivortex lattice in a bilayer graphene exciton condensate provides direct, striking evidence of phase coherence and fractionally charged vortices in an exciton superfluid."
+    },
+    {
+      "id": "2610.38156",
+      "title": "Incoherent dark excitons extend Floquet-like physics across time and momentum",
+      "authors": [
+        "Xing Zhu",
+        "Jacques Hawecker",
+        "Enrico Perfetto",
+        "Vivek Pareek",
+        "David R. Bacon",
+        "Harley Suchiang",
+        "Nanami Tomoda",
+        "Amrita Mitra",
+        "Takumi Fukuda",
+        "Sebastien Roux",
+        "Ouri Karni",
+        "Jack Featherstone",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Michael K. L. Man",
+        "Julien Mad\\'eo",
+        "Felipe H. da Jornada",
+        "Gianluca Stefanucci",
+        "Keshav M. Dani"
+      ],
+      "abstract": "Floquet phenomena - where a coherent, time-periodic drive hybridizes the conduction band with energy-replicated copies of the valence band - have been demonstrated with intense optical fields and, more recently, other bosonic excitations. However, within mean-field approximations and the current understanding of Floquet phenomena, these effects survive only for the coherence time of the drive, limiting practical use and current demonstrations to the sub-picosecond regime. Here, consistent with recent theoretical predictions beyond the mean-field picture, using time- and angle-resolved photoemission spectroscopy in WSe2/MoS2 heterostructures, we show that incoherent, dense populations of dark interlayer excitons hybridize the conduction band with energy-replicated copies of the valence band, mimicking Floquet-like phenomena - now persisting for nearly a nanosecond. With increasing interlayer exciton density, the valence band and its replica evolve from an inverted-parabolic to a Mexican-hat dispersion, a signature of the predicted non-zero static coupling that hybridizes the bands and scales linearly with the exciton density. By tuning twist angle, we further show that dark excitons with net momentum create replicas that hybridize with bands offset not just in energy but also in momentum, providing another powerful degree of freedom beyond conventional Floquet engineering. These results establish a robust, long-lived route to engineering electronic states, beyond a coherent, zero-momentum drive.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.other"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.38156",
+      "tier": "deep",
+      "why": "Time- and angle-resolved photoemission on WSe2/MoS2 heterostructures shows that dense incoherent dark interlayer excitons can mimic Floquet band hybridization for nearly a nanosecond, opening a new non-equilibrium route to engineer electronic structure with excitons."
+    },
+    {
+      "id": "2610.38251",
+      "title": "Charge Filling-Dependent Valley Polarization and its Dynamics Driven by Correlated Interlayer Exciton States in WSe2/WS2 Heterobilayer",
+      "authors": [
+        "Zhiwei Li",
+        "Haonan Wang",
+        "Yubei Xiang",
+        "Wataru Idehara",
+        "Hailin Liu",
+        "Shinichiro Matano",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Kazunari Matsuda"
+      ],
+      "abstract": "Moiré heterostructures of transition metal dichalcogenides provide an emerging platform for studying the strongly correlated electronic and excitonic states. The valley degree of freedom and its dynamics in the strongly correlated electronic and excitonic states in the moiré system are crucial for fundamental understanding and applications of valleytronics. Although the strongly correlated states in moiré systems have been extensively investigated, their impact on valley degrees of freedom and its dynamics remains unexplored. Here, we study the charge filling-dependent valley relaxation dynamics of interlayer excitons (IXs) in WSe2/WS2 moiré heterobilayer system. The evolution of moiré IXs dynamics across the Mott transition is elucidated by combining time-resolved optical spectroscopy with Monte Carlo simulation. Our results show that the radiative decay and recombination rate of IXs are enhanced at the integer filling factors n (=-1). Moreover, the valley relaxation rate of IXs at n=\\pm1 is significantly decreased. The resulting reduction in wavefunction overlap and phonon scattering process suppresses the nonradiative recombination and intervalley scattering of IXs. These anomalous behaviors are attributed to the modification of IXs recombination pathways and enhance excitonic coherence due to the localization of introduced charge carriers at integer filling of moiré site. Our results explore exciton and valley dynamics as sensitive probes of strongly correlated states in moiré systems and highlight possible ways to control excitonic coherence and valleytronic properties in two-dimensional quantum materials.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.38251",
+      "tier": "deep",
+      "why": "Direct demonstration that correlated interlayer exciton states at integer moiré filling in WSe2/WS2 control valley relaxation dynamics, linking valleytronics to Mott physics in a heterobilayer central to the group's interests."
+    },
+    {
+      "id": "2610.39978",
+      "title": "Electronic liquid crystals and superconductivity from doping a moiré Mott insulator",
+      "authors": [
+        "Yichi Zhang",
+        "Yiyu Xia",
+        "Zhongdong Han",
+        "Jekwan Lee",
+        "Brandon Bauer",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Wenjin Zhao",
+        "Kin Fai Mak",
+        "Jie Shan"
+      ],
+      "abstract": "Electronic liquid crystals, such as stripe phases and nematics, are self-organized states of matter with spontaneously broken rotational symmetry. They are expected to emerge in a doped Mott insulator as a compromise between short- and long-range Coulomb interactions, and are believed to be intimately connected to the emergence of high temperature superconductivity either as a competing order or an intertwined order. Moiré semiconductors provide a controllable platform to explore the relationship between stripe phases and superconductivity near a Mott insulator. Here we report the generic appearance of stripe phases in a doped moiré Mott insulator and the observation of a stripe to-superconductor quantum phase transition in twisted bilayer WSe2. The stripe phases were revealed by electrical transport studies as a thermodynamic phase transition from a high temperature isotropic phase to a low-temperature anisotropic phase accompanied by a Fermi surface reconstruction. Near the stripe-to-superconductor transition, we also observed an additional thermodynamic phase transition from metallic stripes to pinned insulating stripes. The stripe-to-superconductor transition further exhibits an intriguing self-similarity that highlights the intimate relationship between the two orders. Our results pave the path for studying intertwined orders in moiré materials.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.39978",
+      "tier": "deep",
+      "why": "Transport evidence for stripe (electronic liquid crystal) phases and a stripe-to-superconductor quantum phase transition upon doping a moiré Mott insulator in twisted bilayer WSe2, a rare controllable platform for cuprate-like intertwined orders."
+    },
+    {
+      "id": "2610.40170",
+      "title": "Coexistence of Superconductivity and Chern insulators with |C| \\geq 1 in twisted rhombohedral bilayer-trilayer graphene",
+      "authors": [
+        "Qiu Yang",
+        "Zihao Huo",
+        "Le Liu",
+        "Tianqi Song",
+        "Fankun Wang",
+        "Jingwei Dong",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Weibo Gao",
+        "Xiaobo Lu",
+        "Guangyu Zhang",
+        "Wei Yang"
+      ],
+      "abstract": "Rhombohedral multilayer graphene (RMG) has been demonstrated as a promising platform for investigating strongly correlated phases of matter. Here, we observe a coexistence of superconductivity and Chern insulators in a twisted rhombohedral bilayer-trilayer graphene moiré superlattice. Superconductivity, evidenced by a sharp transition with a critical temperature of ~180 mK, nonlinear I-V with a BKT temperature of 135 mK, and a signature of phase-sensitive interference patterns, emerges from a symmetry-breaking Fermi surface near v = -2 and D = 0, and it survives at a large in-plane magnetic field up to 2 T, strongly deviating from the Pauli limit. Moreover, we observe a strong modulation of the Ginzburg-Landau coherence length from 467 nm to 145 nm as the in-plane magnetic field increases from 0 to 2 T, whereas the critical current Ic barely changes. Unlike previous studies in RMG, we observe a competition between superconductivity and a correlated insulator at v = -2, monitored by displacement fields and twist angles. Note that we also observe integer Chern insulators with C = 1, 3, and -3 at v = 1/2, 1, and 3, respectively, for large D > 0 in the same superconducting device. The observations establish twisted rhombohedral graphene multilayers as a fascinating system to investigate unconventional superconductivity, high Chern number topology, and their interplay.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.40170",
+      "tier": "deep",
+      "why": "Observation of coexisting unconventional superconductivity and high Chern number (|C|>=1) insulators in twisted rhombohedral bilayer-trilayer graphene reveals a rich interplay of topology and pairing in a moiré flat-band system."
+    },
+    {
+      "id": "2610.40469",
+      "title": "Chiral p-Wave Superconductivity Proximate to a Fractional Chern Insulator and a Topological Charge Density Wave in a Moiré Chern Band",
+      "authors": [
+        "Yunze Ouyang",
+        "Fengcheng Wu"
+      ],
+      "abstract": "We study a spin-polarized moiré Chern band of twisted MoTe2 with short-range repulsion, finding superconductivity proximate to a fractional Chern insulator at filling \\nu=2/3 and a topological charge density wave at \\nu=3/4. Exact diagonalization reveals pair binding over 0.7\\lesssim\\nu\\lesssim0.77, consistent with experiment, along with finite superfluid stiffness, chiral p-wave pairing correlations, and adiabatic connectivity to an attractive model. At weak repulsion, Kohn-Luttinger theory supports a Fermi-surface instability with the same pairing symmetry. The superconducting state has a Bogoliubov-de Gennes Chern number CBdG=-1, opposite to the normal-state Chern number at \\nu=1. Our results reveal interplay among superconductivity, fractional topology, and charge order.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.40469",
+      "tier": "brief",
+      "why": "Exact diagonalization finds chiral p-wave superconductivity proximate to a fractional Chern insulator and topological charge density wave in a moiré Chern band of twisted MoTe2, directly relevant to current fractional Chern insulator physics."
+    },
+    {
+      "id": "2610.38305",
+      "title": "The Flexoelectric Twist: Persistence of Heavy Fermion Picture in Small-Angle Twisted Bilayer Graphene",
+      "authors": [
+        "Qirong Yao",
+        "Ka Cheuk Fan",
+        "Tianyu Qiao",
+        "Hao Shi",
+        "Xi Dai",
+        "Berthold J\\\"ack"
+      ],
+      "abstract": "Twisted bilayer graphene (TBG) near the first magic angle (\\theta\\approx1.05\\circ) hosts flat bands that provide a fertile ground for exploring strongly correlated and topological phases. At smaller twist angles (\\theta<1\\circ), attice relaxation profoundly alters the moiré landscape. The extent to which moiré lattice reconstruction at different length scales affects the electronic structure through electro-mechanical coupling remains unresolved. Here, using scanning tunneling microscopy on small-angle TBG devices (\\theta\\approx0.3-0.7\\circ), we observe a pronounced dI/dV peak at the AA site of the moiré lattice on top of a spectrum that is asymmetric about the charge neutrality point, lattice reconstruction over moiré lattice length scales, as well as a dilation of the atomic lattice at the AA sites. We demonstrate at a phenomenological level that the inclusion of moiré lattice reconstruction supports compact localized heavy fermion f- states localized at AA sites. The additional inclusion of atomic lattice dilation enerates a strong flexo-electric response that explicitly breaks particle-hole symmetry, pushing compact, localized f-states at the AA sites down in energy. Consequently, these heavy fermion states energetically coexist with itinerant c-electrons at the AB/BA sites. Our spatially resolved spectroscopic measurements quantitatively visualize this coexistence, confirming the persistence of the heavy fermion model in the small-angle regime \\theta<1\\circ. Our findings provide microscopic insights into how flexo-electricity affects the low-energy electronic structure of small-angle TBG. More broadly, our study establishes small-angle TBG as a new class of moiré materials to explore the interacting Kondo lattice problem with high tunability of the f-occupation and c-density through twist-angle and electrostatic back gates, respectively.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.38305",
+      "tier": "brief",
+      "why": "STM on small-angle twisted bilayer graphene shows lattice reconstruction and flexoelectric coupling sustain a heavy-fermion/Kondo-lattice picture even away from the magic angle."
+    },
+    {
+      "id": "2610.39737",
+      "title": "Moiré-enabled chiral plasmons in twisted bilayer graphene nanoislands",
+      "authors": [
+        "Magnus Husted",
+        "Viktor Kanstrup",
+        "Eduardo J. C. Dias",
+        "Joel D. Cox"
+      ],
+      "abstract": "Twisting two stacked graphene layers superimposes a moiré superlattice that reshapes their electronic structure, yet how it shapes the collective optical response of finite, nanoscale bilayers remains largely unexplored. Using an atomistic tight-binding and self-consistent density-matrix approach, we compute the twist-dependent plasmonic response of twisted bilayer graphene nanoislands comprising thousands of atoms. The spectra are strongly tunable and split into two regimes at a critical angle where a single moiré wavelength spans the island; beyond it, an ordered ladder of resonances emerges whenever an integer number of moiré periods fits within the overlapping bilayer. In doped islands, the interlayer coupling also produces a moiré-enabled Born–Kuhn chiral plasmon: opposite transverse dipoles in the two layers form an electric quadrupole that hybridizes with the bright dipole, opening an anticrossing near the critical angle, with a handedness that reverses with the twist direction. Triangular islands confirm that the moiré lattice, not the flake boundary, governs both effects, establishing twist as a mechanical handle on chiral graphene plasmons.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.39737",
+      "tier": "brief",
+      "why": "Atomistic tight-binding calculations predict moiré-tunable chiral (Born-Kuhn) plasmons in twisted bilayer graphene nanoislands, a new optical handle on twist-angle physics."
+    },
+    {
+      "id": "2610.37950",
+      "title": "Few-Electron Partitioning in the Fractional Quantum Hall Regime",
+      "authors": [
+        "T. Jonckheere",
+        "J. Rech",
+        "B. Gr\\'emaud"
+      ],
+      "abstract": "Motivated by few-electron partitioning experiments [Shaju et al., Nature 642, 928 (2025)], we study the partition statistics of N-electron states at a fractional quantum Hall point contact. At the solvable point g=1/2, we obtain nonperturbative current and noise formulas for arbitrary drives, while for Lorentzian pulses (Levitons) the full counting statistics reduces to an N\\times N determinant. We show that the charge is transferred solely in units of e, and that symmetrized cumulants for N=2,3,4 reveal strong antibunching and higher-order correlations, observable in a (\\nu1,\\nu2)=(1,1/3) junction.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.37950",
+      "tier": "brief",
+      "why": "A solvable theory of few-electron partitioning at a fractional quantum Hall point contact predicts antibunching and higher-order correlations directly testable in recent Levitons experiments."
+    },
+    {
+      "id": "2610.39074",
+      "title": "HERA: Assessing an Autonomous Agent for Quantum Device Measurement",
+      "authors": [
+        "Zachary W. Gomez",
+        "Nathan Bittner",
+        "Jordan T. McCourt",
+        "Qingrui Cao",
+        "Sandesh S. Kalantre",
+        "Benjamin H. Alexander",
+        "Zhiren Zheng",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Aaron Sharpe"
+      ],
+      "abstract": "Large language model agents have begun to carry out laboratory measurements, but their scientific conclusions are useful only if they hold up under scrutiny. Demonstrating this requires controlled studies because models are stochastic and the context a model is given steers its conclusions. Here we introduce HERA, an autonomous agent designed to carry out cryogenic transport measurements of quantum devices. HERA draws on a knowledge base curated by lab members that holds measurement protocols, software tools, and literature references. We assessed HERA with a blinded trial against an expert on the stacking order of two multilayer graphene devices, an ablation of its knowledge base, and hundreds of offline replays in which models designed the trial's central measurement without running it. HERA's conclusions matched the expert's sealed conclusions on both tested devices. The ablation and the replay studies measured the impact of the knowledge base across different models, showing that with it every model designed better measurements and reasoned more soundly. To test how readily HERA extends to a new problem, we tasked it with finding and characterizing superconductivity in a different material system. This required a few hours of expert time to develop a new experimental protocol, after which HERA did both autonomously. These results show that, with a knowledge base designed for the task, language model agents are capable of sound experimental science.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cs.AI"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.39074",
+      "tier": "brief",
+      "why": "An autonomous LLM-based agent (HERA) matches expert conclusions in blinded cryogenic transport measurements on graphene devices, a notable proof-of-concept for AI-driven experimental quantum materials research."
+    }
+  ]
+}
