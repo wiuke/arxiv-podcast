@@ -1,0 +1,443 @@
+{
+  "date": "2026-10-26",
+  "format": "dialogue",
+  "n_papers": 44,
+  "episode_title": "Quantum-capacitance optics, an M-point flat band, and composite fermions that decay into electrons",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Morning. It's October twenty-sixth, and archive dropped about forty-four new papers overnight."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And we've got a genuinely nice spread today. An optical trick for reading out quantum capacitance in a van der Waals stack, a nano-ARPES surprise in twisted bilayer graphene, a theory paper that finally explains a weird paradox about composite fermions, a Bethe-Salpeter framework that treats magnons and excitons on equal footing, and a deep dive into how Rashba and Dresselhaus coupling show up in optical spectra."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the one that's basically custom-built for us. Paper one, Hong and coauthors, out of Nanjing, on excitonic Stark response from quantum capacitance."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, so the standard picture in any dual-gated van der Waals stack is the geometric capacitor model: you know the dielectric thicknesses, you know the gate voltages, so you know the internal field and the carrier density. Full stop."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which works fine as long as doping is symmetric. But here they stack monolayer graphene on bilayer molybdenum disulfide, and because of band alignment, carriers transferred by the gates pile up almost entirely in the graphene layer. That's an asymmetric, one-sided doping."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the probe is the interlayer exciton in the bilayer moly-disulfide, which comes in two flavors with opposite out-of-plane dipole moments, since the electron can sit closer to or farther from the graphene. They measure these by reflection contrast at around six kelvin."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The first sanity check: scanning the electric field at charge neutrality gives a clean linear Stark shift, dipole moment about zero-point-four-eight electron nanometers, matching prior literature. Good, the probe works as expected."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Then the interesting part. They hold the net external field at zero by dialing the two gates oppositely, but vary carrier density. If the geometric model were complete, the exciton energy shouldn't move at all. It does move."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So there's a residual internal field even when the external knobs say zero. Their explanation: quantum capacitance. Graphene has a finite density of states, so for a given gate voltage, the chemical potential has to shift to accommodate the transferred charge, and that shift doesn't fully cancel the external field the way an ideal metal gate would."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The clever bit is how they isolate this from the obvious confound, many-body screening from the doped carriers, which also shifts exciton energies. They use the top-gate sweep configuration where the gate field and the carrier-induced field are antiparallel, which kills the geometric Stark background by construction."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And what's left splits by dipole orientation in a very specific way. One branch redshifts strongly only when the carrier types in graphene and the adjacent moly-disulfide layer match; the other branch does the opposite. That's a Stark-like signature, not a screening one."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They double-check with the two-s states to rule out binding-energy renormalization — both dipole branches lose about five to seven milli-electron-volts of binding, basically identically, so that symmetric piece can't explain the asymmetry. Same logic kills a dipole-dependent bandgap renormalization, since the doped carriers barely overlap the moly-disulfide wavefunction."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So what's left is a quantum-capacitance model with zero free parameters, and it reproduces the measured splitting as a function of top-gate voltage. That lets them turn the optical splitting directly into graphene's local chemical potential."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The nice control: they also check a multilayer-graphene region on a third device, where the density of states is much bigger, so quantum capacitance should matter less. Sure enough, the splitting barely moves with gate voltage there, consistent with the mechanism."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Catch is they can't fully exclude a small dipole-dependent many-body contribution hiding below their resolution, but the agreement with a parameter-free electrostatic model is pretty convincing. For anyone doing optical spectroscopy in dual-gated heterostructures, this is basically a warning label: your exciton Stark shift is not just reading external fields, it's reading the local electrochemistry too, especially near graphitic layers that act as sensitive charge reservoirs."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper two moves us to twisted bilayer graphene, but away from the physics you'd expect. Feraco and coauthors did nano-ARPES on a 2.4 degree twist — well above the 1.1 degree magic angle — and found a flat band nobody predicted."
+    },
+    {
+      "speaker": "Ava",
+      "text": "At the K-bar point, nothing weird, just the usual two dispersive graphene bands. The surprise shows up along the gamma-to-M-bar direction: a nearly flat feature sitting about two-point-six electron-volts below the Fermi level, with a bandwidth of only about zero-point-two electron-volts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they quantify just how flat: the Fermi velocity at that M-bar point comes out to about six-point-eight times ten-to-the-four meters per second, compared to one-point-one times ten-to-the-six at K-bar — almost two orders of magnitude slower."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is far from the Fermi level, so it's not going to host superconductivity or Mott physics the way K-point flat bands near the magic angle do. But it's conceptually jarring: flat bands at large twist angle are supposed to be impossible, because at 2.4 degrees the Dirac cones from the two layers are well separated and hybridization should be weak."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They threw both tight-binding and DFT at it. Tight-binding, with a large six-thousand-atom supercell, nails the ordinary dispersive bands beautifully but produces nothing flat at M-bar. DFT, limited to a smaller, more strained supercell because of cost, does no better."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the rigid-lattice, pi-orbital picture just doesn't contain this state. Their best guess is that it's a structural effect — local strain, lattice reconstruction, domain walls — that neither model captures, since both idealize the moiré lattice as either unrelaxed or only weakly relaxed in a tiny cell."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They also flag electron-phonon coupling as a possible contributor, since it's known to produce kinks in graphene's sigma bands far from the Fermi level, and can't rule out some residual coupling to the hexagonal boron nitride substrate either, even though the graphene-to-h-BN twist angle was chosen large specifically to suppress that."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The actual takeaway for anyone doing ARPES or momentum-resolved spectroscopy on moiré stacks: almost everyone points their detector at K and stays near the magic angle. This is a reminder that unexpected band structure can show up elsewhere in the Brillouin zone and at angles people have stopped looking at. If you're hunting for moiré-induced states in twisted TMDs, it might be worth checking the van Hove points too, not just the valleys."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three is pure theory, from Gattu and Jain, and it resolves a genuinely strange internal contradiction in composite fermion theory for the fractional quantum Hall effect."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Set the stage. At filling nu equals one-third, there are two competing pictures for the neutral collective mode. One is the Girvin-MacDonald-Platzman mode, basically a density wave built from ordinary electrons and holes. The other is the composite-fermion exciton, built from a composite-fermion particle-hole pair, each carrying fractional charge e over three."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And it's been proven, now analytically, that the G-M-P mode can be written exactly as a combination of these composite-fermion excitons. Fine on paper. But physically that's bizarre: at large wavevector, the G-M-P mode is a far-separated electron and hole, full unit charge each. A composite-fermion exciton at large separation should just be a far-separated fractional quasiparticle and quasihole, charge e over three each."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So how can a unit-charge pair be an exact linear combination of fractional-charge pairs? That's the paradox."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They attack it numerically in the spherical geometry at nu equals one-third, forty electrons, tracking a single excited composite fermion as you push it to higher and higher effective Landau levels — what they call the Lambda level index. They watch the enclosed charge around the excitation as a function of that index."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Three regimes emerge. At low excitation, you get exactly what you'd expect: a quasiparticle of charge minus e over three at one pole, a quasihole of plus e over three at the other. Standard stuff."
+    },
+    {
+      "speaker": "Leo",
+      "text": "At intermediate excitation, it gets weird: the charge at the excited pole becomes a full minus e, but it's now accompanied by a compensating region of plus two-thirds e a bit farther out, plus the original one-third e quasihole at the far pole. So the full Lowest-Landau-Level projection of that single high-energy composite fermion has effectively split into a whole electron, plus extra quasiholes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And at the very highest excitation index, it converges exactly onto the G-M-P limit: a clean minus-e, plus-e pair at antipodal points. So the paradox resolves because a single high-energy composite fermion isn't really a single fractional particle at all — after projecting into the lowest Landau level, it spontaneously decays into a handful of quasiparticles and quasiholes that, combined, reconstruct a whole electron and hole."
+    },
+    {
+      "speaker": "Leo",
+      "text": "There's a nice technical punchline too: this only shows up for the exact, brute-force lowest-Landau-level projection, which only scales to maybe ten particles normally but they push further here. The more practical Jain-Kamilla projection, the one used in almost all large-system composite fermion calculations, cannot capture this decay at all — it vanishes identically once the excitation index gets too high. So there's a real, qualitative gap between the two projection schemes at high energy that people should know about if they're using Jain-Kamilla wavefunctions to model anything far from the ground state."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good caveat for anyone leaning on composite fermion trial wavefunctions for excited-state or STM tunneling comparisons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four tackles something closer to our exciton world: can you compute magnons and excitons with the same machinery? Chourasia, Martins Quintela, and Palacios say yes, but the standard approach has a known bug."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The bug: when people use the usual Bethe-Salpeter plus Hedin's-equations toolkit — the same one used for excitons — to compute magnons in a magnetic material, the Goldstone mode, which by symmetry must sit at exactly zero energy at zero momentum, comes out gapped. That's wrong by construction; it's spontaneous symmetry breaking, the mode has to be exactly soft."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Two causes, they argue. One is the usual mismatch between dynamical G-W screening in the self-energy and static screening in the kernel. The other, which people overlook more, is that the Hartree-Fock or density-functional ground state used as reference isn't actually an eigenstate of total spin squared — it's spin-contaminated — and that contamination itself opens a gap in the Tamm-Dancoff approximation, independent of the screening mismatch."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Their fix: don't truncate to the Tamm-Dancoff approximation. Keep the full Bethe-Salpeter equation, antiresonant block and all — essentially the Casida equation from quantum chemistry — using the same interaction in the kernel as in the mean-field ground state. They prove, via the equation-of-motion formalism, that this guarantees the exact zero mode survives."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They test it on hydrogenated graphene, modeled with an extended Hubbard Hamiltonian — hydrogen adsorption on one sublattice induces a flat band and ferromagnetism; strong on-site repulsion alone, without hydrogen, gives an antiferromagnetic ground state instead."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Numbers: in the ferromagnet, the Tamm-Dancoff approximation gives the Goldstone mode a spurious gap of zero-point-one-four electron-volts. Full Bethe-Salpeter closes that gap exactly to zero, recovering the expected quadratic dispersion near gamma."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The antiferromagnet is the more dramatic case — the spurious gap there is one-point-nine-one electron-volts, and the Tamm-Dancoff approximation gets the wrong functional form entirely, quadratic instead of linear. The full theory correctly gives a linear, doubly-degenerate Goldstone magnon, as symmetry demands for a Néel-type antiferromagnet."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They also map out which interaction terms do what: the on-site Hubbard repulsion alone binds magnons but can't bind excitons, since exciton binding needs the exchange term, which vanishes for purely local interactions. Non-local interactions do the opposite — they bind excitons but kill magnons. Useful bookkeeping if you're building a first-principles theory for a real two-dimensional magnetic semiconductor and want both quasiparticles right."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Caveat: this is a clean demonstration in a model Hamiltonian where the self-energy and kernel interactions match by construction. Extending it to real G-W-based first-principles calculations on something like chromium tri-iodide still has the dynamical-versus-static screening inconsistency they didn't resolve here — they just isolated the second, previously underappreciated source of the problem."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive, and it's a theory piece aimed squarely at optical spectroscopy. Suleymanli, Tariverdiev and Tanatar work out what Rashba and Dresselhaus spin-orbit coupling do to interband absorption in two-dimensional semiconductors, across electric fields, magnetic fields, and both together."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Starting point, zero field: the total joint density of states above the gap is exactly unchanged by either coupling — a sum rule. But below the gap, where a single spin branch dips down and creates subgap states, pure Rashba coupling gives an inverse-square-root van Hove singularity. Add any Dresselhaus coupling and that singularity splits into a finite step plus a separate logarithmic peak."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which is actually a nice diagnostic — the step tells you the sum of the two coupling strengths, the log peak tells you their difference, so a single zero-field absorption spectrum in principle lets you extract both Rashba and Dresselhaus strengths independently, no fields required."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Turn on an electric field — the Franz-Keldysh regime — and that singularity gets smoothed into a finite peak. The height of that peak scales as the field to the minus-one-third power, and its position creeps toward the field-free value, the gap minus the Rashba spin-orbit energy, as the field is lowered."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That minus-one-third scaling is the interesting bit — it's the opposite sign from the ordinary three-dimensional Franz-Keldysh oscillation, which goes as field to the plus-one-third, and it's a direct fingerprint of that ring-shaped band minimum unique to Rashba coupling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They also work out the zero-electric-field case in a perpendicular magnetic field: Landau levels get shifted and split by spin-orbit coupling, with another sum rule — the total absorption weight per Landau level stays fixed regardless of the mixing. The splitting itself goes as the square root of field at weak field, crossing over to linear at strong field."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And then crossed fields tie it together: the in-plane electric field acts like a drift-induced effective Zeeman field on the spin, producing anticrossings between Landau levels and asymmetric shifts for the two spin partners in a doublet, continuously morphing the spectrum from sharp Landau lines into the Franz-Keldysh lineshape as the field grows."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Caveat worth flagging: this is a free-particle two-band model with a constant dipole matrix element — there's no exciton binding, no trion, none of the Coulomb physics that actually dominates optical spectra in real transition-metal dichalcogenides. So the quantitative predictions are really aimed at systems like giant-Rashba III-V quantum wells or halide perovskites. Still, the qualitative logic — using magneto-absorption or electroabsorption lineshapes to disentangle Rashba from Dresselhaus — is the kind of thing that could usefully migrate into exciton-based valley Zeeman measurements."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Quick ones before we close. Zamoum and coauthors compute heat current noise across a point contact between a normal metal and a nu equals one-third fractional quantum Hall edge, using refermionization; in the weak-backscattering limit the Lorenz number climbs to four times the standard value at high voltage, pointing to an interaction-rescaled Wiedemann-Franz law."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Hullahalli and coauthors show that magnons in an otherwise clean, crystalline two-dimensional magnet can become multifractal around a single localized defect or a skyrmion, with no disorder needed — and for skyrmions specifically, some of these multifractal states pick up a magnetic dipole moment, making them excitable with a plain uniform microwave field."
+    },
+    {
+      "speaker": "Ava",
+      "text": "A kagome superconductor update: in cesium-vanadium-antimony-tin alloys, once the charge density wave crosses over from the triple-Q pattern to a short-range stripe phase, the superconducting gap becomes spatially patchy, with scanning tunneling microscopy showing a real distribution of local transition temperatures rather than one clean gap — evidence for pair-breaking by the charge stripes rather than sample disorder."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Song and coauthors built a room-temperature magnonic time crystal in yttrium iron garnet: a microwave beat drive locks period-doubled magnon oscillations into lasing-like coherence, with a linewidth narrowed to two-hundred-sixty hertz, and they connect the stability to three-magnon confluence processes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And Jia, Walther and Nie propose using resonant inelastic X-ray scattering with path-entangled photons as a solid-state analogue of the Duan-Lukin-Cirac-Zoller heralding scheme, projecting a material into an entangled superposition of excitations at two separated locations — they show it works for a simple two-site model, a tight-binding chain, and even a spin-one Haldane chain, entangling its fractionalized edge spins."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's today's stack. Have a good morning."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.32532",
+      "title": "Excitonic Stark Response Induced by Quantum Capacitance in van der Waals Heterostructures",
+      "authors": [
+        "Xiangzhi Hong",
+        "Yongkang Jian",
+        "Yang Chen",
+        "Rukai Cang",
+        "Yuanlong Guo",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Baigeng Wang",
+        "Erfu Liu"
+      ],
+      "abstract": "Precise electrostatic control in van der Waals heterostructures is commonly described by a geometric capacitor model, which assumes that the internal electric field is fully determined by external gate voltages. Here, we show that this description breaks down in the presence of interfacial charge transfer, where quantum capacitance modifies the internal electrostatics. Using interlayer excitons as local probes, we observe a dipole-dependent energy splitting that persists even when the gate-induced geometric field is nominally canceled. This splitting reflects incomplete cancellation between gate- and carrier-induced fields set by quantum capacitance, while many-body renormalization is largely symmetric with respect to the two opposite dipole orientations, allowing the splitting to provide a direct optical measure of the local chemical potential. Our results reveal the central role of quantum capacitance in interface electrostatics and provide a route to probe it in operando.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.32532",
+      "tier": "deep",
+      "why": "Shows quantum capacitance, not just geometric gating, governs interlayer exciton Stark shifts in vdW heterostructures, directly relevant to optical probing of electrostatics in 2D systems."
+    },
+    {
+      "id": "2610.32714",
+      "title": "Nano-ARPES observation of a flat band at the \\barM point in 2.4\\deg twisted bilayer graphene",
+      "authors": [
+        "Giovanna Feraco",
+        "Przemys{\\l}aw Przybysz",
+        "Oreste De Luca",
+        "Ying Wang",
+        "Pavel Dudin",
+        "Jos\\'e Avila",
+        "Jianting Ye",
+        "Pawe{\\l} D\\k{a}browski",
+        "Pawe{\\l} J. Kowalczyk",
+        "Jagoda S{\\l}awi\\'nska",
+        "Petra Rudolf",
+        "Antonija Grubi\\v{s}i\\'c-\\v{C}abo"
+      ],
+      "abstract": "The emergence of flat bands in twisted bilayer graphene at the so-called magic angle reveals a range of intriguing phases, such as superconductivity and Mott insulating states, resulting from electrons entering a correlated state. This establishes twisted bilayer graphene as an excellent platform for exploring correlation effects in many-body phases and across various twist angles. However, in most cases, the twist angle is not an easy parameter to control because it exhibits structural instabilities such as relaxation and reconstruction that reduce the correlation effects. Here, we report the unexpected appearance of a flat band at the \\barM point far from the Fermi level in a 2.4\\deg twisted bilayer graphene, directly visualized by angle-resolved photoemission spectroscopy. Our work is the first observation of flat bands away from the \\barK point in twisted bilayer graphene and highlights the need to probe the entire Brillouin zone to fully capture electronic states in twisted structures.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.32714",
+      "tier": "deep",
+      "why": "First nano-ARPES observation of a flat band away from the K point in twisted bilayer graphene, revealing new momentum-space structure relevant to moire correlated physics."
+    },
+    {
+      "id": "2610.32763",
+      "title": "Spontaneous Decay of High Energy Composite Fermions",
+      "authors": [
+        "Mytraya Gattu",
+        "J. K. Jain"
+      ],
+      "abstract": "An electron, when added to a fractional quantum Hall fluid, famously splits into fractionally charged composite-fermion quasiparticles. We show here that a high energy composite fermion carrying a fractional charge decays into a collection of particles, including quasiparticles, quasiholes, and even whole electrons.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.32763",
+      "tier": "deep",
+      "why": "Jain and collaborators show high-energy composite fermions in the fractional quantum Hall fluid spontaneously decay into quasiparticles, quasiholes and electrons, a conceptually important result for FQH physics."
+    },
+    {
+      "id": "2610.32847",
+      "title": "Magnons and excitons from Bethe-Salpeter equation and its application to graphene-based magnets",
+      "authors": [
+        "Simran Chourasia",
+        "Maur\\'icio F. C. Martins Quintela",
+        "J. J. Palacios"
+      ],
+      "abstract": "With the recent isolation of two-dimensional semiconducting magnetic materials, the theoretical study of spin-flip collective excitations (magnons) along with spin-conserving electron-hole bound pairs (excitons) has become particularly relevant. Describing both types of quasiparticles within the same theoretical framework is possible, in principle, but the well-established many-body formalism for the calculation of excitons, based on the intertwined Bethe-Salpeter and Hedin's equations, is not satisfactory for magnons, since the usual approximations produce a spurious gapped Goldstone mode. Here, we show that excitons and magnons can be computed on the same footing under the same Bethe-Salpeter formalism, while respecting the gapless Goldstone mode for magnons. We demonstrate how this can be achieved through the evaluation of the full Bethe-Salpeter equation, beyond the Tamm-Dancoff approximation in model Hamiltonians. As an example, we apply it to ferromagnetic and antiferromagnetic graphene, faithfully represented by the extended Hubbard model. Our results clarify the roles of on-site and non-local interactions in exciton and magnon appearance and identify consistency requirements relevant to extending the approach to first-principles calculations.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.32847",
+      "tier": "deep",
+      "why": "Develops a unified Bethe-Salpeter framework capturing both excitons and gapless magnons in 2D magnetic materials like graphene-based magnets, bridging exciton and spin-wave physics central to the listener's optical spectroscopy interests."
+    },
+    {
+      "id": "2610.31843",
+      "title": "Optical signatures of Rashba–Dresselhaus coupling across Franz–Keldysh and Landau regimes in two-dimensional semiconductors",
+      "authors": [
+        "Bahruz Suleymanli",
+        "Samir Tariverdiev",
+        "B. Tanatar"
+      ],
+      "abstract": "We develop a unified theory of the interband optical response of a two-dimensional semiconductor with simultaneous Rashba and Dresselhaus spin-orbit couplings in electric and magnetic fields. In crossed fields, the in-plane electric field generates an effective spin-orbit drift field that modifies the Landau spectrum and spinor states, while at zero magnetic field the problem maps onto Landau–Zener spin dynamics.At zero external fields, the total joint density of states above the band gap remains unchanged, while characteristic subgap structures appear. Pure Rashba coupling produces an inverse square root singularity, whereas a finite Dresselhaus term gives a step and a logarithmic peak, allowing the two couplings to be distinguished optically. At zero magnetic field, the Franz–Keldysh response shows a crossover from diabatic to adiabatic spin dynamics as the electric field is reduced. In the weak-field Rashba regime, the field-free singularity becomes a finite peak whose height scales as \\mathcal E-1/3 and whose position approaches Eg-E\\rm SO, providing a direct measure of the Rashba energy. In a perpendicular magnetic field, spin-orbit coupling shifts and splits the Landau absorption lines and produces anticrossings without changing their total weights. The Rashba splitting changes from a \\sqrtB dependence at weak fields to a linear dependence at strong fields. Finally, in crossed electric and magnetic fields, the electric field broadens the Landau lines and drives a continuous crossover toward the Franz–Keldysh regime, while spin-orbit coupling produces opposite shifts and different widths for the two members of each doublet.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.31843",
+      "tier": "deep",
+      "why": "Predicts distinct optical (Franz-Keldysh/Landau) signatures that disentangle Rashba vs Dresselhaus spin-orbit coupling in 2D semiconductors, directly relevant to optical probes of 2D material band structure."
+    },
+    {
+      "id": "2610.31893",
+      "title": "Heat current and noise in a point-like junction between normal metal and fractional quantum hall edge state with \\nu = 1/3",
+      "authors": [
+        "Redouane Zamoum",
+        "Houssam Eddine Farhi",
+        "Abdellah Touati",
+        "Adeline Cr\\'epieux"
+      ],
+      "abstract": "In this study, we investigate heat current correlations between two edge states coupled through a constriction in the fractional quantum Hall regime at filling factor \\nu = 1/3. This configuration allows us to map the system onto an interacting Tomonaga-Luttinger liquid with a local impurity, where the interaction parameter takes the value \\kappa = 1/2. This specific parameter value enables the application of the refermionization method. By solving the refermionized Hamiltonian, we compute the heat current and evaluate the finite-frequency heat auto- and cross-correlation functions. Our results reveal asymmetric behavior with frequency, corresponding to absorption and emission noise, respectively. Furthermore, we examine several limiting cases, including low- and high-temperature limits as well as strong- and weak-backscattering regimes. In the weak backscattering regime, the Lorenz number approaches 4L0 at high voltage, suggesting a rescaling of the Wiedemann-Franz law due to interactions. A detailed study of the heat current fluctuations has made it possible to identify and derive expressions for the dominant contribution in the various regimes of interest, and to reveal the predominance of partition noise.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.31893",
+      "tier": "brief",
+      "why": "Computes heat noise and a modified Wiedemann-Franz law at a nu=1/3 fractional quantum Hall point contact, extending edge-state transport theory relevant to the listener's quantum Hall interests."
+    },
+    {
+      "id": "2610.32457",
+      "title": "Multifractal Magnons Around Localized Defects",
+      "authors": [
+        "Adarsh Hullahalli",
+        "Yusuf Khand",
+        "Christos Panagopoulos",
+        "Christina Psaroudaki"
+      ],
+      "abstract": "Multifractal wavefunctions fluctuate over a hierarchy of spatial scales, remaining spatially extended while exhibiting strongly nonuniform structure. We show that magnons in otherwise crystalline two-dimensional magnets can exhibit such behavior on mesoscopic scales, without disorder or quasiperiodicity. A localized defect can mix discrete groups of nearly degenerate magnon states in a finite sample, generating multiscale interference patterns and multifractal wavefunctions. We demonstrate this mechanism for both a simple spin defect and topological magnetic skyrmions. Large-scale spin-wave calculations for skyrmions in chiral and frustrated magnets reveal clear multifractal diagnostics over the full accessible range of system sizes of above-gap modes. Crucially, skyrmions make these states experimentally observable by hybridizing them with magnetically active internal deformation modes, which gives a subset of the multifractal states a nonzero magnetic dipole moment. These states can therefore be excited by uniform ac fields and remain distinguishable at realistic frequency resolution, providing a direct route to observing mesoscopic magnon multifractality.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.32457",
+      "tier": "brief",
+      "why": "Demonstrates that localized defects and skyrmions can induce multifractal magnon wavefunctions in clean 2D magnets, observable via uniform ac fields."
+    },
+    {
+      "id": "2610.32097",
+      "title": "Heterogeneous superconductivity emerging from a charge-stripe state in kagome lattices",
+      "authors": [
+        "Hongyu Li",
+        "Shuikang Yu",
+        "Huachen Rao",
+        "Zhuying Wang",
+        "Xingchen Zhou",
+        "Houpu Li",
+        "Yunmei Zhang",
+        "Zhao Gong",
+        "Xin Yu",
+        "Rui Wu",
+        "Tao Wu",
+        "Zhenyu Wang",
+        "Ziji Xiang",
+        "Xianhui Chen"
+      ],
+      "abstract": "Charge density wave (CDW) and superconductivity have long been recognized as competing orders. However, recent achievements establish that the interplay between these two collective electronic phenomena can be more perplexing, with emergent phenomena arising from their cooperation. Here we report a distinctive case of the kagome superconductors CsV3Sb5-xSnx, in which the characteristics of superconductivity evolve in accordance with the form of CDW order. As the triple-Q CDW in CsV3Sb5 transforms to a short-range stripelike CDW at xc = 0.07, a sudden change in superconducting properties occurs concomitantly. A combination of thermodynamic, electrical transport and scanning tunneling microscopy experiments reveals a heterogeneous superconducting state beyond xc: the superconducting gap exhibits pronounced spatial variation, in conformity with a distribution of critical temperature and the resulted superconducting precursor effects. Moreover, abundant normal fluid persists deep into the superconducting state, as evidenced by remnants of electronic specific heat and zero-energy quasiparticle interference. These observations are unrelated to the chemical inhomogeneity and residual strain effect introduced by Sn substitution. Instead, they emulate the phenomenology that a sign-changing superconducting order parameter is subject to strong pair-breaking scattering with the short-range charge stripes and hence reflect the unconventional nature of superconductivity developing inside the charge-stripe state.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.32097",
+      "tier": "brief",
+      "why": "Reveals a heterogeneous, spatially-varying superconducting gap emerging from a charge-stripe CDW in kagome superconductors, a surprising cooperative CDW-superconductivity phenomenon outside the core focus but broadly significant."
+    },
+    {
+      "id": "2610.32199",
+      "title": "Magnonic time crystal with lasing coherence",
+      "authors": [
+        "Jiantao Song",
+        "C. K. Wei",
+        "Shuhuan Ma",
+        "Yiming Pan",
+        "Zhijian Chen",
+        "Li Yu",
+        "Wei Lu",
+        "Bimu Yao"
+      ],
+      "abstract": "Discrete time crystals (DTC) can respond at an integer multiple of the drive period. Internal order-parameter measurements have advanced studies of this novel non-equilibrium phase of matter; however, turning this order into highly coherent, externally accessible radiation remains challenging: pump-driven nonlinear processes must supply sufficient gain to compensate dissipation while preserving subharmonic stability. Here we realize a room-temperature magnonic time crystal (MTC) with radiation of lasing coherence using a pump-induced magnon mode in yttrium iron garnet. A microwave beat drive produces robust period doubling over a finite parameter range, with spectral signatures of higher-order MTC at stronger driving. The emitted field exhibits linewidth narrowing to 260.0 Hz and a first-order correlation decay time of 995 \\mu s. Our model links this response to three-magnon confluence, yields a stability region consistent with experiment and predicts a possible transition to chaos. We further map the complex temporal dynamics into frequency-resolved nonlinear features for reservoir computing. These results bridge time-crystalline order and nonlinear information processing through intrinsic magnon-magnon interactions and lasing coherence.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.32199",
+      "tier": "brief",
+      "why": "Realizes a room-temperature magnonic discrete time crystal with laser-like coherence and narrow linewidth, a surprising nonequilibrium phase of matter result worth broad awareness."
+    },
+    {
+      "id": "2610.32936",
+      "title": "Generating entanglement in quantum matter with pathway-entangled photons via resonant inelastic X-ray scattering",
+      "authors": [
+        "Chunjing Jia",
+        "Valentin Walther",
+        "Laimei Nie"
+      ],
+      "abstract": "Resonant inelastic X-ray scattering (RIXS) is conventionally used to probe elementary excitations and correlations in quantum materials. Here, we propose an interferometric RIXS protocol that instead creates entanglement between spatially separated regions of a solid-state material. An incident X-ray photon is coherently split by a beam splitter into two arms illuminating opposite ends of a sample. Recombining the scattered photons at a second beam splitter and detecting an energy-selected photon then projects the material into a coherent superposition of excitations at the two ends. This protocol is the X-ray, solid-state analogue of the Duan-Lukin-Cirac-Zoller (DLCZ) heralding scheme. Using a Kramers-Heisenberg formalism with quantized photon modes, we show that orthogonal and degenerate end excitations yield maximally entangled states. We illustrate this mechanism in three models: (1) two decoupled sites yield a heralded Bell state. (2) An open tight-binding chain exhibits reflection-parity-dependent interference, providing a benchmark for the interferometer's coherence. (3) A spin-1 Haldane (AKLT) chain yields an entangled pair of fractionalized edge spins. We also discuss practical considerations and challenges for realizing the protocol in X-ray experiments.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.str-el",
+        "physics.optics"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.32936",
+      "tier": "brief",
+      "why": "Proposes an X-ray RIXS analogue of the DLCZ protocol to herald entanglement between distant regions of a solid via photon interference, a novel quantum-optics-meets-quantum-materials technique."
+    }
+  ]
+}

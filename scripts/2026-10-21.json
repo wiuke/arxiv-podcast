@@ -1,0 +1,531 @@
+{
+  "date": "2026-10-21",
+  "format": "dialogue",
+  "n_papers": 57,
+  "episode_title": "Darkening excitons, exciton density limits, cooperative LEDs, and an anticrystal in graphene",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October twenty-first, and archive condensed matter dropped around fifty-seven new papers overnight. We're picking out five for a deep look and five quick hits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's got a nice thread running through it. Two papers on interlayer excitons that reach completely opposite conclusions about photon statistics depending on how you pump them, a magnetic field that turns off a bright exciton instead of turning on a dark one, and on the more exotic end, a proposed anticrystal state hiding inside rhombohedral graphene's quantum oscillations."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the exciton darkening paper, first in the show notes. Everybody knows you can brighten a dark exciton with an in-plane magnetic field in a tungsten diselenide or molybdenum disulfide monolayer. This group did the reverse: they made a bright exciton go dark."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which sounds like it should just be the same physics viewed from the other side. Why does it need a special material?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Because in binary tungsten- or molybdenum-based diselenide monolayers, the bright and dark exciton are split by about forty millielectron-volts. Mixing them with a realistic field barely dents the bright state's population. So they used an alloy instead, roughly two-thirds molybdenum, one-third tungsten diselenide, grown and encapsulated in hexagonal boron nitride. Alloying pushes the conduction band spin splitting close to zero, so the bright-dark splitting collapses to about fourteen point two millielectron-volts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Small splitting plus the right magnetic coupling, and now the mixing can actually compete with the splitting."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. At four point two kelvin, as they ramp an in-plane field up to twenty-five tesla in the Voigt geometry, a new line appears below the bright exciton past about fifteen tesla, growing quadratically with field, the classic signature of magnetic brightening of a dark state. But at the same time the original bright line drops by about eighty-five percent."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the part binary tungsten diselenide doesn't show. So what's actually suppressing the bright line, is it the dipole rotating out of plane?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They checked that explicitly and it's not it, the dipole-reorientation effect only costs about one percent of intensity at thirty tesla. Instead it's a population effect. The bright-like branch gets pushed up in energy as the field mixes it with the dark state, so at four kelvin its thermal Boltzmann population collapses. Plugging in their fitted splitting and an effective in-plane g factor of five point two gives a predicted population drop of about ninety-two percent, close to the observed eighty-five."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Five point two is a big g factor for this coupling. Binary materials give you about two."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and that enhancement is itself alloy-induced, consistent with a similarly large in-plane g factor recently reported in a related molybdenum-tungsten diselenide composition. The catch is that this g factor is quite sensitive to the exact splitting you assume for fitting. Depending on the fitting procedure they get anywhere from four point six to six point four, even though the splitting itself stays pinned around fourteen millielectron-volts across all fits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the qualitative story, lowest state is dark, field mixes it with the bright exciton and starves its population, is solid, but the precise coupling strength has real uncertainty."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a fair summary. They back the dark assignment with density functional theory plus GW quasiparticle calculations and spin-resolved band unfolding on a related alloy composition, which confirms the lowest transition at the valley is spin-forbidden. The broader point is that composition becomes a dial for engineering which exciton sits on top, and thus for using magnetic fields to redirect emission."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Second paper, also on excitons but now interlayer ones in molybdenum diselenide and tungsten diselenide heterostructures, asking how dense you can pack them before something breaks."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is paper two. The team does time-resolved photoluminescence and second-order autocorrelation on near-sixty-degree-twisted, hexagonal-boron-nitride-encapsulated heterostructures, scanning both excitation power and bath temperature from one point seven up to twelve kelvin."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they want the actual exciton density, not just intensity. How do you get that from photoluminescence alone?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Clever trick: they collect with both a single-mode fiber, which only sees a tiny point point four eight square micron spot, and a multi-mode fiber collecting from a two hundred ten square micron area. Excitons diffuse out of the small spot at high density, so comparing lifetimes and amplitudes from the two collection geometries lets them correct for that loss and back out a real density."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And where does it saturate?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Around two point four times ten to the thirteen per square centimeter in one sample, five point six times ten to the twelve in the other, both consistent with theoretical predictions for a Mott transition of interlayer excitons in this material system. Spectral broadening and a slight drop in the lowest peak's photoluminescence amplitude accompany the saturation, both compatible with Mott physics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But they hedge on calling it definitively a Mott transition?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They do. They point out an alternative: photo-doping could be renormalizing the moiré and disorder potential landscape, flattening it out as more carriers accumulate, which would also explain the roughly fourfold difference in saturation density between their two samples. They argue against simple filling of isolated moiré trap sites because that would give sharp, blueshifting, asymmetric lines, which they don't see."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the autocorrelation measurement, what does the quantum optics side show?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "g-two-of-zero stays at about one, Poissonian, basically flat across the entire density and temperature range they can reach, from a dilute gas all the way up to the saturation density. No bunching signature of an emerging correlated or condensed phase."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Though they're honest that their time resolution, twenty-five picoseconds, is much coarser than the expected coherence time of these excitons, which is only a few hundred femtoseconds. So a thermal-light bunching signal could in principle be hiding below their resolution."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which sets up a nice contrast with paper three, because that one does see huge bunching, just from a completely different excitation scheme."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three is an electrically driven interlayer exciton light-emitting diode, also molybdenum diselenide and tungsten diselenide, but now nearly zero-degree aligned and electrically pumped rather than optically excited."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The device design is the key trick here. A monolayer boron nitride spacer is selectively inserted so direct interlayer tunneling only happens in a roughly one-micron-wide strip near one flake edge. A fringing electric field at the geometric boundary further squeezes electrons and holes into the corners, so the emission comes from just a few diffraction-limited spots."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Sub-wavelength confinement, so you satisfy the Dicke criterion for superradiance for free."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and they confirm it with Hanbury-Brown-Twiss measurements. In the neutral exciton regime and especially when weakly localized electrons from in-gap states are present, g-two-of-zero shoots past two, the classical thermal-bunching limit, reaching about five, and in the lowest-current limit as high as thirteen. That's reported as the largest g-two-of-zero seen in transition-metal-dichalcogenide systems without resorting to high-energy cascade processes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the dynamics aren't just a simple bunching peak."
+    },
+    {
+      "speaker": "Ava",
+      "text": "No, there's a fast initial decay with a characteristic time of one hundred to three hundred nanoseconds, matching the exciton lifetime, then the correlation dips below one, antibunches, and then revives into a second bunching peak on a much longer timescale, one to five microseconds. All of this vanishes once you dope the system into a full electron or hole Fermi sea, but gets enhanced by localized, not delocalized, electrons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That revival pattern is unusual. What's their explanation?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They build a minimal quantum master equation with just three parameters: number of emitters, single-emitter radiative lifetime, and an incoherent recharging time. In the regime where recharging is slow compared to the radiative decay, the model shows that uncorrelated recharging populates both bright superradiant states and dark subradiant states, and those dark states act as reservoirs that intermittently feed back into the bright manifold, producing exactly this delayed antibunch-then-revive signature."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Do they rule out boring explanations, like it's actually exciton condensation, or just thermal intensity fluctuations?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They go through several. Condensation is disfavored because emission should then fill the whole device rather than sit only at the corners, and because there's no abrupt current signature you'd expect from coherent tunneling. Thermal bunching from the narrowest reported exciton linewidths would decay in under a hundred picoseconds, far too fast to explain microsecond-scale revivals. And correlations persisting up to seventy to eighty kelvin, an energy scale of six to seven millielectron-volts, is also inconsistent with the roughly forty-five kelvin degeneracy temperature they estimate for a condensate."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So between paper two and three, the lesson seems to be that it's not about whether interlayer excitons can be nonclassical in principle, it's about how you inject them. Diffraction-limited optical excitation into a diffusive puddle gives you Poissonian light. Sub-micron electrical injection with a slow incoherent recharging channel gives you genuine cooperative emission."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a good way to put it, and it's a nice illustration of why device geometry matters as much as the material for this kind of quantum optics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Fourth paper moves away from excitons into pure quantum Hall-adjacent territory: quantum oscillations in rhombohedral graphene, trying to explain a weird jump in the Shubnikov-de Haas frequency seen right before the material turns superconducting."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the quarter-metal regime of rhombohedral tetralayer graphene, where spin and valley are fully polarized. A recent experiment saw that as you lower the carrier density toward the superconducting dome, the dominant oscillation frequency jumps upward abruptly, and new frequencies appear. A single-particle band picture can give you multiple frequencies but not the discontinuous jump."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And their fix is interactions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. At the relevant densities, the band has a Mexican-hat shape, so the Fermi sea is an annulus: an outer electron-like contour and an inner hole-like pocket. There are two competing fates for that inner pocket. Coulomb exchange can act like a surface tension and simply collapse it, leaving an ordinary, smaller, simply-connected Fermi liquid. Or, at lower density, the holes in that pocket can crystallize into a triangular lattice while the outer electrons stay itinerant and metallic. They call that second state an anticrystal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Coexisting crystal and metal in the same band. How do they actually show that's the ground state rather than just a toy idea?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Large-scale unrestricted Hartree-Fock calculations on the real rhombohedral graphene continuum model. The charge density self-organizes into a lattice of localized holes, roughly two point two electrons per unit cell, and the diagonal occupation still shows a sharp Fermi discontinuity along the outer contour, confirming the itinerant electrons stay metallic. They also check stability with time-dependent Hartree-Fock and find real, positive-energy collective modes, so it's not just an artifact of a restricted ansatz."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And this explains the frequency jump how, exactly?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "When the pocket just collapses in the liquid, the remaining Fermi contour shrinks, so the oscillation frequency goes down smoothly with density, as you'd expect. But in the anticrystal, the periodic potential from the frozen hole lattice reconstructs the electron contour into separate segments that reconnect through magnetic breakdown tunneling, at a gap of about one point five millielectron-volts. The resulting breakdown orbit is close in area to the original, larger, bare outer contour, which is bigger than the collapsed liquid's Fermi surface. That size difference is exactly the upward jump."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any caveat on how literally to take the quantitative match?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, they note the relative oscillation amplitudes they calculate assume every orbit has the same quasiparticle lifetime, which is probably not true experimentally, so amplitude mismatches with the measured spectrum shouldn't be read too strongly. But the qualitative trio of features, the jump itself, an extra frequency near one point two times the dominant one, and a multitone spectrum below the critical density, all come out of the same mechanism."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they're explicitly framing the anticrystal as a candidate normal state sitting right next to the superconducting dome."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Including a speculative line at the end about the hole crystal's own vibrations potentially mediating pairing among the itinerant electrons, an electronic supersolid flavor of superconductivity. That part is clearly marked as an open possibility, not something they've calculated."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five, swings back toward moiré materials but through a pure quantum-geometry lens: the layer pseudospin in twisted bilayers."
+    },
+    {
+      "speaker": "Ava",
+      "text": "In any twisted bilayer, position-dependent interlayer tunneling makes the layer index behave like a pseudospin, with a z-component measuring which layer a state lives in and the in-plane components describing interlayer coherence. People usually think about driving this with an out-of-plane field. This paper asks what an oscillating in-plane electric field does to it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Naively you'd guess nothing, since an in-plane field doesn't care which layer you're in."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That intuition turns out to be exactly right for the spatially averaged response, but wrong locally. The key symmetry point is that spin is a pseudovector that rotates with the lattice, so an in-plane field can linearly polarize a real spin. Layer pseudospin's z-component, though, is a scalar, invariant under the threefold rotation of the moiré lattice. A scalar can't pair linearly with a vector field and still respect threefold symmetry, so the net, cell-averaged layer polarization is forced to be exactly zero at linear order."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So where does the field's effect actually go?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Into a brand new quantum-geometric object they call the Zeeman quantum geometry of the layer pseudospin, built from the interband Berry connection and the layer matrix element. Its real part is a layer-pseudospin quantum metric, its imaginary part a Zeeman-Berry curvature, and critically, these are nonzero at every individual momentum point even though their integral over the whole moiré Brillouin zone vanishes."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Meaning the drive doesn't shift the net layer polarization, but it redistributes it in momentum space, which then shows up as a real-space pattern inside the moiré unit cell."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's the testable prediction. For a twisted molybdenum ditelluride homobilayer they solve the driven problem in the Floquet picture and show the local layer-resolved density, essentially the difference in electron density between top and bottom layer, develops a moiré-periodic pattern that changes sign across the cell, with modulations up to about twenty percent of the saturated pseudospin for realistic terahertz-scale in-plane fields of a few kilovolts per centimeter."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Directly imageable with layer-resolved scanning tunneling microscopy, presumably, since that's exactly the kind of local layer-contrast measurement it would show up in."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's their proposed probe. They also work out where a net, cell-averaged signal can sneak back in at higher order: a rectified response that's linear in the applied out-of-plane displacement field and quadratic in the drive, a helicity-odd response under circular polarization that flips sign between the two valleys, and a third-harmonic response with a sixfold angular pattern. All three require breaking the layer-exchange symmetry with a finite displacement field, consistent with the selection-rule argument."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So this gives experimentalists a clean way to manipulate the internal layer texture of a flat band using only an in-plane field, without touching the out-of-plane polarization that correlated states in these flat bands usually depend on."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the pitch, and since the argument only relies on threefold symmetry, it should apply to basically any twisted transition-metal-dichalcogenide homobilayer, not just the molybdenum ditelluride case they computed."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Quick hits now. First, twisted trilayer graphene, where Bernal and rhombohedral stacking domains meet along smooth boundaries. The authors argue that massless Dirac carriers get trapped inside triangular Bernal domains without any mass barrier, bulk gap, or physical edge."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The mechanism is that these massless carriers simply have no adiabatic path into the rhombohedral regions, and escape through coupling to massive carriers is exponentially suppressed by how smoothly the stacking varies. The reward is density-of-states oscillations that reportedly encode Eisenstein-integer arithmetic, tying energy levels to prime factorizations, relativistic confinement showing up as number theory in an electronic spectrum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Next, a scanning tunneling and ARPES study of niobium iridium telluride, a candidate Weyl semimetal predicted to be a quantum spin Hall insulator as a monolayer."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They find a flat surface resonance about eight millielectron-volts below the Fermi level that's remarkably sensitive to the local stacking order. Shift the top layer laterally and that flat feature turns into a dispersive, gap-like one instead, with density-functional theory and quasiparticle interference mapping the shift to how density of states redistributes across the top two layers."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight is a machine-learning method paper for fractional quantum Hall states on the sphere, aimed at Landau level mixing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They identify a tension: give the neural network too few physical priors and it's hard to optimize, impose something like flux attachment too rigidly and you kill its flexibility. Their fix, letting the orbital pairing factors depend on both configuration and orbital rather than fixing a rigid Laughlin-like form, gets the lowest variational energies at filling one-fifth, one-third, and two-fifths, and scales up to thirty-five electrons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Ninth, a theory paper on hidden order in doped one-dimensional spin chains, the kind of order invisible to ordinary two-point correlators and usually only caught by nonlocal string operators."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They show that dynamical two-point response functions, the kind measured by resonant inelastic x-ray scattering or neutron scattering, actually carry clear spectral fingerprints of the hidden-order phase, its quantum critical point, and a related family of gapless symmetry-protected topological phases, making hidden order something a real spectroscopy experiment could in principle catch."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And last, a cold-atom theory paper on the long-sought Luther-Emery liquid in a one-dimensional attractive Fermi gas."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Using the exactly solvable Yang-Gaudin model, they predict that spin Bragg spectroscopy should show a sharp threshold, a complete absence of spectral weight below the spin gap, while the charge mode stays gapless, with the splitting between the two Bragg peaks growing roughly linearly with interaction strength, giving quasi-one-dimensional trapped Fermi gases a concrete fingerprint to look for."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the roundup for today."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Back tomorrow with whatever the archive throws at us next."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.27469",
+      "title": "Magnetic-Field-Induced Darkening of Bright Excitons in a MoWSe2 Monolayer Alloy",
+      "authors": [
+        "Katarzyna Olkowska-Pucko",
+        "Artur O. Slobodeniuk",
+        "Mehdi Arfaoui",
+        "Elena Blundo",
+        "Natalia Zawadzka",
+        "{\\L}ucja Kipczak",
+        "Jan Szpakowski",
+        "Diana Vaclavkova",
+        "Dipankar Jana",
+        "Piotr Kapu\\'sci\\'nski",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Clement Faugeras",
+        "Marek Potemski",
+        "Adam Babi\\'nski",
+        "Antonio Polimeni",
+        "Maciej R. Molas"
+      ],
+      "abstract": "Magnetic fields are widely used to brighten spin-forbidden dark excitons, but the inverse effect on an optically bright exciton has remained largely unexplored. We demonstrate the complementary phenomenon of magnetic-field-induced darkening of a bright exciton in Mo0.68W0.32Se2. At 4.2 K, an in-plane magnetic field up to 25 T activates a dark-exciton line 14.2\\pm1.3 meV below the bright exciton while suppressing the bright-exciton emission by about 85\\%. A bright-dark mixing model quantitatively captures the coupled energy and intensity evolution with an effective in-plane g factor of |g\\parallel|=5.2\\pm0.2. Alloying is crucial to the effect, as it brings the system close to the bright-dark crossover, where a small bright-dark splitting is combined with unusually strong in-plane magnetic coupling. This places the system in a regime where field-induced level repulsion raises the bright-like branch and strongly depletes its thermal population. These results identify a general route to magnetic control of exciton populations through engineering of the bright-dark hierarchy.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.27469",
+      "tier": "deep",
+      "why": "Demonstrates a new magneto-optical control mechanism—field-induced darkening of bright excitons via bright-dark mixing in an alloyed TMD monolayer—directly relevant to valley/exciton spectroscopy in 2D materials."
+    },
+    {
+      "id": "2610.28158",
+      "title": "Density Saturation and Autocorrelation Characteristics of Interlayer Exciton Ensembles in MoSe2/WSe2 Heterostructures",
+      "authors": [
+        "Mirco Troue",
+        "Johannes Figueiredo",
+        "Alina Scheuermann",
+        "Sebastian Loy",
+        "Jonas Kiemle",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "Ursula Wurstbauer",
+        "Alexander W. Holleitner"
+      ],
+      "abstract": "We investigate interlayer excitons in MoSe2/WSe2 heterostructures using time-resolved photoluminescence and second-order autocorrelation measurements across a wide range of excitation powers and bath temperatures. By analyzing the photoluminescence amplitude and lifetime of the interlayer exciton state with the lowest emission energy, we extract a corresponding density-temperature diagram. The extracted exciton density exhibits a saturation at approximately 1013cm-2, consistent with values predicted for a Mott transition of interlayer exciton ensembles in van der Waals heterostructures. Moreover, possible interpretations beyond the Mott transition are discussed. We further test whether the density limit is accompanied by a departure from classical photon statistics. The second-order autocorrelation measurements reveal that the photoluminescence maintains an emission characteristic of g(2)(0) \\approx 1 from low exciton densities up to the maximum reachable density in the investigated exciton ensembles consistent with the lowest-energy exciton ensemble obeying Poissonian statistics.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.28158",
+      "tier": "deep",
+      "why": "Maps the density-temperature phase diagram of interlayer excitons in MoSe2/WSe2 heterostructures and finds saturation consistent with a Mott transition, core to exciton physics in vdW heterostructures."
+    },
+    {
+      "id": "2610.28304",
+      "title": "Steady-state cooperative emission of interlayer excitons in atomically thin light-emitting diodes",
+      "authors": [
+        "Andr\\'es M. Mier Valdivia",
+        "Pavel E. Dolgirev",
+        "Grace H. Chen",
+        "Nadine Leisgang",
+        "Andrew Y. Joe",
+        "Stefan Ostermann",
+        "Deepankur Thureja",
+        "Yongxin Zeng",
+        "Dapeng Ding",
+        "Daniel Rhodes",
+        "Bumho Kim",
+        "Song Liu",
+        "Takashi Taniguchi",
+        "Kenji Watanabe",
+        "James C. Hone",
+        "Susanne F. Yelin",
+        "Hongkun Park",
+        "Mikhail D. Lukin",
+        "Philip Kim"
+      ],
+      "abstract": "When an ensemble of emitters is confined within an optical wavelength, its radiation can become correlated, leading to cooperative emission. In two-dimensional (2D) transition metal dichalcogenide (TMD) electron-hole bilayers, strong light-matter coupling enables the formation of interlayer excitons (IXs), long-lived dipolar excitations that provide an ideal setting for emergent collective phenomena. Here, we engineer an atomically thin light-emitting diode (LED) that generates electroluminescence (EL) from electrically injected IXs that are confined near the sample edges by an edge-enhanced fringing electric field. By measuring Hanbury-Brown-Twiss photon-photon correlations, we find pronounced signatures of collective decay in the form of large photon bunching followed by finite delay antibunching and bunching revivals. These emitter correlation signatures disappear when free charge carriers are doped to form a degenerate Fermi sea but are enhanced by the introduction of localized electrons. The results are consistent with a many-body quantum master equation that models the steady-state superradiant photon statistics of incoherently injected IXs. Our work establishes steady-state cooperative emission in a 2D TMD LED as a platform for studying strong light-matter interactions in electrically driven, non-equilibrium phases of Bose-Fermi mixtures.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.28304",
+      "tier": "deep",
+      "why": "Reports steady-state superradiant/cooperative emission from electrically injected interlayer excitons in a 2D TMD LED, a striking collective quantum optics phenomenon in exactly the author's experimental platform."
+    },
+    {
+      "id": "2610.27134",
+      "title": "Quantum Oscillations across Hole Crystallization in Rhombohedral Graphene",
+      "authors": [
+        "Daniele Guerci",
+        "Enrico Rossi"
+      ],
+      "abstract": "Recent quantum-oscillation measurements in rhombohedral graphene reveal an abrupt increase in the dominant frequency and the emergence of additional frequencies as the carrier density is lowered toward superconductivity. Noninteracting band models can account for multiple frequencies but do not explain the upward jump. We show that these features can arise from two competing fates of the inner hole pocket in an annular Fermi sea: collapse into a simply connected Fermi liquid or crystallization into an anticrystal, in which localized holes coexist with itinerant electrons. Pocket collapse contracts the outer Fermi contour at fixed density, whereas hole crystallization preserves a larger contour that supports magnetic-breakdown orbits. This contrast provides a possible explanation for the frequency jump, while additional reconstructed orbits produce a multitone spectrum. Our results support the anticrystal as a candidate normal state near superconductivity in rhombohedral graphene.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.27134",
+      "tier": "deep",
+      "why": "Proposes hole crystallization (an 'anticrystal') to explain anomalous quantum oscillations near the superconducting phase of rhombohedral graphene, tying correlated electronic states to Fermi-surface physics in a flagship moiré-adjacent 2D system."
+    },
+    {
+      "id": "2610.26982",
+      "title": "Zeeman Quantum Geometry of the Layer Pseudo-spin",
+      "authors": [
+        "Bingxuan Jiang",
+        "Shihao Zhang"
+      ],
+      "abstract": "Two-dimensional layers coupled by position-dependent interlayer tunnelling host a layer pseudo-spin whose polarization is a controllable internal degree of freedom. We introduce the quantum geometry of this layer pseudo-spin: a mixed tensor formed from the interband Berry connection and the layer matrix element, which governs the response to an oscillating in-plane electric field. Because the layer pseudo-spin is an Ising-type scalar invariant under threefold rotation, its selection rules differ from those of a pseudovector spin. In a minimal two-band model, the layer-pseudo-spin quantum metric and Zeeman–Berry curvature are nonzero, while their zone integrals vanish. An in-plane drive therefore leaves the spatially averaged polarization unchanged at linear order but imprints a moiré-periodic intracell pattern, directly imageable by layer-resolved tunnelling. For twisted MoTe2 bilayer, we quantify the local dipole modulation and identify the rectified, helicity-odd, and third-harmonic channels through which a net response appears at higher order.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.26982",
+      "tier": "deep",
+      "why": "Introduces a new quantum-geometric framework for the layer pseudospin in twisted MoTe2 bilayers, predicting moiré-periodic optical responses directly relevant to moiré TMD spectroscopy."
+    },
+    {
+      "id": "2610.28063",
+      "title": "Adiabatic confinement and number-theoretic spectra of massless Dirac fermions in twisted trilayer graphene",
+      "authors": [
+        "Kunihiro Yananose",
+        "Changwon Park",
+        "Young-Woo Son"
+      ],
+      "abstract": "Electrons in graphene move like massless relativistic particles, making them exceptionally mobile but difficult to trap because Klein tunnelling permits unimpeded passage through electrostatic barriers. This challenge extends to atomic collapse and hadron confinement. Twisted trilayers form Bernal and rhombohedral domains joined by smooth boundaries, bringing their carriers into contact. Here we show that a new mechanism, distinct from established approaches, confines massless fermions in equilateral triangular Bernal domains without mass barriers, bulk gaps or physical edges. Simulations and analytical modeling reveal that massless carriers have no adiabatic continuation into rhombohedral domains, while escape through nonadiabatic coupling to massive carriers is exponentially suppressed by smooth stacking variation. Perfect reflection in the adiabatic limit turns Bernal domains into quantum cavities in a gapless, edgeless metal. Striking density-of-states oscillations encode Eisenstein-integer arithmetic, linking energies and degeneracies to norms and prime factorizations. These findings bring relativistic confinement and number theory into experimentally accessible electronic spectra.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.28063",
+      "tier": "brief",
+      "why": "Finds a novel relativistic confinement mechanism for massless Dirac fermions in twisted trilayer graphene domains, linking moiré engineering to number-theoretic spectral structure."
+    },
+    {
+      "id": "2610.27096",
+      "title": "Stacking-Induced Tuning of a Flat-Band Surface State in NbIrTe4",
+      "authors": [
+        "Jiabin Yu",
+        "Mohamed Oudah",
+        "Giang Nguyen",
+        "Hsianghsi Kung",
+        "V. King",
+        "Rysa Greenwood",
+        "Adrian F. Rumson",
+        "Jisun Kim",
+        "Matteo Michiardi",
+        "Giorgio Levy",
+        "Andrea Damascelli",
+        "E. R. Johnson",
+        "Meigan Aronson",
+        "Lukas Muechler",
+        "Sarah A. Burke"
+      ],
+      "abstract": "Ternary layered transition metal dichalcogenides (TMDCs) offer high tunability and access to correlated and topological states. However, like the broader family of layered TMDCs, their properties are sensitive to stacking order and interlayer coupling. Here, we investigate the electronic structure and surface states of NbIrTe4, a candidate Weyl semimetal in bulk, and predicted to be a quantum spin Hall insulator in monolayer form. Using scanning tunnelling microscopy (STM), angle-resolved photoemission spectroscopy (ARPES), and density-functional theory (DFT), we attribute the strong resonance in tunnelling spectroscopy located approximately 8 meV below the Fermi level to a surface-derived flat band which shows sensitivity to the local stacking order at the surface. In regions where the top layer is laterally shifted, tunnelling spectroscopy instead shows a gap-like feature with intensity near the Fermi level shifted in energy. Combining DFT and quasiparticle interference (QPI) measurements, we find this dramatic change in the spectroscopy in the vicinity of the quasi-1D flat-band surface state becomes dispersive due to a change in the spatial distribution of the density of states in the top two layers. These findings establish NbIrTe4 as a platform where surface band dispersion can be effectively tuned through local structural manipulation.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.27096",
+      "tier": "brief",
+      "why": "STM/ARPES study shows a flat-band surface state in the layered TMDC NbIrTe4 is tunable by local stacking order, relevant to stacking-controlled 2D electronic structure."
+    },
+    {
+      "id": "2610.28095",
+      "title": "Neural Network Fractional Quantum Hall States with Learnable Orbital Pair Matrix Factors: Balancing Physical Priors and Flexibility",
+      "authors": [
+        "Yubing Qian",
+        "Weiluo Ren",
+        "Ji Chen"
+      ],
+      "abstract": "Neural network fractional quantum Hall (FQH) states offer a promising alternative for capturing Landau level (LL) mixing and for understanding FQH physics, yet the incorporation of physical priors has so far been limited to the minimal exact constraints built into the ansatz. Working in spherical geometry, we show that the network's flexibility suffers both when only minimal additional physical priors are supplied and when priors such as flux attachment are imposed rigidly. In the former case, the monopole harmonic product orbital (MHPO) ansatz is difficult to optimize, whereas in the latter, the expressivity of the neural network is restricted. We therefore propose the orbital pair matrix factor MHPO (MHPO-M) ansatz, which balances physical priors against flexibility by not only replacing the fixed Laughlin structure with learnable pair factors but also making them dependent on both the electron configurations and the orbitals. Across \\nu=1/5, 1/3, and 2/5, MHPO-M achieves the lowest variational energy among the tested variants, and a factorized orbital readout based on it enables scaling to 35 electrons, with energies competitive with trends inferred from three-LL exact-diagonalization results. These results demonstrate that physical priors can be appropriately incorporated without sacrificing the flexibility of neural network wavefunctions, opening a promising path toward accurate, scalable modeling of FQH systems with LL mixing.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.28095",
+      "tier": "brief",
+      "why": "Improves neural-network variational wavefunctions for fractional quantum Hall states with Landau-level mixing, a methodological advance relevant to QH physics interests."
+    },
+    {
+      "id": "2610.27060",
+      "title": "Spectral signatures of hidden order and hidden quantum critical points",
+      "authors": [
+        "Reja H. Wilke",
+        "Henning Schl\\\"omer",
+        "Sebastian Paeckel",
+        "Annabelle Bohrdt",
+        "Fabian Grusdt"
+      ],
+      "abstract": "Hidden-order phases elude the conventional Ginzburg-Landau framework: although they spontaneously break symmetry, their order remains invisible to standard local two-point correlators. Instead, they are typically characterized by nonlocal (string) order parameters and are believed to underlie a range of exotic quantum states, such as symmetry-protected topological (SPT) phases. While hidden correlations have previously been detected through nonlocal observables in quantum gas microscope experiments, in realistic solid-state systems multipoint observables are typically inaccessible and the signatures of hidden order remain largely unexplored. In this work, we show that hidden order in doped spin chains can be directly probed through dynamical two-point response functions measurable by resonant inelastic X-ray scattering (RIXS) and neutron scattering. Focusing on a minimal model, we numerically identify clear spectral fingerprints of both the hidden-order phase, its associated hidden quantum critical point as well as a specific group of gapless SPT phases. Complementing our numerical results with analytical insights, we uncover the microscopic origin of these spectral signatures and demonstrate how they emerge from the interplay between spin and charge degrees of freedom. Together, our results establish spectroscopy as a practical probe of hidden order and gapless SPT phases and provide a unified understanding of the low-energy physics governing these unconventional quantum phases.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.27060",
+      "tier": "brief",
+      "why": "Identifies spectroscopic (RIXS/neutron) fingerprints of elusive hidden-order and hidden quantum-critical phases in doped spin chains, a surprising result broadening beyond the core 2D-optics focus."
+    },
+    {
+      "id": "2610.27823",
+      "title": "Luther-Emery liquid in one-dimensional attractive Fermi gas",
+      "authors": [
+        "Hai-Ying Cui",
+        "Yi-Cong Yu",
+        "Aashish Kafle",
+        "Han Pu",
+        "Randall G. Hulet",
+        "Thierry Giamarchi",
+        "X\\^i-Wen Guan"
+      ],
+      "abstract": "One-dimensional (1D) interacting Fermi gases underpin a rich variety of quantum liquids, ranging from the Tomonaga-Luttinger liquid and the Fulde-Ferrell-Larkin-Ovchinnikov paired state to the Luther-Emery liquid (LEL). Notably, the LEL-characterized by gapless excitations in charge or spin degree of freedom and gapped excitations in the other-has long been theoretically predicted but has eluded definitive experimental observation to date. By exactly solving the attractive Yang-Gaudin model via the Bethe ansatz, we fully determine the low-energy excitation spectra for both spin and charge channels. For fully paired fermions, the spectrum features gapped spin excitation coexisting with gapless charge excitation. We further employ bosonization to derive analytical expressions for the dynamical structure factor (DSF) of the gapped spin excitation, which is a long-standing challenge in this study. In the trapped gas, we find that the spin Bragg spectroscopy peak occurs at a much higher frequency than the charge-mode peak, where the splitting frequency between these two peaks scales approximately linearly with the interaction strength. Crucially, the spin gap manifests as a sharp threshold in the spin DSF, below which spectral weight is completely absent, proving a direct and unambiguous spectroscopic fingerprint of the LEL. Our work establishes quasi-1D trapped attractive Fermi gases as a pristine experimental platform for the long-sought direct observation of the LEL.",
+      "categories": [
+        "cond-mat.quant-gas",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.27823",
+      "tier": "brief",
+      "why": "Exact Bethe-ansatz solution predicts a clean spectroscopic signature of the long-sought Luther-Emery liquid in 1D attractive Fermi gases, a notable result in quantum liquids outside the core profile."
+    }
+  ]
+}

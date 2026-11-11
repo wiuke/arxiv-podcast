@@ -1,0 +1,481 @@
+{
+  "date": "2026-10-06",
+  "format": "dialogue",
+  "n_papers": 79,
+  "episode_title": "Open orbits toward fractional Chern insulators, paired composite fermions, and terahertz imaging of shift currents",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October sixth, twenty twenty-six, and archive dropped about seventy-nine condensed matter papers overnight. Today's crop has a strong moiré and quantum Hall flavor, plus a couple of genuinely nice optics results."
+    },
+    {
+      "speaker": "Leo",
+      "text": "We've got a claim of fractional Chern behavior in a dispersive, non-flat graphene-on-h-B-N band, a theory paper trying to explain those mysterious even-denominator states in graphene's lowest Landau level, and a terahertz near-field technique that images quantum-geometric photocurrents in bilayer graphene one nanometer at a time."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Plus a cavity-QED proposal for entangling excitons in graphene nanoribbons, and an ARPES paper pushing Floquet engineering into a genuinely dirty bulk metal. Let's start with the moiré paper, since it's trying to break the flat-band dogma that's dominated the fractional Chern insulator field."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, paper one, Wang and collaborators. Every FCI claim so far — twisted bilayer graphene, twisted molybdenum-ditelluride, rhombohedral multilayer graphene — relies on an isolated flat band with near-ideal quantum geometry. This group asks: can you get incipient FCI physics in a band that's just... dispersive?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Their platform is plain monolayer graphene aligned with h-B-N, fourteen-point-five nanometer moiré period, looking at the second moiré miniband near the secondary Dirac point. No twist-angle engineering, no flat band by construction."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Their mechanism has three ingredients. First, saddle points in the miniband create van Hove singularities, and at weak field — below one-point-five tesla — the Fermi contour right at that saddle point becomes an open orbit that runs across the whole Brillouin zone instead of closing into a cyclotron loop."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And open orbits are famously bad for conduction — carriers keep reversing momentum instead of drifting."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly, and they see it directly: resistance at these saddle points shoots up by a factor of a hundred, extreme magnetoresistance, roughly B-squared, consistent with open-orbit transport. Real-space quantum simulations show wavepackets bouncing back and forth instead of propagating. That's ingredient one — kinetic energy gets effectively quenched by field-induced scattering, not by band flattening."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Ingredient two?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Trigonal warping. The Fermi pockets go through a three-pocket, then intermediate, then one-pocket evolution as you move in energy, and this one-pocket region — right next to the open orbit — happens to carry over eighty percent of the whole miniband's Berry curvature. So the topologically interesting part of the band and the open-orbit-suppressed part of the band are the same place in momentum space."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the third ingredient is the magnetic field itself lifting valley degeneracy, since the zero-field Chern numbers of the two valleys are plus and minus one and cancel without it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right. Put all three together and in high-resolution transport, cooled to ten millikelvin, they see fractional-slope features with denominators of three and five sitting on top of an otherwise-explainable integer background. The clearest one corresponds to filling factor minus thirteen-thirds. Cooling from one-point-five kelvin to seventeen millikelvin deepens the resistance minima and the Hall response edges toward a plateau."
+    },
+    {
+      "speaker": "Ava",
+      "text": "But they're careful to call it incipient, not a real FCI."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Very careful — the Hall conductivity never fully quantizes and longitudinal resistance stays finite. So this is suggestive many-body physics, not a slam-dunk topological phase. Still, if the mechanism holds up, it opens FCI hunting to any dispersive band with the right fermiology — rhombohedral trilayer graphene on tungsten diselenide, large-angle twisted T-M-Ds, places people hadn't thought to look because the bands aren't flat."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good segue into paper two, because that's also about a fractional state that refuses to be a normal flat Landau level physics. Perkovic, Wang, and Simon — the puzzle is the even-denominator states seen recently in monolayer and trilayer graphene, sitting right where two zeroth Landau levels cross."
+    },
+    {
+      "speaker": "Leo",
+      "text": "At half filling of an isolated zeroth Landau level with pure Coulomb interactions, theory says you should get a gapless composite Fermi liquid. But experiments see a hard, incompressible gap, and only in narrow windows of displacement field where two Landau levels of different spin and valley character cross."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So something beyond bare Coulomb interactions in an isolated level has to be doing the work."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This paper is the first attempt to quantitatively pin down what. They build a two-band effective Hamiltonian — treating the two crossing zeroth Landau levels as a pseudospin — and systematically estimate every short-range correction anyone's proposed: finite layer separation in trilayer graphene, lattice-scale corrections from the discreteness of the honeycomb lattice, and electron-phonon coupling."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And do any of those, on their own, stabilize an incompressible state?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "No — using exact diagonalization and infinite D-M-R-G, they find you'd need an effective short-range attraction about half the strength of the Coulomb pseudopotential to drive the composite Fermi liquid into a paired phase, first a weak d-wave pseudospin-singlet pairing, then a strongly paired phase at even stronger attraction. But the microscopic estimates of phonons and lattice effects are roughly ten to forty times too small."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the short-range picture alone fails. What rescues it?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Landau-level mixing, treated with the random-phase approximation. Screening from all the other Landau levels reshapes the effective interaction and — this is the key result — it kills the intermediate weak-pairing phase entirely and pushes a direct, first-order transition straight from the composite Fermi liquid to the strongly paired state much closer to realistic parameters, around minus zero-point-two in their dimensionless coupling instead of minus zero-point-five."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Do the actual trilayer graphene parameters from the experiment land in the paired phase?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They land close to the boundary, on the compressible side given the bare dispersion, but given the real uncertainty in tight-binding parameters, a decent chunk of plausible parameter space is in the strongly-paired regime. Importantly, they rule out the Halperin three-three-one state and disagree with an earlier identification of these states as Moore-Read Pfaffian — they argue the reported daughter state at filling seven-thirteenths is consistent with the strong-pairing phase's expected daughter at eight-fifteenths just as well."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The honest caveat?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They say so themselves — this is RPA with the bare dispersion, not a fully self-consistent Hartree-Fock-RPA treatment, and for monolayer graphene specifically the two-band projection is even less justified since the crossing there is interaction-generated rather than a bare single-particle crossing. So: a plausible mechanism, not a proof."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's move from transport to optics — paper three is squarely in our backyard. Borodin and collaborators built cryogenic, polarization-resolved terahertz near-field microscopy and pointed it at dual-gated bilayer graphene to image the bulk photovoltaic effect."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The bulk photovoltaic effect is a photocurrent generated in a material with no junction and no bias, purely from the quantum geometry of the bands — it's governed by the shift vector, basically the real-space displacement an electron picks up during an interband optical transition, and it directly probes the quantum metric, the part of the quantum geometric tensor that's much harder to measure than Berry curvature."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the problem with measuring it at terahertz frequencies is that the wavelength is way bigger than the device, so bulk photocurrent and photothermoelectric signals from the contacts get hopelessly mixed in far-field measurements."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, so they use a metallized A-F-M tip as a near-field antenna, scattering the terahertz field down to deep sub-wavelength spots, and read out photocurrent through the contacts with lock-in detection at the tip's tapping frequency. Device is AB-stacked bilayer graphene sandwiched in h-B-N with independent top and bottom gates, so they control both carrier density and the displacement field that opens bilayer graphene's gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the photon energy, ten-point-five milli-electron-volts, is tuned to match that gap?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "When the displacement-field-induced gap approaches the photon energy, they see a resonant enhancement of optical conductivity and a strong, spatially extended photovoltage that fills the whole device interior — distinct from the contact-localized photothermoelectric signal they see everywhere else. Cooling from forty down to twelve kelvin, the bulk signal grows while an Arrhenius fit gives an activation energy of about ten milli-electron-volts, matching the gap almost exactly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What does the polarization dependence add?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Bilayer graphene has a mirror symmetry that pins the shift vector along one crystallographic direction, so the photovoltage should follow a cosine of twice the polarization angle, phase-locked to that mirror line. They see exactly that below forty kelvin, and it lets them read off the crystal orientation of the device directly from the photocurrent, no diffraction needed. They also carefully subtract an instrumental polarization anisotropy from the tip coupling itself, which is a nice methodological point if you ever do polarization-resolved s-N-O-M."
+    },
+    {
+      "speaker": "Ava",
+      "text": "The electron-hole asymmetry is a nice structural fingerprint too."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Trigonal warping splits each valley's band edge into three off-center pockets. On the electron side, weak doping still sits at the valley-center minimum and only later reaches those warped pockets, so Pauli blocking kicks in at higher density; on the hole side the valence maxima are already at the off-center pockets, so even weak hole doping kills the resonant transitions fast. That asymmetry shows up directly in both the far-field photoconductivity and the near-field photovoltage maps, and matches their band-structure calculation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Nice demonstration that a local optical probe can read out band and quantum geometry simultaneously, with nanometer and milli-electron-volt resolution — relevant if you're ever thinking about probing quantum geometry in twisted T-M-D flat bands this way."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper four is theory, but it's about exciton-cavity entanglement, which is close to home. Villegas and collaborators consider two excitons, each coupled to its own mode of a bimodal cavity, plus a direct exciton-exciton exchange interaction between them."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Like a Förster-type coupling between two emitters, but mediated by Coulomb exchange rather than dipole-dipole coupling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right. They use dressed-state transformations and Löwdin partitioning — basically systematically integrating out subspaces — to show the four-state system naturally splits into three time scales: a local polariton Rabi oscillation between one exciton and its own cavity mode, a long-period beat between the second cavity mode and a dressed superposition of the two excitons, and a fast direct exciton-exciton exchange oscillation when the exchange energy dominates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they don't just do this abstractly — they plug in real material parameters."
+    },
+    {
+      "speaker": "Leo",
+      "text": "From first-principles Bethe-Salpeter calculations on bilayer armchair graphene nanoribbons, which host both intralayer and interlayer excitons with different energies, dipole strengths, and lifetimes. They use exciton energies around one-point-three and one-point-six electron-volts, cavity-exciton couplings of a few gigahertz, and quality factors around a million to get decay and dephasing rates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's the entanglement payoff?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "In the weak and moderate exchange regime, under realistic Lindblad dissipation, the long beat channel sustains an extended plateau of entanglement concurrence between one cavity mode and the far exciton — hundreds of picoseconds, much longer than the fastest oscillation period, because the beat detuning and coupling nearly cancel each other's decay. In the large-exchange regime, population swings nearly completely between the two excitonic states for many coherent cycles before dissipation wins."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Caveat worth flagging: the exchange coupling J itself isn't computed from first principles here — it's treated as a tunable phenomenological parameter, motivated loosely by singlet-triplet splittings in similar one-dimensional systems, tens to hundreds of milli-electron-volts."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Agreed — it's a design-rule paper, giving you closed-form expressions connecting beat period, transfer amplitude, and coherent cycle number to coupling and detuning, rather than a prediction for one specific measured device. Still a nice toolkit if you're thinking about engineering long-lived entanglement in exciton-cavity platforms."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive — paper five takes Floquet engineering somewhere it hasn't really gone: a genuinely bulk, multiband, screened metal. Li and collaborators use time- and angle-resolved photoemission on two-H niobium diselenide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Floquet dressing — periodically driving a crystal with light so each band gets photon-spaced sideband replicas — has mostly been shown on topological insulator surface states, semiconductors, and two-dimensional Dirac materials like graphene. Bulk metals were assumed to screen the effect away, and there's a nasty confound: the outgoing photoelectron itself can get dressed by the pump field in the vacuum, producing so-called Volkov sidebands that look just like genuine initial-state Floquet replicas."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So how do you tell the difference?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Niobium diselenide helps because its relevant metallic bands sit in an energy window where the first-order replica, shifted up by the one-point-two electron-volt pump photon energy, lands in a sparse, mostly-empty part of the spectrum — less contamination from incoherent photoexcited states. They confirm the replica is field-synchronous: it's confined to the femtosecond pump-probe overlap, unlike the slowly-relaxing hot-carrier background near the Fermi level which persists for picoseconds."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That alone doesn't distinguish initial-state Floquet dressing from final-state Volkov dressing though, since both are pump-synchronous."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, so the real trick is rotating the pump's linear polarization while holding everything else fixed, and looking at how sideband weight redistributes across the full two-dimensional momentum map, not just the total yield. They build a model with separate effective optical fields inside the crystal versus just outside the surface — accounting for Fresnel reflection and the material's complex dielectric tensor — computing Floquet-only, Volkov-only, and their coherent sum with one shared parameter set."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And which one matches?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Neither pure channel reproduces the measured momentum distribution curves — Volkov-only overweights the wrong branch, Floquet-only overweights the other branch at the wrong polarization angles — but the coherent interference of both captures the observed branch imbalance at multiple intermediate angles with the same fixed parameters. Even directly adding the two intensities without interference fails, so it's specifically the cross term that matters."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which tells you there really is a nonzero initial-state Floquet contribution hiding under the Volkov background."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the claim, and it's notable they get there without ever resolving an actual hybridization gap between replica and parent band, which has been the usual gold-standard signature. The honest caveat is that this is a model-dependent decomposition — the Volkov amplitude scale is calibrated to match one experimental ratio, not independently fixed — but the momentum texture is reasonably robust to twenty percent changes in that scale. If it holds, it's a template for finding Floquet dressing in other correlated layered metals where charge order or superconductivity might eventually be optically controllable."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's run through the briefs. Paper six, Li and collaborators, is a density-functional-theory recipe paper: they add Hubbard U and V corrections tuned to experimental spin-orbit splittings in molybdenum disulfide, molybdenum diselenide, tungsten disulfide and tungsten diselenide, and show the same fitted parameters also fix the band gap and the ferroelectric potential drop in rhombohedral bilayers. Basically a better starting point if you ever need quantitative first-principles numbers for T-M-D band edges."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven: Parra-Martinez and collaborators calculate intrinsic spin-orbit coupling in stacked graphene, something usually ignored because it's negligible in monolayers. They find a Rashba-like spin-flip process combined with interlayer hopping becomes the leading spin-orbit term in multilayers, modifying the phase diagram and Fermi surfaces of rhombohedral stacks and giving a distinctive density dependence of magnetization in weak field — a reminder that rhombohedral multilayer graphene, already a hot platform for flat-band physics, might have non-negligible spin-orbit physics nobody's been including."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight is a machine-learning potentials paper: Huang and collaborators train a universal interatomic potential, MoiréMLIP, on a large density-functional-theory dataset spanning T-M-D twist angles and stackings, hitting force errors of six to eight milli-electron-volts per angstrom, and a distilled mini version scales to a million atoms on a single G-P-U. They use it to map atomic reconstruction in an alternate-twist molybdenum-ditelluride trilayer, finding a hierarchical polarization network tens of nanometers across, concentrated along moiré-of-moiré domain walls — useful if you need realistic relaxed structures for twisted T-M-D devices without running ab initio on huge supercells."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine is pure formal theory: Cheng and Seiberg study the invertible one-form symmetry of two-plus-one dimensional topological field theories, showing you can universally peel off all the Abelian anyons from the rest of the theory and describe them with Chern-Simons gauge fields coupled to a scalar, constructing a transition field theory that interpolates to a gapless or different topologically ordered phase. It's abstract, but it's directly about the mathematical structure underlying anyon condensation transitions relevant to fractional quantum Hall and fractional Chern insulator phases."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper ten, Abanov and Chubukov, asks a sharp question in many-body theory: does a pole in the electron self-energy necessarily violate Luttinger's theorem, which ties Fermi surface volume to electron density? Using two toy models with gapped bands plus a narrow residual quasiparticle band, they show the answer is no — in one model Luttinger-Ward counting survives for any nonzero quasiparticle residue, in the other it only recovers above a critical residue. Mostly of interest if you work on Mott or pseudogap phenomenology."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the lineup for today. Dispersive-band fractional physics, a pairing mechanism for graphene's stubborn even-denominator states, nanoscale terahertz imaging of quantum geometry, cavity-entangled nanoribbon excitons, and Floquet replicas finally caught hiding inside a bulk metal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good morning, and good luck in the lab."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.06110",
+      "title": "Beyond the Flat-Band Paradigm: Open Orbits as a Route to Correlated States in Dispersive Moiré Minibands",
+      "authors": [
+        "Zihao Wang",
+        "Pablo M. Perez-Piskunow",
+        "Calvin Pei Yu Wong",
+        "Matthew Holwill",
+        "Hao Sun",
+        "Wei Fu",
+        "Junxiong Hu",
+        "Zheng Yuntian",
+        "Zhang Xuanrui",
+        "T. Taniguchi",
+        "K. Watanabe",
+        "A. Ariando",
+        "Geliang Yu",
+        "Li Lin",
+        "Kuan Eng Johnson Goh",
+        "Stephan Roche",
+        "Jeil Jung",
+        "Kostya S. Novoselov",
+        "Nicolas Leconte"
+      ],
+      "abstract": "The realization of fractional Chern insulators has largely relied on isolated flat bands in complex bilayer or multilayer moiré systems with ideal quantum geometry. Whether such phases can emerge in genuinely dispersive bands, and by what mechanism, remains an open question. Here, we propose a mechanism for magnetic-field-induced strong correlations in the highly dispersive bands of monolayer graphene on hexagonal boron nitride. In the low-field classical-to-quantum crossover regime of the second moiré miniband, we show that the interplay of the moiré potential and weak magnetic fields (B < 1.5 T) profoundly alters electron dynamics. Saddle-point van Hove singularities produce extended open orbits that strongly suppress carrier propagation, potentially favoring a regime in which Coulomb interactions become comparatively more important, while weak magnetic fields lift valley degeneracy and trigonal warping redistributes Berry curvature. High-resolution magnetotransport and temperature-dependent measurements reveal fractional-slope transport features and signatures of interaction-driven incompressibility. Because the Hall conductivity is not fully quantized and the longitudinal resistance remains finite, we describe these observations as incipient FCI behavior: transport signatures consistent with a developing fractional Chern insulating state, without claiming a fully developed FCI phase established by complete Hall quantization and vanishing longitudinal resistance. Our results suggest a possible fermiology-driven route toward correlated topological states in dispersive bands in the classical-to-quantum crossover, distinct from the conventional flat-band scenario.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.06110",
+      "tier": "deep",
+      "why": "Proposes and observes incipient fractional Chern insulator-like transport signatures in dispersive (non-flat-band) moiré minibands of graphene/hBN, directly challenging the flat-band paradigm central to your moiré interests."
+    },
+    {
+      "id": "2610.03921",
+      "title": "Escaping the Composite Fermi Sea: An Incompressible State at Half Filling in Graphene's Lowest Landau Level",
+      "authors": [
+        "Domagoj Perkovic",
+        "Ziwei Wang",
+        "Steven Herbert Simon"
+      ],
+      "abstract": "Recent experiments in monolayer and trilayer graphene have observed incompressible even-denominator fractional quantum Hall states within narrow regions of parameter space associated with crossings of zeroth Landau levels. This is surprising because at half filling the Coulomb interaction in the zeroth Landau level is expected to favour a compressible composite Fermi liquid. Here we provide the first quantitative energetic study of the candidate incompressible phases and of the microscopic mechanisms that can stabilise them near such Landau-level crossings. Using exact diagonalization and infinite density-matrix renormalisation group, we first study ultra-short-range corrections to the Coulomb interaction arising from finite layer separation, lattice-scale effects, and electron-phonon coupling. We find that a sufficiently strong attractive short-range interaction drives the composite Fermi liquid first into a weakly paired \\(d\\)-wave pseudospin-singlet state and subsequently into a strongly paired state. However, microscopic estimates of these short-range corrections are far too small to stabilise either incompressible phase. We then incorporate Landau-level mixing through screening within the random-phase approximation. Screening substantially reshapes the effective interaction, suppresses the weak-pairing regime, and strongly enhances the tendency toward strong pairing. For a realistic range of microscopic parameters, the strongly paired phase is stabilised over a substantial fraction of that range. Our results identify the interplay of Landau-level mixing and ultra-short-range interactions as a plausible microscopic mechanism for the experimentally observed incompressible states in monolayer and trilayer graphene and point toward a strongly paired composite-fermion phase as their candidate ground state.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.03921",
+      "tier": "deep",
+      "why": "Exact diagonalization and DMRG study identifying a strongly-paired composite-fermion mechanism for the puzzling incompressible even-denominator states seen at half filling in graphene's lowest Landau level."
+    },
+    {
+      "id": "2610.05620",
+      "title": "Terahertz nanoscopy of quantum-geometric photovoltaics in bilayer graphene",
+      "authors": [
+        "Bogdan Borodin",
+        "Jiangxu Li",
+        "Xuanpu Zhang",
+        "Aleksei Karaborchev",
+        "Som Subhra Guria",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Roshan Krishna Kumar",
+        "Fan Zhang",
+        "Petr Stepanov"
+      ],
+      "abstract": "The bulk photovoltaic effect (BPVE) provides a direct link between quantum geometry and nonlinear light-matter interactions, yet conventional far-field measurements cannot disentangle BPVE from contact- and interface-induced photothermoelectric signals. Here we develop cryogenic, polarization-sensitive terahertz microscopy with deep-subwavelength resolution and apply it to dual-gated AB bilayer graphene. Near resonance between the band gap and terahertz photon energy, we observe enhanced optical conductivity and spatially resolved BPVE. Polarization-dependent measurements reveal a characteristic twofold angular symmetry and a distinct shift-vector direction, both governed by crystalline symmetries and quantum geometry. The evolution of BPVE with carrier density and temperature provides a sensitive probe of the fine electronic structure of bilayer graphene, revealing signatures of trigonal warping and electron-hole asymmetry. Agreement with theory demonstrates that the terahertz nanoscopy of BPVE established here offers an optical lens into the interplay between band and quantum geometry in quantum materials.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.05620",
+      "tier": "deep",
+      "why": "Cryogenic polarization-resolved terahertz nanoscopy cleanly isolates the bulk photovoltaic effect in bilayer graphene, revealing quantum-geometric signatures like trigonal warping via a nanoscale optical probe."
+    },
+    {
+      "id": "2610.04111",
+      "title": "Exchange-controlled quantum beats and entanglement in an exciton–bimodal-cavity system",
+      "authors": [
+        "Cesar E. P. Villegas",
+        "Victor P. Brasil",
+        "Pedro A. S. Contri",
+        "Kevin Liz\\'arraga",
+        "Jonas Maziero"
+      ],
+      "abstract": "We theoretically demonstrate tunable population transfer and entanglement generation in a two-exciton system coupled to a bimodal optical cavity, including an exciton-exciton exchange interaction. By using dressed-state transformations and Löwdin partitioning, we derive effective Hamiltonians that identify three dynamical time scales: local polaritonic oscillations, long-period dressed-state beats, and direct excitonic exchange. We apply the framework to graphene nanoribbon excitons, using excitonic energies, transition dipoles, and lifetimes obtained from first-principles calculations to parameterize the model. In the small- and moderate-exchange regimes, the dynamics become multiscale, and the beat channel sustains sizable quantum entanglement over long dissipative time windows. In the large-exchange regime, the excitonic Hamiltonian dominates and drives nearly complete population transfer between excitonic states over many coherent cycles. The resulting analytical expressions provide direct design rules connecting the beat period, transfer amplitude, and coherent-cycle number to the exchange interaction, cavity detuning, and light–matter coupling. Our results establish a controllable route for engineering long-lived entanglement and coherent excitonic operations in exciton–bimodal-cavity systems.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.04111",
+      "tier": "deep",
+      "why": "Theoretical framework for tunable exciton-exciton exchange and long-lived entanglement generation in an exciton-bimodal-cavity system, parameterized with first-principles exciton parameters, directly relevant to cavity-coupled exciton physics."
+    },
+    {
+      "id": "2610.04958",
+      "title": "Floquet dressing of bulk metallic bands in 2H-NbSe2",
+      "authors": [
+        "Cong Li",
+        "Qirui Cui",
+        "Maciej Dendzik",
+        "Magnus H. Berntsen",
+        "Wanyu Chen",
+        "Zhilin Li",
+        "Anna Delin",
+        "Wentao Zhang",
+        "Oscar Tjernberg"
+      ],
+      "abstract": "Floquet dressing offers a route to controlling electronic states through periodic optical driving. Its realization in solids has centred primarily on topological-insulator surface states, semiconductors and two-dimensional Dirac semimetals. Extending this control to bulk metals would enable manipulation of the itinerant states underlying metallic transport and collective order. Yet strong screening and rapid scattering have long cast doubt on its feasibility in bulk metals, while photoelectron dressing complicates its identification. Here we identify Floquet dressing of the overlapping, bulk-derived metallic bands of 2H-NbSe2 using time- and angle-resolved photoemission spectroscopy. Photon-shifted replicas in a sparse unoccupied-state window retain the parent-band dispersions and appear only during pump–probe overlap. Rotating the pump's linear polarization at fixed probe polarization redistributes replica weight between momentum-space branches. With a common parameter set, a model accounting for the optical fields inside and outside the solid captures this redistribution through coherent Floquet–Volkov interference more closely than either pathway alone or their incoherent intensity sum. These findings extend Floquet dressing to the itinerant bulk bands of a multiband metal without relying on the observation of energy gaps opened by hybridization between parent bands and their photon-dressed replicas, providing a basis for exploring how coherent optical dressing couples to metallic transport and collective electronic phases.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mtrl-sci",
+        "cond-mat.other",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.04958",
+      "tier": "deep",
+      "why": "First clear demonstration of Floquet dressing in the itinerant bulk bands of a multiband metal (2H-NbSe2) via time-resolved ARPES, extending coherent optical control beyond surface/2D Dirac systems where it was thought unfeasible."
+    },
+    {
+      "id": "2610.05496",
+      "title": "Density Functional Theory for 2D Transition-Metal Dichalcogenides with Extended Hubbard Parameters",
+      "authors": [
+        "Xue Li",
+        "Suad Alshammari",
+        "Igor Rozhansky",
+        "James G. McHugh",
+        "Vladimir Falko"
+      ],
+      "abstract": "Accurate modelling of the band-edge electronic structure of transition metal dichalcogenides (TMDs), such as MoS2, is essential for understanding their optical, electronic and spintronic properties and enabling future applications. Here, we supplement the standard PBE exchange-correlation functional with on-metal (U) and metal–chalcogen (V) Hubbard corrections, which can control the orbital composition of band-edge states and consequently improve the quantitative accuracy of various properties. For MoS2, MoSe2, WS2, and WSe2, we optimise the U and V parameters by comparison with experimentally measured spin–orbit splittings at the conduction and valence band edges, and show that these optimal choices also improve agreement of the computed band gap, and ferroelectric potential drop in rhombohedral bilayers, with experimentally measured values. This provides a highly efficient, scalable framework for quantitatively accurate, high-throughput calculations of monolayer and multilayer TMDs, suitable for implementation in 2D-materials databases, as well as large-scale electronic and spintronic device modelling.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.05496",
+      "tier": "brief",
+      "why": "Introduces an efficient DFT+Hubbard-U/V framework that quantitatively reproduces spin-orbit splittings and band gaps across MoS2/MoSe2/WS2/WSe2, useful for high-throughput TMD modeling."
+    },
+    {
+      "id": "2610.05905",
+      "title": "Intrinsic spin-orbit coupling in graphene stacks",
+      "authors": [
+        "Guillermo Parra-Martinez",
+        "Alejandro Jimeno-Pozo",
+        "Ady Stern",
+        "Jose Angel Silva-Guill\\'en",
+        "Francisco Guinea"
+      ],
+      "abstract": "The effect of spin-orbit coupling (SOC) in monolayer graphene has been thoroughly studied in the past. Its impact is commonly disregarded since the electronic structure of graphene is almost unaffected. Consequently, SOC has also been ignored in other graphitic systems. In this work, we calculate the intrinsic SOC in stacks of graphene layers from a model that includes all the valence orbitals of carbon as well as the intra-atomic SOC.The leading spin-orbit term in a graphene multilayer combines a Rashba-like spin-flip process with interlayer hopping. We find that this intrinsic term modifies the phase diagram and Fermi surfaces of finite rhombohedral stacks, and it leads to a distinct density-dependence of the magnetization in weak magnetic fields. This Letter shows that, unlike in the single-layer case, SOC has important consequences in multilayer graphitic systems and it should not be neglected when studying their physical properties.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.05905",
+      "tier": "brief",
+      "why": "Shows intrinsic spin-orbit coupling, usually neglected in graphene, has important consequences for Fermi surfaces and magnetization in rhombohedral multilayer graphene stacks relevant to moiré/graphene physics."
+    },
+    {
+      "id": "2610.04115",
+      "title": "Distilling universal machine-learning potentials for moiré lattices across one million atoms",
+      "authors": [
+        "Thomas Huang",
+        "Yueyao Fan",
+        "Kaichen Xie",
+        "Bolun Li",
+        "Kaijie Yang",
+        "Jenna A. Bilbrey",
+        "Eric Bylaska",
+        "Peter V. Sushko",
+        "Di Xiao",
+        "Ting Cao"
+      ],
+      "abstract": "Atomic reconstruction reshapes moiré materials across multiple scales, from local structure and polarization textures to global electronic topology, yet direct \\textitab initio modeling becomes prohibitive for large superstructures such as marginal-twist-angle moirés and moiré-of-moirés. We develop MoiréMLIP by fine-tuning a universal atomistic model on the density functional theory labeled Moiré Kaleidoscope dataset, which spans transition metal dichalcogenide compositions, symmetries, stackings, and twist angles. MoiréMLIP reproduces \\textitab initio reconstruction with force errors of 6–8\\,meV/\\AA and transfers to smaller twist angles and unseen structures. Knowledge distillation yields MoiréMLIP-mini, which retains this accuracy while extending single-GPU inference to one million atoms. Applied to an alternate-twist MoTe2 trilayer, it reveals a hierarchical polarization network spanning tens of nanometers arising from large moiré-cell distortions sharply localized along the moiré-of-moiré domain walls. These results overcome key accuracy, transferability, and scaling bottlenecks of existing atomistic models and enable predictive simulations across emergent moiré length scales.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.04115",
+      "tier": "brief",
+      "why": "A machine-learned interatomic potential enabling million-atom simulations of moiré reconstruction, revealing hierarchical polarization textures at moiré-of-moiré domain walls in twisted TMD trilayers."
+    },
+    {
+      "id": "2610.04704",
+      "title": "Peeling off Abelian Anyons and Proliferation Transitions",
+      "authors": [
+        "Meng Cheng",
+        "Nathan Seiberg"
+      ],
+      "abstract": "We study the invertible one-form global symmetry of a (2+1)-dimensional topological quantum field theory (TQFT). A universal description of this symmetry ``peels off'' all the Abelian anyons from the rest of the TQFT. This allows us to study this symmetry and some of its consequences, independently of the details of the rest of the system. We then describe these Abelian anyons using U(1) gauge fields with Chern-Simons terms and couple them to a scalar field, thus constructing a particular non-topological theory. This new theory, our transition field theory, exhibits a phase transition from the original TQFT to another phase. The latter is either gapless or another TQFT. This discussion generalizes and extends our earlier work (arXiv:2603.00245). In particular, we give a more detailed description of the global symmetries and their fates in the various phases.",
+      "categories": [
+        "cond-mat.str-el",
+        "hep-th"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.04704",
+      "tier": "brief",
+      "why": "A general field-theoretic framework for 'peeling off' Abelian anyons from 2+1D TQFTs to systematically construct and classify anyon-condensation phase transitions, of broad relevance to topological order."
+    },
+    {
+      "id": "2610.04663",
+      "title": "Does a pole in the self-energy imply a violation of the Luttinger theorem?",
+      "authors": [
+        "Artem Abanov",
+        "Andrey Chubukov"
+      ],
+      "abstract": "Luttinger theorem relates Fermi surface volume to electron density per spin n. It holds in an arbitrary Fermi liquid but is widely believed to break when a fermionic self-energy has a pole. We show that this is not necessarily the case. As an example, we consider a fermionic system consisting of two gapped bands, originating from a self-energy \\Sigma (\\omega, \\mathbfk) with a pole, and a narrow residual quasiparticle band crossing \\omega =0, with a small residue Z \\ll 1 (a residual Fermi liquid). We consider Model I, in which Z also renormalizes quasiparticle bandwidth W to ZW and Model II, in which W remains unrenormalized. The Green's function for such a system G(\\omega, \\mathbfk) contains two zeros and three poles –- one from the quasiparticle band and two from the gapped bands. Yet, we show that in Model I, the Luttinger-Ward analysis is fully applicable for any Z >0, and the results are exactly the same as if the gapped bands did not exist. For Model II, the Luttinger-Ward analysis recovers once Z exceeds some critical value, which depends on fermionic density.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.04663",
+      "tier": "brief",
+      "why": "A surprising theoretical result showing that a pole in the self-energy does not necessarily violate the Luttinger theorem, clarifying a widely assumed breakdown condition in strongly correlated Fermi liquids."
+    }
+  ]
+}

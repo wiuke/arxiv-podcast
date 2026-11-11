@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-11",
+  "id": "sn-05",
+  "format": "dialogue",
+  "episode_title": "Engineering the Gap: Heterostructures, Doping, and the Atom-by-Atom Limit",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Welcome back. This is the prep episode for lecture five of Semiconductor Nanostructures, Professor Ihn's course at ETH Zurich. The lecture title is Heterostructures: band engineering, doping, remote doping, and honestly it's one of the pivot points of the whole course. Up to now you've been thinking about a single bulk semiconductor, its band gap, its effective mass, maybe its doping level as a single number. This lecture is where we start sculpting the electronic landscape on purpose, layer by layer, and in some of today's papers, atom by atom."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, and I think the key word is engineering. We're not just picking a material and living with whatever band structure nature gives us. We're choosing a sequence of materials, or a sequence of dopant placements, to build a potential landscape that electrons have to live in."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. Let's build the intuition before we touch any paper. Band engineering, at its simplest, means this: take two semiconductors with different band gaps, grow one on top of the other with a clean, coherent interface, and the conduction and valence band edges will generally not line up. You get an offset. Stack a narrow-gap material between two wide-gap ones and you've dug a well for electrons, or for holes, or sometimes for both. That's a quantum well. Change the composition gradually and you get a smooth potential ramp instead of a step. This is the same freedom a sculptor has with clay, except the clay is the periodic table and the tool is epitaxial growth."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the classic example from the course is aluminum gallium arsenide on gallium arsenide, where the aluminum content sets the gap and therefore the offset."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. Now overlay doping on top of that picture. A doped semiconductor has extra carriers because you've substituted in atoms with one more or one fewer valence electron than the host. Simple enough. But here's the catch: every dopant atom is also a fixed electric charge sitting in the lattice, and a charge carrier zipping past it gets scattered. More doping gives you more carriers but also more scattering centers, so mobility tends to go down exactly when you're trying to get more current flowing. That tension is baked into every doped semiconductor device."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So how do you get both? Lots of carriers and long mean free paths?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the question that remote doping, also called modulation doping, answers. The trick, which goes back to the Dingle and Stormer work on aluminum gallium arsenide over gallium arsenide in the late nineteen seventies, is to physically separate the dopant atoms from the channel where the carriers actually live. You dope a barrier layer, put an undoped spacer next to it, and then an undoped quantum well. The electrons donated by the dopants fall downhill in energy into the undoped well, but the ionized donors stay behind in the barrier, tens of nanometers away. The electrons sit in a nearly pristine crystal, feeling only a smoothed-out remote Coulomb potential instead of sharp point charges right next to them. Scattering drops enormously, and that one idea is basically why we have high electron mobility transistors and why the quantum Hall effect could be measured so cleanly in the first place."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So remote doping is really just band engineering applied to the dopants themselves, you're choosing where in the vertical stack the charge sits, not just which atoms you put in."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a great way to say it. And once you accept that idea, a natural next question appears, which today's five papers answer from very different directions. If moving a dopant ten or twenty nanometers away from the channel helps this much, what happens if you get rid of dopants altogether and induce carriers purely with a gate? And at the opposite extreme, what if instead of moving dopants away, you place a single dopant exactly where you want it, with atomic precision, and use it as the device itself? We'll see both extremes today, plus a look at how this whole band-engineering game changes when you stack two-dimensional crystals held together by van der Waals forces instead of growing one crystal epitaxially on another."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's start with the van der Waals paper then, since it's really about band engineering in the broadest sense, and it's close to what our group does with twisted and aligned two-dimensional materials."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good place to start. This is the Geim and Grigorieva review, Van der Waals heterostructures, from 2013. The background is that by the early twenty-tens, graphene research had matured, and people realized graphene is just one member of a whole family of layered crystals you can peel down to a single atomic plane. Boron nitride, molybdenum disulfide, and dozens of others cleave the same way graphite does, because within a layer the bonding is strong and covalent, but between layers it's weak van der Waals attraction."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the question they're asking is basically, if I have a drawer full of these different atomically thin crystals, can I stack them in any order I like, the way you'd snap together Lego bricks, and get a new designer material?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's precisely the framing they use, right down to calling it atomic-scale Lego in the figure. And the surprising experimental finding, which really is the heart of the paper, is that it works far better than anyone expected. You'd think that stacking two surfaces together would trap all the usual hydrocarbon contamination that coats every surface in air, turning your heterostructure into what they call a layer cake glued by gunk. Instead, the van der Waals attraction between the clean patches is strong enough to literally squeeze the contamination out sideways into isolated micrometer-sized bubbles, leaving large atomically sharp, clean interfaces in between."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's wild, so the assembly process self-cleans."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It does, and that single fact is why the field exploded. The review shows cross-sectional electron microscopy of a superlattice made from six alternating bilayers of graphene and boron nitride, with atomically resolved layer-by-layer contrast, and also a double-layer graphene device where two graphene Hall bars are separated by as little as three layers of boron nitride, about one nanometer, specifically to study the regime where two electron liquids are so close they feel each other's Coulomb field strongly without being able to tunnel into each other."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And this is also where boron nitride first showed up as a substrate, right, not just a spacer?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and that's a second major thread. Just putting graphene on flat, inert boron nitride instead of the standard silicon oxide substrate removed a huge source of disorder and roughly increased graphene's measured mobility by a factor of ten. That alone let people see ballistic transport effects at room temperature, like negative bend resistance and magnetic focusing, where electrons literally bounce along semicircular cyclotron arcs between an injector and detector contact, showing up as resonances in conductivity whenever the orbit size matches the contact spacing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So that's a transport signature you could, in principle, use to directly measure the electron's cyclotron radius, which is a nice way to actually see the mean free path rather than just infer it."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and the review highlights that figure for just that reason. But the part that connects most directly to band engineering is the crystallographic alignment story. If you rotate the boron nitride crystal underneath the graphene to be nearly lattice matched, within a degree or so, the slight mismatch and rotation between the two honeycomb lattices creates a moire pattern. Because the orbitals of the boron nitride still reach out of plane and perturb the graphene electrons even though the bonding is weak, that periodic moire potential reconstructs the band structure. New Dirac cones appear at the edges of a superlattice-sized Brillouin zone, both in the valence and the conduction band, and this shows up dramatically as new peaks in resistivity and even as a sign change in the Hall effect at those special densities."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So band engineering here isn't about chemical doping or a vertical offset, it's purely geometric, you're imprinting a long-wavelength periodic potential just by choosing the twist angle."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the key takeaway, and it's exactly the seed of the whole moire superlattice field you work close to, including the later Hofstadter butterfly measurements in the same graphene-on-boron-nitride system that this review anticipates. Why did this paper matter for the broader heterostructure story? Because it showed that band engineering no longer requires lattice-matched epitaxy at all. Silicon and germanium have to be grown with careful strain management, as we'll see in the next paper, but van der Waals crystals can combine wildly different lattice constants and symmetries, because the interlayer glue is weak and doesn't demand registry. That is a genuinely new degree of freedom for band engineering, moire period and twist angle, on top of composition and thickness."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good, let's keep that remote-doping thread going, because the next paper is squarely about that, but in a very modern, very practical material."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, this is the Sammak and coworkers paper on shallow, undoped germanium quantum wells, from twenty nineteen. Here's the background you need. Holes confined in modulation-doped germanium and silicon-germanium heterostructures, where you dope the barrier the classical remote-doping way, had already reached extraordinarily high mobilities, over a million centimeters squared per volt-second, and even showed fractional quantum Hall physics. So modulation doping clearly works beautifully for raw mobility. But for a quantum dot or a spin qubit, mobility isn't the only thing that matters. The actual dopant atoms, even sitting in a remote barrier, are a source of charge noise, because an electron can hop on and off a nearby trap and shift the local electrostatic potential, which is deadly for qubit coherence."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the question becomes, can we get the mobility benefits of modulation doping without having any intentional dopants in the structure at all?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the question. Their answer is to go fully dopant-free. No doped barrier anywhere. Instead they build what they call a heterostructure field effect transistor: an undoped strained germanium quantum well, sixteen nanometers thick, sitting under a silicon-germanium barrier only twenty two nanometers thick, so the whole channel is very close to the surface, then a metal top gate on an aluminum oxide dielectric induces the two-dimensional hole gas purely electrostatically, the same way a simple field-effect transistor turns on a channel, except here the channel itself is as clean as a modulation-doped one."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the germanium versus silicon-germanium band alignment is what actually confines the holes, right, this is a direct example of the band engineering we talked about in the intro."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely. They show the comparison explicitly: compressively strained germanium on a relaxed, germanium-rich silicon-germanium alloy gives a type-one alignment, meaning both the conduction and valence band edges of germanium sit inside the gap of the surrounding alloy, so holes are trapped in the well just by the band offset, no doping needed to confine them, only to supply them, and here even that job is done by the gate. Silicon on silicon-germanium, or germanium on silicon nanowires, give type-two alignment instead, where electrons and holes prefer to sit in different layers, which is a completely different design choice depending on what device you want."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the figure with band-edge profiles as a function of germanium content is really the band-engineering diagram for this whole platform."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and once you've nailed that, the question is, with no intentional dopants, where does the disorder that limits mobility now come from? This is where their transport data is really illuminating. As you turn on the gate voltage, no current flows at all until a threshold, because there are genuinely zero free carriers in an undoped, ungated structure. Above threshold, the density grows, and mobility grows strongly with density too, following close to a power law with a fairly large exponent of about two point one. A scaling that steep is itself diagnostic. It tells you the dominant scattering is still from remote charges, but now they're not dopants, they're trapped charges sitting at the dielectric-to-semiconductor interface, twenty two nanometers above the channel."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So remote scattering doesn't disappear just because you removed the chemical dopants, it just moves to whatever charged defects live at the nearest interface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the big conceptual point. They confirm it quantitatively two ways. First, the Dingle ratio, the ratio between the transport lifetime and the quantum lifetime extracted from the damping of Shubnikov-de Haas oscillations, comes out to about twenty seven, a large number that specifically indicates smooth, long-range, remote scattering rather than sharp, short-range disorder like alloy scattering right in the well. Second, the raw numbers are genuinely impressive: at the saturation density of six times ten to the eleven per square centimeter they measure a mobility of half a million centimeters squared per volt-second, corresponding to a mean free path of about six micrometers, a new benchmark for holes in such a shallow, gated channel. The percolation density, the minimum density at which the channel stops being an archipelago of puddles and becomes a connected metal, comes out around one point two times ten to the eleven per square centimeter, similar to the best silicon transistors."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they also look at the Landau level fan and the g factor, which connects nicely to the qubit motivation you mentioned."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, at fifty millikelvin they get a beautifully clean Landau fan diagram in both the quantum Hall conductance and the longitudinal resistivity, a strong qualitative sign of low disorder, because a messy sample gives you a fan with kinks and gaps rather than clean straight lines. From the spin splitting of the levels they extract an effective g factor that is large and tunable, decreasing from about seven down to about four as density increases, attributed to enhanced Coulomb interactions or band nonparabolicity at low density. Combined with a light effective mass of about zero point zero nine times the free electron mass, and the fact that almost any metal, including good superconductors, naturally forms a low-barrier, hole-friendly Ohmic contact to germanium, this material checks essentially every box you'd want for spin qubits and for hybrid semiconductor-superconductor devices, including the kind of proximity physics people chase for topological qubits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So to tie this back to the lecture: this paper is remote doping's logical endpoint. Instead of moving the dopants away from the channel, you remove them entirely and replace their job, supplying carriers, with a gate, while the band engineering, choosing the alloy composition to get type-one confinement, still does the job of trapping those carriers in a clean well."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Nicely put. And it sets up a lovely contrast with the next two papers, where instead of trying to get rid of dopants, people go the opposite direction and try to control exactly where every single dopant atom sits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, this is the Schofield and coworkers paper, atomically precise placement of single dopants in silicon, from two thousand three. What's the motivation here?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The motivation is that ordinary doping techniques, ion implantation or diffusion through a mask, are statistical. Even as lithography resolution improves, there's an inherent randomness, called straggling for implantation, in exactly where an individual dopant atom ends up. That's a problem if your whole device concept, like Kane's proposal for a silicon-based quantum computer using the nuclear spins of individual phosphorus atoms, depends on dopants sitting in specific places separated by specific distances. So the question this paper asks is blunt: can you place a single phosphorus atom in silicon with atomic, not just nanometer, precision?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the method uses the hydrogen-terminated silicon surface as a kind of resist, similar in spirit to electron-beam lithography but at the atomic scale."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly right. You start with a silicon surface fully terminated with hydrogen, so it's chemically inert everywhere. Then you scan a scanning tunneling microscope tip over it with the right bias and current, and the tunneling electrons are energetic enough to break the silicon-hydrogen bond locally, desorbing hydrogen atoms right where the tip passes. They show this works at every scale, from two hundred by thirty nanometer rectangular patches down to isolated single hydrogen atoms removed at spacings of about zero point seven five nanometers. Wherever hydrogen is gone, you've exposed bare, reactive silicon; wherever hydrogen remains, the surface stays passivated and inert."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So then you dose the whole surface with phosphine gas, and it can only stick to the bare patches."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, phosphine molecules land on the exposed silicon and partly dissociate at room temperature into phosphine itself still intact, and a fragment missing one hydrogen, each with its own distinctive, identifiable arrangement relative to the silicon dimer rows, which the authors confirm by imaging small, two-nanometer-wide patches at high resolution and matching the ordered patterns to each species. That identification matters because the next step, getting the phosphorus atom to actually substitute into the silicon lattice, needs to be followed very carefully."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why can't you just heat it up right away to drive the phosphorus into the lattice?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Because the obvious anneal temperature that fully incorporates phosphorus, around five hundred fifty degrees Celsius, is also roughly the temperature at which all the surrounding hydrogen resist desorbs. If that happens, your mask disappears before the phosphorus is locked in place, and the atoms are free to migrate anywhere on the newly bare surface. The whole paper's central finding is that there's a lower anneal temperature, about three hundred fifty degrees Celsius, that's high enough to drive the phosphine to fully dissociate and the phosphorus atom to substitute into the top silicon layer, forming what they call a phosphorus-silicon heterodimer, while being low enough that the hydrogen resist survives completely intact everywhere outside the patterned area."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So there's a narrow thermal window where the P atom moves into place but the mask doesn't melt away around it."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and they map that window out carefully by raising the temperature step by step: at about four hundred fifty degrees the small chains of silicon atoms that get ejected during incorporation diffuse away to step edges; at about five hundred fifty degrees the hydrogen-terminated dimers desorb; and only at about seven hundred fifty degrees do the incorporated phosphorus-silicon heterodimers themselves finally disappear, consistent with known phosphorus desorption temperatures. That sequence of temperature-dependent control experiments is what lets them trust that three hundred fifty degrees Celsius is the sweet spot."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then the punchline figures show it actually working at the single-atom level."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes. First they pattern lines about four nanometers wide, dose with phosphine, anneal, and find a string of these characteristic asymmetric phosphorus heterodimer signatures strictly confined within the four-nanometer line, confirming the hydrogen resist really does act as a hard mask. Then they push to the ultimate limit: a desorption spot only about one nanometer across, just two or three silicon dimers, and after dosing and annealing they find exactly one incorporated phosphorus atom sitting right there. They repeat this with two separate one-nanometer sites placed about twelve nanometers apart and get a single phosphorus atom incorporated at each site, which is right in the separation range needed for the donor qubit array in the Kane architecture."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So this is the paper that essentially proves the enabling fabrication step for atom-by-atom silicon quantum devices, independent of whether the Kane proposal itself ever gets built exactly as envisioned."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly its importance, and it connects straight back to our intro picture. This is doping pushed to its logical extreme in the opposite direction from the germanium paper. Instead of removing dopants to get a clean channel, you use a dopant as the functional object itself, and the whole challenge becomes placing that one atom with the same kind of precision band engineering uses to place an interface."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's bring in the review next, since it zooms out and puts this single-dopant idea in a much bigger context."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the Koenraad and Flatte review, Single dopants in semiconductors, from twenty eleven, and they coin a nice name for the whole emerging field: solotronics, solitary-dopant optoelectronics and electronics. Their framing, with a great historical touch, starts from Pauli in nineteen thirty one essentially dismissing semiconductors as a filthy mess because of uncontrolled impurities. The review's point is that we've now gone so far the other way that germanium can be purified to better than one part in ten to the eleven, meaning unintentional dopants sit on average more than a micrometer apart. At the nanoscale, that means a modern device can have exactly zero accidental dopants, and if you're careful, exactly one dopant you put there on purpose."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they trace how single dopants first revealed themselves, almost by accident, through noise, before anyone was deliberately trying to isolate them."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, the first clean electronic signature was random telegraph noise in transistors cooled to low temperature, caused by a single impurity near the conduction channel randomly trapping and releasing a charge carrier, flipping the current between two discrete levels. That's basically a single dopant announcing its presence through noise before anyone could image it directly. From there the review walks through essentially every technique physicists have thrown at the problem: double-barrier resonant tunneling diodes where features in the current-voltage curve reveal a single donor state in the well; scanning tunneling microscopy on cleaved crystal edges, which can directly image the shape of the bound hole wavefunction around a single acceptor and compare it quantitatively to tight-binding and effective-mass model calculations; and even scanning transmission electron microscopy good enough to pin down the three-dimensional position of a single heavy atom near a transistor interface to about half a nanometer."
+    },
+    {
+      "speaker": "Leo",
+      "text": "There's also a nice conceptual point about why the host has to be a semiconductor specifically, not a metal or an insulator, which I think answers a but-why question directly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It does. In a metal, the host's own electron states overlap so strongly with the impurity that the dopant's discrete character just gets washed out, you can't tell it apart from the sea of conduction electrons. In an insulator, you preserve the discreteness, but you can't apply gate fields or couple the dopant to a transport channel, so you lose the ability to manipulate or read it out electrically. A semiconductor sits in the sweet spot: dilute enough carriers that a single dopant still dominates its local neighborhood, but a band structure that lets you gate it, strain it, and wire it into a circuit."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they connect this straight to device proposals, including ones that reuse ideas from the other papers today."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, they go through Kane's nuclear-spin qubit proposal based on arrays of phosphorus donors in silicon, which is the direct motivation for the Schofield paper we just discussed. They also describe a proposal by Vrijen and coworkers for a silicon-germanium spin transistor that controls a donor electron's spin by using a gate voltage to push its wavefunction between layers with different g-factors, which is a lovely echo of the tunable g-factor we saw directly measured in the germanium quantum well paper. And they explicitly cite the Schofield hydrogen-resist technique as, at the time, the most promising route toward a real single-dopant device, anticipating the exact device we're about to discuss next."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So this review is really the connective tissue of the whole episode: it explains why you'd want a single dopant device at all, catalogs how people observe and model one, and sets up the fabrication challenge that the final paper solves."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Perfectly summarized. Let's go there now."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is Fuhrer, Fuchsle, Reusch, Weber and Simmons, Atomic-scale, all epitaxial in-plane gated donor quantum dot in silicon, from two thousand nine. What's left to solve after the Schofield paper already showed you can place single dopants precisely?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good question, and the paper is upfront about it: by two thousand nine, this hydrogen-resist, phosphine-dosing technique had already been used to build individual components, donor nanowires, tunnel junctions, even small quantum dots, but every one of those was a single piece without a reliable way to gate it. If you add a conventional metal gate on top of the finished, buried donor layer, you introduce exactly the kind of interface, with its own charge traps and defects, that the whole point of this ultra-clean fabrication approach was supposed to avoid."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the idea is to make the gates themselves out of the same doped silicon, patterned in the same atomic plane as the dot, so there's no extra interface at all."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, that's the whole design. They use the identical hydrogen-desorption-then-phosphine-dosing recipe to pattern, all at once, in one plane: a central dot, source and drain leads connected to the dot through eight-nanometer tunnel gaps, and three additional heavily-doped regions used purely as in-plane gates, two barrier gates they call T1 and T2, and a plunger gate called PG. Phosphine dosing and the same careful incorporation anneal turns every patterned region into a highly conductive doped layer, roughly one to two times ten to the fourteen phosphorus atoms per square centimeter, which behaves metallically. Then the entire structure, dot, leads, and gates, gets encapsulated under twenty five nanometers of epitaxially grown silicon, all without ever leaving ultra-high vacuum, before external aluminum contacts are aligned on top from outside."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the big question is whether that delicate nanometer-scale pattern survives the overgrowth and still behaves like the geometry you drew."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It does, and they prove it multiple ways. Current-voltage measurements show the expected contact resistance of about ten kiloohms into the doped leads, and the in-plane gates show essentially no leakage current until the applied voltage exceeds roughly a quarter of a volt, consistent with the designed gap sizes acting as tunnel barriers. Sweeping the plunger gate at fixed source-drain bias gives beautifully regular Coulomb blockade oscillations with a peak spacing of about twelve and a half millivolts, and from the full conductance map versus both gate and bias voltage they extract a charging energy of about three point three millielectron-volts and a full set of mutual capacitances between the dot and each lead, which independently match a three-dimensional capacitance calculation that takes the original scanning-tunneling-microscope pattern as its only input."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the electrostatics literally reconstructs the geometry you wrote with the STM tip, after all that encapsulation, which is a strong confirmation that nothing drifted or diffused."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the conclusion they draw. And then there's the stability comparison, which I think is the most physically satisfying result. When they sweep two of the in-plane gates against each other, the Coulomb blockade peaks trace out a perfectly clean forty five degree line, reflecting the designed symmetric coupling of the two gates to the dot, and this pattern is reproducible and essentially noise-free. But when they instead fabricate a conventional metal top gate above the same encapsulated device and use that to tune the dot, the equivalent gate sweep shows pronounced hysteresis and extra noise, especially once the electric field between gate and device crosses a threshold around two megavolts per meter, which they attribute to charge traps at that dielectric interface switching on."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the in-plane, all-epitaxial gates are not just a clever trick to avoid extra fabrication steps, they're genuinely electrically better, because there's no interface nearby to host traps."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely, and that's the punchline for our lecture topic. This device is doping used as a complete architecture: dopants supply the quantum dot itself, dopants form the ohmic source and drain leads, and dopants even form the gates that control the dot's electron number, all patterned in a single atomic plane with nanometer accuracy, then buried under clean, undoped, epitaxially regrown silicon. It is simultaneously an extreme case of deliberate doping, following directly from the Schofield placement technique, and a demonstration that keeping everything inside a defect-free crystal, away from gate-oxide interfaces, is just as important for stability as it was for mobility in the germanium paper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "It's a nice full circle: the germanium paper got rid of dopants to avoid interface disorder in the channel, and this paper keeps the dopants but still avoids interface disorder, by making the gates out of buried dopant layers instead of surface metal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the unifying thread across today's whole reading list. Let's pull it all together before we close."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So, recapping. Band engineering means choosing a sequence and composition of materials, or a periodic potential from a moire pattern, to sculpt where conduction and valence band edges sit and therefore where carriers can live. The van der Waals heterostructures review showed that this no longer requires lattice-matched epitaxy at all, because weak interlayer bonding both tolerates almost any combination of two-dimensional crystals and, remarkably, self-cleans the interfaces, while crystallographic alignment adds a whole new moire degree of freedom to the band structure."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Doping means adding carriers by substituting atoms, but every dopant is also a scattering center, and remote or modulation doping solves that by physically separating the ionized dopants from the channel in an undoped quantum well, the foundational idea behind the whole high-mobility two-dimensional electron and hole gas story."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The germanium quantum well paper pushed that idea to its logical endpoint, removing dopants entirely and inducing carriers purely by gating an undoped, band-engineered quantum well, reaching mobilities around half a million centimeters squared per volt-second while showing that whatever disorder remains now comes from remote charges at the gate dielectric interface instead of from dopants."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the other three papers took doping in the opposite direction, toward total control over individual atoms. Schofield and coworkers showed you could place a single phosphorus atom in silicon with about one nanometer accuracy using hydrogen-resist scanning tunneling microscope lithography and a carefully chosen incorporation anneal. Koenraad and Flatte's review framed why that matters, cataloguing how single dopants are observed, modeled, and proposed as qubits or quantum light sources across many material systems, under the banner of solotronics. And Fuhrer and coworkers showed the technique maturing into an actual multi-terminal device, a donor quantum dot with its own epitaxially patterned, highly doped in-plane gates, more electrically stable than the same device controlled by a conventional surface gate."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So across the five papers you get the full spectrum: band engineering via stacking and moire potentials, remote doping as the classical and then the dopant-free modern solution to the mobility-versus-carrier-density tradeoff, and atomic-precision doping as the extreme opposite strategy, where instead of hiding dopants you place exactly one where you want and build a functioning device around it."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the lecture in a nutshell. When you walk into Professor Ihn's class and the presentations start, you'll have the physical pictures for all three threads, the historical motivation for each, and the actual numbers behind the key figures in each paper. That's this week's episode. See you next time on arXiv Morning, Nano and Correlated."
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "date": "2026-10-22",
+  "format": "dialogue",
+  "n_papers": 35,
+  "episode_title": "An exciton atlas, chiral spin liquids hiding in Hofstadter bands, and a valley-driven tunneling blockade",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's October twenty second. About thirty five papers hit archive overnight, and we picked five for a closer look plus a handful of briefs."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's got a nice spread for us. A giant review paper that basically maps every excitonic species anyone's ever resolved in hBN-encapsulated TMDs, a theory paper hiding a chiral spin liquid inside a Hofstadter-Hubbard model on a triangular lattice, and a layer-pseudospin ferromagnet paper where valley degrees of freedom shut down interlayer tunneling at high bias. Plus a transport paper on bilayer molybdenum diselenide and an ultrafast optics paper on driven YBCO."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with the one that's basically required reading for anyone in our subfield — paper one, Molas's spectroscopic atlas."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is a review, not a new result, but it's organized exactly the way we'd want: by spectroscopic fingerprint rather than by material. The premise is that hBN encapsulation pushed linewidths down far enough — sub-two-millielectron-volt for molybdenum diselenide, a few millielectron-volts for the others — that you now resolve a whole zoo of states that used to be one blob."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So what's the actual decision tree? If I see an unassigned peak in my PL, how do I figure out what it is?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They lay it out as a flowchart in their figure twelve. PL versus reflectance tells you oscillator strength. Gate dependence tells you charge. Power-law scaling of intensity versus excitation power tells you particle number — biexcitons scale close to quadratic, versus about 1.3 for the neutral exciton. In-plane magnetic field brightens spin-forbidden states quadratically in field, which is how you catch dark excitons that are otherwise invisible. Out-of-plane field gives you the exciton g factor, and that's maybe the single most useful number here."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Because the g factor tracks which bands and valleys are involved."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, there's a clean hierarchy: bright intravalley excitons sit around g equals minus four, spin-forbidden intravalley dark excitons jump to roughly minus eight to minus ten, and momentum-forbidden intervalley excitons — where the electron and hole sit in opposite K valleys — go to minus twelve to minus fourteen. Each extra inequivalent degree of freedom you break symmetry between adds roughly another unit of four to the magnitude. It's not universal, but it's a genuinely useful first filter when you've got three peaks within a few millielectron-volts of each other."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's the most counterintuitive material in here?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Molybdenum disulfide. On paper it should be a bright monolayer — the conduction band spin splitting is a tiny plus three millielectron-volts, favoring the allowed transition. But magneto-PL shows the spin-forbidden dark exciton actually sits fourteen millielectron-volts below the bright one. Electron-hole exchange and the difference in binding energies between bright and dark excitons are comparable in size to that tiny spin splitting, so they win. Molybdenum disulfide ends up behaving like the darkish tungsten compounds at the excitonic level even though the single-particle band structure says otherwise. It also has the richest trion fine structure of the bunch — three resolved negative-trion lines, which ab initio many-body calculations show are mixed intra- and intervalley configurations rather than pure spin-valley states."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And then at the top of the complexity ladder you've got these oxciton, hexciton things."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the part that's genuinely new physics rather than cataloguing. As you dope electron-doped tungsten diselenide higher and higher, you're not just filling one Fermi sea — you start occupying multiple distinguishable spin-valley reservoirs. A hexciton is a six-particle state where the photoexcited pair correlates with two separate Fermi seas; an oxciton adds a third, eight particles total. Push density further until you fill the Q valleys too, and a resonance called M shows up that may involve up to nine separate Fermi particle-hole excitations — something like twenty correlated quasiparticles bound to one photoexcited pair. Its microscopic structure isn't nailed down yet; the authors are honest that it's more a highly correlated multivalley state than a scaled-up biexciton."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good atlas to keep bookmarked. Let's jump to the theory side — paper two, chiral spin liquids in a Hofstadter-Hubbard model."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This connects directly to the correlated Chern insulator physics we've been seeing in twisted TMDs and twisted bilayer graphene. The setup is a triangular lattice at half filling with both a Hubbard U and an external orbital flux threading each triangular plaquette — exactly the situation moiré superlattices put you in once you apply even a modest lab magnetic field, because the unit cells are huge."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So flux plus interactions. What phases are competing?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Three: a free-fermion Chern insulator at weak coupling, a valence-bond solid at strong coupling, and in between — this is the main finding — a U one level two chiral spin liquid, the Kalmeyer-Laughlin type. They use slave-rotor mean field theory, splitting the electron into a neutral spinon and a charged, spinless chargon they call a rotor. As you crank up the flux, the chiral spin liquid window widens dramatically, pushed to much larger U over t, because the flux directly generates a three-spin scalar chirality term that stabilizes it — standard triangular lattice spin-liquid physics, but here the flux is a tunable knob rather than a fixed microscopic parameter."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How would you actually see this with ARPES or STM, given that spinons don't carry charge and don't show up in transport?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the useful part of the paper. Removing an electron removes both a spinon and a rotor, so the single-particle spectral function is a convolution of the two sectors. That convolution smears coherent quasiparticle poles into weakly dispersing ridges and multi-peak structures in the density of states — they give actual numbers, density-of-state peaks near minus three point one, minus four point nine and minus five point five in units of the hopping for one of their flux values. The Chern insulator by contrast keeps a sharp coherent quasiparticle peak weighted by the rotor condensate fraction. So loss of coherence is your first flag for fractionalization."
+    },
+    {
+      "speaker": "Ava",
+      "text": "But a valence-bond solid also has flat, localized excitations, so that alone doesn't distinguish it from the spin liquid."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly the catch they flag. The real discriminator is symmetry and topology, not the spectral shape: the chiral spin liquid stays translationally uniform with spinon Chern number two, while the valence-bond solid visibly breaks translation symmetry in real space, which STM imaging would catch directly. And if you want a true smoking gun rather than an inference, they point to the thermal Hall conductivity of the chiral edge mode, quantized at pi squared k-B squared over three h — that's a transport signature of the neutral edge channel that no trivial insulator can fake."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Nice bridge into our third paper, since it's also about layer and valley pseudospins in moiré-adjacent double-layer systems."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper three, on dynamical tunneling blockade in layer-pseudospin ferromagnets. These are double-layer systems — quantum Hall bilayers, or more recently double moiré bilayers — where spontaneous interlayer coherence looks a lot like an exciton condensate, described by a pseudospin pointing which layer the electron effectively lives in."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the new twist is that modern platforms, like graphene double layers or twisted TMD double bilayers, also carry a valley index in each layer."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right. The authors derive generalized Landau-Lifshitz-Gilbert equations — essentially magnet-style precession equations — for the layer pseudospin and now also for two valley pseudospins, one per layer, using a Keldysh path-integral derivation so it's a genuinely microscopic nonequilibrium theory, not a phenomenological guess."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What happens as you ramp up the interlayer bias?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Without valley degeneracy, the story is the textbook one: below a critical bias the layer pseudospin sits static, giving a normal interlayer direct current. Above that critical bias it starts precessing continuously — that's the AC Josephson effect, an oscillating tunneling current riding on top of a weaker DC component that falls off with bias."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And with the extra valley index?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Completely different outcome. At low bias the two layers' valley pseudospins lock parallel, same as equilibrium, and tunneling proceeds normally. But once you cross the critical bias, the precessing layer pseudospin exerts what they call a ponderomotive force on the valley sector — a time-averaged torque — that pushes the two valley pseudospins toward antiparallel. Because interlayer tunneling physically requires wavefunction overlap between the valley spinors in each layer, antiparallel valleys means essentially zero overlap. Tunneling gets killed."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So no AC Josephson radiation at all, and the DC current doesn't just decrease, it collapses."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's their headline experimental signature: in the valleyless case the DC current drop at the transition is modest, but with the valley sector active it's a much sharper fall, and because the valley pseudospins keep precessing together to generate a gauge potential that locks onto the bias, the AC tunneling and its radiation go to exactly zero rather than just getting weaker. They explicitly flag graphene quantum Hall double layers and twisted TMD double bilayers as the places to look, and suggest in-plane Hall transport, Kerr rotation, or magnetic circular dichroism as probes of the valley reorganization itself."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What's the catch?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "It's mean-field throughout — no thermal noise, no disorder, which they flag as open for future work. And the specific numbers depend on how exactly the interlayer tunneling matrix is structured in valley space, though they do check a more generic tunneling matrix and the blockade survives."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's move to something a little more down to earth — paper four, disorder and phonons in bilayer molybdenum diselenide transport."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is Das Sarma and Babbar taking recent transport data on bilayer molybdenum diselenide — the kind of data people have used to argue for Wigner crystallization at low density — and asking a much more pedestrian question: how much of the temperature dependence is actually just disorder and phonons doing ordinary things."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the answer?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Almost entirely disorder. They do full Boltzmann transport with random-phase-approximation screening, using charged impurity and defect densities taken directly from the experiment — not fit parameters — plus literature values for the longitudinal acoustic phonon coupling in molybdenum diselenide. Screened phonons turn out to be a less-than-one-percent correction to the resistivity all the way up to about one hundred kelvin. If you turn off screening of the electron-phonon coupling, the phonon contribution balloons to roughly a hundred times larger — which tells you screening is doing almost all the work in keeping phonons irrelevant in this regime."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the metallic-side temperature dependence is just thermal weakening of charged-impurity screening."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly, the same physics that's long been understood in silicon and gallium arsenide two-dimensional systems. And they make a broader methodological point: resistivity minima as a function of temperature show up on both sides of the metal-insulator crossover, for completely different reasons. On the insulating side it's activated carriers competing with their own scattering. On the metallic side it's the competition between fading disorder screening and rising phonon scattering. Since both produce a minimum that looks the same on a plot, a resistivity minimum by itself tells you nothing about whether you're looking at a Wigner crystal, an Anderson insulator, or anything else."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a useful cautionary note for anyone reading transport claims of generalized Wigner crystals without an independent optical probe."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which is basically the argument for why our kind of optical detection of correlated states matters — transport alone is underdetermined here."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive, paper five — a bit outside our usual territory, but it's a nice methods lesson. THz conductivity in driven YBCO."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is the Cavalleri group's long-running story about mid-infrared pumping of apical oxygen phonons in underdoped YBCO producing superconductor-like THz optical properties — specifically a one-over-omega divergence in the imaginary conductivity — far above the actual transition temperature."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And the open question was whether that's real or an artifact."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, because the measured THz signal grows sublinearly with pump fluence, and nobody could agree why. One camp said it's saturation of the material response itself, which would mean the earlier papers overestimated the induced change. This paper tests the alternative explanation directly: maybe the pump's own optical properties — its penetration depth and reflectivity — change with fluence, since the THz probe samples much deeper into the crystal than the mid-infrared pump does."
+    },
+    {
+      "speaker": "Ava",
+      "text": "How do they test that instead of just assuming it?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They run a second pump-probe experiment, this time with a mid-infrared probe at the same fifteen to twenty terahertz frequency as the pump, so they can directly measure how the pump's own penetration depth and reflectivity evolve with fluence. They find the penetration depth shrinks and the reflectivity rises substantially near the phonon resonances as fluence increases — both effects that were previously assumed fixed at their equilibrium values."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And feeding that back into the reconstruction fixes the sublinearity without invoking saturation?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Mostly, yes. Once they self-consistently account for the shrinking penetration depth and the reduced absorbed fluence, the fluence dependence of the reconstructed photoinduced conductivity comes out close to linear, which is what you'd expect without any exotic saturation physics. The qualitative superconducting-like signature survives — same one-over-omega divergence — but the inferred superfluid density drops a bit, to about eighty one percent of the earlier estimate for the nineteen-point-three terahertz pump and ninety two percent for the sixteen-point-five terahertz pump."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So the light-induced superconductivity interpretation holds up, just with a more honest error bar."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's the conclusion. Not a new phenomenon, but a nice demonstration that in any pump-probe experiment where the probe outruns the pump in penetration depth, you need to measure the pump's own high-fluence optical response rather than assume it's fixed."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's do the quick ones. Paper six, electric field tunable spin texture in a hafnium disulfide on graphene heterostructure."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Dual-gated device separating carrier density from vertical electric field. Near zero field the spin-charge interconversion is dominated by a spin Hall channel with out-of-plane spins; turning up the field grows Rashba-Edelstein-like in-plane components instead. A clean demonstration that you can electrically dial which spin texture dominates in these interfacial spin-orbit systems."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven, interaction-induced Bloch geometry and thermoelectric transport."
+    },
+    {
+      "speaker": "Leo",
+      "text": "A Hartree-Fock treatment showing that electron-electron interactions reshape Bloch wavefunctions enough to generate their own Berry curvature and quantum metric, feeding into anomalous thermoelectric transport through separate Drude, quantum-metric, and Berry-curvature channels, each with a different scaling with scattering rate. They illustrate it with a triangular-lattice extended Hubbard model, relevant to the same moiré flat-band systems we keep returning to."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight, optical anomalous Hall effect in time-reversal-breaking superconductors."
+    },
+    {
+      "speaker": "Leo",
+      "text": "A theory paper working out which Cooper-pairing symmetries actually produce an intrinsic optical Hall response, tying it to quantum geometry and interband Berry connections. They separate unitary from nonunitary time-reversal-breaking states and show interband pairing is required for the former but not the latter — useful for anyone trying to use optical Hall measurements to pin down exotic pairing symmetries like p-x plus i-p-y."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine, controlled-Z gates for transmon qubits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "An optimal-control framework for twelve-nanosecond CZ gates near the theoretical speed limit, with intrinsic errors pushed down to two times ten to the minus five, plus realistic dephasing models calibrated against published noise data to find sweet spots that are robust without constant recalibration. Mostly of interest if you're building qubits rather than studying 2D materials, but a solid engineering result."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And paper ten, hidden partial symmetries protecting topological states."
+    },
+    {
+      "speaker": "Leo",
+      "text": "They introduce weaker-than-usual symmetry constraints — symmetric only within certain energy windows of an effective Hamiltonian, not globally — and show Su-Schrieffer-Heeger and Benalcazar-Bernevig-Hughes style models still host robust edge states even though the topological invariant is only approximately quantized. They back it up with both Hermitian and non-Hermitian experimental realizations. Conceptually interesting if you ever find a flat band or edge mode that shouldn't be protected by any symmetry you can name."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the show for today."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Lots to think about — especially how much of the Wigner crystal and chiral spin liquid story keeps circling back to needing a spectroscopic fingerprint rather than transport alone."
+    },
+    {
+      "speaker": "Ava",
+      "text": "See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2610.29081",
+      "title": "The Spectroscopic Atlas of Excitonic Complexes in hBN-Encapsulated S-TMD Monolayers: From Excitons to Oxcitons and Beyond",
+      "authors": [
+        "Maciej R. Molas"
+      ],
+      "abstract": "Hexagonal boron nitride (hBN) encapsulation has transformed the optical spectroscopy of semiconducting transition-metal dichalcogenide monolayers (MLs) by suppressing extrinsic disorder and enabling the resolution of an increasingly complex hierarchy of excitonic states. This Review provides a spectroscopy-oriented framework for understanding and identifying excitonic complexes in hBN-encapsulated Mo- and W-based MLs and their alloys. The discussion covers bright and dark excitons, Rydberg states, charged excitons, biexcitons, phonon-assisted replicas, and higher-order Fermi-sea many-body states, including hexcitons and oxcitons, with an emphasis on the experimental signatures that distinguish them. Particular attention is given to the combined use of photoluminescence and absorption-related spectroscopy, electrostatic gating, polarization analysis, excitation-power and temperature dependences, magnetic fields, and time-resolved measurements to establish microscopic assignments. The role of alloying as an additional degree of freedom for engineering the excitonic hierarchy, spin-valley configuration, and magneto-optical response is also highlighted. By organizing the rapidly expanding phenomenology around experimentally accessible fingerprints rather than individual material systems, this Review aims to provide a practical and broadly applicable guide for identifying, comparing, and engineering excitonic states in high-quality two-dimensional semiconductors.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.29081",
+      "tier": "deep",
+      "why": "A comprehensive review mapping the full hierarchy of excitonic complexes (trions, biexcitons, Rydberg states, dark excitons, hexcitons, oxcitons) in hBN-encapsulated TMD monolayers, directly serving as a field reference for the listener's core research area."
+    },
+    {
+      "id": "2610.29916",
+      "title": "Stabilizing and detecting electron fractionalization in the Hofstadter-Hubbard model",
+      "authors": [
+        "Jiahao Yang",
+        "Zeyu Han",
+        "Gang v. Chen"
+      ],
+      "abstract": "Motivated by the recent progress in correlated Chern insulator physics in moiré systems, we investigate the half-filled triangular-lattice Hofstadter–Hubbard model and its electron fractionalization. Among various competing non-magnetic states, increasing the orbital flux stabilizes and broadens the U(1)2 chiral spin liquid phase in the Mott regime. In this exotic regime, the electron is fractionalized into gapped spinons and gapped chargons, whose effective bands are linked to the orbital flux. The convolution of the narrow spinon bands with the gapped chargon excitations produces rich and discernible structures in the electron spectral function and the density of states. These results not only identify the orbital flux as a control parameter for the detailed patterns of electron fractionalization and the nature of the Mott transition, but also provide the key spectral characteristics for the angle-resolved photoemission and scanning tunneling studies of the relevant systems, linking the free-particle band topology to intrinsic topological order in the correlated regime.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.29916",
+      "tier": "deep",
+      "why": "Studies electron fractionalization into spinons and chargons in the Hofstadter-Hubbard model on a triangular lattice, directly relevant to correlated Chern insulator physics in moiré TMD systems and predicting ARPES/STM signatures."
+    },
+    {
+      "id": "2610.28760",
+      "title": "Dynamical Tunneling Blockade in Layer-Pseudospin Ferromagnets",
+      "authors": [
+        "Lingxian Kong",
+        "Yuta Murakami",
+        "Ryuichi Shindou",
+        "Zhiyuan Sun"
+      ],
+      "abstract": "Double-layer systems with narrow or flat electronic bands may exhibit spontaneous interlayer coherence, described by a layer-pseudospin ferromagnetic order parameter. In modern realizations of layer-pseudospin ferromagnets, the electrons carry additional valley degeneracies, endowing each layer with a valley-pseudospin degree of freedom. We study their nonequilibrium steady states driven by a static interlayer voltage bias in the presence of interlayer tunneling. While in the low-bias regime, the system is in a static state with parallel valley pseudospins between the two layers, we show that in the high-bias regime, the dynamical precession of the layer-pseudospin stabilizes the valley pseudospins in the antiparallel configuration, strongly suppressing the interlayer tunneling. This dynamical tunneling blockade leads to an absence of ac current and a sharp drop of the dc tunneling current to a tiny value, in stark contrast to conventional quantum Hall double layers.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.28760",
+      "tier": "deep",
+      "why": "Predicts a dynamical tunneling blockade from valley-pseudospin precession in layer-pseudospin ferromagnets, a novel nonequilibrium phenomenon in double-layer quantum Hall/moiré systems tied closely to valley physics."
+    },
+    {
+      "id": "2610.29260",
+      "title": "Interplay of disorder and phonons in two-dimensional transport",
+      "authors": [
+        "Aryaman Babbar",
+        "Sankar Das Sarma"
+      ],
+      "abstract": "We calculate the temperature- and density-dependent resistivity of bilayer MoSe2 in the presence of charged impurities, short-range defects, and longitudinal acoustic phonons, using the Boltzmann transport theory with screening treated in the random phase approximation, and compare the results with recent transport measurements. The disorder parameters are taken from the experiment itself and the phonon parameters are taken from literature estimates for MoSe2. We find that screened acoustic phonons are a small correction to the disorder-limited resistivity over the entire experimental temperature range, so that the temperature dependence of the measured resistivity on the metallic side is controlled by the temperature-dependent screening of charged disorder and by neutral defects. We also show that a resistivity minimum as a function of temperature can arise on both sides of the metal-insulator crossover through two different mechanisms: on the insulating side from the interplay between activated carriers and resistive scattering, and on the metallic side from the interplay between disorder and phonon scattering. The existence of a resistivity minimum by itself therefore does not identify the phase.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.29260",
+      "tier": "deep",
+      "why": "A detailed Boltzmann-transport analysis of disorder and phonon scattering in bilayer MoSe2 that reinterprets resistivity-minimum phenomenology relevant to correlated-state detection in TMD monolayers."
+    },
+    {
+      "id": "2610.29892",
+      "title": "Unambiguous determination of the THz conductivity in driven YBa2Cu3O6+x",
+      "authors": [
+        "K. Kaj",
+        "K. H. Martens",
+        "D. Choi",
+        "M. Buzzi",
+        "D. Nicoletti",
+        "Y. Liu",
+        "B. Keimer",
+        "A. Cavalleri"
+      ],
+      "abstract": "Mid-infrared pump, THz probe experiments in YBa2Cu3O6+x yield evidence of a high-temperature transient state of the material with the optical properties of a superconductor. However, there are ambiguities in the extracted transient c-axis THz optical properties, primarily resulting from the sublinear growth of the THz response with increasing mid-infrared pump fluence. It was proposed that this effect may be related to saturation of the material's response, which would then perturb its spatial profile and lead one to overestimate the induced change in the transient optical properties. Yet, sublinear growth of the signal could also arise from other effects unrelated to saturation, for example from a change in reflectivity or deposition depth for the pump pulses. Here, we remove this ambiguity by experimentally measuring the fluence-dependent complex optical constants at the 15-20 THz frequencies of the pump. We show that the observed sublinear growth is to be attributed in large part to the enhanced reflection and reduced penetration depth of the pump field at high fluences. When taking into account these findings, we confirm the original interpretation of a light-induced superconducting state both qualitatively and quantitatively.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el",
+        "physics.optics"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.29892",
+      "tier": "deep",
+      "why": "Resolves a long-standing ambiguity in THz pump-probe experiments on YBCO, confirming genuine light-induced high-temperature superconducting optical signatures — a landmark result in nonequilibrium quantum materials outside the core profile."
+    },
+    {
+      "id": "2610.29739",
+      "title": "Electric-field tunable spin texture in dual-gated HfS2/graphene van der Waals heterostructures",
+      "authors": [
+        "Haozhe Yang",
+        "Zhendong Chi",
+        "Eoin Dolan",
+        "Josep Ingla-Ayn\\'es",
+        "Beatriz Mart\\'in-Garc\\'ia",
+        "Witold Skowro\\'nski",
+        "Marco Gobbi",
+        "Andrey Chuvilin",
+        "Luis E. Hueso",
+        "F\\`elix Casanova"
+      ],
+      "abstract": "Spin-charge interconversion provides the essential link between spin information and electrical signals in spintronic devices. In spin-orbit coupled systems, spin-charge interconversion can contain multiple components associated with different spin-polarization directions, reflecting the underlying spin texture. Tuning this spin texture therefore provides a way to control not only the magnitude of spin-charge interconversion, but also the balance among its different components. Graphene-based van der Waals heterostructures provide an attractive platform for this purpose because interfacial spin-orbit coupling can host multiple spin-charge interconversion channels that couple to different spin-polarization directions. Here, we demonstrate electric-field control of spin texture in a dual-gated HfS2/graphene van der Waals heterostructure, where independent control of carrier density and vertical electric field allows us to disentangle electrostatic doping from electric field-induced spin-orbit effects. Nonlocal spin precession measurements show that near zero vertical electric field, spin-charge interconversion is dominated by a spin Hall component with out-of-plane spins. Increasing the vertical electric field enhances additional in-plane spin components with Rashba-Edelstein-like character, including both parallel and perpendicular to the charge current contributions. These results provide experimental evidence that a vertical electric field can reconfigure the effective spin texture and control the corresponding spin-charge interconversion components, demonstrating electrical tunability of spin-orbit functionalities.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.29739",
+      "tier": "brief",
+      "why": "Demonstrates electric-field control of spin texture and spin-charge interconversion in a HfS2/graphene van der Waals heterostructure, relevant to 2D material spin-orbit engineering."
+    },
+    {
+      "id": "2610.29486",
+      "title": "Interaction-Induced Bloch Geometry and Transverse Thermoelectric Transport",
+      "authors": [
+        "Heng-Yu Di",
+        "YuanDong Wang",
+        "Zhen-Gang Zhu",
+        "Gang Su"
+      ],
+      "abstract": "Electron–electron interactions can reconstruct Bloch wave functions, changing their geometry and the associated thermoelectric response. We derive the linear thermoelectric response within the Hartree–Fock (HF) approximation using the thermal length-gauge density-matrix approach, resolving Drude, symmetric quantum-metric, and antisymmetric Berry-curvature contributions. In a noninteracting Bloch eigenbasis, we separate the reconstructed Berry connection into the noninteracting connection and an interaction connection. This gives bare, coherence, and interaction-connection contributions to the anomalous thermoelectric response. We determine the constraints imposed by spatial inversion, rotational, time-reversal, and combined symmetries on the three transport channels. In the relaxation-time approximation, the leading weak-broadening behavior is \\Gamma-1 for the Drude contribution, \\Gamma for the quantum-metric contribution, and \\Gamma0 for the Berry-curvature contribution. The interband scalings apply away from band degeneracies. Self-consistent calculations for the triangular-lattice extended Hubbard model illustrate how interactions generate Berry curvature and a quantum metric, change the symmetry of the system, and thereby contribute to transverse thermoelectric transport.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.29486",
+      "tier": "brief",
+      "why": "Derives how electron-electron interactions reconstruct Berry curvature and quantum metric in a triangular-lattice Hubbard model, with direct relevance to correlated moiré flat-band thermoelectric transport."
+    },
+    {
+      "id": "2610.28786",
+      "title": "Theory of the intrinsic optical anomalous Hall responses in time-reversal symmetry breaking superconductors",
+      "authors": [
+        "Jia-Long Zhang",
+        "Wen Huang"
+      ],
+      "abstract": "Determining the symmetry of the Cooper pairing in superconductors is a central challenge in condensed matter physics. Time-reversal symmetry breaking (TRSB) is among the most distinctive symmetry-breaking pattern of a superconductor. An important subset of TRSB pairing states, including the topological px+ipy pairing, is expected to exhibit the optical anomalous Hall effect. However, the microscopic ingredients that enable the Hall response and their underlying organizing principle in clean superconductors remain unelucidated. Here, we develop a unified theory for TRSB multiband superconductors possessing inversion symmetry, and establish their intrinsic optical Hall response as fundamentally a quantum-geometric phenomenon. We distinguish unitary and nonunitary TRSB states. Diagrammatically, we identify two classes of processes: single-electron tunneling and Cooper-pair tunneling. Both involve at least one interband tunneling event driven by the interband velocity-which is closely tied to the interband Berry connection. We rigorously prove that interband pairing is a prerequisite for unitary states to generate intrinsic Hall response, whereas it is not absolutely needed for nonunitary states. In nonunitary states with intraband pairing alone, the Hall effect can arise through single-electron tunneling, provided spin-orbit coupling is present. An effective theory obtained by integrating out the hole degrees of freedom reproduces these results and shows how pairing may endow electrons with effective Berry curvature. Finally, through symmetry analysis, we show that intrinsic resonances near the superconducting gap edge are allowed in nonunitary states but forbidden in unitary states. Our work thus establishes quantum geometry as a unifying principle for the intrinsic Hall response in superconductors and provides a guide for distinguishing different candidate TRSB pairings.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mes-hall",
+        "cond-mat.quant-gas"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.28786",
+      "tier": "brief",
+      "why": "Develops a quantum-geometric theory of optical anomalous Hall response in time-reversal-breaking superconductors, offering a new optical probe concept analogous to techniques used in 2D exciton spectroscopy."
+    },
+    {
+      "id": "2610.30056",
+      "title": "High-fidelity and robust controlled-Z gates for superconducting transmon qubits. I. Intrinsic errors and decoherence",
+      "authors": [
+        "Chia-Hsien Huang",
+        "Hsi-Sheng Goan"
+      ],
+      "abstract": "Fault-tolerant quantum computing requires quantum gates that combine short duration, high fidelity, and robustness to noise. As quantum processors scale, robustness becomes increasingly important because exhaustive characterization and frequent recalibration of individual gates become impractical. We present a comprehensive optimal-control framework for controlled-Z (CZ) gates between directly coupled, frequency-tunable transmons that systematically accounts for intrinsic Hamiltonian errors and realistic decoherence mechanisms, including energy relaxation and dephasing. Using smooth, single-shot flux pulses, we obtain 12-ns CZ gates–-close to the theoretical speed limit of 11.6 ns–-with intrinsic errors suppressed to the 2\\times10-5 level. We construct dephasing noise models, calibrated against published experimental measurements, that capture fast dephasing from room-temperature control electronics and slow dephasing from 1/f flux noise. Using these models, we identify dephasing sweet spots that suppress sensitivity to dephasing noise. We further exploit transmon asymmetry as a design parameter to access distinct noise-resilient operating regimes. These results establish an experimentally applicable framework for balancing gate speed, fidelity, and noise robustness while reducing characterization and recalibration overhead.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2610.30056",
+      "tier": "brief",
+      "why": "Presents an optimal-control framework achieving near-speed-limit, high-fidelity CZ gates for transmon qubits with built-in noise robustness, a significant advance for scalable superconducting quantum computing outside the core profile."
+    },
+    {
+      "id": "2610.29028",
+      "title": "Ubiquitous topological materials protected by hidden partial symmetries",
+      "authors": [
+        "Lumen Eek",
+        "Xuelong Chen",
+        "Malte R\\\"ontgen",
+        "Wenlong Gao",
+        "Cristiane Morais Smith"
+      ],
+      "abstract": "Symmetries play a crucial role in protecting the topological phases of insulators, ensuring the robustness of their surface states against perturbations. Traditionally, these symmetries have to be obeyed by the system as a whole, which is a rather strong constraint. In this work, we demonstrate that topological effects can also be realized through a substantially weaker form of symmetry that we coin partial latent symmetries. For these, invariance is required only at certain energy scales of an effective Hamiltonian, rather than for the object as a whole. Applying this idea, we construct weak-symmetry versions of the Su-Schrieffer-Heeger and Benalcazar-Bernevig-Hughes models. These weak-symmetry models behave in many aspects just like their conventional brethren–-in particular, they host robust edge states–-, though the corresponding topological invariants are only approximately quantized. We conclude this work by experimentally realizing Hermitian and non-Hermitian versions of such approximate topological insulators and probe their edge states. Overall, given the ubiquity of symmetry in all areas of physics and engineering, we foresee our work to serve as a cornerstone for exploring how conventional, strong symmetry requirements can be replaced by weak-symmetry ones.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2610.29028",
+      "tier": "brief",
+      "why": "Introduces 'partial latent symmetries' that can protect approximately quantized topological edge states even without full system-wide symmetry, broadening the conceptual toolkit for topological phases relevant to flat-band/Chern physics."
+    }
+  ]
+}

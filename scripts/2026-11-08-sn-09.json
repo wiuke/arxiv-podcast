@@ -1,0 +1,332 @@
+{
+  "date": "2026-11-08",
+  "id": "sn-09",
+  "format": "dialogue",
+  "episode_title": "Branched Flow, Charged Impurities, and Klein Tunneling: Seeing Electrons Scatter and Tunnel",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Good morning, and welcome to this weekend's arXiv Morning, Nano and Correlated. This one is prep for Lecture 9 of Semiconductor Nanostructures with Professor Ihn, on Thursday. The title on the slide is going to be something like scattering mechanisms and tunneling transport, and on the reading list there are five papers that, on the surface, look like they belong to totally different eras and materials. Two of them are from the year 2000, imaging electrons flowing out of a quantum point contact in gallium arsenide. One is an STM study of graphene sitting on hexagonal boron nitride. One is a very clean transport experiment where people literally dial in the number of charged impurities in a graphene sheet. And the last one watches electrons tunnel through a p-n junction in graphene and catches them doing something relativistic quantum particles do, called Klein tunneling."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a wide spread. What's the thread that's supposed to tie all of that into one lecture?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The thread is: how do electrons actually get scattered, and how do they get through things. Scattering mechanism is the first half, tunneling transport is the second half, and it turns out the two are deeply connected, because both are about what happens to an electron wave when it meets a potential it didn't design itself to meet. Let's warm up with the standard picture you already know from a Drude or Boltzmann treatment, and then see where these five papers push past it."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Go for it. Mean free path, momentum relaxation time, the usual suspects."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. In the simplest transport picture, an electron drifts under a field, occasionally gets knocked off course by an impurity or a phonon, and the momentum relaxation time tau is the average time between events that randomize its momentum. Mobility is e tau over the effective mass, and the mean free path is the Fermi velocity times tau. That's one number, extracted from a resistance measurement, and it's extremely useful, but it is a statistical, averaged quantity. It tells you nothing about the actual spatial trajectory the electron wave packet follows on its way from contact to contact. And here's a subtlety that matters a lot for today's papers: not all scattering events are created equal. A short range scatterer, like a point defect, kicks the electron into any direction with roughly equal probability. A long range scatterer, like a charged impurity sitting some distance from the two dimensional electron gas, has a Coulomb potential that falls off slowly, and it preferentially deflects electrons by only a small angle. The transport time you measure in a resistivity is actually weighted by one minus the cosine of the scattering angle, so small angle events barely show up in the mean free path at all, even though they happen very often."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the mean free path can hide a lot of small angle scattering that doesn't contribute much to resistivity but might still reroute the electron in real space."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that is going to be the entire plot of the second paper today. Now the other half, tunneling transport. The cleanest example you already know is the quantum point contact: squeeze a two dimensional electron gas into a narrow channel with two gates, and the conductance comes in steps of two e squared over h. That's the Landauer formula, conductance equals two e squared over h times the number of transverse modes that are transmitted with probability one. It's ballistic, not tunneling in the barrier sense, but it's the same formalism you use for tunneling: you sum transmission probabilities over channels. From there it's a short conceptual hop to actual tunneling through a barrier, like the vacuum gap in a scanning tunneling microscope, or an electrostatically defined p-n junction in graphene, where the chiral, massless nature of the quasiparticles makes tunneling behave in a way Schrodinger electrons never do. That's where Klein tunneling comes in, in the last paper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, let's take them in order. First up, the Topinka Science paper from 2000, imaging electron flow from a quantum point contact."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, let's set the scene. By 2000 point contact conductance quantization had been known for over a decade, since van Wees and Wharam in 1988, and it's beautifully explained by adiabatic transmission through a handful of one dimensional subbands. But nobody had ever actually watched the electrons leave the point contact. All you had was the two terminal conductance, a single number as a function of gate voltage. The natural question is: does the electron wave leaving a point contact spread out as a smooth fan, the way you'd picture a wave diffracting through a slit, and can you see the internal structure, the individual transverse modes, in real space?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "And how do you even image something like that without just destroying the delicate ballistic electron with your probe?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the elegant trick. They use an atomic force microscope tip, held at a negative voltage, scanned a few nanometers above a gallium arsenide over aluminum gallium arsenide heterostructure, at one point seven kelvin. The tip is capacitively coupled to the two dimensional electron gas sitting about sixty nanometers below the surface, so no current actually flows into the tip. What the tip does is locally deplete the electron gas right underneath itself, creating a tiny movable scatterer. If that scatterer sits in a region of high electron flow, it backscatters some of the current and the point contact conductance drops a little. If it sits where there's essentially no flow, nothing happens. So by scanning the tip over the surface and recording the small change in conductance at every pixel, you build up a two dimensional image of where the current is actually flowing. This particular sample had a mobility of about one million centimeters squared per volt second and a density of about four and a half times ten to the eleven per square centimeter, giving a mean free path of around eleven micrometers and a Fermi wavelength of about thirty seven nanometers — plenty of room, in principle, for clean ballistic flow."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What did the images actually look like?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "As they opened the point contact from the first conductance plateau through the second and the third, the flow pattern developed more and more angular lobes, and crucially the number of lobes matched the mode index: one lobe on the first plateau, two on the second, three on the third. That's a lovely piece of physics, because it's exactly what you'd expect from the point contact wavefunctions themselves — the Nth transverse mode inside the constriction has N maxima across the channel, and that same N-fold structure gets imprinted onto the emerging flow pattern. They compared this directly to a full quantum mechanical calculation of the wavefunction magnitude for a parabolic confining potential, and the agreement in both the lobe count and the angular shape was excellent."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the fringes you mentioned, the half wavelength spacing?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, that's the other beautiful feature. Running perpendicular to the flow direction, they saw stripes spaced by roughly half the Fermi wavelength, about twenty two nanometers, close to the nineteen nanometers you'd predict from the sheet density. These come from coherent backscattering between the tip and the point contact: as you move the tip a little farther away, the round trip path length changes, and the conductance oscillates once each time that path grows by half a wavelength. It's basically a tunable, tip-defined Fabry-Perot cavity between the depletion spot and the constriction. To make sure this was really quantum interference and not some artifact, they checked the relevant timescales: the electron round trip time between the point contact and the tip was about two and a half picoseconds, tiny compared to both the phase coherence time of about sixty four picoseconds and the thermal smearing time of about fourteen picoseconds at their lowest bias. So nothing should have washed the fringes out — and indeed they didn't."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But how do you actually prove the fringes are coherence and not just some structure in the depletion potential?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They did exactly the control experiment you'd want: they deliberately heated the electrons by raising the bias across the point contact from zero point two millivolts to three millivolts. At higher bias the fringes disappeared, while the broad angular lobe pattern stayed essentially the same. That's precisely what you'd expect if the fringes are a coherence effect, washed out by increasing the effective electron temperature, while the angular envelope is a more robust, semiclassical feature. And then there's maybe the cleverest experiment in the paper: they parked the tip at a fixed spot known to coincide with the lobe of just the first mode, and the first conductance plateau dropped specifically, from two e squared over h down to about one point eight, without disturbing the spacing to the second plateau at all. Move the tip into the lobe unique to the second mode instead, and now it's the spacing between the first and second plateaus that shrinks, while the first plateau's height is untouched. That is a direct, real space demonstration that each conduction channel really is an independently addressable, spatially distinct current-carrying wave."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So to summarize this one: the point contact's quantized conductance channels aren't just abstract numbers in a Landauer sum, they're literally separate beams of coherent electron flow you can poke with a tip and suppress one at a time."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and it ties right into our lecture because it's both a tunneling transport story — the Landauer picture of discrete transmitting channels — and a scattering story, because the imaging mechanism itself is coherent elastic backscattering from a controlled, artificial point scatterer. It set the stage perfectly for the next paper, because once you can image flow, the very first thing you want to know is what happens farther from the point contact, in the disordered bulk of the two dimensional electron gas."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which brings us to paper two, the Nature 2001 paper, same group, on branched flow."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Same device family, same imaging technique, same kind of sample — mobility about one million, density four and a half times ten to the eleven, mean free path eleven micrometers again. The open question this time is almost embarrassingly simple: given that mean free path of eleven micrometers, and a scan range of only a couple of microns, you'd expect to see essentially unobstructed ballistic flow, something close to the clean diffraction fan you'd calculate for an ideal point contact with no disorder at all. Does it look like that?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "I'm guessing no, or there wouldn't be a paper."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Correct, and this is genuinely surprising. Instead of a smooth fan, the flow breaks into narrow, persistent channels that keep forking into smaller and smaller rivulets, all the way across the scan. They saw this branching in every single one of thirteen point contact patterns they imaged, so it's not a fluke of one device. The average intensity still falls off like one over r squared with distance, as you'd expect for a two dimensional spreading current, but the way that intensity is distributed in space is wildly inhomogeneous, concentrated into these branching filaments, well within a mean free path of eleven micrometers where you thought the electron shouldn't have scattered meaningfully at all."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So does this mean the mean free path number was simply wrong, or misleading?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's misleading about what it implies for real space flow, which is the whole point. They built a detailed numerical model of the actual disorder potential in a real gallium arsenide heterostructure: a random distribution of bulk impurities, matched to a realistic density of around one times ten to the fifteen per cubic centimeter, plus the sheet of ionized donor atoms sitting about twenty two nanometers from the two dimensional electron gas, with roughly half of them ionized. Both contribute a screened potential that falls off like one over r cubed at long range, which is the correct asymptotic form for a screened point charge in two dimensions. When they tuned this model to reproduce the measured mobility, they found something important: the resulting random potential has a standard deviation of only about eight percent of the Fermi energy, and a spatial correlation length of about twenty five nanometers, right in the ballpark of the Fermi wavelength. So it's a weak, smooth, long range potential landscape — exactly the regime dominated by small angle scattering we talked about at the start."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And that weak, smooth disorder is what builds the branches?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, and here's the part that I think is the real conceptual payoff. They checked whether the branches simply trace out valleys in the potential, the way a river follows a valley, by overlaying the shadow cast by the classical flow onto the potential landscape, and it doesn't match — the flow does not simply avoid high potential regions, most of the bumps causing channeling are well below the Fermi energy, so energetically the electron could go almost anywhere. Instead, the branching is a phase space phenomenon: many weak, small angle scattering events accumulate coherently along a trajectory bundle, folding it in phase space, and that folding produces what's called a cusp caustic in real space, the same mathematical structure behind bright caustic lines you see on the bottom of a swimming pool, or, as the authors point out, the way ocean sound channels can create concentrated rays from a weakly structured medium. And remarkably, a fully classical calculation of trajectories through this potential, and a fully quantum calculation of the wavefunction, produce essentially the same branched pattern. So branching is at heart a classical ray phenomenon, even though it happens to electron matter waves."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a nice way to connect back to the start of the episode — lots of small angle events, individually almost invisible in a transport measurement, cumulatively reshaping where the current actually goes."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely, and there's a second surprise layered on top: the quantum interference fringes, spaced by half the Fermi wavelength just like in the first paper, persist far beyond where naive thermal averaging says they should. The thermal length in this sample is about one point four micrometers, and you'd expect the fringe visibility to decay exponentially with a decay length of about half of that, roughly seven hundred nanometers. Instead the fringes survive out to several microns. The explanation is a subtle piece of interference bookkeeping: the wave backscattered from the tip interferes not just with itself, but with waves backscattered from a whole ring of impurities at the same distance from the point contact, within about one thermal length on either side, and as you change the electron wavevector around the Fermi value, the phase of the tip's backscattered wave and the phases of those ring impurities track each other, so the oscillation survives thermal averaging in a way a naive single scattering center would not. This mechanism needs the full phase coherence length of about eighteen micrometers to work, far bigger than the scan itself."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the takeaway for the lecture is really: real disorder in a high mobility two dimensional electron gas is smooth and long range, it mostly produces small angle scattering, and that regime sits in between the textbook limits of white noise disorder and isolated point scatterers, with its own characteristic correlation length setting a new length scale for transport that the mean free path alone doesn't capture."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly it, and it's a cautionary, very physical lesson for anyone using the ballistic assumption in a mesoscopic device: ballistic doesn't mean undisturbed, it can still mean strongly channeled."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's jump to graphene, then — paper three, Xue and collaborators, STM on graphene on hexagonal boron nitride."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is a change of material system but the same underlying worry: disorder, now in graphene. By around 2010, graphene on silicon dioxide had a well known problem. The oxide surface is rough and full of trapped charges, and those charges locally dope the graphene into alternating electron and hole regions at low density — people call them charge puddles — which smear out the clean, linear, gapless Dirac point physics everybody wanted to study. One fix is to suspend the graphene so it doesn't touch any substrate at all, and that dramatically improves mobility, even enabling the fractional quantum Hall effect, but suspended flakes are mechanically fragile and essentially impossible to probe locally with a scanning tunneling microscope tip, because the membrane moves."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So you want something that supports the graphene mechanically but behaves electronically like vacuum."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the logic that motivated using hexagonal boron nitride, h-B-N. It has the same honeycomb structure as graphene, just with boron and nitrogen on the two sublattices instead of carbon, a lattice constant about one point eight percent larger, it's a wide gap insulator, and because the bonding is ionic rather than covalent, the cleaved surface has essentially no dangling bonds or charge traps. There was also a theoretical worry at the time: if graphene sits commensurately on h-B-N, breaking the symmetry between the two sublattices, calculations predicted a sizable induced band gap, of order fifty milli-electron-volts, right at the Dirac point. So this paper asks two questions at once: is graphene on h-B-N actually flatter and electronically cleaner, and does it really open that predicted gap?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the measurement is direct scanning tunneling microscopy and spectroscopy on an actual graphene on h-B-N device, at low temperature."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, at four point five kelvin, ultra high vacuum, comparing a graphene on h-B-N device against a graphene on silicon dioxide control made in the same way. The first result is purely topographic: the height fluctuations of the graphene, measured by the STM tip, have a standard deviation of only about thirty picometers on h-B-N, compared to around two hundred twenty five picometers on silicon dioxide — nearly an order of magnitude flatter, as flat as graphite itself. So graphene really does conform to the atomically flat h-B-N surface rather than following the rough amorphous oxide."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then the atomic resolution images show the moiré pattern — which for us, given our day job, is the fun part."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's a nice appetizer for the kind of moiré physics you work with, though here it's used purely as a diagnostic rather than to engineer a new band structure. Because the lattice constants of graphene and h-B-N differ by that one point eight percent, and the two lattices can be rotated relative to each other, you get a long wavelength moiré superstructure visible directly in the STM topography. In one region of the flake they measured a moiré wavelength of two point six nanometers, corresponding to a lattice rotation of about minus five point four degrees between graphene and the h-B-N underneath; in another region of the very same flake, a shorter period of one point three nanometers corresponded to about minus ten point nine degrees of rotation. That's already a lovely confirmation that the h-B-N is one continuous crystal underneath, with the graphene locally changing orientation across the boundaries between flat terraces."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Now the big question, the gap."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They did local tunneling spectroscopy, measuring the differential conductance versus tip voltage, which is proportional to the local density of states, and as a function of back gate voltage they can track the minimum of that spectrum, which marks the Dirac point. What they find is a density of states that stays linear in energy, crossing through zero at the Dirac point, with no sign of a gap, at either of the two different moiré periods they examined. So the predicted fifty milli-electron-volt gap from the earlier commensurate calculations simply isn't there."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Why not, if the sublattice symmetry really is broken locally?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Because that one point eight percent lattice mismatch, combined with the small relative rotation, means the registry between a given carbon atom and the boron or nitrogen atom beneath it drifts continuously as you move across the moiré cell. A carbon atom might sit right above a boron atom at one point, but a few lattice constants away that same sublattice sees nitrogen instead. Averaged over a large enough area, both graphene sublattices end up coupling to boron and nitrogen with essentially equal weight, so the effective sublattice symmetry that protects the gapless Dirac cone is restored, even though locally, at any single unit cell, it looks broken. They confirmed this with a numerical calculation of the actual interlayer hopping, including the lattice mismatch and rotation, and recovered a gapless spectrum, while reproducing the previously predicted gap only if you artificially force perfect commensurate alignment, which is not what nature does here."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a genuinely useful lesson for anyone thinking about moiré systems: a naive commensurate calculation can give you qualitatively wrong conclusions if the real system is actually incommensurate or rotated, even by a tiny amount."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Completely agree, and it's exactly the kind of subtlety you run into constantly with twisted bilayer systems. There's also a nice bonus measurement here: by tracking how the Dirac point energy shifts with gate voltage, and fitting to the expected square root dependence for a linear, two dimensional Dirac dispersion, they extract the Fermi velocity directly, about one point one six times ten to the six meters per second for electrons and point nine four times ten to the six for holes — a sizable twenty five percent asymmetry between electrons and holes that depends on which moiré period you're on, probably from next nearest neighbor coupling effects not captured in the simplest model."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And finally, back to the puddle problem we opened with — did h-B-N actually fix it?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Beautifully. They mapped the Dirac point energy, pixel by pixel, over a hundred nanometer square area, both on h-B-N and on silicon dioxide. On silicon dioxide the Dirac point energy wanders with a standard deviation of about fifty six milli-electron-volts across the map; on h-B-N it's only about five point four milli-electron-volts, a factor of roughly ten reduction in energy, which translates to a factor of more than a hundred reduction in the underlying charge density fluctuations — from about two point six times ten to the eleven per square centimeter down to about two point five times ten to the nine. That final number is essentially the same as what's inferred from transport in suspended graphene. So h-B-N gives you suspended-graphene-level cleanliness, in a mechanically robust, STM-friendly, substrate-supported device."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So this paper is really the real space picture of the disorder landscape — literally showing the puddles — that the next paper then characterizes electrically and quantitatively."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the segue. Let's go there: Chen, Jang, Fuhrer, Williams and Ishigami, charged impurity scattering in graphene, from 2008, slightly earlier than the h-B-N paper, but logically its transport counterpart."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What was the open question driving this one?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "By 2008 everyone agreed graphene's conductivity grows roughly linearly with carrier density away from the Dirac point, and flattens to a minimum value near the Dirac point itself, but the microscopic origin was debated. Was the dominant scattering mechanism short range, like point defects or ripples, which theory says should give a density independent mobility and a sublinear conductivity curve, or was it long range Coulomb scattering from charged impurities sitting near or on the graphene, which theory predicts gives conductivity exactly linear in density, because the screening of a two dimensional Dirac gas becomes more effective, and the scattering cross section smaller, as you add more carriers? You need a controlled experiment where you can dial the impurity density up and down and watch the predicted scalings play out."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do you dial up charged impurities in a controlled way?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They start from a very clean single layer graphene device on silicon dioxide, cool it to twenty kelvin in ultra high vacuum, and deposit potassium atoms in small, timed doses directly onto the surface. Potassium ionizes and sits as a positively charged impurity, so each dosing step adds a known, controllable increment to the charged impurity density. After each dose they measure the full conductivity versus gate voltage curve, and periodically they anneal the sample to drive the potassium back off and start a fresh run — four such runs total."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And what changes as you dope?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "A whole list of things, each of which the charged impurity theory had separately predicted. The mobility drops. The conductivity versus gate voltage curve becomes noticeably more linear, as the long range Coulomb mechanism increasingly dominates over whatever short range scattering was there originally. The mobility becomes measurably different for electrons and holes — about seventeen percent larger for holes in their data. And the gate voltage of minimum conductivity shifts, the minimum broadens, and the minimum conductivity value itself initially decreases with doping."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's take those one at a time. The electron hole asymmetry first — why would a single sign of impurity charge scatter electrons and holes differently?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Because graphene's carriers are chiral Dirac quasiparticles, not ordinary Schrodinger electrons. A positively charged impurity is attractive to electrons and repulsive to holes, and because of the extra pseudospin structure tied to the sublattice, attractive and repulsive Coulomb centers scatter chiral carriers with genuinely different efficiency, not just a trivial sign flip. The data show the ratio of electron to hole mobility sitting at about zero point eight three, confirming the asymmetry is there, even though the simplest single impurity calculation at the time predicted a stronger asymmetry, around zero point three seven; the discrepancy is attributed to screening by the surrounding conduction electrons, which softens the effect — a nice example of theory capturing the right physics qualitatively but needing the full many body screening to match quantitatively."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the linear-in-density scaling, how precisely did they check it?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They checked the inverse mobility as a function of dosing time and found it grows linearly, consistent with one over mobility being proportional to impurity density, exactly as the long range Coulomb theory predicts. Pushing further, theory predicts the product of mobility and impurity density should be a universal constant, and they extract that constant to be about five times ten to the fifteen inverse volt seconds, in close agreement with theoretical calculations, and independently cross checked by how far the minimum conductivity gate voltage shifts with doping — two completely different pieces of the data converge on the same impurity density scale, which is a strong consistency check."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the minimum conductivity itself, the famous plateau near four e squared over h?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is maybe the most conceptually important result. A naive guess would be that the minimum conductivity occurs exactly when the gate-induced carrier density neutralizes the impurity charge density — simple charge counting. The data flatly do not follow that line. Instead they follow a more sophisticated prediction, from the self consistent theory of Adam and collaborators, that the minimum occurs when the spatially averaged impurity potential is zero, not when the charge is literally neutralized. Why the difference? Because by the time you're near the Dirac point, the charged impurity potential has already broken the graphene up into electron and hole puddles — the exact same puddles you just heard about in the h-B-N STM paper — and it's the statistics of that puddle landscape, not simple charge counting, that sets the transport minimum. And here's the punchline: the minimum conductivity itself decreases with initial doping and only approaches something close to the oft-quoted four e squared over h value at a nonzero, finite impurity density, never exactly at zero impurities. That strongly suggests that the much discussed universal minimum conductivity at the Dirac point, which many people hoped was a clean, intrinsic Dirac-point quantity, was in these real, disordered samples actually set by impurity-induced puddle physics, not by intrinsic Dirac point physics at all."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So to connect the two graphene papers very explicitly: paper three shows you literally, in real space, the puddle landscape produced by substrate disorder, and paper four shows you, in a controlled transport experiment, exactly how that same kind of charged, long range disorder produces the characteristic linear conductivity, the electron hole asymmetry, and a minimum conductivity that is not the clean Dirac point value people originally hoped for."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a perfect summary, and it's exactly why h-B-N substrates, with their dramatically lower charge impurity density, matter so much for getting experimentally closer to intrinsic Dirac point physics, including, eventually, the clean tunneling experiments we're about to discuss."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Perfect transition — last paper, Young and Kim, quantum interference and Klein tunneling in graphene heterojunctions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is where scattering mechanism and tunneling transport fuse completely, and it leans on everything we've built up. Start with the physics: graphene is gapless, so with a local gate you can create a region of electron doping right next to a region of hole doping, a p-n junction, purely electrostatically, with no need for a chemical junction. Now, the quasiparticles crossing that junction are massless Dirac fermions, and the famous relativistic result known as Klein tunneling says something remarkable: a particle hitting the junction exactly head on, at normal incidence, is transmitted with probability one, no matter how high or sharp the potential step is. That's because reflecting the particle straight backward would require flipping its chirality, its pseudospin, and the Hamiltonian that governs smooth potentials simply doesn't allow that. Carriers hitting the junction at an angle, however, do encounter a genuinely classically forbidden region in momentum space, and they are exponentially suppressed the more oblique the angle — so a smooth p-n junction acts as an angular collimator for the carriers that do get through."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How would you even measure that experimentally, though? Perfect transmission at one special angle sounds hard to isolate."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the problem with everything done before this paper. Earlier experiments inferred Klein tunneling indirectly, by measuring the overall resistance across a p-n junction and comparing the magnitude to theory. But a bulk resistance measurement only tells you the total transparency of the junction — it genuinely cannot distinguish transmission of ninety nine point nine percent at normal incidence from transmission of exactly one hundred percent. To actually prove perfect transmission, you need something sensitive to phase, not just magnitude, and that means interference."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So they built an interferometer out of p-n junctions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely. They fabricated a graphene device with an extremely narrow, about twenty nanometer wide, local top gate strongly coupled to the graphene channel, sitting on top of a global back gate. With appropriate top and back gate voltages you create a narrow locally gated region sandwiched between two p-n junctions, when the local region and the leads have opposite carrier sign. That locally gated region acts as a resonant cavity, exactly analogous to a Fabry-Perot optical etalon, except the two mirrors are p-n junctions, which both partially reflect and partially transmit carriers quantum mechanically. The bulk mean free path in these devices was over a hundred nanometers, comparable to or larger than the cavity width, so transport through the cavity is substantially ballistic — a necessary condition for a cavity resonance to survive at all."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And you see resonances?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes — whenever carriers in the cavity and the leads have opposite sign, the conductance oscillates as you sweep the top gate voltage, with a spacing in density consistent with a resonant cavity whose width is roughly a hundred nanometers, and critically, the oscillations depend almost entirely on the carrier density inside the local gated cavity, confirming that the resonance really does live in that cavity and not somewhere else in the device."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, so now, how does this prove Klein tunneling specifically, rather than just confirming there's a resonant cavity, which you'd get in any ballistic double barrier system?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the clever part, and it uses a magnetic field as a continuously tunable knob on the angle of incidence. A magnetic field bends the ballistic trajectories inside the cavity via the Lorentz force, which changes the angle at which carriers strike each junction as you ramp the field. At zero field, the interference pattern is dominated by moderately oblique trajectories — not normal incidence, because those trajectories transmit perfectly and don't reflect to interfere with anything, and not too oblique either, because those are almost fully reflected and never make it across at all. As the field increases, cyclotron bending pushes the dominant trajectories toward normal incidence. Now here's the key theoretical point: if transmission at normal incidence really is perfect, not just close to perfect, then the reflection amplitude must change sign exactly as the trajectory crosses from one side of normal incidence to the other. That sign flip is tied to a genuine Berry phase of pi associated with encircling the Dirac point in momentum space, a direct fingerprint of the chiral, gapless band structure. And a sign flip in the reflection amplitude shows up as an abrupt phase jump in the Fabry-Perot fringe pattern, at a specific, predictable magnetic field."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they actually saw that jump?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They did — right around three tenths of a tesla, matching the theoretical estimate of a few hundred milliteslas from a full Landauer calculation that also accounts for how the electric field at the junction itself gets modified by graphene's nonlinear screening near the Dirac point. The agreement between the measured fringe pattern, both its density dependence and its magnetic field dependence, and the full theory, including this phase jump, is excellent. That phase jump is the actual smoking gun for Klein tunneling: it's a statement about phase, about perfect transmission and its associated topological Berry phase, something a bulk resistance measurement could never access."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is there anything about how robust this is, like temperature?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, they tracked the oscillations up to about sixty kelvin, which lines up nicely with a simple energy scale estimate: the relevant coherence condition is that the thermal energy should be small compared to h-bar times the Fermi velocity divided by the cavity width, which for their roughly hundred nanometer cavity comes out to about a hundred kelvin. That's a satisfying, simple estimate connecting a device length scale directly to a coherence temperature, and it immediately tells you how to push these effects to higher temperature: shrink the cavity."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So pulling the whole episode together: this last paper really is where scattering and tunneling transport meet. The p-n junction is a tunneling barrier whose transmission is controlled by the same chirality that controls the scattering asymmetry we saw in the charged impurity paper, and the proof that the tunneling is perfect comes from a scattering-and-interference experiment, a Fabry-Perot cavity, conceptually not that far from the Fabry-Perot cavity the tip and point contact formed in the very first paper of the day."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Beautifully put, and that really is the arc of the whole lecture. Quick recap before we close: paper one showed you that quantized conductance channels through a point contact are real, individually addressable, coherent beams of electron flow, imaged through controlled coherent backscattering from a scanning tip. Paper two showed that even well inside the nominal mean free path, smooth, long range, small angle disorder reshapes that flow into persistent branching channels through a classical caustic mechanism, and that interference fringes can survive far past the naive thermal cutoff through a specific ring-scatterer interference effect. Paper three used scanning tunneling microscopy to show that putting graphene on hexagonal boron nitride removes almost all of the charge puddle disorder that silicon dioxide substrates induce, without opening the band gap that naive commensurate theory had predicted, because lattice mismatch and rotation wash the sublattice asymmetry back out. Paper four quantified exactly that same kind of long range charged impurity scattering electrically, in a controlled potassium doping experiment, confirming the linear conductivity, the chirality-driven electron hole asymmetry, and showing that the much quoted minimum conductivity near four e squared over h in real devices is a signature of impurity-induced puddles, not of clean Dirac point physics. And paper five closed the loop by using phase sensitive interference, in a magnetic field, across a graphene p-n junction cavity, to directly prove Klein tunneling: perfect transmission at normal incidence, together with its topological Berry phase, in a way no bulk resistance measurement ever could."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a solid map for Thursday's lecture. Scattering is never quite as simple as one mean free path number, and tunneling, in a chiral material like graphene, carries phase information that only interference experiments can really unlock."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the right note to end on. See you at the next arXiv Morning, and good luck with the exercise class presentations."
+    }
+  ]
+}

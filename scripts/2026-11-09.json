@@ -1,0 +1,473 @@
+{
+  "date": "2026-11-09",
+  "format": "dialogue",
+  "n_papers": 36,
+  "episode_title": "Phonon-dressed trions, exciton polarons, and skyrmions that trap light",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "It's November ninth, and archive dropped about thirty-six new condensed-matter papers overnight. We've pulled out five for a deep look and five quick hits."
+    },
+    {
+      "speaker": "Leo",
+      "text": "The deep ones all orbit the same theme, actually: excitons getting dressed by something else. Phonons, polaron clouds, cavity photons, even magnetic skyrmions. And we'll close with a graphene paper that reconstructs Dirac cones using momentum-space tricks instead of a moiré lattice."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's start with paper one, from a Tohoku group, on a Janus tungsten diselenide-sulfide homobilayer. Janus TMDs have one chalcogen species on top and another on bottom, so they lose the mirror symmetry of a normal monolayer and get a built-in out-of-plane dipole."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they stacked two of these Janus monolayers sulfur-side to sulfur-side. So you get two built-in fields pointing inward from opposite sides, face to face."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that creates a very deep, very narrow electrostatic well right at the interface, about a nanometer wide, which happens to match the exciton Bohr radius in these materials. The result: at four and a half kelvin, the neutral exciton is completely quenched and the spectrum is dominated by an intrinsic trion, even with zero gate voltage."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So this bilayer is just permanently doped. What happens when they try to gate it back to neutral?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They tried, sweeping from minus ten to plus ten volts. The neutral exciton never comes back. They argue the Janus fields pin the Fermi level deep in the conduction band, so the thing is locked n-type regardless of gate. Compare that to the monolayer control, which behaves exactly as expected, swinging from exciton-dominated to trion-dominated with gate voltage."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, that's the electrostatics. What's actually new physics, not just doping?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The phonon coupling. They fit the temperature dependence of the trion energy with the standard O'Donnell model and get a dimensionless exciton-phonon coupling constant of about three point nine. For context, normal TMD monolayers are below one, quantum wells are below one. And the effective phonon energy involved is fifty-one milli-electron-volts, which lines up almost exactly with the out-of-plane A-one-prime optical phonon they see in cryogenic Raman."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Fifty-one meV is comfortably above room-temperature thermal energy, which is about twenty-six meV. That's presumably why the trion survives to room temperature instead of washing out."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, that's their whole pitch: most TMD polaron-type effects die at room temperature because the relevant phonon energy is too close to kT. Here they've got both strong coupling and a stiff, high-energy phonon, which is an unusual combination -- their benchmark plot shows other platforms get one or the other, not both."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any catch? Sounds like the holy grail of robust trions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "A few. The trion-to-exciton ratio does fall off above two hundred forty kelvin even though it stays above one. Also this is fabricated via plasma sulfurization of exfoliated tungsten diselenide, which is a delicate multi-step process, so uniformity across larger areas is an open question. And inserting even a single hBN layer between the two Janus sheets, which is sub-nanometer, already drops the coupling constant from three point nine to about two, so the effect is extremely sensitive to that exact face-to-face geometry."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Sticking with phonon-dressed excitons, paper two is pure theory, from Malic's group, building a microscopic Green's function framework for exciton polarons in TMD monolayers -- so the neutral cousin of the problem we just discussed."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Neutral excitons dressed by phonons rather than trions. What's the actual observable they're predicting?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They solve a Dyson equation for one-ess excitons in molybdenum diselenide coupled to acoustic phonons, using a Fan-Migdal self-energy -- the same machinery used for electron-phonon polarons, but now both the exciton and the phonon are bosons, which changes the diagrammatics a bit. The key result is a kink in the polaron dispersion at a critical center-of-mass momentum, where the polaron's energy matches the energy needed to absorb or emit an acoustic phonon."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So below that momentum you have a genuine bound quasiparticle, and above it you cross into a scattering continuum."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and it shows up cleanly in the spectral function: below the critical momentum the linewidth is basically just the numerical broadening, meaning an effectively infinite lifetime, and above it the full width jumps from about four milli-electron-volts to fifteen point five, which corresponds to a lifetime of only fifty-seven femtoseconds at one hundred kelvin."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That kink-and-broadening signature is basically the excitonic analogue of what ARPES people see for electron polarons in oxide materials."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the comparison they draw. And on the quantitative side, they get a polaron redshift of about thirteen meV at room temperature and a mass enhancement that saturates around thirty percent -- both in reasonable agreement with existing absorption measurements on molybdenum diselenide, though they admit their redshift undershoots the data somewhat, since they've left out optical phonons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What about the intervalley piece? That's the part that actually matters for valley physics."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the nicest result. In molybdenum diselenide the bright KK exciton is the ground state, and the dark KK-prime state sits only about ten meV above it -- too close for a phonon to be emitted into it with any population, so intervalley coupling barely touches the KK polaron's lifetime. In tungsten diselenide it's the opposite: the dark KK-prime exciton sits around sixty meV below the bright state, so the bright polaron can always emit a K-point phonon into it. That channel stays open at all momenta, giving tungsten diselenide excitons a lifetime of only about half a picosecond, set by this emission process alone."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the material's own dark-bright ordering, not the phonon bath itself, decides whether you get a long-lived polaron or a short-lived one. That's a clean, testable distinction for people doing linewidth measurements across different TMDs."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper three moves from phonons to light-matter coupling, and from monolayers to bulk copper oxide. It's a cavity-enhanced second-harmonic-generation study of Rydberg excitons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Copper oxide Rydberg excitons go up to insanely high principal quantum numbers, right, something like n equals thirty in the best bulk crystals."
+    },
+    {
+      "speaker": "Ava",
+      "text": "In absorption, yes. Here they're specifically after the even-parity S and D states, which don't show up in linear absorption because of the material's inversion symmetry -- you need a quadrupole-allowed process like second-harmonic generation to see them at all. They built a doubly resonant microcavity: two distributed Bragg reflector stacks sandwiching a twenty-five micron slab of copper oxide, tuned to be reflective at both the infrared pump wavelength and its second harmonic in the green."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Doubly resonant meaning they're trying to enhance both the field driving the nonlinearity and the generated signal."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and they pull it off: they resolve S, P, and D Rydberg states up to n equals ten inside the cavity, which is the highest n reported for any cavity-coupled measurement of Rydberg excitons in this system so far. The overall second-harmonic enhancement factor compared to detuned cavity conditions is twenty-one plus or minus two, and they cross-check that number two independent ways -- by sweeping cavity detuning, and by comparing specific exciton lines against a bare, uncavitied crystal -- and they agree."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is the enhancement coming mostly from the pump cavity or the second-harmonic cavity?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Pump cavity dominates -- the second-harmonic intensity tracks the pump cavity's transmission squared almost exactly as they detune it. The second-harmonic cavity adds a smaller multiplicative boost on top, consistent with a simple plane-wave cavity model once you include mirror losses and a relative phase term for constructive interference."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Any strain or disorder cost from gluing a crystal between two mirror stacks?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes -- cooling to four kelvin introduces about one milli-electron-volt of blue shift from thermally induced strain, since copper oxide actually expands on cooling and the epoxy-bonded structure can't fully relieve that stress. The D states also come out ten to twenty percent broader than in bare crystals. Still, the Rydberg series survives essentially intact, which is the main point -- this cavity design doesn't kill the long-range electron-hole separation that makes these excitons special, and it's explicitly framed as a stepping stone toward pushing Rydberg exciton-polaritons to higher n, where the interaction strength scales as n to the eleventh power."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper four is the most speculative of today's batch -- a theory paper asking whether you can trap and transport a neutral exciton using a magnetic skyrmion."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Skyrmions are those swirling spin textures that get pushed around by small currents, the basis of racetrack memory proposals. But excitons are neutral, so naively they shouldn't care about any magnetic texture at all."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the puzzle they tackle. They build the exciton up from its constituents -- electron and hole, each with its own spin-orbit splitting -- rather than treating it as one structureless particle, which earlier work had done. And they find the skyrmion's topology is only transferred to the exciton if the exchange coupling to the texture exceeds that particle's own Ising spin-orbit splitting. Below that threshold, the carrier's spin just tilts in the skyrmion's wall and relaxes back -- no net flux. Above it, the spin fully reverses through the core and the carrier picks up a full flux quantum, with opposite sign in the two valleys."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And once that flux switch is on, what actually traps the exciton?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two separate pieces of quantum geometry. The quantum metric of the spin texture produces a ring-shaped energy barrier right in the skyrmion's wall, which can hold an exciton in the core as a long-lived resonance even with no attractive potential at all -- lifetimes of tens of picoseconds in their example. Separately, the Berry curvature, i.e. the topological charge, doesn't create the barrier but fixes the angular momentum of whatever gets trapped, and that angular momentum sets the optical selection rules -- which handedness of light can address the trapped state."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Can you actually move it, though? Trapping is one thing, dragging it along a racetrack without losing the exciton is another."
+    },
+    {
+      "speaker": "Ava",
+      "text": "They argue yes, essentially for free, using a Galilean-invariance argument: a skyrmion moving at constant velocity carries a bound exciton with no loss at all, and even an instantaneous velocity jump to one hundred meters per second only has about a one-in-ten-thousand chance of knocking the exciton out. The real limitation is just time -- how long the exciton lives, or how fast it thermally escapes the trap, before the skyrmion has carried it anywhere."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what materials would actually show this?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "For intralayer excitons they single out molybdenum diselenide monolayers as the most favorable TMD, because its bright-dark splitting is tiny, under one meV, so almost any exchange coupling switches the flux on. For transport specifically, they favor interlayer excitons in heterobilayers, since they live for nanoseconds to tens of nanoseconds and only the layer touching the magnet needs to couple. They even estimate that a twenty-nanometer skyrmion can hold exactly one exciton and not two, because the interlayer dipole repulsion between two trapped excitons exceeds the binding energy at that size. It's a concrete, falsifiable blueprint, though it's worth being clear this is all theory -- nobody has built this device yet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Last deep dive, paper five, is from Manchester and Warwick, and it's a genuinely different way of engineering graphene's band structure -- not through a moiré superlattice, but through what they call Umklapp band engineering."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Explain the idea, because it's a bit counterintuitive."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Normally you make minibands by stacking two nearly lattice-matched crystals so their Brillouin zones almost overlap, generating a long-period moiré pattern. This paper does the opposite: graphene and molybdenum disulfide have very different lattice constants, so their Brillouin zones don't match at all in the first zone. But if you pick the right twist angle, you can get graphene's Dirac point to land on top of a molybdenum disulfide conduction-band valley after shifting by one of molybdenum disulfide's reciprocal lattice vectors -- a Bragg, or Umklapp, scattering process into a higher Brillouin zone."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So it's resonance in momentum space rather than real-space periodicity. What's the actual signature that this hybridization is happening, rather than just two independent bands sitting near each other?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "They build graphene on a trilayer molybdenum disulfide flake twisted to about eighteen point six degrees, where this resonance condition is calculated to land right around where you can reach it with a gate. In magnetotransport they see a second, distinct Landau level fan appearing near a carrier density of about one point six times ten to the twelve per square centimeter -- with both positive and negative slopes, meaning both electron- and hole-like states appear well above graphene's primary Dirac point, which is the real tell. A control device from the exact same crystals but misaligned by thirty degrees shows none of this."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And they back it up with angle-resolved photoemission?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "Yes -- they directly image Umklapp-scattered replica graphene Dirac cones appearing near the molybdenum disulfide valence valleys, plus 'ghost' anticrossings where the replica band interacts with the real molybdenum disulfide valence band. That interaction between replica and primary bands is the evidence it's a real initial-state effect, not a photoemission artifact. A tight-binding plus DFT model with a single fitted interlayer tunneling parameter, about twenty-five milli-electron-volts, reproduces both the transport carrier densities and the band anticrossing energies."
+    },
+    {
+      "speaker": "Ava",
+      "text": "What do you actually get out of this new Dirac-like feature, physically?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "A spin-split pair of re-entrant Dirac cones -- the splitting is roughly sevenfold larger than typical proximity-induced spin-orbit coupling in graphene on TMDs, because here you're not relying on weak virtual tunneling into a remote band, you're resonantly mixing real states. And it's tunable: an out-of-plane displacement field pushes the molybdenum disulfide wavefunction toward or away from graphene, turning the hybridization strength up or down, which they confirm with both magnetotransport and Shubnikov-de Haas frequency analysis."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is more of a transport and ARPES story than our usual optics beat, but the twistronics design logic is the transferable lesson -- the same Umklapp matching trick should work for other TMDs or other graphene stacks, giving a toolbox for band engineering that doesn't require fighting over a precise magic angle."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, now the quick ones. Paper six, from a Czech-Taiwanese collaboration, looked at chemical-vapor-deposited molybdenum disulfide monolayers and found a defect-density gradient that forms spontaneously across a single flake during growth."
+    },
+    {
+      "speaker": "Ava",
+      "text": "PL and Raman mapping point to electron doping from sulfur vacancies, worse near the nucleation center, presumably because the sulfur precursor gets depleted there as the flake grows outward. Handy if you want one sample with a built-in continuum of defect densities to calibrate against."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper seven is a theory piece on hole-doped twisted bilayer tungsten ditelluride, modeled as two coupled sliding Luttinger liquids. The feedback between helical order in each channel and an RKKY-type interaction between localized moments can stabilize a coherent helical magnetic texture across the whole wire array, with magnon energies landing in the microwave range -- in principle detectable by magnetic resonance."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper eight is a big review: thirty years since the discovery of the two-dimensional metal-insulator transition in strongly correlated electron systems, which at the time violated the standard one-parameter localization scaling picture. Not new data, but a thorough stocktaking of transport and thermodynamics in the strongly-interacting regime."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper nine is a nice one for the superconductivity crowd: two-electron angle-resolved photoemission on an optimally doped cuprate, directly catching Cooper pairs as they leave the material -- a zero-binding-energy, zero-momentum peak that vanishes above the transition temperature. The joint energy distribution broadens oddly as temperature drops, which the authors say points to pair scattering off collective excitations rather than disorder or thermal effects."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And last, paper ten is an experimental tour de force in a totally different direction -- a millikelvin optomechanics experiment measuring the gravitational pull of an eighty-seven milligram source mass on a membrane carrying a one-point-three milligram test mass, read out through a microwave circuit. They report two orders of magnitude improvement in sensing gravity at small mass scales, part of the long game of probing where quantum mechanics and gravity might eventually have to meet."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's today's set -- phonon-dressed trions in Janus bilayers, a clean theoretical account of exciton polarons and their valley-dependent lifetimes, cavity-boosted Rydberg nonlinearities in copper oxide, excitons riding on skyrmions, and graphene reshaped by momentum-space resonance instead of a moiré lattice."
+    },
+    {
+      "speaker": "Ava",
+      "text": "See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2611.09083",
+      "title": "Strong phonon-coupled trion emission in Janus homobilayer",
+      "authors": [
+        "Tianyishan Sun",
+        "Dingkun Bi",
+        "Haonan Wang",
+        "Hiroto Ogura",
+        "Yanlin Gao",
+        "Mina Maruyama",
+        "Susumu Okada",
+        "Shiro Entani",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Kazunari Matsuda",
+        "Toshiaki Kato"
+      ],
+      "abstract": "Janus transition metal dichalcogenides with broken mirror symmetry provide a novel platform for exploring many-body effects mediated by spin-valley-phonon interactions. Strong electron-phonon coupling demands a precise match between a strong effective dipole moment and nanometer-scale charge confinement. Here, we report thermally robust and enhanced trion emission in a symmetric bilayer WSeS with an S/S stacking configuration. The inward-pointing antiparallel built-in electric fields induce a strong electron confinement effect at the interface, driving dominant trion emission at cryogenic temperatures. Furthermore, a massive electron-phonon coupling strength (3.9) resonant with the optical phonon A12 energy (51 meV) contributes to the thermal stability of this trion emission at elevated temperatures. By tailoring the interfacial architecture in Janus WSeS homobilayers, this study overcomes the thermal decoherence limits inherent to traditional semiconductor systems, offering novel insights into room-temperature many-body interactions.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.09083",
+      "tier": "deep",
+      "why": "Direct hit on trion physics and phonon coupling in Janus TMD homobilayers, showing thermally robust trion emission relevant to engineering exciton-phonon interactions in 2D materials."
+    },
+    {
+      "id": "2611.09819",
+      "title": "Microscopic theory of exciton polarons in transition metal dichalcogenides",
+      "authors": [
+        "Carlos Maciel-Escudero",
+        "Giuseppe Meneghini",
+        "Jamie M. Fitzgerald",
+        "Ermin Malic"
+      ],
+      "abstract": "Polarons are composite quasiparticles formed when charge carriers strongly couple to lattice vibrations, manifesting as carriers dressed by a surrounding cloud of phonons. Although this dressing fundamentally renormalizes the effective mass and mobility of carriers, its impact on electrically neutral exciton polarons in 2D semiconductors has received limited attention. In particular, despite the growing interest in polaronic effects in atomically thin semiconductors, only a few theoretical studies have addressed spectral signatures and renormalized properties of exciton polarons in these materials. Here, we develop a microscopic model to describe exciton polarons in transition metal dichalcogenides. Applying this model to 1s acoustic polarons in an MoSe2 monolayer, we reveal a distinct kink in the polaron dispersion, accompanied by a pronounced broadening of its spectral function. These spectral signatures mark a critical transition from a regime of well-defined bound exciton polarons, characterized by a renormalized energy, reduced group velocity, and enhanced effective mass, to a regime dominated by exciton-phonon scattering. Furthermore, by incorporating intervalley exciton-phonon interaction, we demonstrate that the energetic position of momentum-dark excitons strongly modifies the exciton-polaron lifetime. Overall, our work provides a microscopic framework for determining renormalized properties of exciton polarons and establishes experimentally accessible polaron signatures in 2D semiconductors.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.09819",
+      "tier": "deep",
+      "why": "A new microscopic theory of exciton polarons in MoSe2 reveals spectral kinks and lifetime effects from exciton-phonon coupling, directly extending the optical quasiparticle physics central to the profile."
+    },
+    {
+      "id": "2611.09705",
+      "title": "Cavity-enhanced second harmonic generation from Rydberg excitons in Cu2O",
+      "authors": [
+        "Horatio Q. X Wong",
+        "Krzysztof Sawicki",
+        "Madeleine Fisher",
+        "Stephen A. Lynch",
+        "Wolfgang Langbein",
+        "Sai Kiran Rajendran",
+        "Hamid Ohadi",
+        "Matthew P. A. Jones",
+        "Liam A. P. Gallagher"
+      ],
+      "abstract": "Rydberg excitons in Cu2O provide a solid-state setting for creating giant optical nonlinearities. Here, we use second-harmonic generation (SHG) to study Rydberg excitons in a doubly resonant optical microcavity designed to enhance both the pump and second-harmonic fields. We observe even-parity exciton states in an optical cavity and extend cavity-based measurements of Rydberg excitons up to n=10. The SHG intensity depends strongly on pump cavity detuning, showing the dominant role of the microcavity is the enhancement of the intra-cavity pump field. Analysis reveals an additional enhancement from the resonant second-harmonic cavity giving an overall SHG enhancement factor of 21 \\pm 2 inside the microcavity. These results establish cavity-enhanced SHG spectroscopy as a valuable tool for studying Rydberg excitons in microcavities and provide a pathway towards exploiting optical nonlinearities in Rydberg exciton polariton systems.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "physics.optics"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.09705",
+      "tier": "deep",
+      "why": "Cavity-enhanced second-harmonic generation from Rydberg excitons in Cu2O pushes giant optical nonlinearities and cavity coupling of Rydberg excitons toward exciton-polariton applications."
+    },
+    {
+      "id": "2611.09800",
+      "title": "Exciton design via topological spin textures",
+      "authors": [
+        "Karim Rezouali",
+        "Selcuk S\\\"ozeri",
+        "Samir Lounis"
+      ],
+      "abstract": "Excitons carry energy and information through a semiconductor without carrying charge. This makes them attractive for optoelectronics, but also hard to guide. Magnetic skyrmions, on the other hand, are moved by small electrical currents. Here we develop a theory of excitons interacting with a skyrmion in which the electron and the hole are treated as distinct constituents, each with its own spin–orbit coupling. We find that the topology of the skyrmion is transferred to the exciton only when the exchange coupling exceeds the relevant spin–orbit splitting. The exciton then experiences a full flux quantum, with opposite signs in the two valleys. The quantum metric of the spin texture creates a ring-shaped barrier that traps excitons, whereas the topological charge fixes the angular momentum of the trapped states and hence their optical selection rules. Because the trap moves with the skyrmion, excitons can be transported by current pulses, and small skyrmions accommodate a single exciton, which opens the door for potential hybrid applications in future information technology intertwining topological magnetic bits with optical excitations.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.09800",
+      "tier": "deep",
+      "why": "Proposes coupling exciton valley/angular-momentum physics to topological skyrmion spin textures, offering a novel current-driven exciton transport mechanism tied to valley selection rules."
+    },
+    {
+      "id": "2611.09285",
+      "title": "Momentum-space engineering in van der Waals heterostructures",
+      "authors": [
+        "Xiao Li",
+        "Astrid Weston",
+        "James G. McHugh",
+        "Michael D. Thompson",
+        "Matthew Watson",
+        "Yunze Gao",
+        "Nicholas Clark",
+        "Laxman Nagi Reddy",
+        "Samuel Magorrian",
+        "Wendong Wang",
+        "Zhiyuan Wang",
+        "Sofia Konyzheva",
+        "Francisco Selles",
+        "Amy Carl",
+        "Katarzyna J. Salamon",
+        "Alex Summerfield",
+        "Nicholas Hine",
+        "Andre K. Geim",
+        "Neil R. Wilson",
+        "Jonathan R. Prance",
+        "Andrey V. Kretinin",
+        "Vladimir I. Falko",
+        "Roman Gorbachev"
+      ],
+      "abstract": "Twenty years of graphene research have established Dirac fermions as a versatile platform for exploring quantum topological phenomena. Yet control over graphene's low-energy spectrum mostly follows the route of miniband engineering using real-space superlattices. Here we introduce a complementary approach based on momentum-space 'Umklapp' band engineering. This is realised by matching reciprocal space positions of band edges of two adjacent highly incommensurate 2D crystals to coincide upon a boost from their Bragg vectors, creating resonant interlayer hybridisation that qualitatively reconstructs their spectra. To demonstrate this approach experimentally, we use monolayer graphene on MoS2, twisted such that MoS2 Q-valley states are brought by Umklapp into energy-momentum resonance with graphene's Dirac cones. The ensuing hybridization results in the formation of a clear additional Dirac-like spectral feature, identified by a distinct Landau-level fan and Shubnikov-de Haas oscillations characteristic to Berry phase \\pi electrons. These new topological spectral features create a spin-valley locked Ising system which is robust against small twist-angle variations that can be further tuned by an external displacement field. More broadly, Umklapp band engineering offers a practical strategy for tailoring the electronic structure in van der Waals heterostructures, expanding the design space of quantum materials beyond moiré superlattices and weak proximity effects.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.09285",
+      "tier": "deep",
+      "why": "Introduces momentum-space 'Umklapp' band engineering in graphene/MoS2 heterostructures, creating new Dirac-like topological bands via incommensurate stacking—a conceptually new tool beyond moiré engineering."
+    },
+    {
+      "id": "2611.09103",
+      "title": "Spontaneous Formation of Lateral Defect-Density Gradient in CVD-Grown MoS2 Monolayers",
+      "authors": [
+        "M. Kostka",
+        "H. -S. Chen",
+        "C. -Y. Hsiao",
+        "Y. -R. Chu",
+        "J. Mach",
+        "M. Barto\\v{s}\\'ik",
+        "J. \\v{S}\\v{t}astn\\'y",
+        "T. \\v{S}ikola",
+        "W. -C. Lin"
+      ],
+      "abstract": "Defect engineering in two-dimensional materials is a powerful strategy for tuning electronic, optical, and catalytic properties. While pristine molybdenum disulfide (MoS2) has been thoroughly studied, defective MoS2 remains poorly understood due to the complexity and inconsistency of controlled defect creation. Here, we report a defect-density gradient that forms spontaneously in MoS2 flakes during chemical vapor deposition (CVD) growth. Photoluminescence and Raman spectroscopy mapping reveal the lateral arrangement of this gradient across a single flake. Deconvolution of the excitonic photoluminescence emission identifies electron doping as the key factor governing the spatial variation in optical response. This doping likely originates from sulfur vacancies formed during CVD growth, as further supported by the observed Raman mode shifts. We propose that this gradient arises from precursor depletion near the nucleation center during growth, resulting in a gradual variation in defect density. This lateral defect structure provides a convenient platform for systematically characterizing defective MoS2 across a continuous range of defect densities within a single sample. The sulfur-vacancy-driven surface activation identified here can also be important for future catalytic applications.",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.09103",
+      "tier": "brief",
+      "why": "Reports spontaneous defect-density gradients in CVD-grown MoS2 revealed via PL/Raman mapping, useful for anyone doing optical spectroscopy of real-world TMD samples."
+    },
+    {
+      "id": "2611.09462",
+      "title": "Helical magnetism from sliding Luttinger liquids in hole-doped twisted bilayer WTe2",
+      "authors": [
+        "Yung-Yeh Chang",
+        "Chen-Hsuan Hsu"
+      ],
+      "abstract": "We investigate carrier-mediated helical magnetism in hole-doped twisted bilayer WTe2 coupled to localized moments. The itinerant carriers are described by a valleyless two-flavor sliding Luttinger liquid. Via the feedback mechanism of the helical order formed within individual channels, we show that the interchannel spin susceptibility mediates a Ruderman-Kittel-Kasuya-Yosida interaction between localized moments that can stabilize a coherent helical magnetic texture across the coupled-wire array. A spin-wave analysis of the ordered state allows us to estimate the magnon energies and helix-ordering scale. The magnon energies depend on the carrier interactions with representative values falling in the microwave regime, suggesting possible detection by magnetic-resonance techniques. The helical order partially gaps the carrier spectrum and renormalizes the spin-correlation and relaxation exponents. These results identify twisted bilayer WTe2 as a tunable low-dimensional platform for realizing and probing carrier-mediated helical magnetism.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.09462",
+      "tier": "brief",
+      "why": "Predicts carrier-mediated helical magnetism in twisted bilayer WTe2 via sliding Luttinger liquids, linking moiré WTe2 physics to detectable magnon signatures."
+    },
+    {
+      "id": "2611.08677",
+      "title": "Thirty years of 2D MIT",
+      "authors": [
+        "Sergey V. Kravchenko",
+        "V. M. Pudalov",
+        "Alexander A. Shashkin"
+      ],
+      "abstract": "The zero-magnetic-field metal-insulator transition in strongly correlated two-dimensional electron systems was experimentally discovered three decades ago, thereby triggering extensive experimental and theoretical investigations. Prior to this discovery, the occurrence of such a transition –- as well as the very existence of a metallic phase in two dimensions –- was regarded as forbidden within the framework of the one-parameter scaling theory of localization. In this work, we provide a comprehensive review of the transport and thermodynamic properties of two-dimensional electron and hole systems in which carrier-carrier interactions constitute the dominant energy scale. We present and critically analyze both experimental observations and theoretical developments accumulated over the past thirty years.",
+      "categories": [
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.08677",
+      "tier": "brief",
+      "why": "A thorough 30-year retrospective on the 2D metal-insulator transition offers useful context on strongly correlated 2D electron systems relevant to correlated-state physics in 2D materials."
+    },
+    {
+      "id": "2611.09857",
+      "title": "Energy- and momentum-resolved Cooper-pair emission from a cuprate superconductor",
+      "authors": [
+        "Henry Amir",
+        "Jack Zwettler",
+        "Ka Ho Wong",
+        "Genda Gu",
+        "Rafael M. Fernandes",
+        "Jorge Noronha",
+        "Dirk K. Morr",
+        "Fahad Mahmood"
+      ],
+      "abstract": "Superconductivity arises from Cooper pairing, but conventional photoemission probes electrons individually rather than as pairs. Here we report the observation of Cooper-pair emission from an optimally doped cuprate superconductor using two-electron angle-resolved photoemission (2e-ARPES). Below the superconducting transition, we observe a distinct two-electron emission peak at zero pair binding energy and zero pair momentum that disappears in the normal state, revealing the characteristic fingerprint of a Cooper pair. Unexpectedly, the joint energy distribution broadens markedly along the relative-energy axis as temperature decreases, while the total energy width remains nearly unchanged. This anomalous behavior cannot be explained by instrumental resolution, static disorder or thermal broadening, and instead points to scattering processes involving collective excitations of the superconductor. Our results establish 2e-ARPES as a probe of both Cooper-pair emission and the many-body dynamics of the superconducting state.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.09857",
+      "tier": "brief",
+      "why": "First demonstration of energy- and momentum-resolved two-electron (Cooper-pair) photoemission from a cuprate superconductor is a genuinely novel spectroscopic technique worth knowing about outside the 2D-optics niche."
+    },
+    {
+      "id": "2611.08619",
+      "title": "Quantum-enabled measurement of gravitational forces at the milligram scale",
+      "authors": [
+        "Matthew Herbst",
+        "Ewa Rej",
+        "Joe Depellette",
+        "Richa Cutting",
+        "Jinhoon Jeong",
+        "Mika A. Sillanp\\\"a\\\"a"
+      ],
+      "abstract": "Gravity is by far the weakest among all known interactions. While it dominates the large-scale structure of the universe, gravitational interactions between small masses in the microscopic range remain underexplored because they are too weak to be experimentally accessible. The interface between gravity, described by general relativity, and quantum mechanics, which describes the microscopic world, is of particular interest. From a theory standpoint, these two major descriptions of nature have not been combined in a satisfactory manner. Technology is gradually becoming mature enough such that probing gravity at the microscopic scale, where quantum mechanics and gravity potentially meet, is becoming accessible. Explorations towards genuine quantum gravity have to be carried out under conditions where the gravitating masses possess non-classical properties, which necessitates ultimate protection against disturbances, such as ultralow temperatures and a small range of motion. Here, we present an experiment at millikelvin temperatures, where the gravity due to a micron-range coherent displacement of an 87 mg source mass imprints on the motion of an oscillating membrane loaded with a 1.3 mg test mass. Vibrations of the membrane are measured in the microwave optomechanical scheme, which is a key setup for investigating non-classical motional states of mechanical oscillators. When considering the combination of total source and test masses, our setup presents two orders of magnitude progress in sensing gravity at the small scale, as well as a 35 dB improvement of gravitational sensitivity at kHz frequencies or above. Our setup offers a plausible approach for studying gravitational interactions between masses prepared in non-classical motional states.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "gr-qc"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.08619",
+      "tier": "brief",
+      "why": "A milligram-scale quantum-enabled gravity sensing experiment marks major progress toward probing the quantum-gravity interface, a surprising result worth broad awareness."
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "date": "2026-11-07",
+  "id": "assp-07",
+  "format": "dialogue",
+  "episode_title": "Waves of Spin: Nesting, Gaps, and the Ghost of Chromium's Fermi Surface",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Welcome back to arXiv Morning: Nano and Correlated. This one is tied to Advanced Solid State Physics at ETH, Professor Zheludev's course, and it's the week where a student presents on spin density waves. If you've been living in moire flat bands and quantum Hall edge states, this is going to feel like a trip to a different, older, but surprisingly still-active corner of correlated electron physics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "I know the name mostly from chromium being the textbook antiferromagnet that isn't really a normal antiferromagnet. I've never actually sat down and built intuition for what a spin density wave is, as opposed to just saying antiferromagnetism and moving on."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the right place to start, because the sloppy habit of saying antiferromagnet and spin density wave as if they're synonyms is going to bite us the whole episode. So let's build this from scratch, with a picture first, before any formalism."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Here's the toy picture. Take a free electron gas, or more realistically a metal with a Fermi surface, and forget about the lattice for a second. In the plain paramagnetic ground state, at every point in space you have exactly as many up spins as down spins, on average. The charge density is uniform, the spin density is zero everywhere, boring and symmetric."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right, that's just the Fermi sea, filled up to the Fermi energy with both spins equally populated."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Now imagine that instead, the up-spin density and the down-spin density each develop a sinusoidal ripple in space, with the same wavelength, but shifted in phase by half a period relative to each other. So where the up-spin density has a crest, the down-spin density has a trough, and vice versa. If you add the two together, up density plus down density, you get back a perfectly flat, uniform total charge density, because the ripples cancel. But if you subtract them, up minus down, you get a nice traveling or standing wave of net spin polarization."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So locally the material looks like it has a tiny magnetic moment that oscillates in sign as you move through the crystal, even though the total charge density never notices anything happened."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's the entire definition of a spin density wave in one sentence: a periodic modulation of the spin density that carries no accompanying modulation of the total charge density. Contrast that immediately with a charge density wave, where the up and down channels ripple in phase with each other, so the charge density itself develops crests and troughs, and the spin density stays uniform. Same mathematical machinery, exactly opposite pairing of the two spin channels."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, so one is the symmetric combination of the two spin-channel ripples, the other is the antisymmetric combination. That's a nice clean way to remember which is which."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Precisely. And this is already evident in the very first paper that proposed the idea, Overhauser's 1962 paper in Physical Review, where he spells out that a spin density wave accompanied by charge-density-wave-free spin polarization requires the up and down channels to have exactly opposite but equal-amplitude modulations, so that the square modulus of the total wave function, meaning the charge density, stays constant in space. He actually makes a point of saying this is precisely why you don't need to add an extra Coulomb energy term to the Hartree-Fock equations for the spin density wave problem, because there's no charge buildup to worry about."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Before we go further into the theory, give me the order of magnitude. How big is this modulation, typically, and what wavelength are we talking about?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Great question, because it's actually tiny compared to full magnetic ordering. In a fully ordered local-moment antiferromagnet, like manganese oxide, you'd expect something close to one full Bohr magneton per magnetic ion. In chromium, which is the classic itinerant spin density wave metal, the ordered moment is only about zero point four to zero point six Bohr magnetons per atom, and that's actually one of the largest amplitude spin density waves known. In many of the organic conductors we'll discuss later, the ordered moment per site is more like a tenth of a Bohr magneton or even smaller. So we're talking about a fractional spin polarization of a few percent of what a fully polarized electron would give you, not some obviously huge magnetic signal."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the wavelength? Is it tied to the lattice constant, like you'd expect for a simple antiferromagnet with two sublattices?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "No, and this is the single most important conceptual difference from a textbook local-moment antiferromagnet. In a local-moment antiferromagnet, the ordering wavevector is locked to the lattice, usually something simple like the corner of the Brillouin zone, giving you a doubling of the unit cell. A spin density wave instead has a wavevector that is generically incommensurate with the lattice, meaning the ratio of the wave's periodicity to the lattice periodicity is not a simple fraction. The wavevector is instead set by the geometry of the Fermi surface itself, which is where the phrase Fermi surface nesting is going to come in."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the ordering wavevector is an emergent, material-specific, and even temperature-and-pressure-dependent number, rather than a fixed symmetry point of the lattice."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and that's beautifully illustrated in chromium, where the wavevector actually shifts continuously with temperature and with applied pressure, which is a dead giveaway that you're looking at a Fermi-surface-driven phenomenon rather than a simple superexchange-driven local-moment order."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Can I try the simplest possible mental model for why this incommensurate wave would ever want to form? I'm picturing something like: the electron gas finds it energetically favorable to pair up electron and hole states near the Fermi surface, a bit like how Cooper pairing glues together electron pairs near the Fermi surface for superconductivity."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That is exactly the right analogy, and it's one that Overhauser himself draws out explicitly, and that later reviews make very precise. In a superconductor, you pair an electron at momentum k, spin up, with an electron at momentum minus k, spin down, and that pairing is mediated by an attractive interaction, and it opens a gap at the Fermi level. In a spin density wave, instead, you pair an electron near the Fermi surface with a hole near the Fermi surface, with the hole's momentum related to the electron's momentum by a fixed shift, the ordering wavevector Q. This is an electron-hole pairing rather than an electron-electron pairing. The repulsive Coulomb interaction, or more generally the exchange interaction, is what glues this electron-hole pair together, and when it condenses, you also open a gap, but now at the Fermi level in the particle-hole channel rather than the particle-particle channel."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So instead of Cooper pairs of electrons, we have something like exciton condensation, bound electron-hole pairs, but restricted to specific spin-flip channels so that it shows up as spin modulation instead of charge modulation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and in fact the broader family of these particle-hole condensates is sometimes called the excitonic insulator, a concept that comes up explicitly in the Gabovich and Voitenko review we're drawing on later. Charge density waves, spin density waves, and even more exotic things like orbital antiferromagnetism and spin currents are all different flavors of excitonic-insulator-type order, distinguished by which spin and orbital channels the electron and the hole live in."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Okay, I think I have the toy picture. Let's get to the wavevector-dependent susceptibility, because that's presumably where nesting enters quantitatively."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes. The right object to think about is the wavevector-dependent spin susceptibility of the electron gas, often written as chi of q. Physically, chi of q answers the question: if I apply a spatially oscillating magnetic field with wavevector q, how much spin polarization at that same wavevector do I induce in response? At q equal zero, this is just the ordinary uniform Pauli susceptibility you learn about in the free electron gas chapter."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And presumably if chi of q blows up, or diverges, at some particular nonzero q, that tells you the electron gas wants to spontaneously develop a spin modulation at that wavevector, even without any external field, because the system becomes unstable to an infinitesimal perturbation there."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the right logic, and it's the Stoner-criterion logic generalized to finite wavevector. For a free electron gas, the noninteracting susceptibility, often called chi-zero of q, is a smooth, monotonically decreasing function of q that has a famous kink in its derivative exactly at q equal to twice the Fermi wavevector, which is the diameter of the Fermi sphere. That kink is the three-dimensional cousin of the Kohn anomaly you'd see in the phonon spectrum, and it comes from the fact that the Fermi sphere's own geometry creates a special pairing of states precisely when you shift by the sphere's diameter."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So in three dimensions, this feature in chi of q is just a mild kink, not a full-blown divergence, which is presumably why a free electron gas in three dimensions isn't automatically unstable to a spin density wave."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and Overhauser's 1962 paper is actually subtle on exactly this point. He shows, rigorously, that once you turn on the Coulomb exchange interaction, even in the weak-coupling, high-density limit, the paramagnetic Hartree-Fock state becomes formally unstable to spin density wave formation with wavevector Q equal to the Fermi sphere diameter, precisely because the exchange interaction's own wavevector dependence turns that mild kink in chi of q into an actual singularity near Q equal two k Fermi. He draws this as a schematic figure: the noninteracting susceptibility curve is smooth and monotonic, but the Hartree-Fock susceptibility of the interacting gas develops a peak, or even formally diverges, right near twice the Fermi wavevector."
+    },
+    {
+      "speaker": "Leo",
+      "text": "But that instability in an idealized, isotropic three-dimensional electron gas is apparently very weak, otherwise every simple metal would be a spin density wave magnet, which they're not."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Correct, and Overhauser is upfront about this too. He emphasizes that correlation effects beyond Hartree-Fock will tend to suppress these instabilities, the same way they suppress simple Hartree-Fock ferromagnetism, and that's exactly why almost all metals remain ordinary paramagnets. What makes a material actually host a spin density wave ground state is not isotropic three-dimensional free-electron physics, but a Fermi surface with special geometry, where large patches of the Fermi surface on one side of the Brillouin zone can be mapped onto large patches on the other side by one single wavevector. That geometric coincidence is Fermi surface nesting, and it's the thing that turns a mild kink into a true, materially relevant, strong peak in the susceptibility."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Can you make nesting really concrete? I want the simplest cartoon."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Sure. Imagine a Fermi surface made of two separate pieces, an electron pocket and a hole pocket, and imagine that if you take the hole pocket and rigidly translate it in momentum space by some vector Q, it lands almost exactly on top of the electron pocket, matching its shape over a large area. That's nesting. Every point on that matched patch of the electron Fermi surface has a partner point on the hole Fermi surface exactly a distance Q away, with very similar energy. Because so many electron-hole pairs at the Fermi level share essentially the same connecting vector Q, the particle-hole susceptibility at that specific q equals Q gets a huge contribution, formally logarithmically divergent in the perfect nesting limit, and the system becomes extremely susceptible to ordering at that wavevector."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's the condensed-matter version of a resonance: lots of independent electron-hole excitations all happening to have the same energy and the same connecting momentum, so their contributions pile up coherently instead of washing out."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's a great way to say it. And the archetype of a perfectly nested Fermi surface is the one-dimensional metal, where the Fermi surface is literally just two parallel planes, at plus and minus the Fermi wavevector. Translating one plane by Q equals twice the Fermi wavevector maps it exactly onto the other plane, over its entire area, which is why one-dimensional metals are famously unstable to both charge and spin density waves, this is the Peierls instability lineage. Quasi-one-dimensional organic conductors, which we'll come back to, are close enough to this limit that the nesting is almost perfect, just slightly warped by a small interchain hopping."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And chromium, which isn't one-dimensional at all, nests because it happens to have an electron pocket and a hole pocket of similar size and shape located at the right separation in momentum space."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, that's the famous Lomer picture, referenced throughout Fawcett's review: chromium's Fermi surface has an electron octahedron centered at the center of the Brillouin zone and a hole octahedron centered at the corner, and these two pieces happen to have nearly the same shape and size, so that one nesting vector along a cube axis connects huge matching patches of both. That one geometric accident is why chromium, a perfectly three-dimensional cubic metal, nonetheless behaves like it has one dominant nesting wavevector, almost as if it secretly has one-dimensional physics hidden in its band structure."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's pin down the mean field theory now. I want to see how you actually go from this nesting picture to a gap equation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Let's do the simplest version first, following the logic in Gruner's review for the organic conductor case, since it maps very transparently onto the one-dimensional Hubbard model. You start with a tight-binding band of electrons, with a repulsive on-site interaction, strength U, between opposite-spin electrons at the same site. In the mean field, or Hartree-Fock, treatment, you don't solve the full many-body interacting problem, you instead assume the ground state develops a specific self-consistent spin texture, a spin density wave at wavevector Q equal twice the Fermi wavevector, with some amplitude, and you ask what amplitude minimizes the total energy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So it's structurally identical to deriving the BCS gap equation, just with particle-hole pairing instead of particle-particle pairing."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Structurally almost identical, yes. The interaction term, when you do the mean field factorization, generates an effective potential that couples a plane wave state at momentum k, spin up, to a plane wave state at momentum k plus Q, spin down. That's exactly the off-diagonal coupling Overhauser writes down explicitly in his paper, where he calls the coupling amplitude g, and shows that the single-particle spectrum splits into two branches, an upper and lower branch, separated by an energy gap that depends on this coupling amplitude. Diagonalizing that two-by-two problem in the coupled subspace gives you new quasiparticle energies that look exactly like the Bogoliubov quasiparticle energies in BCS theory, just built from electron-hole pairs instead of electron-electron pairs."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And then self-consistency, the gap has to be generated by the very electrons whose energies it's changing, gives you an integral equation for the gap, analogous to the BCS gap equation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and Overhauser explicitly points out that the structure of his self-consistency integral equation is essentially identical to the BCS equation, differing only in the shape of the region you integrate over in momentum space. That's not a coincidence, it's the same underlying variational logic, applied to a different pairing channel. Because of that mathematical similarity, several of the classic results of BCS theory carry over almost unchanged. The transition temperature where the spin density wave amplitude vanishes continuously is a second order mean field transition. The zero temperature gap and the transition temperature are related by essentially the same ratio as the BCS ratio, about three point five times the Boltzmann constant times the transition temperature, sometimes somewhat enhanced for spin density waves because the relevant minimum gap on the Fermi surface is smaller than the full off-diagonal coupling amplitude. And the temperature dependence of the order parameter, whether you call it the fractional spin polarization or the gap, follows essentially the famous BCS gap curve, the same function you'd plot for the superconducting gap closing as you approach the critical temperature."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a satisfying payoff, that the same weak-coupling BCS mathematics shows up in a completely different physical context, just because both problems are, at their core, a Fermi surface pairing instability with a logarithmically enhanced susceptibility."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And this is explicitly how both Overhauser and later Fawcett frame it for chromium, and how Gruner frames it for the organic conductors: find the right susceptibility, here the spin susceptibility at wavevector Q enhanced by nesting, treat the interaction in a mean field, Hartree-Fock-like way, and you get a BCS-style gap equation, a BCS-style ratio between gap and transition temperature, and a BCS-style temperature dependence."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let me make sure I can rephrase the core idea cleanly. A spin density wave is an electron-hole condensate, where up-spin and down-spin electron densities ripple out of phase so the net spin density oscillates but the charge density stays flat; it's driven by a wavevector-dependent spin susceptibility that gets singularly enhanced when parts of the Fermi surface nest, meaning they can be mapped onto each other by a single wavevector Q; and the resulting instability can be treated with mean field theory that looks almost exactly like the BCS theory of superconductivity, just for particle-hole pairs instead of particle-particle pairs."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Perfect summary. One more piece of intuition before we move to experiments: the gap that opens is not necessarily a full gap over the whole Fermi surface. If nesting is perfect and covers the whole Fermi surface, you get a complete metal-to-insulator transition, as happens in some one-dimensional organic conductors. If nesting only covers part of the Fermi surface, as in chromium, you get a partial gap: some regions of the Fermi surface get truncated by the spin density wave energy gap, while other regions remain completely untouched and continue to conduct normally. This partial gapping idea, sometimes called the Bilbro-McMillan picture in the superconductivity-coexistence literature, turns out to be essential for understanding why some spin density wave materials remain metallic, and even superconducting, below their ordering transition."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Good, let's move to how you'd actually catch one of these in the lab. If the charge density doesn't change, what observable actually tells you the spin density wave formed?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "The gold standard is neutron diffraction, because neutrons couple to the magnetic induction field, so unlike x-rays they directly see the spatial Fourier components of the magnetization density. Overhauser himself discusses this at length and flags the practical difficulty: because a spin density wave's amplitude is typically only a percent or so of a full Bohr magneton, the magnetic Bragg peaks are roughly a hundred times weaker than ordinary nuclear Bragg peaks, so you need very sensitive neutron scattering. And because the ordering wavevector is set by Fermi surface geometry rather than the lattice, you don't necessarily know in advance where in reciprocal space to look. You get satellite peaks sitting just off the main Bragg peaks or around points that would otherwise have zero nuclear structure factor, split symmetrically by the incommensurate wavevector."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So experimentally, you'd scan along a high-symmetry direction in reciprocal space and look for a pair of small, symmetric satellite peaks straddling where a main Bragg peak would be, or straddling a forbidden reflection."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly how it was done historically for chromium, which Fawcett's review covers in great detail. The magnetic satellites sit at positions like zero, zero, one plus or minus a small incommensurability parameter delta, straddling the forbidden, structurally silent reciprocal lattice point. As you warm the sample toward the transition, those satellites weaken and eventually vanish continuously, which is the neutron fingerprint of order parameter melting at a second order, or in chromium's case, weakly first order, phase transition."
+    },
+    {
+      "speaker": "Leo",
+      "text": "What about signatures that don't require a neutron source, since not every lab has access to one?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "There are several complementary probes. One is simply electrical resistivity. Because the spin density wave gap removes a fraction of the Fermi surface from conducting, you expect an anomaly, usually a jump upward, in resistivity right at the transition, since you've lost some of your effective number of current carriers. In chromium, Fawcett's review and Overhauser's original paper both report an abrupt resistivity increase of around five percent right at the Neel temperature, consistent with only a small fraction of the Fermi surface being gapped. Overhauser actually uses that resistivity jump, together with the measured entropy anomaly, to independently estimate what fraction of the Fermi surface gets truncated, and gets consistent numbers from both methods, around four to five percent."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That consistency between two completely different measurements, resistivity and specific heat, both pointing to the same small truncated fraction, is a really satisfying cross-check."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It is, and it's historically important, because it's exactly this kind of quantitative cross-check that convinced people chromium's magnetism is not due to localized atomic moments. If chromium had ordinary local moments with spin one-half that order magnetically, you'd expect a large entropy anomaly at the transition, on the order of the gas constant times the log of two per mole. What's actually observed is a tiny entropy anomaly, less than one percent of that expected local-moment value, which tells you almost none of the electronic degrees of freedom are being frozen out into magnetic order. Instead, only a small sliver of the Fermi surface near the nested regions gets gapped, consistent with the itinerant, Fermi-surface-driven picture rather than a local-moment picture."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a beautiful use of thermodynamics as a magnetism diagnostic. What other signatures are there?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Nuclear magnetic resonance and muon spin rotation are excellent local probes, because the internal hyperfine field at a nucleus or at an implanted muon is proportional to the local spin density, so it directly samples the spatially varying magnetization. For an incommensurate wave, the internal field takes a continuous range of values as you move from site to site, since the modulation's phase relative to the lattice drifts continuously, which gives you a characteristically broadened or split resonance line, in contrast to the single sharp line you'd get from a commensurate, local-moment antiferromagnet. Gruner's review describes exactly this for the organic conductors: the NMR line broadens near the transition and the distribution of internal fields directly maps the order parameter's temperature dependence, matching the expected BCS-like curve quite well."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And optical or infrared spectroscopy should see the gap too, the same way you'd see a superconducting gap edge in optical conductivity."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, you expect an absorption onset at a photon energy of twice the gap, from exciting a quasiparticle across the gap, plus, uniquely to density waves, a collective mode resonance at low frequency from the sliding or oscillating motion of the condensate itself, which shows up as a resonance peak in the microwave or far-infrared conductivity once you account for pinning by impurities. Gruner's review on the dynamics of spin density waves goes into this in detail for the Bechgaard salts, those are the TMTSF-based organic conductors, showing a pinned mode resonance in the microwave range and a gap-like rise in the far infrared."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's do the case studies properly now. Chromium first, since it's the historical anchor."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Chromium is the archetype, and Fawcett's 1988 review in Reviews of Modern Physics is basically the encyclopedia of it. A few key numbers to anchor your intuition. The Neel temperature of pure chromium is about three hundred eleven kelvin, so this is a room-temperature-ish phenomenon, not some exotic millikelvin effect. Below that temperature, neutron diffraction reveals an incommensurate magnetic structure with wavevector along a cube axis, whose magnitude shifts continuously with both temperature and pressure, the unmistakable signature of an itinerant, Fermi-surface-controlled wavevector rather than a lattice-locked one."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And this is where the Lomer nesting picture comes in, the electron and hole octahedra you mentioned earlier."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right. Band structure calculations, first by Lomer and discussed throughout Fawcett's review, showed that chromium's Fermi surface has an electron pocket near the center of the Brillouin zone and a hole pocket near the zone corner, of very similar size and shape, connected by a nesting vector along the cube axis that closely matches the measured spin density wave wavevector. This was a genuinely satisfying triumph for the itinerant picture: band structure alone, with no fitting to magnetic data, predicts almost exactly the ordering wavevector seen by neutrons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "There's also this spin-flip transition you mentioned, below the main Neel transition. What's going on there?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Good catch, this is a nice wrinkle. Just below the Neel temperature, chromium's spin density wave is transversely polarized, meaning the spin direction oscillates perpendicular to the wavevector Q, like a linear polarization analog of a spiral. Then, at a lower temperature, around one hundred twenty three kelvin according to Fawcett's review, there's a spin-flip transition where the polarization rotates to become longitudinal, with spins parallel to Q. This is detected neutron-diffraction-wise because certain satellite reflections essentially vanish or appear depending on the angle between the magnetic polarization and the neutron scattering vector, since neutrons are only sensitive to the component of magnetization perpendicular to the scattering vector. So by watching which satellites light up or die as you cross that temperature, you can directly read off whether the wave is longitudinally or transversely polarized."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a clean illustration of using the neutron scattering geometry itself as the diagnostic, rather than just the peak positions."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. And chromium also gives you the direct experimental verification of the BCS-like mean field theory we discussed. Fawcett's review shows a plot, following earlier work by Shirane and Takei, of the temperature dependence of the spin density wave amplitude extracted from the intensity of the magnetic satellites, and it tracks the classic BCS gap curve remarkably well, exactly the behavior Overhauser had anticipated by analogy with superconductivity. The energy gap itself has been estimated at around a tenth of an electron volt from a combination of the fractional Fermi surface truncation and effective mass data, and that order of magnitude shows up again in de Haas-van Alphen measurements, which directly detect necks and truncations in the Fermi surface caused by the spin density wave gap."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's shift to a completely different class of material, the organic conductors, since those are apparently much closer to the idealized one-dimensional nesting limit."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, this is the subject of Gruner's 1994 review in Reviews of Modern Physics, and it's a lovely contrast to chromium because the physics is driven by nearly perfect, rather than accidental, nesting. The model compounds are charge-transfer salts built from a planar organic donor molecule, commonly abbreviated T-M-T-S-F, stacked with an acceptor anion, these are the so-called Bechgaard salts. The donor stacks form chains with strong electronic overlap along the chain direction and very weak overlap perpendicular to it, so the resulting band structure is highly anisotropic, quasi-one-dimensional, with a Fermi surface that's close to two flat, parallel sheets, slightly warped by the small interchain hopping."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Which is exactly the geometry that gives you nearly perfect nesting, since two parallel planes map onto each other almost exactly under a single translation."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and in these compounds the driving interaction is electron-electron repulsion rather than any electron-phonon coupling, consistent with the mean field Hubbard model picture we built earlier. Below a transition temperature around ten to twenty kelvin, depending on the specific salt and the counterion, these materials go from metallic to a resistivity that rises steeply with an activated, thermally-gapped form, exactly the fingerprint of a Fermi surface being gapped by the onset of the spin density wave."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And because the nesting there is so good, is the gapping close to complete, giving a near-insulator, rather than chromium's small partial gapping?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, that's the qualitative difference. In the ideal one-dimensional limit the nesting condition can gap essentially the entire Fermi surface, which is why these compounds show a genuine metal-insulator transition at the spin density wave onset, rather than chromium's mild five percent resistivity kink. Gruner's review tabulates measured gaps and transition temperatures for several of these salts, all consistent with the weak-coupling relation between the zero temperature gap and the transition temperature, and all showing ordered moments per molecule that are quite small, of order a tenth of a Bohr magneton, which is exactly what you'd expect for a weak-coupling itinerant spin density wave rather than a strongly localized moment."
+    },
+    {
+      "speaker": "Leo",
+      "text": "You mentioned earlier that these have collective excitations, phasons and magnons, beyond just the single-particle gapped quasiparticles."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and this is one of the genuinely distinctive features of a spin density wave compared to a charge density wave. Because the order parameter has both an amplitude and a phase, and because spin rotational symmetry is also spontaneously broken, you get multiple types of low energy collective modes: a phase mode, called the phason, which corresponds to a rigid sliding of the whole modulation pattern, an amplitude mode, and magnon-like spin wave excitations from the broken spin rotational symmetry. Gruner's review discusses antiferromagnetic resonance experiments that directly probe these magnon-like modes, and shows they behave like the spin waves of a nearly ideal, weakly anisotropic Heisenberg antiferromagnet with a small effective moment, exactly consistent with everything else we've said about the amplitude of the modulation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the phason, the sliding mode, is presumably what's behind the nonlinear conduction and the threshold field phenomena you get in these materials, similar to charge density wave sliding?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and this is covered at length in Gruner's review: when impurities pin the phase of the condensate to the lattice, the collective mode doesn't contribute to direct current conductivity at zero field, but above a certain threshold electric field, the whole modulation can be depinned and slide, carrying current collectively, very much like charge density wave sliding conduction, with its own set of nonlinear current-voltage signatures, narrow-band noise, and memory effects."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's talk about the coexistence of spin density waves with superconductivity, since that seems like a genuinely strange combination, if the spin density wave gaps part of the Fermi surface."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is the territory of the Gabovich and Voitenko review. Their key conceptual device is what they call partial dielectrization: the spin density wave gap only opens on the nested fraction of the Fermi surface, while superconductivity, through the usual Cooper mechanism, can still develop across the whole Fermi surface, including the ungapped remainder. So instead of competing for the same electronic states in a winner-take-all sense, the two orders coexist by dividing up the Fermi surface between them, with the superconducting gap present everywhere but the spin density wave gap present only on its nested sections."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Do they give concrete material examples where this coexistence is observed?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, their review lists a family of spin density wave superconductors, including chromium-rhenium alloys, several uranium-based heavy fermion compounds such as a tetragonal uranium-ruthenium-silicon compound often written U-R-u-two-S-i-two, and organic superconductors in the same TMTSF family we just discussed, where under pressure or with specific anions and specific cooling protocols, superconductivity and the spin density wave can coexist or compete depending on the cooling rate and the resulting metastable structural state. The common theme across all these materials, per their review, is that increasing the degree of dielectrization, meaning increasing the gapped fraction of the Fermi surface, generally works against the superconducting transition temperature, since superconductivity is competing for the same density of states that the spin density wave is removing. Where exactly superconductivity wins, loses, or settles into coexistence depends sensitively on how much of the Fermi surface is nested away."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This naturally leads to the cuprate stripe story the course outline mentioned, where spin density waves intertwine with charge density waves."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and this is one of the places where the SDW and CDW stories, which we worked hard to keep conceptually separate, actually braid back together. In several cuprate families, especially the lanthanum-strontium-copper-oxide and lanthanum-barium-copper-oxide families, often abbreviated L-S-C-O and L-B-C-O, and particularly in neodymium-doped variants, neutron and x-ray scattering reveal an intertwined order sometimes called stripe order: a charge modulation and a spin modulation that share a common periodicity, or have periodicities locked to each other by a simple factor, coexisting in the same material and, famously, suppressing superconductivity most strongly at a special doping fraction near one-eighth hole doping per copper."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the Gabovich review frames the appearance of these stripes as essentially a SDW riding together with a CDW in the same material, rather than a totally separate kind of magnetism."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's their framing, yes, drawing on neutron scattering evidence for an SDW developing simultaneously with, or closely tied to, lattice and charge instabilities in several cuprate families, with the resulting intertwined stripe order competing with, and in some compositions nearly extinguishing, the superconducting state. It's a genuinely open and still-studied question exactly how universal and how mechanistically important stripe physics is for the pairing mechanism itself, but the basic phenomenology, spin density wave and charge density wave appearing together and fighting superconductivity for the same electronic real estate, is a direct, if more complicated, descendant of the partial-dielectrization competition we just discussed for the simpler SDW superconductors."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's finish the case studies with something recent and close to home for me, the kagome metals, since I know those mostly through charge density wave physics and Chern-gapped Dirac points."
+    },
+    {
+      "speaker": "Ava",
+      "text": "This is a nice closing example because it shows the nesting idea generalizing to a completely different kind of Fermi surface feature: not two separated pockets, but a van Hove singularity. In a kagome lattice, the electronic structure famously has saddle points at the M points of the Brillouin zone, which produce van Hove singularities, meaning a logarithmically divergent density of states at specific energies. These singularities are already well known to drive charge density wave and even chiral charge order in several kagome compounds, through essentially the charge-channel version of the mechanism we've spent the whole episode on."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So the natural question is whether the same van Hove singularities can drive a spin density wave instead, in the right material."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly the question addressed in the twenty twenty five Park et al. paper in Nature Communications, on a cerium-titanium-bismuth kagome compound, written cerium titanium three bismuth four. This material has non-magnetic titanium kagome layers responsible for the metallic band structure, interleaved with one-dimensional chains of cerium ions carrying a well-defined local quantum moment. Neutron diffraction in that paper reveals an incommensurate spin density wave of the cerium moments, coexisting over much of the phase diagram with a separate commensurate antiferromagnetic component, with a rich temperature and magnetic field phase diagram where thermal fluctuations and field preferentially suppress the commensurate piece first, leaving an intermediate regime with only the incommensurate spin density wave surviving."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the connection to the kagome electronic structure is through the ordering wavevector matching the separation between van Hove singularities, the way chromium's wavevector matches its nesting vector?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly that logic. The paper reports angle-resolved photoemission and density functional theory calculations identifying van Hove singularities near the Fermi level at the kagome M points, and finds that the observed magnetic ordering wavevectors closely match the separation vector connecting the high density of states regions around those van Hove points, essentially the same wavevector associated with the well-known two-by-two charge density wave superlattice seen in other kagome superconductors. The authors argue this is evidence for a van Hove singularity assisted spin density wave, the magnetic analog of the charge density wave instabilities already established in this family, mediated through the conduction electrons coupling to the localized cerium moments via the Ruderman-Kittel-Kasuya-Yosida interaction, rather than through a simple Fermi surface pocket-on-pocket nesting like chromium's."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a really satisfying full circle: Overhauser's sixty-year-old susceptibility singularity idea, instantiated in a brand new quantum material class with completely different microscopic ingredients, localized rare earth moments mediated by a kagome conduction band instead of a free electron gas pairing with itself."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the beauty of this topic. The underlying logic, a susceptibility enhanced at a special wavevector by some feature of the electronic structure, whether that's a nested pocket pair, a near-perfect one-dimensional Fermi surface, or a van Hove singularity, keeps reappearing across completely different material platforms, from nineteen sixties chromium to twenty twenty five kagome metals."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Let's do a final recap before we wrap up, because there was a lot in there."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Sure. First, the core concept: a spin density wave is a periodic modulation of spin density with no accompanying charge modulation, built from the up and down spin channels rippling exactly out of phase, in contrast to a charge density wave where they ripple in phase. Second, the driving mechanism is a wavevector-dependent spin susceptibility that gets strongly enhanced, ideally diverging, at a special wavevector Q whenever the Fermi surface nests, meaning large patches of the Fermi surface map onto each other under translation by Q, whether through two separated Fermi surface pockets, a quasi-one-dimensional Fermi surface, or a van Hove singularity."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Third, the mean field theory is structurally a BCS-like particle-hole pairing theory: a self-consistent gap equation, a second order transition where the gap closes continuously with the same functional form as the BCS gap, and a ratio of zero temperature gap to transition temperature close to the BCS value. Fourth, because the wavevector is set by electronic structure rather than the lattice, the hallmark experimental signatures are an incommensurate, temperature- and pressure-dependent modulation seen via weak satellite peaks in neutron diffraction, a resistivity anomaly from partial or complete Fermi surface gapping, an anomalously small magnetic entropy compared to a local-moment picture, broadened nuclear magnetic resonance or muon spin rotation lines from the spatially varying internal field, and optical gap and collective mode signatures."
+    },
+    {
+      "speaker": "Ava",
+      "text": "And finally, the case studies: chromium as the archetypal itinerant spin density wave metal, with its nesting-matched electron and hole pockets, its spin-flip transition, and its textbook BCS-like amplitude curve; the TMTSF organic conductors as the nearly ideal, strongly gapping, one-dimensional nesting limit, complete with phason and magnon collective modes and sliding conduction; spin density wave superconductors like chromium-rhenium alloys and certain heavy fermion and organic compounds, where partial dielectrization lets superconductivity and the spin density wave share the Fermi surface; cuprate stripe order, where spin and charge density waves intertwine and compete with superconductivity; and the newest chapter, van Hove singularity driven spin density waves in kagome metals, extending the whole nesting idea to a completely different flavor of electronic structure."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a great map of the territory. Thanks, Ava, this genuinely changed how I think about the words antiferromagnet and spin density wave, I won't use them interchangeably again."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's exactly the goal. That's it for this episode of arXiv Morning: Nano and Correlated, covering spin density waves for the Advanced Solid State Physics course at ETH. See you next week."
+    }
+  ]
+}

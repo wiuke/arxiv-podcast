@@ -1,0 +1,425 @@
+{
+  "date": "2026-11-11",
+  "format": "dialogue",
+  "n_papers": 39,
+  "episode_title": "Anomalous Hall crystals, borrowed Planckian dissipation, and why Floquet driving can't fake a superradiant transition",
+  "segments": [
+    {
+      "speaker": "Ava",
+      "text": "Good morning. It's November eleventh, and the archive dropped about thirty-nine new papers overnight. We've picked five for a deep look and five quick ones."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Today's got a nice thread running through it: three papers on crystallized electrons and chiral superconductivity in rhombohedral graphene and moiré lattices, one on why you can't cheat gauge invariance to get superradiance in a cavity, and one trying to read entropy out of a displacement field in twisted trilayer graphene. Let's start with the crystals."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper one in the show notes, from the Cornell and Max Planck groups, Li, Geng, Weber and coauthors. They're after direct evidence for an anomalous Hall crystal in moiré rhombohedral graphene — that's pentalayer graphene stacked so each layer's lattice is rotated the same way, aligned to a boron nitride substrate to make a moiré pattern."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Remind me what an anomalous Hall crystal actually is, versus the Chern insulators everyone's already reported in this system."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Normal Chern insulators in these flat-band graphene stacks sit at specific filling fractions that match the moiré lattice periodicity, and people have debated whether they're moiré-pinned band insulators or whether the electrons are spontaneously crystallizing themselves, with the crystal happening to be topological — a Hall crystal with zero field. The anomalous Hall crystal idea says the crystallization and the topology are the same phenomenon: the electrons spontaneously break translation symmetry, which reconstructs the bands into Chern bands, which then order into a quantized anomalous Hall state. Theory has predicted this for a couple of years now, but nobody had direct evidence it was actually happening rather than just the moiré potential doing conventional band insulator physics."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So what's the smoking gun here?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two things, electrical noise and hysteresis. They find a family of Chern insulators — Chern numbers minus two, minus one, plus two — that span a continuous, incommensurate range of filling, roughly nu between minus two point seven and minus two point two, not locked to specific moiré fractions. Near that region, sweeping the gate voltage forward versus backward gives different resistance, a classic memory effect, and at finite bias current they see random telegraph noise in the longitudinal voltage, with a power spectrum that's a Lorentzian plus white noise, and the corner frequency climbs with current. That's the signature of sliding charge-density domains getting depinned by the current, the same phenomenology seen in sliding charge-density waves and Wigner crystals."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Couldn't that noise just be the magnetic domains flipping, or Chern number domains fluctuating near a phase boundary?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They checked both and ruled them out, which is really the strength of the paper. The noise persists at magnetic fields well above the coercive field, so it's not magnetization switching. And it's completely insensitive to crossing the actual topological phase boundaries between the Chern states — if it were Chern domains proliferating near a gap closing, you'd expect the noise to spike right at the transition, and it doesn't. So what's left is charge order itself, sliding under the current."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the temperature dependence is what nails down which one is the parent state?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right — the quantized anomalous Hall signal dies above about one hundred fifty millikelvin, but the noise and the gate hysteresis survive up to about eight hundred millikelvin. So the charge order forms first, at the higher temperature, and the Chern insulator is a child state riding on top of it once the electrons also decide to polarize into a topological band. That ordering of energy scales is exactly what you'd expect if crystallization is driving the topology, not the other way around."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Worth flagging the caveat: this only shows up in carefully angle-aligned, small-twist devices, so the moiré potential is still doing something, even if it's not pinning commensurate fillings. The authors are upfront that twist-angle dependence needs more work, and they'd like scanning probes to actually image these domains directly."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Which leads nicely into paper two, a theory piece from Carnegie Mellon and Harvard — Zhang, Dong, Han and Chatterjee — that asks what happens right at the boundary between a trivial Wigner crystal and one of these anomalous Hall crystals."
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is the self-doped crystal idea."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly. Near that boundary, instead of a clean transition, the system self-dopes: it keeps crystalline order but spontaneously produces a tiny Fermi pocket of itinerant carriers with a Dirac-like dispersion, sitting on top of the still-ordered background. This has already shown up in Hartree-Fock numerics of rhombohedral graphene and in a toy model called lambda-jellium. The question here is whether the crystal's own lattice vibrations, its Goldstone phonons, can pair up those itinerant carriers into a superconductor."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Phonons of an electron crystal, pairing electrons that are made of the same stuff as the crystal. That's a weird feedback loop."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It is, and that's the point — this isn't a lattice of ions, it's genuinely indistinguishable electrons vibrating and scattering other electrons. They solve for the Goldstone phonon spectrum self-consistently, find the longitudinal mode goes linear in momentum like a two-dimensional plasmon at long wavelength, and crucially its group velocity is about ten times slower than the Fermi velocity of the itinerant carriers. That's a built-in retardation, exactly the ingredient you need for a BCS-like attraction to beat the bare Coulomb repulsion."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And they get a real transition temperature out of this, not just a sign of attraction?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They solve the Eliashberg equations and get a chiral p-wave superconductor, and for the lambda-jellium model with typical parameters — effective mass five electron masses, dielectric constant four — T sub c comes out around ninety-four millikelvin. More interesting than the number is the topology: the paired state has an odd Bogoliubov-de Gennes Chern number, meaning there's an unpaired Majorana edge mode, and when they redo the calculation with a real rhombohedral pentalayer graphene Hamiltonian they get the same chiral p-wave answer, now dressed up as a pair-density wave because the Fermi pockets sit at the graphene K and K-prime points."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Is there anything you could actually look for in a transport experiment?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They propose a specific I-V signature: because you've got both a superconducting condensate and a pinned crystal underneath it, you should see two distinct nonlinear features in the differential resistance at different voltages, a peak where the superconductor depairs, and a dip where the crystal depins. They even note hints of this kind of two-scale nonlinearity may already be lurking in existing rhombohedral pentalayer graphene data. It's speculative, but it's a clean, falsifiable prediction tied directly to the noise and hysteresis phenomenology we just heard about in paper one."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Sticking with chiral superconductivity but moving off graphene entirely, paper three in the show notes, Zhang, Wang, Balents, Savary and Sheng, is a numerical study of a square-lattice Hofstadter-Hubbard model, the kind of pi-flux-per-plaquette setup you can actually engineer in twisted square bilayers because the moiré unit cell is huge."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Pi flux per plaquette in an ordinary crystal would need an enormous real magnetic field, but in a moiré superlattice with a cell tens of nanometers across, a lab-accessible field already gives you order-one flux per moiré plaquette."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Right. At half filling, by tuning the Hubbard U and a second-neighbor hopping t-prime, they map out three completely different phases sitting next to each other: a weakly correlated integer quantum Hall phase, a chiral spin liquid, which is basically the Mott-insulating, topologically ordered cousin of a fractional Chern insulator, and a conventional antiferromagnet. They nail this down with DMRG for the ground state and finite-temperature determinant Monte Carlo, which shows the charge gap closing right at the boundary between the integer quantum Hall phase and the spin liquid while the spin gap stays open."
+    },
+    {
+      "speaker": "Ava",
+      "text": "So Cooper pairs become the cheap way to add charge right at that critical point, since they cost no spin excitation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Exactly, and that's the setup for the main result: dope any of the three parent phases, the integer quantum Hall band, the spin liquid, or even the trivial antiferromagnet, and you land in the same chiral superconductor, with a quantized spin Chern number of minus two, covering nearly the whole doped phase diagram. DMRG pairing correlations, the finite-temperature Monte Carlo pairing susceptibility, and a weak-coupling Kohn-Luttinger calculation all agree on the pairing symmetry."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the part I'd push back on if I were in the room, doesn't a quantized spin Chern number inherited from a trivial antiferromagnet parent seem to violate some adiabatic continuity argument?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's exactly their headline claim: the paired state does not need to inherit its parent's topology, and here it manifestly doesn't, since the antiferromagnet has no quantized spin response to inherit in the first place. The mechanism underneath, virtual transitions across the gapped Chern bands at weak coupling, or a chiral resonating-valence-bond picture at strong coupling, produces the same answer regardless of which half-filled state you started from. The authors do flag a geometry artifact: on their six-leg DMRG cylinders, at large t-prime two of the four hole pockets fall outside the allowed momentum cuts, which can fake a metallic phase that might just be a finite-size effect rather than a real competitor to the superconductor."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Switching gears completely now, paper four is squarely in cavity-QED territory, and it's a single-author theory paper by Hughes that's basically a rebuttal to a recent claim of a Floquet-induced superradiant phase transition in Landau polaritons."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Landau polaritons being the cyclotron transition of a two-dimensional electron gas coupled to a terahertz cavity photon, in a perpendicular magnetic field, this is the textbook ultrastrong-coupling Hopfield model."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, and it's long been known that a static version of this can't superradiantly condense, because gauge invariance ties the diamagnetic A-squared term to the paramagnetic coupling through the Thomas-Reiche-Kuhn sum rule, and that cancellation forbids the transition, this is the famous no-go theorem for the Dicke model done properly. A recent proposal argued you could dodge this by modulating the magnetic field itself at a frequency far above the cyclotron frequency, getting a kind of optical-rectification enhancement of the time-averaged coupling that pushes you past a critical depth into a superradiant state."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And Hughes's complaint is that this calculation left something out?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Yes, Faraday's law. If you modulate a magnetic flux, you induce a circulating electric field, full stop, that's basic electromagnetism. The claimed transition came from averaging the coupling strength as a function of the Landau-level basis without including that induced field, which is a basis-dependent sleight of hand, not a physical effect. Once you include the Faraday field properly, Kohn's theorem lets you reduce the whole problem exactly to the electron gas's center-of-mass motion coupled to the cavity, no Landau-level truncation needed, and that Hamiltonian is a sum of squares at every instant, meaning it can never run away to lower energy."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That sum-of-squares property is doing a lot of work here."
+    },
+    {
+      "speaker": "Ava",
+      "text": "It's the backbone of the whole argument. Hughes invokes a mathematical result called Krein's theorem for periodically driven linear systems, basically the many-mode generalization of the stability chart you get for the Mathieu equation, and proves that above a calculable threshold frequency, the Krein frequency, the driven system is stable to all orders, full stop, no superradiance possible. Below that threshold, the only way to lose stability is pair creation from vacuum fluctuations, the dynamical Casimir effect, showing up as narrow resonance tongues in the drive frequency."
+    },
+    {
+      "speaker": "Leo",
+      "text": "So instead of a photon condensate, what do you actually get experimentally?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Two things. At very high drive frequency, the electrons just feel the mean magnetic field plus an extra trapping potential from the induced Faraday field, that's literally the old Fock-Darwin problem from quantum-dot physics, completely stable. At finite drive frequency within the resonance tongues, you get genuine dynamical Casimir emission: pairs of polaritons and low-frequency magnetoplasmons leaving the cavity, and specifically a two-color photon-pair process with up to five to ten decibels of two-mode squeezing. He also derives a generalized sum rule for nonparabolic, Kane-type bands and shows the no-condensate result survives there too, so it's not a special property of simple parabolic two-dimensional electron gases, it's generic."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Nice clean result, turns a new-phase-of-matter claim into parametric amplification and the dynamical Casimir effect, which is still interesting physics, just not the phase transition that was advertised."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Last deep dive, paper five, is a theory and data-reanalysis piece by Škrgić and Stojković on magic-angle twisted trilayer graphene, trying to pin down a very specific strange-metal question: can one species of carrier borrow its scattering rate from another?"
+    },
+    {
+      "speaker": "Leo",
+      "text": "This is about the heavy-fermion picture of twisted trilayer graphene, where the flat bands act like localized f-electrons and a light Dirac cone is the conduction sector."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Exactly, and a displacement field D breaks the mirror symmetry that otherwise keeps those two sectors from talking to each other, acting as a gate-tunable hybridization strength. Their claim is that the Dirac carriers inherit, or borrow, the Planckian, meaning linear-in-temperature, close to h-bar over tau equals k-B T, self-energy of the flat band, with a weight that goes as D squared plus some residual D-zero squared from random mirror-breaking disorder."
+    },
+    {
+      "speaker": "Leo",
+      "text": "How do they actually test that against real data, since nobody's measured this dial deliberately?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "They dig out eight resistance-versus-temperature curves at different displacement fields from the supplementary figures of an existing twisted-trilayer transport paper, and reanalyze the twelve-to-thirty-two-kelvin slope. They find the slope follows a times one plus D squared over D-zero squared, with no quartic correction, which matters, because a field that's actually depleting the number of Dirac carriers, rather than just tuning their scattering rate, would add exactly that quartic term. The elastic, temperature-independent part of the resistance barely moves, within five percent, across most of the field range, while the inelastic, borrowed part grows two and a half fold. That split is consistent with hybridization turning on a scattering channel rather than carriers disappearing."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And the theoretical payoff is this entropy ratio?"
+    },
+    {
+      "speaker": "Ava",
+      "text": "Right, the elegant part is a coupling-free ratio, building on an existing strange-metal framework, that compares the slope of the transport rate to the coefficient of a logarithmic correction to the specific heat. For a bath that scatters its own electrons, this ratio depends only on how slowly the bath relaxes. The new result here is that when a second species borrows that same bath's dissipation through weak hybridization, it inherits the exact same bath exponent and transport prefactor, but carries exactly twice the entropy per unit of coupling, giving a predicted ratio of about two point four six for an idealized conformal flat band, and at most two point seven three for any reasonable monotonic bath spectrum."
+    },
+    {
+      "speaker": "Leo",
+      "text": "That's a strong, falsifiable number, but it's worth being honest that this is a reanalysis of someone else's old data plus a theoretical construction, the actual decisive test, measuring entropy in steps of displacement field down around ten kelvin, hasn't been done. They're explicit that this is a proposal for an experiment, not a closed case."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Agreed, good one to flag for a transport colleague looking for a clean project. Let's do the quick ones."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper six: plasmons in bilayer graphene with a Kekulé distortion, from Wang, Yu and Yuan. They use a tight-binding plus random-phase-approximation treatment to show that the effective interlayer tunneling controlling the out-of-phase plasmon mode is strongly electron-hole asymmetric once you add this Kekulé bond-texturing, hole doping opens the plasmon gap much faster than electron doping, and in one bilayer combination the interlayer coupling essentially switches off for electron doping at a particular distortion strength."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper seven proposes quantum anomalous Hall physics without any net magnetization at all, using altermagnets, materials with no net moment but spin-split bands with alternating sign, layered onto a weak topological insulator. The altermagnetic exchange selectively gaps the Dirac cone at one high-symmetry point while surface hybridization gaps another, leaving a single chiral edge channel and Chern number one, verified in both a minimal model and a full slab calculation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "Paper eight is a quantum-geometry piece by Narula on finite Chern flakes, basically arguing that the quantum weight a measuring circuit picks up from a chip of Chern insulator depends on whether you make the flake big first or slow the circuit down first, because the edge states carry their own floor of quantum weight, bounded below by the Chern number, on top of the bulk contribution."
+    },
+    {
+      "speaker": "Ava",
+      "text": "Paper nine is an experimental high-field study of the heavy-fermion superconductor uranium ditelluride, mapping out its metamagnetic transition under fields up to sixty tesla tilted away from the b-axis. They pin down a quantum critical endpoint around seventy degrees tilt and seventy-five tesla where the metamagnetic line terminates, and link a pseudogap in the magnetic susceptibility to this transition, relevant background for anyone tracking the field-induced superconductivity story in this material."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And paper ten is a numerical study combining DMRG and tensor-network PEPS on the square-lattice t-J model, the classic cuprate playground, at low doping. Tuning the next-nearest-neighbor hopping from electron-like to hole-like, they find robust uniform d-wave pairing on the electron side, but on the hole-like side the pairing gets suppressed in favor of a fluctuating, finite-momentum pair-density wave sitting on a checkerboard charge pattern with a period close to what's seen in underdoped bismuth-2201 cuprates."
+    },
+    {
+      "speaker": "Ava",
+      "text": "That's the rundown for today. A lot of threads converging on the same idea, electrons spontaneously crystallizing and then doing something topological with the leftover freedom, whether that's a quantized Hall effect, a chiral superconductor, or borrowed dissipation."
+    },
+    {
+      "speaker": "Leo",
+      "text": "And a reminder from the cavity paper that gauge invariance is still unforgiving, no matter how cleverly you drive the system. See you tomorrow."
+    }
+  ],
+  "picks": [
+    {
+      "id": "2611.14067",
+      "title": "Evidence of anomalous Hall crystals in moiré rhombohedral graphene",
+      "authors": [
+        "Hongyuan Li",
+        "Zuhan Geng",
+        "Annika Weber",
+        "Chenxi Xu",
+        "Yifan Jiang",
+        "Jiabin Xie",
+        "Lujin Min",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Kenji Yasuda",
+        "Xiaomeng Liu",
+        "Jie Shan",
+        "Kin Fai Mak"
+      ],
+      "abstract": "An anomalous Hall crystal (AHC) is a quantum state of matter, in which spontaneous electron crystallization leads to a quantized Hall effect without a magnetic field. The state can emerge in materials with strong Coulomb interaction and large Berry curvatures, such as few-layer rhombohedral graphene. Although the idea of AHCs has been invoked to explain some of the observed Chern insulators in moiré rhombohedral graphene (mRG), direct experimental evidence of AHCs has been missing so far. Here, we report experimental evidence of AHCs in hole-doped mRG through combined electrical transport and noise measurements. We identify a series of distinct Chern insulators spanning a broad and continuous range of doping densities incommensurate with the underlying moiré lattice; the states exhibit current-induced broadband noise and memory effects as well as pronounced gate hysteresis. Systematic magnetic field, temperature and gate dependence studies further support the emergence of a spontaneously charge-ordered state that acts as a parental state for the observed Chern insulators. The absence of Chern insulators at nearby integer fillings also distinguishes the observed state from the reported reentrant or extended quantum (anomalous) Hall states. Altogether, our results establish experimental evidence of AHCs in mRG and open the door for further exploration of the collective dynamics in this new state of matter.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.14067",
+      "tier": "deep",
+      "why": "First direct transport and noise evidence for anomalous Hall crystals (spontaneous charge-ordered Chern insulators) in moiré rhombohedral graphene, a landmark result for correlated topological phases in 2D materials."
+    },
+    {
+      "id": "2611.12946",
+      "title": "Goldstone-Mediated Chiral Superconductivity in Self-Doped Electron Crystals",
+      "authors": [
+        "Shuchen Zhang",
+        "Zhihuan Dong",
+        "Zhaoyu Han",
+        "Shubhayu Chatterjee"
+      ],
+      "abstract": "Motivated by the observation of superconductivity in rhombohedral graphene in the proximity of electronic crystalline phases, we study the possibility of pairing mediated by electronic phonons. We focus on the vicinity of the phase boundary between trivial and topological electron crystals, where self-doping generically gives rise to a small Fermi sea of carriers with Dirac dispersion. We compute the Goldstone phonon spectra of the self-doped crystal (SDC) using a self-consistent approach, and subsequently derive the effective electronic-phonon-mediated interaction between itinerant carriers at the Fermi surface. Remarkably, we find that the Coulomb repulsion can be overscreened by the Goldstone phonons, leading to a chiral topological superconductor with an unpaired Majorana edge mode. Our conclusions are robust across the \\lambda-jellium model and a simplified model of rhombohedral graphene, and we propose characteristic non-linear I-V signals as a test of our prediction. More generally, our results outline an intriguing route for unconventional superconductivity where both electronic correlations and topology play key roles.",
+      "categories": [
+        "cond-mat.supr-con",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.12946",
+      "tier": "deep",
+      "why": "Proposes a Goldstone-phonon-mediated chiral topological superconductor near electron-crystal phase boundaries in rhombohedral graphene, directly addressing the mechanism behind recently observed graphene superconductivity."
+    },
+    {
+      "id": "2611.13091",
+      "title": "Chiral Superconductivity Indifferent to Parent Topology in the Square-Lattice Hofstadter-Hubbard Model",
+      "authors": [
+        "Jia-Xin Zhang",
+        "Wen O. Wang",
+        "Leon Balents",
+        "Lucile Savary",
+        "D. N. Sheng"
+      ],
+      "abstract": "We study a \\pi-flux square-lattice t-t' Hofstadter-Hubbard model proposed to be realizable in twisted moiré bilayers. By tuning U and t' at half filling, ground-state density-matrix renormalization group simulations (DMRG) and a parton analysis identify an integer quantum Hall (IQH) phase, a chiral spin liquid (CSL), and an antiferromagnet (AFM) in the phase diagram, while charge and spin fluctuations from finite-temperature determinant quantum Monte Carlo (DQMC) suggest a closing charge gap but an open spin gap at the IQH-CSL boundary, consistent with the topological criticality expected there. This model therefore produces a phase diagram hosting weakly correlated band topology (IQH), intrinsic topological order (CSL), and conventional symmetry breaking (AFM) side by side. Upon doping any of these three parent phases, a single chiral topological superconductor with spin Chern number Cs=-2 occupies nearly the entire phase diagram. DMRG, DQMC, and weak-coupling perturbation theory agree on its pairing symmetry. This shows that doping the topological band of our model robustly induces the same paired state throughout the phase diagram regardless of the character of the underlying correlated half-filled state and its magnetic fluctuations, whether an IQH, a spin liquid or a weakly fluctuating AFM.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.13091",
+      "tier": "deep",
+      "why": "DMRG study of a pi-flux Hofstadter-Hubbard model realizable in twisted moiré bilayers finds a single robust chiral topological superconductor emerging from doping very different parent correlated/topological states."
+    },
+    {
+      "id": "2611.14339",
+      "title": "Dynamical Casimir emission from Floquet-driven Landau polaritons: Gauge invariance forbids a superradiant phase transition",
+      "authors": [
+        "S. Hughes"
+      ],
+      "abstract": "Ultrastrong light–matter coupling of linear systems, such as Landau polaritons formed by a two-dimensional electron gas in a terahertz cavity, is described by the bosonic Hopfield model, and gauge invariance forbids a superradiant phase transition (SRPT). Modulating the magnetic field alone has been predicted to enhance the cycle-averaged coupling and induce a Floquet SRPT. We develop an exact theory of periodically driven Landau polaritons. Including the electric field induced by the modulated flux (Faraday's law), the problem reduces exactly, by Kohn's theorem, to the electronic center-of-mass mode coupled to the cavity, whose Hamiltonian is a sum of squares at every instant. A theorem of Krein then guarantees stability to all orders above a computable drive frequency, the Krein frequency, for which we give a self-contained proof. Below it, the system is stable except within resonance tongues where the drive creates pairs from the vacuum, the dynamical Casimir effect. At high drive frequency the electrons experience the mean field plus a ponderomotive trap (the Fock–Darwin problem), not an enhanced coupling. A gauge theorem excludes a Floquet photon condensate for any band structure, including Kane nonparabolicity, for which we derive a generalized Thomas–Reiche–Kuhn (TRK) sum rule. The predicted transition arises from averaging the coupling in a fixed Landau-level basis, which yields an effective model that violates the TRK sum rule; under driving, gauge invariance also requires the induced Faraday field. The rule to modulate and average the minimal-coupling Hamiltonian, not the parameters of its projection, applies to any linear, minimally coupled system. Instead of an SRPT, magnetic modulation produces dynamical Casimir emission: Faraday-driven polariton–magnetoplasmon pairs at low threshold, and two-color photon pairs with up to 5–10~dB of two-mode squeezing.",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "cross",
+      "url": "https://arxiv.org/abs/2611.14339",
+      "tier": "deep",
+      "why": "An exact, gauge-invariant theory of Floquet-driven Landau polaritons shows that magnetic-field modulation cannot produce a superradiant phase transition but instead yields dynamical Casimir photon-pair emission and strong two-mode squeezing, resolving a controversy in ultrastrong light-matter coupling relevant to polariton physics."
+    },
+    {
+      "id": "2611.12947",
+      "title": "Borrowed Planckian dissipation in magic-angle twisted graphene",
+      "authors": [
+        "Dino \\v{S}krgi\\'c",
+        "Dejan Stojkovic"
+      ],
+      "abstract": "In strange metals, the ratio of the coefficients producing signature linear-in-T resistivity and the logarithmic specific heat is free of the coupling between the electrons and whatever scatters them. In the materials studied so far that coupling is fixed by chemistry. Magic-angle twisted trilayer graphene provides a dial with a displacement field D that breaks the mirror symmetry separating a light Dirac cone from the flat bands, and the Dirac carriers borrow the Planckian self-energy of the flat band with a weight proportional to D2+D02. Resistance curves taken at eight fields are consistent with the field acting on the scattering rate rather than on the number of carriers. The slope in temperature follows a(1+D2/D02) without the quartic term that a depleting Dirac pocket adds, and the elastic part varies by less than 5\\% between 0.20 and 0.30~V/nm while the inelastic part grows 2.5-fold up to 0.38~V/nm. The thermally averaged Kubo formula favors flat-band weight placed symmetrically about the Fermi level over a single level. Borrowed dissipation keeps the bath exponent and transport prefactor of the flat band's own electrons but carries exactly twice their entropy per unit of borrowed coupling whenever the bath has dynamics of its own, so the field-differential ratio is 2\\pi3/21\\zeta(3)\\approx2.46 for a conformal flat band and, in a numerical search, at most 2.73 for monotonic bath spectra without a high-energy rate floor. The discriminating test is the entropy measured in steps of D.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.12947",
+      "tier": "deep",
+      "why": "Uses a displacement-field knob in magic-angle twisted trilayer graphene to show Dirac carriers 'borrow' Planckian dissipation from flat-band electrons, a novel and testable strange-metal mechanism in a moiré platform."
+    },
+    {
+      "id": "2611.13716",
+      "title": "Plasmons in bilayer graphene with O-type Kekulé distortion: Electron-hole asymmetry of the effective interlayer tunneling",
+      "authors": [
+        "Mingyu Wang",
+        "Guodong Yu",
+        "Shengjun Yuan"
+      ],
+      "abstract": "The effective interlayer tunneling (EIT) is a key quantity in determining the out-of-phase plasmons of a bilayer structure. Using the tight-binding model and the random phase approximation, we investigate plasmons in bilayer graphene with O-type Kekulé distortion. Both O/O and G/O bilayers exhibit strong electron-hole asymmetry in the EIT. For the O/O bilayer, the gap of the out-of-phase plasmon remains almost constant as the electron concentration varies, whereas it increases rapidly with increasing hole concentration; hole doping can also lead to stronger anomalous dispersion than electron doping. For the G/O bilayer, enhancing the Kekulé distortion \\Delta0 can weaken the EIT, as reflected by the reduced interlayer hybridization caused by the lifted layer degeneracy, especially for the electron-doped case. For the electron-doped G/O bilayer, the EIT is almost turned off when \\Delta0=0.3 from the perspective of the dispersion. Our results imply that switching the doping type between electron and hole can tune the performance of out-of-phase plasmon-based devices by modulating the EIT.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.13716",
+      "tier": "brief",
+      "why": "Tight-binding/RPA study finds strong electron-hole asymmetric plasmon gaps in Kekulé-distorted bilayer graphene, relevant to optical/plasmonic probes of engineered 2D materials."
+    },
+    {
+      "id": "2611.13508",
+      "title": "Magnetization-free quantum anomalous Hall effect in altermagnetic weak topological insulators",
+      "authors": [
+        "Yanmiao Han",
+        "Yu-Hao Wan",
+        "Peng-Yi Liu",
+        "Rundong Zhao",
+        "Qing-Feng Sun"
+      ],
+      "abstract": "The quantum anomalous Hall (QAH) effect is usually realized through ferromagnetism or magnetic dop ing, which limits material choices and often results in low mobility, disorder sensitivity, and low operating temperatures. Here, we propose a mechanism to achieve the QAH phase without net magnetization, using altermagnetic exchange on a weak topological insulator (WTI). The altermagnetic order selectively gaps the Dirac cone at the Z point, while hybridization between the top and bottom surfaces of the WTI thin film opens a trivial gap at the point, generating a Chern number C = 1 phase with a single chiral edge channel. We verify the topological transition through both a minimal thin-film model and a slab geometry, and compute the associated Hall response. As altermagnets and layered WTIs already exist experimentally, this mechanism offers a promising and experimentally accessible route to realizing QAH phases without magnetic doping or global magnetization. The results indicate that altermagnetic surface engineering may provide a clean and controllable pathway for realizing dissipationless edge transport in layered quantum materials.",
+      "categories": [
+        "cond-mat.mes-hall"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.13508",
+      "tier": "brief",
+      "why": "Proposes realizing the quantum anomalous Hall effect without net magnetization via altermagnetic exchange on a weak topological insulator, offering a cleaner route to dissipationless edge transport."
+    },
+    {
+      "id": "2611.14271",
+      "title": "Edge quantum weight of finite Chern flakes and its topological floor",
+      "authors": [
+        "Rohit Narula"
+      ],
+      "abstract": "The zero-point energy of a circuit measures the polarization fluctuation of an insulator coupled to it. In a crystal this is the bulk quantum weight Kbulk, which the Chern number C bounds below by |C|. We show that a finite Chern flake adds an edge term that survives as the flake grows. The low-frequency transitions of its chiral edge carry a dipole weight, the sum of their squared dipole matrix elements, Kedge\\geq|C| per unit area, a floor that follows from the positive absorption of both circular polarizations by every transition and the known cancellation of circular dichroism between edge and bulk. A weakly coupled circuit slower than the edge modes therefore reads Kbulk+Kedge, averaged over two field directions, while a faster one below the bulk gap approaches Kbulk, so which quantum weight is measured depends on whether the flake is made large or the circuit slow first. Exact free-fermion calculations on lattice flakes bear out the floor and this dependence on the circuit frequency. The result holds at weak coupling, which a growing flake at fixed coupling eventually leaves. Above the floor, the edge weight of one channel is a number fixed by the shape of the boundary and the edge velocities, which square and rectangular lattice flakes follow to within 0.003. Each further edge channel adds its own such number, while the circular dichroism of the edge counts only the net chirality.",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.14271",
+      "tier": "brief",
+      "why": "Derives a topological floor for the edge contribution to quantum weight in finite Chern flakes, connecting circuit-based polarization measurements to quantum Hall edge physics."
+    },
+    {
+      "id": "2611.14185",
+      "title": "Thermodynamic signatures of a nearby quantum critical endpoint in UTe2 under intense magnetic field",
+      "authors": [
+        "M. Gen",
+        "K. Somesh",
+        "A. Miyake",
+        "D. Li",
+        "Z. Yang",
+        "A. Miyata",
+        "Y. Kohama",
+        "M. Kondo",
+        "M. Tokunaga",
+        "D. Aoki",
+        "W. Knafo"
+      ],
+      "abstract": "Several unconventional superconducting phases have been discovered in the vicinity of metamagnetism in the heavy-fermion paramagnet UTe2 under magnetic field. To describe the mechanism of magnetic-field-induced superconductivity, a challenge is to characterize the quantum critical magnetic properties at the metamagnetic transition. In this work, we investigate the thermodynamic properties of UTe2 under magnetic fields up to 60~T applied in the crystallographic \\mathbfb-\\mathbfc plane. Magnetization and magnetostriction experiments have been performed under magnetic fields tilted by an angle \\theta\\lesssim42^\\circ from \\mathbfb toward \\mathbfc. They support that a quantum critical endpoint at the field angle \\thetaQCEP\\simeq(70\\pm10)^\\circ and magnetic field \\mu0HQCEP\\simeq(75\\pm10)~T terminates the metamagnetic transition line. A pseudo-gap in the magnetic susceptibility is related with the metamagnetic transition observed in magnetic fields for \\theta<\\thetaQCEP. The possible relation between the quantum critical endpoint and the development of magnetic-field-induced superconductivity is discussed.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.14185",
+      "tier": "brief",
+      "why": "High-field magnetization and magnetostriction measurements pin down a quantum critical endpoint near UTe2's metamagnetic transition, informing the mechanism of field-induced unconventional superconductivity."
+    },
+    {
+      "id": "2611.14101",
+      "title": "Particle-hole asymmetry and a fluctuating pair-density-wave state in a lightly doped Mott insulator on the square lattice",
+      "authors": [
+        "Hao-Xin Wang",
+        "Zheng-Yuan Yue",
+        "Wen-Yuan Liu",
+        "Zheng-Cheng Gu"
+      ],
+      "abstract": "Whether a lightly doped Mott insulator on the square lattice supports robust d-wave superconductivity remains a central question in strongly correlated physics and in the microscopic theory of cuprate superconductivity. Experiments and numerical studies reveal a pronounced particle-hole asymmetry, pointing to a delicate competition among d-wave superconductivity, pair-density wave (PDW), stripe, charge-density wave (CDW), and antiferromagnetic correlations. Here we combine large-scale DMRG and finite-size PEPS to study the square-lattice t-J model at low doping, \\delta \\leq 0.1, while tuning the next-nearest-neighbor hopping t' from the electron-like (t'>0) to the hole-like (t'<0) regime. The electron-like side supports robust, nearly uniform d-wave pairing, whereas decreasing t' induces a period-two plaquette modulation and ultimately produces, on the hole-like side, a charge-dominated state with a strongly suppressed static pairing amplitude. DMRG calculations on open strips and squares, together with PEPS calculations on open squares up to 16\\times16 sites, support this evolution. On squares with C4-symmetric Hamiltonians, both methods find that the pair correlations of the hole-like state select the plaquette momenta (\\pi,0) and (0,\\pi) and decay within a few lattice spacings, while the dominant charge-density modulation forms a bidirectional checkerboard whose period extrapolates to about 4a0, close to that observed in lightly doped Bi-2201. These observations establish a fluctuating plaquette PDW in the lightly doped hole-like regime, in which local pairs carry finite momentum but lack phase coherence. Our results firmly establish particle-hole asymmetry as a central organizing principle for competing pairing tendencies in the lightly doped t-J model.",
+      "categories": [
+        "cond-mat.str-el",
+        "cond-mat.supr-con",
+        "physics.comp-ph"
+      ],
+      "announce_type": "new",
+      "url": "https://arxiv.org/abs/2611.14101",
+      "tier": "brief",
+      "why": "Large-scale DMRG/PEPS calculations on the lightly doped t-J model reveal a particle-hole asymmetric crossover from uniform d-wave pairing to a fluctuating pair-density-wave state, bearing on cuprate phenomenology."
+    }
+  ]
+}
